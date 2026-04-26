@@ -1,0 +1,19 @@
+{
+  "category": "as06",
+  "symbol": "TP",
+  "name": "as059",
+  "target": "astronomy",
+  "module": "tides",
+  "status": "ok",
+  "elapsed_ms": "5716",
+  "experiment_name": "astronomy_059",
+  "precision": "f64",
+  "elapsed_ms": 5716,
+  "iterations": 1,
+  "avg_time_ns": 5715999744.00,
+  "min_time_ns": 5715999744.00,
+  "max_time_ns": 5715999744.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.17,
+  "result": "success=true code=Some(0) stdout_bytes=148 stderr_bytes=266"
+}

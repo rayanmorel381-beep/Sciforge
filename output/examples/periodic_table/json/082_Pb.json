@@ -1,0 +1,17 @@
+{
+  "category": "post-transition metal",
+  "symbol": "Pb",
+  "name": "Lead",
+  "config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²",
+  "mass": "207.2",
+  "experiment_name": "Pb_Lead_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 6,
+  "iterations": 1000,
+  "avg_time_ns": 6397.04,
+  "min_time_ns": 6397.04,
+  "max_time_ns": 6397.04,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 166666.67,
+  "result": "Z=82 | Pb (Lead) | 207.2 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²"
+}

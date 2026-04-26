@@ -1,0 +1,23 @@
+{
+  "category": "Archean",
+  "symbol": "U",
+  "name": "Isua Greenstone",
+  "method": "U-Pb (235)",
+  "parent": "²³⁵U",
+  "daughter": "²⁰⁷Pb",
+  "ratio": "0.5800",
+  "half_life": "7.0400e8 years",
+  "decay_constant": "3.1197e-17 s⁻¹",
+  "computed_age": "464.5 Myr",
+  "expected_age": "3800 Myr",
+  "experiment_name": "Isua Greenstone_dating",
+  "precision": "f64",
+  "elapsed_ms": 22,
+  "iterations": 5000,
+  "avg_time_ns": 4527.30,
+  "min_time_ns": 4527.30,
+  "max_time_ns": 4527.30,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 227272.73,
+  "result": "Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr"
+}

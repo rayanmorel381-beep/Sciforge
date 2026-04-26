@@ -1,0 +1,83 @@
+category: bi10
+count: 10
+entries:
+  - label: biology_091
+    symbol: MSB
+    name: bi091
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 5070
+    avg_time_ns: 5070000128.00
+  - label: biology_092
+    symbol: CAI
+    name: bi092
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 245
+    avg_time_ns: 245000000.00
+  - label: biology_093
+    symbol: GC
+    name: bi093
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 2482
+    avg_time_ns: 2481999872.00
+  - label: biology_094
+    symbol: GD
+    name: bi094
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 2078
+    avg_time_ns: 2078000000.00
+  - label: biology_095
+    symbol: SAF
+    name: bi095
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 5270
+    avg_time_ns: 5270000128.00
+  - label: biology_096
+    symbol: AT
+    name: bi096
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 5253
+    avg_time_ns: 5253000192.00
+  - label: biology_097
+    symbol: CE
+    name: bi097
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 5087
+    avg_time_ns: 5087000064.00
+  - label: biology_098
+    symbol: HIF
+    name: bi098
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 1547
+    avg_time_ns: 1547000064.00
+  - label: biology_099
+    symbol: VE
+    name: bi099
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 3230
+    avg_time_ns: 3230000128.00
+  - label: biology_100
+    symbol: BTT
+    name: bi100
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 1911
+    avg_time_ns: 1911000064.00

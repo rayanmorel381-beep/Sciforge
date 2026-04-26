@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma06"
+symbol = "LPR"
+name = "ma052"
+target = "maths"
+module = "signal"
+status = "ok"
+elapsed_ms = "2851"
+experiment_name = "maths_052"
+precision = "f64"
+elapsed_ms = 2851
+iterations = 1
+avg_time_ns = 2851000064.00
+min_time_ns = 2851000064.00
+max_time_ns = 2851000064.00
+time_stddev = 0.0000
+iterations_per_sec = 0.35
+result = "success=true code=Some(0) stdout_bytes=145 stderr_bytes=206"

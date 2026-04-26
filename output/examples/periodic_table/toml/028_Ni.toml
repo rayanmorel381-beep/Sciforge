@@ -1,0 +1,16 @@
+[benchmark]
+category = "transition metal"
+symbol = "Ni"
+name = "Nickel"
+config = "[Ar] 3d⁸ 4s²"
+mass = "58.6934"
+experiment_name = "Ni_Nickel_benchmark"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1000
+avg_time_ns = 2148.77
+min_time_ns = 2148.77
+max_time_ns = 2148.77
+time_stddev = 0.0000
+iterations_per_sec = 500000.00
+result = "Z=28 | Ni (Nickel) | 58.6934 u | transition metal | [Ar] 3d⁸ 4s²"

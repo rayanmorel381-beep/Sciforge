@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+atmosphere::barometric_decreases_with_altitude,f64,3,1,3677928,3677928,3677928,0,333.33334,pass,atmosphere,BDW,Barometric decreases with altitude,meteorology,atmosphere::barometric_decreases_with_altitude
+atmosphere::barometric_formula,f64,2,1,2525369,2525369,2525369,0,500,pass,atmosphere,BF,Barometric formula,meteorology,atmosphere::barometric_formula
+atmosphere::lapse_rate_dry,f64,2,1,2244209,2244209,2244209,0,500,pass,atmosphere,LRD,Lapse rate dry,meteorology,atmosphere::lapse_rate_dry
+atmosphere::potential_temperature,f64,2,1,2182669,2182669,2182669,0,500,pass,atmosphere,PT,Potential temperature,meteorology,atmosphere::potential_temperature
+atmosphere::saturation_vapor_increases_with_temp,f64,2,1,2014669,2014669,2014669,0,500,pass,atmosphere,SVI,Saturation vapor increases with temp,meteorology,atmosphere::saturation_vapor_increases_with_temp
+atmosphere::saturation_vapor_pressure,f64,1,1,1833849,1833849,1833849,0,1000,pass,atmosphere,SVP,Saturation vapor pressure,meteorology,atmosphere::saturation_vapor_pressure
+atmosphere::scale_height,f64,1,1,1894300,1894300,1894300,0,1000,pass,atmosphere,SH,Scale height,meteorology,atmosphere::scale_height

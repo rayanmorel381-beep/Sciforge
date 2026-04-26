@@ -1,0 +1,19 @@
+{
+  "category": "chemistry",
+  "symbol": "SUM",
+  "name": "CH Summary",
+  "target": "chemistry",
+  "module": "summary",
+  "status": "ok",
+  "elapsed_ms": "434536",
+  "experiment_name": "chemistry_summary",
+  "precision": "f64",
+  "elapsed_ms": 434536,
+  "iterations": 1,
+  "avg_time_ns": 4099396096.00,
+  "min_time_ns": 4099396096.00,
+  "max_time_ns": 4099396096.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "tests_total=106 tests_ok=106 tests_failed=0 elapsed_sum_ms=434536 min_ms=356 max_ms=5594 avg_ms=4099.40"
+}

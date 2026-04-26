@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+mechanics::beat_frequency,f64,1,1,1975609,1975609,1975609,0,1000,pass,mechanics,BF,Beat frequency,physics,mechanics::beat_frequency
+mechanics::bernoulli_pressure,f64,2,1,2089740,2089740,2089740,0,500,pass,mechanics,BP,Bernoulli pressure,physics,mechanics::bernoulli_pressure
+mechanics::doppler_shift_wavelength,f64,1,1,1858559,1858559,1858559,0,1000,pass,mechanics,DSW,Doppler shift wavelength,physics,mechanics::doppler_shift_wavelength
+mechanics::drag_force,f64,1,1,1911729,1911729,1911729,0,1000,pass,mechanics,DF,Drag force,physics,mechanics::drag_force
+mechanics::hooke_strain,f64,1,1,1926369,1926369,1926369,0,1000,pass,mechanics,HS,Hooke strain,physics,mechanics::hooke_strain
+mechanics::hooke_stress,f64,1,1,1879379,1879379,1879379,0,1000,pass,mechanics,HS,Hooke stress,physics,mechanics::hooke_stress
+mechanics::mach_number,f64,1,1,1798189,1798189,1798189,0,1000,pass,mechanics,MN,Mach number,physics,mechanics::mach_number

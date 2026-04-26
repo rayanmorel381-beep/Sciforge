@@ -1,0 +1,17 @@
+category: pr06
+symbol: TVM
+name: pr060
+target: parser
+module: toml
+status: ok
+elapsed_ms: 4573
+experiment_name: parser_060
+precision: f64
+elapsed_ms: 4573
+iterations: 1
+avg_time_ns: 4573000192.00
+min_time_ns: 4573000192.00
+max_time_ns: 4573000192.00
+time_stddev: 0.0000
+iterations_per_sec: 0.22
+result: success=true code=Some(0) stdout_bytes=150 stderr_bytes=208

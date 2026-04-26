@@ -1,0 +1,15 @@
+category: metalloid
+symbol: Sb
+name: Antimony
+config: [Kr] 4d¹⁰ 5s² 5p³
+mass: 121.76
+experiment_name: Sb_Antimony_benchmark
+precision: f32
+elapsed_ms: 39
+iterations: 10000
+avg_time_ns: 3933.09
+min_time_ns: 3933.09
+max_time_ns: 3933.09
+time_stddev: 0.0000
+iterations_per_sec: 256410.25
+result: Z=51 | Sb (Antimony) | 121.76 u | metalloid | [Kr] 4d¹⁰ 5s² 5p³

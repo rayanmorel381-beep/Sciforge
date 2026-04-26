@@ -1,0 +1,55 @@
+category: Supergiant
+count: 4
+entries:
+  - label: Betelgeuse
+    symbol: M
+    name: Betelgeuse
+    spectral: M1Ia
+    mass: 16.500 M☉
+    radius: 887.000 R☉
+    temperature: 3600 K
+    luminosity: 4.557e31 W
+    abs_magnitude: -5.71
+    schwarzschild: 48745.54 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 805 nm
+    avg_time_ns: 1696.30
+  - label: Rigel
+    symbol: B
+    name: Rigel
+    spectral: B8Ia
+    mass: 21.000 M☉
+    radius: 78.900 R☉
+    temperature: 12100 K
+    luminosity: 4.602e31 W
+    abs_magnitude: -6.98
+    schwarzschild: 62039.78 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 239 nm
+    avg_time_ns: 1671.57
+  - label: Polaris
+    symbol: F
+    name: Polaris
+    spectral: F7Ib
+    mass: 5.400 M☉
+    radius: 37.500 R☉
+    temperature: 6015 K
+    luminosity: 6.348e29 W
+    abs_magnitude: -3.63
+    schwarzschild: 15953.09 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 482 nm
+    avg_time_ns: 1646.64
+  - label: Deneb
+    symbol: A
+    name: Deneb
+    spectral: A2Ia
+    mass: 19.000 M☉
+    radius: 203.000 R☉
+    temperature: 8525 K
+    luminosity: 7.506e31 W
+    abs_magnitude: -8.27
+    schwarzschild: 56131.23 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 340 nm
+    avg_time_ns: 1713.84

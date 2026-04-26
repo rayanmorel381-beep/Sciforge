@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion
+Human body temp_convert,f64,34,10000,3439.0276,3439.0276,3439.0276,0,294117.66,Human body temp | 37 °C → 3.101500e2 K,Temperature,°C,Human body temp,37 °C,3.101500e2 K,37 °C → 3.101500e2 K
+Liquid nitrogen_convert,f64,34,10000,3463.7964,3463.7964,3463.7964,0,294117.66,Liquid nitrogen | 77.36 K → -1.957900e2 °C,Temperature,K,Liquid nitrogen,77.36 K,-1.957900e2 °C,77.36 K → -1.957900e2 °C
+Sun surface_convert,f64,34,10000,3407.4375,3407.4375,3407.4375,0,294117.66,Sun surface | 5778 K → 9.940730e3 °F,Temperature,K,Sun surface,5778 K,9.940730e3 °F,5778 K → 9.940730e3 °F

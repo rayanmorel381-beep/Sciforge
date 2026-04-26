@@ -1,0 +1,17 @@
+{
+  "category": "ocean",
+  "symbol": "SD",
+  "name": "Seawater density",
+  "domain": "meteorology",
+  "test": "ocean::seawater_density",
+  "experiment_name": "ocean::seawater_density",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1763929.00,
+  "min_time_ns": 1763929.00,
+  "max_time_ns": 1763929.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

@@ -1,0 +1,147 @@
+element:
+  name: Xenon
+  symbol: Xe
+  atomic_number: 54
+  category: noble gas
+  group: 18
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s² 5p⁶"
+  electronegativity: 2.60
+  atomic_mass: 131.293
+
+isotopes:
+  - name: Xenon-124
+    symbol: "¹²⁴Xe"
+    mass_number: 124
+    neutrons: 70
+    atomic_mass: 123.905893
+    half_life: 1.8e22
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double electron capture
+        branching_ratio: 1.0
+        daughter: Tellurium-124
+    natural_abundance: 0.000952
+
+  - name: Xenon-126
+    symbol: "¹²⁶Xe"
+    mass_number: 126
+    neutrons: 72
+    atomic_mass: 125.904274
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.000890
+
+  - name: Xenon-128
+    symbol: "¹²⁸Xe"
+    mass_number: 128
+    neutrons: 74
+    atomic_mass: 127.903531
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.019102
+
+  - name: Xenon-129
+    symbol: "¹²⁹Xe"
+    mass_number: 129
+    neutrons: 75
+    atomic_mass: 128.904779
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.264006
+    nuclear_spin: "1/2+"
+
+  - name: Xenon-130
+    symbol: "¹³⁰Xe"
+    mass_number: 130
+    neutrons: 76
+    atomic_mass: 129.903508
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.040710
+
+  - name: Xenon-131
+    symbol: "¹³¹Xe"
+    mass_number: 131
+    neutrons: 77
+    atomic_mass: 130.905082
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.212324
+    nuclear_spin: "3/2+"
+
+  - name: Xenon-132
+    symbol: "¹³²Xe"
+    mass_number: 132
+    neutrons: 78
+    atomic_mass: 131.904154
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.269086
+    nuclear_spin: "0+"
+
+  - name: Xenon-133
+    symbol: "¹³³Xe"
+    mass_number: 133
+    neutrons: 79
+    atomic_mass: 132.905911
+    half_life: 5.2475
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Cesium-133
+    natural_abundance: 0.0
+
+  - name: Xenon-134
+    symbol: "¹³⁴Xe"
+    mass_number: 134
+    neutrons: 80
+    atomic_mass: 133.905395
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.104357
+
+  - name: Xenon-135
+    symbol: "¹³⁵Xe"
+    mass_number: 135
+    neutrons: 81
+    atomic_mass: 134.907227
+    half_life: 9.14
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Cesium-135
+    natural_abundance: 0.0
+
+  - name: Xenon-136
+    symbol: "¹³⁶Xe"
+    mass_number: 136
+    neutrons: 82
+    atomic_mass: 135.907219
+    half_life: 2.165e21
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta- (double electron emission)
+        branching_ratio: 1.0
+        daughter: Barium-136
+    natural_abundance: 0.088573

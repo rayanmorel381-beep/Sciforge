@@ -1,0 +1,112 @@
+element:
+  name: Arsenic
+  symbol: As
+  atomic_number: 33
+  category: metalloid
+  group: 15
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s² 4p³"
+  electronegativity: 2.18
+  atomic_mass: 74.921595
+
+isotopes:
+  - name: Arsenic-71
+    symbol: "⁷¹As"
+    mass_number: 71
+    neutrons: 38
+    atomic_mass: 70.92711
+    half_life: 65.30
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.68
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.32
+    natural_abundance: 0.0
+
+  - name: Arsenic-72
+    symbol: "⁷²As"
+    mass_number: 72
+    neutrons: 39
+    atomic_mass: 71.92675
+    half_life: 26.0
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.88
+      - mode: electron capture
+        branching_ratio: 0.12
+    natural_abundance: 0.0
+
+  - name: Arsenic-73
+    symbol: "⁷³As"
+    mass_number: 73
+    neutrons: 40
+    atomic_mass: 72.923825
+    half_life: 80.30
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Germanium-73
+    natural_abundance: 0.0
+
+  - name: Arsenic-74
+    symbol: "⁷⁴As"
+    mass_number: 74
+    neutrons: 41
+    atomic_mass: 73.923929
+    half_life: 17.77
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.34
+      - mode: electron capture
+        branching_ratio: 0.34
+      - mode: beta- (electron emission)
+        branching_ratio: 0.32
+    natural_abundance: 0.0
+
+  - name: Arsenic-75
+    symbol: "⁷⁵As"
+    mass_number: 75
+    neutrons: 42
+    atomic_mass: 74.921595
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "3/2-"
+
+  - name: Arsenic-76
+    symbol: "⁷⁶As"
+    mass_number: 76
+    neutrons: 43
+    atomic_mass: 75.922394
+    half_life: 26.24
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Selenium-76
+    natural_abundance: 0.0
+
+  - name: Arsenic-77
+    symbol: "⁷⁷As"
+    mass_number: 77
+    neutrons: 44
+    atomic_mass: 76.920647
+    half_life: 38.83
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Selenium-77
+    natural_abundance: 0.0

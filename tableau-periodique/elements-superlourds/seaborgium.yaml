@@ -1,0 +1,56 @@
+element:
+  name: Seaborgium
+  symbol: Sg
+  atomic_number: 106
+  category: transition_metal
+  group: 6
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d⁴ 7s²"
+  electronegativity: null
+  atomic_mass: 269.129
+
+isotopes:
+  - name: Seaborgium-265
+    symbol: "²⁶⁵Sg"
+    mass_number: 265
+    neutrons: 159
+    atomic_mass: 265.12109
+    half_life: 8.9
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Rutherfordium-261
+    natural_abundance: 0.0
+
+  - name: Seaborgium-269
+    symbol: "²⁶⁹Sg"
+    mass_number: 269
+    neutrons: 163
+    atomic_mass: 269.129
+    half_life: 14
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Rutherfordium-265
+    natural_abundance: 0.0
+
+  - name: Seaborgium-271
+    symbol: "²⁷¹Sg"
+    mass_number: 271
+    neutrons: 165
+    atomic_mass: 271.134
+    half_life: 1.9
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.67
+        daughter: Rutherfordium-267
+      - mode: spontaneous_fission
+        branching_ratio: 0.33
+        daughter: null
+    natural_abundance: 0.0

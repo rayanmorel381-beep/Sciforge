@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+thermochemistry::clausius_clapeyron,f64,2,1,2618499,2618499,2618499,0,500,pass,thermochemistry,CC,Clausius clapeyron,chemistry,thermochemistry::clausius_clapeyron
+thermochemistry::entropy_change,f64,2,1,2235949,2235949,2235949,0,500,pass,thermochemistry,EC,Entropy change,chemistry,thermochemistry::entropy_change
+thermochemistry::gibbs_free_energy,f64,1,1,1939139,1939139,1939139,0,1000,pass,thermochemistry,GFE,Gibbs free energy,chemistry,thermochemistry::gibbs_free_energy
+thermochemistry::hess_law,f64,2,1,2055189,2055189,2055189,0,500,pass,thermochemistry,HL,Hess law,chemistry,thermochemistry::hess_law

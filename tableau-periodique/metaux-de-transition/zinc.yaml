@@ -1,0 +1,82 @@
+element:
+  name: Zinc
+  symbol: Zn
+  atomic_number: 30
+  category: transition metal
+  group: 12
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s²"
+  electronegativity: 1.65
+  atomic_mass: 65.38
+
+isotopes:
+  - name: Zinc-64
+    symbol: "⁶⁴Zn"
+    mass_number: 64
+    neutrons: 34
+    atomic_mass: 63.929142
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.4917
+    nuclear_spin: "0+"
+
+  - name: Zinc-65
+    symbol: "⁶⁵Zn"
+    mass_number: 65
+    neutrons: 35
+    atomic_mass: 64.929241
+    half_life: 243.93
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ / electron capture
+        branching_ratio: 1.0
+        daughter: Copper-65
+    natural_abundance: 0.0
+
+  - name: Zinc-66
+    symbol: "⁶⁶Zn"
+    mass_number: 66
+    neutrons: 36
+    atomic_mass: 65.926033
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2773
+
+  - name: Zinc-67
+    symbol: "⁶⁷Zn"
+    mass_number: 67
+    neutrons: 37
+    atomic_mass: 66.927127
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0404
+    nuclear_spin: "5/2-"
+
+  - name: Zinc-68
+    symbol: "⁶⁸Zn"
+    mass_number: 68
+    neutrons: 38
+    atomic_mass: 67.924844
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1845
+
+  - name: Zinc-70
+    symbol: "⁷⁰Zn"
+    mass_number: 70
+    neutrons: 40
+    atomic_mass: 69.925319
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0061

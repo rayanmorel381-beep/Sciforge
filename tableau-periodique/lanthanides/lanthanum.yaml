@@ -1,0 +1,54 @@
+element:
+  name: Lanthanum
+  symbol: La
+  atomic_number: 57
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 5d¹ 6s²"
+  electronegativity: 1.10
+  atomic_mass: 138.90547
+
+isotopes:
+  - name: Lanthanum-137
+    symbol: "¹³⁷La"
+    mass_number: 137
+    neutrons: 80
+    atomic_mass: 136.906494
+    half_life: 6.0e4
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Barium-137
+    natural_abundance: 0.0
+
+  - name: Lanthanum-138
+    symbol: "¹³⁸La"
+    mass_number: 138
+    neutrons: 81
+    atomic_mass: 137.907112
+    half_life: 1.02e11
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.655
+        daughter: Barium-138
+      - mode: beta-
+        branching_ratio: 0.345
+        daughter: Cerium-138
+    natural_abundance: 0.00089
+
+  - name: Lanthanum-139
+    symbol: "¹³⁹La"
+    mass_number: 139
+    neutrons: 82
+    atomic_mass: 138.906353
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.99911
+    nuclear_spin: "7/2+"

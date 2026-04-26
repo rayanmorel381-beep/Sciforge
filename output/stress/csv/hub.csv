@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+hub_summary,f64,240601,1,2934158300,2934158300,2934158300,0,0.004156259,tests_total=82 tests_ok=82 tests_failed=0 elapsed_sum_ms=240601 min_ms=129 max_ms=5692 avg_ms=2934.16,hub,SUM,HB Summary,hub,summary,ok,240601

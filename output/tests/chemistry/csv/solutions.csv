@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+solutions::boiling_point_elevation,f64,2,1,2250509,2250509,2250509,0,500,pass,solutions,BPE,Boiling point elevation,chemistry,solutions::boiling_point_elevation
+solutions::freezing_point_depression,f64,2,1,2644809,2644809,2644809,0,500,pass,solutions,FPD,Freezing point depression,chemistry,solutions::freezing_point_depression
+solutions::osmotic_pressure,f64,2,1,2594048,2594048,2594048,0,500,pass,solutions,OP,Osmotic pressure,chemistry,solutions::osmotic_pressure
+solutions::raoult_law,f64,2,1,2737569,2737569,2737569,0,500,pass,solutions,RL,Raoult law,chemistry,solutions::raoult_law

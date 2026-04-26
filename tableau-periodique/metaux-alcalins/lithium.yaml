@@ -1,0 +1,146 @@
+element:
+  name: Lithium
+  symbol: Li
+  atomic_number: 3
+  category: alkali metal
+  group: 1
+  period: 2
+  electron_configuration: "1s² 2s¹"
+  electronegativity: 0.98
+  atomic_mass: 6.941
+
+isotopes:
+  - name: Lithium-3
+    symbol: "³Li"
+    mass_number: 3
+    neutrons: 0
+    atomic_mass: 3.03078
+    half_life: null
+    half_life_unit: null
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Lithium-4
+    symbol: "⁴Li"
+    mass_number: 4
+    neutrons: 1
+    atomic_mass: 4.02719
+    half_life: 9.1e-23
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Lithium-5
+    symbol: "⁵Li"
+    mass_number: 5
+    neutrons: 2
+    atomic_mass: 5.01254
+    half_life: 3.7e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Lithium-6
+    symbol: "⁶Li"
+    mass_number: 6
+    neutrons: 3
+    atomic_mass: 6.015123
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0759
+    nuclear_spin: "1+"
+
+  - name: Lithium-7
+    symbol: "⁷Li"
+    mass_number: 7
+    neutrons: 4
+    atomic_mass: 7.016005
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.9241
+    nuclear_spin: "3/2-"
+
+  - name: Lithium-8
+    symbol: "⁸Li"
+    mass_number: 8
+    neutrons: 5
+    atomic_mass: 8.02249
+    half_life: 839.40
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Beryllium-8
+    natural_abundance: 0.0
+
+  - name: Lithium-9
+    symbol: "⁹Li"
+    mass_number: 9
+    neutrons: 6
+    atomic_mass: 9.02679
+    half_life: 178.3
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.508
+      - mode: beta- neutron emission
+        branching_ratio: 0.492
+    natural_abundance: 0.0
+
+  - name: Lithium-10
+    symbol: "¹⁰Li"
+    mass_number: 10
+    neutrons: 7
+    atomic_mass: 10.03548
+    half_life: 2.0e-21
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Lithium-11
+    symbol: "¹¹Li"
+    mass_number: 11
+    neutrons: 8
+    atomic_mass: 11.04380
+    half_life: 8.75
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.514
+      - mode: beta- neutron emission
+        branching_ratio: 0.448
+      - mode: beta- two-neutron emission
+        branching_ratio: 0.038
+    natural_abundance: 0.0
+
+  - name: Lithium-12
+    symbol: "¹²Li"
+    mass_number: 12
+    neutrons: 9
+    atomic_mass: 12.05378
+    half_life: 1.0e-20
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0

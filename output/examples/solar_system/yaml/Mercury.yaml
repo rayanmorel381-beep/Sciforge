@@ -1,0 +1,20 @@
+category: Terrestrial
+symbol: ☿
+name: Mercury
+mass: 3.301e23 kg
+radius: 2440 km
+semi_major: 0.387 AU
+kepler_period: 87.95 days
+circular_vel: 47.88 km/s
+escape_vel: 4.25 km/s
+hohmann_dv: 17.15 km/s
+experiment_name: Mercury_orbit
+precision: f64
+elapsed_ms: 9
+iterations: 5000
+avg_time_ns: 1855.87
+min_time_ns: 1855.87
+max_time_ns: 1855.87
+time_stddev: 0.0000
+iterations_per_sec: 555555.56
+result: Mercury | T=87.95 days | v_circ=47.88 km/s | v_esc=4.25 km/s | Hohmann Δv=17.15 km/s

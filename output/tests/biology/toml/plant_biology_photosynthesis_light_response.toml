@@ -1,0 +1,16 @@
+[benchmark]
+category = "plant_biology"
+symbol = "PLR"
+name = "Photosynthesis light response"
+domain = "biology"
+test = "plant_biology::photosynthesis_light_response"
+experiment_name = "plant_biology::photosynthesis_light_response"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2052199.00
+min_time_ns = 2052199.00
+max_time_ns = 2052199.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

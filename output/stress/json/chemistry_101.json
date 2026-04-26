@@ -1,0 +1,19 @@
+{
+  "category": "ch11",
+  "symbol": "EC",
+  "name": "ch101",
+  "target": "chemistry",
+  "module": "thermochemistry",
+  "status": "ok",
+  "elapsed_ms": "356",
+  "experiment_name": "chemistry_101",
+  "precision": "f64",
+  "elapsed_ms": 356,
+  "iterations": 1,
+  "avg_time_ns": 356000000.00,
+  "min_time_ns": 356000000.00,
+  "max_time_ns": 356000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 2.81,
+  "result": "success=true code=Some(0) stdout_bytes=158 stderr_bytes=318"
+}

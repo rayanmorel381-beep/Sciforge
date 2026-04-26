@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+parser_summary,f64,269092,1,3737388800,3737388800,3737388800,0,0.003716201,tests_total=72 tests_ok=72 tests_failed=0 elapsed_sum_ms=269092 min_ms=353 max_ms=5938 avg_ms=3737.39,parser,SUM,PR Summary,parser,summary,ok,269092

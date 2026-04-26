@@ -1,0 +1,16 @@
+[benchmark]
+category = "actinide"
+symbol = "U"
+name = "Uranium"
+config = "[Rn] 5f³ 6d¹ 7s²"
+mass = "238.02891"
+experiment_name = "U_Uranium_benchmark"
+precision = "f64"
+elapsed_ms = 36
+iterations = 5000
+avg_time_ns = 7316.16
+min_time_ns = 7316.16
+max_time_ns = 7316.16
+time_stddev = 0.0000
+iterations_per_sec = 138888.89
+result = "Z=92 | U (Uranium) | 238.02891 u | actinide | [Rn] 5f³ 6d¹ 7s²"

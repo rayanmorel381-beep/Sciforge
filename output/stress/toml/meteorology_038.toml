@@ -1,0 +1,18 @@
+[benchmark]
+category = "me04"
+symbol = "FS"
+name = "me038"
+target = "meteorology"
+module = "storms"
+status = "ok"
+elapsed_ms = "419"
+experiment_name = "meteorology_038"
+precision = "f64"
+elapsed_ms = 419
+iterations = 1
+avg_time_ns = 419000000.00
+min_time_ns = 419000000.00
+max_time_ns = 419000000.00
+time_stddev = 0.0000
+iterations_per_sec = 2.39
+result = "success=true code=Some(0) stdout_bytes=146 stderr_bytes=218"

@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi10"
+symbol = "HIF"
+name = "bi098"
+target = "biology"
+module = "immunology"
+status = "ok"
+elapsed_ms = "1547"
+experiment_name = "biology_098"
+precision = "f64"
+elapsed_ms = 1547
+iterations = 1
+avg_time_ns = 1547000064.00
+min_time_ns = 1547000064.00
+max_time_ns = 1547000064.00
+time_stddev = 0.0000
+iterations_per_sec = 0.65
+result = "success=true code=Some(0) stdout_bytes=161 stderr_bytes=262"

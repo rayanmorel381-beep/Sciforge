@@ -1,0 +1,53 @@
+element:
+  name: Hassium
+  symbol: Hs
+  atomic_number: 108
+  category: transition_metal
+  group: 8
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d⁶ 7s²"
+  electronegativity: null
+  atomic_mass: 269.134
+
+isotopes:
+  - name: Hassium-269
+    symbol: "²⁶⁹Hs"
+    mass_number: 269
+    neutrons: 161
+    atomic_mass: 269.134
+    half_life: 16
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Seaborgium-265
+    natural_abundance: 0.0
+
+  - name: Hassium-270
+    symbol: "²⁷⁰Hs"
+    mass_number: 270
+    neutrons: 162
+    atomic_mass: 270.135
+    half_life: 10
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Seaborgium-266
+    natural_abundance: 0.0
+
+  - name: Hassium-277
+    symbol: "²⁷⁷Hs"
+    mass_number: 277
+    neutrons: 169
+    atomic_mass: 277.150
+    half_life: 11
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 1.0
+        daughter: null
+    natural_abundance: 0.0

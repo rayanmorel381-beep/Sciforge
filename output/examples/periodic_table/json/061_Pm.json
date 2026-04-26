@@ -1,0 +1,17 @@
+{
+  "category": "lanthanide",
+  "symbol": "Pm",
+  "name": "Promethium",
+  "config": "[Xe] 4f⁵ 6s²",
+  "mass": "144.912749",
+  "experiment_name": "Pm_Promethium_benchmark",
+  "precision": "f32",
+  "elapsed_ms": 4,
+  "iterations": 1000,
+  "avg_time_ns": 4666.57,
+  "min_time_ns": 4666.57,
+  "max_time_ns": 4666.57,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 250000.00,
+  "result": "Z=61 | Pm (Promethium) | 144.912749 u | lanthanide | [Xe] 4f⁵ 6s²"
+}

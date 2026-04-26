@@ -1,0 +1,16 @@
+[benchmark]
+category = "plant_biology"
+symbol = "WP"
+name = "Water potential"
+domain = "biology"
+test = "plant_biology::water_potential"
+experiment_name = "plant_biology::water_potential"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1887439.00
+min_time_ns = 1887439.00
+max_time_ns = 1887439.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

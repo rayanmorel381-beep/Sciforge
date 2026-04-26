@@ -1,0 +1,15 @@
+category: parasitology
+symbol: VBR
+name: Vector borne r0
+domain: biology
+test: "parasitology::vector_borne_r0"
+experiment_name: "parasitology::vector_borne_r0"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1930639.00
+min_time_ns: 1930639.00
+max_time_ns: 1930639.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

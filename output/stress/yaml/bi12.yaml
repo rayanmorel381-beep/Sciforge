@@ -1,0 +1,83 @@
+category: bi12
+count: 10
+entries:
+  - label: biology_111
+    symbol: SGP
+    name: bi111
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 2064
+    avg_time_ns: 2064000000.00
+  - label: biology_112
+    symbol: FF
+    name: bi112
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 2851
+    avg_time_ns: 2851000064.00
+  - label: biology_113
+    symbol: FR
+    name: bi113
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 5223
+    avg_time_ns: 5223000064.00
+  - label: biology_114
+    symbol: RWU
+    name: bi114
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 4965
+    avg_time_ns: 4965000192.00
+  - label: biology_115
+    symbol: SWC
+    name: bi115
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 1565
+    avg_time_ns: 1564999936.00
+  - label: biology_116
+    symbol: BMR
+    name: bi116
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 4937
+    avg_time_ns: 4936999936.00
+  - label: biology_117
+    symbol: BMI
+    name: bi117
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 5329
+    avg_time_ns: 5328999936.00
+  - label: biology_118
+    symbol: NB
+    name: bi118
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 5159
+    avg_time_ns: 5159000064.00
+  - label: biology_119
+    symbol: RER
+    name: bi119
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 2047
+    avg_time_ns: 2047000064.00
+  - label: biology_120
+    symbol: ERD
+    name: bi120
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 4883
+    avg_time_ns: 4882999808.00

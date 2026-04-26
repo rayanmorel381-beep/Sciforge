@@ -1,0 +1,15 @@
+category: Mesozoic
+count: 1
+entries:
+  - label: Deccan Traps
+    symbol: K
+    name: Deccan Traps
+    method: K-Ar
+    parent: ⁴⁰K
+    daughter: ⁴⁰Ar
+    ratio: 0.0050
+    half_life: 1.2480e9 years
+    decay_constant: 1.7598e-17 s⁻¹
+    computed_age: 84.1 Myr
+    expected_age: 66 Myr
+    avg_time_ns: 4590.98

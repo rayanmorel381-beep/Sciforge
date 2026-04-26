@@ -1,0 +1,15 @@
+category: electromagnetism
+symbol: ML
+name: Malus law
+domain: physics
+test: "electromagnetism::malus_law"
+experiment_name: "electromagnetism::malus_law"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2228739.00
+min_time_ns: 2228739.00
+max_time_ns: 2228739.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

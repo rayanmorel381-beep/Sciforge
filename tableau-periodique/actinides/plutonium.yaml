@@ -1,0 +1,98 @@
+element:
+  name: Plutonium
+  symbol: Pu
+  atomic_number: 94
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f⁶ 7s²"
+  electronegativity: 1.28
+  atomic_mass: 244.064204
+
+isotopes:
+  - name: Plutonium-238
+    symbol: "²³⁸Pu"
+    mass_number: 238
+    neutrons: 144
+    atomic_mass: 238.049560
+    half_life: 87.7
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Uranium-234
+    natural_abundance: 0.0
+
+  - name: Plutonium-239
+    symbol: "²³⁹Pu"
+    mass_number: 239
+    neutrons: 145
+    atomic_mass: 239.052163
+    half_life: 2.411e4
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Uranium-235
+    natural_abundance: 0.0
+
+  - name: Plutonium-240
+    symbol: "²⁴⁰Pu"
+    mass_number: 240
+    neutrons: 146
+    atomic_mass: 240.053814
+    half_life: 6563
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Uranium-236
+    natural_abundance: 0.0
+
+  - name: Plutonium-241
+    symbol: "²⁴¹Pu"
+    mass_number: 241
+    neutrons: 147
+    atomic_mass: 241.056852
+    half_life: 14.329
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Americium-241
+    natural_abundance: 0.0
+
+  - name: Plutonium-242
+    symbol: "²⁴²Pu"
+    mass_number: 242
+    neutrons: 148
+    atomic_mass: 242.058743
+    half_life: 3.75e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Uranium-238
+    natural_abundance: 0.0
+
+  - name: Plutonium-244
+    symbol: "²⁴⁴Pu"
+    mass_number: 244
+    neutrons: 150
+    atomic_mass: 244.064204
+    half_life: 8.0e7
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.9988
+        daughter: Uranium-240
+      - mode: spontaneous fission
+        branching_ratio: 0.0012
+        daughter: null
+    natural_abundance: 0.0

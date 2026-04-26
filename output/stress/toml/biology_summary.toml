@@ -1,0 +1,18 @@
+[benchmark]
+category = "biology"
+symbol = "SUM"
+name = "BI Summary"
+target = "biology"
+module = "summary"
+status = "ok"
+elapsed_ms = "620109"
+experiment_name = "biology_summary"
+precision = "f64"
+elapsed_ms = 620109
+iterations = 1
+avg_time_ns = 3388573696.00
+min_time_ns = 3388573696.00
+max_time_ns = 3388573696.00
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "tests_total=183 tests_ok=183 tests_failed=0 elapsed_sum_ms=620109 min_ms=245 max_ms=5835 avg_ms=3388.57"

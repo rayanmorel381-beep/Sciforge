@@ -1,0 +1,17 @@
+{
+  "category": "lanthanide",
+  "symbol": "Sm",
+  "name": "Samarium",
+  "config": "[Xe] 4f⁶ 6s²",
+  "mass": "150.36",
+  "experiment_name": "Sm_Samarium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 23,
+  "iterations": 5000,
+  "avg_time_ns": 4767.45,
+  "min_time_ns": 4767.45,
+  "max_time_ns": 4767.45,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 217391.30,
+  "result": "Z=62 | Sm (Samarium) | 150.36 u | lanthanide | [Xe] 4f⁶ 6s²"
+}

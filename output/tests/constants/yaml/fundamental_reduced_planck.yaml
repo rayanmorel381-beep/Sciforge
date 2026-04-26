@@ -1,0 +1,15 @@
+category: fundamental
+symbol: RP
+name: Reduced planck
+domain: constants
+test: "fundamental::reduced_planck"
+experiment_name: "fundamental::reduced_planck"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1104560.00
+min_time_ns: 1104560.00
+max_time_ns: 1104560.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

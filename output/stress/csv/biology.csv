@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_summary,f64,620109,1,3388573700,3388573700,3388573700,0,0.0016126197,tests_total=183 tests_ok=183 tests_failed=0 elapsed_sum_ms=620109 min_ms=245 max_ms=5835 avg_ms=3388.57,biology,SUM,BI Summary,biology,summary,ok,620109

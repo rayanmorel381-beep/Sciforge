@@ -1,0 +1,25 @@
+category: Ice Giant
+count: 2
+entries:
+  - label: Uranus
+    symbol: ⛢
+    name: Uranus
+    mass: 8.681e25 kg
+    radius: 25362 km
+    semi_major: 19.201 AU
+    kepler_period: 30727.34 days
+    circular_vel: 6.80 km/s
+    escape_vel: 21.38 km/s
+    hohmann_dv: 15.94 km/s
+    avg_time_ns: 1818.38
+  - label: Neptune
+    symbol: ♆
+    name: Neptune
+    mass: 1.024e26 kg
+    radius: 24622 km
+    semi_major: 30.048 AU
+    kepler_period: 60151.16 days
+    circular_vel: 5.43 km/s
+    escape_vel: 23.56 km/s
+    hohmann_dv: 15.71 km/s
+    avg_time_ns: 1813.08

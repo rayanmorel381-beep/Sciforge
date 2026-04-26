@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+interpolation::hermite_interpolate,f64,1,1,1660459,1660459,1660459,0,1000,pass,interpolation,HI,Hermite interpolate,maths,interpolation::hermite_interpolate
+interpolation::lagrange_interpolate,f64,1,1,1660540,1660540,1660540,0,1000,pass,interpolation,LI,Lagrange interpolate,maths,interpolation::lagrange_interpolate
+interpolation::linear_interpolate,f64,1,1,1987209,1987209,1987209,0,1000,pass,interpolation,LI,Linear interpolate,maths,interpolation::linear_interpolate

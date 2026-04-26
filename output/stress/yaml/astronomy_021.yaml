@@ -1,0 +1,17 @@
+category: as03
+symbol: LAD
+name: as021
+target: astronomy
+module: cosmology
+status: ok
+elapsed_ms: 1298
+experiment_name: astronomy_021
+precision: f64
+elapsed_ms: 1298
+iterations: 1
+avg_time_ns: 1298000000.00
+min_time_ns: 1298000000.00
+max_time_ns: 1298000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.77
+result: success=true code=Some(0) stdout_bytes=179 stderr_bytes=266

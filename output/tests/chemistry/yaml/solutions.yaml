@@ -1,0 +1,27 @@
+category: solutions
+count: 4
+entries:
+  - label: solutions_boiling_point_elevation
+    symbol: BPE
+    name: Boiling point elevation
+    domain: chemistry
+    test: "solutions::boiling_point_elevation"
+    avg_time_ns: 2250509.00
+  - label: solutions_freezing_point_depression
+    symbol: FPD
+    name: Freezing point depression
+    domain: chemistry
+    test: "solutions::freezing_point_depression"
+    avg_time_ns: 2644809.00
+  - label: solutions_osmotic_pressure
+    symbol: OP
+    name: Osmotic pressure
+    domain: chemistry
+    test: "solutions::osmotic_pressure"
+    avg_time_ns: 2594048.00
+  - label: solutions_raoult_law
+    symbol: RL
+    name: Raoult law
+    domain: chemistry
+    test: "solutions::raoult_law"
+    avg_time_ns: 2737569.00

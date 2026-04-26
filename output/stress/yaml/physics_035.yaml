@@ -1,0 +1,17 @@
+category: ph04
+symbol: BP
+name: ph035
+target: physics
+module: mechanics
+status: ok
+elapsed_ms: 4470
+experiment_name: physics_035
+precision: f64
+elapsed_ms: 4470
+iterations: 1
+avg_time_ns: 4470000128.00
+min_time_ns: 4470000128.00
+max_time_ns: 4470000128.00
+time_stddev: 0.0000
+iterations_per_sec: 0.22
+result: success=true code=Some(0) stdout_bytes=155 stderr_bytes=262

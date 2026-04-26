@@ -1,0 +1,79 @@
+element:
+  name: Cesium
+  symbol: Cs
+  atomic_number: 55
+  category: alkali metal
+  group: 1
+  period: 6
+  electron_configuration: "[Xe] 6s¹"
+  electronegativity: 0.79
+  atomic_mass: 132.90545196
+
+isotopes:
+  - name: Cesium-131
+    symbol: "¹³¹Cs"
+    mass_number: 131
+    neutrons: 76
+    atomic_mass: 130.905464
+    half_life: 9.689
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Xenon-131
+    natural_abundance: 0.0
+
+  - name: Cesium-133
+    symbol: "¹³³Cs"
+    mass_number: 133
+    neutrons: 78
+    atomic_mass: 132.905452
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "7/2+"
+
+  - name: Cesium-134
+    symbol: "¹³⁴Cs"
+    mass_number: 134
+    neutrons: 79
+    atomic_mass: 133.906714
+    half_life: 2.0652
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Barium-134
+    natural_abundance: 0.0
+
+  - name: Cesium-135
+    symbol: "¹³⁵Cs"
+    mass_number: 135
+    neutrons: 80
+    atomic_mass: 134.905977
+    half_life: 2.3e6
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Barium-135
+    natural_abundance: 0.0
+
+  - name: Cesium-137
+    symbol: "¹³⁷Cs"
+    mass_number: 137
+    neutrons: 82
+    atomic_mass: 136.907089
+    half_life: 30.1671
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Barium-137m
+    natural_abundance: 0.0

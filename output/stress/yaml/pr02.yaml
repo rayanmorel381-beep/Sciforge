@@ -1,0 +1,83 @@
+category: pr02
+count: 10
+entries:
+  - label: parser_011
+    symbol: CWE
+    name: pr011
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 2875
+    avg_time_ns: 2875000064.00
+  - label: parser_012
+    symbol: CWR
+    name: pr012
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4827
+    avg_time_ns: 4826999808.00
+  - label: parser_013
+    symbol: HA
+    name: pr013
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4874
+    avg_time_ns: 4873999872.00
+  - label: parser_014
+    symbol: HC
+    name: pr014
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4982
+    avg_time_ns: 4982000128.00
+  - label: parser_015
+    symbol: HD
+    name: pr015
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4563
+    avg_time_ns: 4562999808.00
+  - label: parser_016
+    symbol: HE
+    name: pr016
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4528
+    avg_time_ns: 4528000000.00
+  - label: parser_017
+    symbol: HMD
+    name: pr017
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 5041
+    avg_time_ns: 5040999936.00
+  - label: parser_018
+    symbol: HN
+    name: pr018
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4040
+    avg_time_ns: 4040000000.00
+  - label: parser_019
+    symbol: HPT
+    name: pr019
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 2861
+    avg_time_ns: 2860999936.00
+  - label: parser_020
+    symbol: HSR
+    name: pr020
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4699
+    avg_time_ns: 4698999808.00

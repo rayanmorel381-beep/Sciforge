@@ -1,0 +1,16 @@
+[benchmark]
+category = "evolution"
+symbol = "SR"
+name = "Substitution rate"
+domain = "biology"
+test = "evolution::substitution_rate"
+experiment_name = "evolution::substitution_rate"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1925159.00
+min_time_ns = 1925159.00
+max_time_ns = 1925159.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

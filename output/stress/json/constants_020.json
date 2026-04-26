@@ -1,0 +1,19 @@
+{
+  "category": "ct02",
+  "symbol": "GC",
+  "name": "ct020",
+  "target": "constants",
+  "module": "fundamental",
+  "status": "ok",
+  "elapsed_ms": "2487",
+  "experiment_name": "constants_020",
+  "precision": "f64",
+  "elapsed_ms": 2487,
+  "iterations": 1,
+  "avg_time_ns": 2487000064.00,
+  "min_time_ns": 2487000064.00,
+  "max_time_ns": 2487000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.40,
+  "result": "success=true code=Some(0) stdout_bytes=151 stderr_bytes=266"
+}

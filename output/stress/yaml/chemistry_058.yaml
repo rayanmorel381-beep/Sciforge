@@ -1,0 +1,17 @@
+category: ch06
+symbol: BO
+name: ch058
+target: chemistry
+module: molecular
+status: ok
+elapsed_ms: 4951
+experiment_name: chemistry_058
+precision: f64
+elapsed_ms: 4951
+iterations: 1
+avg_time_ns: 4951000064.00
+min_time_ns: 4951000064.00
+max_time_ns: 4951000064.00
+time_stddev: 0.0000
+iterations_per_sec: 0.20
+result: success=true code=Some(0) stdout_bytes=148 stderr_bytes=266

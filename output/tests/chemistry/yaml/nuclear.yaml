@@ -1,0 +1,21 @@
+category: nuclear
+count: 3
+entries:
+  - label: nuclear_binding_energy_per_nucleon
+    symbol: BEP
+    name: Binding energy per nucleon
+    domain: chemistry
+    test: "nuclear::binding_energy_per_nucleon"
+    avg_time_ns: 1726649.00
+  - label: nuclear_half_life_to_decay_constant
+    symbol: HLT
+    name: Half life to decay constant
+    domain: chemistry
+    test: "nuclear::half_life_to_decay_constant"
+    avg_time_ns: 1671649.00
+  - label: nuclear_q_value
+    symbol: QV
+    name: Q value
+    domain: chemistry
+    test: "nuclear::q_value"
+    avg_time_ns: 1667610.00

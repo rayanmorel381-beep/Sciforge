@@ -1,0 +1,19 @@
+{
+  "category": "ch05",
+  "symbol": "EF",
+  "name": "ch048",
+  "target": "chemistry",
+  "module": "green_chemistry",
+  "status": "ok",
+  "elapsed_ms": "3132",
+  "experiment_name": "chemistry_048",
+  "precision": "f64",
+  "elapsed_ms": 3132,
+  "iterations": 1,
+  "avg_time_ns": 3132000000.00,
+  "min_time_ns": 3132000000.00,
+  "max_time_ns": 3132000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.32,
+  "result": "success=true code=Some(0) stdout_bytes=152 stderr_bytes=214"
+}

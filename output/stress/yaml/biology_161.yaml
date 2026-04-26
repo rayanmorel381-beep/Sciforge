@@ -1,0 +1,17 @@
+category: bi17
+symbol: AHP
+name: bi161
+target: biology
+module: structural
+status: ok
+elapsed_ms: 4810
+experiment_name: biology_161
+precision: f64
+elapsed_ms: 4810
+iterations: 1
+avg_time_ns: 4809999872.00
+min_time_ns: 4809999872.00
+max_time_ns: 4809999872.00
+time_stddev: 0.0000
+iterations_per_sec: 0.21
+result: success=true code=Some(0) stdout_bytes=161 stderr_bytes=210

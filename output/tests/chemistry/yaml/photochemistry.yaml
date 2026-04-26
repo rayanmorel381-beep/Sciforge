@@ -1,0 +1,27 @@
+category: photochemistry
+count: 4
+entries:
+  - label: photochemistry_fret_efficiency
+    symbol: FE
+    name: Fret efficiency
+    domain: chemistry
+    test: "photochemistry::fret_efficiency"
+    avg_time_ns: 1840690.00
+  - label: photochemistry_photon_energy
+    symbol: PE
+    name: Photon energy
+    domain: chemistry
+    test: "photochemistry::photon_energy"
+    avg_time_ns: 1723029.00
+  - label: photochemistry_quantum_yield
+    symbol: QY
+    name: Quantum yield
+    domain: chemistry
+    test: "photochemistry::quantum_yield"
+    avg_time_ns: 1793759.00
+  - label: photochemistry_stern_volmer
+    symbol: SV
+    name: Stern volmer
+    domain: chemistry
+    test: "photochemistry::stern_volmer"
+    avg_time_ns: 1739479.00

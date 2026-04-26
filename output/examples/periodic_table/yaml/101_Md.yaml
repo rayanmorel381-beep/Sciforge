@@ -1,0 +1,15 @@
+category: actinide
+symbol: Md
+name: Mendelevium
+config: [Rn] 5f¹³ 7s²
+mass: 258.098431
+experiment_name: Md_Mendelevium_benchmark
+precision: f32
+elapsed_ms: 39
+iterations: 5000
+avg_time_ns: 7986.83
+min_time_ns: 7986.83
+max_time_ns: 7986.83
+time_stddev: 0.0000
+iterations_per_sec: 128205.12
+result: Z=101 | Md (Mendelevium) | 258.098431 u | actinide | [Rn] 5f¹³ 7s²

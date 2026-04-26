@@ -1,0 +1,51 @@
+category: unknown
+count: 8
+entries:
+  - label: 109_Mt
+    symbol: Mt
+    name: Meitnerium
+    config: [Rn] 5f¹⁴ 6d⁷ 7s²
+    mass: 278.156
+    avg_time_ns: 8830.90
+  - label: 110_Ds
+    symbol: Ds
+    name: Darmstadtium
+    config: [Rn] 5f¹⁴ 6d⁸ 7s²
+    mass: 281.165
+    avg_time_ns: 8897.69
+  - label: 111_Rg
+    symbol: Rg
+    name: Roentgenium
+    config: [Rn] 5f¹⁴ 6d⁹ 7s²
+    mass: 282.169
+    avg_time_ns: 8706.14
+  - label: 112_Cn
+    symbol: Cn
+    name: Copernicium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s²
+    mass: 285.177
+    avg_time_ns: 10072.36
+  - label: 113_Nh
+    symbol: Nh
+    name: Nihonium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹
+    mass: 286.182
+    avg_time_ns: 9439.48
+  - label: 114_Fl
+    symbol: Fl
+    name: Flerovium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²
+    mass: 289.19
+    avg_time_ns: 10116.05
+  - label: 115_Mc
+    symbol: Mc
+    name: Moscovium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³
+    mass: 290.196
+    avg_time_ns: 8778.98
+  - label: 116_Lv
+    symbol: Lv
+    name: Livermorium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴
+    mass: 293.205
+    avg_time_ns: 9629.90

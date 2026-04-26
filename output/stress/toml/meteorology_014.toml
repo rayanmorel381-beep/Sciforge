@@ -1,0 +1,18 @@
+[benchmark]
+category = "me02"
+symbol = "RND"
+name = "me014"
+target = "meteorology"
+module = "dynamics"
+status = "ok"
+elapsed_ms = "750"
+experiment_name = "meteorology_014"
+precision = "f64"
+elapsed_ms = 750
+iterations = 1
+avg_time_ns = 750000000.00
+min_time_ns = 750000000.00
+max_time_ns = 750000000.00
+time_stddev = 0.0000
+iterations_per_sec = 1.33
+result = "success=true code=Some(0) stdout_bytes=170 stderr_bytes=270"

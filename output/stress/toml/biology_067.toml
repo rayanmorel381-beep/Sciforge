@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi07"
+symbol = "ISI"
+name = "bi067"
+target = "biology"
+module = "endocrinology"
+status = "ok"
+elapsed_ms = "2876"
+experiment_name = "biology_067"
+precision = "f64"
+elapsed_ms = 2876
+iterations = 1
+avg_time_ns = 2876000000.00
+min_time_ns = 2876000000.00
+max_time_ns = 2876000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.35
+result = "success=true code=Some(0) stdout_bytes=167 stderr_bytes=262"

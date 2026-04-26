@@ -1,0 +1,152 @@
+element:
+  name: Beryllium
+  symbol: Be
+  atomic_number: 4
+  category: alkaline earth metal
+  group: 2
+  period: 2
+  electron_configuration: "1s² 2s²"
+  electronegativity: 1.57
+  atomic_mass: 9.0121831
+
+isotopes:
+  - name: Beryllium-5
+    symbol: "⁵Be"
+    mass_number: 5
+    neutrons: 1
+    atomic_mass: 5.04079
+    half_life: null
+    half_life_unit: null
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Beryllium-6
+    symbol: "⁶Be"
+    mass_number: 6
+    neutrons: 2
+    atomic_mass: 6.01973
+    half_life: 5.0e-21
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: two-proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Beryllium-7
+    symbol: "⁷Be"
+    mass_number: 7
+    neutrons: 3
+    atomic_mass: 7.016929
+    half_life: 53.22
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Lithium-7
+    natural_abundance: 0.0
+
+  - name: Beryllium-8
+    symbol: "⁸Be"
+    mass_number: 8
+    neutrons: 4
+    atomic_mass: 8.005305
+    half_life: 8.19e-17
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: "2 × Helium-4"
+    natural_abundance: 0.0
+
+  - name: Beryllium-9
+    symbol: "⁹Be"
+    mass_number: 9
+    neutrons: 5
+    atomic_mass: 9.012183
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "3/2-"
+
+  - name: Beryllium-10
+    symbol: "¹⁰Be"
+    mass_number: 10
+    neutrons: 6
+    atomic_mass: 10.013534
+    half_life: 1.387e6
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Boron-10
+    natural_abundance: trace
+
+  - name: Beryllium-11
+    symbol: "¹¹Be"
+    mass_number: 11
+    neutrons: 7
+    atomic_mass: 11.02166
+    half_life: 13.76
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.969
+        daughter: Boron-11
+      - mode: beta- alpha emission
+        branching_ratio: 0.031
+    natural_abundance: 0.0
+
+  - name: Beryllium-12
+    symbol: "¹²Be"
+    mass_number: 12
+    neutrons: 8
+    atomic_mass: 12.02692
+    half_life: 20.20
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.50
+      - mode: beta- neutron emission
+        branching_ratio: 0.50
+    natural_abundance: 0.0
+
+  - name: Beryllium-13
+    symbol: "¹³Be"
+    mass_number: 13
+    neutrons: 9
+    atomic_mass: 13.03569
+    half_life: 2.7e-21
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Beryllium-14
+    symbol: "¹⁴Be"
+    mass_number: 14
+    neutrons: 10
+    atomic_mass: 14.04289
+    half_life: 4.84
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 0.81
+      - mode: beta- (electron emission)
+        branching_ratio: 0.14
+      - mode: beta- two-neutron emission
+        branching_ratio: 0.05
+    natural_abundance: 0.0

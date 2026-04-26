@@ -1,0 +1,22 @@
+[benchmark]
+category = "Proterozoic"
+symbol = "U"
+name = "Bushveld Complex"
+method = "U-Pb (238)"
+parent = "²³⁸U"
+daughter = "²⁰⁶Pb"
+ratio = "0.3200"
+half_life = "4.4680e9 years"
+decay_constant = "4.9156e-18 s⁻¹"
+computed_age = "1789.7 Myr"
+expected_age = "2055 Myr"
+experiment_name = "Bushveld Complex_dating"
+precision = "f64"
+elapsed_ms = 18
+iterations = 5000
+avg_time_ns = 3766.45
+min_time_ns = 3766.45
+max_time_ns = 3766.45
+time_stddev = 0.0000
+iterations_per_sec = 277777.78
+result = "Bushveld Complex | U-Pb (238) | D/P=0.3200 | t½=4.4680e9 years | Computed: 1789.7 Myr | Expected: 2055 Myr"

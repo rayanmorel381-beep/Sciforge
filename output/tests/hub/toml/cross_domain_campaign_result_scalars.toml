@@ -1,0 +1,16 @@
+[benchmark]
+category = "cross_domain"
+symbol = "CRS"
+name = "Campaign result scalars"
+domain = "hub"
+test = "cross_domain::campaign_result_scalars"
+experiment_name = "cross_domain::campaign_result_scalars"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1794080.00
+min_time_ns = 1794080.00
+max_time_ns = 1794080.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

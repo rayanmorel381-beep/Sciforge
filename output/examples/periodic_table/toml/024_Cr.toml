@@ -1,0 +1,16 @@
+[benchmark]
+category = "transition metal"
+symbol = "Cr"
+name = "Chromium"
+config = "[Ar] 3d⁵ 4s¹"
+mass = "51.9961"
+experiment_name = "Cr_Chromium_benchmark"
+precision = "f64"
+elapsed_ms = 19
+iterations = 10000
+avg_time_ns = 1952.34
+min_time_ns = 1952.34
+max_time_ns = 1952.34
+time_stddev = 0.0000
+iterations_per_sec = 526315.81
+result = "Z=24 | Cr (Chromium) | 51.9961 u | transition metal | [Ar] 3d⁵ 4s¹"

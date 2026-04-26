@@ -1,0 +1,16 @@
+[benchmark]
+category = "alkali metal"
+symbol = "Fr"
+name = "Francium"
+config = "[Rn] 7s¹"
+mass = "223"
+experiment_name = "Fr_Francium_benchmark"
+precision = "f32"
+elapsed_ms = 67
+iterations = 10000
+avg_time_ns = 6769.47
+min_time_ns = 6769.47
+max_time_ns = 6769.47
+time_stddev = 0.0000
+iterations_per_sec = 149253.73
+result = "Z=87 | Fr (Francium) | 223 u | alkali metal | [Rn] 7s¹"

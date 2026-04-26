@@ -1,0 +1,27 @@
+category: Cenozoic
+count: 2
+entries:
+  - label: KT Boundary clay
+    symbol: C
+    name: KT Boundary clay
+    method: C-14
+    parent: ¹⁴C
+    daughter: ¹⁴N
+    ratio: 0.0000
+    half_life: 5.7300e3 years
+    decay_constant: 3.8330e-12 s⁻¹
+    computed_age: beyond range
+    expected_age: 65.0 kyr
+    avg_time_ns: 4595.33
+  - label: Lascaux paintings
+    symbol: C
+    name: Lascaux paintings
+    method: C-14
+    parent: ¹⁴C
+    daughter: ¹⁴N
+    ratio: 0.8200
+    half_life: 5.7300e3 years
+    decay_constant: 3.8330e-12 s⁻¹
+    computed_age: 1641 yr
+    expected_age: 17.0 kyr
+    avg_time_ns: 4756.22

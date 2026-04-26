@@ -1,0 +1,27 @@
+category: Hadean
+count: 2
+entries:
+  - label: Jack Hills zircon
+    symbol: U
+    name: Jack Hills zircon
+    method: U-Pb (238)
+    parent: ²³⁸U
+    daughter: ²⁰⁶Pb
+    ratio: 1.0200
+    half_life: 4.4680e9 years
+    decay_constant: 4.9156e-18 s⁻¹
+    computed_age: 4532.5 Myr
+    expected_age: 4400 Myr
+    avg_time_ns: 3817.20
+  - label: Acasta Gneiss
+    symbol: U
+    name: Acasta Gneiss
+    method: U-Pb (238)
+    parent: ²³⁸U
+    daughter: ²⁰⁶Pb
+    ratio: 0.8500
+    half_life: 4.4680e9 years
+    decay_constant: 4.9156e-18 s⁻¹
+    computed_age: 3965.7 Myr
+    expected_age: 4030 Myr
+    avg_time_ns: 3712.41

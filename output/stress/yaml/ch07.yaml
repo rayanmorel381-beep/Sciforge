@@ -1,0 +1,83 @@
+category: ch07
+count: 10
+entries:
+  - label: chemistry_061
+    symbol: MM
+    name: ch061
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 413
+    avg_time_ns: 413000000.00
+  - label: chemistry_062
+    symbol: BEP
+    name: ch062
+    target: chemistry
+    module: nuclear
+    status: ok
+    elapsed_ms: 5310
+    avg_time_ns: 5310000128.00
+  - label: chemistry_063
+    symbol: HLT
+    name: ch063
+    target: chemistry
+    module: nuclear
+    status: ok
+    elapsed_ms: 374
+    avg_time_ns: 374000000.00
+  - label: chemistry_064
+    symbol: QV
+    name: ch064
+    target: chemistry
+    module: nuclear
+    status: ok
+    elapsed_ms: 5278
+    avg_time_ns: 5278000128.00
+  - label: chemistry_065
+    symbol: DOU
+    name: ch065
+    target: chemistry
+    module: organic
+    status: ok
+    elapsed_ms: 4833
+    avg_time_ns: 4832999936.00
+  - label: chemistry_066
+    symbol: HE
+    name: ch066
+    target: chemistry
+    module: organic
+    status: ok
+    elapsed_ms: 2142
+    avg_time_ns: 2142000000.00
+  - label: chemistry_067
+    symbol: PCL
+    name: ch067
+    target: chemistry
+    module: organic
+    status: ok
+    elapsed_ms: 5195
+    avg_time_ns: 5194999808.00
+  - label: chemistry_068
+    symbol: FE
+    name: ch068
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 5006
+    avg_time_ns: 5006000128.00
+  - label: chemistry_069
+    symbol: PE
+    name: ch069
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 5568
+    avg_time_ns: 5568000000.00
+  - label: chemistry_070
+    symbol: QY
+    name: ch070
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 4873
+    avg_time_ns: 4872999936.00

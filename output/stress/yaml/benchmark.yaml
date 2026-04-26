@@ -1,0 +1,11 @@
+category: benchmark
+count: 1
+entries:
+  - label: benchmark_summary
+    symbol: SUM
+    name: BM Summary
+    target: benchmark
+    module: summary
+    status: ok
+    elapsed_ms: 75223
+    avg_time_ns: 2350718720.00

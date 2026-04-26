@@ -1,0 +1,101 @@
+element:
+  name: Polonium
+  symbol: Po
+  atomic_number: 84
+  category: post-transition metal
+  group: 16
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴"
+  electronegativity: 2.0
+  atomic_mass: 208.982430
+
+isotopes:
+  - name: Polonium-208
+    symbol: "²⁰⁸Po"
+    mass_number: 208
+    neutrons: 124
+    atomic_mass: 207.981246
+    half_life: 2.898
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Lead-204
+    natural_abundance: 0.0
+
+  - name: Polonium-209
+    symbol: "²⁰⁹Po"
+    mass_number: 209
+    neutrons: 125
+    atomic_mass: 208.982430
+    half_life: 125.2
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.9974
+        daughter: Lead-205
+      - mode: electron capture
+        branching_ratio: 0.0026
+        daughter: Bismuth-209
+    natural_abundance: 0.0
+
+  - name: Polonium-210
+    symbol: "²¹⁰Po"
+    mass_number: 210
+    neutrons: 126
+    atomic_mass: 209.982874
+    half_life: 138.376
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Lead-206
+    natural_abundance: 0.0
+
+  - name: Polonium-212
+    symbol: "²¹²Po"
+    mass_number: 212
+    neutrons: 128
+    atomic_mass: 211.988868
+    half_life: 299
+    half_life_unit: nanoseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Lead-208
+    natural_abundance: 0.0
+
+  - name: Polonium-214
+    symbol: "²¹⁴Po"
+    mass_number: 214
+    neutrons: 130
+    atomic_mass: 213.995201
+    half_life: 163.47
+    half_life_unit: microseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Lead-210
+    natural_abundance: 0.0
+
+  - name: Polonium-218
+    symbol: "²¹⁸Po"
+    mass_number: 218
+    neutrons: 134
+    atomic_mass: 218.008973
+    half_life: 3.098
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.9998
+        daughter: Lead-214
+      - mode: beta-
+        branching_ratio: 0.0002
+        daughter: Astatine-218
+    natural_abundance: 0.0

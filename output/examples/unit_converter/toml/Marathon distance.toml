@@ -1,0 +1,17 @@
+[benchmark]
+category = "Length"
+symbol = "km"
+name = "Marathon distance"
+from = "42.195 km"
+to = "2.621876e1 mi"
+conversion = "42.195 km → 2.621876e1 mi"
+experiment_name = "Marathon distance_convert"
+precision = "f64"
+elapsed_ms = 24
+iterations = 10000
+avg_time_ns = 2419.22
+min_time_ns = 2419.22
+max_time_ns = 2419.22
+time_stddev = 0.0000
+iterations_per_sec = 416666.66
+result = "Marathon distance | 42.195 km → 2.621876e1 mi"

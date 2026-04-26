@@ -1,0 +1,62 @@
+element:
+  name: Nobelium
+  symbol: "No"
+  atomic_number: 102
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 7s²"
+  electronegativity: 1.3
+  atomic_mass: 259.10103
+
+isotopes:
+  - name: Nobelium-253
+    symbol: "²⁵³No"
+    mass_number: 253
+    neutrons: 151
+    atomic_mass: 253.09068
+    half_life: 1.62
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.80
+        daughter: Fermium-249
+      - mode: electron_capture
+        branching_ratio: 0.20
+        daughter: Mendelevium-253
+    natural_abundance: 0.0
+
+  - name: Nobelium-255
+    symbol: "²⁵⁵No"
+    mass_number: 255
+    neutrons: 153
+    atomic_mass: 255.09324
+    half_life: 3.52
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.61
+        daughter: Fermium-251
+      - mode: electron_capture
+        branching_ratio: 0.39
+        daughter: Mendelevium-255
+    natural_abundance: 0.0
+
+  - name: Nobelium-259
+    symbol: "²⁵⁹No"
+    mass_number: 259
+    neutrons: 157
+    atomic_mass: 259.10103
+    half_life: 58
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.75
+        daughter: Fermium-255
+      - mode: electron_capture
+        branching_ratio: 0.25
+        daughter: Mendelevium-259
+    natural_abundance: 0.0

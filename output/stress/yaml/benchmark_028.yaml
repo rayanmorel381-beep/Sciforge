@@ -1,0 +1,17 @@
+category: bm03
+symbol: HRA
+name: bm028
+target: benchmark
+module: simulation
+status: ok
+elapsed_ms: 4504
+experiment_name: benchmark_028
+precision: f64
+elapsed_ms: 4504
+iterations: 1
+avg_time_ns: 4504000000.00
+min_time_ns: 4504000000.00
+max_time_ns: 4504000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.22
+result: success=true code=Some(0) stdout_bytes=161 stderr_bytes=214

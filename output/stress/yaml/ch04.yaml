@@ -1,0 +1,83 @@
+category: ch04
+count: 10
+entries:
+  - label: chemistry_031
+    symbol: CP
+    name: ch031
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 4704
+    avg_time_ns: 4704000000.00
+  - label: chemistry_032
+    symbol: FM
+    name: ch032
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 3897
+    avg_time_ns: 3896999936.00
+  - label: chemistry_033
+    symbol: NP
+    name: ch033
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 4503
+    avg_time_ns: 4503000064.00
+  - label: chemistry_034
+    symbol: BOD
+    name: ch034
+    target: chemistry
+    module: environmental
+    status: ok
+    elapsed_ms: 3310
+    avg_time_ns: 3310000128.00
+  - label: chemistry_035
+    symbol: DOS
+    name: ch035
+    target: chemistry
+    module: environmental
+    status: ok
+    elapsed_ms: 3432
+    avg_time_ns: 3432000000.00
+  - label: chemistry_036
+    symbol: HLS
+    name: ch036
+    target: chemistry
+    module: environmental
+    status: ok
+    elapsed_ms: 5112
+    avg_time_ns: 5112000000.00
+  - label: chemistry_037
+    symbol: ECF
+    name: ch037
+    target: chemistry
+    module: equilibrium
+    status: ok
+    elapsed_ms: 4563
+    avg_time_ns: 4562999808.00
+  - label: chemistry_038
+    symbol: RQ
+    name: ch038
+    target: chemistry
+    module: equilibrium
+    status: ok
+    elapsed_ms: 4401
+    avg_time_ns: 4400999936.00
+  - label: chemistry_039
+    symbol: VH
+    name: ch039
+    target: chemistry
+    module: equilibrium
+    status: ok
+    elapsed_ms: 4672
+    avg_time_ns: 4672000000.00
+  - label: chemistry_040
+    symbol: BL
+    name: ch040
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4014
+    avg_time_ns: 4014000128.00

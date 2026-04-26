@@ -1,0 +1,106 @@
+element:
+  name: Antimony
+  symbol: Sb
+  atomic_number: 51
+  category: metalloid
+  group: 15
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s² 5p³"
+  electronegativity: 2.05
+  atomic_mass: 121.760
+
+isotopes:
+  - name: Antimony-119
+    symbol: "¹¹⁹Sb"
+    mass_number: 119
+    neutrons: 68
+    atomic_mass: 118.903942
+    half_life: 38.19
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Tin-119
+    natural_abundance: 0.0
+
+  - name: Antimony-120
+    symbol: "¹²⁰Sb"
+    mass_number: 120
+    neutrons: 69
+    atomic_mass: 119.905072
+    half_life: 15.89
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Antimony-121
+    symbol: "¹²¹Sb"
+    mass_number: 121
+    neutrons: 70
+    atomic_mass: 120.903816
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.5721
+    nuclear_spin: "5/2+"
+
+  - name: Antimony-122
+    symbol: "¹²²Sb"
+    mass_number: 122
+    neutrons: 71
+    atomic_mass: 121.905174
+    half_life: 2.7238
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.974
+        daughter: Tellurium-122
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.026
+    natural_abundance: 0.0
+
+  - name: Antimony-123
+    symbol: "¹²³Sb"
+    mass_number: 123
+    neutrons: 72
+    atomic_mass: 122.904214
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.4279
+    nuclear_spin: "7/2+"
+
+  - name: Antimony-124
+    symbol: "¹²⁴Sb"
+    mass_number: 124
+    neutrons: 73
+    atomic_mass: 123.905936
+    half_life: 60.20
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Tellurium-124
+    natural_abundance: 0.0
+
+  - name: Antimony-125
+    symbol: "¹²⁵Sb"
+    mass_number: 125
+    neutrons: 74
+    atomic_mass: 124.905254
+    half_life: 2.75856
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Tellurium-125
+    natural_abundance: 0.0

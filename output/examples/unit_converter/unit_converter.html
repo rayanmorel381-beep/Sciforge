@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unit Converter — SI, CGS &amp; Common Unit Conversions</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0d1117;color:#c9d1d9;padding:2em;max-width:1800px;margin:0 auto}
+h1{color:#58a6ff;margin-bottom:.5em;font-size:2em}
+h2{color:#79c0ff;margin:1.5em 0 .5em;border-bottom:1px solid #21262d;padding-bottom:.3em}
+p{margin:.5em 0;line-height:1.6}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;font-size:.85em}
+th{background:#161b22;color:#58a6ff;position:sticky;top:0}
+tr:nth-child(even){background:#161b22}
+pre{background:#161b22;padding:1em;border-radius:6px;overflow-x:auto;max-height:600px;font-size:.8em}
+code{font-family:ui-monospace,monospace}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1em;margin:1em 0}
+.stat-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1em;text-align:center}
+.stat-card .num{font-size:2em;color:#58a6ff;font-weight:bold}
+.stat-card .lbl{font-size:.8em;color:#8b949e}
+.tabs{display:flex;gap:0;margin-top:1.5em;flex-wrap:wrap}
+.tab{padding:.6em 1.2em;cursor:pointer;background:#161b22;border:1px solid #30363d;border-bottom:none;border-radius:6px 6px 0 0;color:#8b949e;font-weight:600}
+.tab:hover{color:#c9d1d9}
+.tab.active{background:#0d1117;color:#58a6ff;border-bottom:1px solid #0d1117}
+.panel{display:none;border:1px solid #30363d;padding:1em;border-radius:0 6px 6px 6px}
+.panel.active{display:block}
+.fsel{width:100%;padding:.5em;margin-bottom:.8em;background:#161b22;color:#c9d1d9;border:1px solid #30363d;border-radius:4px;font-family:ui-monospace,monospace;font-size:.85em}
+.charts{display:grid;grid-template-columns:repeat(auto-fill,minmax(500px,1fr));gap:1.5em;margin:1em 0}
+.chart-box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1.2em}
+.chart-box h3{color:#79c0ff;font-size:.95em;margin-bottom:.8em}
+.ptable{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin:1.5em 0}
+.el{padding:6px 3px;text-align:center;border-radius:6px;min-height:68px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:transform .15s,box-shadow .15s;border:1px solid rgba(255,255,255,.06)}
+.el:hover{transform:scale(1.4);box-shadow:0 0 16px rgba(88,166,255,.6);z-index:10;position:relative}
+.el .z{font-size:.55em;opacity:.65;color:#8b949e}
+.el .sym{font-size:1.5em;font-weight:700;line-height:1.1}
+.el .mass{font-size:.5em;opacity:.55;color:#8b949e}
+.el .ns{font-size:.45em;opacity:.45;color:#58a6ff}
+.el .nm{font-size:.5em;opacity:.6;color:#8b949e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.empty{background:transparent}
+.marker{display:flex;align-items:center;justify-content:center;font-weight:700;color:#58a6ff;font-size:.85em}
+.legend{display:flex;flex-wrap:wrap;gap:.8em;margin:.8em 0;align-items:center}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.75em;color:#8b949e}
+.legend-swatch{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,.1)}
+@keyframes hl{0%{box-shadow:0 0 20px #58a6ff}100%{box-shadow:none}}
+.highlight{animation:hl 2s ease-out}
+.detail{display:none;margin:1.5em 0;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:1.5em;position:relative}
+.detail.open{display:grid;grid-template-columns:auto 1fr;gap:.6em 1.5em;align-items:baseline}
+.detail .close{position:absolute;top:10px;right:14px;cursor:pointer;color:#8b949e;font-size:1.4em;background:none;border:none}
+.detail .close:hover{color:#f85149}
+.detail .dk{color:#8b949e;font-size:.85em;text-align:right}
+.detail .dv{color:#c9d1d9;font-size:.95em;font-weight:600}
+.detail .dtitle{grid-column:1/-1;font-size:1.3em;font-weight:700;margin-bottom:.3em}
+.detail .files{grid-column:1/-1;display:flex;gap:.5em;margin-top:.5em}
+.detail .fbtn{padding:.3em .8em;background:#21262d;border:1px solid #30363d;border-radius:4px;color:#58a6ff;cursor:pointer;font-size:.8em;text-decoration:none}
+.detail .fbtn:hover{background:#30363d}
+.cat-0{background:linear-gradient(135deg,#1a3a1a,#0d0d0d);color:#7ee787}
+.cat-1{background:linear-gradient(135deg,#0a2a3a,#0d0d0d);color:#79c0ff}
+.cat-2{background:linear-gradient(135deg,#3a2a0a,#0d0d0d);color:#ffa657}
+.cat-3{background:linear-gradient(135deg,#3a1a2e,#0d0d0d);color:#d2a8ff}
+.cat-4{background:linear-gradient(135deg,#3a1a2a,#0d0d0d);color:#ff7eb6}
+.cat-5{background:linear-gradient(135deg,#3a2a1a,#0d0d0d);color:#f0b27a}
+.cat-6{background:linear-gradient(135deg,#1a3a2a,#0d0d0d);color:#7ee7b0}
+</style>
+</head>
+<body>
+
+<h1>Unit Converter — SI, CGS &amp; Common Unit Conversions</h1>
+<p>15 benchmark entries &mdash; 6 formats: CSV, JSON, YAML, TOML, BMK, Markdown.</p>
+
+<div class="stats">
+<div class="stat-card"><div class="num">15</div><div class="lbl">Elements</div></div>
+<div class="stat-card"><div class="num">6</div><div class="lbl">Formats</div></div>
+<div class="stat-card"><div class="num">93</div><div class="lbl">Files</div></div>
+</div>
+
+<h2>Interactive Grid</h2>
+<div class="legend">
+<div class="legend-item"><div class="legend-swatch cat-0"></div>Length</div>
+<div class="legend-item"><div class="legend-swatch cat-1"></div>Temperature</div>
+<div class="legend-item"><div class="legend-swatch cat-2"></div>Pressure</div>
+<div class="legend-item"><div class="legend-swatch cat-3"></div>Mass</div>
+<div class="legend-item"><div class="legend-swatch cat-4"></div>Energy</div>
+<div class="legend-item"><div class="legend-swatch cat-5"></div>Time</div>
+<div class="legend-item"><div class="legend-swatch cat-6"></div>Angle</div>
+</div>
+<div class="ptable">
+<div id="el-Marathon distance" class="el cat-0" style="grid-row:1;grid-column:1" title="Marathon distance - 2419.2ns" onclick="go('Marathon distance')"><div class="sym">km</div><div class="nm">Marathon distance</div><div class="ns">2419ns</div></div>
+<div id="el-Everest height" class="el cat-0" style="grid-row:1;grid-column:2" title="Everest height - 2472.6ns" onclick="go('Everest height')"><div class="sym">m</div><div class="nm">Everest height</div><div class="ns">2473ns</div></div>
+<div id="el-Light-year" class="el cat-0" style="grid-row:1;grid-column:3" title="Light-year - 2447.7ns" onclick="go('Light-year')"><div class="sym">ly</div><div class="nm">Light-year</div><div class="ns">2448ns</div></div>
+<div id="el-Human body temp" class="el cat-1" style="grid-row:1;grid-column:4" title="Human body temp - 3439.0ns" onclick="go('Human body temp')"><div class="sym">°C</div><div class="nm">Human body temp</div><div class="ns">3439ns</div></div>
+<div id="el-Liquid nitrogen" class="el cat-1" style="grid-row:1;grid-column:5" title="Liquid nitrogen - 3463.8ns" onclick="go('Liquid nitrogen')"><div class="sym">K</div><div class="nm">Liquid nitrogen</div><div class="ns">3464ns</div></div>
+<div id="el-Sun surface" class="el cat-1" style="grid-row:2;grid-column:1" title="Sun surface - 3407.4ns" onclick="go('Sun surface')"><div class="sym">K</div><div class="nm">Sun surface</div><div class="ns">3407ns</div></div>
+<div id="el-Atmospheric" class="el cat-2" style="grid-row:2;grid-column:2" title="Atmospheric - 3394.7ns" onclick="go('Atmospheric')"><div class="sym">Pa</div><div class="nm">Atmospheric</div><div class="ns">3395ns</div></div>
+<div id="el-Deep ocean" class="el cat-2" style="grid-row:2;grid-column:3" title="Deep ocean - 3402.8ns" onclick="go('Deep ocean')"><div class="sym">atm</div><div class="nm">Deep ocean</div><div class="ns">3403ns</div></div>
+<div id="el-Earth mass" class="el cat-3" style="grid-row:2;grid-column:4" title="Earth mass - 3899.8ns" onclick="go('Earth mass')"><div class="sym">kg</div><div class="nm">Earth mass</div><div class="ns">3900ns</div></div>
+<div id="el-Proton mass" class="el cat-3" style="grid-row:2;grid-column:5" title="Proton mass - 3953.6ns" onclick="go('Proton mass')"><div class="sym">kg</div><div class="nm">Proton mass</div><div class="ns">3954ns</div></div>
+<div id="el-1 eV" class="el cat-4" style="grid-row:3;grid-column:1" title="1 eV - 4721.1ns" onclick="go('1 eV')"><div class="sym">eV</div><div class="nm">1 eV</div><div class="ns">4721ns</div></div>
+<div id="el-TNT equivalent" class="el cat-4" style="grid-row:3;grid-column:2" title="TNT equivalent - 4737.5ns" onclick="go('TNT equivalent')"><div class="sym">J</div><div class="nm">TNT equivalent</div><div class="ns">4738ns</div></div>
+<div id="el-1 day" class="el cat-5" style="grid-row:3;grid-column:3" title="1 day - 4989.8ns" onclick="go('1 day')"><div class="sym">day</div><div class="nm">1 day</div><div class="ns">4990ns</div></div>
+<div id="el-1 year" class="el cat-5" style="grid-row:3;grid-column:4" title="1 year - 5427.9ns" onclick="go('1 year')"><div class="sym">year</div><div class="nm">1 year</div><div class="ns">5428ns</div></div>
+<div id="el-Right angle" class="el cat-6" style="grid-row:3;grid-column:5" title="Right angle - 5282.3ns" onclick="go('Right angle')"><div class="sym">deg</div><div class="nm">Right angle</div><div class="ns">5282ns</div></div>
+</div>
+
+<div id="detail" class="detail">
+<button class="close" onclick="closeDetail()">&times;</button>
+<div class="dtitle" id="d-title"></div>
+<div id="d-tags"></div>
+<div class="dk">Precision</div><div class="dv" id="d-prec"></div>
+<div class="dk">Iterations</div><div class="dv" id="d-iter"></div>
+<div class="dk">Avg Time</div><div class="dv" id="d-avg"></div>
+<div class="dk">Min Time</div><div class="dv" id="d-min"></div>
+<div class="dk">Max Time</div><div class="dv" id="d-max"></div>
+<div class="dk">Std Dev</div><div class="dv" id="d-std"></div>
+<div class="dk">Iters/sec</div><div class="dv" id="d-ips"></div>
+<div class="files" id="d-files"></div>
+</div>
+
+<h2>Data Formats</h2>
+<div class="tabs">
+<div class="tab active" onclick="switchTab(event,'csv')">CSV</div>
+<div class="tab" onclick="switchTab(event,'json')">JSON</div>
+<div class="tab" onclick="switchTab(event,'yaml')">YAML</div>
+<div class="tab" onclick="switchTab(event,'toml')">TOML</div>
+<div class="tab" onclick="switchTab(event,'bmk')">BMK</div>
+<div class="tab" onclick="switchTab(event,'mdprev')">Markdown</div>
+</div>
+<div id="csv" class="panel active">
+<select class="fsel" onchange="showFile('csv',this.value)">
+<option>Angle.csv</option>
+<option>Energy.csv</option>
+<option>Length.csv</option>
+<option>Mass.csv</option>
+<option>Pressure.csv</option>
+<option>Temperature.csv</option>
+<option>Time.csv</option>
+<option>all.csv</option>
+</select>
+<div id="csv-code" style="overflow-x:auto;max-height:600px;overflow-y:auto"></div>
+</div>
+<div id="json" class="panel">
+<select class="fsel" onchange="showFile('json',this.value)">
+<option>1 day.json</option>
+<option>1 eV.json</option>
+<option>1 year.json</option>
+<option>Atmospheric.json</option>
+<option>Deep ocean.json</option>
+<option>Earth mass.json</option>
+<option>Everest height.json</option>
+<option>Human body temp.json</option>
+<option>Light-year.json</option>
+<option>Liquid nitrogen.json</option>
+<option>Marathon distance.json</option>
+<option>Proton mass.json</option>
+<option>Right angle.json</option>
+<option>Sun surface.json</option>
+<option>TNT equivalent.json</option>
+<option>summary.json</option>
+</select>
+<pre><code id="json-code"></code></pre>
+</div>
+<div id="yaml" class="panel">
+<select class="fsel" onchange="showFile('yaml',this.value)">
+<option>1 day.yaml</option>
+<option>1 eV.yaml</option>
+<option>1 year.yaml</option>
+<option>Angle.yaml</option>
+<option>Atmospheric.yaml</option>
+<option>Deep ocean.yaml</option>
+<option>Earth mass.yaml</option>
+<option>Energy.yaml</option>
+<option>Everest height.yaml</option>
+<option>Human body temp.yaml</option>
+<option>Length.yaml</option>
+<option>Light-year.yaml</option>
+<option>Liquid nitrogen.yaml</option>
+<option>Marathon distance.yaml</option>
+<option>Mass.yaml</option>
+<option>Pressure.yaml</option>
+<option>Proton mass.yaml</option>
+<option>Right angle.yaml</option>
+<option>Sun surface.yaml</option>
+<option>TNT equivalent.yaml</option>
+<option>Temperature.yaml</option>
+<option>Time.yaml</option>
+<option>summary.yaml</option>
+</select>
+<pre><code id="yaml-code"></code></pre>
+</div>
+<div id="toml" class="panel">
+<select class="fsel" onchange="showFile('toml',this.value)">
+<option>1 day.toml</option>
+<option>1 eV.toml</option>
+<option>1 year.toml</option>
+<option>Atmospheric.toml</option>
+<option>Deep ocean.toml</option>
+<option>Earth mass.toml</option>
+<option>Everest height.toml</option>
+<option>Human body temp.toml</option>
+<option>Light-year.toml</option>
+<option>Liquid nitrogen.toml</option>
+<option>Marathon distance.toml</option>
+<option>Proton mass.toml</option>
+<option>Right angle.toml</option>
+<option>Sun surface.toml</option>
+<option>TNT equivalent.toml</option>
+<option>summary.toml</option>
+</select>
+<pre><code id="toml-code"></code></pre>
+</div>
+<div id="bmk" class="panel">
+<select class="fsel" onchange="showFile('bmk',this.value)">
+<option>1 day.bmk</option>
+<option>1 eV.bmk</option>
+<option>1 year.bmk</option>
+<option>Atmospheric.bmk</option>
+<option>Deep ocean.bmk</option>
+<option>Earth mass.bmk</option>
+<option>Everest height.bmk</option>
+<option>Human body temp.bmk</option>
+<option>Light-year.bmk</option>
+<option>Liquid nitrogen.bmk</option>
+<option>Marathon distance.bmk</option>
+<option>Proton mass.bmk</option>
+<option>Right angle.bmk</option>
+<option>Sun surface.bmk</option>
+<option>TNT equivalent.bmk</option>
+</select>
+<pre><code id="bmk-code"></code></pre>
+</div>
+<div id="mdprev" class="panel" style="max-height:700px;overflow-y:auto">
+<h2 style="color:#58a6ff;border-bottom:1px solid #21262d;padding-bottom:.3em;margin-bottom:.5em">Unit Converter — SI, CGS &amp; Common Unit Conversions</h2>
+<p style="line-height:1.6;margin:.4em 0">15 benchmark entries across 5 formats.</p>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Grid</h3>
+<pre><code>  Length          :  km    m   ly
+  Temperature     :  °C    K    K
+  Pressure        :  Pa  atm
+  Mass            :  kg   kg
+  Energy          :  eV    J
+  Time            : day  year
+  Angle           : deg
+</code></pre>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Directory Layout</h3>
+<pre><code>csv/
+  all.csv
+json/
+  {label}.json
+  summary.json
+yaml/
+  {label}.yaml
+  summary.yaml
+toml/
+  {label}.toml
+  summary.toml
+bmk/
+  {label}.bmk
+benchmark.html
+benchmark.md
+</code></pre>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Results</h3>
+<table>
+<thead>
+<tr><th>Label</th><th>category</th><th>symbol</th><th>name</th><th>from</th><th>to</th><th>conversion</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
+</thead><tbody>
+<tr><td>Marathon distance</td><td>Length</td><td>km</td><td>Marathon distance</td><td>42.195 km</td><td>2.621876e1 mi</td><td>42.195 km → 2.621876e1 mi</td><td>f64</td><td>10000</td><td>2419.22</td><td>416666.66</td></tr>
+<tr><td>Everest height</td><td>Length</td><td>m</td><td>Everest height</td><td>8848.86 m</td><td>2.903169e4 ft</td><td>8848.86 m → 2.903169e4 ft</td><td>f64</td><td>10000</td><td>2472.56</td><td>416666.66</td></tr>
+<tr><td>Light-year</td><td>Length</td><td>ly</td><td>Light-year</td><td>1 ly</td><td>9.460730e12 km</td><td>1 ly → 9.460730e12 km</td><td>f64</td><td>10000</td><td>2447.65</td><td>416666.66</td></tr>
+<tr><td>Human body temp</td><td>Temperature</td><td>°C</td><td>Human body temp</td><td>37 °C</td><td>3.101500e2 K</td><td>37 °C → 3.101500e2 K</td><td>f64</td><td>10000</td><td>3439.03</td><td>294117.66</td></tr>
+<tr><td>Liquid nitrogen</td><td>Temperature</td><td>K</td><td>Liquid nitrogen</td><td>77.36 K</td><td>-1.957900e2 °C</td><td>77.36 K → -1.957900e2 °C</td><td>f64</td><td>10000</td><td>3463.80</td><td>294117.66</td></tr>
+<tr><td>Sun surface</td><td>Temperature</td><td>K</td><td>Sun surface</td><td>5778 K</td><td>9.940730e3 °F</td><td>5778 K → 9.940730e3 °F</td><td>f64</td><td>10000</td><td>3407.44</td><td>294117.66</td></tr>
+<tr><td>Atmospheric</td><td>Pressure</td><td>Pa</td><td>Atmospheric</td><td>101325 Pa</td><td>1.000000e0 atm</td><td>101325 Pa → 1.000000e0 atm</td><td>f64</td><td>10000</td><td>3394.73</td><td>303030.31</td></tr>
+<tr><td>Deep ocean</td><td>Pressure</td><td>atm</td><td>Deep ocean</td><td>1100 atm</td><td>1.114575e8 Pa</td><td>1100 atm → 1.114575e8 Pa</td><td>f64</td><td>10000</td><td>3402.82</td><td>294117.66</td></tr>
+<tr><td>Earth mass</td><td>Mass</td><td>kg</td><td>Earth mass</td><td>5972000000000000000000000 kg</td><td>1.316601e25 lb</td><td>5972000000000000000000000 kg → 1.316601e25 lb</td><td>f64</td><td>10000</td><td>3899.77</td><td>263157.91</td></tr>
+<tr><td>Proton mass</td><td>Mass</td><td>kg</td><td>Proton mass</td><td>0.000000000000000000000000001672 kg</td><td>1.006902e0 amu</td><td>0.000000000000000000000000001672 kg → 1.006902e0 amu</td><td>f64</td><td>10000</td><td>3953.62</td><td>256410.25</td></tr>
+<tr><td>1 eV</td><td>Energy</td><td>eV</td><td>1 eV</td><td>1 eV</td><td>1.602177e-19 J</td><td>1 eV → 1.602177e-19 J</td><td>f64</td><td>10000</td><td>4721.06</td><td>212765.95</td></tr>
+<tr><td>TNT equivalent</td><td>Energy</td><td>J</td><td>TNT equivalent</td><td>4184000000 J</td><td>1.000000e9 cal</td><td>4184000000 J → 1.000000e9 cal</td><td>f64</td><td>10000</td><td>4737.55</td><td>212765.95</td></tr>
+<tr><td>1 day</td><td>Time</td><td>day</td><td>1 day</td><td>1 day</td><td>8.640000e4 s</td><td>1 day → 8.640000e4 s</td><td>f64</td><td>10000</td><td>4989.79</td><td>204081.62</td></tr>
+<tr><td>1 year</td><td>Time</td><td>year</td><td>1 year</td><td>1 year</td><td>8.766000e3 h</td><td>1 year → 8.766000e3 h</td><td>f64</td><td>10000</td><td>5427.91</td><td>185185.19</td></tr>
+<tr><td>Right angle</td><td>Angle</td><td>deg</td><td>Right angle</td><td>90 deg</td><td>1.570796e0 rad</td><td>90 deg → 1.570796e0 rad</td><td>f64</td><td>10000</td><td>5282.32</td><td>192307.69</td></tr>
+</tbody></table>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
+<p style="line-height:1.6;margin:.4em 0">### Category Distribution</p>
+<table>
+<thead>
+<tr><th>Category</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
+</thead><tbody>
+<tr><td>Length</td><td>3</td><td>2446.48</td><td>2419.22</td><td>2472.56</td></tr>
+<tr><td>Temperature</td><td>3</td><td>3436.75</td><td>3407.44</td><td>3463.80</td></tr>
+<tr><td>Pressure</td><td>2</td><td>3398.78</td><td>3394.73</td><td>3402.82</td></tr>
+<tr><td>Mass</td><td>2</td><td>3926.69</td><td>3899.77</td><td>3953.62</td></tr>
+<tr><td>Energy</td><td>2</td><td>4729.31</td><td>4721.06</td><td>4737.55</td></tr>
+<tr><td>Time</td><td>2</td><td>5208.85</td><td>4989.79</td><td>5427.91</td></tr>
+<tr><td>Angle</td><td>1</td><td>5282.32</td><td>5282.32</td><td>5282.32</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>Marathon distance</td><td>2419.22</td></tr>
+<tr><td>2</td><td>Light-year</td><td>2447.65</td></tr>
+<tr><td>3</td><td>Everest height</td><td>2472.56</td></tr>
+<tr><td>4</td><td>Atmospheric</td><td>3394.73</td></tr>
+<tr><td>5</td><td>Deep ocean</td><td>3402.82</td></tr>
+<tr><td>6</td><td>Sun surface</td><td>3407.44</td></tr>
+<tr><td>7</td><td>Human body temp</td><td>3439.03</td></tr>
+<tr><td>8</td><td>Liquid nitrogen</td><td>3463.80</td></tr>
+<tr><td>9</td><td>Earth mass</td><td>3899.77</td></tr>
+<tr><td>10</td><td>Proton mass</td><td>3953.62</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>1 year</td><td>5427.91</td></tr>
+<tr><td>2</td><td>Right angle</td><td>5282.32</td></tr>
+<tr><td>3</td><td>1 day</td><td>4989.79</td></tr>
+<tr><td>4</td><td>TNT equivalent</td><td>4737.55</td></tr>
+<tr><td>5</td><td>1 eV</td><td>4721.06</td></tr>
+<tr><td>6</td><td>Proton mass</td><td>3953.62</td></tr>
+<tr><td>7</td><td>Earth mass</td><td>3899.77</td></tr>
+<tr><td>8</td><td>Liquid nitrogen</td><td>3463.80</td></tr>
+<tr><td>9</td><td>Human body temp</td><td>3439.03</td></tr>
+<tr><td>10</td><td>Sun surface</td><td>3407.44</td></tr>
+</tbody></table>
+</div>
+
+<h2>Analytics</h2>
+<div class="charts">
+<div class="chart-box">
+<h3>Category Distribution</h3>
+<svg viewBox="0 0 650 206" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Length</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Temperature</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="604" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Pressure</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="286" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="460" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Mass</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="286" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="460" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="130" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Energy</text>
+<rect x="168" y="116" width="430" height="22" rx="4" fill="#3a1a2a"/>
+<rect x="168" y="116" width="286" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="460" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="158" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Time</text>
+<rect x="168" y="144" width="430" height="22" rx="4" fill="#3a2a1a"/>
+<rect x="168" y="144" width="286" height="22" rx="4" fill="#f0b27a" opacity=".8"/>
+<text x="460" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="186" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Angle</text>
+<rect x="168" y="172" width="430" height="22" rx="4" fill="#1a3a2a"/>
+<rect x="168" y="172" width="143" height="22" rx="4" fill="#7ee7b0" opacity=".8"/>
+<text x="317" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Average Time per Category (ns)</h3>
+<svg viewBox="0 0 650 206" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Length</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="199" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="373" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2446.5</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Temperature</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="279" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="453" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3436.8</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Pressure</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="276" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="450" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3398.8</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Mass</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="319" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="493" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3926.7</text>
+<text x="160" y="130" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Energy</text>
+<rect x="168" y="116" width="430" height="22" rx="4" fill="#3a1a2a"/>
+<rect x="168" y="116" width="384" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="558" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4729.3</text>
+<text x="160" y="158" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Time</text>
+<rect x="168" y="144" width="430" height="22" rx="4" fill="#3a2a1a"/>
+<rect x="168" y="144" width="424" height="22" rx="4" fill="#f0b27a" opacity=".8"/>
+<text x="598" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5208.8</text>
+<text x="160" y="186" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Angle</text>
+<rect x="168" y="172" width="430" height="22" rx="4" fill="#1a3a2a"/>
+<rect x="168" y="172" width="430" height="22" rx="4" fill="#7ee7b0" opacity=".8"/>
+<text x="604" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5282.3</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Fastest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Marathon distance</text>
+<rect x="168" y="4" width="191" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="365" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2419.2 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Light-year</text>
+<rect x="168" y="32" width="193" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="367" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2447.7 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Everest height</text>
+<rect x="168" y="60" width="195" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="369" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2472.6 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Atmospheric</text>
+<rect x="168" y="88" width="268" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="442" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3394.7 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Deep ocean</text>
+<rect x="168" y="116" width="269" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="443" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3402.8 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sun surface</text>
+<rect x="168" y="144" width="269" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="443" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3407.4 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Human body temp</text>
+<rect x="168" y="172" width="272" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="446" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3439.0 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Liquid nitrogen</text>
+<rect x="168" y="200" width="274" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="448" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3463.8 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Earth mass</text>
+<rect x="168" y="228" width="308" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="482" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3899.8 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Proton mass</text>
+<rect x="168" y="256" width="313" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="487" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3953.6 ns</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Slowest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">1 year</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#f0b27a" opacity=".8"/>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5427.9 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Right angle</text>
+<rect x="168" y="32" width="418" height="22" rx="4" fill="#7ee7b0" opacity=".8"/>
+<text x="592" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5282.3 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">1 day</text>
+<rect x="168" y="60" width="395" height="22" rx="4" fill="#f0b27a" opacity=".8"/>
+<text x="569" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4989.8 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">TNT equivalent</text>
+<rect x="168" y="88" width="375" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="549" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4737.5 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">1 eV</text>
+<rect x="168" y="116" width="374" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="548" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4721.1 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Proton mass</text>
+<rect x="168" y="144" width="313" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="487" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3953.6 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Earth mass</text>
+<rect x="168" y="172" width="308" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="482" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3899.8 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Liquid nitrogen</text>
+<rect x="168" y="200" width="274" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="448" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3463.8 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Human body temp</text>
+<rect x="168" y="228" width="272" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="446" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3439.0 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sun surface</text>
+<rect x="168" y="256" width="269" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="443" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3407.4 ns</text>
+</svg>
+</div>
+
+<div class="chart-box" style="grid-column:1/-1">
+<h3>Category Statistics</h3>
+<svg viewBox="0 0 900 248" style="width:100%;max-width:900px">
+<rect x="0" y="4" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
+<text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">Length</text>
+<text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=3</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 2446.5 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 2419.2 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 2472.6 ns</text>
+<rect x="0" y="38" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="38" width="4" height="28" rx="2" fill="#79c0ff"/>
+<text x="14" y="52" fill="#79c0ff" font-size="12" font-weight="bold" dominant-baseline="middle">Temperature</text>
+<text x="250" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">n=3</text>
+<text x="350" y="52" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 3436.8 ns</text>
+<text x="520" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">min 3407.4 ns</text>
+<text x="680" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">max 3463.8 ns</text>
+<rect x="0" y="72" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="72" width="4" height="28" rx="2" fill="#ffa657"/>
+<text x="14" y="86" fill="#ffa657" font-size="12" font-weight="bold" dominant-baseline="middle">Pressure</text>
+<text x="250" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="86" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 3398.8 ns</text>
+<text x="520" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">min 3394.7 ns</text>
+<text x="680" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">max 3402.8 ns</text>
+<rect x="0" y="106" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="106" width="4" height="28" rx="2" fill="#d2a8ff"/>
+<text x="14" y="120" fill="#d2a8ff" font-size="12" font-weight="bold" dominant-baseline="middle">Mass</text>
+<text x="250" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="120" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 3926.7 ns</text>
+<text x="520" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">min 3899.8 ns</text>
+<text x="680" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">max 3953.6 ns</text>
+<rect x="0" y="140" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="140" width="4" height="28" rx="2" fill="#ff7eb6"/>
+<text x="14" y="154" fill="#ff7eb6" font-size="12" font-weight="bold" dominant-baseline="middle">Energy</text>
+<text x="250" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="154" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 4729.3 ns</text>
+<text x="520" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">min 4721.1 ns</text>
+<text x="680" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">max 4737.5 ns</text>
+<rect x="0" y="174" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="174" width="4" height="28" rx="2" fill="#f0b27a"/>
+<text x="14" y="188" fill="#f0b27a" font-size="12" font-weight="bold" dominant-baseline="middle">Time</text>
+<text x="250" y="188" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="188" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 5208.8 ns</text>
+<text x="520" y="188" fill="#8b949e" font-size="11" dominant-baseline="middle">min 4989.8 ns</text>
+<text x="680" y="188" fill="#8b949e" font-size="11" dominant-baseline="middle">max 5427.9 ns</text>
+<rect x="0" y="208" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="208" width="4" height="28" rx="2" fill="#7ee7b0"/>
+<text x="14" y="222" fill="#7ee7b0" font-size="12" font-weight="bold" dominant-baseline="middle">Angle</text>
+<text x="250" y="222" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
+<text x="350" y="222" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 5282.3 ns</text>
+<text x="520" y="222" fill="#8b949e" font-size="11" dominant-baseline="middle">min 5282.3 ns</text>
+<text x="680" y="222" fill="#8b949e" font-size="11" dominant-baseline="middle">max 5282.3 ns</text>
+</svg>
+</div>
+
+</div>
+
+<script>
+var F={
+csv:{
+"Angle.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\nRight angle_convert,f64,52,10000,5282.3174,5282.3174,5282.3174,0,192307.69,Right angle | 90 deg → 1.570796e0 rad,Angle,deg,Right angle,90 deg,1.570796e0 rad,90 deg → 1.570796e0 rad\n",
+"Energy.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\n1 eV_convert,f64,47,10000,4721.063,4721.063,4721.063,0,212765.95,1 eV | 1 eV → 1.602177e-19 J,Energy,eV,1 eV,1 eV,1.602177e-19 J,1 eV → 1.602177e-19 J\nTNT equivalent_convert,f64,47,10000,4737.55,4737.55,4737.55,0,212765.95,TNT equivalent | 4184000000 J → 1.000000e9 cal,Energy,J,TNT equivalent,4184000000 J,1.000000e9 cal,4184000000 J → 1.000000e9 cal\n",
+"Length.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\nMarathon distance_convert,f64,24,10000,2419.2188,2419.2188,2419.2188,0,416666.66,Marathon distance | 42.195 km → 2.621876e1 mi,Length,km,Marathon distance,42.195 km,2.621876e1 mi,42.195 km → 2.621876e1 mi\nEverest height_convert,f64,24,10000,2472.558,2472.558,2472.558,0,416666.66,Everest height | 8848.86 m → 2.903169e4 ft,Length,m,Everest height,8848.86 m,2.903169e4 ft,8848.86 m → 2.903169e4 ft\nLight-year_convert,f64,24,10000,2447.654,2447.654,2447.654,0,416666.66,Light-year | 1 ly → 9.460730e12 km,Length,ly,Light-year,1 ly,9.460730e12 km,1 ly → 9.460730e12 km\n",
+"Mass.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\nEarth mass_convert,f64,38,10000,3899.7712,3899.7712,3899.7712,0,263157.9,Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb,Mass,kg,Earth mass,5972000000000000000000000 kg,1.316601e25 lb,5972000000000000000000000 kg → 1.316601e25 lb\nProton mass_convert,f64,39,10000,3953.6165,3953.6165,3953.6165,0,256410.25,Proton mass | 0.000000000000000000000000001672 kg → 1.006902e0 amu,Mass,kg,Proton mass,0.000000000000000000000000001672 kg,1.006902e0 amu,0.000000000000000000000000001672 kg → 1.006902e0 amu\n",
+"Pressure.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\nAtmospheric_convert,f64,33,10000,3394.7344,3394.7344,3394.7344,0,303030.3,Atmospheric | 101325 Pa → 1.000000e0 atm,Pressure,Pa,Atmospheric,101325 Pa,1.000000e0 atm,101325 Pa → 1.000000e0 atm\nDeep ocean_convert,f64,34,10000,3402.8184,3402.8184,3402.8184,0,294117.66,Deep ocean | 1100 atm → 1.114575e8 Pa,Pressure,atm,Deep ocean,1100 atm,1.114575e8 Pa,1100 atm → 1.114575e8 Pa\n",
+"Temperature.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\nHuman body temp_convert,f64,34,10000,3439.0276,3439.0276,3439.0276,0,294117.66,Human body temp | 37 °C → 3.101500e2 K,Temperature,°C,Human body temp,37 °C,3.101500e2 K,37 °C → 3.101500e2 K\nLiquid nitrogen_convert,f64,34,10000,3463.7964,3463.7964,3463.7964,0,294117.66,Liquid nitrogen | 77.36 K → -1.957900e2 °C,Temperature,K,Liquid nitrogen,77.36 K,-1.957900e2 °C,77.36 K → -1.957900e2 °C\nSun surface_convert,f64,34,10000,3407.4375,3407.4375,3407.4375,0,294117.66,Sun surface | 5778 K → 9.940730e3 °F,Temperature,K,Sun surface,5778 K,9.940730e3 °F,5778 K → 9.940730e3 °F\n",
+"Time.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\n1 day_convert,f64,49,10000,4989.7856,4989.7856,4989.7856,0,204081.63,1 day | 1 day → 8.640000e4 s,Time,day,1 day,1 day,8.640000e4 s,1 day → 8.640000e4 s\n1 year_convert,f64,54,10000,5427.91,5427.91,5427.91,0,185185.19,1 year | 1 year → 8.766000e3 h,Time,year,1 year,1 year,8.766000e3 h,1 year → 8.766000e3 h\n",
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion\nMarathon distance_convert,f64,24,10000,2419.2188,2419.2188,2419.2188,0,416666.66,Marathon distance | 42.195 km → 2.621876e1 mi,Length,km,Marathon distance,42.195 km,2.621876e1 mi,42.195 km → 2.621876e1 mi\nEverest height_convert,f64,24,10000,2472.558,2472.558,2472.558,0,416666.66,Everest height | 8848.86 m → 2.903169e4 ft,Length,m,Everest height,8848.86 m,2.903169e4 ft,8848.86 m → 2.903169e4 ft\nLight-year_convert,f64,24,10000,2447.654,2447.654,2447.654,0,416666.66,Light-year | 1 ly → 9.460730e12 km,Length,ly,Light-year,1 ly,9.460730e12 km,1 ly → 9.460730e12 km\nHuman body temp_convert,f64,34,10000,3439.0276,3439.0276,3439.0276,0,294117.66,Human body temp | 37 °C → 3.101500e2 K,Temperature,°C,Human body temp,37 °C,3.101500e2 K,37 °C → 3.101500e2 K\nLiquid nitrogen_convert,f64,34,10000,3463.7964,3463.7964,3463.7964,0,294117.66,Liquid nitrogen | 77.36 K → -1.957900e2 °C,Temperature,K,Liquid nitrogen,77.36 K,-1.957900e2 °C,77.36 K → -1.957900e2 °C\nSun surface_convert,f64,34,10000,3407.4375,3407.4375,3407.4375,0,294117.66,Sun surface | 5778 K → 9.940730e3 °F,Temperature,K,Sun surface,5778 K,9.940730e3 °F,5778 K → 9.940730e3 °F\nAtmospheric_convert,f64,33,10000,3394.7344,3394.7344,3394.7344,0,303030.3,Atmospheric | 101325 Pa → 1.000000e0 atm,Pressure,Pa,Atmospheric,101325 Pa,1.000000e0 atm,101325 Pa → 1.000000e0 atm\nDeep ocean_convert,f64,34,10000,3402.8184,3402.8184,3402.8184,0,294117.66,Deep ocean | 1100 atm → 1.114575e8 Pa,Pressure,atm,Deep ocean,1100 atm,1.114575e8 Pa,1100 atm → 1.114575e8 Pa\nEarth mass_convert,f64,38,10000,3899.7712,3899.7712,3899.7712,0,263157.9,Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb,Mass,kg,Earth mass,5972000000000000000000000 kg,1.316601e25 lb,5972000000000000000000000 kg → 1.316601e25 lb\nProton mass_convert,f64,39,10000,3953.6165,3953.6165,3953.6165,0,256410.25,Proton mass | 0.000000000000000000000000001672 kg → 1.006902e0 amu,Mass,kg,Proton mass,0.000000000000000000000000001672 kg,1.006902e0 amu,0.000000000000000000000000001672 kg → 1.006902e0 amu\n1 eV_convert,f64,47,10000,4721.063,4721.063,4721.063,0,212765.95,1 eV | 1 eV → 1.602177e-19 J,Energy,eV,1 eV,1 eV,1.602177e-19 J,1 eV → 1.602177e-19 J\nTNT equivalent_convert,f64,47,10000,4737.55,4737.55,4737.55,0,212765.95,TNT equivalent | 4184000000 J → 1.000000e9 cal,Energy,J,TNT equivalent,4184000000 J,1.000000e9 cal,4184000000 J → 1.000000e9 cal\n1 day_convert,f64,49,10000,4989.7856,4989.7856,4989.7856,0,204081.63,1 day | 1 day → 8.640000e4 s,Time,day,1 day,1 day,8.640000e4 s,1 day → 8.640000e4 s\n1 year_convert,f64,54,10000,5427.91,5427.91,5427.91,0,185185.19,1 year | 1 year → 8.766000e3 h,Time,year,1 year,1 year,8.766000e3 h,1 year → 8.766000e3 h\nRight angle_convert,f64,52,10000,5282.3174,5282.3174,5282.3174,0,192307.69,Right angle | 90 deg → 1.570796e0 rad,Angle,deg,Right angle,90 deg,1.570796e0 rad,90 deg → 1.570796e0 rad\n"},
+json:{
+"1 day.json":"{\n  \"category\": \"Time\",\n  \"symbol\": \"day\",\n  \"name\": \"1 day\",\n  \"from\": \"1 day\",\n  \"to\": \"8.640000e4 s\",\n  \"conversion\": \"1 day → 8.640000e4 s\",\n  \"experiment_name\": \"1 day_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 49,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 4989.79,\n  \"min_time_ns\": 4989.79,\n  \"max_time_ns\": 4989.79,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 204081.62,\n  \"result\": \"1 day | 1 day → 8.640000e4 s\"\n}",
+"1 eV.json":"{\n  \"category\": \"Energy\",\n  \"symbol\": \"eV\",\n  \"name\": \"1 eV\",\n  \"from\": \"1 eV\",\n  \"to\": \"1.602177e-19 J\",\n  \"conversion\": \"1 eV → 1.602177e-19 J\",\n  \"experiment_name\": \"1 eV_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 47,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 4721.06,\n  \"min_time_ns\": 4721.06,\n  \"max_time_ns\": 4721.06,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 212765.95,\n  \"result\": \"1 eV | 1 eV → 1.602177e-19 J\"\n}",
+"1 year.json":"{\n  \"category\": \"Time\",\n  \"symbol\": \"year\",\n  \"name\": \"1 year\",\n  \"from\": \"1 year\",\n  \"to\": \"8.766000e3 h\",\n  \"conversion\": \"1 year → 8.766000e3 h\",\n  \"experiment_name\": \"1 year_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 54,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 5427.91,\n  \"min_time_ns\": 5427.91,\n  \"max_time_ns\": 5427.91,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"1 year | 1 year → 8.766000e3 h\"\n}",
+"Atmospheric.json":"{\n  \"category\": \"Pressure\",\n  \"symbol\": \"Pa\",\n  \"name\": \"Atmospheric\",\n  \"from\": \"101325 Pa\",\n  \"to\": \"1.000000e0 atm\",\n  \"conversion\": \"101325 Pa → 1.000000e0 atm\",\n  \"experiment_name\": \"Atmospheric_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 33,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3394.73,\n  \"min_time_ns\": 3394.73,\n  \"max_time_ns\": 3394.73,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 303030.31,\n  \"result\": \"Atmospheric | 101325 Pa → 1.000000e0 atm\"\n}",
+"Deep ocean.json":"{\n  \"category\": \"Pressure\",\n  \"symbol\": \"atm\",\n  \"name\": \"Deep ocean\",\n  \"from\": \"1100 atm\",\n  \"to\": \"1.114575e8 Pa\",\n  \"conversion\": \"1100 atm → 1.114575e8 Pa\",\n  \"experiment_name\": \"Deep ocean_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3402.82,\n  \"min_time_ns\": 3402.82,\n  \"max_time_ns\": 3402.82,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Deep ocean | 1100 atm → 1.114575e8 Pa\"\n}",
+"Earth mass.json":"{\n  \"category\": \"Mass\",\n  \"symbol\": \"kg\",\n  \"name\": \"Earth mass\",\n  \"from\": \"5972000000000000000000000 kg\",\n  \"to\": \"1.316601e25 lb\",\n  \"conversion\": \"5972000000000000000000000 kg → 1.316601e25 lb\",\n  \"experiment_name\": \"Earth mass_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 38,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3899.77,\n  \"min_time_ns\": 3899.77,\n  \"max_time_ns\": 3899.77,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 263157.91,\n  \"result\": \"Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb\"\n}",
+"Everest height.json":"{\n  \"category\": \"Length\",\n  \"symbol\": \"m\",\n  \"name\": \"Everest height\",\n  \"from\": \"8848.86 m\",\n  \"to\": \"2.903169e4 ft\",\n  \"conversion\": \"8848.86 m → 2.903169e4 ft\",\n  \"experiment_name\": \"Everest height_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 24,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 2472.56,\n  \"min_time_ns\": 2472.56,\n  \"max_time_ns\": 2472.56,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"Everest height | 8848.86 m → 2.903169e4 ft\"\n}",
+"Human body temp.json":"{\n  \"category\": \"Temperature\",\n  \"symbol\": \"°C\",\n  \"name\": \"Human body temp\",\n  \"from\": \"37 °C\",\n  \"to\": \"3.101500e2 K\",\n  \"conversion\": \"37 °C → 3.101500e2 K\",\n  \"experiment_name\": \"Human body temp_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3439.03,\n  \"min_time_ns\": 3439.03,\n  \"max_time_ns\": 3439.03,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Human body temp | 37 °C → 3.101500e2 K\"\n}",
+"Light-year.json":"{\n  \"category\": \"Length\",\n  \"symbol\": \"ly\",\n  \"name\": \"Light-year\",\n  \"from\": \"1 ly\",\n  \"to\": \"9.460730e12 km\",\n  \"conversion\": \"1 ly → 9.460730e12 km\",\n  \"experiment_name\": \"Light-year_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 24,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 2447.65,\n  \"min_time_ns\": 2447.65,\n  \"max_time_ns\": 2447.65,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"Light-year | 1 ly → 9.460730e12 km\"\n}",
+"Liquid nitrogen.json":"{\n  \"category\": \"Temperature\",\n  \"symbol\": \"K\",\n  \"name\": \"Liquid nitrogen\",\n  \"from\": \"77.36 K\",\n  \"to\": \"-1.957900e2 °C\",\n  \"conversion\": \"77.36 K → -1.957900e2 °C\",\n  \"experiment_name\": \"Liquid nitrogen_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3463.80,\n  \"min_time_ns\": 3463.80,\n  \"max_time_ns\": 3463.80,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Liquid nitrogen | 77.36 K → -1.957900e2 °C\"\n}",
+"Marathon distance.json":"{\n  \"category\": \"Length\",\n  \"symbol\": \"km\",\n  \"name\": \"Marathon distance\",\n  \"from\": \"42.195 km\",\n  \"to\": \"2.621876e1 mi\",\n  \"conversion\": \"42.195 km → 2.621876e1 mi\",\n  \"experiment_name\": \"Marathon distance_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 24,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 2419.22,\n  \"min_time_ns\": 2419.22,\n  \"max_time_ns\": 2419.22,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"Marathon distance | 42.195 km → 2.621876e1 mi\"\n}",
+"Proton mass.json":"{\n  \"category\": \"Mass\",\n  \"symbol\": \"kg\",\n  \"name\": \"Proton mass\",\n  \"from\": \"0.000000000000000000000000001672 kg\",\n  \"to\": \"1.006902e0 amu\",\n  \"conversion\": \"0.000000000000000000000000001672 kg → 1.006902e0 amu\",\n  \"experiment_name\": \"Proton mass_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 39,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3953.62,\n  \"min_time_ns\": 3953.62,\n  \"max_time_ns\": 3953.62,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 256410.25,\n  \"result\": \"Proton mass | 0.000000000000000000000000001672 kg → 1.006902e0 amu\"\n}",
+"Right angle.json":"{\n  \"category\": \"Angle\",\n  \"symbol\": \"deg\",\n  \"name\": \"Right angle\",\n  \"from\": \"90 deg\",\n  \"to\": \"1.570796e0 rad\",\n  \"conversion\": \"90 deg → 1.570796e0 rad\",\n  \"experiment_name\": \"Right angle_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 52,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 5282.32,\n  \"min_time_ns\": 5282.32,\n  \"max_time_ns\": 5282.32,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 192307.69,\n  \"result\": \"Right angle | 90 deg → 1.570796e0 rad\"\n}",
+"Sun surface.json":"{\n  \"category\": \"Temperature\",\n  \"symbol\": \"K\",\n  \"name\": \"Sun surface\",\n  \"from\": \"5778 K\",\n  \"to\": \"9.940730e3 °F\",\n  \"conversion\": \"5778 K → 9.940730e3 °F\",\n  \"experiment_name\": \"Sun surface_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3407.44,\n  \"min_time_ns\": 3407.44,\n  \"max_time_ns\": 3407.44,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Sun surface | 5778 K → 9.940730e3 °F\"\n}",
+"TNT equivalent.json":"{\n  \"category\": \"Energy\",\n  \"symbol\": \"J\",\n  \"name\": \"TNT equivalent\",\n  \"from\": \"4184000000 J\",\n  \"to\": \"1.000000e9 cal\",\n  \"conversion\": \"4184000000 J → 1.000000e9 cal\",\n  \"experiment_name\": \"TNT equivalent_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 47,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 4737.55,\n  \"min_time_ns\": 4737.55,\n  \"max_time_ns\": 4737.55,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 212765.95,\n  \"result\": \"TNT equivalent | 4184000000 J → 1.000000e9 cal\"\n}",
+"summary.json":"[\n{\n  \"category\": \"Length\",\n  \"symbol\": \"km\",\n  \"name\": \"Marathon distance\",\n  \"from\": \"42.195 km\",\n  \"to\": \"2.621876e1 mi\",\n  \"conversion\": \"42.195 km → 2.621876e1 mi\",\n  \"experiment_name\": \"Marathon distance_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 24,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 2419.22,\n  \"min_time_ns\": 2419.22,\n  \"max_time_ns\": 2419.22,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"Marathon distance | 42.195 km → 2.621876e1 mi\"\n},\n{\n  \"category\": \"Length\",\n  \"symbol\": \"m\",\n  \"name\": \"Everest height\",\n  \"from\": \"8848.86 m\",\n  \"to\": \"2.903169e4 ft\",\n  \"conversion\": \"8848.86 m → 2.903169e4 ft\",\n  \"experiment_name\": \"Everest height_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 24,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 2472.56,\n  \"min_time_ns\": 2472.56,\n  \"max_time_ns\": 2472.56,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"Everest height | 8848.86 m → 2.903169e4 ft\"\n},\n{\n  \"category\": \"Length\",\n  \"symbol\": \"ly\",\n  \"name\": \"Light-year\",\n  \"from\": \"1 ly\",\n  \"to\": \"9.460730e12 km\",\n  \"conversion\": \"1 ly → 9.460730e12 km\",\n  \"experiment_name\": \"Light-year_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 24,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 2447.65,\n  \"min_time_ns\": 2447.65,\n  \"max_time_ns\": 2447.65,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"Light-year | 1 ly → 9.460730e12 km\"\n},\n{\n  \"category\": \"Temperature\",\n  \"symbol\": \"°C\",\n  \"name\": \"Human body temp\",\n  \"from\": \"37 °C\",\n  \"to\": \"3.101500e2 K\",\n  \"conversion\": \"37 °C → 3.101500e2 K\",\n  \"experiment_name\": \"Human body temp_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3439.03,\n  \"min_time_ns\": 3439.03,\n  \"max_time_ns\": 3439.03,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Human body temp | 37 °C → 3.101500e2 K\"\n},\n{\n  \"category\": \"Temperature\",\n  \"symbol\": \"K\",\n  \"name\": \"Liquid nitrogen\",\n  \"from\": \"77.36 K\",\n  \"to\": \"-1.957900e2 °C\",\n  \"conversion\": \"77.36 K → -1.957900e2 °C\",\n  \"experiment_name\": \"Liquid nitrogen_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3463.80,\n  \"min_time_ns\": 3463.80,\n  \"max_time_ns\": 3463.80,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Liquid nitrogen | 77.36 K → -1.957900e2 °C\"\n},\n{\n  \"category\": \"Temperature\",\n  \"symbol\": \"K\",\n  \"name\": \"Sun surface\",\n  \"from\": \"5778 K\",\n  \"to\": \"9.940730e3 °F\",\n  \"conversion\": \"5778 K → 9.940730e3 °F\",\n  \"experiment_name\": \"Sun surface_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3407.44,\n  \"min_time_ns\": 3407.44,\n  \"max_time_ns\": 3407.44,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Sun surface | 5778 K → 9.940730e3 °F\"\n},\n{\n  \"category\": \"Pressure\",\n  \"symbol\": \"Pa\",\n  \"name\": \"Atmospheric\",\n  \"from\": \"101325 Pa\",\n  \"to\": \"1.000000e0 atm\",\n  \"conversion\": \"101325 Pa → 1.000000e0 atm\",\n  \"experiment_name\": \"Atmospheric_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 33,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3394.73,\n  \"min_time_ns\": 3394.73,\n  \"max_time_ns\": 3394.73,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 303030.31,\n  \"result\": \"Atmospheric | 101325 Pa → 1.000000e0 atm\"\n},\n{\n  \"category\": \"Pressure\",\n  \"symbol\": \"atm\",\n  \"name\": \"Deep ocean\",\n  \"from\": \"1100 atm\",\n  \"to\": \"1.114575e8 Pa\",\n  \"conversion\": \"1100 atm → 1.114575e8 Pa\",\n  \"experiment_name\": \"Deep ocean_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 34,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3402.82,\n  \"min_time_ns\": 3402.82,\n  \"max_time_ns\": 3402.82,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 294117.66,\n  \"result\": \"Deep ocean | 1100 atm → 1.114575e8 Pa\"\n},\n{\n  \"category\": \"Mass\",\n  \"symbol\": \"kg\",\n  \"name\": \"Earth mass\",\n  \"from\": \"5972000000000000000000000 kg\",\n  \"to\": \"1.316601e25 lb\",\n  \"conversion\": \"5972000000000000000000000 kg → 1.316601e25 lb\",\n  \"experiment_name\": \"Earth mass_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 38,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3899.77,\n  \"min_time_ns\": 3899.77,\n  \"max_time_ns\": 3899.77,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 263157.91,\n  \"result\": \"Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb\"\n},\n{\n  \"category\": \"Mass\",\n  \"symbol\": \"kg\",\n  \"name\": \"Proton mass\",\n  \"from\": \"0.000000000000000000000000001672 kg\",\n  \"to\": \"1.006902e0 amu\",\n  \"conversion\": \"0.000000000000000000000000001672 kg → 1.006902e0 amu\",\n  \"experiment_name\": \"Proton mass_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 39,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 3953.62,\n  \"min_time_ns\": 3953.62,\n  \"max_time_ns\": 3953.62,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 256410.25,\n  \"result\": \"Proton mass | 0.000000000000000000000000001672 kg → 1.006902e0 amu\"\n},\n{\n  \"category\": \"Energy\",\n  \"symbol\": \"eV\",\n  \"name\": \"1 eV\",\n  \"from\": \"1 eV\",\n  \"to\": \"1.602177e-19 J\",\n  \"conversion\": \"1 eV → 1.602177e-19 J\",\n  \"experiment_name\": \"1 eV_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 47,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 4721.06,\n  \"min_time_ns\": 4721.06,\n  \"max_time_ns\": 4721.06,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 212765.95,\n  \"result\": \"1 eV | 1 eV → 1.602177e-19 J\"\n},\n{\n  \"category\": \"Energy\",\n  \"symbol\": \"J\",\n  \"name\": \"TNT equivalent\",\n  \"from\": \"4184000000 J\",\n  \"to\": \"1.000000e9 cal\",\n  \"conversion\": \"4184000000 J → 1.000000e9 cal\",\n  \"experiment_name\": \"TNT equivalent_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 47,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 4737.55,\n  \"min_time_ns\": 4737.55,\n  \"max_time_ns\": 4737.55,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 212765.95,\n  \"result\": \"TNT equivalent | 4184000000 J → 1.000000e9 cal\"\n},\n{\n  \"category\": \"Time\",\n  \"symbol\": \"day\",\n  \"name\": \"1 day\",\n  \"from\": \"1 day\",\n  \"to\": \"8.640000e4 s\",\n  \"conversion\": \"1 day → 8.640000e4 s\",\n  \"experiment_name\": \"1 day_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 49,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 4989.79,\n  \"min_time_ns\": 4989.79,\n  \"max_time_ns\": 4989.79,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 204081.62,\n  \"result\": \"1 day | 1 day → 8.640000e4 s\"\n},\n{\n  \"category\": \"Time\",\n  \"symbol\": \"year\",\n  \"name\": \"1 year\",\n  \"from\": \"1 year\",\n  \"to\": \"8.766000e3 h\",\n  \"conversion\": \"1 year → 8.766000e3 h\",\n  \"experiment_name\": \"1 year_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 54,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 5427.91,\n  \"min_time_ns\": 5427.91,\n  \"max_time_ns\": 5427.91,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"1 year | 1 year → 8.766000e3 h\"\n},\n{\n  \"category\": \"Angle\",\n  \"symbol\": \"deg\",\n  \"name\": \"Right angle\",\n  \"from\": \"90 deg\",\n  \"to\": \"1.570796e0 rad\",\n  \"conversion\": \"90 deg → 1.570796e0 rad\",\n  \"experiment_name\": \"Right angle_convert\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 52,\n  \"iterations\": 10000,\n  \"avg_time_ns\": 5282.32,\n  \"min_time_ns\": 5282.32,\n  \"max_time_ns\": 5282.32,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 192307.69,\n  \"result\": \"Right angle | 90 deg → 1.570796e0 rad\"\n}\n]"},
+yaml:{
+"1 day.yaml":"category: Time\nsymbol: day\nname: 1 day\nfrom: 1 day\nto: 8.640000e4 s\nconversion: 1 day → 8.640000e4 s\nexperiment_name: 1 day_convert\nprecision: f64\nelapsed_ms: 49\niterations: 10000\navg_time_ns: 4989.79\nmin_time_ns: 4989.79\nmax_time_ns: 4989.79\ntime_stddev: 0.0000\niterations_per_sec: 204081.62\nresult: 1 day | 1 day → 8.640000e4 s\n",
+"1 eV.yaml":"category: Energy\nsymbol: eV\nname: 1 eV\nfrom: 1 eV\nto: 1.602177e-19 J\nconversion: 1 eV → 1.602177e-19 J\nexperiment_name: 1 eV_convert\nprecision: f64\nelapsed_ms: 47\niterations: 10000\navg_time_ns: 4721.06\nmin_time_ns: 4721.06\nmax_time_ns: 4721.06\ntime_stddev: 0.0000\niterations_per_sec: 212765.95\nresult: 1 eV | 1 eV → 1.602177e-19 J\n",
+"1 year.yaml":"category: Time\nsymbol: year\nname: 1 year\nfrom: 1 year\nto: 8.766000e3 h\nconversion: 1 year → 8.766000e3 h\nexperiment_name: 1 year_convert\nprecision: f64\nelapsed_ms: 54\niterations: 10000\navg_time_ns: 5427.91\nmin_time_ns: 5427.91\nmax_time_ns: 5427.91\ntime_stddev: 0.0000\niterations_per_sec: 185185.19\nresult: 1 year | 1 year → 8.766000e3 h\n",
+"Angle.yaml":"category: Angle\ncount: 1\nentries:\n  - label: Right angle\n    symbol: deg\n    name: Right angle\n    from: 90 deg\n    to: 1.570796e0 rad\n    conversion: 90 deg → 1.570796e0 rad\n    avg_time_ns: 5282.32\n",
+"Atmospheric.yaml":"category: Pressure\nsymbol: Pa\nname: Atmospheric\nfrom: 101325 Pa\nto: 1.000000e0 atm\nconversion: 101325 Pa → 1.000000e0 atm\nexperiment_name: Atmospheric_convert\nprecision: f64\nelapsed_ms: 33\niterations: 10000\navg_time_ns: 3394.73\nmin_time_ns: 3394.73\nmax_time_ns: 3394.73\ntime_stddev: 0.0000\niterations_per_sec: 303030.31\nresult: Atmospheric | 101325 Pa → 1.000000e0 atm\n",
+"Deep ocean.yaml":"category: Pressure\nsymbol: atm\nname: Deep ocean\nfrom: 1100 atm\nto: 1.114575e8 Pa\nconversion: 1100 atm → 1.114575e8 Pa\nexperiment_name: Deep ocean_convert\nprecision: f64\nelapsed_ms: 34\niterations: 10000\navg_time_ns: 3402.82\nmin_time_ns: 3402.82\nmax_time_ns: 3402.82\ntime_stddev: 0.0000\niterations_per_sec: 294117.66\nresult: Deep ocean | 1100 atm → 1.114575e8 Pa\n",
+"Earth mass.yaml":"category: Mass\nsymbol: kg\nname: Earth mass\nfrom: 5972000000000000000000000 kg\nto: 1.316601e25 lb\nconversion: 5972000000000000000000000 kg → 1.316601e25 lb\nexperiment_name: Earth mass_convert\nprecision: f64\nelapsed_ms: 38\niterations: 10000\navg_time_ns: 3899.77\nmin_time_ns: 3899.77\nmax_time_ns: 3899.77\ntime_stddev: 0.0000\niterations_per_sec: 263157.91\nresult: Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb\n",
+"Energy.yaml":"category: Energy\ncount: 2\nentries:\n  - label: 1 eV\n    symbol: eV\n    name: 1 eV\n    from: 1 eV\n    to: 1.602177e-19 J\n    conversion: 1 eV → 1.602177e-19 J\n    avg_time_ns: 4721.06\n  - label: TNT equivalent\n    symbol: J\n    name: TNT equivalent\n    from: 4184000000 J\n    to: 1.000000e9 cal\n    conversion: 4184000000 J → 1.000000e9 cal\n    avg_time_ns: 4737.55\n",
+"Everest height.yaml":"category: Length\nsymbol: m\nname: Everest height\nfrom: 8848.86 m\nto: 2.903169e4 ft\nconversion: 8848.86 m → 2.903169e4 ft\nexperiment_name: Everest height_convert\nprecision: f64\nelapsed_ms: 24\niterations: 10000\navg_time_ns: 2472.56\nmin_time_ns: 2472.56\nmax_time_ns: 2472.56\ntime_stddev: 0.0000\niterations_per_sec: 416666.66\nresult: Everest height | 8848.86 m → 2.903169e4 ft\n",
+"Human body temp.yaml":"category: Temperature\nsymbol: °C\nname: Human body temp\nfrom: 37 °C\nto: 3.101500e2 K\nconversion: 37 °C → 3.101500e2 K\nexperiment_name: Human body temp_convert\nprecision: f64\nelapsed_ms: 34\niterations: 10000\navg_time_ns: 3439.03\nmin_time_ns: 3439.03\nmax_time_ns: 3439.03\ntime_stddev: 0.0000\niterations_per_sec: 294117.66\nresult: Human body temp | 37 °C → 3.101500e2 K\n",
+"Length.yaml":"category: Length\ncount: 3\nentries:\n  - label: Marathon distance\n    symbol: km\n    name: Marathon distance\n    from: 42.195 km\n    to: 2.621876e1 mi\n    conversion: 42.195 km → 2.621876e1 mi\n    avg_time_ns: 2419.22\n  - label: Everest height\n    symbol: m\n    name: Everest height\n    from: 8848.86 m\n    to: 2.903169e4 ft\n    conversion: 8848.86 m → 2.903169e4 ft\n    avg_time_ns: 2472.56\n  - label: Light-year\n    symbol: ly\n    name: Light-year\n    from: 1 ly\n    to: 9.460730e12 km\n    conversion: 1 ly → 9.460730e12 km\n    avg_time_ns: 2447.65\n",
+"Light-year.yaml":"category: Length\nsymbol: ly\nname: Light-year\nfrom: 1 ly\nto: 9.460730e12 km\nconversion: 1 ly → 9.460730e12 km\nexperiment_name: Light-year_convert\nprecision: f64\nelapsed_ms: 24\niterations: 10000\navg_time_ns: 2447.65\nmin_time_ns: 2447.65\nmax_time_ns: 2447.65\ntime_stddev: 0.0000\niterations_per_sec: 416666.66\nresult: Light-year | 1 ly → 9.460730e12 km\n",
+"Liquid nitrogen.yaml":"category: Temperature\nsymbol: K\nname: Liquid nitrogen\nfrom: 77.36 K\nto: -1.957900e2 °C\nconversion: 77.36 K → -1.957900e2 °C\nexperiment_name: Liquid nitrogen_convert\nprecision: f64\nelapsed_ms: 34\niterations: 10000\navg_time_ns: 3463.80\nmin_time_ns: 3463.80\nmax_time_ns: 3463.80\ntime_stddev: 0.0000\niterations_per_sec: 294117.66\nresult: Liquid nitrogen | 77.36 K → -1.957900e2 °C\n",
+"Marathon distance.yaml":"category: Length\nsymbol: km\nname: Marathon distance\nfrom: 42.195 km\nto: 2.621876e1 mi\nconversion: 42.195 km → 2.621876e1 mi\nexperiment_name: Marathon distance_convert\nprecision: f64\nelapsed_ms: 24\niterations: 10000\navg_time_ns: 2419.22\nmin_time_ns: 2419.22\nmax_time_ns: 2419.22\ntime_stddev: 0.0000\niterations_per_sec: 416666.66\nresult: Marathon distance | 42.195 km → 2.621876e1 mi\n",
+"Mass.yaml":"category: Mass\ncount: 2\nentries:\n  - label: Earth mass\n    symbol: kg\n    name: Earth mass\n    from: 5972000000000000000000000 kg\n    to: 1.316601e25 lb\n    conversion: 5972000000000000000000000 kg → 1.316601e25 lb\n    avg_time_ns: 3899.77\n  - label: Proton mass\n    symbol: kg\n    name: Proton mass\n    from: 0.000000000000000000000000001672 kg\n    to: 1.006902e0 amu\n    conversion: 0.000000000000000000000000001672 kg → 1.006902e0 amu\n    avg_time_ns: 3953.62\n",
+"Pressure.yaml":"category: Pressure\ncount: 2\nentries:\n  - label: Atmospheric\n    symbol: Pa\n    name: Atmospheric\n    from: 101325 Pa\n    to: 1.000000e0 atm\n    conversion: 101325 Pa → 1.000000e0 atm\n    avg_time_ns: 3394.73\n  - label: Deep ocean\n    symbol: atm\n    name: Deep ocean\n    from: 1100 atm\n    to: 1.114575e8 Pa\n    conversion: 1100 atm → 1.114575e8 Pa\n    avg_time_ns: 3402.82\n",
+"Proton mass.yaml":"category: Mass\nsymbol: kg\nname: Proton mass\nfrom: 0.000000000000000000000000001672 kg\nto: 1.006902e0 amu\nconversion: 0.000000000000000000000000001672 kg → 1.006902e0 amu\nexperiment_name: Proton mass_convert\nprecision: f64\nelapsed_ms: 39\niterations: 10000\navg_time_ns: 3953.62\nmin_time_ns: 3953.62\nmax_time_ns: 3953.62\ntime_stddev: 0.0000\niterations_per_sec: 256410.25\nresult: Proton mass | 0.000000000000000000000000001672 kg → 1.006902e0 amu\n",
+"Right angle.yaml":"category: Angle\nsymbol: deg\nname: Right angle\nfrom: 90 deg\nto: 1.570796e0 rad\nconversion: 90 deg → 1.570796e0 rad\nexperiment_name: Right angle_convert\nprecision: f64\nelapsed_ms: 52\niterations: 10000\navg_time_ns: 5282.32\nmin_time_ns: 5282.32\nmax_time_ns: 5282.32\ntime_stddev: 0.0000\niterations_per_sec: 192307.69\nresult: Right angle | 90 deg → 1.570796e0 rad\n",
+"Sun surface.yaml":"category: Temperature\nsymbol: K\nname: Sun surface\nfrom: 5778 K\nto: 9.940730e3 °F\nconversion: 5778 K → 9.940730e3 °F\nexperiment_name: Sun surface_convert\nprecision: f64\nelapsed_ms: 34\niterations: 10000\navg_time_ns: 3407.44\nmin_time_ns: 3407.44\nmax_time_ns: 3407.44\ntime_stddev: 0.0000\niterations_per_sec: 294117.66\nresult: Sun surface | 5778 K → 9.940730e3 °F\n",
+"TNT equivalent.yaml":"category: Energy\nsymbol: J\nname: TNT equivalent\nfrom: 4184000000 J\nto: 1.000000e9 cal\nconversion: 4184000000 J → 1.000000e9 cal\nexperiment_name: TNT equivalent_convert\nprecision: f64\nelapsed_ms: 47\niterations: 10000\navg_time_ns: 4737.55\nmin_time_ns: 4737.55\nmax_time_ns: 4737.55\ntime_stddev: 0.0000\niterations_per_sec: 212765.95\nresult: TNT equivalent | 4184000000 J → 1.000000e9 cal\n",
+"Temperature.yaml":"category: Temperature\ncount: 3\nentries:\n  - label: Human body temp\n    symbol: °C\n    name: Human body temp\n    from: 37 °C\n    to: 3.101500e2 K\n    conversion: 37 °C → 3.101500e2 K\n    avg_time_ns: 3439.03\n  - label: Liquid nitrogen\n    symbol: K\n    name: Liquid nitrogen\n    from: 77.36 K\n    to: -1.957900e2 °C\n    conversion: 77.36 K → -1.957900e2 °C\n    avg_time_ns: 3463.80\n  - label: Sun surface\n    symbol: K\n    name: Sun surface\n    from: 5778 K\n    to: 9.940730e3 °F\n    conversion: 5778 K → 9.940730e3 °F\n    avg_time_ns: 3407.44\n",
+"Time.yaml":"category: Time\ncount: 2\nentries:\n  - label: 1 day\n    symbol: day\n    name: 1 day\n    from: 1 day\n    to: 8.640000e4 s\n    conversion: 1 day → 8.640000e4 s\n    avg_time_ns: 4989.79\n  - label: 1 year\n    symbol: year\n    name: 1 year\n    from: 1 year\n    to: 8.766000e3 h\n    conversion: 1 year → 8.766000e3 h\n    avg_time_ns: 5427.91\n",
+"summary.yaml":"title: Unit Converter — SI, CGS & Common Unit Conversions\ncount: 15\nentries:\n  - label: Marathon distance\n    category: Length\n    symbol: km\n    name: Marathon distance\n    from: 42.195 km\n    to: 2.621876e1 mi\n    conversion: 42.195 km → 2.621876e1 mi\n    avg_time_ns: 2419.22\n    iterations_per_sec: 416666.66\n  - label: Everest height\n    category: Length\n    symbol: m\n    name: Everest height\n    from: 8848.86 m\n    to: 2.903169e4 ft\n    conversion: 8848.86 m → 2.903169e4 ft\n    avg_time_ns: 2472.56\n    iterations_per_sec: 416666.66\n  - label: Light-year\n    category: Length\n    symbol: ly\n    name: Light-year\n    from: 1 ly\n    to: 9.460730e12 km\n    conversion: 1 ly → 9.460730e12 km\n    avg_time_ns: 2447.65\n    iterations_per_sec: 416666.66\n  - label: Human body temp\n    category: Temperature\n    symbol: °C\n    name: Human body temp\n    from: 37 °C\n    to: 3.101500e2 K\n    conversion: 37 °C → 3.101500e2 K\n    avg_time_ns: 3439.03\n    iterations_per_sec: 294117.66\n  - label: Liquid nitrogen\n    category: Temperature\n    symbol: K\n    name: Liquid nitrogen\n    from: 77.36 K\n    to: -1.957900e2 °C\n    conversion: 77.36 K → -1.957900e2 °C\n    avg_time_ns: 3463.80\n    iterations_per_sec: 294117.66\n  - label: Sun surface\n    category: Temperature\n    symbol: K\n    name: Sun surface\n    from: 5778 K\n    to: 9.940730e3 °F\n    conversion: 5778 K → 9.940730e3 °F\n    avg_time_ns: 3407.44\n    iterations_per_sec: 294117.66\n  - label: Atmospheric\n    category: Pressure\n    symbol: Pa\n    name: Atmospheric\n    from: 101325 Pa\n    to: 1.000000e0 atm\n    conversion: 101325 Pa → 1.000000e0 atm\n    avg_time_ns: 3394.73\n    iterations_per_sec: 303030.31\n  - label: Deep ocean\n    category: Pressure\n    symbol: atm\n    name: Deep ocean\n    from: 1100 atm\n    to: 1.114575e8 Pa\n    conversion: 1100 atm → 1.114575e8 Pa\n    avg_time_ns: 3402.82\n    iterations_per_sec: 294117.66\n  - label: Earth mass\n    category: Mass\n    symbol: kg\n    name: Earth mass\n    from: 5972000000000000000000000 kg\n    to: 1.316601e25 lb\n    conversion: 5972000000000000000000000 kg → 1.316601e25 lb\n    avg_time_ns: 3899.77\n    iterations_per_sec: 263157.91\n  - label: Proton mass\n    category: Mass\n    symbol: kg\n    name: Proton mass\n    from: 0.000000000000000000000000001672 kg\n    to: 1.006902e0 amu\n    conversion: 0.000000000000000000000000001672 kg → 1.006902e0 amu\n    avg_time_ns: 3953.62\n    iterations_per_sec: 256410.25\n  - label: 1 eV\n    category: Energy\n    symbol: eV\n    name: 1 eV\n    from: 1 eV\n    to: 1.602177e-19 J\n    conversion: 1 eV → 1.602177e-19 J\n    avg_time_ns: 4721.06\n    iterations_per_sec: 212765.95\n  - label: TNT equivalent\n    category: Energy\n    symbol: J\n    name: TNT equivalent\n    from: 4184000000 J\n    to: 1.000000e9 cal\n    conversion: 4184000000 J → 1.000000e9 cal\n    avg_time_ns: 4737.55\n    iterations_per_sec: 212765.95\n  - label: 1 day\n    category: Time\n    symbol: day\n    name: 1 day\n    from: 1 day\n    to: 8.640000e4 s\n    conversion: 1 day → 8.640000e4 s\n    avg_time_ns: 4989.79\n    iterations_per_sec: 204081.62\n  - label: 1 year\n    category: Time\n    symbol: year\n    name: 1 year\n    from: 1 year\n    to: 8.766000e3 h\n    conversion: 1 year → 8.766000e3 h\n    avg_time_ns: 5427.91\n    iterations_per_sec: 185185.19\n  - label: Right angle\n    category: Angle\n    symbol: deg\n    name: Right angle\n    from: 90 deg\n    to: 1.570796e0 rad\n    conversion: 90 deg → 1.570796e0 rad\n    avg_time_ns: 5282.32\n    iterations_per_sec: 192307.69\n"},
+toml:{
+"1 day.toml":"[benchmark]\ncategory = \"Time\"\nsymbol = \"day\"\nname = \"1 day\"\nfrom = \"1 day\"\nto = \"8.640000e4 s\"\nconversion = \"1 day → 8.640000e4 s\"\nexperiment_name = \"1 day_convert\"\nprecision = \"f64\"\nelapsed_ms = 49\niterations = 10000\navg_time_ns = 4989.79\nmin_time_ns = 4989.79\nmax_time_ns = 4989.79\ntime_stddev = 0.0000\niterations_per_sec = 204081.62\nresult = \"1 day | 1 day → 8.640000e4 s\"\n",
+"1 eV.toml":"[benchmark]\ncategory = \"Energy\"\nsymbol = \"eV\"\nname = \"1 eV\"\nfrom = \"1 eV\"\nto = \"1.602177e-19 J\"\nconversion = \"1 eV → 1.602177e-19 J\"\nexperiment_name = \"1 eV_convert\"\nprecision = \"f64\"\nelapsed_ms = 47\niterations = 10000\navg_time_ns = 4721.06\nmin_time_ns = 4721.06\nmax_time_ns = 4721.06\ntime_stddev = 0.0000\niterations_per_sec = 212765.95\nresult = \"1 eV | 1 eV → 1.602177e-19 J\"\n",
+"1 year.toml":"[benchmark]\ncategory = \"Time\"\nsymbol = \"year\"\nname = \"1 year\"\nfrom = \"1 year\"\nto = \"8.766000e3 h\"\nconversion = \"1 year → 8.766000e3 h\"\nexperiment_name = \"1 year_convert\"\nprecision = \"f64\"\nelapsed_ms = 54\niterations = 10000\navg_time_ns = 5427.91\nmin_time_ns = 5427.91\nmax_time_ns = 5427.91\ntime_stddev = 0.0000\niterations_per_sec = 185185.19\nresult = \"1 year | 1 year → 8.766000e3 h\"\n",
+"Atmospheric.toml":"[benchmark]\ncategory = \"Pressure\"\nsymbol = \"Pa\"\nname = \"Atmospheric\"\nfrom = \"101325 Pa\"\nto = \"1.000000e0 atm\"\nconversion = \"101325 Pa → 1.000000e0 atm\"\nexperiment_name = \"Atmospheric_convert\"\nprecision = \"f64\"\nelapsed_ms = 33\niterations = 10000\navg_time_ns = 3394.73\nmin_time_ns = 3394.73\nmax_time_ns = 3394.73\ntime_stddev = 0.0000\niterations_per_sec = 303030.31\nresult = \"Atmospheric | 101325 Pa → 1.000000e0 atm\"\n",
+"Deep ocean.toml":"[benchmark]\ncategory = \"Pressure\"\nsymbol = \"atm\"\nname = \"Deep ocean\"\nfrom = \"1100 atm\"\nto = \"1.114575e8 Pa\"\nconversion = \"1100 atm → 1.114575e8 Pa\"\nexperiment_name = \"Deep ocean_convert\"\nprecision = \"f64\"\nelapsed_ms = 34\niterations = 10000\navg_time_ns = 3402.82\nmin_time_ns = 3402.82\nmax_time_ns = 3402.82\ntime_stddev = 0.0000\niterations_per_sec = 294117.66\nresult = \"Deep ocean | 1100 atm → 1.114575e8 Pa\"\n",
+"Earth mass.toml":"[benchmark]\ncategory = \"Mass\"\nsymbol = \"kg\"\nname = \"Earth mass\"\nfrom = \"5972000000000000000000000 kg\"\nto = \"1.316601e25 lb\"\nconversion = \"5972000000000000000000000 kg → 1.316601e25 lb\"\nexperiment_name = \"Earth mass_convert\"\nprecision = \"f64\"\nelapsed_ms = 38\niterations = 10000\navg_time_ns = 3899.77\nmin_time_ns = 3899.77\nmax_time_ns = 3899.77\ntime_stddev = 0.0000\niterations_per_sec = 263157.91\nresult = \"Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb\"\n",
+"Everest height.toml":"[benchmark]\ncategory = \"Length\"\nsymbol = \"m\"\nname = \"Everest height\"\nfrom = \"8848.86 m\"\nto = \"2.903169e4 ft\"\nconversion = \"8848.86 m → 2.903169e4 ft\"\nexperiment_name = \"Everest height_convert\"\nprecision = \"f64\"\nelapsed_ms = 24\niterations = 10000\navg_time_ns = 2472.56\nmin_time_ns = 2472.56\nmax_time_ns = 2472.56\ntime_stddev = 0.0000\niterations_per_sec = 416666.66\nresult = \"Everest height | 8848.86 m → 2.903169e4 ft\"\n",
+"Human body temp.toml":"[benchmark]\ncategory = \"Temperature\"\nsymbol = \"°C\"\nname = \"Human body temp\"\nfrom = \"37 °C\"\nto = \"3.101500e2 K\"\nconversion = \"37 °C → 3.101500e2 K\"\nexperiment_name = \"Human body temp_convert\"\nprecision = \"f64\"\nelapsed_ms = 34\niterations = 10000\navg_time_ns = 3439.03\nmin_time_ns = 3439.03\nmax_time_ns = 3439.03\ntime_stddev = 0.0000\niterations_per_sec = 294117.66\nresult = \"Human body temp | 37 °C → 3.101500e2 K\"\n",
+"Light-year.toml":"[benchmark]\ncategory = \"Length\"\nsymbol = \"ly\"\nname = \"Light-year\"\nfrom = \"1 ly\"\nto = \"9.460730e12 km\"\nconversion = \"1 ly → 9.460730e12 km\"\nexperiment_name = \"Light-year_convert\"\nprecision = \"f64\"\nelapsed_ms = 24\niterations = 10000\navg_time_ns = 2447.65\nmin_time_ns = 2447.65\nmax_time_ns = 2447.65\ntime_stddev = 0.0000\niterations_per_sec = 416666.66\nresult = \"Light-year | 1 ly → 9.460730e12 km\"\n",
+"Liquid nitrogen.toml":"[benchmark]\ncategory = \"Temperature\"\nsymbol = \"K\"\nname = \"Liquid nitrogen\"\nfrom = \"77.36 K\"\nto = \"-1.957900e2 °C\"\nconversion = \"77.36 K → -1.957900e2 °C\"\nexperiment_name = \"Liquid nitrogen_convert\"\nprecision = \"f64\"\nelapsed_ms = 34\niterations = 10000\navg_time_ns = 3463.80\nmin_time_ns = 3463.80\nmax_time_ns = 3463.80\ntime_stddev = 0.0000\niterations_per_sec = 294117.66\nresult = \"Liquid nitrogen | 77.36 K → -1.957900e2 °C\"\n",
+"Marathon distance.toml":"[benchmark]\ncategory = \"Length\"\nsymbol = \"km\"\nname = \"Marathon distance\"\nfrom = \"42.195 km\"\nto = \"2.621876e1 mi\"\nconversion = \"42.195 km → 2.621876e1 mi\"\nexperiment_name = \"Marathon distance_convert\"\nprecision = \"f64\"\nelapsed_ms = 24\niterations = 10000\navg_time_ns = 2419.22\nmin_time_ns = 2419.22\nmax_time_ns = 2419.22\ntime_stddev = 0.0000\niterations_per_sec = 416666.66\nresult = \"Marathon distance | 42.195 km → 2.621876e1 mi\"\n",
+"Proton mass.toml":"[benchmark]\ncategory = \"Mass\"\nsymbol = \"kg\"\nname = \"Proton mass\"\nfrom = \"0.000000000000000000000000001672 kg\"\nto = \"1.006902e0 amu\"\nconversion = \"0.000000000000000000000000001672 kg → 1.006902e0 amu\"\nexperiment_name = \"Proton mass_convert\"\nprecision = \"f64\"\nelapsed_ms = 39\niterations = 10000\navg_time_ns = 3953.62\nmin_time_ns = 3953.62\nmax_time_ns = 3953.62\ntime_stddev = 0.0000\niterations_per_sec = 256410.25\nresult = \"Proton mass | 0.000000000000000000000000001672 kg → 1.006902e0 amu\"\n",
+"Right angle.toml":"[benchmark]\ncategory = \"Angle\"\nsymbol = \"deg\"\nname = \"Right angle\"\nfrom = \"90 deg\"\nto = \"1.570796e0 rad\"\nconversion = \"90 deg → 1.570796e0 rad\"\nexperiment_name = \"Right angle_convert\"\nprecision = \"f64\"\nelapsed_ms = 52\niterations = 10000\navg_time_ns = 5282.32\nmin_time_ns = 5282.32\nmax_time_ns = 5282.32\ntime_stddev = 0.0000\niterations_per_sec = 192307.69\nresult = \"Right angle | 90 deg → 1.570796e0 rad\"\n",
+"Sun surface.toml":"[benchmark]\ncategory = \"Temperature\"\nsymbol = \"K\"\nname = \"Sun surface\"\nfrom = \"5778 K\"\nto = \"9.940730e3 °F\"\nconversion = \"5778 K → 9.940730e3 °F\"\nexperiment_name = \"Sun surface_convert\"\nprecision = \"f64\"\nelapsed_ms = 34\niterations = 10000\navg_time_ns = 3407.44\nmin_time_ns = 3407.44\nmax_time_ns = 3407.44\ntime_stddev = 0.0000\niterations_per_sec = 294117.66\nresult = \"Sun surface | 5778 K → 9.940730e3 °F\"\n",
+"TNT equivalent.toml":"[benchmark]\ncategory = \"Energy\"\nsymbol = \"J\"\nname = \"TNT equivalent\"\nfrom = \"4184000000 J\"\nto = \"1.000000e9 cal\"\nconversion = \"4184000000 J → 1.000000e9 cal\"\nexperiment_name = \"TNT equivalent_convert\"\nprecision = \"f64\"\nelapsed_ms = 47\niterations = 10000\navg_time_ns = 4737.55\nmin_time_ns = 4737.55\nmax_time_ns = 4737.55\ntime_stddev = 0.0000\niterations_per_sec = 212765.95\nresult = \"TNT equivalent | 4184000000 J → 1.000000e9 cal\"\n",
+"summary.toml":"title = \"Unit Converter — SI, CGS & Common Unit Conversions\"\ncount = 15\n\n[[entries]]\nlabel = \"Marathon distance\"\ncategory = \"Length\"\nsymbol = \"km\"\nname = \"Marathon distance\"\nfrom = \"42.195 km\"\nto = \"2.621876e1 mi\"\nconversion = \"42.195 km → 2.621876e1 mi\"\navg_time_ns = 2419.22\niterations_per_sec = 416666.66\n\n[[entries]]\nlabel = \"Everest height\"\ncategory = \"Length\"\nsymbol = \"m\"\nname = \"Everest height\"\nfrom = \"8848.86 m\"\nto = \"2.903169e4 ft\"\nconversion = \"8848.86 m → 2.903169e4 ft\"\navg_time_ns = 2472.56\niterations_per_sec = 416666.66\n\n[[entries]]\nlabel = \"Light-year\"\ncategory = \"Length\"\nsymbol = \"ly\"\nname = \"Light-year\"\nfrom = \"1 ly\"\nto = \"9.460730e12 km\"\nconversion = \"1 ly → 9.460730e12 km\"\navg_time_ns = 2447.65\niterations_per_sec = 416666.66\n\n[[entries]]\nlabel = \"Human body temp\"\ncategory = \"Temperature\"\nsymbol = \"°C\"\nname = \"Human body temp\"\nfrom = \"37 °C\"\nto = \"3.101500e2 K\"\nconversion = \"37 °C → 3.101500e2 K\"\navg_time_ns = 3439.03\niterations_per_sec = 294117.66\n\n[[entries]]\nlabel = \"Liquid nitrogen\"\ncategory = \"Temperature\"\nsymbol = \"K\"\nname = \"Liquid nitrogen\"\nfrom = \"77.36 K\"\nto = \"-1.957900e2 °C\"\nconversion = \"77.36 K → -1.957900e2 °C\"\navg_time_ns = 3463.80\niterations_per_sec = 294117.66\n\n[[entries]]\nlabel = \"Sun surface\"\ncategory = \"Temperature\"\nsymbol = \"K\"\nname = \"Sun surface\"\nfrom = \"5778 K\"\nto = \"9.940730e3 °F\"\nconversion = \"5778 K → 9.940730e3 °F\"\navg_time_ns = 3407.44\niterations_per_sec = 294117.66\n\n[[entries]]\nlabel = \"Atmospheric\"\ncategory = \"Pressure\"\nsymbol = \"Pa\"\nname = \"Atmospheric\"\nfrom = \"101325 Pa\"\nto = \"1.000000e0 atm\"\nconversion = \"101325 Pa → 1.000000e0 atm\"\navg_time_ns = 3394.73\niterations_per_sec = 303030.31\n\n[[entries]]\nlabel = \"Deep ocean\"\ncategory = \"Pressure\"\nsymbol = \"atm\"\nname = \"Deep ocean\"\nfrom = \"1100 atm\"\nto = \"1.114575e8 Pa\"\nconversion = \"1100 atm → 1.114575e8 Pa\"\navg_time_ns = 3402.82\niterations_per_sec = 294117.66\n\n[[entries]]\nlabel = \"Earth mass\"\ncategory = \"Mass\"\nsymbol = \"kg\"\nname = \"Earth mass\"\nfrom = \"5972000000000000000000000 kg\"\nto = \"1.316601e25 lb\"\nconversion = \"5972000000000000000000000 kg → 1.316601e25 lb\"\navg_time_ns = 3899.77\niterations_per_sec = 263157.91\n\n[[entries]]\nlabel = \"Proton mass\"\ncategory = \"Mass\"\nsymbol = \"kg\"\nname = \"Proton mass\"\nfrom = \"0.000000000000000000000000001672 kg\"\nto = \"1.006902e0 amu\"\nconversion = \"0.000000000000000000000000001672 kg → 1.006902e0 amu\"\navg_time_ns = 3953.62\niterations_per_sec = 256410.25\n\n[[entries]]\nlabel = \"1 eV\"\ncategory = \"Energy\"\nsymbol = \"eV\"\nname = \"1 eV\"\nfrom = \"1 eV\"\nto = \"1.602177e-19 J\"\nconversion = \"1 eV → 1.602177e-19 J\"\navg_time_ns = 4721.06\niterations_per_sec = 212765.95\n\n[[entries]]\nlabel = \"TNT equivalent\"\ncategory = \"Energy\"\nsymbol = \"J\"\nname = \"TNT equivalent\"\nfrom = \"4184000000 J\"\nto = \"1.000000e9 cal\"\nconversion = \"4184000000 J → 1.000000e9 cal\"\navg_time_ns = 4737.55\niterations_per_sec = 212765.95\n\n[[entries]]\nlabel = \"1 day\"\ncategory = \"Time\"\nsymbol = \"day\"\nname = \"1 day\"\nfrom = \"1 day\"\nto = \"8.640000e4 s\"\nconversion = \"1 day → 8.640000e4 s\"\navg_time_ns = 4989.79\niterations_per_sec = 204081.62\n\n[[entries]]\nlabel = \"1 year\"\ncategory = \"Time\"\nsymbol = \"year\"\nname = \"1 year\"\nfrom = \"1 year\"\nto = \"8.766000e3 h\"\nconversion = \"1 year → 8.766000e3 h\"\navg_time_ns = 5427.91\niterations_per_sec = 185185.19\n\n[[entries]]\nlabel = \"Right angle\"\ncategory = \"Angle\"\nsymbol = \"deg\"\nname = \"Right angle\"\nfrom = \"90 deg\"\nto = \"1.570796e0 rad\"\nconversion = \"90 deg → 1.570796e0 rad\"\navg_time_ns = 5282.32\niterations_per_sec = 192307.69\n\n"},
+bmk:{
+"1 day.bmk":"experiment_name: 1 day_convert\nprecision:       f64\nelapsed_ms:      49\niterations:      10000\navg_time_ns:     4989.79\nmin_time_ns:     4989.79\nmax_time_ns:     4989.79\ntime_stddev:     0.0000\niterations/sec:  204081.62\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     184 bytes\n",
+"1 eV.bmk":"experiment_name: 1 eV_convert\nprecision:       f64\nelapsed_ms:      47\niterations:      10000\navg_time_ns:     4721.06\nmin_time_ns:     4721.06\nmax_time_ns:     4721.06\ntime_stddev:     0.0000\niterations/sec:  212765.95\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     183 bytes\n",
+"1 year.bmk":"experiment_name: 1 year_convert\nprecision:       f64\nelapsed_ms:      54\niterations:      10000\navg_time_ns:     5427.91\nmin_time_ns:     5427.91\nmax_time_ns:     5427.91\ntime_stddev:     0.0000\niterations/sec:  185185.19\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     185 bytes\n",
+"Atmospheric.bmk":"experiment_name: Atmospheric_convert\nprecision:       f64\nelapsed_ms:      33\niterations:      10000\navg_time_ns:     3394.73\nmin_time_ns:     3394.73\nmax_time_ns:     3394.73\ntime_stddev:     0.0000\niterations/sec:  303030.31\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"Deep ocean.bmk":"experiment_name: Deep ocean_convert\nprecision:       f64\nelapsed_ms:      34\niterations:      10000\navg_time_ns:     3402.82\nmin_time_ns:     3402.82\nmax_time_ns:     3402.82\ntime_stddev:     0.0000\niterations/sec:  294117.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     189 bytes\n",
+"Earth mass.bmk":"experiment_name: Earth mass_convert\nprecision:       f64\nelapsed_ms:      38\niterations:      10000\navg_time_ns:     3899.77\nmin_time_ns:     3899.77\nmax_time_ns:     3899.77\ntime_stddev:     0.0000\niterations/sec:  263157.91\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     189 bytes\n",
+"Everest height.bmk":"experiment_name: Everest height_convert\nprecision:       f64\nelapsed_ms:      24\niterations:      10000\navg_time_ns:     2472.56\nmin_time_ns:     2472.56\nmax_time_ns:     2472.56\ntime_stddev:     0.0000\niterations/sec:  416666.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     193 bytes\n",
+"Human body temp.bmk":"experiment_name: Human body temp_convert\nprecision:       f64\nelapsed_ms:      34\niterations:      10000\navg_time_ns:     3439.03\nmin_time_ns:     3439.03\nmax_time_ns:     3439.03\ntime_stddev:     0.0000\niterations/sec:  294117.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     194 bytes\n",
+"Light-year.bmk":"experiment_name: Light-year_convert\nprecision:       f64\nelapsed_ms:      24\niterations:      10000\navg_time_ns:     2447.65\nmin_time_ns:     2447.65\nmax_time_ns:     2447.65\ntime_stddev:     0.0000\niterations/sec:  416666.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     189 bytes\n",
+"Liquid nitrogen.bmk":"experiment_name: Liquid nitrogen_convert\nprecision:       f64\nelapsed_ms:      34\niterations:      10000\navg_time_ns:     3463.80\nmin_time_ns:     3463.80\nmax_time_ns:     3463.80\ntime_stddev:     0.0000\niterations/sec:  294117.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     194 bytes\n",
+"Marathon distance.bmk":"experiment_name: Marathon distance_convert\nprecision:       f64\nelapsed_ms:      24\niterations:      10000\navg_time_ns:     2419.22\nmin_time_ns:     2419.22\nmax_time_ns:     2419.22\ntime_stddev:     0.0000\niterations/sec:  416666.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     196 bytes\n",
+"Proton mass.bmk":"experiment_name: Proton mass_convert\nprecision:       f64\nelapsed_ms:      39\niterations:      10000\navg_time_ns:     3953.62\nmin_time_ns:     3953.62\nmax_time_ns:     3953.62\ntime_stddev:     0.0000\niterations/sec:  256410.25\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"Right angle.bmk":"experiment_name: Right angle_convert\nprecision:       f64\nelapsed_ms:      52\niterations:      10000\navg_time_ns:     5282.32\nmin_time_ns:     5282.32\nmax_time_ns:     5282.32\ntime_stddev:     0.0000\niterations/sec:  192307.69\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"Sun surface.bmk":"experiment_name: Sun surface_convert\nprecision:       f64\nelapsed_ms:      34\niterations:      10000\navg_time_ns:     3407.44\nmin_time_ns:     3407.44\nmax_time_ns:     3407.44\ntime_stddev:     0.0000\niterations/sec:  294117.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"TNT equivalent.bmk":"experiment_name: TNT equivalent_convert\nprecision:       f64\nelapsed_ms:      47\niterations:      10000\navg_time_ns:     4737.55\nmin_time_ns:     4737.55\nmax_time_ns:     4737.55\ntime_stddev:     0.0000\niterations/sec:  212765.95\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     193 bytes\n"}
+};
+var D={
+"Marathon distance":{tags:{"category":"Length","symbol":"km","name":"Marathon distance","from":"42.195 km","to":"2.621876e1 mi","conversion":"42.195 km → 2.621876e1 mi"},p:"f64",it:10000,avg:2419.22,mn:2419.22,mx:2419.22,sd:0.0000,ips:416666.66},
+"Everest height":{tags:{"category":"Length","symbol":"m","name":"Everest height","from":"8848.86 m","to":"2.903169e4 ft","conversion":"8848.86 m → 2.903169e4 ft"},p:"f64",it:10000,avg:2472.56,mn:2472.56,mx:2472.56,sd:0.0000,ips:416666.66},
+"Light-year":{tags:{"category":"Length","symbol":"ly","name":"Light-year","from":"1 ly","to":"9.460730e12 km","conversion":"1 ly → 9.460730e12 km"},p:"f64",it:10000,avg:2447.65,mn:2447.65,mx:2447.65,sd:0.0000,ips:416666.66},
+"Human body temp":{tags:{"category":"Temperature","symbol":"°C","name":"Human body temp","from":"37 °C","to":"3.101500e2 K","conversion":"37 °C → 3.101500e2 K"},p:"f64",it:10000,avg:3439.03,mn:3439.03,mx:3439.03,sd:0.0000,ips:294117.66},
+"Liquid nitrogen":{tags:{"category":"Temperature","symbol":"K","name":"Liquid nitrogen","from":"77.36 K","to":"-1.957900e2 °C","conversion":"77.36 K → -1.957900e2 °C"},p:"f64",it:10000,avg:3463.80,mn:3463.80,mx:3463.80,sd:0.0000,ips:294117.66},
+"Sun surface":{tags:{"category":"Temperature","symbol":"K","name":"Sun surface","from":"5778 K","to":"9.940730e3 °F","conversion":"5778 K → 9.940730e3 °F"},p:"f64",it:10000,avg:3407.44,mn:3407.44,mx:3407.44,sd:0.0000,ips:294117.66},
+"Atmospheric":{tags:{"category":"Pressure","symbol":"Pa","name":"Atmospheric","from":"101325 Pa","to":"1.000000e0 atm","conversion":"101325 Pa → 1.000000e0 atm"},p:"f64",it:10000,avg:3394.73,mn:3394.73,mx:3394.73,sd:0.0000,ips:303030.31},
+"Deep ocean":{tags:{"category":"Pressure","symbol":"atm","name":"Deep ocean","from":"1100 atm","to":"1.114575e8 Pa","conversion":"1100 atm → 1.114575e8 Pa"},p:"f64",it:10000,avg:3402.82,mn:3402.82,mx:3402.82,sd:0.0000,ips:294117.66},
+"Earth mass":{tags:{"category":"Mass","symbol":"kg","name":"Earth mass","from":"5972000000000000000000000 kg","to":"1.316601e25 lb","conversion":"5972000000000000000000000 kg → 1.316601e25 lb"},p:"f64",it:10000,avg:3899.77,mn:3899.77,mx:3899.77,sd:0.0000,ips:263157.91},
+"Proton mass":{tags:{"category":"Mass","symbol":"kg","name":"Proton mass","from":"0.000000000000000000000000001672 kg","to":"1.006902e0 amu","conversion":"0.000000000000000000000000001672 kg → 1.006902e0 amu"},p:"f64",it:10000,avg:3953.62,mn:3953.62,mx:3953.62,sd:0.0000,ips:256410.25},
+"1 eV":{tags:{"category":"Energy","symbol":"eV","name":"1 eV","from":"1 eV","to":"1.602177e-19 J","conversion":"1 eV → 1.602177e-19 J"},p:"f64",it:10000,avg:4721.06,mn:4721.06,mx:4721.06,sd:0.0000,ips:212765.95},
+"TNT equivalent":{tags:{"category":"Energy","symbol":"J","name":"TNT equivalent","from":"4184000000 J","to":"1.000000e9 cal","conversion":"4184000000 J → 1.000000e9 cal"},p:"f64",it:10000,avg:4737.55,mn:4737.55,mx:4737.55,sd:0.0000,ips:212765.95},
+"1 day":{tags:{"category":"Time","symbol":"day","name":"1 day","from":"1 day","to":"8.640000e4 s","conversion":"1 day → 8.640000e4 s"},p:"f64",it:10000,avg:4989.79,mn:4989.79,mx:4989.79,sd:0.0000,ips:204081.62},
+"1 year":{tags:{"category":"Time","symbol":"year","name":"1 year","from":"1 year","to":"8.766000e3 h","conversion":"1 year → 8.766000e3 h"},p:"f64",it:10000,avg:5427.91,mn:5427.91,mx:5427.91,sd:0.0000,ips:185185.19},
+"Right angle":{tags:{"category":"Angle","symbol":"deg","name":"Right angle","from":"90 deg","to":"1.570796e0 rad","conversion":"90 deg → 1.570796e0 rad"},p:"f64",it:10000,avg:5282.32,mn:5282.32,mx:5282.32,sd:0.0000,ips:192307.69}
+};
+function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
+function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}
+function go(id){var d=D[id];if(!d)return;var p=document.getElementById('detail');if(p){p.className='detail open';document.getElementById('d-title').textContent=id;var tg=document.getElementById('d-tags');tg.innerHTML='';var tkeys=Object.keys(d.tags);for(var i=0;i<tkeys.length;i++){var r=document.createElement('div');r.className='dk';r.textContent=tkeys[i];tg.appendChild(r);var v=document.createElement('div');v.className='dv';v.textContent=d.tags[tkeys[i]];tg.appendChild(v);}document.getElementById('d-prec').textContent=d.p;document.getElementById('d-iter').textContent=d.it;document.getElementById('d-avg').textContent=d.avg.toFixed(2)+' ns';document.getElementById('d-min').textContent=d.mn.toFixed(2)+' ns';document.getElementById('d-max').textContent=d.mx.toFixed(2)+' ns';document.getElementById('d-std').textContent=d.sd.toFixed(4);document.getElementById('d-ips').textContent=d.ips.toFixed(2);var fb=document.getElementById('d-files');if(fb){fb.innerHTML='';['json','yaml','toml'].forEach(function(fmt){var fk=id+'.'+fmt;if(F[fmt]&&F[fmt][fk]){var b=document.createElement('button');b.className='fbtn';b.textContent=fmt.toUpperCase();(function(f,k){b.onclick=function(){var ts=document.querySelectorAll('.tab');for(var i=0;i<ts.length;i++){if(ts[i].textContent.toLowerCase()===f){switchTab({target:ts[i]},f);break}}var s=document.querySelector('#'+f+' select');if(s){s.value=k;showFile(f,k)}}})(fmt,fk);fb.appendChild(b)}})}p.scrollIntoView({behavior:'smooth',block:'center'})}var el=document.getElementById('el-'+id);if(el){el.classList.add('highlight');setTimeout(function(){el.classList.remove('highlight')},2000)}}
+function closeDetail(){var p=document.getElementById('detail');if(p)p.className='detail'}
+['csv','json','yaml','toml','bmk'].forEach(function(fmt){var s=document.querySelector('#'+fmt+' select');if(s&&s.options.length>0)showFile(fmt,s.options[0].text)});
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[benchmark]
+category = "unknown"
+symbol = "Fl"
+name = "Flerovium"
+config = "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²"
+mass = "289.19"
+experiment_name = "Fl_Flerovium_benchmark"
+precision = "f64"
+elapsed_ms = 101
+iterations = 10000
+avg_time_ns = 10116.05
+min_time_ns = 10116.05
+max_time_ns = 10116.05
+time_stddev = 0.0000
+iterations_per_sec = 99009.90
+result = "Z=114 | Fl (Flerovium) | 289.19 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²"

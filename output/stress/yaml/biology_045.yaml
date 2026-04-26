@@ -1,0 +1,17 @@
+category: bi05
+symbol: Ph
+name: bi045
+target: biology
+module: chronobiology
+status: ok
+elapsed_ms: 4970
+experiment_name: biology_045
+precision: f64
+elapsed_ms: 4970
+iterations: 1
+avg_time_ns: 4969999872.00
+min_time_ns: 4969999872.00
+max_time_ns: 4969999872.00
+time_stddev: 0.0000
+iterations_per_sec: 0.20
+result: success=true code=Some(0) stdout_bytes=153 stderr_bytes=210

@@ -1,0 +1,21 @@
+category: parasitology
+count: 3
+entries:
+  - label: parasitology_force_of_infection
+    symbol: FOI
+    name: Force of infection
+    domain: biology
+    test: "parasitology::force_of_infection"
+    avg_time_ns: 2076819.00
+  - label: parasitology_parasite_r0
+    symbol: PR
+    name: Parasite r0
+    domain: biology
+    test: "parasitology::parasite_r0"
+    avg_time_ns: 2180789.00
+  - label: parasitology_vector_borne_r0
+    symbol: VBR
+    name: Vector borne r0
+    domain: biology
+    test: "parasitology::vector_borne_r0"
+    avg_time_ns: 1930639.00

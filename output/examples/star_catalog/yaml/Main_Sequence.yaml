@@ -1,0 +1,42 @@
+category: Main Sequence
+count: 3
+entries:
+  - label: Sun
+    symbol: G
+    name: Sun
+    spectral: G2V
+    mass: 1.000 M☉
+    radius: 1.000 R☉
+    temperature: 5778 K
+    luminosity: 3.844e26 W
+    abs_magnitude: 4.83
+    schwarzschild: 2954.28 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 502 nm
+    avg_time_ns: 1744.29
+  - label: Sirius A
+    symbol: A
+    name: Sirius A
+    spectral: A1V
+    mass: 2.063 M☉
+    radius: 1.711 R☉
+    temperature: 9940 K
+    luminosity: 9.856e27 W
+    abs_magnitude: 1.43
+    schwarzschild: 6094.67 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 292 nm
+    avg_time_ns: 1677.32
+  - label: Vega
+    symbol: A
+    name: Vega
+    spectral: A0V
+    mass: 2.135 M☉
+    radius: 2.362 R☉
+    temperature: 9602 K
+    luminosity: 1.636e28 W
+    abs_magnitude: 0.60
+    schwarzschild: 6307.38 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 302 nm
+    avg_time_ns: 1681.65

@@ -1,0 +1,169 @@
+element:
+  name: Iodine
+  symbol: I
+  atomic_number: 53
+  category: halogen
+  group: 17
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s² 5p⁵"
+  electronegativity: 2.66
+  atomic_mass: 126.90447
+
+isotopes:
+  - name: Iodine-123
+    symbol: "¹²³I"
+    mass_number: 123
+    neutrons: 70
+    atomic_mass: 122.905598
+    half_life: 13.2235
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Tellurium-123
+    natural_abundance: 0.0
+
+  - name: Iodine-124
+    symbol: "¹²⁴I"
+    mass_number: 124
+    neutrons: 71
+    atomic_mass: 123.906210
+    half_life: 4.176
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.228
+      - mode: electron capture
+        branching_ratio: 0.772
+    natural_abundance: 0.0
+
+  - name: Iodine-125
+    symbol: "¹²⁵I"
+    mass_number: 125
+    neutrons: 72
+    atomic_mass: 124.904630
+    half_life: 59.400
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Tellurium-125
+    natural_abundance: 0.0
+
+  - name: Iodine-126
+    symbol: "¹²⁶I"
+    mass_number: 126
+    neutrons: 73
+    atomic_mass: 125.905624
+    half_life: 12.93
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.474
+      - mode: electron capture
+        branching_ratio: 0.474
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.052
+    natural_abundance: 0.0
+
+  - name: Iodine-127
+    symbol: "¹²⁷I"
+    mass_number: 127
+    neutrons: 74
+    atomic_mass: 126.904473
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "5/2+"
+
+  - name: Iodine-128
+    symbol: "¹²⁸I"
+    mass_number: 128
+    neutrons: 75
+    atomic_mass: 127.905809
+    half_life: 24.99
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.935
+        daughter: Xenon-128
+      - mode: electron capture
+        branching_ratio: 0.065
+    natural_abundance: 0.0
+
+  - name: Iodine-129
+    symbol: "¹²⁹I"
+    mass_number: 129
+    neutrons: 76
+    atomic_mass: 128.904988
+    half_life: 1.57e7
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Xenon-129
+    natural_abundance: trace
+
+  - name: Iodine-131
+    symbol: "¹³¹I"
+    mass_number: 131
+    neutrons: 78
+    atomic_mass: 130.906125
+    half_life: 8.0252
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Xenon-131
+    natural_abundance: 0.0
+
+  - name: Iodine-132
+    symbol: "¹³²I"
+    mass_number: 132
+    neutrons: 79
+    atomic_mass: 131.907997
+    half_life: 2.295
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Xenon-132
+    natural_abundance: 0.0
+
+  - name: Iodine-133
+    symbol: "¹³³I"
+    mass_number: 133
+    neutrons: 80
+    atomic_mass: 132.907810
+    half_life: 20.83
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Xenon-133
+    natural_abundance: 0.0
+
+  - name: Iodine-135
+    symbol: "¹³⁵I"
+    mass_number: 135
+    neutrons: 82
+    atomic_mass: 134.910050
+    half_life: 6.57
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Xenon-135
+    natural_abundance: 0.0

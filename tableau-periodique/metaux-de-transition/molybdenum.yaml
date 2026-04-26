@@ -1,0 +1,107 @@
+element:
+  name: Molybdenum
+  symbol: Mo
+  atomic_number: 42
+  category: transition metal
+  group: 6
+  period: 5
+  electron_configuration: "[Kr] 4d⁵ 5s¹"
+  electronegativity: 2.16
+  atomic_mass: 95.95
+
+isotopes:
+  - name: Molybdenum-92
+    symbol: "⁹²Mo"
+    mass_number: 92
+    neutrons: 50
+    atomic_mass: 91.906811
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1453
+
+  - name: Molybdenum-94
+    symbol: "⁹⁴Mo"
+    mass_number: 94
+    neutrons: 52
+    atomic_mass: 93.905088
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0915
+
+  - name: Molybdenum-95
+    symbol: "⁹⁵Mo"
+    mass_number: 95
+    neutrons: 53
+    atomic_mass: 94.905842
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1584
+    nuclear_spin: "5/2+"
+
+  - name: Molybdenum-96
+    symbol: "⁹⁶Mo"
+    mass_number: 96
+    neutrons: 54
+    atomic_mass: 95.904680
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1667
+
+  - name: Molybdenum-97
+    symbol: "⁹⁷Mo"
+    mass_number: 97
+    neutrons: 55
+    atomic_mass: 96.906021
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0960
+    nuclear_spin: "5/2+"
+
+  - name: Molybdenum-98
+    symbol: "⁹⁸Mo"
+    mass_number: 98
+    neutrons: 56
+    atomic_mass: 97.905408
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2439
+
+  - name: Molybdenum-99
+    symbol: "⁹⁹Mo"
+    mass_number: 99
+    neutrons: 57
+    atomic_mass: 98.907712
+    half_life: 65.924
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Technetium-99m
+    natural_abundance: 0.0
+
+  - name: Molybdenum-100
+    symbol: "¹⁰⁰Mo"
+    mass_number: 100
+    neutrons: 58
+    atomic_mass: 99.907477
+    half_life: 8.5e18
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta-
+        branching_ratio: 1.0
+        daughter: Ruthenium-100
+    natural_abundance: 0.0982

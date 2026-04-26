@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb07"
+symbol = "PNA"
+name = "hb063"
+target = "hub"
+module = "pipeline"
+status = "ok"
+elapsed_ms = "539"
+experiment_name = "hub_063"
+precision = "f64"
+elapsed_ms = 539
+iterations = 1
+avg_time_ns = 539000000.00
+min_time_ns = 539000000.00
+max_time_ns = 539000000.00
+time_stddev = 0.0000
+iterations_per_sec = 1.86
+result = "success=true code=Some(0) stdout_bytes=165 stderr_bytes=254"

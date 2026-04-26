@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch05"
+symbol = "VDW"
+name = "ch047"
+target = "chemistry"
+module = "gas_laws"
+status = "ok"
+elapsed_ms = "4412"
+experiment_name = "chemistry_047"
+precision = "f64"
+elapsed_ms = 4412
+iterations = 1
+avg_time_ns = 4412000256.00
+min_time_ns = 4412000256.00
+max_time_ns = 4412000256.00
+time_stddev = 0.0000
+iterations_per_sec = 0.23
+result = "success=true code=Some(0) stdout_bytes=159 stderr_bytes=266"

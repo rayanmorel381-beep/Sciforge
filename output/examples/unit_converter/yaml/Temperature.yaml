@@ -1,0 +1,24 @@
+category: Temperature
+count: 3
+entries:
+  - label: Human body temp
+    symbol: °C
+    name: Human body temp
+    from: 37 °C
+    to: 3.101500e2 K
+    conversion: 37 °C → 3.101500e2 K
+    avg_time_ns: 3439.03
+  - label: Liquid nitrogen
+    symbol: K
+    name: Liquid nitrogen
+    from: 77.36 K
+    to: -1.957900e2 °C
+    conversion: 77.36 K → -1.957900e2 °C
+    avg_time_ns: 3463.80
+  - label: Sun surface
+    symbol: K
+    name: Sun surface
+    from: 5778 K
+    to: 9.940730e3 °F
+    conversion: 5778 K → 9.940730e3 °F
+    avg_time_ns: 3407.44

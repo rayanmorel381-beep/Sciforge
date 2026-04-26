@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group
+bench_alpha,f64,0,100,16.5,16.5,16.5,0,0,alpha completed,alpha
+bench_beta,f32,0,100,14.1,14.1,14.1,0,0,beta completed,beta
+bench_gamma,f64,0,100,13.2,13.2,13.2,0,0,gamma completed,gamma

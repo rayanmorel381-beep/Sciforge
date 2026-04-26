@@ -1,0 +1,18 @@
+[benchmark]
+category = "as05"
+symbol = "RKE"
+name = "as044"
+target = "astronomy"
+module = "rotation"
+status = "ok"
+elapsed_ms = "4782"
+experiment_name = "astronomy_044"
+precision = "f64"
+elapsed_ms = 4782
+iterations = 1
+avg_time_ns = 4782000128.00
+min_time_ns = 4782000128.00
+max_time_ns = 4782000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=161 stderr_bytes=214"

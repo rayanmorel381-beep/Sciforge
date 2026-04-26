@@ -1,0 +1,22 @@
+category: Main Sequence
+symbol: A
+name: Vega
+spectral: A0V
+mass: 2.135 M☉
+radius: 2.362 R☉
+temperature: 9602 K
+luminosity: 1.636e28 W
+abs_magnitude: 0.60
+schwarzschild: 6307.38 m
+ms_lifetime: 0.0 Myr
+wien_peak: 302 nm
+experiment_name: Vega_stellar
+precision: f64
+elapsed_ms: 8
+iterations: 5000
+avg_time_ns: 1681.65
+min_time_ns: 1681.65
+max_time_ns: 1681.65
+time_stddev: 0.0000
+iterations_per_sec: 625000.00
+result: Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm

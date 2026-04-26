@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_001,f64,5571,1,5571000000,5571000000,5571000000,0,0.17950098,success=true code=Some(0) stdout_bytes=162 stderr_bytes=262,bi01,CRL,bi001,biology,aging,ok,5571
+biology_002,f64,4923,1,4923000000,4923000000,4923000000,0,0.20312817,success=true code=Some(0) stdout_bytes=157 stderr_bytes=262,bi01,GMR,bi002,biology,aging,ok,4923
+biology_003,f64,2500,1,2500000000,2500000000,2500000000,0,0.4,success=true code=Some(0) stdout_bytes=154 stderr_bytes=262,bi01,MD,bi003,biology,aging,ok,2500
+biology_004,f64,1770,1,1770000000,1770000000,1770000000,0,0.56497175,success=true code=Some(0) stdout_bytes=150 stderr_bytes=262,bi01,RSS,bi004,biology,aging,ok,1770
+biology_005,f64,2499,1,2499000000,2499000000,2499000000,0,0.40016007,success=true code=Some(0) stdout_bytes=153 stderr_bytes=314,bi01,TS,bi005,biology,aging,ok,2499
+biology_006,f64,4498,1,4498000000,4498000000,4498000000,0,0.22232103,success=true code=Some(0) stdout_bytes=164 stderr_bytes=210,bi01,CES,bi006,biology,bioelectricity,ok,4498
+biology_007,f64,4814,1,4814000000,4814000000,4814000000,0,0.20772746,success=true code=Some(0) stdout_bytes=162 stderr_bytes=210,bi01,EL,bi007,biology,bioelectricity,ok,4814
+biology_008,f64,4379,1,4379000000,4379000000,4379000000,0,0.22836263,success=true code=Some(0) stdout_bytes=159 stderr_bytes=262,bi01,IT,bi008,biology,bioelectricity,ok,4379
+biology_009,f64,4795,1,4795000000,4795000000,4795000000,0,0.20855057,success=true code=Some(0) stdout_bytes=166 stderr_bytes=210,bi01,SDW,bi009,biology,bioelectricity,ok,4795
+biology_010,f64,4762,1,4762000000,4762000000,4762000000,0,0.2099958,success=true code=Some(0) stdout_bytes=165 stderr_bytes=262,bi01,AEC,bi010,biology,bioenergetics,ok,4762

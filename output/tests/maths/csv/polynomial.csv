@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+polynomial::chebyshev_t,f64,1,1,1755359,1755359,1755359,0,1000,pass,polynomial,CT,Chebyshev t,maths,polynomial::chebyshev_t
+polynomial::legendre,f64,1,1,1748909,1748909,1748909,0,1000,pass,polynomial,Le,Legendre,maths,polynomial::legendre
+polynomial::polynomial_roots_real,f64,1,1,1926249,1926249,1926249,0,1000,pass,polynomial,PRR,Polynomial roots real,maths,polynomial::polynomial_roots_real

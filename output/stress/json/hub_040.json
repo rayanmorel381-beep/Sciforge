@@ -1,0 +1,19 @@
+{
+  "category": "hb04",
+  "symbol": "CDE",
+  "name": "hb040",
+  "target": "hub",
+  "module": "cross_domain",
+  "status": "ok",
+  "elapsed_ms": "371",
+  "experiment_name": "hub_040",
+  "precision": "f64",
+  "elapsed_ms": 371,
+  "iterations": 1,
+  "avg_time_ns": 371000000.00,
+  "min_time_ns": 371000000.00,
+  "max_time_ns": 371000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 2.70,
+  "result": "success=true code=Some(0) stdout_bytes=174 stderr_bytes=202"
+}

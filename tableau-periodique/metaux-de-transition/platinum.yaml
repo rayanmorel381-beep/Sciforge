@@ -1,0 +1,81 @@
+element:
+  name: Platinum
+  symbol: Pt
+  atomic_number: 78
+  category: transition metal
+  group: 10
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d⁹ 6s¹"
+  electronegativity: 2.28
+  atomic_mass: 195.084
+
+isotopes:
+  - name: Platinum-190
+    symbol: "¹⁹⁰Pt"
+    mass_number: 190
+    neutrons: 112
+    atomic_mass: 189.959932
+    half_life: 4.83e11
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Osmium-186
+    natural_abundance: 0.00012
+
+  - name: Platinum-192
+    symbol: "¹⁹²Pt"
+    mass_number: 192
+    neutrons: 114
+    atomic_mass: 191.961040
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00782
+
+  - name: Platinum-194
+    symbol: "¹⁹⁴Pt"
+    mass_number: 194
+    neutrons: 116
+    atomic_mass: 193.962680
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.32864
+
+  - name: Platinum-195
+    symbol: "¹⁹⁵Pt"
+    mass_number: 195
+    neutrons: 117
+    atomic_mass: 194.964791
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.33775
+    nuclear_spin: "1/2-"
+
+  - name: Platinum-196
+    symbol: "¹⁹⁶Pt"
+    mass_number: 196
+    neutrons: 118
+    atomic_mass: 195.964952
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.25211
+
+  - name: Platinum-198
+    symbol: "¹⁹⁸Pt"
+    mass_number: 198
+    neutrons: 120
+    atomic_mass: 197.967893
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.07356

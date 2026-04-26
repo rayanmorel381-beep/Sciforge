@@ -1,0 +1,18 @@
+[benchmark]
+category = "ct01"
+symbol = "LY"
+name = "ct005"
+target = "constants"
+module = "astro"
+status = "ok"
+elapsed_ms = "4171"
+experiment_name = "constants_005"
+precision = "f64"
+elapsed_ms = 4171
+iterations = 1
+avg_time_ns = 4171000064.00
+min_time_ns = 4171000064.00
+max_time_ns = 4171000064.00
+time_stddev = 0.0000
+iterations_per_sec = 0.24
+result = "success=true code=Some(0) stdout_bytes=143 stderr_bytes=266"

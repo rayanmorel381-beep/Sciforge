@@ -1,0 +1,16 @@
+[benchmark]
+category = "bioelectricity"
+symbol = "EL"
+name = "Electrotonic length"
+domain = "biology"
+test = "bioelectricity::electrotonic_length"
+experiment_name = "bioelectricity::electrotonic_length"
+precision = "f64"
+elapsed_ms = 10
+iterations = 1
+avg_time_ns = 10498526.00
+min_time_ns = 10498526.00
+max_time_ns = 10498526.00
+time_stddev = 0.0000
+iterations_per_sec = 100.00
+result = "pass"

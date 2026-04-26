@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi15"
+symbol = "WP"
+name = "bi141"
+target = "biology"
+module = "plant_biology"
+status = "ok"
+elapsed_ms = "4865"
+experiment_name = "biology_141"
+precision = "f64"
+elapsed_ms = 4865
+iterations = 1
+avg_time_ns = 4864999936.00
+min_time_ns = 4864999936.00
+max_time_ns = 4864999936.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=157 stderr_bytes=262"

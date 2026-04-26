@@ -1,0 +1,7 @@
+title: Entry Test
+count: 1
+entries:
+  - label: lbl
+    k: v
+    avg_time_ns: 20.00
+    iterations_per_sec: 0.00

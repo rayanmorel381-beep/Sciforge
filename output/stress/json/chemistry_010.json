@@ -1,0 +1,19 @@
+{
+  "category": "ch01",
+  "symbol": "PR",
+  "name": "ch010",
+  "target": "chemistry",
+  "module": "analytical",
+  "status": "ok",
+  "elapsed_ms": "4532",
+  "experiment_name": "chemistry_010",
+  "precision": "f64",
+  "elapsed_ms": 4532,
+  "iterations": 1,
+  "avg_time_ns": 4531999744.00,
+  "min_time_ns": 4531999744.00,
+  "max_time_ns": 4531999744.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.22,
+  "result": "success=true code=Some(0) stdout_bytes=155 stderr_bytes=266"
+}

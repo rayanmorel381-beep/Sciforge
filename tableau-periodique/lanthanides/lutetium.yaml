@@ -1,0 +1,52 @@
+element:
+  name: Lutetium
+  symbol: Lu
+  atomic_number: 71
+  category: lanthanide
+  group: 3
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹ 6s²"
+  electronegativity: 1.27
+  atomic_mass: 174.9668
+
+isotopes:
+  - name: Lutetium-175
+    symbol: "¹⁷⁵Lu"
+    mass_number: 175
+    neutrons: 104
+    atomic_mass: 174.940772
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.97401
+    nuclear_spin: "7/2+"
+
+  - name: Lutetium-176
+    symbol: "¹⁷⁶Lu"
+    mass_number: 176
+    neutrons: 105
+    atomic_mass: 175.942686
+    half_life: 3.76e10
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Hafnium-176
+    natural_abundance: 0.02599
+    nuclear_spin: "7-"
+
+  - name: Lutetium-177
+    symbol: "¹⁷⁷Lu"
+    mass_number: 177
+    neutrons: 106
+    atomic_mass: 176.943758
+    half_life: 6.647
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Hafnium-177
+    natural_abundance: 0.0

@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi15"
+symbol = "MR"
+name = "bi148"
+target = "biology"
+module = "proteomics"
+status = "ok"
+elapsed_ms = "5424"
+experiment_name = "biology_148"
+precision = "f64"
+elapsed_ms = 5424
+iterations = 1
+avg_time_ns = 5424000000.00
+min_time_ns = 5424000000.00
+max_time_ns = 5424000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.18
+result = "success=true code=Some(0) stdout_bytes=147 stderr_bytes=262"

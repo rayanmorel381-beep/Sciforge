@@ -1,0 +1,39 @@
+pub const ERF_A1: f64 = 0.254_829_592;
+pub const ERF_A2: f64 = -0.284_496_736;
+pub const ERF_A3: f64 = 1.421_413_741;
+pub const ERF_A4: f64 = -1.453_152_027;
+pub const ERF_A5: f64 = 1.061_405_429;
+pub const ERF_P: f64 = 0.327_591_1;
+
+pub const LANCZOS_COEFFS_6: [f64; 6] = [
+    76.180_091_729_471_46,
+    -86.505_320_329_416_77,
+    24.014_098_240_830_91,
+    -1.231_739_572_450_155,
+    0.001_208_650_973_866_179,
+    -0.000_005_395_239_384_953,
+];
+pub const LANCZOS_SERIES_INIT: f64 = 1.000_000_000_190_015;
+pub const LANCZOS_SQRT_2PI: f64 = 2.506_628_274_631_000_5;
+
+pub const STIRLING_LANCZOS_G: f64 = 7.0;
+pub const STIRLING_LANCZOS_COEFFS: [f64; 9] = [
+    0.999_999_999_999_810,
+    676.520_368_121_885_1,
+    -1_259.139_216_722_403,
+    771.323_428_777_653_1,
+    -176.615_029_162_140_6,
+    12.507_343_278_686_905,
+    -0.138_571_095_265_720_12,
+    9.984_369_578_019_572e-6,
+    1.505_632_735_149_311_6e-7,
+];
+
+pub const GOLDEN_RATIO_CONJUGATE: f64 = 0.618_033_988_749_894_9;
+
+pub const SAVITZKY_GOLAY_5_COEFFS: [f64; 5] = [-3.0, 12.0, 17.0, 12.0, -3.0];
+pub const SAVITZKY_GOLAY_5_NORM: f64 = 35.0;
+
+pub const SPEED_OF_LIGHT_KM_S: f64 = crate::constants::C_KM_S;
+
+pub const CMB_RECOMBINATION_REDSHIFT: f64 = crate::constants::Z_RECOMBINATION;

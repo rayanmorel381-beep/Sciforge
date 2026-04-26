@@ -1,0 +1,18 @@
+{
+  "category": "Length",
+  "symbol": "ly",
+  "name": "Light-year",
+  "from": "1 ly",
+  "to": "9.460730e12 km",
+  "conversion": "1 ly → 9.460730e12 km",
+  "experiment_name": "Light-year_convert",
+  "precision": "f64",
+  "elapsed_ms": 24,
+  "iterations": 10000,
+  "avg_time_ns": 2447.65,
+  "min_time_ns": 2447.65,
+  "max_time_ns": 2447.65,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 416666.66,
+  "result": "Light-year | 1 ly → 9.460730e12 km"
+}

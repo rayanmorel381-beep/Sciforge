@@ -1,0 +1,68 @@
+element:
+  name: Terbium
+  symbol: Tb
+  atomic_number: 65
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f⁹ 6s²"
+  electronegativity: 1.2
+  atomic_mass: 158.92535
+
+isotopes:
+  - name: Terbium-157
+    symbol: "¹⁵⁷Tb"
+    mass_number: 157
+    neutrons: 92
+    atomic_mass: 156.924025
+    half_life: 71
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Gadolinium-157
+    natural_abundance: 0.0
+
+  - name: Terbium-158
+    symbol: "¹⁵⁸Tb"
+    mass_number: 158
+    neutrons: 93
+    atomic_mass: 157.925413
+    half_life: 180
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta+
+        branching_ratio: 0.833
+        daughter: Gadolinium-158
+      - mode: beta-
+        branching_ratio: 0.167
+        daughter: Dysprosium-158
+    natural_abundance: 0.0
+
+  - name: Terbium-159
+    symbol: "¹⁵⁹Tb"
+    mass_number: 159
+    neutrons: 94
+    atomic_mass: 158.925347
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "3/2+"
+
+  - name: Terbium-161
+    symbol: "¹⁶¹Tb"
+    mass_number: 161
+    neutrons: 96
+    atomic_mass: 160.927570
+    half_life: 6.89
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Dysprosium-161
+    natural_abundance: 0.0

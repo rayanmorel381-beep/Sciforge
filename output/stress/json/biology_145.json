@@ -1,0 +1,19 @@
+{
+  "category": "bi15",
+  "symbol": "LVP",
+  "name": "bi145",
+  "target": "biology",
+  "module": "population",
+  "status": "ok",
+  "elapsed_ms": "1824",
+  "experiment_name": "biology_145",
+  "precision": "f64",
+  "elapsed_ms": 1824,
+  "iterations": 1,
+  "avg_time_ns": 1824000000.00,
+  "min_time_ns": 1824000000.00,
+  "max_time_ns": 1824000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.55,
+  "result": "success=true code=Some(0) stdout_bytes=167 stderr_bytes=210"
+}

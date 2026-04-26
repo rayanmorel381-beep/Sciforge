@@ -1,0 +1,17 @@
+{
+  "category": "unknown",
+  "symbol": "Mc",
+  "name": "Moscovium",
+  "config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³",
+  "mass": "290.196",
+  "experiment_name": "Mc_Moscovium_benchmark",
+  "precision": "f32",
+  "elapsed_ms": 8,
+  "iterations": 1000,
+  "avg_time_ns": 8778.98,
+  "min_time_ns": 8778.98,
+  "max_time_ns": 8778.98,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 125000.00,
+  "result": "Z=115 | Mc (Moscovium) | 290.196 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³"
+}

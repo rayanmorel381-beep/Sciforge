@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+marine_biology::bleaching_thermal_threshold,f64,2,1,2267799,2267799,2267799,0,500,pass,marine_biology,BTT,Bleaching thermal threshold,biology,marine_biology::bleaching_thermal_threshold
+marine_biology::fish_growth_von_bertalanffy,f64,2,1,2000309,2000309,2000309,0,500,pass,marine_biology,FGV,Fish growth von bertalanffy,biology,marine_biology::fish_growth_von_bertalanffy
+marine_biology::maximum_sustainable_yield,f64,2,1,2086209,2086209,2086209,0,500,pass,marine_biology,MSY,Maximum sustainable yield,biology,marine_biology::maximum_sustainable_yield
+marine_biology::ocean_acidification_ph,f64,2,1,2526989,2526989,2526989,0,500,pass,marine_biology,OAP,Ocean acidification ph,biology,marine_biology::ocean_acidification_ph

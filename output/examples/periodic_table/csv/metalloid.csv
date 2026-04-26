@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+B_Boron_benchmark,f32,2,5000,402.3118,402.3118,402.3118,0,2500000,Z=5 | B (Boron) | 10.81 u | metalloid | 1s² 2s² 2p¹,metalloid,B,Boron,1s² 2s² 2p¹,10.81
+Si_Silicon_benchmark,f64,5,5000,1140.3694,1140.3694,1140.3694,0,1000000,Z=14 | Si (Silicon) | 28.085 u | metalloid | [Ne] 3s² 3p²,metalloid,Si,Silicon,[Ne] 3s² 3p²,28.085
+Ge_Germanium_benchmark,f64,12,5000,2461.493,2461.493,2461.493,0,416666.66,Z=32 | Ge (Germanium) | 72.63 u | metalloid | [Ar] 3d¹⁰ 4s² 4p²,metalloid,Ge,Germanium,[Ar] 3d¹⁰ 4s² 4p²,72.63
+As_Arsenic_benchmark,f32,25,10000,2543.317,2543.317,2543.317,0,400000,Z=33 | As (Arsenic) | 74.921595 u | metalloid | [Ar] 3d¹⁰ 4s² 4p³,metalloid,As,Arsenic,[Ar] 3d¹⁰ 4s² 4p³,74.921595
+Sb_Antimony_benchmark,f32,39,10000,3933.0923,3933.0923,3933.0923,0,256410.25,Z=51 | Sb (Antimony) | 121.76 u | metalloid | [Kr] 4d¹⁰ 5s² 5p³,metalloid,Sb,Antimony,[Kr] 4d¹⁰ 5s² 5p³,121.76
+Te_Tellurium_benchmark,f64,3,1000,3963.668,3963.668,3963.668,0,333333.34,Z=52 | Te (Tellurium) | 127.6 u | metalloid | [Kr] 4d¹⁰ 5s² 5p⁴,metalloid,Te,Tellurium,[Kr] 4d¹⁰ 5s² 5p⁴,127.6

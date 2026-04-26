@@ -1,0 +1,15 @@
+category: transition metal
+symbol: Fe
+name: Iron
+config: [Ar] 3d⁶ 4s²
+mass: 55.845
+experiment_name: Fe_Iron_benchmark
+precision: f64
+elapsed_ms: 10
+iterations: 5000
+avg_time_ns: 2015.35
+min_time_ns: 2015.35
+max_time_ns: 2015.35
+time_stddev: 0.0000
+iterations_per_sec: 500000.00
+result: Z=26 | Fe (Iron) | 55.845 u | transition metal | [Ar] 3d⁶ 4s²

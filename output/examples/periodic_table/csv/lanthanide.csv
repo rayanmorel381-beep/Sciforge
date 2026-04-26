@@ -1,0 +1,16 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+La_Lanthanum_benchmark,f32,44,10000,4438.559,4438.559,4438.559,0,227272.73,Z=57 | La (Lanthanum) | 138.90547 u | lanthanide | [Xe] 5d¹ 6s²,lanthanide,La,Lanthanum,[Xe] 5d¹ 6s²,138.90547
+Ce_Cerium_benchmark,f64,4,1000,4410.128,4410.128,4410.128,0,250000,Z=58 | Ce (Cerium) | 140.116 u | lanthanide | [Xe] 4f¹ 5d¹ 6s²,lanthanide,Ce,Cerium,[Xe] 4f¹ 5d¹ 6s²,140.116
+Pr_Praseodymium_benchmark,f32,22,5000,4559.968,4559.968,4559.968,0,227272.73,Z=59 | Pr (Praseodymium) | 140.90766 u | lanthanide | [Xe] 4f³ 6s²,lanthanide,Pr,Praseodymium,[Xe] 4f³ 6s²,140.90766
+Nd_Neodymium_benchmark,f64,46,10000,4696.363,4696.363,4696.363,0,217391.3,Z=60 | Nd (Neodymium) | 144.242 u | lanthanide | [Xe] 4f⁴ 6s²,lanthanide,Nd,Neodymium,[Xe] 4f⁴ 6s²,144.242
+Pm_Promethium_benchmark,f32,4,1000,4666.568,4666.568,4666.568,0,250000,Z=61 | Pm (Promethium) | 144.912749 u | lanthanide | [Xe] 4f⁵ 6s²,lanthanide,Pm,Promethium,[Xe] 4f⁵ 6s²,144.912749
+Sm_Samarium_benchmark,f64,23,5000,4767.446,4767.446,4767.446,0,217391.3,Z=62 | Sm (Samarium) | 150.36 u | lanthanide | [Xe] 4f⁶ 6s²,lanthanide,Sm,Samarium,[Xe] 4f⁶ 6s²,150.36
+Eu_Europium_benchmark,f32,48,10000,4832.145,4832.145,4832.145,0,208333.33,Z=63 | Eu (Europium) | 151.964 u | lanthanide | [Xe] 4f⁷ 6s²,lanthanide,Eu,Europium,[Xe] 4f⁷ 6s²,151.964
+Gd_Gadolinium_benchmark,f64,4,1000,4872.528,4872.528,4872.528,0,250000,Z=64 | Gd (Gadolinium) | 157.25 u | lanthanide | [Xe] 4f⁷ 5d¹ 6s²,lanthanide,Gd,Gadolinium,[Xe] 4f⁷ 5d¹ 6s²,157.25
+Tb_Terbium_benchmark,f32,25,5000,5021.52,5021.52,5021.52,0,200000,Z=65 | Tb (Terbium) | 158.92535 u | lanthanide | [Xe] 4f⁹ 6s²,lanthanide,Tb,Terbium,[Xe] 4f⁹ 6s²,158.92535
+Dy_Dysprosium_benchmark,f64,51,10000,5111.674,5111.674,5111.674,0,196078.44,Z=66 | Dy (Dysprosium) | 162.5 u | lanthanide | [Xe] 4f¹⁰ 6s²,lanthanide,Dy,Dysprosium,[Xe] 4f¹⁰ 6s²,162.5
+Ho_Holmium_benchmark,f32,5,1000,5231.688,5231.688,5231.688,0,200000,Z=67 | Ho (Holmium) | 164.93033 u | lanthanide | [Xe] 4f¹¹ 6s²,lanthanide,Ho,Holmium,[Xe] 4f¹¹ 6s²,164.93033
+Er_Erbium_benchmark,f64,26,5000,5226.236,5226.236,5226.236,0,192307.69,Z=68 | Er (Erbium) | 167.259 u | lanthanide | [Xe] 4f¹² 6s²,lanthanide,Er,Erbium,[Xe] 4f¹² 6s²,167.259
+Tm_Thulium_benchmark,f32,53,10000,5317.3296,5317.3296,5317.3296,0,188679.25,Z=69 | Tm (Thulium) | 168.93422 u | lanthanide | [Xe] 4f¹³ 6s²,lanthanide,Tm,Thulium,[Xe] 4f¹³ 6s²,168.93422
+Yb_Ytterbium_benchmark,f64,5,1000,5331.368,5331.368,5331.368,0,200000,Z=70 | Yb (Ytterbium) | 173.045 u | lanthanide | [Xe] 4f¹⁴ 6s²,lanthanide,Yb,Ytterbium,[Xe] 4f¹⁴ 6s²,173.045
+Lu_Lutetium_benchmark,f32,27,5000,5450.906,5450.906,5450.906,0,185185.19,Z=71 | Lu (Lutetium) | 174.9668 u | lanthanide | [Xe] 4f¹⁴ 5d¹ 6s²,lanthanide,Lu,Lutetium,[Xe] 4f¹⁴ 5d¹ 6s²,174.9668

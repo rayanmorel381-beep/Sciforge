@@ -1,0 +1,39 @@
+category: noble gas
+count: 6
+entries:
+  - label: 002_He
+    symbol: He
+    name: Helium
+    config: 1s²
+    mass: 4.002602
+    avg_time_ns: 169.05
+  - label: 010_Ne
+    symbol: Ne
+    name: Neon
+    config: 1s² 2s² 2p⁶
+    mass: 20.1797
+    avg_time_ns: 775.56
+  - label: 018_Ar
+    symbol: Ar
+    name: Argon
+    config: [Ne] 3s² 3p⁶
+    mass: 39.948
+    avg_time_ns: 1392.33
+  - label: 036_Kr
+    symbol: Kr
+    name: Krypton
+    config: [Ar] 3d¹⁰ 4s² 4p⁶
+    mass: 83.798
+    avg_time_ns: 2785.39
+  - label: 054_Xe
+    symbol: Xe
+    name: Xenon
+    config: [Kr] 4d¹⁰ 5s² 5p⁶
+    mass: 131.293
+    avg_time_ns: 4163.17
+  - label: 086_Rn
+    symbol: Rn
+    name: Radon
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶
+    mass: 222
+    avg_time_ns: 6705.93

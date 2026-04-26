@@ -1,0 +1,22 @@
+category: Alpha
+symbol: ²⁴¹Am
+name: Americium
+Z: 95
+A: 241
+N: 146
+half_life: 432.20 years
+decay_constant: 5.0816e-11 s⁻¹
+decay_mode: alpha
+specific_activity: 1.270e11 Bq/g
+remaining_3hl: 125000 / 1M after 3 half-lives
+binding_energy: 7.561 MeV/nucleon
+experiment_name: Americium_241_decay
+precision: f64
+elapsed_ms: 13
+iterations: 5000
+avg_time_ns: 2720.78
+min_time_ns: 2720.78
+max_time_ns: 2720.78
+time_stddev: 0.0000
+iterations_per_sec: 384615.38
+result: ²⁴¹Am (Americium) | t½=432.20 years | λ=5.0816e-11 s⁻¹ | alpha | A_sp=1.270e11 Bq/g

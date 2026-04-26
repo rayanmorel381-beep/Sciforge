@@ -1,0 +1,83 @@
+category: bi05
+count: 10
+entries:
+  - label: biology_041
+    symbol: LRB
+    name: bi041
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 2973
+    avg_time_ns: 2972999936.00
+  - label: biology_042
+    symbol: OP
+    name: bi042
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 2209
+    avg_time_ns: 2208999936.00
+  - label: biology_043
+    symbol: CAD
+    name: bi043
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 4794
+    avg_time_ns: 4793999872.00
+  - label: biology_044
+    symbol: JLR
+    name: bi044
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 2403
+    avg_time_ns: 2403000064.00
+  - label: biology_045
+    symbol: Ph
+    name: bi045
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 4970
+    avg_time_ns: 4969999872.00
+  - label: biology_046
+    symbol: ZS
+    name: bi046
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 2278
+    avg_time_ns: 2278000128.00
+  - label: biology_047
+    symbol: CCR
+    name: bi047
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 4807
+    avg_time_ns: 4807000064.00
+  - label: biology_048
+    symbol: FPD
+    name: bi048
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 2437
+    avg_time_ns: 2436999936.00
+  - label: biology_049
+    symbol: SDA
+    name: bi049
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 2247
+    avg_time_ns: 2247000064.00
+  - label: biology_050
+    symbol: VP
+    name: bi050
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 504
+    avg_time_ns: 504000000.00

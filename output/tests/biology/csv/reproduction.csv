@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+reproduction::fertilization_probability,f64,2,1,2159619,2159619,2159619,0,500,pass,reproduction,FP,Fertilization probability,biology,reproduction::fertilization_probability
+reproduction::hcg_doubling,f64,2,1,2158919,2158919,2158919,0,500,pass,reproduction,HD,Hcg doubling,biology,reproduction::hcg_doubling
+reproduction::ivf_success_rate,f64,2,1,2084539,2084539,2084539,0,500,pass,reproduction,ISR,Ivf success rate,biology,reproduction::ivf_success_rate
+reproduction::sperm_motility_score,f64,1,1,1892929,1892929,1892929,0,1000,pass,reproduction,SMS,Sperm motility score,biology,reproduction::sperm_motility_score

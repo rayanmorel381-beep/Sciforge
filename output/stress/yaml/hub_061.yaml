@@ -1,0 +1,17 @@
+category: hb07
+symbol: PCS
+name: hb061
+target: hub
+module: pipeline
+status: ok
+elapsed_ms: 441
+experiment_name: hub_061
+precision: f64
+elapsed_ms: 441
+iterations: 1
+avg_time_ns: 441000000.00
+min_time_ns: 441000000.00
+max_time_ns: 441000000.00
+time_stddev: 0.0000
+iterations_per_sec: 2.27
+result: success=true code=Some(0) stdout_bytes=159 stderr_bytes=358

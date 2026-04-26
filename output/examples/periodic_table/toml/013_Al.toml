@@ -1,0 +1,16 @@
+[benchmark]
+category = "post-transition metal"
+symbol = "Al"
+name = "Aluminium"
+config = "[Ne] 3s² 3p¹"
+mass = "26.9815385"
+experiment_name = "Al_Aluminium_benchmark"
+precision = "f32"
+elapsed_ms = 1
+iterations = 1000
+avg_time_ns = 1010.41
+min_time_ns = 1010.41
+max_time_ns = 1010.41
+time_stddev = 0.0000
+iterations_per_sec = 1000000.00
+result = "Z=13 | Al (Aluminium) | 26.9815385 u | post-transition metal | [Ne] 3s² 3p¹"

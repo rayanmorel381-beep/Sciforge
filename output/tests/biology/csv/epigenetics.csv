@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+epigenetics::cpg_methylation_level,f64,1,1,1843710,1843710,1843710,0,1000,pass,epigenetics,CML,Cpg methylation level,biology,epigenetics::cpg_methylation_level
+epigenetics::epigenetic_inheritance_probability,f64,1,1,1963089,1963089,1963089,0,1000,pass,epigenetics,EIP,Epigenetic inheritance probability,biology,epigenetics::epigenetic_inheritance_probability
+epigenetics::nucleosome_occupancy,f64,1,1,1942579,1942579,1942579,0,1000,pass,epigenetics,NO,Nucleosome occupancy,biology,epigenetics::nucleosome_occupancy
+epigenetics::rnai_knockdown_efficiency,f64,1,1,1803699,1803699,1803699,0,1000,pass,epigenetics,RKE,Rnai knockdown efficiency,biology,epigenetics::rnai_knockdown_efficiency

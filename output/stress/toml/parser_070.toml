@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr07"
+symbol = "YTN"
+name = "pr070"
+target = "parser"
+module = "yaml"
+status = "ok"
+elapsed_ms = "4652"
+experiment_name = "parser_070"
+precision = "f64"
+elapsed_ms = 4652
+iterations = 1
+avg_time_ns = 4652000256.00
+min_time_ns = 4652000256.00
+max_time_ns = 4652000256.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=147 stderr_bytes=260"

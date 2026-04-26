@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+proteomics::gravy_index,f64,2,1,2137160,2137160,2137160,0,500,pass,proteomics,GI,Gravy index,biology,proteomics::gravy_index
+proteomics::mass_accuracy_ppm,f64,2,1,2516799,2516799,2516799,0,500,pass,proteomics,MAP,Mass accuracy ppm,biology,proteomics::mass_accuracy_ppm
+proteomics::mz_ratio,f64,2,1,2079879,2079879,2079879,0,500,pass,proteomics,MR,Mz ratio,biology,proteomics::mz_ratio
+proteomics::protein_coverage,f64,2,1,2017939,2017939,2017939,0,500,pass,proteomics,PC,Protein coverage,biology,proteomics::protein_coverage

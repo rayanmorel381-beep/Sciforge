@@ -1,0 +1,16 @@
+[benchmark]
+category = "post-transition metal"
+symbol = "Po"
+name = "Polonium"
+config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴"
+mass = "208.98243"
+experiment_name = "Po_Polonium_benchmark"
+precision = "f64"
+elapsed_ms = 65
+iterations = 10000
+avg_time_ns = 6547.83
+min_time_ns = 6547.83
+max_time_ns = 6547.83
+time_stddev = 0.0000
+iterations_per_sec = 153846.16
+result = "Z=84 | Po (Polonium) | 208.98243 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴"

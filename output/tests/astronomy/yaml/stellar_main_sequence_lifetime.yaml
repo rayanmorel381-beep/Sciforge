@@ -1,0 +1,15 @@
+category: stellar
+symbol: MSL
+name: Main sequence lifetime
+domain: astronomy
+test: "stellar::main_sequence_lifetime"
+experiment_name: "stellar::main_sequence_lifetime"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2103799.00
+min_time_ns: 2103799.00
+max_time_ns: 2103799.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

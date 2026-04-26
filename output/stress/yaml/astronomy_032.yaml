@@ -1,0 +1,17 @@
+category: as04
+symbol: EV
+name: as032
+target: astronomy
+module: orbits
+status: ok
+elapsed_ms: 5210
+experiment_name: astronomy_032
+precision: f64
+elapsed_ms: 5210
+iterations: 1
+avg_time_ns: 5209999872.00
+min_time_ns: 5209999872.00
+max_time_ns: 5209999872.00
+time_stddev: 0.0000
+iterations_per_sec: 0.19
+result: success=true code=Some(0) stdout_bytes=149 stderr_bytes=266

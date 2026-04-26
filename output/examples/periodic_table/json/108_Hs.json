@@ -1,0 +1,17 @@
+{
+  "category": "transition_metal",
+  "symbol": "Hs",
+  "name": "Hassium",
+  "config": "[Rn] 5f¹⁴ 6d⁶ 7s²",
+  "mass": "269.134",
+  "experiment_name": "Hs_Hassium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 93,
+  "iterations": 10000,
+  "avg_time_ns": 9304.38,
+  "min_time_ns": 9304.38,
+  "max_time_ns": 9304.38,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 107526.88,
+  "result": "Z=108 | Hs (Hassium) | 269.134 u | transition_metal | [Rn] 5f¹⁴ 6d⁶ 7s²"
+}

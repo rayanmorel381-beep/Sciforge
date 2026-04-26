@@ -1,0 +1,83 @@
+category: ct02
+count: 10
+entries:
+  - label: constants_011
+    symbol: CW
+    name: ct011
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 2905
+    avg_time_ns: 2904999936.00
+  - label: constants_012
+    symbol: EM
+    name: ct012
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 4775
+    avg_time_ns: 4775000064.00
+  - label: constants_013
+    symbol: NM
+    name: ct013
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 5822
+    avg_time_ns: 5822000128.00
+  - label: constants_014
+    symbol: PHT
+    name: ct014
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 1656
+    avg_time_ns: 1656000000.00
+  - label: constants_015
+    symbol: PM
+    name: ct015
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 2661
+    avg_time_ns: 2660999936.00
+  - label: constants_016
+    symbol: AN
+    name: ct016
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2935
+    avg_time_ns: 2935000064.00
+  - label: constants_017
+    symbol: BC
+    name: ct017
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 4243
+    avg_time_ns: 4243000064.00
+  - label: constants_018
+    symbol: CC
+    name: ct018
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 4794
+    avg_time_ns: 4793999872.00
+  - label: constants_019
+    symbol: EC
+    name: ct019
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2446
+    avg_time_ns: 2446000128.00
+  - label: constants_020
+    symbol: GC
+    name: ct020
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2487
+    avg_time_ns: 2487000064.00

@@ -1,0 +1,18 @@
+[benchmark]
+category = "ph05"
+symbol = "BA"
+name = "ph045"
+target = "physics"
+module = "optics"
+status = "ok"
+elapsed_ms = "2002"
+experiment_name = "physics_045"
+precision = "f64"
+elapsed_ms = 2002
+iterations = 1
+avg_time_ns = 2002000000.00
+min_time_ns = 2002000000.00
+max_time_ns = 2002000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.50
+result = "success=true code=Some(0) stdout_bytes=148 stderr_bytes=366"

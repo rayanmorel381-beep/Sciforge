@@ -1,0 +1,53 @@
+element:
+  name: Bohrium
+  symbol: Bh
+  atomic_number: 107
+  category: transition_metal
+  group: 7
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d⁵ 7s²"
+  electronegativity: null
+  atomic_mass: 270.134
+
+isotopes:
+  - name: Bohrium-267
+    symbol: "²⁶⁷Bh"
+    mass_number: 267
+    neutrons: 160
+    atomic_mass: 267.12750
+    half_life: 17
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Dubnium-263
+    natural_abundance: 0.0
+
+  - name: Bohrium-270
+    symbol: "²⁷⁰Bh"
+    mass_number: 270
+    neutrons: 163
+    atomic_mass: 270.134
+    half_life: 61
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Dubnium-266
+    natural_abundance: 0.0
+
+  - name: Bohrium-274
+    symbol: "²⁷⁴Bh"
+    mass_number: 274
+    neutrons: 167
+    atomic_mass: 274.144
+    half_life: 54
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Dubnium-270
+    natural_abundance: 0.0

@@ -1,0 +1,18 @@
+{
+  "category": "Biochemistry",
+  "name": "Photosynthesis",
+  "formula": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+  "reactant_mass": "372.1440 g/mol",
+  "product_mass": "372.1440 g/mol",
+  "atom_economy": "100.0%",
+  "experiment_name": "Photosynthesis_calc",
+  "precision": "f64",
+  "elapsed_ms": 119,
+  "iterations": 5000,
+  "avg_time_ns": 23809.53,
+  "min_time_ns": 23809.53,
+  "max_time_ns": 23809.53,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 42016.81,
+  "result": "Photosynthesis | 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ | M(react)=372.1440 g/mol | M(prod)=372.1440 g/mol | Atom economy=100.0%"
+}

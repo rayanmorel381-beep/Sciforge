@@ -1,0 +1,19 @@
+{
+  "category": "bi06",
+  "symbol": "DUF",
+  "name": "bi056",
+  "target": "biology",
+  "module": "dispatch",
+  "status": "ok",
+  "elapsed_ms": "2505",
+  "experiment_name": "biology_056",
+  "precision": "f64",
+  "elapsed_ms": 2505,
+  "iterations": 1,
+  "avg_time_ns": 2504999936.00,
+  "min_time_ns": 2504999936.00,
+  "max_time_ns": 2504999936.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.40,
+  "result": "success=true code=Some(0) stdout_bytes=176 stderr_bytes=262"
+}

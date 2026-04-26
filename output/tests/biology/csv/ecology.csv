@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+ecology::inverse_simpson,f64,1,1,1800289,1800289,1800289,0,1000,pass,ecology,IS,Inverse simpson,biology,ecology::inverse_simpson
+ecology::shannon_diversity,f64,1,1,1807199,1807199,1807199,0,1000,pass,ecology,SD,Shannon diversity,biology,ecology::shannon_diversity
+ecology::simpson_diversity,f64,1,1,1871009,1871009,1871009,0,1000,pass,ecology,SD,Simpson diversity,biology,ecology::simpson_diversity
+ecology::species_richness,f64,1,1,1806889,1806889,1806889,0,1000,pass,ecology,SR,Species richness,biology,ecology::species_richness

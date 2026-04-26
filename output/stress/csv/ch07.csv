@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+chemistry_061,f64,413,1,413000000,413000000,413000000,0,2.4213076,success=true code=Some(0) stdout_bytes=148 stderr_bytes=209,ch07,MM,ch061,chemistry,molecular,ok,413
+chemistry_062,f64,5310,1,5310000000,5310000000,5310000000,0,0.18832392,success=true code=Some(0) stdout_bytes=162 stderr_bytes=318,ch07,BEP,ch062,chemistry,nuclear,ok,5310
+chemistry_063,f64,374,1,374000000,374000000,374000000,0,2.673797,success=true code=Some(0) stdout_bytes=163 stderr_bytes=313,ch07,HLT,ch063,chemistry,nuclear,ok,374
+chemistry_064,f64,5278,1,5278000000,5278000000,5278000000,0,0.1894657,success=true code=Some(0) stdout_bytes=143 stderr_bytes=214,ch07,QV,ch064,chemistry,nuclear,ok,5278
+chemistry_065,f64,4833,1,4833000000,4833000000,4833000000,0,0.20691082,success=true code=Some(0) stdout_bytes=158 stderr_bytes=214,ch07,DOU,ch065,chemistry,organic,ok,4833
+chemistry_066,f64,2142,1,2142000000,2142000000,2142000000,0,0.4668534,success=true code=Some(0) stdout_bytes=152 stderr_bytes=318,ch07,HE,ch066,chemistry,organic,ok,2142
+chemistry_067,f64,5195,1,5195000000,5195000000,5195000000,0,0.19249278,success=true code=Some(0) stdout_bytes=163 stderr_bytes=266,ch07,PCL,ch067,chemistry,organic,ok,5195
+chemistry_068,f64,5006,1,5006000000,5006000000,5006000000,0,0.19976029,success=true code=Some(0) stdout_bytes=158 stderr_bytes=266,ch07,FE,ch068,chemistry,photochemistry,ok,5006
+chemistry_069,f64,5568,1,5568000000,5568000000,5568000000,0,0.1795977,success=true code=Some(0) stdout_bytes=156 stderr_bytes=214,ch07,PE,ch069,chemistry,photochemistry,ok,5568
+chemistry_070,f64,4873,1,4873000000,4873000000,4873000000,0,0.2052124,success=true code=Some(0) stdout_bytes=156 stderr_bytes=214,ch07,QY,ch070,chemistry,photochemistry,ok,4873

@@ -1,0 +1,15 @@
+category: planetary
+symbol: HZO
+name: Habitable zone outer
+domain: astronomy
+test: "planetary::habitable_zone_outer"
+experiment_name: "planetary::habitable_zone_outer"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1899979.00
+min_time_ns: 1899979.00
+max_time_ns: 1899979.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

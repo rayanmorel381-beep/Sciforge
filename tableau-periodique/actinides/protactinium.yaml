@@ -1,0 +1,53 @@
+element:
+  name: Protactinium
+  symbol: Pa
+  atomic_number: 91
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f² 6d¹ 7s²"
+  electronegativity: 1.5
+  atomic_mass: 231.03588
+
+isotopes:
+  - name: Protactinium-231
+    symbol: "²³¹Pa"
+    mass_number: 231
+    neutrons: 140
+    atomic_mass: 231.035884
+    half_life: 3.276e4
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Actinium-227
+    natural_abundance: 1.0
+
+  - name: Protactinium-233
+    symbol: "²³³Pa"
+    mass_number: 233
+    neutrons: 142
+    atomic_mass: 233.040247
+    half_life: 26.975
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Uranium-233
+    natural_abundance: 0.0
+
+  - name: Protactinium-234
+    symbol: "²³⁴Pa"
+    mass_number: 234
+    neutrons: 143
+    atomic_mass: 234.043308
+    half_life: 6.70
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Uranium-234
+    natural_abundance: 0.0

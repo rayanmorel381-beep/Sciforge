@@ -1,0 +1,39 @@
+category: metalloid
+count: 6
+entries:
+  - label: 005_B
+    symbol: B
+    name: Boron
+    config: 1s² 2s² 2p¹
+    mass: 10.81
+    avg_time_ns: 402.31
+  - label: 014_Si
+    symbol: Si
+    name: Silicon
+    config: [Ne] 3s² 3p²
+    mass: 28.085
+    avg_time_ns: 1140.37
+  - label: 032_Ge
+    symbol: Ge
+    name: Germanium
+    config: [Ar] 3d¹⁰ 4s² 4p²
+    mass: 72.63
+    avg_time_ns: 2461.49
+  - label: 033_As
+    symbol: As
+    name: Arsenic
+    config: [Ar] 3d¹⁰ 4s² 4p³
+    mass: 74.921595
+    avg_time_ns: 2543.32
+  - label: 051_Sb
+    symbol: Sb
+    name: Antimony
+    config: [Kr] 4d¹⁰ 5s² 5p³
+    mass: 121.76
+    avg_time_ns: 3933.09
+  - label: 052_Te
+    symbol: Te
+    name: Tellurium
+    config: [Kr] 4d¹⁰ 5s² 5p⁴
+    mass: 127.6
+    avg_time_ns: 3963.67

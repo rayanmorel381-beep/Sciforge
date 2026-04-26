@@ -1,0 +1,15 @@
+category: actinide
+symbol: No
+name: Nobelium
+config: [Rn] 5f¹⁴ 7s²
+mass: 259.10103
+experiment_name: No_Nobelium_benchmark
+precision: f64
+elapsed_ms: 80
+iterations: 10000
+avg_time_ns: 8098.21
+min_time_ns: 8098.21
+max_time_ns: 8098.21
+time_stddev: 0.0000
+iterations_per_sec: 125000.00
+result: Z=102 | No (Nobelium) | 259.10103 u | actinide | [Rn] 5f¹⁴ 7s²

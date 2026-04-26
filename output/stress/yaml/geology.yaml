@@ -1,0 +1,11 @@
+category: geology
+count: 1
+entries:
+  - label: geology_summary
+    symbol: SUM
+    name: GE Summary
+    target: geology
+    module: summary
+    status: ok
+    elapsed_ms: 191729
+    avg_time_ns: 4357476864.00

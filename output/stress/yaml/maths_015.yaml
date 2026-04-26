@@ -1,0 +1,17 @@
+category: ma02
+symbol: FB
+name: ma015
+target: maths
+module: fft
+status: ok
+elapsed_ms: 4278
+experiment_name: maths_015
+precision: f64
+elapsed_ms: 4278
+iterations: 1
+avg_time_ns: 4278000128.00
+min_time_ns: 4278000128.00
+max_time_ns: 4278000128.00
+time_stddev: 0.0000
+iterations_per_sec: 0.23
+result: success=true code=Some(0) stdout_bytes=140 stderr_bytes=258

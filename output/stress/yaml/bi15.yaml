@@ -1,0 +1,83 @@
+category: bi15
+count: 10
+entries:
+  - label: biology_141
+    symbol: WP
+    name: bi141
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 4865
+    avg_time_ns: 4864999936.00
+  - label: biology_142
+    symbol: CCF
+    name: bi142
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 5102
+    avg_time_ns: 5102000128.00
+  - label: biology_143
+    symbol: CGL
+    name: bi143
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 2109
+    avg_time_ns: 2108999936.00
+  - label: biology_144
+    symbol: LVC
+    name: bi144
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 4910
+    avg_time_ns: 4910000128.00
+  - label: biology_145
+    symbol: LVP
+    name: bi145
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 1824
+    avg_time_ns: 1824000000.00
+  - label: biology_146
+    symbol: GI
+    name: bi146
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 2200
+    avg_time_ns: 2200000000.00
+  - label: biology_147
+    symbol: MAP
+    name: bi147
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 2173
+    avg_time_ns: 2172999936.00
+  - label: biology_148
+    symbol: MR
+    name: bi148
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 5424
+    avg_time_ns: 5424000000.00
+  - label: biology_149
+    symbol: PC
+    name: bi149
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 2950
+    avg_time_ns: 2950000128.00
+  - label: biology_150
+    symbol: OER
+    name: bi150
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 5288
+    avg_time_ns: 5288000000.00

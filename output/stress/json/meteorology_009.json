@@ -1,0 +1,19 @@
+{
+  "category": "me01",
+  "symbol": "CP",
+  "name": "me009",
+  "target": "meteorology",
+  "module": "dynamics",
+  "status": "ok",
+  "elapsed_ms": "5308",
+  "experiment_name": "meteorology_009",
+  "precision": "f64",
+  "elapsed_ms": 5308,
+  "iterations": 1,
+  "avg_time_ns": 5308000256.00,
+  "min_time_ns": 5308000256.00,
+  "max_time_ns": 5308000256.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.19,
+  "result": "success=true code=Some(0) stdout_bytes=154 stderr_bytes=218"
+}

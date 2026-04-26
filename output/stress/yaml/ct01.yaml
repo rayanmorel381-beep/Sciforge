@@ -1,0 +1,83 @@
+category: ct01
+count: 10
+entries:
+  - label: constants_001
+    symbol: AU
+    name: ct001
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 2844
+    avg_time_ns: 2844000000.00
+  - label: constants_002
+    symbol: CT
+    name: ct002
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 4659
+    avg_time_ns: 4658999808.00
+  - label: constants_003
+    symbol: EM
+    name: ct003
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 823
+    avg_time_ns: 823000000.00
+  - label: constants_004
+    symbol: HC
+    name: ct004
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 2764
+    avg_time_ns: 2764000000.00
+  - label: constants_005
+    symbol: LY
+    name: ct005
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 4171
+    avg_time_ns: 4171000064.00
+  - label: constants_006
+    symbol: Pa
+    name: ct006
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 3057
+    avg_time_ns: 3056999936.00
+  - label: constants_007
+    symbol: PGT
+    name: ct007
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 4561
+    avg_time_ns: 4560999936.00
+  - label: constants_008
+    symbol: SM
+    name: ct008
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 2592
+    avg_time_ns: 2592000000.00
+  - label: constants_009
+    symbol: ATK
+    name: ct009
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 4083
+    avg_time_ns: 4083000064.00
+  - label: constants_010
+    symbol: BR
+    name: ct010
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 2882
+    avg_time_ns: 2881999872.00

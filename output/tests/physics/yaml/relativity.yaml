@@ -1,0 +1,51 @@
+category: relativity
+count: 8
+entries:
+  - label: relativity_compton_wavelength_shift
+    symbol: CWS
+    name: Compton wavelength shift
+    domain: physics
+    test: "relativity::compton_wavelength_shift"
+    avg_time_ns: 1908979.00
+  - label: relativity_energy_momentum_relation
+    symbol: EMR
+    name: Energy momentum relation
+    domain: physics
+    test: "relativity::energy_momentum_relation"
+    avg_time_ns: 1932979.00
+  - label: relativity_gamma_factor_at_rest
+    symbol: GFA
+    name: Gamma factor at rest
+    domain: physics
+    test: "relativity::gamma_factor_at_rest"
+    avg_time_ns: 1903439.00
+  - label: relativity_gamma_factor_increases_with_velocity
+    symbol: GFI
+    name: Gamma factor increases with velocity
+    domain: physics
+    test: "relativity::gamma_factor_increases_with_velocity"
+    avg_time_ns: 1931599.00
+  - label: relativity_length_contraction
+    symbol: LC
+    name: Length contraction
+    domain: physics
+    test: "relativity::length_contraction"
+    avg_time_ns: 2056500.00
+  - label: relativity_planck_radiation_positive
+    symbol: PRP
+    name: Planck radiation positive
+    domain: physics
+    test: "relativity::planck_radiation_positive"
+    avg_time_ns: 1946729.00
+  - label: relativity_time_dilation
+    symbol: TD
+    name: Time dilation
+    domain: physics
+    test: "relativity::time_dilation"
+    avg_time_ns: 1764859.00
+  - label: relativity_time_dilation_high_v
+    symbol: TDH
+    name: Time dilation high v
+    domain: physics
+    test: "relativity::time_dilation_high_v"
+    avg_time_ns: 1842129.00

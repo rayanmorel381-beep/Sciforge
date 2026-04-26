@@ -1,0 +1,17 @@
+category: Oxidation
+count: 2
+entries:
+  - label: Rust formation
+    name: Rust formation
+    formula: 4Fe + 3O₂ → 2Fe₂O₃
+    reactant_mass: 319.3740 g/mol
+    product_mass: 319.3740 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 33188.98
+  - label: Thermite reaction
+    name: Thermite reaction
+    formula: 2Al + Fe₂O₃ → Al₂O₃ + 2Fe
+    reactant_mass: 213.6501 g/mol
+    product_mass: 213.6501 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 44191.38

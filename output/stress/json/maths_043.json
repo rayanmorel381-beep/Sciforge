@@ -1,0 +1,19 @@
+{
+  "category": "ma05",
+  "symbol": "WE1",
+  "name": "ma043",
+  "target": "maths",
+  "module": "pde",
+  "status": "ok",
+  "elapsed_ms": "2248",
+  "experiment_name": "maths_043",
+  "precision": "f64",
+  "elapsed_ms": 2248,
+  "iterations": 1,
+  "avg_time_ns": 2248000000.00,
+  "min_time_ns": 2248000000.00,
+  "max_time_ns": 2248000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.44,
+  "result": "success=true code=Some(0) stdout_bytes=147 stderr_bytes=206"
+}

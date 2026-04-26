@@ -1,0 +1,15 @@
+category: transition metal
+symbol: Pt
+name: Platinum
+config: [Xe] 4f¹⁴ 5d⁹ 6s¹
+mass: 195.084
+experiment_name: Pt_Platinum_benchmark
+precision: f64
+elapsed_ms: 62
+iterations: 10000
+avg_time_ns: 6245.62
+min_time_ns: 6245.62
+max_time_ns: 6245.62
+time_stddev: 0.0000
+iterations_per_sec: 161290.33
+result: Z=78 | Pt (Platinum) | 195.084 u | transition metal | [Xe] 4f¹⁴ 5d⁹ 6s¹

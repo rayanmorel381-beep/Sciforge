@@ -1,0 +1,17 @@
+category: sv01
+symbol: CAC
+name: sv001
+target: scientific_validation
+module: constants_are_consistent_with_public_domain_exports
+status: ok
+elapsed_ms: 5654
+experiment_name: scientific_validation_001
+precision: f64
+elapsed_ms: 5654
+iterations: 1
+avg_time_ns: 5654000128.00
+min_time_ns: 5654000128.00
+max_time_ns: 5654000128.00
+time_stddev: 0.0000
+iterations_per_sec: 0.18
+result: success=true code=Some(0) stdout_bytes=176 stderr_bytes=441

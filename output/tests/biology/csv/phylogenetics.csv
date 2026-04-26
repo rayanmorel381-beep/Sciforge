@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+phylogenetics::jukes_cantor_distance,f64,2,1,2288709,2288709,2288709,0,500,pass,phylogenetics,JCD,Jukes cantor distance,biology,phylogenetics::jukes_cantor_distance
+phylogenetics::parsimony_score,f64,2,1,2182899,2182899,2182899,0,500,pass,phylogenetics,PS,Parsimony score,biology,phylogenetics::parsimony_score
+phylogenetics::sackin_index,f64,1,1,1973689,1973689,1973689,0,1000,pass,phylogenetics,SI,Sackin index,biology,phylogenetics::sackin_index

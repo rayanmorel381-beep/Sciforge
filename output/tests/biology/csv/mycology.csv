@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+mycology::carbon_use_efficiency,f64,2,1,2549219,2549219,2549219,0,500,pass,mycology,CUE,Carbon use efficiency,biology,mycology::carbon_use_efficiency
+mycology::decomposition_rate,f64,2,1,2068769,2068769,2068769,0,500,pass,mycology,DR,Decomposition rate,biology,mycology::decomposition_rate
+mycology::hyphal_growth_rate,f64,1,1,1888570,1888570,1888570,0,1000,pass,mycology,HGR,Hyphal growth rate,biology,mycology::hyphal_growth_rate
+mycology::spore_germination_probability,f64,1,1,1850959,1850959,1850959,0,1000,pass,mycology,SGP,Spore germination probability,biology,mycology::spore_germination_probability

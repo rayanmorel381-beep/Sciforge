@@ -1,0 +1,81 @@
+category: Other
+count: 6
+entries:
+  - label: ⁴⁰K
+    symbol: ⁴⁰K
+    name: Potassium
+    Z: 19
+    A: 40
+    N: 21
+    half_life: 1.248e9 years
+    decay_constant: 1.7598e-17 s⁻¹
+    decay_mode: beta- (electron emission)
+    specific_activity: 2.650e5 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.457 MeV/nucleon
+    avg_time_ns: 2266.50
+  - label: ¹⁴C
+    symbol: ¹⁴C
+    name: Carbon
+    Z: 6
+    A: 14
+    N: 8
+    half_life: 5730.00 years
+    decay_constant: 3.8330e-12 s⁻¹
+    decay_mode: beta- (electron emission)
+    specific_activity: 1.649e11 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.517 MeV/nucleon
+    avg_time_ns: 2285.18
+  - label: ²²⁶Ra
+    symbol: ²²⁶Ra
+    name: Radium
+    Z: 88
+    A: 226
+    N: 138
+    half_life: 1600.00 years
+    decay_constant: 1.3727e-11 s⁻¹
+    decay_mode: alpha emission
+    specific_activity: 3.658e10 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.568 MeV/nucleon
+    avg_time_ns: 2268.76
+  - label: ⁹⁰Sr
+    symbol: ⁹⁰Sr
+    name: Strontium
+    Z: 38
+    A: 90
+    N: 52
+    half_life: 28.79 years
+    decay_constant: 7.6286e-10 s⁻¹
+    decay_mode: beta- (electron emission)
+    specific_activity: 5.105e12 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.525 MeV/nucleon
+    avg_time_ns: 2214.38
+  - label: ¹³⁷Cs
+    symbol: ¹³⁷Cs
+    name: Cesium
+    Z: 55
+    A: 137
+    N: 82
+    half_life: 30.17 years
+    decay_constant: 7.2804e-10 s⁻¹
+    decay_mode: beta- (electron emission)
+    specific_activity: 3.200e12 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.552 MeV/nucleon
+    avg_time_ns: 2254.30
+  - label: ¹³¹I
+    symbol: ¹³¹I
+    name: Iodine
+    Z: 53
+    A: 131
+    N: 78
+    half_life: 8.03 days
+    decay_constant: 9.9967e-7 s⁻¹
+    decay_mode: beta- (electron emission)
+    specific_activity: 4.596e15 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.548 MeV/nucleon
+    avg_time_ns: 2220.21

@@ -1,0 +1,39 @@
+category: alkaline earth metal
+count: 6
+entries:
+  - label: 004_Be
+    symbol: Be
+    name: Beryllium
+    config: 1s² 2s²
+    mass: 9.0121831
+    avg_time_ns: 318.35
+  - label: 012_Mg
+    symbol: Mg
+    name: Magnesium
+    config: [Ne] 3s²
+    mass: 24.305
+    avg_time_ns: 926.44
+  - label: 020_Ca
+    symbol: Ca
+    name: Calcium
+    config: [Ar] 4s²
+    mass: 40.078
+    avg_time_ns: 1662.09
+  - label: 038_Sr
+    symbol: Sr
+    name: Strontium
+    config: [Kr] 5s²
+    mass: 87.62
+    avg_time_ns: 2917.53
+  - label: 056_Ba
+    symbol: Ba
+    name: Barium
+    config: [Xe] 6s²
+    mass: 137.327
+    avg_time_ns: 4288.23
+  - label: 088_Ra
+    symbol: Ra
+    name: Radium
+    config: [Rn] 7s²
+    mass: 226
+    avg_time_ns: 6927.16

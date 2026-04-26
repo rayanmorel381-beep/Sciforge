@@ -1,0 +1,19 @@
+{
+  "category": "me01",
+  "symbol": "SVI",
+  "name": "me005",
+  "target": "meteorology",
+  "module": "atmosphere",
+  "status": "ok",
+  "elapsed_ms": "5418",
+  "experiment_name": "meteorology_005",
+  "precision": "f64",
+  "elapsed_ms": 5418,
+  "iterations": 1,
+  "avg_time_ns": 5417999872.00,
+  "min_time_ns": 5417999872.00,
+  "max_time_ns": 5417999872.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.18,
+  "result": "success=true code=Some(0) stdout_bytes=174 stderr_bytes=322"
+}

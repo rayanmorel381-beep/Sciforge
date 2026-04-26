@@ -1,0 +1,51 @@
+category: dispatch
+count: 8
+entries:
+  - label: dispatch_arrhenius_temperature_effect
+    symbol: ATE
+    name: Arrhenius temperature effect
+    domain: chemistry
+    test: "dispatch::arrhenius_temperature_effect"
+    avg_time_ns: 2065189.00
+  - label: dispatch_cell_potential
+    symbol: CP
+    name: Cell potential
+    domain: chemistry
+    test: "dispatch::cell_potential"
+    avg_time_ns: 2221699.00
+  - label: dispatch_dispatch_missing_parameter_returns_error
+    symbol: DMP
+    name: Dispatch missing parameter returns error
+    domain: chemistry
+    test: "dispatch::dispatch_missing_parameter_returns_error"
+    avg_time_ns: 2209119.00
+  - label: dispatch_dispatch_unknown_function_returns_error
+    symbol: DUF
+    name: Dispatch unknown function returns error
+    domain: chemistry
+    test: "dispatch::dispatch_unknown_function_returns_error"
+    avg_time_ns: 2177829.00
+  - label: dispatch_gibbs_keq_roundtrip
+    symbol: GKR
+    name: Gibbs keq roundtrip
+    domain: chemistry
+    test: "dispatch::gibbs_keq_roundtrip"
+    avg_time_ns: 2004119.00
+  - label: dispatch_half_life_first_order
+    symbol: HLF
+    name: Half life first order
+    domain: chemistry
+    test: "dispatch::half_life_first_order"
+    avg_time_ns: 1896219.00
+  - label: dispatch_nernst_potential
+    symbol: NP
+    name: Nernst potential
+    domain: chemistry
+    test: "dispatch::nernst_potential"
+    avg_time_ns: 1826650.00
+  - label: dispatch_rate_constant_arrhenius
+    symbol: RCA
+    name: Rate constant arrhenius
+    domain: chemistry
+    test: "dispatch::rate_constant_arrhenius"
+    avg_time_ns: 1781359.00

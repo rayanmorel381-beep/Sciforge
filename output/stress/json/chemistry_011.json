@@ -1,0 +1,19 @@
+{
+  "category": "ch02",
+  "symbol": "RF",
+  "name": "ch011",
+  "target": "chemistry",
+  "module": "analytical",
+  "status": "ok",
+  "elapsed_ms": "3814",
+  "experiment_name": "chemistry_011",
+  "precision": "f64",
+  "elapsed_ms": 3814,
+  "iterations": 1,
+  "avg_time_ns": 3814000128.00,
+  "min_time_ns": 3814000128.00,
+  "max_time_ns": 3814000128.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.26,
+  "result": "success=true code=Some(0) stdout_bytes=155 stderr_bytes=214"
+}

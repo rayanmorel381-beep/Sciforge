@@ -1,0 +1,19 @@
+{
+  "category": "hb01",
+  "symbol": "FT",
+  "name": "hb007",
+  "target": "hub",
+  "module": "cross_domain",
+  "status": "ok",
+  "elapsed_ms": "5662",
+  "experiment_name": "hub_007",
+  "precision": "f64",
+  "elapsed_ms": 5662,
+  "iterations": 1,
+  "avg_time_ns": 5662000128.00,
+  "min_time_ns": 5662000128.00,
+  "max_time_ns": 5662000128.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.18,
+  "result": "success=true code=Some(0) stdout_bytes=169 stderr_bytes=254"
+}

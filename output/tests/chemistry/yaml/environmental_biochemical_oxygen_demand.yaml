@@ -1,0 +1,15 @@
+category: environmental
+symbol: BOD
+name: Biochemical oxygen demand
+domain: chemistry
+test: "environmental::biochemical_oxygen_demand"
+experiment_name: "environmental::biochemical_oxygen_demand"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1902919.00
+min_time_ns: 1902919.00
+max_time_ns: 1902919.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

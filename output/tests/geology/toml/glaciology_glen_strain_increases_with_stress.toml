@@ -1,0 +1,16 @@
+[benchmark]
+category = "glaciology"
+symbol = "GSI"
+name = "Glen strain increases with stress"
+domain = "geology"
+test = "glaciology::glen_strain_increases_with_stress"
+experiment_name = "glaciology::glen_strain_increases_with_stress"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2050680.00
+min_time_ns = 2050680.00
+max_time_ns = 2050680.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+scientific_validation_summary,f64,10974,1,5487000000,5487000000,5487000000,0,0.091124475,tests_total=2 tests_ok=2 tests_failed=0 elapsed_sum_ms=10974 min_ms=5320 max_ms=5654 avg_ms=5487.00,scientific_validation,SUM,SV Summary,scientific_validation,summary,ok,10974

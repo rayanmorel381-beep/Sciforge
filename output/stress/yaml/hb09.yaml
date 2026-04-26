@@ -1,0 +1,19 @@
+category: hb09
+count: 2
+entries:
+  - label: hub_081
+    symbol: RUR
+    name: hb081
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5690
+    avg_time_ns: 5689999872.00
+  - label: hub_082
+    symbol: SPI
+    name: hb082
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 3332
+    avg_time_ns: 3332000000.00

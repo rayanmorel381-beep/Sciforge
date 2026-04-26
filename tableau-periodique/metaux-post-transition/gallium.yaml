@@ -1,0 +1,66 @@
+element:
+  name: Gallium
+  symbol: Ga
+  atomic_number: 31
+  category: post-transition metal
+  group: 13
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s² 4p¹"
+  electronegativity: 1.81
+  atomic_mass: 69.723
+
+isotopes:
+  - name: Gallium-67
+    symbol: "⁶⁷Ga"
+    mass_number: 67
+    neutrons: 36
+    atomic_mass: 66.928202
+    half_life: 3.2612
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Zinc-67
+    natural_abundance: 0.0
+
+  - name: Gallium-68
+    symbol: "⁶⁸Ga"
+    mass_number: 68
+    neutrons: 37
+    atomic_mass: 67.927981
+    half_life: 67.71
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+
+        branching_ratio: 0.891
+        daughter: Zinc-68
+      - mode: electron capture
+        branching_ratio: 0.109
+        daughter: Zinc-68
+    natural_abundance: 0.0
+
+  - name: Gallium-69
+    symbol: "⁶⁹Ga"
+    mass_number: 69
+    neutrons: 38
+    atomic_mass: 68.925574
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.60108
+    nuclear_spin: "3/2-"
+
+  - name: Gallium-71
+    symbol: "⁷¹Ga"
+    mass_number: 71
+    neutrons: 40
+    atomic_mass: 70.924701
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.39892
+    nuclear_spin: "3/2-"

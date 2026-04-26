@@ -1,0 +1,113 @@
+element:
+  name: Strontium
+  symbol: Sr
+  atomic_number: 38
+  category: alkaline earth metal
+  group: 2
+  period: 5
+  electron_configuration: "[Kr] 5s²"
+  electronegativity: 0.95
+  atomic_mass: 87.62
+
+isotopes:
+  - name: Strontium-82
+    symbol: "⁸²Sr"
+    mass_number: 82
+    neutrons: 44
+    atomic_mass: 81.918402
+    half_life: 25.36
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Rubidium-82
+    natural_abundance: 0.0
+
+  - name: Strontium-84
+    symbol: "⁸⁴Sr"
+    mass_number: 84
+    neutrons: 46
+    atomic_mass: 83.913425
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0056
+
+  - name: Strontium-85
+    symbol: "⁸⁵Sr"
+    mass_number: 85
+    neutrons: 47
+    atomic_mass: 84.912933
+    half_life: 64.849
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Rubidium-85
+    natural_abundance: 0.0
+
+  - name: Strontium-86
+    symbol: "⁸⁶Sr"
+    mass_number: 86
+    neutrons: 48
+    atomic_mass: 85.909261
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0986
+
+  - name: Strontium-87
+    symbol: "⁸⁷Sr"
+    mass_number: 87
+    neutrons: 49
+    atomic_mass: 86.908878
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0700
+    nuclear_spin: "9/2+"
+
+  - name: Strontium-88
+    symbol: "⁸⁸Sr"
+    mass_number: 88
+    neutrons: 50
+    atomic_mass: 87.905612
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.8258
+    nuclear_spin: "0+"
+
+  - name: Strontium-89
+    symbol: "⁸⁹Sr"
+    mass_number: 89
+    neutrons: 51
+    atomic_mass: 88.907453
+    half_life: 50.57
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Yttrium-89
+    natural_abundance: 0.0
+
+  - name: Strontium-90
+    symbol: "⁹⁰Sr"
+    mass_number: 90
+    neutrons: 52
+    atomic_mass: 89.907738
+    half_life: 28.79
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Yttrium-90
+    natural_abundance: 0.0

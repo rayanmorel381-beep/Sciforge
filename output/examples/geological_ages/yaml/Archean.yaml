@@ -1,0 +1,39 @@
+category: Archean
+count: 3
+entries:
+  - label: Isua Greenstone
+    symbol: U
+    name: Isua Greenstone
+    method: U-Pb (235)
+    parent: ²³⁵U
+    daughter: ²⁰⁷Pb
+    ratio: 0.5800
+    half_life: 7.0400e8 years
+    decay_constant: 3.1197e-17 s⁻¹
+    computed_age: 464.5 Myr
+    expected_age: 3800 Myr
+    avg_time_ns: 4527.30
+  - label: Pilbara Craton
+    symbol: K
+    name: Pilbara Craton
+    method: K-Ar
+    parent: ⁴⁰K
+    daughter: ⁴⁰Ar
+    ratio: 0.1100
+    half_life: 1.2480e9 years
+    decay_constant: 1.7598e-17 s⁻¹
+    computed_age: 1294.7 Myr
+    expected_age: 3500 Myr
+    avg_time_ns: 4734.31
+  - label: Kaapvaal Craton
+    symbol: U
+    name: Kaapvaal Craton
+    method: U-Pb (238)
+    parent: ²³⁸U
+    daughter: ²⁰⁶Pb
+    ratio: 0.6500
+    half_life: 4.4680e9 years
+    decay_constant: 4.9156e-18 s⁻¹
+    computed_age: 3228.2 Myr
+    expected_age: 3100 Myr
+    avg_time_ns: 3742.12

@@ -1,0 +1,83 @@
+category: ch02
+count: 10
+entries:
+  - label: chemistry_011
+    symbol: RF
+    name: ch011
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 3814
+    avg_time_ns: 3814000128.00
+  - label: chemistry_012
+    symbol: STN
+    name: ch012
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 3835
+    avg_time_ns: 3835000064.00
+  - label: chemistry_013
+    symbol: BDC
+    name: ch013
+    target: chemistry
+    module: colloids
+    status: ok
+    elapsed_ms: 4950
+    avg_time_ns: 4950000128.00
+  - label: chemistry_014
+    symbol: SS
+    name: ch014
+    target: chemistry
+    module: colloids
+    status: ok
+    elapsed_ms: 4492
+    avg_time_ns: 4492000256.00
+  - label: chemistry_015
+    symbol: ZPS
+    name: ch015
+    target: chemistry
+    module: colloids
+    status: ok
+    elapsed_ms: 4752
+    avg_time_ns: 4752000000.00
+  - label: chemistry_016
+    symbol: DHE
+    name: ch016
+    target: chemistry
+    module: computational
+    status: ok
+    elapsed_ms: 5222
+    avg_time_ns: 5222000128.00
+  - label: chemistry_017
+    symbol: GP
+    name: ch017
+    target: chemistry
+    module: computational
+    status: ok
+    elapsed_ms: 4887
+    avg_time_ns: 4887000064.00
+  - label: chemistry_018
+    symbol: TFK
+    name: ch018
+    target: chemistry
+    module: computational
+    status: ok
+    elapsed_ms: 5350
+    avg_time_ns: 5350000128.00
+  - label: chemistry_019
+    symbol: BL
+    name: ch019
+    target: chemistry
+    module: crystallography
+    status: ok
+    elapsed_ms: 4416
+    avg_time_ns: 4416000000.00
+  - label: chemistry_020
+    symbol: ISC
+    name: ch020
+    target: chemistry
+    module: crystallography
+    status: ok
+    elapsed_ms: 5013
+    avg_time_ns: 5013000192.00

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Geological Ages — Radiometric Dating with Isotope Half-lives</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0d1117;color:#c9d1d9;padding:2em;max-width:1800px;margin:0 auto}
+h1{color:#58a6ff;margin-bottom:.5em;font-size:2em}
+h2{color:#79c0ff;margin:1.5em 0 .5em;border-bottom:1px solid #21262d;padding-bottom:.3em}
+p{margin:.5em 0;line-height:1.6}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;font-size:.85em}
+th{background:#161b22;color:#58a6ff;position:sticky;top:0}
+tr:nth-child(even){background:#161b22}
+pre{background:#161b22;padding:1em;border-radius:6px;overflow-x:auto;max-height:600px;font-size:.8em}
+code{font-family:ui-monospace,monospace}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1em;margin:1em 0}
+.stat-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1em;text-align:center}
+.stat-card .num{font-size:2em;color:#58a6ff;font-weight:bold}
+.stat-card .lbl{font-size:.8em;color:#8b949e}
+.tabs{display:flex;gap:0;margin-top:1.5em;flex-wrap:wrap}
+.tab{padding:.6em 1.2em;cursor:pointer;background:#161b22;border:1px solid #30363d;border-bottom:none;border-radius:6px 6px 0 0;color:#8b949e;font-weight:600}
+.tab:hover{color:#c9d1d9}
+.tab.active{background:#0d1117;color:#58a6ff;border-bottom:1px solid #0d1117}
+.panel{display:none;border:1px solid #30363d;padding:1em;border-radius:0 6px 6px 6px}
+.panel.active{display:block}
+.fsel{width:100%;padding:.5em;margin-bottom:.8em;background:#161b22;color:#c9d1d9;border:1px solid #30363d;border-radius:4px;font-family:ui-monospace,monospace;font-size:.85em}
+.charts{display:grid;grid-template-columns:repeat(auto-fill,minmax(500px,1fr));gap:1.5em;margin:1em 0}
+.chart-box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1.2em}
+.chart-box h3{color:#79c0ff;font-size:.95em;margin-bottom:.8em}
+.ptable{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin:1.5em 0}
+.el{padding:6px 3px;text-align:center;border-radius:6px;min-height:68px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:transform .15s,box-shadow .15s;border:1px solid rgba(255,255,255,.06)}
+.el:hover{transform:scale(1.4);box-shadow:0 0 16px rgba(88,166,255,.6);z-index:10;position:relative}
+.el .z{font-size:.55em;opacity:.65;color:#8b949e}
+.el .sym{font-size:1.5em;font-weight:700;line-height:1.1}
+.el .mass{font-size:.5em;opacity:.55;color:#8b949e}
+.el .ns{font-size:.45em;opacity:.45;color:#58a6ff}
+.el .nm{font-size:.5em;opacity:.6;color:#8b949e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.empty{background:transparent}
+.marker{display:flex;align-items:center;justify-content:center;font-weight:700;color:#58a6ff;font-size:.85em}
+.legend{display:flex;flex-wrap:wrap;gap:.8em;margin:.8em 0;align-items:center}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.75em;color:#8b949e}
+.legend-swatch{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,.1)}
+@keyframes hl{0%{box-shadow:0 0 20px #58a6ff}100%{box-shadow:none}}
+.highlight{animation:hl 2s ease-out}
+.detail{display:none;margin:1.5em 0;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:1.5em;position:relative}
+.detail.open{display:grid;grid-template-columns:auto 1fr;gap:.6em 1.5em;align-items:baseline}
+.detail .close{position:absolute;top:10px;right:14px;cursor:pointer;color:#8b949e;font-size:1.4em;background:none;border:none}
+.detail .close:hover{color:#f85149}
+.detail .dk{color:#8b949e;font-size:.85em;text-align:right}
+.detail .dv{color:#c9d1d9;font-size:.95em;font-weight:600}
+.detail .dtitle{grid-column:1/-1;font-size:1.3em;font-weight:700;margin-bottom:.3em}
+.detail .files{grid-column:1/-1;display:flex;gap:.5em;margin-top:.5em}
+.detail .fbtn{padding:.3em .8em;background:#21262d;border:1px solid #30363d;border-radius:4px;color:#58a6ff;cursor:pointer;font-size:.8em;text-decoration:none}
+.detail .fbtn:hover{background:#30363d}
+.cat-0{background:linear-gradient(135deg,#1a3a1a,#0d0d0d);color:#7ee787}
+.cat-1{background:linear-gradient(135deg,#0a2a3a,#0d0d0d);color:#79c0ff}
+.cat-2{background:linear-gradient(135deg,#3a2a0a,#0d0d0d);color:#ffa657}
+.cat-3{background:linear-gradient(135deg,#3a1a2e,#0d0d0d);color:#d2a8ff}
+.cat-4{background:linear-gradient(135deg,#3a1a2a,#0d0d0d);color:#ff7eb6}
+</style>
+</head>
+<body>
+
+<h1>Geological Ages — Radiometric Dating with Isotope Half-lives</h1>
+<p>10 benchmark entries &mdash; 6 formats: CSV, JSON, YAML, TOML, BMK, Markdown.</p>
+
+<div class="stats">
+<div class="stat-card"><div class="num">10</div><div class="lbl">Elements</div></div>
+<div class="stat-card"><div class="num">6</div><div class="lbl">Formats</div></div>
+<div class="stat-card"><div class="num">64</div><div class="lbl">Files</div></div>
+</div>
+
+<h2>Interactive Grid</h2>
+<div class="legend">
+<div class="legend-item"><div class="legend-swatch cat-0"></div>Hadean</div>
+<div class="legend-item"><div class="legend-swatch cat-1"></div>Archean</div>
+<div class="legend-item"><div class="legend-swatch cat-2"></div>Proterozoic</div>
+<div class="legend-item"><div class="legend-swatch cat-3"></div>Mesozoic</div>
+<div class="legend-item"><div class="legend-swatch cat-4"></div>Cenozoic</div>
+</div>
+<div class="ptable">
+<div id="el-Jack Hills zircon" class="el cat-0" style="grid-row:1;grid-column:1" title="Jack Hills zircon - 3817.2ns" onclick="go('Jack Hills zircon')"><div class="sym">U</div><div class="nm">Jack Hills zircon</div><div class="ns">3817ns</div></div>
+<div id="el-Acasta Gneiss" class="el cat-0" style="grid-row:1;grid-column:2" title="Acasta Gneiss - 3712.4ns" onclick="go('Acasta Gneiss')"><div class="sym">U</div><div class="nm">Acasta Gneiss</div><div class="ns">3712ns</div></div>
+<div id="el-Isua Greenstone" class="el cat-1" style="grid-row:1;grid-column:3" title="Isua Greenstone - 4527.3ns" onclick="go('Isua Greenstone')"><div class="sym">U</div><div class="nm">Isua Greenstone</div><div class="ns">4527ns</div></div>
+<div id="el-Pilbara Craton" class="el cat-1" style="grid-row:1;grid-column:4" title="Pilbara Craton - 4734.3ns" onclick="go('Pilbara Craton')"><div class="sym">K</div><div class="nm">Pilbara Craton</div><div class="ns">4734ns</div></div>
+<div id="el-Kaapvaal Craton" class="el cat-1" style="grid-row:1;grid-column:5" title="Kaapvaal Craton - 3742.1ns" onclick="go('Kaapvaal Craton')"><div class="sym">U</div><div class="nm">Kaapvaal Craton</div><div class="ns">3742ns</div></div>
+<div id="el-Bushveld Complex" class="el cat-2" style="grid-row:2;grid-column:1" title="Bushveld Complex - 3766.4ns" onclick="go('Bushveld Complex')"><div class="sym">U</div><div class="nm">Bushveld Complex</div><div class="ns">3766ns</div></div>
+<div id="el-Sudbury Impact" class="el cat-2" style="grid-row:2;grid-column:2" title="Sudbury Impact - 3745.9ns" onclick="go('Sudbury Impact')"><div class="sym">U</div><div class="nm">Sudbury Impact</div><div class="ns">3746ns</div></div>
+<div id="el-Deccan Traps" class="el cat-3" style="grid-row:2;grid-column:3" title="Deccan Traps - 4591.0ns" onclick="go('Deccan Traps')"><div class="sym">K</div><div class="nm">Deccan Traps</div><div class="ns">4591ns</div></div>
+<div id="el-KT Boundary clay" class="el cat-4" style="grid-row:2;grid-column:4" title="KT Boundary clay - 4595.3ns" onclick="go('KT Boundary clay')"><div class="sym">C</div><div class="nm">KT Boundary clay</div><div class="ns">4595ns</div></div>
+<div id="el-Lascaux paintings" class="el cat-4" style="grid-row:2;grid-column:5" title="Lascaux paintings - 4756.2ns" onclick="go('Lascaux paintings')"><div class="sym">C</div><div class="nm">Lascaux paintings</div><div class="ns">4756ns</div></div>
+</div>
+
+<div id="detail" class="detail">
+<button class="close" onclick="closeDetail()">&times;</button>
+<div class="dtitle" id="d-title"></div>
+<div id="d-tags"></div>
+<div class="dk">Precision</div><div class="dv" id="d-prec"></div>
+<div class="dk">Iterations</div><div class="dv" id="d-iter"></div>
+<div class="dk">Avg Time</div><div class="dv" id="d-avg"></div>
+<div class="dk">Min Time</div><div class="dv" id="d-min"></div>
+<div class="dk">Max Time</div><div class="dv" id="d-max"></div>
+<div class="dk">Std Dev</div><div class="dv" id="d-std"></div>
+<div class="dk">Iters/sec</div><div class="dv" id="d-ips"></div>
+<div class="files" id="d-files"></div>
+</div>
+
+<h2>Data Formats</h2>
+<div class="tabs">
+<div class="tab active" onclick="switchTab(event,'csv')">CSV</div>
+<div class="tab" onclick="switchTab(event,'json')">JSON</div>
+<div class="tab" onclick="switchTab(event,'yaml')">YAML</div>
+<div class="tab" onclick="switchTab(event,'toml')">TOML</div>
+<div class="tab" onclick="switchTab(event,'bmk')">BMK</div>
+<div class="tab" onclick="switchTab(event,'mdprev')">Markdown</div>
+</div>
+<div id="csv" class="panel active">
+<select class="fsel" onchange="showFile('csv',this.value)">
+<option>Archean.csv</option>
+<option>Cenozoic.csv</option>
+<option>Hadean.csv</option>
+<option>Mesozoic.csv</option>
+<option>Proterozoic.csv</option>
+<option>all.csv</option>
+</select>
+<div id="csv-code" style="overflow-x:auto;max-height:600px;overflow-y:auto"></div>
+</div>
+<div id="json" class="panel">
+<select class="fsel" onchange="showFile('json',this.value)">
+<option>Acasta Gneiss.json</option>
+<option>Bushveld Complex.json</option>
+<option>Deccan Traps.json</option>
+<option>Isua Greenstone.json</option>
+<option>Jack Hills zircon.json</option>
+<option>KT Boundary clay.json</option>
+<option>Kaapvaal Craton.json</option>
+<option>Lascaux paintings.json</option>
+<option>Pilbara Craton.json</option>
+<option>Sudbury Impact.json</option>
+<option>summary.json</option>
+</select>
+<pre><code id="json-code"></code></pre>
+</div>
+<div id="yaml" class="panel">
+<select class="fsel" onchange="showFile('yaml',this.value)">
+<option>Acasta Gneiss.yaml</option>
+<option>Archean.yaml</option>
+<option>Bushveld Complex.yaml</option>
+<option>Cenozoic.yaml</option>
+<option>Deccan Traps.yaml</option>
+<option>Hadean.yaml</option>
+<option>Isua Greenstone.yaml</option>
+<option>Jack Hills zircon.yaml</option>
+<option>KT Boundary clay.yaml</option>
+<option>Kaapvaal Craton.yaml</option>
+<option>Lascaux paintings.yaml</option>
+<option>Mesozoic.yaml</option>
+<option>Pilbara Craton.yaml</option>
+<option>Proterozoic.yaml</option>
+<option>Sudbury Impact.yaml</option>
+<option>summary.yaml</option>
+</select>
+<pre><code id="yaml-code"></code></pre>
+</div>
+<div id="toml" class="panel">
+<select class="fsel" onchange="showFile('toml',this.value)">
+<option>Acasta Gneiss.toml</option>
+<option>Bushveld Complex.toml</option>
+<option>Deccan Traps.toml</option>
+<option>Isua Greenstone.toml</option>
+<option>Jack Hills zircon.toml</option>
+<option>KT Boundary clay.toml</option>
+<option>Kaapvaal Craton.toml</option>
+<option>Lascaux paintings.toml</option>
+<option>Pilbara Craton.toml</option>
+<option>Sudbury Impact.toml</option>
+<option>summary.toml</option>
+</select>
+<pre><code id="toml-code"></code></pre>
+</div>
+<div id="bmk" class="panel">
+<select class="fsel" onchange="showFile('bmk',this.value)">
+<option>Acasta Gneiss.bmk</option>
+<option>Bushveld Complex.bmk</option>
+<option>Deccan Traps.bmk</option>
+<option>Isua Greenstone.bmk</option>
+<option>Jack Hills zircon.bmk</option>
+<option>KT Boundary clay.bmk</option>
+<option>Kaapvaal Craton.bmk</option>
+<option>Lascaux paintings.bmk</option>
+<option>Pilbara Craton.bmk</option>
+<option>Sudbury Impact.bmk</option>
+</select>
+<pre><code id="bmk-code"></code></pre>
+</div>
+<div id="mdprev" class="panel" style="max-height:700px;overflow-y:auto">
+<h2 style="color:#58a6ff;border-bottom:1px solid #21262d;padding-bottom:.3em;margin-bottom:.5em">Geological Ages — Radiometric Dating with Isotope Half-lives</h2>
+<p style="line-height:1.6;margin:.4em 0">10 benchmark entries across 5 formats.</p>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Grid</h3>
+<pre><code>  Hadean          :   U    U
+  Archean         :   U    K    U
+  Proterozoic     :   U    U
+  Mesozoic        :   K
+  Cenozoic        :   C    C
+</code></pre>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Directory Layout</h3>
+<pre><code>csv/
+  all.csv
+json/
+  {label}.json
+  summary.json
+yaml/
+  {label}.yaml
+  summary.yaml
+toml/
+  {label}.toml
+  summary.toml
+bmk/
+  {label}.bmk
+benchmark.html
+benchmark.md
+</code></pre>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Results</h3>
+<table>
+<thead>
+<tr><th>Label</th><th>category</th><th>symbol</th><th>name</th><th>method</th><th>parent</th><th>daughter</th><th>ratio</th><th>half_life</th><th>decay_constant</th><th>computed_age</th><th>expected_age</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
+</thead><tbody>
+<tr><td>Jack Hills zircon</td><td>Hadean</td><td>U</td><td>Jack Hills zircon</td><td>U-Pb (238)</td><td>²³⁸U</td><td>²⁰⁶Pb</td><td>1.0200</td><td>4.4680e9 years</td><td>4.9156e-18 s⁻¹</td><td>4532.5 Myr</td><td>4400 Myr</td><td>f64</td><td>5000</td><td>3817.20</td><td>263157.91</td></tr>
+<tr><td>Acasta Gneiss</td><td>Hadean</td><td>U</td><td>Acasta Gneiss</td><td>U-Pb (238)</td><td>²³⁸U</td><td>²⁰⁶Pb</td><td>0.8500</td><td>4.4680e9 years</td><td>4.9156e-18 s⁻¹</td><td>3965.7 Myr</td><td>4030 Myr</td><td>f64</td><td>5000</td><td>3712.41</td><td>277777.78</td></tr>
+<tr><td>Isua Greenstone</td><td>Archean</td><td>U</td><td>Isua Greenstone</td><td>U-Pb (235)</td><td>²³⁵U</td><td>²⁰⁷Pb</td><td>0.5800</td><td>7.0400e8 years</td><td>3.1197e-17 s⁻¹</td><td>464.5 Myr</td><td>3800 Myr</td><td>f64</td><td>5000</td><td>4527.30</td><td>227272.73</td></tr>
+<tr><td>Pilbara Craton</td><td>Archean</td><td>K</td><td>Pilbara Craton</td><td>K-Ar</td><td>⁴⁰K</td><td>⁴⁰Ar</td><td>0.1100</td><td>1.2480e9 years</td><td>1.7598e-17 s⁻¹</td><td>1294.7 Myr</td><td>3500 Myr</td><td>f64</td><td>5000</td><td>4734.31</td><td>217391.30</td></tr>
+<tr><td>Kaapvaal Craton</td><td>Archean</td><td>U</td><td>Kaapvaal Craton</td><td>U-Pb (238)</td><td>²³⁸U</td><td>²⁰⁶Pb</td><td>0.6500</td><td>4.4680e9 years</td><td>4.9156e-18 s⁻¹</td><td>3228.2 Myr</td><td>3100 Myr</td><td>f64</td><td>5000</td><td>3742.12</td><td>277777.78</td></tr>
+<tr><td>Bushveld Complex</td><td>Proterozoic</td><td>U</td><td>Bushveld Complex</td><td>U-Pb (238)</td><td>²³⁸U</td><td>²⁰⁶Pb</td><td>0.3200</td><td>4.4680e9 years</td><td>4.9156e-18 s⁻¹</td><td>1789.7 Myr</td><td>2055 Myr</td><td>f64</td><td>5000</td><td>3766.45</td><td>277777.78</td></tr>
+<tr><td>Sudbury Impact</td><td>Proterozoic</td><td>U</td><td>Sudbury Impact</td><td>U-Pb (238)</td><td>²³⁸U</td><td>²⁰⁶Pb</td><td>0.2800</td><td>4.4680e9 years</td><td>4.9156e-18 s⁻¹</td><td>1591.4 Myr</td><td>1849 Myr</td><td>f64</td><td>5000</td><td>3745.87</td><td>277777.78</td></tr>
+<tr><td>Deccan Traps</td><td>Mesozoic</td><td>K</td><td>Deccan Traps</td><td>K-Ar</td><td>⁴⁰K</td><td>⁴⁰Ar</td><td>0.0050</td><td>1.2480e9 years</td><td>1.7598e-17 s⁻¹</td><td>84.1 Myr</td><td>66 Myr</td><td>f64</td><td>5000</td><td>4590.98</td><td>227272.73</td></tr>
+<tr><td>KT Boundary clay</td><td>Cenozoic</td><td>C</td><td>KT Boundary clay</td><td>C-14</td><td>¹⁴C</td><td>¹⁴N</td><td>0.0000</td><td>5.7300e3 years</td><td>3.8330e-12 s⁻¹</td><td>beyond range</td><td>65.0 kyr</td><td>f64</td><td>5000</td><td>4595.33</td><td>227272.73</td></tr>
+<tr><td>Lascaux paintings</td><td>Cenozoic</td><td>C</td><td>Lascaux paintings</td><td>C-14</td><td>¹⁴C</td><td>¹⁴N</td><td>0.8200</td><td>5.7300e3 years</td><td>3.8330e-12 s⁻¹</td><td>1641 yr</td><td>17.0 kyr</td><td>f64</td><td>5000</td><td>4756.22</td><td>217391.30</td></tr>
+</tbody></table>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
+<p style="line-height:1.6;margin:.4em 0">### Category Distribution</p>
+<table>
+<thead>
+<tr><th>Category</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
+</thead><tbody>
+<tr><td>Hadean</td><td>2</td><td>3764.81</td><td>3712.41</td><td>3817.20</td></tr>
+<tr><td>Archean</td><td>3</td><td>4334.58</td><td>3742.12</td><td>4734.31</td></tr>
+<tr><td>Proterozoic</td><td>2</td><td>3756.16</td><td>3745.87</td><td>3766.45</td></tr>
+<tr><td>Mesozoic</td><td>1</td><td>4590.98</td><td>4590.98</td><td>4590.98</td></tr>
+<tr><td>Cenozoic</td><td>2</td><td>4675.77</td><td>4595.33</td><td>4756.22</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>Acasta Gneiss</td><td>3712.41</td></tr>
+<tr><td>2</td><td>Kaapvaal Craton</td><td>3742.12</td></tr>
+<tr><td>3</td><td>Sudbury Impact</td><td>3745.87</td></tr>
+<tr><td>4</td><td>Bushveld Complex</td><td>3766.45</td></tr>
+<tr><td>5</td><td>Jack Hills zircon</td><td>3817.20</td></tr>
+<tr><td>6</td><td>Isua Greenstone</td><td>4527.30</td></tr>
+<tr><td>7</td><td>Deccan Traps</td><td>4590.98</td></tr>
+<tr><td>8</td><td>KT Boundary clay</td><td>4595.33</td></tr>
+<tr><td>9</td><td>Pilbara Craton</td><td>4734.31</td></tr>
+<tr><td>10</td><td>Lascaux paintings</td><td>4756.22</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>Lascaux paintings</td><td>4756.22</td></tr>
+<tr><td>2</td><td>Pilbara Craton</td><td>4734.31</td></tr>
+<tr><td>3</td><td>KT Boundary clay</td><td>4595.33</td></tr>
+<tr><td>4</td><td>Deccan Traps</td><td>4590.98</td></tr>
+<tr><td>5</td><td>Isua Greenstone</td><td>4527.30</td></tr>
+<tr><td>6</td><td>Jack Hills zircon</td><td>3817.20</td></tr>
+<tr><td>7</td><td>Bushveld Complex</td><td>3766.45</td></tr>
+<tr><td>8</td><td>Sudbury Impact</td><td>3745.87</td></tr>
+<tr><td>9</td><td>Kaapvaal Craton</td><td>3742.12</td></tr>
+<tr><td>10</td><td>Acasta Gneiss</td><td>3712.41</td></tr>
+</tbody></table>
+</div>
+
+<h2>Analytics</h2>
+<div class="charts">
+<div class="chart-box">
+<h3>Category Distribution</h3>
+<svg viewBox="0 0 650 150" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Hadean</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="286" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="460" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Archean</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="604" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Proterozoic</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="286" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="460" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Mesozoic</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="143" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="317" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1</text>
+<text x="160" y="130" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Cenozoic</text>
+<rect x="168" y="116" width="430" height="22" rx="4" fill="#3a1a2a"/>
+<rect x="168" y="116" width="286" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="460" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Average Time per Category (ns)</h3>
+<svg viewBox="0 0 650 150" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Hadean</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="346" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="520" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3764.8</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Archean</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="398" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="572" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4334.6</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Proterozoic</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="345" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="519" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3756.2</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Mesozoic</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="422" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="596" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4591.0</text>
+<text x="160" y="130" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Cenozoic</text>
+<rect x="168" y="116" width="430" height="22" rx="4" fill="#3a1a2a"/>
+<rect x="168" y="116" width="430" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="604" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4675.8</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Fastest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Acasta Gneiss</text>
+<rect x="168" y="4" width="335" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="509" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3712.4 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Kaapvaal Craton</text>
+<rect x="168" y="32" width="338" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="512" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3742.1 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sudbury Impact</text>
+<rect x="168" y="60" width="338" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="512" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3745.9 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Bushveld Complex</text>
+<rect x="168" y="88" width="340" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="514" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3766.4 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Jack Hills zircon</text>
+<rect x="168" y="116" width="345" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="519" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3817.2 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Isua Greenstone</text>
+<rect x="168" y="144" width="409" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="583" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4527.3 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Deccan Traps</text>
+<rect x="168" y="172" width="415" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="589" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4591.0 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">KT Boundary clay</text>
+<rect x="168" y="200" width="415" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="589" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4595.3 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Pilbara Craton</text>
+<rect x="168" y="228" width="428" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="602" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4734.3 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Lascaux paintings</text>
+<rect x="168" y="256" width="430" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="604" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4756.2 ns</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Slowest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Lascaux paintings</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4756.2 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Pilbara Craton</text>
+<rect x="168" y="32" width="428" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="602" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4734.3 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">KT Boundary clay</text>
+<rect x="168" y="60" width="415" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="589" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4595.3 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Deccan Traps</text>
+<rect x="168" y="88" width="415" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="589" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4591.0 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Isua Greenstone</text>
+<rect x="168" y="116" width="409" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="583" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4527.3 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Jack Hills zircon</text>
+<rect x="168" y="144" width="345" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="519" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3817.2 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Bushveld Complex</text>
+<rect x="168" y="172" width="340" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="514" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3766.4 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sudbury Impact</text>
+<rect x="168" y="200" width="338" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="512" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3745.9 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Kaapvaal Craton</text>
+<rect x="168" y="228" width="338" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="512" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3742.1 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Acasta Gneiss</text>
+<rect x="168" y="256" width="335" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="509" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3712.4 ns</text>
+</svg>
+</div>
+
+<div class="chart-box" style="grid-column:1/-1">
+<h3>Category Statistics</h3>
+<svg viewBox="0 0 900 180" style="width:100%;max-width:900px">
+<rect x="0" y="4" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
+<text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">Hadean</text>
+<text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 3764.8 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 3712.4 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 3817.2 ns</text>
+<rect x="0" y="38" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="38" width="4" height="28" rx="2" fill="#79c0ff"/>
+<text x="14" y="52" fill="#79c0ff" font-size="12" font-weight="bold" dominant-baseline="middle">Archean</text>
+<text x="250" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">n=3</text>
+<text x="350" y="52" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 4334.6 ns</text>
+<text x="520" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">min 3742.1 ns</text>
+<text x="680" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">max 4734.3 ns</text>
+<rect x="0" y="72" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="72" width="4" height="28" rx="2" fill="#ffa657"/>
+<text x="14" y="86" fill="#ffa657" font-size="12" font-weight="bold" dominant-baseline="middle">Proterozoic</text>
+<text x="250" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="86" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 3756.2 ns</text>
+<text x="520" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">min 3745.9 ns</text>
+<text x="680" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">max 3766.4 ns</text>
+<rect x="0" y="106" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="106" width="4" height="28" rx="2" fill="#d2a8ff"/>
+<text x="14" y="120" fill="#d2a8ff" font-size="12" font-weight="bold" dominant-baseline="middle">Mesozoic</text>
+<text x="250" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
+<text x="350" y="120" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 4591.0 ns</text>
+<text x="520" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">min 4591.0 ns</text>
+<text x="680" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">max 4591.0 ns</text>
+<rect x="0" y="140" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="140" width="4" height="28" rx="2" fill="#ff7eb6"/>
+<text x="14" y="154" fill="#ff7eb6" font-size="12" font-weight="bold" dominant-baseline="middle">Cenozoic</text>
+<text x="250" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="154" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 4675.8 ns</text>
+<text x="520" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">min 4595.3 ns</text>
+<text x="680" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">max 4756.2 ns</text>
+</svg>
+</div>
+
+</div>
+
+<script>
+var F={
+csv:{
+"Archean.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age\nIsua Greenstone_dating,f64,22,5000,4527.304,4527.304,4527.304,0,227272.73,Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr,Archean,U,Isua Greenstone,U-Pb (235),²³⁵U,²⁰⁷Pb,0.5800,7.0400e8 years,3.1197e-17 s⁻¹,464.5 Myr,3800 Myr\nPilbara Craton_dating,f64,23,5000,4734.306,4734.306,4734.306,0,217391.3,Pilbara Craton | K-Ar | D/P=0.1100 | t½=1.2480e9 years | Computed: 1294.7 Myr | Expected: 3500 Myr,Archean,K,Pilbara Craton,K-Ar,⁴⁰K,⁴⁰Ar,0.1100,1.2480e9 years,1.7598e-17 s⁻¹,1294.7 Myr,3500 Myr\nKaapvaal Craton_dating,f64,18,5000,3742.1223,3742.1223,3742.1223,0,277777.78,Kaapvaal Craton | U-Pb (238) | D/P=0.6500 | t½=4.4680e9 years | Computed: 3228.2 Myr | Expected: 3100 Myr,Archean,U,Kaapvaal Craton,U-Pb (238),²³⁸U,²⁰⁶Pb,0.6500,4.4680e9 years,4.9156e-18 s⁻¹,3228.2 Myr,3100 Myr\n",
+"Cenozoic.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age\nKT Boundary clay_dating,f64,22,5000,4595.3296,4595.3296,4595.3296,0,227272.73,KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr,Cenozoic,C,KT Boundary clay,C-14,¹⁴C,¹⁴N,0.0000,5.7300e3 years,3.8330e-12 s⁻¹,beyond range,65.0 kyr\nLascaux paintings_dating,f64,23,5000,4756.218,4756.218,4756.218,0,217391.3,Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr,Cenozoic,C,Lascaux paintings,C-14,¹⁴C,¹⁴N,0.8200,5.7300e3 years,3.8330e-12 s⁻¹,1641 yr,17.0 kyr\n",
+"Hadean.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age\nJack Hills zircon_dating,f64,19,5000,3817.1985,3817.1985,3817.1985,0,263157.9,Jack Hills zircon | U-Pb (238) | D/P=1.0200 | t½=4.4680e9 years | Computed: 4532.5 Myr | Expected: 4400 Myr,Hadean,U,Jack Hills zircon,U-Pb (238),²³⁸U,²⁰⁶Pb,1.0200,4.4680e9 years,4.9156e-18 s⁻¹,4532.5 Myr,4400 Myr\nAcasta Gneiss_dating,f64,18,5000,3712.4143,3712.4143,3712.4143,0,277777.78,Acasta Gneiss | U-Pb (238) | D/P=0.8500 | t½=4.4680e9 years | Computed: 3965.7 Myr | Expected: 4030 Myr,Hadean,U,Acasta Gneiss,U-Pb (238),²³⁸U,²⁰⁶Pb,0.8500,4.4680e9 years,4.9156e-18 s⁻¹,3965.7 Myr,4030 Myr\n",
+"Mesozoic.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age\nDeccan Traps_dating,f64,22,5000,4590.976,4590.976,4590.976,0,227272.73,Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr,Mesozoic,K,Deccan Traps,K-Ar,⁴⁰K,⁴⁰Ar,0.0050,1.2480e9 years,1.7598e-17 s⁻¹,84.1 Myr,66 Myr\n",
+"Proterozoic.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age\nBushveld Complex_dating,f64,18,5000,3766.4485,3766.4485,3766.4485,0,277777.78,Bushveld Complex | U-Pb (238) | D/P=0.3200 | t½=4.4680e9 years | Computed: 1789.7 Myr | Expected: 2055 Myr,Proterozoic,U,Bushveld Complex,U-Pb (238),²³⁸U,²⁰⁶Pb,0.3200,4.4680e9 years,4.9156e-18 s⁻¹,1789.7 Myr,2055 Myr\nSudbury Impact_dating,f64,18,5000,3745.8723,3745.8723,3745.8723,0,277777.78,Sudbury Impact | U-Pb (238) | D/P=0.2800 | t½=4.4680e9 years | Computed: 1591.4 Myr | Expected: 1849 Myr,Proterozoic,U,Sudbury Impact,U-Pb (238),²³⁸U,²⁰⁶Pb,0.2800,4.4680e9 years,4.9156e-18 s⁻¹,1591.4 Myr,1849 Myr\n",
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age\nJack Hills zircon_dating,f64,19,5000,3817.1985,3817.1985,3817.1985,0,263157.9,Jack Hills zircon | U-Pb (238) | D/P=1.0200 | t½=4.4680e9 years | Computed: 4532.5 Myr | Expected: 4400 Myr,Hadean,U,Jack Hills zircon,U-Pb (238),²³⁸U,²⁰⁶Pb,1.0200,4.4680e9 years,4.9156e-18 s⁻¹,4532.5 Myr,4400 Myr\nAcasta Gneiss_dating,f64,18,5000,3712.4143,3712.4143,3712.4143,0,277777.78,Acasta Gneiss | U-Pb (238) | D/P=0.8500 | t½=4.4680e9 years | Computed: 3965.7 Myr | Expected: 4030 Myr,Hadean,U,Acasta Gneiss,U-Pb (238),²³⁸U,²⁰⁶Pb,0.8500,4.4680e9 years,4.9156e-18 s⁻¹,3965.7 Myr,4030 Myr\nIsua Greenstone_dating,f64,22,5000,4527.304,4527.304,4527.304,0,227272.73,Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr,Archean,U,Isua Greenstone,U-Pb (235),²³⁵U,²⁰⁷Pb,0.5800,7.0400e8 years,3.1197e-17 s⁻¹,464.5 Myr,3800 Myr\nPilbara Craton_dating,f64,23,5000,4734.306,4734.306,4734.306,0,217391.3,Pilbara Craton | K-Ar | D/P=0.1100 | t½=1.2480e9 years | Computed: 1294.7 Myr | Expected: 3500 Myr,Archean,K,Pilbara Craton,K-Ar,⁴⁰K,⁴⁰Ar,0.1100,1.2480e9 years,1.7598e-17 s⁻¹,1294.7 Myr,3500 Myr\nKaapvaal Craton_dating,f64,18,5000,3742.1223,3742.1223,3742.1223,0,277777.78,Kaapvaal Craton | U-Pb (238) | D/P=0.6500 | t½=4.4680e9 years | Computed: 3228.2 Myr | Expected: 3100 Myr,Archean,U,Kaapvaal Craton,U-Pb (238),²³⁸U,²⁰⁶Pb,0.6500,4.4680e9 years,4.9156e-18 s⁻¹,3228.2 Myr,3100 Myr\nBushveld Complex_dating,f64,18,5000,3766.4485,3766.4485,3766.4485,0,277777.78,Bushveld Complex | U-Pb (238) | D/P=0.3200 | t½=4.4680e9 years | Computed: 1789.7 Myr | Expected: 2055 Myr,Proterozoic,U,Bushveld Complex,U-Pb (238),²³⁸U,²⁰⁶Pb,0.3200,4.4680e9 years,4.9156e-18 s⁻¹,1789.7 Myr,2055 Myr\nSudbury Impact_dating,f64,18,5000,3745.8723,3745.8723,3745.8723,0,277777.78,Sudbury Impact | U-Pb (238) | D/P=0.2800 | t½=4.4680e9 years | Computed: 1591.4 Myr | Expected: 1849 Myr,Proterozoic,U,Sudbury Impact,U-Pb (238),²³⁸U,²⁰⁶Pb,0.2800,4.4680e9 years,4.9156e-18 s⁻¹,1591.4 Myr,1849 Myr\nDeccan Traps_dating,f64,22,5000,4590.976,4590.976,4590.976,0,227272.73,Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr,Mesozoic,K,Deccan Traps,K-Ar,⁴⁰K,⁴⁰Ar,0.0050,1.2480e9 years,1.7598e-17 s⁻¹,84.1 Myr,66 Myr\nKT Boundary clay_dating,f64,22,5000,4595.3296,4595.3296,4595.3296,0,227272.73,KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr,Cenozoic,C,KT Boundary clay,C-14,¹⁴C,¹⁴N,0.0000,5.7300e3 years,3.8330e-12 s⁻¹,beyond range,65.0 kyr\nLascaux paintings_dating,f64,23,5000,4756.218,4756.218,4756.218,0,217391.3,Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr,Cenozoic,C,Lascaux paintings,C-14,¹⁴C,¹⁴N,0.8200,5.7300e3 years,3.8330e-12 s⁻¹,1641 yr,17.0 kyr\n"},
+json:{
+"Acasta Gneiss.json":"{\n  \"category\": \"Hadean\",\n  \"symbol\": \"U\",\n  \"name\": \"Acasta Gneiss\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.8500\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"3965.7 Myr\",\n  \"expected_age\": \"4030 Myr\",\n  \"experiment_name\": \"Acasta Gneiss_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3712.41,\n  \"min_time_ns\": 3712.41,\n  \"max_time_ns\": 3712.41,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Acasta Gneiss | U-Pb (238) | D/P=0.8500 | t½=4.4680e9 years | Computed: 3965.7 Myr | Expected: 4030 Myr\"\n}",
+"Bushveld Complex.json":"{\n  \"category\": \"Proterozoic\",\n  \"symbol\": \"U\",\n  \"name\": \"Bushveld Complex\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.3200\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"1789.7 Myr\",\n  \"expected_age\": \"2055 Myr\",\n  \"experiment_name\": \"Bushveld Complex_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3766.45,\n  \"min_time_ns\": 3766.45,\n  \"max_time_ns\": 3766.45,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Bushveld Complex | U-Pb (238) | D/P=0.3200 | t½=4.4680e9 years | Computed: 1789.7 Myr | Expected: 2055 Myr\"\n}",
+"Deccan Traps.json":"{\n  \"category\": \"Mesozoic\",\n  \"symbol\": \"K\",\n  \"name\": \"Deccan Traps\",\n  \"method\": \"K-Ar\",\n  \"parent\": \"⁴⁰K\",\n  \"daughter\": \"⁴⁰Ar\",\n  \"ratio\": \"0.0050\",\n  \"half_life\": \"1.2480e9 years\",\n  \"decay_constant\": \"1.7598e-17 s⁻¹\",\n  \"computed_age\": \"84.1 Myr\",\n  \"expected_age\": \"66 Myr\",\n  \"experiment_name\": \"Deccan Traps_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 22,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4590.98,\n  \"min_time_ns\": 4590.98,\n  \"max_time_ns\": 4590.98,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 227272.73,\n  \"result\": \"Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr\"\n}",
+"Isua Greenstone.json":"{\n  \"category\": \"Archean\",\n  \"symbol\": \"U\",\n  \"name\": \"Isua Greenstone\",\n  \"method\": \"U-Pb (235)\",\n  \"parent\": \"²³⁵U\",\n  \"daughter\": \"²⁰⁷Pb\",\n  \"ratio\": \"0.5800\",\n  \"half_life\": \"7.0400e8 years\",\n  \"decay_constant\": \"3.1197e-17 s⁻¹\",\n  \"computed_age\": \"464.5 Myr\",\n  \"expected_age\": \"3800 Myr\",\n  \"experiment_name\": \"Isua Greenstone_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 22,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4527.30,\n  \"min_time_ns\": 4527.30,\n  \"max_time_ns\": 4527.30,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 227272.73,\n  \"result\": \"Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr\"\n}",
+"Jack Hills zircon.json":"{\n  \"category\": \"Hadean\",\n  \"symbol\": \"U\",\n  \"name\": \"Jack Hills zircon\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"1.0200\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"4532.5 Myr\",\n  \"expected_age\": \"4400 Myr\",\n  \"experiment_name\": \"Jack Hills zircon_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 19,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3817.20,\n  \"min_time_ns\": 3817.20,\n  \"max_time_ns\": 3817.20,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 263157.91,\n  \"result\": \"Jack Hills zircon | U-Pb (238) | D/P=1.0200 | t½=4.4680e9 years | Computed: 4532.5 Myr | Expected: 4400 Myr\"\n}",
+"KT Boundary clay.json":"{\n  \"category\": \"Cenozoic\",\n  \"symbol\": \"C\",\n  \"name\": \"KT Boundary clay\",\n  \"method\": \"C-14\",\n  \"parent\": \"¹⁴C\",\n  \"daughter\": \"¹⁴N\",\n  \"ratio\": \"0.0000\",\n  \"half_life\": \"5.7300e3 years\",\n  \"decay_constant\": \"3.8330e-12 s⁻¹\",\n  \"computed_age\": \"beyond range\",\n  \"expected_age\": \"65.0 kyr\",\n  \"experiment_name\": \"KT Boundary clay_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 22,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4595.33,\n  \"min_time_ns\": 4595.33,\n  \"max_time_ns\": 4595.33,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 227272.73,\n  \"result\": \"KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr\"\n}",
+"Kaapvaal Craton.json":"{\n  \"category\": \"Archean\",\n  \"symbol\": \"U\",\n  \"name\": \"Kaapvaal Craton\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.6500\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"3228.2 Myr\",\n  \"expected_age\": \"3100 Myr\",\n  \"experiment_name\": \"Kaapvaal Craton_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3742.12,\n  \"min_time_ns\": 3742.12,\n  \"max_time_ns\": 3742.12,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Kaapvaal Craton | U-Pb (238) | D/P=0.6500 | t½=4.4680e9 years | Computed: 3228.2 Myr | Expected: 3100 Myr\"\n}",
+"Lascaux paintings.json":"{\n  \"category\": \"Cenozoic\",\n  \"symbol\": \"C\",\n  \"name\": \"Lascaux paintings\",\n  \"method\": \"C-14\",\n  \"parent\": \"¹⁴C\",\n  \"daughter\": \"¹⁴N\",\n  \"ratio\": \"0.8200\",\n  \"half_life\": \"5.7300e3 years\",\n  \"decay_constant\": \"3.8330e-12 s⁻¹\",\n  \"computed_age\": \"1641 yr\",\n  \"expected_age\": \"17.0 kyr\",\n  \"experiment_name\": \"Lascaux paintings_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 23,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4756.22,\n  \"min_time_ns\": 4756.22,\n  \"max_time_ns\": 4756.22,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 217391.30,\n  \"result\": \"Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr\"\n}",
+"Pilbara Craton.json":"{\n  \"category\": \"Archean\",\n  \"symbol\": \"K\",\n  \"name\": \"Pilbara Craton\",\n  \"method\": \"K-Ar\",\n  \"parent\": \"⁴⁰K\",\n  \"daughter\": \"⁴⁰Ar\",\n  \"ratio\": \"0.1100\",\n  \"half_life\": \"1.2480e9 years\",\n  \"decay_constant\": \"1.7598e-17 s⁻¹\",\n  \"computed_age\": \"1294.7 Myr\",\n  \"expected_age\": \"3500 Myr\",\n  \"experiment_name\": \"Pilbara Craton_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 23,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4734.31,\n  \"min_time_ns\": 4734.31,\n  \"max_time_ns\": 4734.31,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 217391.30,\n  \"result\": \"Pilbara Craton | K-Ar | D/P=0.1100 | t½=1.2480e9 years | Computed: 1294.7 Myr | Expected: 3500 Myr\"\n}",
+"Sudbury Impact.json":"{\n  \"category\": \"Proterozoic\",\n  \"symbol\": \"U\",\n  \"name\": \"Sudbury Impact\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.2800\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"1591.4 Myr\",\n  \"expected_age\": \"1849 Myr\",\n  \"experiment_name\": \"Sudbury Impact_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3745.87,\n  \"min_time_ns\": 3745.87,\n  \"max_time_ns\": 3745.87,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Sudbury Impact | U-Pb (238) | D/P=0.2800 | t½=4.4680e9 years | Computed: 1591.4 Myr | Expected: 1849 Myr\"\n}",
+"summary.json":"[\n{\n  \"category\": \"Hadean\",\n  \"symbol\": \"U\",\n  \"name\": \"Jack Hills zircon\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"1.0200\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"4532.5 Myr\",\n  \"expected_age\": \"4400 Myr\",\n  \"experiment_name\": \"Jack Hills zircon_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 19,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3817.20,\n  \"min_time_ns\": 3817.20,\n  \"max_time_ns\": 3817.20,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 263157.91,\n  \"result\": \"Jack Hills zircon | U-Pb (238) | D/P=1.0200 | t½=4.4680e9 years | Computed: 4532.5 Myr | Expected: 4400 Myr\"\n},\n{\n  \"category\": \"Hadean\",\n  \"symbol\": \"U\",\n  \"name\": \"Acasta Gneiss\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.8500\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"3965.7 Myr\",\n  \"expected_age\": \"4030 Myr\",\n  \"experiment_name\": \"Acasta Gneiss_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3712.41,\n  \"min_time_ns\": 3712.41,\n  \"max_time_ns\": 3712.41,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Acasta Gneiss | U-Pb (238) | D/P=0.8500 | t½=4.4680e9 years | Computed: 3965.7 Myr | Expected: 4030 Myr\"\n},\n{\n  \"category\": \"Archean\",\n  \"symbol\": \"U\",\n  \"name\": \"Isua Greenstone\",\n  \"method\": \"U-Pb (235)\",\n  \"parent\": \"²³⁵U\",\n  \"daughter\": \"²⁰⁷Pb\",\n  \"ratio\": \"0.5800\",\n  \"half_life\": \"7.0400e8 years\",\n  \"decay_constant\": \"3.1197e-17 s⁻¹\",\n  \"computed_age\": \"464.5 Myr\",\n  \"expected_age\": \"3800 Myr\",\n  \"experiment_name\": \"Isua Greenstone_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 22,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4527.30,\n  \"min_time_ns\": 4527.30,\n  \"max_time_ns\": 4527.30,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 227272.73,\n  \"result\": \"Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr\"\n},\n{\n  \"category\": \"Archean\",\n  \"symbol\": \"K\",\n  \"name\": \"Pilbara Craton\",\n  \"method\": \"K-Ar\",\n  \"parent\": \"⁴⁰K\",\n  \"daughter\": \"⁴⁰Ar\",\n  \"ratio\": \"0.1100\",\n  \"half_life\": \"1.2480e9 years\",\n  \"decay_constant\": \"1.7598e-17 s⁻¹\",\n  \"computed_age\": \"1294.7 Myr\",\n  \"expected_age\": \"3500 Myr\",\n  \"experiment_name\": \"Pilbara Craton_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 23,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4734.31,\n  \"min_time_ns\": 4734.31,\n  \"max_time_ns\": 4734.31,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 217391.30,\n  \"result\": \"Pilbara Craton | K-Ar | D/P=0.1100 | t½=1.2480e9 years | Computed: 1294.7 Myr | Expected: 3500 Myr\"\n},\n{\n  \"category\": \"Archean\",\n  \"symbol\": \"U\",\n  \"name\": \"Kaapvaal Craton\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.6500\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"3228.2 Myr\",\n  \"expected_age\": \"3100 Myr\",\n  \"experiment_name\": \"Kaapvaal Craton_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3742.12,\n  \"min_time_ns\": 3742.12,\n  \"max_time_ns\": 3742.12,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Kaapvaal Craton | U-Pb (238) | D/P=0.6500 | t½=4.4680e9 years | Computed: 3228.2 Myr | Expected: 3100 Myr\"\n},\n{\n  \"category\": \"Proterozoic\",\n  \"symbol\": \"U\",\n  \"name\": \"Bushveld Complex\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.3200\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"1789.7 Myr\",\n  \"expected_age\": \"2055 Myr\",\n  \"experiment_name\": \"Bushveld Complex_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3766.45,\n  \"min_time_ns\": 3766.45,\n  \"max_time_ns\": 3766.45,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Bushveld Complex | U-Pb (238) | D/P=0.3200 | t½=4.4680e9 years | Computed: 1789.7 Myr | Expected: 2055 Myr\"\n},\n{\n  \"category\": \"Proterozoic\",\n  \"symbol\": \"U\",\n  \"name\": \"Sudbury Impact\",\n  \"method\": \"U-Pb (238)\",\n  \"parent\": \"²³⁸U\",\n  \"daughter\": \"²⁰⁶Pb\",\n  \"ratio\": \"0.2800\",\n  \"half_life\": \"4.4680e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"computed_age\": \"1591.4 Myr\",\n  \"expected_age\": \"1849 Myr\",\n  \"experiment_name\": \"Sudbury Impact_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 18,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 3745.87,\n  \"min_time_ns\": 3745.87,\n  \"max_time_ns\": 3745.87,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 277777.78,\n  \"result\": \"Sudbury Impact | U-Pb (238) | D/P=0.2800 | t½=4.4680e9 years | Computed: 1591.4 Myr | Expected: 1849 Myr\"\n},\n{\n  \"category\": \"Mesozoic\",\n  \"symbol\": \"K\",\n  \"name\": \"Deccan Traps\",\n  \"method\": \"K-Ar\",\n  \"parent\": \"⁴⁰K\",\n  \"daughter\": \"⁴⁰Ar\",\n  \"ratio\": \"0.0050\",\n  \"half_life\": \"1.2480e9 years\",\n  \"decay_constant\": \"1.7598e-17 s⁻¹\",\n  \"computed_age\": \"84.1 Myr\",\n  \"expected_age\": \"66 Myr\",\n  \"experiment_name\": \"Deccan Traps_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 22,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4590.98,\n  \"min_time_ns\": 4590.98,\n  \"max_time_ns\": 4590.98,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 227272.73,\n  \"result\": \"Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr\"\n},\n{\n  \"category\": \"Cenozoic\",\n  \"symbol\": \"C\",\n  \"name\": \"KT Boundary clay\",\n  \"method\": \"C-14\",\n  \"parent\": \"¹⁴C\",\n  \"daughter\": \"¹⁴N\",\n  \"ratio\": \"0.0000\",\n  \"half_life\": \"5.7300e3 years\",\n  \"decay_constant\": \"3.8330e-12 s⁻¹\",\n  \"computed_age\": \"beyond range\",\n  \"expected_age\": \"65.0 kyr\",\n  \"experiment_name\": \"KT Boundary clay_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 22,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4595.33,\n  \"min_time_ns\": 4595.33,\n  \"max_time_ns\": 4595.33,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 227272.73,\n  \"result\": \"KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr\"\n},\n{\n  \"category\": \"Cenozoic\",\n  \"symbol\": \"C\",\n  \"name\": \"Lascaux paintings\",\n  \"method\": \"C-14\",\n  \"parent\": \"¹⁴C\",\n  \"daughter\": \"¹⁴N\",\n  \"ratio\": \"0.8200\",\n  \"half_life\": \"5.7300e3 years\",\n  \"decay_constant\": \"3.8330e-12 s⁻¹\",\n  \"computed_age\": \"1641 yr\",\n  \"expected_age\": \"17.0 kyr\",\n  \"experiment_name\": \"Lascaux paintings_dating\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 23,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 4756.22,\n  \"min_time_ns\": 4756.22,\n  \"max_time_ns\": 4756.22,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 217391.30,\n  \"result\": \"Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr\"\n}\n]"},
+yaml:{
+"Acasta Gneiss.yaml":"category: Hadean\nsymbol: U\nname: Acasta Gneiss\nmethod: U-Pb (238)\nparent: ²³⁸U\ndaughter: ²⁰⁶Pb\nratio: 0.8500\nhalf_life: 4.4680e9 years\ndecay_constant: 4.9156e-18 s⁻¹\ncomputed_age: 3965.7 Myr\nexpected_age: 4030 Myr\nexperiment_name: Acasta Gneiss_dating\nprecision: f64\nelapsed_ms: 18\niterations: 5000\navg_time_ns: 3712.41\nmin_time_ns: 3712.41\nmax_time_ns: 3712.41\ntime_stddev: 0.0000\niterations_per_sec: 277777.78\nresult: \"Acasta Gneiss | U-Pb (238) | D/P=0.8500 | t½=4.4680e9 years | Computed: 3965.7 Myr | Expected: 4030 Myr\"\n",
+"Archean.yaml":"category: Archean\ncount: 3\nentries:\n  - label: Isua Greenstone\n    symbol: U\n    name: Isua Greenstone\n    method: U-Pb (235)\n    parent: ²³⁵U\n    daughter: ²⁰⁷Pb\n    ratio: 0.5800\n    half_life: 7.0400e8 years\n    decay_constant: 3.1197e-17 s⁻¹\n    computed_age: 464.5 Myr\n    expected_age: 3800 Myr\n    avg_time_ns: 4527.30\n  - label: Pilbara Craton\n    symbol: K\n    name: Pilbara Craton\n    method: K-Ar\n    parent: ⁴⁰K\n    daughter: ⁴⁰Ar\n    ratio: 0.1100\n    half_life: 1.2480e9 years\n    decay_constant: 1.7598e-17 s⁻¹\n    computed_age: 1294.7 Myr\n    expected_age: 3500 Myr\n    avg_time_ns: 4734.31\n  - label: Kaapvaal Craton\n    symbol: U\n    name: Kaapvaal Craton\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.6500\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 3228.2 Myr\n    expected_age: 3100 Myr\n    avg_time_ns: 3742.12\n",
+"Bushveld Complex.yaml":"category: Proterozoic\nsymbol: U\nname: Bushveld Complex\nmethod: U-Pb (238)\nparent: ²³⁸U\ndaughter: ²⁰⁶Pb\nratio: 0.3200\nhalf_life: 4.4680e9 years\ndecay_constant: 4.9156e-18 s⁻¹\ncomputed_age: 1789.7 Myr\nexpected_age: 2055 Myr\nexperiment_name: Bushveld Complex_dating\nprecision: f64\nelapsed_ms: 18\niterations: 5000\navg_time_ns: 3766.45\nmin_time_ns: 3766.45\nmax_time_ns: 3766.45\ntime_stddev: 0.0000\niterations_per_sec: 277777.78\nresult: \"Bushveld Complex | U-Pb (238) | D/P=0.3200 | t½=4.4680e9 years | Computed: 1789.7 Myr | Expected: 2055 Myr\"\n",
+"Cenozoic.yaml":"category: Cenozoic\ncount: 2\nentries:\n  - label: KT Boundary clay\n    symbol: C\n    name: KT Boundary clay\n    method: C-14\n    parent: ¹⁴C\n    daughter: ¹⁴N\n    ratio: 0.0000\n    half_life: 5.7300e3 years\n    decay_constant: 3.8330e-12 s⁻¹\n    computed_age: beyond range\n    expected_age: 65.0 kyr\n    avg_time_ns: 4595.33\n  - label: Lascaux paintings\n    symbol: C\n    name: Lascaux paintings\n    method: C-14\n    parent: ¹⁴C\n    daughter: ¹⁴N\n    ratio: 0.8200\n    half_life: 5.7300e3 years\n    decay_constant: 3.8330e-12 s⁻¹\n    computed_age: 1641 yr\n    expected_age: 17.0 kyr\n    avg_time_ns: 4756.22\n",
+"Deccan Traps.yaml":"category: Mesozoic\nsymbol: K\nname: Deccan Traps\nmethod: K-Ar\nparent: ⁴⁰K\ndaughter: ⁴⁰Ar\nratio: 0.0050\nhalf_life: 1.2480e9 years\ndecay_constant: 1.7598e-17 s⁻¹\ncomputed_age: 84.1 Myr\nexpected_age: 66 Myr\nexperiment_name: Deccan Traps_dating\nprecision: f64\nelapsed_ms: 22\niterations: 5000\navg_time_ns: 4590.98\nmin_time_ns: 4590.98\nmax_time_ns: 4590.98\ntime_stddev: 0.0000\niterations_per_sec: 227272.73\nresult: \"Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr\"\n",
+"Hadean.yaml":"category: Hadean\ncount: 2\nentries:\n  - label: Jack Hills zircon\n    symbol: U\n    name: Jack Hills zircon\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 1.0200\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 4532.5 Myr\n    expected_age: 4400 Myr\n    avg_time_ns: 3817.20\n  - label: Acasta Gneiss\n    symbol: U\n    name: Acasta Gneiss\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.8500\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 3965.7 Myr\n    expected_age: 4030 Myr\n    avg_time_ns: 3712.41\n",
+"Isua Greenstone.yaml":"category: Archean\nsymbol: U\nname: Isua Greenstone\nmethod: U-Pb (235)\nparent: ²³⁵U\ndaughter: ²⁰⁷Pb\nratio: 0.5800\nhalf_life: 7.0400e8 years\ndecay_constant: 3.1197e-17 s⁻¹\ncomputed_age: 464.5 Myr\nexpected_age: 3800 Myr\nexperiment_name: Isua Greenstone_dating\nprecision: f64\nelapsed_ms: 22\niterations: 5000\navg_time_ns: 4527.30\nmin_time_ns: 4527.30\nmax_time_ns: 4527.30\ntime_stddev: 0.0000\niterations_per_sec: 227272.73\nresult: \"Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr\"\n",
+"Jack Hills zircon.yaml":"category: Hadean\nsymbol: U\nname: Jack Hills zircon\nmethod: U-Pb (238)\nparent: ²³⁸U\ndaughter: ²⁰⁶Pb\nratio: 1.0200\nhalf_life: 4.4680e9 years\ndecay_constant: 4.9156e-18 s⁻¹\ncomputed_age: 4532.5 Myr\nexpected_age: 4400 Myr\nexperiment_name: Jack Hills zircon_dating\nprecision: f64\nelapsed_ms: 19\niterations: 5000\navg_time_ns: 3817.20\nmin_time_ns: 3817.20\nmax_time_ns: 3817.20\ntime_stddev: 0.0000\niterations_per_sec: 263157.91\nresult: \"Jack Hills zircon | U-Pb (238) | D/P=1.0200 | t½=4.4680e9 years | Computed: 4532.5 Myr | Expected: 4400 Myr\"\n",
+"KT Boundary clay.yaml":"category: Cenozoic\nsymbol: C\nname: KT Boundary clay\nmethod: C-14\nparent: ¹⁴C\ndaughter: ¹⁴N\nratio: 0.0000\nhalf_life: 5.7300e3 years\ndecay_constant: 3.8330e-12 s⁻¹\ncomputed_age: beyond range\nexpected_age: 65.0 kyr\nexperiment_name: KT Boundary clay_dating\nprecision: f64\nelapsed_ms: 22\niterations: 5000\navg_time_ns: 4595.33\nmin_time_ns: 4595.33\nmax_time_ns: 4595.33\ntime_stddev: 0.0000\niterations_per_sec: 227272.73\nresult: \"KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr\"\n",
+"Kaapvaal Craton.yaml":"category: Archean\nsymbol: U\nname: Kaapvaal Craton\nmethod: U-Pb (238)\nparent: ²³⁸U\ndaughter: ²⁰⁶Pb\nratio: 0.6500\nhalf_life: 4.4680e9 years\ndecay_constant: 4.9156e-18 s⁻¹\ncomputed_age: 3228.2 Myr\nexpected_age: 3100 Myr\nexperiment_name: Kaapvaal Craton_dating\nprecision: f64\nelapsed_ms: 18\niterations: 5000\navg_time_ns: 3742.12\nmin_time_ns: 3742.12\nmax_time_ns: 3742.12\ntime_stddev: 0.0000\niterations_per_sec: 277777.78\nresult: \"Kaapvaal Craton | U-Pb (238) | D/P=0.6500 | t½=4.4680e9 years | Computed: 3228.2 Myr | Expected: 3100 Myr\"\n",
+"Lascaux paintings.yaml":"category: Cenozoic\nsymbol: C\nname: Lascaux paintings\nmethod: C-14\nparent: ¹⁴C\ndaughter: ¹⁴N\nratio: 0.8200\nhalf_life: 5.7300e3 years\ndecay_constant: 3.8330e-12 s⁻¹\ncomputed_age: 1641 yr\nexpected_age: 17.0 kyr\nexperiment_name: Lascaux paintings_dating\nprecision: f64\nelapsed_ms: 23\niterations: 5000\navg_time_ns: 4756.22\nmin_time_ns: 4756.22\nmax_time_ns: 4756.22\ntime_stddev: 0.0000\niterations_per_sec: 217391.30\nresult: \"Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr\"\n",
+"Mesozoic.yaml":"category: Mesozoic\ncount: 1\nentries:\n  - label: Deccan Traps\n    symbol: K\n    name: Deccan Traps\n    method: K-Ar\n    parent: ⁴⁰K\n    daughter: ⁴⁰Ar\n    ratio: 0.0050\n    half_life: 1.2480e9 years\n    decay_constant: 1.7598e-17 s⁻¹\n    computed_age: 84.1 Myr\n    expected_age: 66 Myr\n    avg_time_ns: 4590.98\n",
+"Pilbara Craton.yaml":"category: Archean\nsymbol: K\nname: Pilbara Craton\nmethod: K-Ar\nparent: ⁴⁰K\ndaughter: ⁴⁰Ar\nratio: 0.1100\nhalf_life: 1.2480e9 years\ndecay_constant: 1.7598e-17 s⁻¹\ncomputed_age: 1294.7 Myr\nexpected_age: 3500 Myr\nexperiment_name: Pilbara Craton_dating\nprecision: f64\nelapsed_ms: 23\niterations: 5000\navg_time_ns: 4734.31\nmin_time_ns: 4734.31\nmax_time_ns: 4734.31\ntime_stddev: 0.0000\niterations_per_sec: 217391.30\nresult: \"Pilbara Craton | K-Ar | D/P=0.1100 | t½=1.2480e9 years | Computed: 1294.7 Myr | Expected: 3500 Myr\"\n",
+"Proterozoic.yaml":"category: Proterozoic\ncount: 2\nentries:\n  - label: Bushveld Complex\n    symbol: U\n    name: Bushveld Complex\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.3200\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 1789.7 Myr\n    expected_age: 2055 Myr\n    avg_time_ns: 3766.45\n  - label: Sudbury Impact\n    symbol: U\n    name: Sudbury Impact\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.2800\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 1591.4 Myr\n    expected_age: 1849 Myr\n    avg_time_ns: 3745.87\n",
+"Sudbury Impact.yaml":"category: Proterozoic\nsymbol: U\nname: Sudbury Impact\nmethod: U-Pb (238)\nparent: ²³⁸U\ndaughter: ²⁰⁶Pb\nratio: 0.2800\nhalf_life: 4.4680e9 years\ndecay_constant: 4.9156e-18 s⁻¹\ncomputed_age: 1591.4 Myr\nexpected_age: 1849 Myr\nexperiment_name: Sudbury Impact_dating\nprecision: f64\nelapsed_ms: 18\niterations: 5000\navg_time_ns: 3745.87\nmin_time_ns: 3745.87\nmax_time_ns: 3745.87\ntime_stddev: 0.0000\niterations_per_sec: 277777.78\nresult: \"Sudbury Impact | U-Pb (238) | D/P=0.2800 | t½=4.4680e9 years | Computed: 1591.4 Myr | Expected: 1849 Myr\"\n",
+"summary.yaml":"title: Geological Ages — Radiometric Dating with Isotope Half-lives\ncount: 10\nentries:\n  - label: Jack Hills zircon\n    category: Hadean\n    symbol: U\n    name: Jack Hills zircon\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 1.0200\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 4532.5 Myr\n    expected_age: 4400 Myr\n    avg_time_ns: 3817.20\n    iterations_per_sec: 263157.91\n  - label: Acasta Gneiss\n    category: Hadean\n    symbol: U\n    name: Acasta Gneiss\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.8500\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 3965.7 Myr\n    expected_age: 4030 Myr\n    avg_time_ns: 3712.41\n    iterations_per_sec: 277777.78\n  - label: Isua Greenstone\n    category: Archean\n    symbol: U\n    name: Isua Greenstone\n    method: U-Pb (235)\n    parent: ²³⁵U\n    daughter: ²⁰⁷Pb\n    ratio: 0.5800\n    half_life: 7.0400e8 years\n    decay_constant: 3.1197e-17 s⁻¹\n    computed_age: 464.5 Myr\n    expected_age: 3800 Myr\n    avg_time_ns: 4527.30\n    iterations_per_sec: 227272.73\n  - label: Pilbara Craton\n    category: Archean\n    symbol: K\n    name: Pilbara Craton\n    method: K-Ar\n    parent: ⁴⁰K\n    daughter: ⁴⁰Ar\n    ratio: 0.1100\n    half_life: 1.2480e9 years\n    decay_constant: 1.7598e-17 s⁻¹\n    computed_age: 1294.7 Myr\n    expected_age: 3500 Myr\n    avg_time_ns: 4734.31\n    iterations_per_sec: 217391.30\n  - label: Kaapvaal Craton\n    category: Archean\n    symbol: U\n    name: Kaapvaal Craton\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.6500\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 3228.2 Myr\n    expected_age: 3100 Myr\n    avg_time_ns: 3742.12\n    iterations_per_sec: 277777.78\n  - label: Bushveld Complex\n    category: Proterozoic\n    symbol: U\n    name: Bushveld Complex\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.3200\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 1789.7 Myr\n    expected_age: 2055 Myr\n    avg_time_ns: 3766.45\n    iterations_per_sec: 277777.78\n  - label: Sudbury Impact\n    category: Proterozoic\n    symbol: U\n    name: Sudbury Impact\n    method: U-Pb (238)\n    parent: ²³⁸U\n    daughter: ²⁰⁶Pb\n    ratio: 0.2800\n    half_life: 4.4680e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    computed_age: 1591.4 Myr\n    expected_age: 1849 Myr\n    avg_time_ns: 3745.87\n    iterations_per_sec: 277777.78\n  - label: Deccan Traps\n    category: Mesozoic\n    symbol: K\n    name: Deccan Traps\n    method: K-Ar\n    parent: ⁴⁰K\n    daughter: ⁴⁰Ar\n    ratio: 0.0050\n    half_life: 1.2480e9 years\n    decay_constant: 1.7598e-17 s⁻¹\n    computed_age: 84.1 Myr\n    expected_age: 66 Myr\n    avg_time_ns: 4590.98\n    iterations_per_sec: 227272.73\n  - label: KT Boundary clay\n    category: Cenozoic\n    symbol: C\n    name: KT Boundary clay\n    method: C-14\n    parent: ¹⁴C\n    daughter: ¹⁴N\n    ratio: 0.0000\n    half_life: 5.7300e3 years\n    decay_constant: 3.8330e-12 s⁻¹\n    computed_age: beyond range\n    expected_age: 65.0 kyr\n    avg_time_ns: 4595.33\n    iterations_per_sec: 227272.73\n  - label: Lascaux paintings\n    category: Cenozoic\n    symbol: C\n    name: Lascaux paintings\n    method: C-14\n    parent: ¹⁴C\n    daughter: ¹⁴N\n    ratio: 0.8200\n    half_life: 5.7300e3 years\n    decay_constant: 3.8330e-12 s⁻¹\n    computed_age: 1641 yr\n    expected_age: 17.0 kyr\n    avg_time_ns: 4756.22\n    iterations_per_sec: 217391.30\n"},
+toml:{
+"Acasta Gneiss.toml":"[benchmark]\ncategory = \"Hadean\"\nsymbol = \"U\"\nname = \"Acasta Gneiss\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.8500\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"3965.7 Myr\"\nexpected_age = \"4030 Myr\"\nexperiment_name = \"Acasta Gneiss_dating\"\nprecision = \"f64\"\nelapsed_ms = 18\niterations = 5000\navg_time_ns = 3712.41\nmin_time_ns = 3712.41\nmax_time_ns = 3712.41\ntime_stddev = 0.0000\niterations_per_sec = 277777.78\nresult = \"Acasta Gneiss | U-Pb (238) | D/P=0.8500 | t½=4.4680e9 years | Computed: 3965.7 Myr | Expected: 4030 Myr\"\n",
+"Bushveld Complex.toml":"[benchmark]\ncategory = \"Proterozoic\"\nsymbol = \"U\"\nname = \"Bushveld Complex\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.3200\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"1789.7 Myr\"\nexpected_age = \"2055 Myr\"\nexperiment_name = \"Bushveld Complex_dating\"\nprecision = \"f64\"\nelapsed_ms = 18\niterations = 5000\navg_time_ns = 3766.45\nmin_time_ns = 3766.45\nmax_time_ns = 3766.45\ntime_stddev = 0.0000\niterations_per_sec = 277777.78\nresult = \"Bushveld Complex | U-Pb (238) | D/P=0.3200 | t½=4.4680e9 years | Computed: 1789.7 Myr | Expected: 2055 Myr\"\n",
+"Deccan Traps.toml":"[benchmark]\ncategory = \"Mesozoic\"\nsymbol = \"K\"\nname = \"Deccan Traps\"\nmethod = \"K-Ar\"\nparent = \"⁴⁰K\"\ndaughter = \"⁴⁰Ar\"\nratio = \"0.0050\"\nhalf_life = \"1.2480e9 years\"\ndecay_constant = \"1.7598e-17 s⁻¹\"\ncomputed_age = \"84.1 Myr\"\nexpected_age = \"66 Myr\"\nexperiment_name = \"Deccan Traps_dating\"\nprecision = \"f64\"\nelapsed_ms = 22\niterations = 5000\navg_time_ns = 4590.98\nmin_time_ns = 4590.98\nmax_time_ns = 4590.98\ntime_stddev = 0.0000\niterations_per_sec = 227272.73\nresult = \"Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr\"\n",
+"Isua Greenstone.toml":"[benchmark]\ncategory = \"Archean\"\nsymbol = \"U\"\nname = \"Isua Greenstone\"\nmethod = \"U-Pb (235)\"\nparent = \"²³⁵U\"\ndaughter = \"²⁰⁷Pb\"\nratio = \"0.5800\"\nhalf_life = \"7.0400e8 years\"\ndecay_constant = \"3.1197e-17 s⁻¹\"\ncomputed_age = \"464.5 Myr\"\nexpected_age = \"3800 Myr\"\nexperiment_name = \"Isua Greenstone_dating\"\nprecision = \"f64\"\nelapsed_ms = 22\niterations = 5000\navg_time_ns = 4527.30\nmin_time_ns = 4527.30\nmax_time_ns = 4527.30\ntime_stddev = 0.0000\niterations_per_sec = 227272.73\nresult = \"Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr\"\n",
+"Jack Hills zircon.toml":"[benchmark]\ncategory = \"Hadean\"\nsymbol = \"U\"\nname = \"Jack Hills zircon\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"1.0200\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"4532.5 Myr\"\nexpected_age = \"4400 Myr\"\nexperiment_name = \"Jack Hills zircon_dating\"\nprecision = \"f64\"\nelapsed_ms = 19\niterations = 5000\navg_time_ns = 3817.20\nmin_time_ns = 3817.20\nmax_time_ns = 3817.20\ntime_stddev = 0.0000\niterations_per_sec = 263157.91\nresult = \"Jack Hills zircon | U-Pb (238) | D/P=1.0200 | t½=4.4680e9 years | Computed: 4532.5 Myr | Expected: 4400 Myr\"\n",
+"KT Boundary clay.toml":"[benchmark]\ncategory = \"Cenozoic\"\nsymbol = \"C\"\nname = \"KT Boundary clay\"\nmethod = \"C-14\"\nparent = \"¹⁴C\"\ndaughter = \"¹⁴N\"\nratio = \"0.0000\"\nhalf_life = \"5.7300e3 years\"\ndecay_constant = \"3.8330e-12 s⁻¹\"\ncomputed_age = \"beyond range\"\nexpected_age = \"65.0 kyr\"\nexperiment_name = \"KT Boundary clay_dating\"\nprecision = \"f64\"\nelapsed_ms = 22\niterations = 5000\navg_time_ns = 4595.33\nmin_time_ns = 4595.33\nmax_time_ns = 4595.33\ntime_stddev = 0.0000\niterations_per_sec = 227272.73\nresult = \"KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr\"\n",
+"Kaapvaal Craton.toml":"[benchmark]\ncategory = \"Archean\"\nsymbol = \"U\"\nname = \"Kaapvaal Craton\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.6500\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"3228.2 Myr\"\nexpected_age = \"3100 Myr\"\nexperiment_name = \"Kaapvaal Craton_dating\"\nprecision = \"f64\"\nelapsed_ms = 18\niterations = 5000\navg_time_ns = 3742.12\nmin_time_ns = 3742.12\nmax_time_ns = 3742.12\ntime_stddev = 0.0000\niterations_per_sec = 277777.78\nresult = \"Kaapvaal Craton | U-Pb (238) | D/P=0.6500 | t½=4.4680e9 years | Computed: 3228.2 Myr | Expected: 3100 Myr\"\n",
+"Lascaux paintings.toml":"[benchmark]\ncategory = \"Cenozoic\"\nsymbol = \"C\"\nname = \"Lascaux paintings\"\nmethod = \"C-14\"\nparent = \"¹⁴C\"\ndaughter = \"¹⁴N\"\nratio = \"0.8200\"\nhalf_life = \"5.7300e3 years\"\ndecay_constant = \"3.8330e-12 s⁻¹\"\ncomputed_age = \"1641 yr\"\nexpected_age = \"17.0 kyr\"\nexperiment_name = \"Lascaux paintings_dating\"\nprecision = \"f64\"\nelapsed_ms = 23\niterations = 5000\navg_time_ns = 4756.22\nmin_time_ns = 4756.22\nmax_time_ns = 4756.22\ntime_stddev = 0.0000\niterations_per_sec = 217391.30\nresult = \"Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr\"\n",
+"Pilbara Craton.toml":"[benchmark]\ncategory = \"Archean\"\nsymbol = \"K\"\nname = \"Pilbara Craton\"\nmethod = \"K-Ar\"\nparent = \"⁴⁰K\"\ndaughter = \"⁴⁰Ar\"\nratio = \"0.1100\"\nhalf_life = \"1.2480e9 years\"\ndecay_constant = \"1.7598e-17 s⁻¹\"\ncomputed_age = \"1294.7 Myr\"\nexpected_age = \"3500 Myr\"\nexperiment_name = \"Pilbara Craton_dating\"\nprecision = \"f64\"\nelapsed_ms = 23\niterations = 5000\navg_time_ns = 4734.31\nmin_time_ns = 4734.31\nmax_time_ns = 4734.31\ntime_stddev = 0.0000\niterations_per_sec = 217391.30\nresult = \"Pilbara Craton | K-Ar | D/P=0.1100 | t½=1.2480e9 years | Computed: 1294.7 Myr | Expected: 3500 Myr\"\n",
+"Sudbury Impact.toml":"[benchmark]\ncategory = \"Proterozoic\"\nsymbol = \"U\"\nname = \"Sudbury Impact\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.2800\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"1591.4 Myr\"\nexpected_age = \"1849 Myr\"\nexperiment_name = \"Sudbury Impact_dating\"\nprecision = \"f64\"\nelapsed_ms = 18\niterations = 5000\navg_time_ns = 3745.87\nmin_time_ns = 3745.87\nmax_time_ns = 3745.87\ntime_stddev = 0.0000\niterations_per_sec = 277777.78\nresult = \"Sudbury Impact | U-Pb (238) | D/P=0.2800 | t½=4.4680e9 years | Computed: 1591.4 Myr | Expected: 1849 Myr\"\n",
+"summary.toml":"title = \"Geological Ages — Radiometric Dating with Isotope Half-lives\"\ncount = 10\n\n[[entries]]\nlabel = \"Jack Hills zircon\"\ncategory = \"Hadean\"\nsymbol = \"U\"\nname = \"Jack Hills zircon\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"1.0200\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"4532.5 Myr\"\nexpected_age = \"4400 Myr\"\navg_time_ns = 3817.20\niterations_per_sec = 263157.91\n\n[[entries]]\nlabel = \"Acasta Gneiss\"\ncategory = \"Hadean\"\nsymbol = \"U\"\nname = \"Acasta Gneiss\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.8500\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"3965.7 Myr\"\nexpected_age = \"4030 Myr\"\navg_time_ns = 3712.41\niterations_per_sec = 277777.78\n\n[[entries]]\nlabel = \"Isua Greenstone\"\ncategory = \"Archean\"\nsymbol = \"U\"\nname = \"Isua Greenstone\"\nmethod = \"U-Pb (235)\"\nparent = \"²³⁵U\"\ndaughter = \"²⁰⁷Pb\"\nratio = \"0.5800\"\nhalf_life = \"7.0400e8 years\"\ndecay_constant = \"3.1197e-17 s⁻¹\"\ncomputed_age = \"464.5 Myr\"\nexpected_age = \"3800 Myr\"\navg_time_ns = 4527.30\niterations_per_sec = 227272.73\n\n[[entries]]\nlabel = \"Pilbara Craton\"\ncategory = \"Archean\"\nsymbol = \"K\"\nname = \"Pilbara Craton\"\nmethod = \"K-Ar\"\nparent = \"⁴⁰K\"\ndaughter = \"⁴⁰Ar\"\nratio = \"0.1100\"\nhalf_life = \"1.2480e9 years\"\ndecay_constant = \"1.7598e-17 s⁻¹\"\ncomputed_age = \"1294.7 Myr\"\nexpected_age = \"3500 Myr\"\navg_time_ns = 4734.31\niterations_per_sec = 217391.30\n\n[[entries]]\nlabel = \"Kaapvaal Craton\"\ncategory = \"Archean\"\nsymbol = \"U\"\nname = \"Kaapvaal Craton\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.6500\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"3228.2 Myr\"\nexpected_age = \"3100 Myr\"\navg_time_ns = 3742.12\niterations_per_sec = 277777.78\n\n[[entries]]\nlabel = \"Bushveld Complex\"\ncategory = \"Proterozoic\"\nsymbol = \"U\"\nname = \"Bushveld Complex\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.3200\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"1789.7 Myr\"\nexpected_age = \"2055 Myr\"\navg_time_ns = 3766.45\niterations_per_sec = 277777.78\n\n[[entries]]\nlabel = \"Sudbury Impact\"\ncategory = \"Proterozoic\"\nsymbol = \"U\"\nname = \"Sudbury Impact\"\nmethod = \"U-Pb (238)\"\nparent = \"²³⁸U\"\ndaughter = \"²⁰⁶Pb\"\nratio = \"0.2800\"\nhalf_life = \"4.4680e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ncomputed_age = \"1591.4 Myr\"\nexpected_age = \"1849 Myr\"\navg_time_ns = 3745.87\niterations_per_sec = 277777.78\n\n[[entries]]\nlabel = \"Deccan Traps\"\ncategory = \"Mesozoic\"\nsymbol = \"K\"\nname = \"Deccan Traps\"\nmethod = \"K-Ar\"\nparent = \"⁴⁰K\"\ndaughter = \"⁴⁰Ar\"\nratio = \"0.0050\"\nhalf_life = \"1.2480e9 years\"\ndecay_constant = \"1.7598e-17 s⁻¹\"\ncomputed_age = \"84.1 Myr\"\nexpected_age = \"66 Myr\"\navg_time_ns = 4590.98\niterations_per_sec = 227272.73\n\n[[entries]]\nlabel = \"KT Boundary clay\"\ncategory = \"Cenozoic\"\nsymbol = \"C\"\nname = \"KT Boundary clay\"\nmethod = \"C-14\"\nparent = \"¹⁴C\"\ndaughter = \"¹⁴N\"\nratio = \"0.0000\"\nhalf_life = \"5.7300e3 years\"\ndecay_constant = \"3.8330e-12 s⁻¹\"\ncomputed_age = \"beyond range\"\nexpected_age = \"65.0 kyr\"\navg_time_ns = 4595.33\niterations_per_sec = 227272.73\n\n[[entries]]\nlabel = \"Lascaux paintings\"\ncategory = \"Cenozoic\"\nsymbol = \"C\"\nname = \"Lascaux paintings\"\nmethod = \"C-14\"\nparent = \"¹⁴C\"\ndaughter = \"¹⁴N\"\nratio = \"0.8200\"\nhalf_life = \"5.7300e3 years\"\ndecay_constant = \"3.8330e-12 s⁻¹\"\ncomputed_age = \"1641 yr\"\nexpected_age = \"17.0 kyr\"\navg_time_ns = 4756.22\niterations_per_sec = 217391.30\n\n"},
+bmk:{
+"Acasta Gneiss.bmk":"experiment_name: Acasta Gneiss_dating\nprecision:       f64\nelapsed_ms:      18\niterations:      5000\navg_time_ns:     3712.41\nmin_time_ns:     3712.41\nmax_time_ns:     3712.41\ntime_stddev:     0.0000\niterations/sec:  277777.78\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     191 bytes\n",
+"Bushveld Complex.bmk":"experiment_name: Bushveld Complex_dating\nprecision:       f64\nelapsed_ms:      18\niterations:      5000\navg_time_ns:     3766.45\nmin_time_ns:     3766.45\nmax_time_ns:     3766.45\ntime_stddev:     0.0000\niterations/sec:  277777.78\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     194 bytes\n",
+"Deccan Traps.bmk":"experiment_name: Deccan Traps_dating\nprecision:       f64\nelapsed_ms:      22\niterations:      5000\navg_time_ns:     4590.98\nmin_time_ns:     4590.98\nmax_time_ns:     4590.98\ntime_stddev:     0.0000\niterations/sec:  227272.73\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"Isua Greenstone.bmk":"experiment_name: Isua Greenstone_dating\nprecision:       f64\nelapsed_ms:      22\niterations:      5000\navg_time_ns:     4527.30\nmin_time_ns:     4527.30\nmax_time_ns:     4527.30\ntime_stddev:     0.0000\niterations/sec:  227272.73\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     193 bytes\n",
+"Jack Hills zircon.bmk":"experiment_name: Jack Hills zircon_dating\nprecision:       f64\nelapsed_ms:      19\niterations:      5000\navg_time_ns:     3817.20\nmin_time_ns:     3817.20\nmax_time_ns:     3817.20\ntime_stddev:     0.0000\niterations/sec:  263157.91\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     195 bytes\n",
+"KT Boundary clay.bmk":"experiment_name: KT Boundary clay_dating\nprecision:       f64\nelapsed_ms:      22\niterations:      5000\navg_time_ns:     4595.33\nmin_time_ns:     4595.33\nmax_time_ns:     4595.33\ntime_stddev:     0.0000\niterations/sec:  227272.73\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     194 bytes\n",
+"Kaapvaal Craton.bmk":"experiment_name: Kaapvaal Craton_dating\nprecision:       f64\nelapsed_ms:      18\niterations:      5000\navg_time_ns:     3742.12\nmin_time_ns:     3742.12\nmax_time_ns:     3742.12\ntime_stddev:     0.0000\niterations/sec:  277777.78\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     193 bytes\n",
+"Lascaux paintings.bmk":"experiment_name: Lascaux paintings_dating\nprecision:       f64\nelapsed_ms:      23\niterations:      5000\navg_time_ns:     4756.22\nmin_time_ns:     4756.22\nmax_time_ns:     4756.22\ntime_stddev:     0.0000\niterations/sec:  217391.30\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     195 bytes\n",
+"Pilbara Craton.bmk":"experiment_name: Pilbara Craton_dating\nprecision:       f64\nelapsed_ms:      23\niterations:      5000\navg_time_ns:     4734.31\nmin_time_ns:     4734.31\nmax_time_ns:     4734.31\ntime_stddev:     0.0000\niterations/sec:  217391.30\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     192 bytes\n",
+"Sudbury Impact.bmk":"experiment_name: Sudbury Impact_dating\nprecision:       f64\nelapsed_ms:      18\niterations:      5000\navg_time_ns:     3745.87\nmin_time_ns:     3745.87\nmax_time_ns:     3745.87\ntime_stddev:     0.0000\niterations/sec:  277777.78\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     192 bytes\n"}
+};
+var D={
+"Jack Hills zircon":{tags:{"category":"Hadean","symbol":"U","name":"Jack Hills zircon","method":"U-Pb (238)","parent":"²³⁸U","daughter":"²⁰⁶Pb","ratio":"1.0200","half_life":"4.4680e9 years","decay_constant":"4.9156e-18 s⁻¹","computed_age":"4532.5 Myr","expected_age":"4400 Myr"},p:"f64",it:5000,avg:3817.20,mn:3817.20,mx:3817.20,sd:0.0000,ips:263157.91},
+"Acasta Gneiss":{tags:{"category":"Hadean","symbol":"U","name":"Acasta Gneiss","method":"U-Pb (238)","parent":"²³⁸U","daughter":"²⁰⁶Pb","ratio":"0.8500","half_life":"4.4680e9 years","decay_constant":"4.9156e-18 s⁻¹","computed_age":"3965.7 Myr","expected_age":"4030 Myr"},p:"f64",it:5000,avg:3712.41,mn:3712.41,mx:3712.41,sd:0.0000,ips:277777.78},
+"Isua Greenstone":{tags:{"category":"Archean","symbol":"U","name":"Isua Greenstone","method":"U-Pb (235)","parent":"²³⁵U","daughter":"²⁰⁷Pb","ratio":"0.5800","half_life":"7.0400e8 years","decay_constant":"3.1197e-17 s⁻¹","computed_age":"464.5 Myr","expected_age":"3800 Myr"},p:"f64",it:5000,avg:4527.30,mn:4527.30,mx:4527.30,sd:0.0000,ips:227272.73},
+"Pilbara Craton":{tags:{"category":"Archean","symbol":"K","name":"Pilbara Craton","method":"K-Ar","parent":"⁴⁰K","daughter":"⁴⁰Ar","ratio":"0.1100","half_life":"1.2480e9 years","decay_constant":"1.7598e-17 s⁻¹","computed_age":"1294.7 Myr","expected_age":"3500 Myr"},p:"f64",it:5000,avg:4734.31,mn:4734.31,mx:4734.31,sd:0.0000,ips:217391.30},
+"Kaapvaal Craton":{tags:{"category":"Archean","symbol":"U","name":"Kaapvaal Craton","method":"U-Pb (238)","parent":"²³⁸U","daughter":"²⁰⁶Pb","ratio":"0.6500","half_life":"4.4680e9 years","decay_constant":"4.9156e-18 s⁻¹","computed_age":"3228.2 Myr","expected_age":"3100 Myr"},p:"f64",it:5000,avg:3742.12,mn:3742.12,mx:3742.12,sd:0.0000,ips:277777.78},
+"Bushveld Complex":{tags:{"category":"Proterozoic","symbol":"U","name":"Bushveld Complex","method":"U-Pb (238)","parent":"²³⁸U","daughter":"²⁰⁶Pb","ratio":"0.3200","half_life":"4.4680e9 years","decay_constant":"4.9156e-18 s⁻¹","computed_age":"1789.7 Myr","expected_age":"2055 Myr"},p:"f64",it:5000,avg:3766.45,mn:3766.45,mx:3766.45,sd:0.0000,ips:277777.78},
+"Sudbury Impact":{tags:{"category":"Proterozoic","symbol":"U","name":"Sudbury Impact","method":"U-Pb (238)","parent":"²³⁸U","daughter":"²⁰⁶Pb","ratio":"0.2800","half_life":"4.4680e9 years","decay_constant":"4.9156e-18 s⁻¹","computed_age":"1591.4 Myr","expected_age":"1849 Myr"},p:"f64",it:5000,avg:3745.87,mn:3745.87,mx:3745.87,sd:0.0000,ips:277777.78},
+"Deccan Traps":{tags:{"category":"Mesozoic","symbol":"K","name":"Deccan Traps","method":"K-Ar","parent":"⁴⁰K","daughter":"⁴⁰Ar","ratio":"0.0050","half_life":"1.2480e9 years","decay_constant":"1.7598e-17 s⁻¹","computed_age":"84.1 Myr","expected_age":"66 Myr"},p:"f64",it:5000,avg:4590.98,mn:4590.98,mx:4590.98,sd:0.0000,ips:227272.73},
+"KT Boundary clay":{tags:{"category":"Cenozoic","symbol":"C","name":"KT Boundary clay","method":"C-14","parent":"¹⁴C","daughter":"¹⁴N","ratio":"0.0000","half_life":"5.7300e3 years","decay_constant":"3.8330e-12 s⁻¹","computed_age":"beyond range","expected_age":"65.0 kyr"},p:"f64",it:5000,avg:4595.33,mn:4595.33,mx:4595.33,sd:0.0000,ips:227272.73},
+"Lascaux paintings":{tags:{"category":"Cenozoic","symbol":"C","name":"Lascaux paintings","method":"C-14","parent":"¹⁴C","daughter":"¹⁴N","ratio":"0.8200","half_life":"5.7300e3 years","decay_constant":"3.8330e-12 s⁻¹","computed_age":"1641 yr","expected_age":"17.0 kyr"},p:"f64",it:5000,avg:4756.22,mn:4756.22,mx:4756.22,sd:0.0000,ips:217391.30}
+};
+function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
+function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}
+function go(id){var d=D[id];if(!d)return;var p=document.getElementById('detail');if(p){p.className='detail open';document.getElementById('d-title').textContent=id;var tg=document.getElementById('d-tags');tg.innerHTML='';var tkeys=Object.keys(d.tags);for(var i=0;i<tkeys.length;i++){var r=document.createElement('div');r.className='dk';r.textContent=tkeys[i];tg.appendChild(r);var v=document.createElement('div');v.className='dv';v.textContent=d.tags[tkeys[i]];tg.appendChild(v);}document.getElementById('d-prec').textContent=d.p;document.getElementById('d-iter').textContent=d.it;document.getElementById('d-avg').textContent=d.avg.toFixed(2)+' ns';document.getElementById('d-min').textContent=d.mn.toFixed(2)+' ns';document.getElementById('d-max').textContent=d.mx.toFixed(2)+' ns';document.getElementById('d-std').textContent=d.sd.toFixed(4);document.getElementById('d-ips').textContent=d.ips.toFixed(2);var fb=document.getElementById('d-files');if(fb){fb.innerHTML='';['json','yaml','toml'].forEach(function(fmt){var fk=id+'.'+fmt;if(F[fmt]&&F[fmt][fk]){var b=document.createElement('button');b.className='fbtn';b.textContent=fmt.toUpperCase();(function(f,k){b.onclick=function(){var ts=document.querySelectorAll('.tab');for(var i=0;i<ts.length;i++){if(ts[i].textContent.toLowerCase()===f){switchTab({target:ts[i]},f);break}}var s=document.querySelector('#'+f+' select');if(s){s.value=k;showFile(f,k)}}})(fmt,fk);fb.appendChild(b)}})}p.scrollIntoView({behavior:'smooth',block:'center'})}var el=document.getElementById('el-'+id);if(el){el.classList.add('highlight');setTimeout(function(){el.classList.remove('highlight')},2000)}}
+function closeDetail(){var p=document.getElementById('detail');if(p)p.className='detail'}
+['csv','json','yaml','toml','bmk'].forEach(function(fmt){var s=document.querySelector('#'+fmt+' select');if(s&&s.options.length>0)showFile(fmt,s.options[0].text)});
+</script>
+</body>
+</html>

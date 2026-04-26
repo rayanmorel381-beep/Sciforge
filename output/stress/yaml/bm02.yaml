@@ -1,0 +1,83 @@
+category: bm02
+count: 10
+entries:
+  - label: benchmark_011
+    symbol: BZI
+    name: bm011
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 283
+    avg_time_ns: 283000000.00
+  - label: benchmark_012
+    symbol: CHF
+    name: bm012
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 4879
+    avg_time_ns: 4879000064.00
+  - label: benchmark_013
+    symbol: HSI
+    name: bm013
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 71
+    avg_time_ns: 71000000.00
+  - label: benchmark_014
+    symbol: MB
+    name: bm014
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 135
+    avg_time_ns: 135000000.00
+  - label: benchmark_015
+    symbol: TCR
+    name: bm015
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 4843
+    avg_time_ns: 4842999808.00
+  - label: benchmark_016
+    symbol: VI4
+    name: bm016
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 4407
+    avg_time_ns: 4407000064.00
+  - label: benchmark_017
+    symbol: RCE
+    name: bm017
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 302
+    avg_time_ns: 302000000.00
+  - label: benchmark_018
+    symbol: RCH
+    name: bm018
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 4180
+    avg_time_ns: 4180000000.00
+  - label: benchmark_019
+    symbol: RHD
+    name: bm019
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 54
+    avg_time_ns: 54000000.00
+  - label: benchmark_020
+    symbol: RHE
+    name: bm020
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 286
+    avg_time_ns: 286000000.00

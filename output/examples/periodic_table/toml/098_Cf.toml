@@ -1,0 +1,16 @@
+[benchmark]
+category = "actinide"
+symbol = "Cf"
+name = "Californium"
+config = "[Rn] 5f¹⁰ 7s²"
+mass = "251.079587"
+experiment_name = "Cf_Californium_benchmark"
+precision = "f64"
+elapsed_ms = 38
+iterations = 5000
+avg_time_ns = 7762.57
+min_time_ns = 7762.57
+max_time_ns = 7762.57
+time_stddev = 0.0000
+iterations_per_sec = 131578.95
+result = "Z=98 | Cf (Californium) | 251.079587 u | actinide | [Rn] 5f¹⁰ 7s²"

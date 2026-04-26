@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi18"
+symbol = "BR"
+name = "bi176"
+target = "biology"
+module = "toxicology"
+status = "ok"
+elapsed_ms = "4958"
+experiment_name = "biology_176"
+precision = "f64"
+elapsed_ms = 4958
+iterations = 1
+avg_time_ns = 4958000128.00
+min_time_ns = 4958000128.00
+max_time_ns = 4958000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.20
+result = "success=true code=Some(0) stdout_bytes=148 stderr_bytes=210"

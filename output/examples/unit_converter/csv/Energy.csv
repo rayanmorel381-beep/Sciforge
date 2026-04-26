@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion
+1 eV_convert,f64,47,10000,4721.063,4721.063,4721.063,0,212765.95,1 eV | 1 eV → 1.602177e-19 J,Energy,eV,1 eV,1 eV,1.602177e-19 J,1 eV → 1.602177e-19 J
+TNT equivalent_convert,f64,47,10000,4737.55,4737.55,4737.55,0,212765.95,TNT equivalent | 4184000000 J → 1.000000e9 cal,Energy,J,TNT equivalent,4184000000 J,1.000000e9 cal,4184000000 J → 1.000000e9 cal

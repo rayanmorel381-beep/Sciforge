@@ -1,0 +1,92 @@
+element:
+  name: Erbium
+  symbol: Er
+  atomic_number: 68
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f¹² 6s²"
+  electronegativity: 1.24
+  atomic_mass: 167.259
+
+isotopes:
+  - name: Erbium-162
+    symbol: "¹⁶²Er"
+    mass_number: 162
+    neutrons: 94
+    atomic_mass: 161.928778
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00139
+
+  - name: Erbium-164
+    symbol: "¹⁶⁴Er"
+    mass_number: 164
+    neutrons: 96
+    atomic_mass: 163.929200
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.01601
+
+  - name: Erbium-166
+    symbol: "¹⁶⁶Er"
+    mass_number: 166
+    neutrons: 98
+    atomic_mass: 165.930293
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.33503
+
+  - name: Erbium-167
+    symbol: "¹⁶⁷Er"
+    mass_number: 167
+    neutrons: 99
+    atomic_mass: 166.932048
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.22869
+    nuclear_spin: "7/2+"
+
+  - name: Erbium-168
+    symbol: "¹⁶⁸Er"
+    mass_number: 168
+    neutrons: 100
+    atomic_mass: 167.932370
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.26978
+
+  - name: Erbium-169
+    symbol: "¹⁶⁹Er"
+    mass_number: 169
+    neutrons: 101
+    atomic_mass: 168.934590
+    half_life: 9.392
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Thulium-169
+    natural_abundance: 0.0
+
+  - name: Erbium-170
+    symbol: "¹⁷⁰Er"
+    mass_number: 170
+    neutrons: 102
+    atomic_mass: 169.935464
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.14910

@@ -1,0 +1,83 @@
+category: bi11
+count: 10
+entries:
+  - label: biology_101
+    symbol: FGV
+    name: bi101
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 2249
+    avg_time_ns: 2248999936.00
+  - label: biology_102
+    symbol: MSY
+    name: bi102
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 5415
+    avg_time_ns: 5415000064.00
+  - label: biology_103
+    symbol: OAP
+    name: bi103
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 2453
+    avg_time_ns: 2452999936.00
+  - label: biology_104
+    symbol: BF
+    name: bi104
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 3222
+    avg_time_ns: 3222000128.00
+  - label: biology_105
+    symbol: CSS
+    name: bi105
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 392
+    avg_time_ns: 392000000.00
+  - label: biology_106
+    symbol: GTB
+    name: bi106
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 1480
+    avg_time_ns: 1480000000.00
+  - label: biology_107
+    symbol: MG
+    name: bi107
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 4932
+    avg_time_ns: 4931999744.00
+  - label: biology_108
+    symbol: CUE
+    name: bi108
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 5032
+    avg_time_ns: 5032000000.00
+  - label: biology_109
+    symbol: DR
+    name: bi109
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 5577
+    avg_time_ns: 5576999936.00
+  - label: biology_110
+    symbol: HGR
+    name: bi110
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 3245
+    avg_time_ns: 3244999936.00

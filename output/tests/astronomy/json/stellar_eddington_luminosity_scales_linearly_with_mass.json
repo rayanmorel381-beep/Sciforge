@@ -1,0 +1,17 @@
+{
+  "category": "stellar",
+  "symbol": "ELS",
+  "name": "Eddington luminosity scales linearly with mass",
+  "domain": "astronomy",
+  "test": "stellar::eddington_luminosity_scales_linearly_with_mass",
+  "experiment_name": "stellar::eddington_luminosity_scales_linearly_with_mass",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2349879.00,
+  "min_time_ns": 2349879.00,
+  "max_time_ns": 2349879.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

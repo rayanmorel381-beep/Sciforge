@@ -1,0 +1,71 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+calculus::falling_factorial,f64,2,1,2097549,2097549,2097549,0,500,pass,calculus,FF,Falling factorial,maths,calculus::falling_factorial
+calculus::first_derivative_x_squared,f64,1,1,1928369,1928369,1928369,0,1000,pass,calculus,FDX,First derivative x squared,maths,calculus::first_derivative_x_squared
+calculus::rising_factorial,f64,1,1,1884860,1884860,1884860,0,1000,pass,calculus,RF,Rising factorial,maths,calculus::rising_factorial
+calculus::second_derivative_x_squared,f64,1,1,1798479,1798479,1798479,0,1000,pass,calculus,SDX,Second derivative x squared,maths,calculus::second_derivative_x_squared
+calculus::stat_binomial_pmf,f64,1,1,1840889,1840889,1840889,0,1000,pass,calculus,SBP,Stat binomial pmf,maths,calculus::stat_binomial_pmf
+complex::complex_exp,f64,1,1,1705199,1705199,1705199,0,1000,pass,complex,CE,Complex exp,maths,complex::complex_exp
+complex::complex_sqrt,f64,1,1,1787240,1787240,1787240,0,1000,pass,complex,CS,Complex sqrt,maths,complex::complex_sqrt
+complex::mandelbrot_iterate,f64,2,1,2351108,2351108,2351108,0,500,pass,complex,MI,Mandelbrot iterate,maths,complex::mandelbrot_iterate
+dispatch::dispatch_complex_sqrt,f64,2,1,2057909,2057909,2057909,0,500,pass,dispatch,DCS,Dispatch complex sqrt,maths,dispatch::dispatch_complex_sqrt
+dispatch::dispatch_gaussian_kernel_smooth,f64,2,1,2152220,2152220,2152220,0,500,pass,dispatch,DGK,Dispatch gaussian kernel smooth,maths,dispatch::dispatch_gaussian_kernel_smooth
+dispatch::dispatch_missing_parameter_returns_error,f64,1,1,1859399,1859399,1859399,0,1000,pass,dispatch,DMP,Dispatch missing parameter returns error,maths,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,1,1,1785359,1785359,1785359,0,1000,pass,dispatch,DUF,Dispatch unknown function returns error,maths,dispatch::dispatch_unknown_function_returns_error
+dispatch::dispatch_vec_midpoint,f64,1,1,1789629,1789629,1789629,0,1000,pass,dispatch,DVM,Dispatch vec midpoint,maths,dispatch::dispatch_vec_midpoint
+dispatch::dispatch_wave_packet_gaussian,f64,1,1,1752669,1752669,1752669,0,1000,pass,dispatch,DWP,Dispatch wave packet gaussian,maths,dispatch::dispatch_wave_packet_gaussian
+fft::fft_basic,f64,1,1,1799410,1799410,1799410,0,1000,pass,fft,FB,Fft basic,maths,fft::fft_basic
+fft::hann_window,f64,1,1,1721869,1721869,1721869,0,1000,pass,fft,HW,Hann window,maths,fft::hann_window
+fft::power_spectrum,f64,1,1,1760199,1760199,1760199,0,1000,pass,fft,PS,Power spectrum,maths,fft::power_spectrum
+graph::bfs,f64,1,1,1824929,1824929,1824929,0,1000,pass,graph,Bf,Bfs,maths,graph::bfs
+graph::connected_components,f64,1,1,1751820,1751820,1751820,0,1000,pass,graph,CC,Connected components,maths,graph::connected_components
+graph::dijkstra,f64,1,1,1701189,1701189,1701189,0,1000,pass,graph,Di,Dijkstra,maths,graph::dijkstra
+integration::halton_sequence_integration,f64,1,1,1689589,1689589,1689589,0,1000,pass,integration,HSI,Halton sequence integration,maths,integration::halton_sequence_integration
+interpolation::hermite_interpolate,f64,1,1,1660459,1660459,1660459,0,1000,pass,interpolation,HI,Hermite interpolate,maths,interpolation::hermite_interpolate
+interpolation::lagrange_interpolate,f64,1,1,1660540,1660540,1660540,0,1000,pass,interpolation,LI,Lagrange interpolate,maths,interpolation::lagrange_interpolate
+interpolation::linear_interpolate,f64,1,1,1987209,1987209,1987209,0,1000,pass,interpolation,LI,Linear interpolate,maths,interpolation::linear_interpolate
+linalg::complex_exp_i_pi,f64,2,1,2444709,2444709,2444709,0,500,pass,linalg,CEI,Complex exp i pi,maths,linalg::complex_exp_i_pi
+linalg::complex_exp_zero,f64,2,1,2179469,2179469,2179469,0,500,pass,linalg,CEZ,Complex exp zero,maths,linalg::complex_exp_zero
+linalg::levi_civita_antisymmetry,f64,2,1,2012899,2012899,2012899,0,500,pass,linalg,LCA,Levi civita antisymmetry,maths,linalg::levi_civita_antisymmetry
+linalg::matrix_det_2x2,f64,1,1,1764019,1764019,1764019,0,1000,pass,linalg,MD2,Matrix det 2x2,maths,linalg::matrix_det_2x2
+linalg::tensor_trace_identity,f64,1,1,1772459,1772459,1772459,0,1000,pass,linalg,TTI,Tensor trace identity,maths,linalg::tensor_trace_identity
+misc::poly_one,f64,1,1,1701799,1701799,1701799,0,1000,pass,misc,PO,Poly one,maths,misc::poly_one
+misc::poly_zero,f64,2,1,2202689,2202689,2202689,0,500,pass,misc,PZ,Poly zero,maths,misc::poly_zero
+misc::quaternion_pure,f64,1,1,1961720,1961720,1961720,0,1000,pass,misc,QP,Quaternion pure,maths,misc::quaternion_pure
+misc::tensor_zeros,f64,1,1,1889299,1889299,1889299,0,1000,pass,misc,TZ,Tensor zeros,maths,misc::tensor_zeros
+non_euclidean::hawking_temperature,f64,1,1,1857649,1857649,1857649,0,1000,pass,non_euclidean,HT,Hawking temperature,maths,non_euclidean::hawking_temperature
+non_euclidean::poincare_disk_distance,f64,1,1,1762299,1762299,1762299,0,1000,pass,non_euclidean,PDD,Poincare disk distance,maths,non_euclidean::poincare_disk_distance
+non_euclidean::schwarzschild_radius,f64,1,1,1723750,1723750,1723750,0,1000,pass,non_euclidean,SR,Schwarzschild radius,maths,non_euclidean::schwarzschild_radius
+non_euclidean::spherical_distance,f64,1,1,1794409,1794409,1794409,0,1000,pass,non_euclidean,SD,Spherical distance,maths,non_euclidean::spherical_distance
+ode::ode_euler,f64,1,1,1969669,1969669,1969669,0,1000,pass,ode,OE,Ode euler,maths,ode::ode_euler
+optimization::lagrangian,f64,1,1,1821789,1821789,1821789,0,1000,pass,optimization,La,Lagrangian,maths,optimization::lagrangian
+optimization::project_box,f64,1,1,1922459,1922459,1922459,0,1000,pass,optimization,PB,Project box,maths,optimization::project_box
+optimization::quadratic_objective,f64,1,1,1774419,1774419,1774419,0,1000,pass,optimization,QO,Quadratic objective,maths,optimization::quadratic_objective
+pde::heat_equation_1d_explicit,f64,1,1,1753250,1753250,1753250,0,1000,pass,pde,HE1,Heat equation 1d explicit,maths,pde::heat_equation_1d_explicit
+pde::wave_equation_1d,f64,1,1,1734079,1734079,1734079,0,1000,pass,pde,WE1,Wave equation 1d,maths,pde::wave_equation_1d
+polynomial::chebyshev_t,f64,1,1,1755359,1755359,1755359,0,1000,pass,polynomial,CT,Chebyshev t,maths,polynomial::chebyshev_t
+polynomial::legendre,f64,1,1,1748909,1748909,1748909,0,1000,pass,polynomial,Le,Legendre,maths,polynomial::legendre
+polynomial::polynomial_roots_real,f64,1,1,1926249,1926249,1926249,0,1000,pass,polynomial,PRR,Polynomial roots real,maths,polynomial::polynomial_roots_real
+probability::monte_carlo_pi,f64,3,1,3363089,3363089,3363089,0,333.33334,pass,probability,MCP,Monte carlo pi,maths,probability::monte_carlo_pi
+probability::prob_exponential_cdf,f64,1,1,1985959,1985959,1985959,0,1000,pass,probability,PEC,Prob exponential cdf,maths,probability::prob_exponential_cdf
+probability::prob_normal_pdf,f64,1,1,1760199,1760199,1760199,0,1000,pass,probability,PNP,Prob normal pdf,maths,probability::prob_normal_pdf
+signal::butterworth_gain,f64,1,1,1839189,1839189,1839189,0,1000,pass,signal,BG,Butterworth gain,maths,signal::butterworth_gain
+signal::kalman_filter_1d,f64,2,1,2155400,2155400,2155400,0,500,pass,signal,KF1,Kalman filter 1d,maths,signal::kalman_filter_1d
+signal::low_pass_rc,f64,2,1,2035739,2035739,2035739,0,500,pass,signal,LPR,Low pass rc,maths,signal::low_pass_rc
+sparse::conjugate_gradient,f64,1,1,1964579,1964579,1964579,0,1000,pass,sparse,CG,Conjugate gradient,maths,sparse::conjugate_gradient
+sparse::jacobi_iterate,f64,1,1,1769559,1769559,1769559,0,1000,pass,sparse,JI,Jacobi iterate,maths,sparse::jacobi_iterate
+sparse::sparse_add,f64,1,1,1799959,1799959,1799959,0,1000,pass,sparse,SA,Sparse add,maths,sparse::sparse_add
+statistics::erf_zero,f64,1,1,1779029,1779029,1779029,0,1000,pass,statistics,EZ,Erf zero,maths,statistics::erf_zero
+statistics::geometric_mean,f64,1,1,1788200,1788200,1788200,0,1000,pass,statistics,GM,Geometric mean,maths,statistics::geometric_mean
+statistics::harmonic_mean,f64,1,1,1748879,1748879,1748879,0,1000,pass,statistics,HM,Harmonic mean,maths,statistics::harmonic_mean
+statistics::linear_regression_perfect,f64,1,1,1733909,1733909,1733909,0,1000,pass,statistics,LRP,Linear regression perfect,maths,statistics::linear_regression_perfect
+statistics::mean_basic,f64,1,1,1722679,1722679,1722679,0,1000,pass,statistics,MB,Mean basic,maths,statistics::mean_basic
+statistics::mean_permutation_invariant,f64,1,1,1768160,1768160,1768160,0,1000,pass,statistics,MPI,Mean permutation invariant,maths,statistics::mean_permutation_invariant
+statistics::std_dev_basic,f64,1,1,1723279,1723279,1723279,0,1000,pass,statistics,SDB,Std dev basic,maths,statistics::std_dev_basic
+statistics::weighted_mean,f64,1,1,1765579,1765579,1765579,0,1000,pass,statistics,WM,Weighted mean,maths,statistics::weighted_mean
+statistics::weighted_mean_scale_invariant_on_weights,f64,1,1,1824729,1824729,1824729,0,1000,pass,statistics,WMS,Weighted mean scale invariant on weights,maths,statistics::weighted_mean_scale_invariant_on_weights
+tensor::tensor_contract,f64,1,1,1872079,1872079,1872079,0,1000,pass,tensor,TC,Tensor contract,maths,tensor::tensor_contract
+tensor::tensor_determinant,f64,1,1,1737300,1737300,1737300,0,1000,pass,tensor,TD,Tensor determinant,maths,tensor::tensor_determinant
+tensor::tensor_reshape,f64,1,1,1689109,1689109,1689109,0,1000,pass,tensor,TR,Tensor reshape,maths,tensor::tensor_reshape
+vector::vec_distance,f64,1,1,1730279,1730279,1730279,0,1000,pass,vector,VD,Vec distance,maths,vector::vec_distance
+vector::vec_lerp,f64,1,1,1788729,1788729,1788729,0,1000,pass,vector,VL,Vec lerp,maths,vector::vec_lerp
+vector::vec_project,f64,1,1,1988819,1988819,1988819,0,1000,pass,vector,VP,Vec project,maths,vector::vec_project

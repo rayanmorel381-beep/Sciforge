@@ -1,0 +1,67 @@
+element:
+  name: Nihonium
+  symbol: Nh
+  atomic_number: 113
+  category: unknown
+  group: 13
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹"
+  electronegativity: null
+  atomic_mass: 286.182
+
+isotopes:
+  - name: Nihonium-278
+    symbol: "²⁷⁸Nh"
+    mass_number: 278
+    neutrons: 165
+    atomic_mass: 278.160
+    half_life: 1.4
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Roentgenium-274
+    natural_abundance: 0.0
+
+  - name: Nihonium-282
+    symbol: "²⁸²Nh"
+    mass_number: 282
+    neutrons: 169
+    atomic_mass: 282.171
+    half_life: 73
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Roentgenium-278
+    natural_abundance: 0.0
+
+  - name: Nihonium-284
+    symbol: "²⁸⁴Nh"
+    mass_number: 284
+    neutrons: 171
+    atomic_mass: 284.178
+    half_life: 0.91
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Roentgenium-280
+    natural_abundance: 0.0
+
+  - name: Nihonium-286
+    symbol: "²⁸⁶Nh"
+    mass_number: 286
+    neutrons: 173
+    atomic_mass: 286.182
+    half_life: 9.5
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Roentgenium-282
+    natural_abundance: 0.0

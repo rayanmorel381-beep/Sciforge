@@ -1,0 +1,138 @@
+title: Unit Converter — SI, CGS & Common Unit Conversions
+count: 15
+entries:
+  - label: Marathon distance
+    category: Length
+    symbol: km
+    name: Marathon distance
+    from: 42.195 km
+    to: 2.621876e1 mi
+    conversion: 42.195 km → 2.621876e1 mi
+    avg_time_ns: 2419.22
+    iterations_per_sec: 416666.66
+  - label: Everest height
+    category: Length
+    symbol: m
+    name: Everest height
+    from: 8848.86 m
+    to: 2.903169e4 ft
+    conversion: 8848.86 m → 2.903169e4 ft
+    avg_time_ns: 2472.56
+    iterations_per_sec: 416666.66
+  - label: Light-year
+    category: Length
+    symbol: ly
+    name: Light-year
+    from: 1 ly
+    to: 9.460730e12 km
+    conversion: 1 ly → 9.460730e12 km
+    avg_time_ns: 2447.65
+    iterations_per_sec: 416666.66
+  - label: Human body temp
+    category: Temperature
+    symbol: °C
+    name: Human body temp
+    from: 37 °C
+    to: 3.101500e2 K
+    conversion: 37 °C → 3.101500e2 K
+    avg_time_ns: 3439.03
+    iterations_per_sec: 294117.66
+  - label: Liquid nitrogen
+    category: Temperature
+    symbol: K
+    name: Liquid nitrogen
+    from: 77.36 K
+    to: -1.957900e2 °C
+    conversion: 77.36 K → -1.957900e2 °C
+    avg_time_ns: 3463.80
+    iterations_per_sec: 294117.66
+  - label: Sun surface
+    category: Temperature
+    symbol: K
+    name: Sun surface
+    from: 5778 K
+    to: 9.940730e3 °F
+    conversion: 5778 K → 9.940730e3 °F
+    avg_time_ns: 3407.44
+    iterations_per_sec: 294117.66
+  - label: Atmospheric
+    category: Pressure
+    symbol: Pa
+    name: Atmospheric
+    from: 101325 Pa
+    to: 1.000000e0 atm
+    conversion: 101325 Pa → 1.000000e0 atm
+    avg_time_ns: 3394.73
+    iterations_per_sec: 303030.31
+  - label: Deep ocean
+    category: Pressure
+    symbol: atm
+    name: Deep ocean
+    from: 1100 atm
+    to: 1.114575e8 Pa
+    conversion: 1100 atm → 1.114575e8 Pa
+    avg_time_ns: 3402.82
+    iterations_per_sec: 294117.66
+  - label: Earth mass
+    category: Mass
+    symbol: kg
+    name: Earth mass
+    from: 5972000000000000000000000 kg
+    to: 1.316601e25 lb
+    conversion: 5972000000000000000000000 kg → 1.316601e25 lb
+    avg_time_ns: 3899.77
+    iterations_per_sec: 263157.91
+  - label: Proton mass
+    category: Mass
+    symbol: kg
+    name: Proton mass
+    from: 0.000000000000000000000000001672 kg
+    to: 1.006902e0 amu
+    conversion: 0.000000000000000000000000001672 kg → 1.006902e0 amu
+    avg_time_ns: 3953.62
+    iterations_per_sec: 256410.25
+  - label: 1 eV
+    category: Energy
+    symbol: eV
+    name: 1 eV
+    from: 1 eV
+    to: 1.602177e-19 J
+    conversion: 1 eV → 1.602177e-19 J
+    avg_time_ns: 4721.06
+    iterations_per_sec: 212765.95
+  - label: TNT equivalent
+    category: Energy
+    symbol: J
+    name: TNT equivalent
+    from: 4184000000 J
+    to: 1.000000e9 cal
+    conversion: 4184000000 J → 1.000000e9 cal
+    avg_time_ns: 4737.55
+    iterations_per_sec: 212765.95
+  - label: 1 day
+    category: Time
+    symbol: day
+    name: 1 day
+    from: 1 day
+    to: 8.640000e4 s
+    conversion: 1 day → 8.640000e4 s
+    avg_time_ns: 4989.79
+    iterations_per_sec: 204081.62
+  - label: 1 year
+    category: Time
+    symbol: year
+    name: 1 year
+    from: 1 year
+    to: 8.766000e3 h
+    conversion: 1 year → 8.766000e3 h
+    avg_time_ns: 5427.91
+    iterations_per_sec: 185185.19
+  - label: Right angle
+    category: Angle
+    symbol: deg
+    name: Right angle
+    from: 90 deg
+    to: 1.570796e0 rad
+    conversion: 90 deg → 1.570796e0 rad
+    avg_time_ns: 5282.32
+    iterations_per_sec: 192307.69

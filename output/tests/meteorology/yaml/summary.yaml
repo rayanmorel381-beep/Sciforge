@@ -1,0 +1,363 @@
+title: SciForge Meteorology Test
+count: 45
+entries:
+  - label: atmosphere_barometric_decreases_with_altitude
+    category: atmosphere
+    symbol: BDW
+    name: Barometric decreases with altitude
+    domain: meteorology
+    test: "atmosphere::barometric_decreases_with_altitude"
+    avg_time_ns: 3677928.00
+    iterations_per_sec: 333.33
+  - label: atmosphere_barometric_formula
+    category: atmosphere
+    symbol: BF
+    name: Barometric formula
+    domain: meteorology
+    test: "atmosphere::barometric_formula"
+    avg_time_ns: 2525369.00
+    iterations_per_sec: 500.00
+  - label: atmosphere_lapse_rate_dry
+    category: atmosphere
+    symbol: LRD
+    name: Lapse rate dry
+    domain: meteorology
+    test: "atmosphere::lapse_rate_dry"
+    avg_time_ns: 2244209.00
+    iterations_per_sec: 500.00
+  - label: atmosphere_potential_temperature
+    category: atmosphere
+    symbol: PT
+    name: Potential temperature
+    domain: meteorology
+    test: "atmosphere::potential_temperature"
+    avg_time_ns: 2182669.00
+    iterations_per_sec: 500.00
+  - label: atmosphere_saturation_vapor_increases_with_temp
+    category: atmosphere
+    symbol: SVI
+    name: Saturation vapor increases with temp
+    domain: meteorology
+    test: "atmosphere::saturation_vapor_increases_with_temp"
+    avg_time_ns: 2014669.00
+    iterations_per_sec: 500.00
+  - label: atmosphere_saturation_vapor_pressure
+    category: atmosphere
+    symbol: SVP
+    name: Saturation vapor pressure
+    domain: meteorology
+    test: "atmosphere::saturation_vapor_pressure"
+    avg_time_ns: 1833849.00
+    iterations_per_sec: 1000.00
+  - label: atmosphere_scale_height
+    category: atmosphere
+    symbol: SH
+    name: Scale height
+    domain: meteorology
+    test: "atmosphere::scale_height"
+    avg_time_ns: 1894300.00
+    iterations_per_sec: 1000.00
+  - label: dynamics_coriolis_changes_sign_between_hemispheres
+    category: dynamics
+    symbol: CCS
+    name: Coriolis changes sign between hemispheres
+    domain: meteorology
+    test: "dynamics::coriolis_changes_sign_between_hemispheres"
+    avg_time_ns: 2115849.00
+    iterations_per_sec: 500.00
+  - label: dynamics_coriolis_parameter
+    category: dynamics
+    symbol: CP
+    name: Coriolis parameter
+    domain: meteorology
+    test: "dynamics::coriolis_parameter"
+    avg_time_ns: 2191819.00
+    iterations_per_sec: 500.00
+  - label: dynamics_coriolis_zero_at_equator
+    category: dynamics
+    symbol: CZA
+    name: Coriolis zero at equator
+    domain: meteorology
+    test: "dynamics::coriolis_zero_at_equator"
+    avg_time_ns: 2197899.00
+    iterations_per_sec: 500.00
+  - label: dynamics_ekman_depth
+    category: dynamics
+    symbol: ED
+    name: Ekman depth
+    domain: meteorology
+    test: "dynamics::ekman_depth"
+    avg_time_ns: 2367939.00
+    iterations_per_sec: 500.00
+  - label: dynamics_geostrophic_wind
+    category: dynamics
+    symbol: GW
+    name: Geostrophic wind
+    domain: meteorology
+    test: "dynamics::geostrophic_wind"
+    avg_time_ns: 1915119.00
+    iterations_per_sec: 1000.00
+  - label: dynamics_rossby_number
+    category: dynamics
+    symbol: RN
+    name: Rossby number
+    domain: meteorology
+    test: "dynamics::rossby_number"
+    avg_time_ns: 1728879.00
+    iterations_per_sec: 1000.00
+  - label: dynamics_rossby_number_decreases_with_scale
+    category: dynamics
+    symbol: RND
+    name: Rossby number decreases with scale
+    domain: meteorology
+    test: "dynamics::rossby_number_decreases_with_scale"
+    avg_time_ns: 1810979.00
+    iterations_per_sec: 1000.00
+  - label: dynamics_rossby_wave_speed
+    category: dynamics
+    symbol: RWS
+    name: Rossby wave speed
+    domain: meteorology
+    test: "dynamics::rossby_wave_speed"
+    avg_time_ns: 1987689.00
+    iterations_per_sec: 1000.00
+  - label: ocean_henry_solubility
+    category: ocean
+    symbol: HS
+    name: Henry solubility
+    domain: meteorology
+    test: "ocean::henry_solubility"
+    avg_time_ns: 1912980.00
+    iterations_per_sec: 1000.00
+  - label: ocean_sea_level_rise_thermal
+    category: ocean
+    symbol: SLR
+    name: Sea level rise thermal
+    domain: meteorology
+    test: "ocean::sea_level_rise_thermal"
+    avg_time_ns: 1780869.00
+    iterations_per_sec: 1000.00
+  - label: ocean_seawater_density
+    category: ocean
+    symbol: SD
+    name: Seawater density
+    domain: meteorology
+    test: "ocean::seawater_density"
+    avg_time_ns: 1763929.00
+    iterations_per_sec: 1000.00
+  - label: ocean_seawater_density_increases_with_salinity
+    category: ocean
+    symbol: SDI
+    name: Seawater density increases with salinity
+    domain: meteorology
+    test: "ocean::seawater_density_increases_with_salinity"
+    avg_time_ns: 1738789.00
+    iterations_per_sec: 1000.00
+  - label: ocean_sound_speed
+    category: ocean
+    symbol: SS
+    name: Sound speed
+    domain: meteorology
+    test: "ocean::sound_speed"
+    avg_time_ns: 2631619.00
+    iterations_per_sec: 500.00
+  - label: precipitation_antecedent_precipitation_index
+    category: precipitation
+    symbol: API
+    name: Antecedent precipitation index
+    domain: meteorology
+    test: "precipitation::antecedent_precipitation_index"
+    avg_time_ns: 2325699.00
+    iterations_per_sec: 500.00
+  - label: precipitation_intensity_duration_frequency
+    category: precipitation
+    symbol: IDF
+    name: Intensity duration frequency
+    domain: meteorology
+    test: "precipitation::intensity_duration_frequency"
+    avg_time_ns: 2240269.00
+    iterations_per_sec: 500.00
+  - label: precipitation_penman_evaporation
+    category: precipitation
+    symbol: PE
+    name: Penman evaporation
+    domain: meteorology
+    test: "precipitation::penman_evaporation"
+    avg_time_ns: 2141809.00
+    iterations_per_sec: 500.00
+  - label: precipitation_radar_reflectivity
+    category: precipitation
+    symbol: RR
+    name: Radar reflectivity
+    domain: meteorology
+    test: "precipitation::radar_reflectivity"
+    avg_time_ns: 2157309.00
+    iterations_per_sec: 500.00
+  - label: precipitation_rain_rate_marshall_palmer
+    category: precipitation
+    symbol: RRM
+    name: Rain rate marshall palmer
+    domain: meteorology
+    test: "precipitation::rain_rate_marshall_palmer"
+    avg_time_ns: 2269049.00
+    iterations_per_sec: 500.00
+  - label: precipitation_scs_curve_number_runoff
+    category: precipitation
+    symbol: SCN
+    name: Scs curve number runoff
+    domain: meteorology
+    test: "precipitation::scs_curve_number_runoff"
+    avg_time_ns: 2091569.00
+    iterations_per_sec: 500.00
+  - label: precipitation_terminal_velocity_raindrop
+    category: precipitation
+    symbol: TVR
+    name: Terminal velocity raindrop
+    domain: meteorology
+    test: "precipitation::terminal_velocity_raindrop"
+    avg_time_ns: 2565319.00
+    iterations_per_sec: 500.00
+  - label: precipitation_thornthwaite_pet
+    category: precipitation
+    symbol: TP
+    name: Thornthwaite pet
+    domain: meteorology
+    test: "precipitation::thornthwaite_pet"
+    avg_time_ns: 2028169.00
+    iterations_per_sec: 500.00
+  - label: radiation_albedo_reflected
+    category: radiation
+    symbol: AR
+    name: Albedo reflected
+    domain: meteorology
+    test: "radiation::albedo_reflected"
+    avg_time_ns: 1844089.00
+    iterations_per_sec: 1000.00
+  - label: radiation_effective_temperature
+    category: radiation
+    symbol: ET
+    name: Effective temperature
+    domain: meteorology
+    test: "radiation::effective_temperature"
+    avg_time_ns: 1704150.00
+    iterations_per_sec: 1000.00
+  - label: radiation_planck_function
+    category: radiation
+    symbol: PF
+    name: Planck function
+    domain: meteorology
+    test: "radiation::planck_function"
+    avg_time_ns: 2855108.00
+    iterations_per_sec: 500.00
+  - label: radiation_radiative_forcing_co2
+    category: radiation
+    symbol: RFC
+    name: Radiative forcing co2
+    domain: meteorology
+    test: "radiation::radiative_forcing_co2"
+    avg_time_ns: 2303089.00
+    iterations_per_sec: 500.00
+  - label: radiation_radiative_forcing_co2_zero_when_equal_concentrations
+    category: radiation
+    symbol: RFC
+    name: Radiative forcing co2 zero when equal concentrations
+    domain: meteorology
+    test: "radiation::radiative_forcing_co2_zero_when_equal_concentrations"
+    avg_time_ns: 2190869.00
+    iterations_per_sec: 500.00
+  - label: radiation_stefan_boltzmann_flux
+    category: radiation
+    symbol: SBF
+    name: Stefan boltzmann flux
+    domain: meteorology
+    test: "radiation::stefan_boltzmann_flux"
+    avg_time_ns: 2202229.00
+    iterations_per_sec: 500.00
+  - label: radiation_stefan_boltzmann_flux_monotonic_with_temperature_sweep
+    category: radiation
+    symbol: SBF
+    name: Stefan boltzmann flux monotonic with temperature sweep
+    domain: meteorology
+    test: "radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep"
+    avg_time_ns: 2281370.00
+    iterations_per_sec: 500.00
+  - label: storms_cape_positive_buoyancy
+    category: storms
+    symbol: CPB
+    name: Cape positive buoyancy
+    domain: meteorology
+    test: "storms::cape_positive_buoyancy"
+    avg_time_ns: 2169088.00
+    iterations_per_sec: 500.00
+  - label: storms_cape_zero_for_equal_temps
+    category: storms
+    symbol: CZF
+    name: Cape zero for equal temps
+    domain: meteorology
+    test: "storms::cape_zero_for_equal_temps"
+    avg_time_ns: 1882750.00
+    iterations_per_sec: 1000.00
+  - label: storms_fujita_scale
+    category: storms
+    symbol: FS
+    name: Fujita scale
+    domain: meteorology
+    test: "storms::fujita_scale"
+    avg_time_ns: 1791779.00
+    iterations_per_sec: 1000.00
+  - label: storms_fujita_scale_increases_with_wind
+    category: storms
+    symbol: FSI
+    name: Fujita scale increases with wind
+    domain: meteorology
+    test: "storms::fujita_scale_increases_with_wind"
+    avg_time_ns: 1902359.00
+    iterations_per_sec: 1000.00
+  - label: storms_potential_intensity
+    category: storms
+    symbol: PI
+    name: Potential intensity
+    domain: meteorology
+    test: "storms::potential_intensity"
+    avg_time_ns: 2269939.00
+    iterations_per_sec: 500.00
+  - label: winds_beaufort_monotonic
+    category: winds
+    symbol: BM
+    name: Beaufort monotonic
+    domain: meteorology
+    test: "winds::beaufort_monotonic"
+    avg_time_ns: 1908059.00
+    iterations_per_sec: 1000.00
+  - label: winds_beaufort_to_m_s
+    category: winds
+    symbol: BTM
+    name: Beaufort to m s
+    domain: meteorology
+    test: "winds::beaufort_to_m_s"
+    avg_time_ns: 1879449.00
+    iterations_per_sec: 1000.00
+  - label: winds_beaufort_zero_is_calm
+    category: winds
+    symbol: BZI
+    name: Beaufort zero is calm
+    domain: meteorology
+    test: "winds::beaufort_zero_is_calm"
+    avg_time_ns: 1891119.00
+    iterations_per_sec: 1000.00
+  - label: winds_wind_chill
+    category: winds
+    symbol: WC
+    name: Wind chill
+    domain: meteorology
+    test: "winds::wind_chill"
+    avg_time_ns: 1870990.00
+    iterations_per_sec: 1000.00
+  - label: winds_wind_chill_decreases_with_wind
+    category: winds
+    symbol: WCD
+    name: Wind chill decreases with wind
+    domain: meteorology
+    test: "winds::wind_chill_decreases_with_wind"
+    avg_time_ns: 1689829.00
+    iterations_per_sec: 1000.00

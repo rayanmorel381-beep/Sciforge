@@ -1,0 +1,19 @@
+{
+  "category": "ch03",
+  "symbol": "DUF",
+  "name": "ch025",
+  "target": "chemistry",
+  "module": "dispatch",
+  "status": "ok",
+  "elapsed_ms": "4686",
+  "experiment_name": "chemistry_025",
+  "precision": "f64",
+  "elapsed_ms": 4686,
+  "iterations": 1,
+  "avg_time_ns": 4686000128.00,
+  "min_time_ns": 4686000128.00,
+  "max_time_ns": 4686000128.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=176 stderr_bytes=266"
+}

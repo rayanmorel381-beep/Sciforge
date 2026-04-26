@@ -1,0 +1,15 @@
+category: probability
+symbol: PEC
+name: Prob exponential cdf
+domain: maths
+test: "probability::prob_exponential_cdf"
+experiment_name: "probability::prob_exponential_cdf"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1985959.00
+min_time_ns: 1985959.00
+max_time_ns: 1985959.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

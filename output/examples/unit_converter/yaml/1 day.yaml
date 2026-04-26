@@ -1,0 +1,16 @@
+category: Time
+symbol: day
+name: 1 day
+from: 1 day
+to: 8.640000e4 s
+conversion: 1 day → 8.640000e4 s
+experiment_name: 1 day_convert
+precision: f64
+elapsed_ms: 49
+iterations: 10000
+avg_time_ns: 4989.79
+min_time_ns: 4989.79
+max_time_ns: 4989.79
+time_stddev: 0.0000
+iterations_per_sec: 204081.62
+result: 1 day | 1 day → 8.640000e4 s

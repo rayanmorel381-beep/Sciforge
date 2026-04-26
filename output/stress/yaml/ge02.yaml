@@ -1,0 +1,83 @@
+category: ge02
+count: 10
+entries:
+  - label: geology_011
+    symbol: VEI
+    name: ge011
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 5294
+    avg_time_ns: 5294000128.00
+  - label: geology_012
+    symbol: WET
+    name: ge012
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 5333
+    avg_time_ns: 5333000192.00
+  - label: geology_013
+    symbol: GBE
+    name: ge013
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 5073
+    avg_time_ns: 5072999936.00
+  - label: geology_014
+    symbol: GSI
+    name: ge014
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 2313
+    avg_time_ns: 2312999936.00
+  - label: geology_015
+    symbol: GSR
+    name: ge015
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 5410
+    avg_time_ns: 5409999872.00
+  - label: geology_016
+    symbol: IV
+    name: ge016
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 4868
+    avg_time_ns: 4867999744.00
+  - label: geology_017
+    symbol: SIV
+    name: ge017
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 2852
+    avg_time_ns: 2852000000.00
+  - label: geology_018
+    symbol: CV
+    name: ge018
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 5385
+    avg_time_ns: 5384999936.00
+  - label: geology_019
+    symbol: FN
+    name: ge019
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 5607
+    avg_time_ns: 5607000064.00
+  - label: geology_020
+    symbol: HET
+    name: ge020
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 4998
+    avg_time_ns: 4998000128.00

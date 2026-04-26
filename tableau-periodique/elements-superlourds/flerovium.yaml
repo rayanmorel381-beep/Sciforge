@@ -1,0 +1,70 @@
+element:
+  name: Flerovium
+  symbol: Fl
+  atomic_number: 114
+  category: unknown
+  group: 14
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²"
+  electronegativity: null
+  atomic_mass: 289.190
+
+isotopes:
+  - name: Flerovium-286
+    symbol: "²⁸⁶Fl"
+    mass_number: 286
+    neutrons: 172
+    atomic_mass: 286.184
+    half_life: 0.12
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 0.60
+        daughter: null
+      - mode: alpha
+        branching_ratio: 0.40
+        daughter: Copernicium-282
+    natural_abundance: 0.0
+
+  - name: Flerovium-287
+    symbol: "²⁸⁷Fl"
+    mass_number: 287
+    neutrons: 173
+    atomic_mass: 287.187
+    half_life: 0.48
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Copernicium-283
+    natural_abundance: 0.0
+
+  - name: Flerovium-288
+    symbol: "²⁸⁸Fl"
+    mass_number: 288
+    neutrons: 174
+    atomic_mass: 288.188
+    half_life: 0.66
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Copernicium-284
+    natural_abundance: 0.0
+
+  - name: Flerovium-289
+    symbol: "²⁸⁹Fl"
+    mass_number: 289
+    neutrons: 175
+    atomic_mass: 289.190
+    half_life: 1.9
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Copernicium-285
+    natural_abundance: 0.0

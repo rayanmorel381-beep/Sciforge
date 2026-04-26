@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi11"
+symbol = "GTB"
+name = "bi106"
+target = "biology"
+module = "microbiology"
+status = "ok"
+elapsed_ms = "1480"
+experiment_name = "biology_106"
+precision = "f64"
+elapsed_ms = 1480
+iterations = 1
+avg_time_ns = 1480000000.00
+min_time_ns = 1480000000.00
+max_time_ns = 1480000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.68
+result = "success=true code=Some(0) stdout_bytes=165 stderr_bytes=210"

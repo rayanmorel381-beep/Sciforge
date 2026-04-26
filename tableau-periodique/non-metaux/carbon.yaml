@@ -1,0 +1,250 @@
+element:
+  name: Carbon
+  symbol: C
+  atomic_number: 6
+  category: nonmetal
+  group: 14
+  period: 2
+  electron_configuration: "1s² 2s² 2p²"
+  electronegativity: 2.55
+  atomic_mass: 12.011
+
+isotopes:
+  - name: Carbon-8
+    symbol: "⁸C"
+    mass_number: 8
+    neutrons: 2
+    atomic_mass: 8.03768
+    half_life: "2.0e-21"
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Carbon-9
+    symbol: "⁹C"
+    mass_number: 9
+    neutrons: 3
+    atomic_mass: 9.03104
+    half_life: 0.1265
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.60
+      - mode: beta+ proton emission
+        branching_ratio: 0.23
+      - mode: beta+ alpha emission
+        branching_ratio: 0.17
+    natural_abundance: 0.0
+
+  - name: Carbon-10
+    symbol: "¹⁰C"
+    mass_number: 10
+    neutrons: 4
+    atomic_mass: 10.01685
+    half_life: 19.3009
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Carbon-11
+    symbol: "¹¹C"
+    mass_number: 11
+    neutrons: 5
+    atomic_mass: 11.011433
+    half_life: 20.334
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.998
+      - mode: electron capture
+        branching_ratio: 0.002
+    natural_abundance: 0.0
+
+  - name: Carbon-12
+    symbol: "¹²C"
+    mass_number: 12
+    neutrons: 6
+    atomic_mass: 12.0
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.9893
+
+  - name: Carbon-13
+    symbol: "¹³C"
+    mass_number: 13
+    neutrons: 7
+    atomic_mass: 13.003355
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0107
+    nuclear_spin: "1/2-"
+
+  - name: Carbon-14
+    symbol: "¹⁴C"
+    mass_number: 14
+    neutrons: 8
+    atomic_mass: 14.003242
+    half_life: 5730.0
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Nitrogen-14
+    natural_abundance: 1.0e-12
+
+  - name: Carbon-15
+    symbol: "¹⁵C"
+    mass_number: 15
+    neutrons: 9
+    atomic_mass: 15.010599
+    half_life: 2.449
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Nitrogen-15
+    natural_abundance: 0.0
+
+  - name: Carbon-16
+    symbol: "¹⁶C"
+    mass_number: 16
+    neutrons: 10
+    atomic_mass: 16.01470
+    half_life: 0.747
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.974
+      - mode: beta- neutron emission
+        branching_ratio: 0.026
+    natural_abundance: 0.0
+
+  - name: Carbon-17
+    symbol: "¹⁷C"
+    mass_number: 17
+    neutrons: 11
+    atomic_mass: 17.02258
+    half_life: 193.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.718
+      - mode: beta- neutron emission
+        branching_ratio: 0.282
+    natural_abundance: 0.0
+
+  - name: Carbon-18
+    symbol: "¹⁸C"
+    mass_number: 18
+    neutrons: 12
+    atomic_mass: 18.02676
+    half_life: 92.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.684
+      - mode: beta- neutron emission
+        branching_ratio: 0.316
+    natural_abundance: 0.0
+
+  - name: Carbon-19
+    symbol: "¹⁹C"
+    mass_number: 19
+    neutrons: 13
+    atomic_mass: 19.03480
+    half_life: 46.2
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 0.47
+      - mode: beta- (electron emission)
+        branching_ratio: 0.53
+    natural_abundance: 0.0
+
+  - name: Carbon-20
+    symbol: "²⁰C"
+    mass_number: 20
+    neutrons: 14
+    atomic_mass: 20.04032
+    half_life: 16.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 0.72
+      - mode: beta- (electron emission)
+        branching_ratio: 0.28
+    natural_abundance: 0.0
+
+  - name: Carbon-21
+    symbol: "²¹C"
+    mass_number: 21
+    neutrons: 15
+    atomic_mass: 21.04934
+    half_life: 30.0
+    half_life_unit: nanoseconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Carbon-22
+    symbol: "²²C"
+    mass_number: 22
+    neutrons: 16
+    atomic_mass: 22.05720
+    half_life: 6.2
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+allotropes:
+  - name: Diamond
+    structure: tetrahedral (sp³)
+    density: 3.515
+
+  - name: Graphite
+    structure: hexagonal layers (sp²)
+    density: 2.267
+
+  - name: Graphene
+    structure: single hexagonal layer (sp²)
+    density: null
+
+  - name: Fullerene (C60)
+    structure: truncated icosahedron
+    density: 1.65
+
+  - name: Carbon nanotube
+    structure: rolled graphene cylinder
+    density: null
+
+  - name: Lonsdaleite
+    structure: hexagonal diamond
+    density: 3.52
+
+  - name: Amorphous carbon
+    structure: disordered
+    density: 1.8-2.1

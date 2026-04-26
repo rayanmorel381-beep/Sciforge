@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,Z,A,N,half_life,decay_constant,decay_mode,specific_activity,remaining_3hl,binding_energy
+Cobalt_60_decay,f64,11,5000,2333.161,2333.161,2333.161,0,454545.47,⁶⁰Co (Cobalt) | t½=5.27 years | λ=4.1664e-9 s⁻¹ | beta- | A_sp=4.182e13 Bq/g,Beta,⁶⁰Co,Cobalt,27,60,33,5.27 years,4.1664e-9 s⁻¹,beta-,4.182e13 Bq/g,125000 / 1M after 3 half-lives,7.489 MeV/nucleon

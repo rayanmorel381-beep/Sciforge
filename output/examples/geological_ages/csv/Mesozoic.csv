@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age
+Deccan Traps_dating,f64,22,5000,4590.976,4590.976,4590.976,0,227272.73,Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr,Mesozoic,K,Deccan Traps,K-Ar,⁴⁰K,⁴⁰Ar,0.0050,1.2480e9 years,1.7598e-17 s⁻¹,84.1 Myr,66 Myr

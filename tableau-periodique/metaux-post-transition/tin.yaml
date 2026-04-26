@@ -1,0 +1,138 @@
+element:
+  name: Tin
+  symbol: Sn
+  atomic_number: 50
+  category: post-transition metal
+  group: 14
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s² 5p²"
+  electronegativity: 1.96
+  atomic_mass: 118.710
+
+isotopes:
+  - name: Tin-112
+    symbol: "¹¹²Sn"
+    mass_number: 112
+    neutrons: 62
+    atomic_mass: 111.904818
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0097
+
+  - name: Tin-114
+    symbol: "¹¹⁴Sn"
+    mass_number: 114
+    neutrons: 64
+    atomic_mass: 113.902779
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0066
+
+  - name: Tin-115
+    symbol: "¹¹⁵Sn"
+    mass_number: 115
+    neutrons: 65
+    atomic_mass: 114.903342
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0034
+    nuclear_spin: "1/2+"
+
+  - name: Tin-116
+    symbol: "¹¹⁶Sn"
+    mass_number: 116
+    neutrons: 66
+    atomic_mass: 115.901741
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1454
+
+  - name: Tin-117
+    symbol: "¹¹⁷Sn"
+    mass_number: 117
+    neutrons: 67
+    atomic_mass: 116.902952
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0768
+    nuclear_spin: "1/2+"
+
+  - name: Tin-118
+    symbol: "¹¹⁸Sn"
+    mass_number: 118
+    neutrons: 68
+    atomic_mass: 117.901603
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2422
+
+  - name: Tin-119
+    symbol: "¹¹⁹Sn"
+    mass_number: 119
+    neutrons: 69
+    atomic_mass: 118.903308
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0859
+    nuclear_spin: "1/2+"
+
+  - name: Tin-120
+    symbol: "¹²⁰Sn"
+    mass_number: 120
+    neutrons: 70
+    atomic_mass: 119.902195
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.3258
+
+  - name: Tin-122
+    symbol: "¹²²Sn"
+    mass_number: 122
+    neutrons: 72
+    atomic_mass: 121.903439
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0463
+
+  - name: Tin-124
+    symbol: "¹²⁴Sn"
+    mass_number: 124
+    neutrons: 74
+    atomic_mass: 123.905274
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0579
+
+  - name: Tin-126
+    symbol: "¹²⁶Sn"
+    mass_number: 126
+    neutrons: 76
+    atomic_mass: 125.907653
+    half_life: 2.30e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Antimony-126
+    natural_abundance: 0.0

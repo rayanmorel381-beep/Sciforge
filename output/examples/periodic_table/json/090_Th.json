@@ -1,0 +1,17 @@
+{
+  "category": "actinide",
+  "symbol": "Th",
+  "name": "Thorium",
+  "config": "[Rn] 6d² 7s²",
+  "mass": "232.0377",
+  "experiment_name": "Th_Thorium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 70,
+  "iterations": 10000,
+  "avg_time_ns": 7089.71,
+  "min_time_ns": 7089.71,
+  "max_time_ns": 7089.71,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 142857.14,
+  "result": "Z=90 | Th (Thorium) | 232.0377 u | actinide | [Rn] 6d² 7s²"
+}

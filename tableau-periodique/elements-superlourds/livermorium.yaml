@@ -1,0 +1,67 @@
+element:
+  name: Livermorium
+  symbol: Lv
+  atomic_number: 116
+  category: unknown
+  group: 16
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴"
+  electronegativity: null
+  atomic_mass: 293.205
+
+isotopes:
+  - name: Livermorium-290
+    symbol: "²⁹⁰Lv"
+    mass_number: 290
+    neutrons: 174
+    atomic_mass: 290.199
+    half_life: 7.1
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Flerovium-286
+    natural_abundance: 0.0
+
+  - name: Livermorium-291
+    symbol: "²⁹¹Lv"
+    mass_number: 291
+    neutrons: 175
+    atomic_mass: 291.201
+    half_life: 18
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Flerovium-287
+    natural_abundance: 0.0
+
+  - name: Livermorium-292
+    symbol: "²⁹²Lv"
+    mass_number: 292
+    neutrons: 176
+    atomic_mass: 292.202
+    half_life: 13
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Flerovium-288
+    natural_abundance: 0.0
+
+  - name: Livermorium-293
+    symbol: "²⁹³Lv"
+    mass_number: 293
+    neutrons: 177
+    atomic_mass: 293.205
+    half_life: 53
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Flerovium-289
+    natural_abundance: 0.0

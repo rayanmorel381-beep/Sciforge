@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+graph::bfs,f64,1,1,1824929,1824929,1824929,0,1000,pass,graph,Bf,Bfs,maths,graph::bfs
+graph::connected_components,f64,1,1,1751820,1751820,1751820,0,1000,pass,graph,CC,Connected components,maths,graph::connected_components
+graph::dijkstra,f64,1,1,1701189,1701189,1701189,0,1000,pass,graph,Di,Dijkstra,maths,graph::dijkstra

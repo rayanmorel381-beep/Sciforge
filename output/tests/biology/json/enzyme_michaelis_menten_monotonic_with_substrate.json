@@ -1,0 +1,17 @@
+{
+  "category": "enzyme",
+  "symbol": "MMM",
+  "name": "Michaelis menten monotonic with substrate",
+  "domain": "biology",
+  "test": "enzyme::michaelis_menten_monotonic_with_substrate",
+  "experiment_name": "enzyme::michaelis_menten_monotonic_with_substrate",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1969159.00,
+  "min_time_ns": 1969159.00,
+  "max_time_ns": 1969159.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

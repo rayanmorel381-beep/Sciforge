@@ -1,0 +1,79 @@
+element:
+  name: Phosphorus
+  symbol: P
+  atomic_number: 15
+  category: nonmetal
+  group: 15
+  period: 3
+  electron_configuration: "[Ne] 3s² 3p³"
+  electronegativity: 2.19
+  atomic_mass: 30.973762
+
+isotopes:
+  - name: Phosphorus-29
+    symbol: "²⁹P"
+    mass_number: 29
+    neutrons: 14
+    atomic_mass: 28.98180
+    half_life: 4.142
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Silicon-29
+    natural_abundance: 0.0
+
+  - name: Phosphorus-30
+    symbol: "³⁰P"
+    mass_number: 30
+    neutrons: 15
+    atomic_mass: 29.97831
+    half_life: 2.498
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Silicon-30
+    natural_abundance: 0.0
+
+  - name: Phosphorus-31
+    symbol: "³¹P"
+    mass_number: 31
+    neutrons: 16
+    atomic_mass: 30.973762
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "1/2+"
+
+  - name: Phosphorus-32
+    symbol: "³²P"
+    mass_number: 32
+    neutrons: 17
+    atomic_mass: 31.973907
+    half_life: 14.268
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Sulfur-32
+    natural_abundance: 0.0
+
+  - name: Phosphorus-33
+    symbol: "³³P"
+    mass_number: 33
+    neutrons: 18
+    atomic_mass: 32.97173
+    half_life: 25.34
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Sulfur-33
+    natural_abundance: 0.0

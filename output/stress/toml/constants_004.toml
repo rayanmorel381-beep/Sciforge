@@ -1,0 +1,18 @@
+[benchmark]
+category = "ct01"
+symbol = "HC"
+name = "ct004"
+target = "constants"
+module = "astro"
+status = "ok"
+elapsed_ms = "2764"
+experiment_name = "constants_004"
+precision = "f64"
+elapsed_ms = 2764
+iterations = 1
+avg_time_ns = 2764000000.00
+min_time_ns = 2764000000.00
+max_time_ns = 2764000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.36
+result = "success=true code=Some(0) stdout_bytes=148 stderr_bytes=266"

@@ -1,0 +1,23 @@
+pub const CHANDRASEKHAR_LIMIT: f64 =
+    crate::constants::CHANDRASEKHAR_LIMIT_SOLAR * crate::constants::SOLAR_MASS;
+pub const TOV_LIMIT: f64 = 4.58e30;
+pub const EDDINGTON_PREFACTOR: f64 = 3.2e4;
+pub const SOLAR_TEFF: f64 = crate::constants::SUN_SURFACE_TEMPERATURE;
+pub const SOLAR_ABS_MAGNITUDE: f64 = 4.83;
+pub const SOLAR_METALLICITY: f64 = 0.013_4;
+pub const PP_CHAIN_ENERGY: f64 = 4.20e-12;
+pub const CNO_CYCLE_ENERGY: f64 = 3.98e-12;
+pub const H_BURNING_EFFICIENCY: f64 = 0.007;
+pub const SOLAR_MS_LIFETIME: f64 = 3.15e17;
+pub const WD_RADIUS_TYPICAL: f64 = 5.5e6;
+pub const NS_RADIUS_TYPICAL: f64 = 1.1e4;
+pub const NS_MASS_TYPICAL: f64 = 2.78e30;
+pub const PULSAR_B_TYPICAL: f64 = 1.0e8;
+pub const MAGNETAR_B_TYPICAL: f64 = 1.0e11;
+pub const HYDROGEN_FRACTION_SOLAR: f64 = 0.734_6;
+pub const HELIUM_FRACTION_SOLAR: f64 = 0.248_5;
+pub const METAL_FRACTION_SOLAR: f64 = SOLAR_METALLICITY;
+pub const HELIUM4_MASS: f64 = 6.644_657_3e-27;
+pub const ADIABATIC_INDEX_IDEAL: f64 = 5.0 / 3.0;
+pub const ADIABATIC_INDEX_RADIATION: f64 = 4.0 / 3.0;
+pub const OPACITY_ELECTRON_SCATTERING: f64 = 0.2;

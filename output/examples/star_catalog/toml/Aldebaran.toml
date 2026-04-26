@@ -1,0 +1,23 @@
+[benchmark]
+category = "Giant"
+symbol = "K"
+name = "Aldebaran"
+spectral = "K5III"
+mass = "1.160 M☉"
+radius = "44.130 R☉"
+temperature = "3910 K"
+luminosity = "1.570e29 W"
+abs_magnitude = "-0.69"
+schwarzschild = "3426.96 m"
+ms_lifetime = "0.0 Myr"
+wien_peak = "741 nm"
+experiment_name = "Aldebaran_stellar"
+precision = "f64"
+elapsed_ms = 8
+iterations = 5000
+avg_time_ns = 1723.64
+min_time_ns = 1723.64
+max_time_ns = 1723.64
+time_stddev = 0.0000
+iterations_per_sec = 625000.00
+result = "Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm"

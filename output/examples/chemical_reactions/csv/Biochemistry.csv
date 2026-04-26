@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,name,formula,reactant_mass,product_mass,atom_economy
+Photosynthesis_calc,f64,119,5000,23809.533,23809.533,23809.533,0,42016.81,Photosynthesis | 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ | M(react)=372.1440 g/mol | M(prod)=372.1440 g/mol | Atom economy=100.0%,Biochemistry,Photosynthesis,6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂,372.1440 g/mol,372.1440 g/mol,100.0%

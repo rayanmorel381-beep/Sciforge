@@ -1,0 +1,113 @@
+element:
+  name: Zirconium
+  symbol: Zr
+  atomic_number: 40
+  category: transition metal
+  group: 4
+  period: 5
+  electron_configuration: "[Kr] 4d² 5s²"
+  electronegativity: 1.33
+  atomic_mass: 91.224
+
+isotopes:
+  - name: Zirconium-88
+    symbol: "⁸⁸Zr"
+    mass_number: 88
+    neutrons: 48
+    atomic_mass: 87.910227
+    half_life: 83.4
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Yttrium-88
+    natural_abundance: 0.0
+
+  - name: Zirconium-89
+    symbol: "⁸⁹Zr"
+    mass_number: 89
+    neutrons: 49
+    atomic_mass: 88.908890
+    half_life: 78.41
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta+ / electron capture
+        branching_ratio: 1.0
+        daughter: Yttrium-89
+    natural_abundance: 0.0
+
+  - name: Zirconium-90
+    symbol: "⁹⁰Zr"
+    mass_number: 90
+    neutrons: 50
+    atomic_mass: 89.904704
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.5145
+    nuclear_spin: "0+"
+
+  - name: Zirconium-91
+    symbol: "⁹¹Zr"
+    mass_number: 91
+    neutrons: 51
+    atomic_mass: 90.905646
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1122
+    nuclear_spin: "5/2+"
+
+  - name: Zirconium-92
+    symbol: "⁹²Zr"
+    mass_number: 92
+    neutrons: 52
+    atomic_mass: 91.905041
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1715
+
+  - name: Zirconium-93
+    symbol: "⁹³Zr"
+    mass_number: 93
+    neutrons: 53
+    atomic_mass: 92.906476
+    half_life: 1.53e6
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Niobium-93
+    natural_abundance: 0.0
+
+  - name: Zirconium-94
+    symbol: "⁹⁴Zr"
+    mass_number: 94
+    neutrons: 54
+    atomic_mass: 93.906315
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1738
+
+  - name: Zirconium-96
+    symbol: "⁹⁶Zr"
+    mass_number: 96
+    neutrons: 56
+    atomic_mass: 95.908273
+    half_life: 2.35e19
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta-
+        branching_ratio: 1.0
+        daughter: Molybdenum-96
+    natural_abundance: 0.0280

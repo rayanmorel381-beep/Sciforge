@@ -1,0 +1,27 @@
+category: thermochemistry
+count: 4
+entries:
+  - label: thermochemistry_clausius_clapeyron
+    symbol: CC
+    name: Clausius clapeyron
+    domain: chemistry
+    test: "thermochemistry::clausius_clapeyron"
+    avg_time_ns: 2618499.00
+  - label: thermochemistry_entropy_change
+    symbol: EC
+    name: Entropy change
+    domain: chemistry
+    test: "thermochemistry::entropy_change"
+    avg_time_ns: 2235949.00
+  - label: thermochemistry_gibbs_free_energy
+    symbol: GFE
+    name: Gibbs free energy
+    domain: chemistry
+    test: "thermochemistry::gibbs_free_energy"
+    avg_time_ns: 1939139.00
+  - label: thermochemistry_hess_law
+    symbol: HL
+    name: Hess law
+    domain: chemistry
+    test: "thermochemistry::hess_law"
+    avg_time_ns: 2055189.00

@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb06"
+symbol = "VSC"
+name = "hb060"
+target = "hub"
+module = "cross_domain"
+status = "ok"
+elapsed_ms = "3412"
+experiment_name = "hub_060"
+precision = "f64"
+elapsed_ms = 3412
+iterations = 1
+avg_time_ns = 3412000000.00
+min_time_ns = 3412000000.00
+max_time_ns = 3412000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.29
+result = "success=true code=Some(0) stdout_bytes=162 stderr_bytes=202"

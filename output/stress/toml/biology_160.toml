@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi16"
+symbol = "SRP"
+name = "bi160"
+target = "biology"
+module = "stem_cell"
+status = "ok"
+elapsed_ms = "2296"
+experiment_name = "biology_160"
+precision = "f64"
+elapsed_ms = 2296
+iterations = 1
+avg_time_ns = 2296000000.00
+min_time_ns = 2296000000.00
+max_time_ns = 2296000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.44
+result = "success=true code=Some(0) stdout_bytes=162 stderr_bytes=262"

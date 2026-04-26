@@ -1,0 +1,17 @@
+{
+  "category": "ethology",
+  "symbol": "HDP",
+  "name": "Hawk dove payoff",
+  "domain": "biology",
+  "test": "ethology::hawk_dove_payoff",
+  "experiment_name": "ethology::hawk_dove_payoff",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1912059.00,
+  "min_time_ns": 1912059.00,
+  "max_time_ns": 1912059.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

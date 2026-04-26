@@ -1,0 +1,8 @@
+name,computed,expected,relative_error,tolerance,passed
+physics_carnot_efficiency,5.0000000000e-1,5.0000000000e-1,0.000000e0,1e-12,true
+chemistry_strong_acid_ph,2.0000000000e0,2.0000000000e0,0.000000e0,1e-12,true
+biology_michaelis_menten,6.6666666667e1,6.6666666667e1,0.000000e0,1e-12,true
+astronomy_escape_velocity_earth,1.1186129492e4,1.1186000000e4,1.157627e-5,2e-2,true
+geology_half_life_from_lambda,5.7300000000e3,5.7300000000e3,0.000000e0,1e-12,true
+meteorology_relative_humidity_ratio,5.0000000000e1,5.0000000000e1,0.000000e0,1e-12,true
+maths_uniform_cdf_midpoint,5.0000000000e-1,5.0000000000e-1,0.000000e0,1e-12,true

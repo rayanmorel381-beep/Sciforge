@@ -1,0 +1,117 @@
+element:
+  name: Helium
+  symbol: He
+  atomic_number: 2
+  category: noble gas
+  group: 18
+  period: 1
+  electron_configuration: "1s²"
+  electronegativity: null
+  atomic_mass: 4.002602
+
+isotopes:
+  - name: Helium-3
+    symbol: "³He"
+    mass_number: 3
+    neutrons: 1
+    atomic_mass: 3.016029
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.000001340
+    nuclear_spin: "1/2+"
+
+  - name: Helium-4
+    symbol: "⁴He"
+    mass_number: 4
+    neutrons: 2
+    atomic_mass: 4.002603
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.99999866
+    nuclear_spin: "0+"
+
+  - name: Helium-5
+    symbol: "⁵He"
+    mass_number: 5
+    neutrons: 3
+    atomic_mass: 5.01222
+    half_life: 7.6e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Helium-6
+    symbol: "⁶He"
+    mass_number: 6
+    neutrons: 4
+    atomic_mass: 6.018886
+    half_life: 806.92
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Lithium-6
+    natural_abundance: 0.0
+
+  - name: Helium-7
+    symbol: "⁷He"
+    mass_number: 7
+    neutrons: 5
+    atomic_mass: 7.02803
+    half_life: 2.9e-21
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Helium-8
+    symbol: "⁸He"
+    mass_number: 8
+    neutrons: 6
+    atomic_mass: 8.03392
+    half_life: 119.1
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.84
+        daughter: Lithium-8
+      - mode: beta- neutron emission
+        branching_ratio: 0.16
+    natural_abundance: 0.0
+
+  - name: Helium-9
+    symbol: "⁹He"
+    mass_number: 9
+    neutrons: 7
+    atomic_mass: 9.04395
+    half_life: 7.0e-21
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Helium-10
+    symbol: "¹⁰He"
+    mass_number: 10
+    neutrons: 8
+    atomic_mass: 10.05240
+    half_life: 2.7e-21
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: double neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0

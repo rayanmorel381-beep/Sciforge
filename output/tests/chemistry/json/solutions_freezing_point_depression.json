@@ -1,0 +1,17 @@
+{
+  "category": "solutions",
+  "symbol": "FPD",
+  "name": "Freezing point depression",
+  "domain": "chemistry",
+  "test": "solutions::freezing_point_depression",
+  "experiment_name": "solutions::freezing_point_depression",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2644809.00,
+  "min_time_ns": 2644809.00,
+  "max_time_ns": 2644809.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

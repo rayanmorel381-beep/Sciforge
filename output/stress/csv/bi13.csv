@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_121,f64,4998,1,4998000000,4998000000,4998000000,0,0.20008004,success=true code=Some(0) stdout_bytes=156 stderr_bytes=210,bi13,ER,bi121,biology,paleobiology,ok,4998
+biology_122,f64,5073,1,5073000000,5073000000,5073000000,0,0.19712202,success=true code=Some(0) stdout_bytes=165 stderr_bytes=210,bi13,NDR,bi122,biology,paleobiology,ok,5073
+biology_123,f64,1498,1,1498000000,1498000000,1498000000,0,0.66755676,success=true code=Some(0) stdout_bytes=156 stderr_bytes=262,bi13,RA,bi123,biology,paleobiology,ok,1498
+biology_124,f64,2504,1,2504000000,2504000000,2504000000,0,0.399361,success=true code=Some(0) stdout_bytes=159 stderr_bytes=262,bi13,FOI,bi124,biology,parasitology,ok,2504
+biology_125,f64,748,1,748000000,748000000,748000000,0,1.3368984,success=true code=Some(0) stdout_bytes=152 stderr_bytes=210,bi13,PR,bi125,biology,parasitology,ok,748
+biology_126,f64,1472,1,1472000000,1472000000,1472000000,0,0.6793478,success=true code=Some(0) stdout_bytes=156 stderr_bytes=262,bi13,VBR,bi126,biology,parasitology,ok,1472
+biology_127,f64,2722,1,2722000000,2722000000,2722000000,0,0.36737692,success=true code=Some(0) stdout_bytes=156 stderr_bytes=314,bi13,Bi,bi127,biology,pharmacology,ok,2722
+biology_128,f64,2203,1,2203000000,2203000000,2203000000,0,0.45392647,success=true code=Some(0) stdout_bytes=159 stderr_bytes=262,bi13,DRH,bi128,biology,pharmacology,ok,2203
+biology_129,f64,2935,1,2935000000,2935000000,2935000000,0,0.3407155,success=true code=Some(0) stdout_bytes=150 stderr_bytes=314,bi13,HL,bi129,biology,pharmacology,ok,2935
+biology_130,f64,4971,1,4971000000,4971000000,4971000000,0,0.20116676,success=true code=Some(0) stdout_bytes=158 stderr_bytes=210,bi13,TI,bi130,biology,pharmacology,ok,4971

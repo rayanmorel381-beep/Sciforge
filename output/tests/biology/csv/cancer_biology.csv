@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+cancer_biology::cancer_linear_quadratic_survival,f64,1,1,1898459,1898459,1898459,0,1000,pass,cancer_biology,CLQ,Cancer linear quadratic survival,biology,cancer_biology::cancer_linear_quadratic_survival
+cancer_biology::cell_kill_log,f64,1,1,1829739,1829739,1829739,0,1000,pass,cancer_biology,CKL,Cell kill log,biology,cancer_biology::cell_kill_log
+cancer_biology::tumor_doubling_time,f64,1,1,1934869,1934869,1934869,0,1000,pass,cancer_biology,TDT,Tumor doubling time,biology,cancer_biology::tumor_doubling_time
+cancer_biology::tumor_growth_exponential,f64,1,1,1873090,1873090,1873090,0,1000,pass,cancer_biology,TGE,Tumor growth exponential,biology,cancer_biology::tumor_growth_exponential

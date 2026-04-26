@@ -1,0 +1,21 @@
+category: organic
+count: 3
+entries:
+  - label: organic_degree_of_unsaturation
+    symbol: DOU
+    name: Degree of unsaturation
+    domain: chemistry
+    test: "organic::degree_of_unsaturation"
+    avg_time_ns: 1646609.00
+  - label: organic_hammett_equation
+    symbol: HE
+    name: Hammett equation
+    domain: chemistry
+    test: "organic::hammett_equation"
+    avg_time_ns: 1823799.00
+  - label: organic_partition_coefficient_log_p
+    symbol: PCL
+    name: Partition coefficient log p
+    domain: chemistry
+    test: "organic::partition_coefficient_log_p"
+    avg_time_ns: 1731699.00

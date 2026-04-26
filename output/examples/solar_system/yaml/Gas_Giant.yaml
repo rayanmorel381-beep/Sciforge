@@ -1,0 +1,25 @@
+category: Gas Giant
+count: 2
+entries:
+  - label: Jupiter
+    symbol: ♃
+    name: Jupiter
+    mass: 1.898e27 kg
+    radius: 69911 km
+    semi_major: 5.204 AU
+    kepler_period: 4335.92 days
+    circular_vel: 13.06 km/s
+    escape_vel: 60.20 km/s
+    hohmann_dv: 14.44 km/s
+    avg_time_ns: 1797.72
+  - label: Saturn
+    symbol: ♄
+    name: Saturn
+    mass: 5.683e26 kg
+    radius: 58232 km
+    semi_major: 9.582 AU
+    kepler_period: 10832.57 days
+    circular_vel: 9.62 km/s
+    escape_vel: 36.09 km/s
+    hohmann_dv: 15.74 km/s
+    avg_time_ns: 1849.66

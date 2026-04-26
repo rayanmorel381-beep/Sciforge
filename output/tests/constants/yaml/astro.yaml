@@ -1,0 +1,51 @@
+category: astro
+count: 8
+entries:
+  - label: astro_astronomical_unit
+    symbol: AU
+    name: Astronomical unit
+    domain: constants
+    test: "astro::astronomical_unit"
+    avg_time_ns: 1118100.00
+  - label: astro_cmb_temperature
+    symbol: CT
+    name: Cmb temperature
+    domain: constants
+    test: "astro::cmb_temperature"
+    avg_time_ns: 1145599.00
+  - label: astro_earth_mass
+    symbol: EM
+    name: Earth mass
+    domain: constants
+    test: "astro::earth_mass"
+    avg_time_ns: 1456760.00
+  - label: astro_hubble_constant
+    symbol: HC
+    name: Hubble constant
+    domain: constants
+    test: "astro::hubble_constant"
+    avg_time_ns: 1305599.00
+  - label: astro_light_year
+    symbol: LY
+    name: Light year
+    domain: constants
+    test: "astro::light_year"
+    avg_time_ns: 1170949.00
+  - label: astro_parsec
+    symbol: Pa
+    name: Parsec
+    domain: constants
+    test: "astro::parsec"
+    avg_time_ns: 1158460.00
+  - label: astro_parsec_greater_than_ly
+    symbol: PGT
+    name: Parsec greater than ly
+    domain: constants
+    test: "astro::parsec_greater_than_ly"
+    avg_time_ns: 1131859.00
+  - label: astro_solar_mass
+    symbol: SM
+    name: Solar mass
+    domain: constants
+    test: "astro::solar_mass"
+    avg_time_ns: 1182260.00

@@ -1,0 +1,101 @@
+element:
+  name: Curium
+  symbol: Cm
+  atomic_number: 96
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f⁷ 6d¹ 7s²"
+  electronegativity: 1.28
+  atomic_mass: 247.070354
+
+isotopes:
+  - name: Curium-242
+    symbol: "²⁴²Cm"
+    mass_number: 242
+    neutrons: 146
+    atomic_mass: 242.058836
+    half_life: 162.8
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Plutonium-238
+    natural_abundance: 0.0
+
+  - name: Curium-243
+    symbol: "²⁴³Cm"
+    mass_number: 243
+    neutrons: 147
+    atomic_mass: 243.061389
+    half_life: 29.1
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.998
+        daughter: Plutonium-239
+      - mode: electron capture
+        branching_ratio: 0.002
+        daughter: Americium-243
+    natural_abundance: 0.0
+
+  - name: Curium-244
+    symbol: "²⁴⁴Cm"
+    mass_number: 244
+    neutrons: 148
+    atomic_mass: 244.062753
+    half_life: 18.1
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Plutonium-240
+    natural_abundance: 0.0
+
+  - name: Curium-245
+    symbol: "²⁴⁵Cm"
+    mass_number: 245
+    neutrons: 149
+    atomic_mass: 245.065492
+    half_life: 8500
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Plutonium-241
+    natural_abundance: 0.0
+
+  - name: Curium-247
+    symbol: "²⁴⁷Cm"
+    mass_number: 247
+    neutrons: 151
+    atomic_mass: 247.070354
+    half_life: 1.56e7
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Plutonium-243
+    natural_abundance: 0.0
+
+  - name: Curium-248
+    symbol: "²⁴⁸Cm"
+    mass_number: 248
+    neutrons: 152
+    atomic_mass: 248.072349
+    half_life: 3.48e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.917
+        daughter: Plutonium-244
+      - mode: spontaneous fission
+        branching_ratio: 0.083
+        daughter: null
+    natural_abundance: 0.0

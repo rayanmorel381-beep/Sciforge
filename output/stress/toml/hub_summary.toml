@@ -1,0 +1,18 @@
+[benchmark]
+category = "hub"
+symbol = "SUM"
+name = "HB Summary"
+target = "hub"
+module = "summary"
+status = "ok"
+elapsed_ms = "240601"
+experiment_name = "hub_summary"
+precision = "f64"
+elapsed_ms = 240601
+iterations = 1
+avg_time_ns = 2934158336.00
+min_time_ns = 2934158336.00
+max_time_ns = 2934158336.00
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "tests_total=82 tests_ok=82 tests_failed=0 elapsed_sum_ms=240601 min_ms=129 max_ms=5692 avg_ms=2934.16"

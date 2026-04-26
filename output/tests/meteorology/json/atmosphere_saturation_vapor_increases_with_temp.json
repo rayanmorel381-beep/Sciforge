@@ -1,0 +1,17 @@
+{
+  "category": "atmosphere",
+  "symbol": "SVI",
+  "name": "Saturation vapor increases with temp",
+  "domain": "meteorology",
+  "test": "atmosphere::saturation_vapor_increases_with_temp",
+  "experiment_name": "atmosphere::saturation_vapor_increases_with_temp",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2014669.00,
+  "min_time_ns": 2014669.00,
+  "max_time_ns": 2014669.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

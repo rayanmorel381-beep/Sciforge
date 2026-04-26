@@ -1,0 +1,17 @@
+category: bm03
+symbol: RAF
+name: bm025
+target: benchmark
+module: report_all_formats
+status: ok
+elapsed_ms: 4791
+experiment_name: benchmark_025
+precision: f64
+elapsed_ms: 4791
+iterations: 1
+avg_time_ns: 4791000064.00
+min_time_ns: 4791000064.00
+max_time_ns: 4791000064.00
+time_stddev: 0.0000
+iterations_per_sec: 0.21
+result: success=true code=Some(0) stdout_bytes=144 stderr_bytes=266

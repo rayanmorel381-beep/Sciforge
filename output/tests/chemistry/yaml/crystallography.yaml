@@ -1,0 +1,21 @@
+category: crystallography
+count: 3
+entries:
+  - label: crystallography_bragg_law
+    symbol: BL
+    name: Bragg law
+    domain: chemistry
+    test: "crystallography::bragg_law"
+    avg_time_ns: 1782409.00
+  - label: crystallography_interplanar_spacing_cubic
+    symbol: ISC
+    name: Interplanar spacing cubic
+    domain: chemistry
+    test: "crystallography::interplanar_spacing_cubic"
+    avg_time_ns: 1877910.00
+  - label: crystallography_scherrer_crystal_size
+    symbol: SCS
+    name: Scherrer crystal size
+    domain: chemistry
+    test: "crystallography::scherrer_crystal_size"
+    avg_time_ns: 1949829.00

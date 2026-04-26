@@ -1,0 +1,21 @@
+[benchmark]
+category = "Terrestrial"
+symbol = "♁"
+name = "Earth"
+mass = "5.972e24 kg"
+radius = "6372 km"
+semi_major = "1.000 AU"
+kepler_period = "365.19 days"
+circular_vel = "29.79 km/s"
+escape_vel = "11.19 km/s"
+hohmann_dv = "— (origin)"
+experiment_name = "Earth_orbit"
+precision = "f64"
+elapsed_ms = 8
+iterations = 5000
+avg_time_ns = 1730.09
+min_time_ns = 1730.09
+max_time_ns = 1730.09
+time_stddev = 0.0000
+iterations_per_sec = 625000.00
+result = "Earth | T=365.19 days | v_circ=29.79 km/s | v_esc=11.19 km/s | Hohmann Δv=— (origin)"

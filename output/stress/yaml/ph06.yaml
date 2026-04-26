@@ -1,0 +1,83 @@
+category: ph06
+count: 10
+entries:
+  - label: physics_051
+    symbol: PE
+    name: ph051
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 4005
+    avg_time_ns: 4004999936.00
+  - label: physics_052
+    symbol: PE
+    name: ph052
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 4961
+    avg_time_ns: 4960999936.00
+  - label: physics_053
+    symbol: HOE
+    name: ph053
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4382
+    avg_time_ns: 4382000128.00
+  - label: physics_054
+    symbol: HE
+    name: ph054
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4462
+    avg_time_ns: 4462000128.00
+  - label: physics_055
+    symbol: IWE
+    name: ph055
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4362
+    avg_time_ns: 4361999872.00
+  - label: physics_056
+    symbol: TC
+    name: ph056
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4521
+    avg_time_ns: 4520999936.00
+  - label: physics_057
+    symbol: CWS
+    name: ph057
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 4036
+    avg_time_ns: 4036000000.00
+  - label: physics_058
+    symbol: EMR
+    name: ph058
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 5062
+    avg_time_ns: 5062000128.00
+  - label: physics_059
+    symbol: GFA
+    name: ph059
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 4504
+    avg_time_ns: 4504000000.00
+  - label: physics_060
+    symbol: GFI
+    name: ph060
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 3460
+    avg_time_ns: 3460000000.00

@@ -1,0 +1,17 @@
+{
+  "category": "materials",
+  "symbol": "DC",
+  "name": "Diffusion coefficient",
+  "domain": "physics",
+  "test": "materials::diffusion_coefficient",
+  "experiment_name": "materials::diffusion_coefficient",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2138239.00,
+  "min_time_ns": 2138239.00,
+  "max_time_ns": 2138239.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

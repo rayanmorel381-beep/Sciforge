@@ -1,0 +1,23 @@
+[benchmark]
+category = "Red Dwarf"
+symbol = "M"
+name = "Proxima Centauri"
+spectral = "M5.5Ve"
+mass = "0.122 M☉"
+radius = "0.154 R☉"
+temperature = "3042 K"
+luminosity = "7.022e23 W"
+abs_magnitude = "15.56"
+schwarzschild = "360.42 m"
+ms_lifetime = "0.0 Myr"
+wien_peak = "953 nm"
+experiment_name = "Proxima Centauri_stellar"
+precision = "f64"
+elapsed_ms = 8
+iterations = 5000
+avg_time_ns = 1704.27
+min_time_ns = 1704.27
+max_time_ns = 1704.27
+time_stddev = 0.0000
+iterations_per_sec = 625000.00
+result = "Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm"

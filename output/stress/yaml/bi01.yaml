@@ -1,0 +1,83 @@
+category: bi01
+count: 10
+entries:
+  - label: biology_001
+    symbol: CRL
+    name: bi001
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 5571
+    avg_time_ns: 5570999808.00
+  - label: biology_002
+    symbol: GMR
+    name: bi002
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 4923
+    avg_time_ns: 4922999808.00
+  - label: biology_003
+    symbol: MD
+    name: bi003
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 2500
+    avg_time_ns: 2500000000.00
+  - label: biology_004
+    symbol: RSS
+    name: bi004
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 1770
+    avg_time_ns: 1770000000.00
+  - label: biology_005
+    symbol: TS
+    name: bi005
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 2499
+    avg_time_ns: 2499000064.00
+  - label: biology_006
+    symbol: CES
+    name: bi006
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4498
+    avg_time_ns: 4497999872.00
+  - label: biology_007
+    symbol: EL
+    name: bi007
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4814
+    avg_time_ns: 4814000128.00
+  - label: biology_008
+    symbol: IT
+    name: bi008
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4379
+    avg_time_ns: 4378999808.00
+  - label: biology_009
+    symbol: SDW
+    name: bi009
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4795
+    avg_time_ns: 4794999808.00
+  - label: biology_010
+    symbol: AEC
+    name: bi010
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 4762
+    avg_time_ns: 4761999872.00

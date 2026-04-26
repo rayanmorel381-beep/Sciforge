@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+stoichiometry::atom_economy,f64,3,1,3047689,3047689,3047689,0,333.33334,pass,stoichiometry,AE,Atom economy,chemistry,stoichiometry::atom_economy
+stoichiometry::limiting_reagent,f64,3,1,3037618,3037618,3037618,0,333.33334,pass,stoichiometry,LR,Limiting reagent,chemistry,stoichiometry::limiting_reagent
+stoichiometry::percent_yield,f64,3,1,3129489,3129489,3129489,0,333.33334,pass,stoichiometry,PY,Percent yield,chemistry,stoichiometry::percent_yield
+stoichiometry::theoretical_yield,f64,3,1,3511799,3511799,3511799,0,333.33334,pass,stoichiometry,TY,Theoretical yield,chemistry,stoichiometry::theoretical_yield

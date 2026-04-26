@@ -1,0 +1,111 @@
+element:
+  name: Radon
+  symbol: Rn
+  atomic_number: 86
+  category: noble gas
+  group: 18
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶"
+  electronegativity: 2.2
+  atomic_mass: 222.0
+
+isotopes:
+  - name: Radon-210
+    symbol: "²¹⁰Rn"
+    mass_number: 210
+    neutrons: 124
+    atomic_mass: 209.98970
+    half_life: 2.4
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 0.96
+        daughter: Polonium-206
+      - mode: electron capture
+        branching_ratio: 0.04
+    natural_abundance: 0.0
+
+  - name: Radon-211
+    symbol: "²¹¹Rn"
+    mass_number: 211
+    neutrons: 125
+    atomic_mass: 210.99060
+    half_life: 14.6
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 0.728
+        daughter: Polonium-207
+      - mode: electron capture
+        branching_ratio: 0.272
+    natural_abundance: 0.0
+
+  - name: Radon-219
+    symbol: "²¹⁹Rn"
+    mass_number: 219
+    neutrons: 133
+    atomic_mass: 219.00948
+    half_life: 3.96
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Polonium-215
+    natural_abundance: trace
+
+  - name: Radon-220
+    symbol: "²²⁰Rn"
+    mass_number: 220
+    neutrons: 134
+    atomic_mass: 220.01139
+    half_life: 55.6
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Polonium-216
+    natural_abundance: trace
+
+  - name: Radon-222
+    symbol: "²²²Rn"
+    mass_number: 222
+    neutrons: 136
+    atomic_mass: 222.01758
+    half_life: 3.8235
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Polonium-218
+    natural_abundance: trace
+
+  - name: Radon-224
+    symbol: "²²⁴Rn"
+    mass_number: 224
+    neutrons: 138
+    atomic_mass: 224.02409
+    half_life: 107.0
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Radon-226
+    symbol: "²²⁶Rn"
+    mass_number: 226
+    neutrons: 140
+    atomic_mass: 226.03089
+    half_life: 7.4
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0

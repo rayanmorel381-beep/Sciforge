@@ -1,0 +1,19 @@
+{
+  "category": "hb08",
+  "symbol": "KSP",
+  "name": "hb074",
+  "target": "hub",
+  "module": "tools",
+  "status": "ok",
+  "elapsed_ms": "5480",
+  "experiment_name": "hub_074",
+  "precision": "f64",
+  "elapsed_ms": 5480,
+  "iterations": 1,
+  "avg_time_ns": 5480000000.00,
+  "min_time_ns": 5480000000.00,
+  "max_time_ns": 5480000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.18,
+  "result": "success=true code=Some(0) stdout_bytes=152 stderr_bytes=306"
+}

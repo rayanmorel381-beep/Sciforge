@@ -1,0 +1,100 @@
+element:
+  name: Iron
+  symbol: Fe
+  atomic_number: 26
+  category: transition metal
+  group: 8
+  period: 4
+  electron_configuration: "[Ar] 3d⁶ 4s²"
+  electronegativity: 1.83
+  atomic_mass: 55.845
+
+isotopes:
+  - name: Iron-54
+    symbol: "⁵⁴Fe"
+    mass_number: 54
+    neutrons: 28
+    atomic_mass: 53.939611
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.05845
+    nuclear_spin: "0+"
+
+  - name: Iron-55
+    symbol: "⁵⁵Fe"
+    mass_number: 55
+    neutrons: 29
+    atomic_mass: 54.938293
+    half_life: 2.744
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Manganese-55
+    natural_abundance: 0.0
+
+  - name: Iron-56
+    symbol: "⁵⁶Fe"
+    mass_number: 56
+    neutrons: 30
+    atomic_mass: 55.934937
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.91754
+    nuclear_spin: "0+"
+
+  - name: Iron-57
+    symbol: "⁵⁷Fe"
+    mass_number: 57
+    neutrons: 31
+    atomic_mass: 56.935394
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.02119
+    nuclear_spin: "1/2-"
+
+  - name: Iron-58
+    symbol: "⁵⁸Fe"
+    mass_number: 58
+    neutrons: 32
+    atomic_mass: 57.933276
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00282
+
+  - name: Iron-59
+    symbol: "⁵⁹Fe"
+    mass_number: 59
+    neutrons: 33
+    atomic_mass: 58.934876
+    half_life: 44.495
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Cobalt-59
+    natural_abundance: 0.0
+
+  - name: Iron-60
+    symbol: "⁶⁰Fe"
+    mass_number: 60
+    neutrons: 34
+    atomic_mass: 59.934072
+    half_life: 2.6e6
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Cobalt-60
+    natural_abundance: 0.0

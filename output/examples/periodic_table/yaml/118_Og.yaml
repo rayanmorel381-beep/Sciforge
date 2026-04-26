@@ -1,0 +1,15 @@
+category: noble gas (predicted)
+symbol: Og
+name: Oganesson
+config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)
+mass: 294
+experiment_name: Og_Oganesson_benchmark
+precision: f64
+elapsed_ms: 9
+iterations: 1000
+avg_time_ns: 9873.80
+min_time_ns: 9873.80
+max_time_ns: 9873.80
+time_stddev: 0.0000
+iterations_per_sec: 111111.11
+result: Z=118 | Og (Oganesson) | 294 u | noble gas (predicted) | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)

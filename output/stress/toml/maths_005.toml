@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma01"
+symbol = "SBP"
+name = "ma005"
+target = "maths"
+module = "calculus"
+status = "ok"
+elapsed_ms = "442"
+experiment_name = "maths_005"
+precision = "f64"
+elapsed_ms = 442
+iterations = 1
+avg_time_ns = 442000000.00
+min_time_ns = 442000000.00
+max_time_ns = 442000000.00
+time_stddev = 0.0000
+iterations_per_sec = 2.26
+result = "success=true code=Some(0) stdout_bytes=153 stderr_bytes=206"

@@ -1,0 +1,15 @@
+category: genetics
+symbol: EPS
+name: Effective population size
+domain: biology
+test: "genetics::effective_population_size"
+experiment_name: "genetics::effective_population_size"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2696249.00
+min_time_ns: 2696249.00
+max_time_ns: 2696249.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

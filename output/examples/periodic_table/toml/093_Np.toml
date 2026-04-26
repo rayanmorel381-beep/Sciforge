@@ -1,0 +1,16 @@
+[benchmark]
+category = "actinide"
+symbol = "Np"
+name = "Neptunium"
+config = "[Rn] 5f⁴ 6d¹ 7s²"
+mass = "237.048174"
+experiment_name = "Np_Neptunium_benchmark"
+precision = "f32"
+elapsed_ms = 72
+iterations = 10000
+avg_time_ns = 7245.58
+min_time_ns = 7245.58
+max_time_ns = 7245.58
+time_stddev = 0.0000
+iterations_per_sec = 138888.89
+result = "Z=93 | Np (Neptunium) | 237.048174 u | actinide | [Rn] 5f⁴ 6d¹ 7s²"

@@ -1,0 +1,83 @@
+category: bi07
+count: 10
+entries:
+  - label: biology_061
+    symbol: IS
+    name: bi061
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 2401
+    avg_time_ns: 2400999936.00
+  - label: biology_062
+    symbol: SD
+    name: bi062
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 1520
+    avg_time_ns: 1520000000.00
+  - label: biology_063
+    symbol: SD
+    name: bi063
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 5135
+    avg_time_ns: 5135000064.00
+  - label: biology_064
+    symbol: SR
+    name: bi064
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 1594
+    avg_time_ns: 1594000000.00
+  - label: biology_065
+    symbol: HI
+    name: bi065
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 5352
+    avg_time_ns: 5352000000.00
+  - label: biology_066
+    symbol: HHL
+    name: bi066
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 1492
+    avg_time_ns: 1492000000.00
+  - label: biology_067
+    symbol: ISI
+    name: bi067
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 2876
+    avg_time_ns: 2876000000.00
+  - label: biology_068
+    symbol: RS
+    name: bi068
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 2910
+    avg_time_ns: 2910000128.00
+  - label: biology_069
+    symbol: CII
+    name: bi069
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 2582
+    avg_time_ns: 2582000128.00
+  - label: biology_070
+    symbol: HE
+    name: bi070
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 2387
+    avg_time_ns: 2387000064.00

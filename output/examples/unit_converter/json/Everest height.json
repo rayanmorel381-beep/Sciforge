@@ -1,0 +1,18 @@
+{
+  "category": "Length",
+  "symbol": "m",
+  "name": "Everest height",
+  "from": "8848.86 m",
+  "to": "2.903169e4 ft",
+  "conversion": "8848.86 m → 2.903169e4 ft",
+  "experiment_name": "Everest height_convert",
+  "precision": "f64",
+  "elapsed_ms": 24,
+  "iterations": 10000,
+  "avg_time_ns": 2472.56,
+  "min_time_ns": 2472.56,
+  "max_time_ns": 2472.56,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 416666.66,
+  "result": "Everest height | 8848.86 m → 2.903169e4 ft"
+}

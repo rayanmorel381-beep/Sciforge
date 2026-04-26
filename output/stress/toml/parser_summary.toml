@@ -1,0 +1,18 @@
+[benchmark]
+category = "parser"
+symbol = "SUM"
+name = "PR Summary"
+target = "parser"
+module = "summary"
+status = "ok"
+elapsed_ms = "269092"
+experiment_name = "parser_summary"
+precision = "f64"
+elapsed_ms = 269092
+iterations = 1
+avg_time_ns = 3737388800.00
+min_time_ns = 3737388800.00
+max_time_ns = 3737388800.00
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "tests_total=72 tests_ok=72 tests_failed=0 elapsed_sum_ms=269092 min_ms=353 max_ms=5938 avg_ms=3737.39"

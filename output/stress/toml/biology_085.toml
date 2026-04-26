@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi09"
+symbol = "FPN"
+name = "bi085"
+target = "biology"
+module = "evolution"
+status = "ok"
+elapsed_ms = "2419"
+experiment_name = "biology_085"
+precision = "f64"
+elapsed_ms = 2419
+iterations = 1
+avg_time_ns = 2419000064.00
+min_time_ns = 2419000064.00
+max_time_ns = 2419000064.00
+time_stddev = 0.0000
+iterations_per_sec = 0.41
+result = "success=true code=Some(0) stdout_bytes=166 stderr_bytes=210"

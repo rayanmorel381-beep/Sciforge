@@ -1,0 +1,19 @@
+{
+  "category": "physics",
+  "symbol": "SUM",
+  "name": "PH Summary",
+  "target": "physics",
+  "module": "summary",
+  "status": "ok",
+  "elapsed_ms": "292117",
+  "experiment_name": "physics_summary",
+  "precision": "f64",
+  "elapsed_ms": 292117,
+  "iterations": 1,
+  "avg_time_ns": 4001602816.00,
+  "min_time_ns": 4001602816.00,
+  "max_time_ns": 4001602816.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "tests_total=73 tests_ok=73 tests_failed=0 elapsed_sum_ms=292117 min_ms=161 max_ms=5205 avg_ms=4001.60"
+}

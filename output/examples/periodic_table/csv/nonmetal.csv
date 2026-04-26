@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+H_Hydrogen_benchmark,f32,0,1000,90.48,90.48,90.48,0,0,Z=1 | H (Hydrogen) | 1.008 u | nonmetal | 1s¹,nonmetal,H,Hydrogen,1s¹,1.008
+C_Carbon_benchmark,f64,4,10000,471.0978,471.0978,471.0978,0,2500000,Z=6 | C (Carbon) | 12.011 u | nonmetal | 1s² 2s² 2p²,nonmetal,C,Carbon,1s² 2s² 2p²,12.011
+N_Nitrogen_benchmark,f32,0,1000,551.92,551.92,551.92,0,0,Z=7 | N (Nitrogen) | 14.007 u | nonmetal | 1s² 2s² 2p³,nonmetal,N,Nitrogen,1s² 2s² 2p³,14.007
+O_Oxygen_benchmark,f64,3,5000,620.6138,620.6138,620.6138,0,1666666.6,Z=8 | O (Oxygen) | 15.999 u | nonmetal | 1s² 2s² 2p⁴,nonmetal,O,Oxygen,1s² 2s² 2p⁴,15.999
+P_Phosphorus_benchmark,f32,11,10000,1160.0535,1160.0535,1160.0535,0,909090.94,Z=15 | P (Phosphorus) | 30.973762 u | nonmetal | [Ne] 3s² 3p³,nonmetal,P,Phosphorus,[Ne] 3s² 3p³,30.973762
+S_Sulfur_benchmark,f64,1,1000,1249.859,1249.859,1249.859,0,1000000,Z=16 | S (Sulfur) | 32.06 u | nonmetal | [Ne] 3s² 3p⁴,nonmetal,S,Sulfur,[Ne] 3s² 3p⁴,32.06
+Se_Selenium_benchmark,f64,2,1000,2592.979,2592.979,2592.979,0,500000,Z=34 | Se (Selenium) | 78.971 u | nonmetal | [Ar] 3d¹⁰ 4s² 4p⁴,nonmetal,Se,Selenium,[Ar] 3d¹⁰ 4s² 4p⁴,78.971

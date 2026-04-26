@@ -1,0 +1,98 @@
+element:
+  name: Lead
+  symbol: Pb
+  atomic_number: 82
+  category: post-transition metal
+  group: 14
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²"
+  electronegativity: 1.87
+  atomic_mass: 207.2
+
+isotopes:
+  - name: Lead-204
+    symbol: "²⁰⁴Pb"
+    mass_number: 204
+    neutrons: 122
+    atomic_mass: 203.973044
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.014
+
+  - name: Lead-205
+    symbol: "²⁰⁵Pb"
+    mass_number: 205
+    neutrons: 123
+    atomic_mass: 204.974482
+    half_life: 1.73e7
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Thallium-205
+    natural_abundance: 0.0
+
+  - name: Lead-206
+    symbol: "²⁰⁶Pb"
+    mass_number: 206
+    neutrons: 124
+    atomic_mass: 205.974465
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.241
+
+  - name: Lead-207
+    symbol: "²⁰⁷Pb"
+    mass_number: 207
+    neutrons: 125
+    atomic_mass: 206.975897
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.221
+    nuclear_spin: "1/2-"
+
+  - name: Lead-208
+    symbol: "²⁰⁸Pb"
+    mass_number: 208
+    neutrons: 126
+    atomic_mass: 207.976652
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.524
+
+  - name: Lead-210
+    symbol: "²¹⁰Pb"
+    mass_number: 210
+    neutrons: 128
+    atomic_mass: 209.984189
+    half_life: 22.20
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Bismuth-210
+    natural_abundance: 0.0
+
+  - name: Lead-212
+    symbol: "²¹²Pb"
+    mass_number: 212
+    neutrons: 130
+    atomic_mass: 211.991898
+    half_life: 10.64
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Bismuth-212
+    natural_abundance: 0.0

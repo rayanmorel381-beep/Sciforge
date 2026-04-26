@@ -1,0 +1,27 @@
+category: biomechanics
+count: 4
+entries:
+  - label: biomechanics_biomech_cardiac_output
+    symbol: BCO
+    name: Biomech cardiac output
+    domain: biology
+    test: "biomechanics::biomech_cardiac_output"
+    avg_time_ns: 1778790.00
+  - label: biomechanics_gait_stride_length
+    symbol: GSL
+    name: Gait stride length
+    domain: biology
+    test: "biomechanics::gait_stride_length"
+    avg_time_ns: 1790669.00
+  - label: biomechanics_ground_reaction_force
+    symbol: GRF
+    name: Ground reaction force
+    domain: biology
+    test: "biomechanics::ground_reaction_force"
+    avg_time_ns: 1807159.00
+  - label: biomechanics_joint_moment
+    symbol: JM
+    name: Joint moment
+    domain: biology
+    test: "biomechanics::joint_moment"
+    avg_time_ns: 2017939.00

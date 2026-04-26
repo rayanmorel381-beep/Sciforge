@@ -1,0 +1,75 @@
+title: Chemical Reactions — Molar Masses & Atom Economy
+count: 8
+entries:
+  - label: Water synthesis
+    category: Synthesis
+    name: Water synthesis
+    formula: 2H₂ + O₂ → 2H₂O
+    reactant_mass: 36.0300 g/mol
+    product_mass: 36.0300 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 18921.46
+    iterations_per_sec: 53191.49
+  - label: Combustion of methane
+    category: Combustion
+    name: Combustion of methane
+    formula: CH₄ + 2O₂ → CO₂ + 2H₂O
+    reactant_mass: 80.0390 g/mol
+    product_mass: 80.0390 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 23088.09
+    iterations_per_sec: 43478.26
+  - label: Rust formation
+    category: Oxidation
+    name: Rust formation
+    formula: 4Fe + 3O₂ → 2Fe₂O₃
+    reactant_mass: 319.3740 g/mol
+    product_mass: 319.3740 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 33188.98
+    iterations_per_sec: 30303.03
+  - label: Photosynthesis
+    category: Biochemistry
+    name: Photosynthesis
+    formula: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂
+    reactant_mass: 372.1440 g/mol
+    product_mass: 372.1440 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 23809.53
+    iterations_per_sec: 42016.81
+  - label: Ammonia synthesis (Haber)
+    category: Synthesis
+    name: Ammonia synthesis (Haber)
+    formula: N₂ + 3H₂ → 2NH₃
+    reactant_mass: 34.0620 g/mol
+    product_mass: 34.0620 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 17668.62
+    iterations_per_sec: 56818.18
+  - label: Sodium chloride
+    category: Synthesis
+    name: Sodium chloride
+    formula: 2Na + Cl₂ → 2NaCl
+    reactant_mass: 116.8795 g/mol
+    product_mass: 116.8795 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 31005.74
+    iterations_per_sec: 32258.06
+  - label: Sulfuric acid neutralization
+    category: Acid-Base
+    name: Sulfuric acid neutralization
+    formula: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O
+    reactant_mass: 178.0655 g/mol
+    product_mass: 178.0655 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 36085.16
+    iterations_per_sec: 27777.78
+  - label: Thermite reaction
+    category: Oxidation
+    name: Thermite reaction
+    formula: 2Al + Fe₂O₃ → Al₂O₃ + 2Fe
+    reactant_mass: 213.6501 g/mol
+    product_mass: 213.6501 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 44191.38
+    iterations_per_sec: 22727.27

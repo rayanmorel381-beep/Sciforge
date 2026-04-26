@@ -1,0 +1,22 @@
+[benchmark]
+category = "Cenozoic"
+symbol = "C"
+name = "KT Boundary clay"
+method = "C-14"
+parent = "¹⁴C"
+daughter = "¹⁴N"
+ratio = "0.0000"
+half_life = "5.7300e3 years"
+decay_constant = "3.8330e-12 s⁻¹"
+computed_age = "beyond range"
+expected_age = "65.0 kyr"
+experiment_name = "KT Boundary clay_dating"
+precision = "f64"
+elapsed_ms = 22
+iterations = 5000
+avg_time_ns = 4595.33
+min_time_ns = 4595.33
+max_time_ns = 4595.33
+time_stddev = 0.0000
+iterations_per_sec = 227272.73
+result = "KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr"

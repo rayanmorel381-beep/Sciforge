@@ -1,0 +1,39 @@
+category: halogen
+count: 6
+entries:
+  - label: 009_F
+    symbol: F
+    name: Fluorine
+    config: 1s² 2s² 2p⁵
+    mass: 18.998403
+    avg_time_ns: 697.91
+  - label: 017_Cl
+    symbol: Cl
+    name: Chlorine
+    config: [Ne] 3s² 3p⁵
+    mass: 35.45
+    avg_time_ns: 1319.70
+  - label: 035_Br
+    symbol: Br
+    name: Bromine
+    config: [Ar] 3d¹⁰ 4s² 4p⁵
+    mass: 79.904
+    avg_time_ns: 2714.75
+  - label: 053_I
+    symbol: I
+    name: Iodine
+    config: [Kr] 4d¹⁰ 5s² 5p⁵
+    mass: 126.90447
+    avg_time_ns: 4075.38
+  - label: 085_At
+    symbol: At
+    name: Astatine
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵
+    mass: 210
+    avg_time_ns: 6571.25
+  - label: 117_Ts
+    symbol: Ts
+    name: Tennessine
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted)
+    mass: 294
+    avg_time_ns: 9498.33

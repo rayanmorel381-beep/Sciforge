@@ -1,0 +1,21 @@
+category: solid_state
+count: 3
+entries:
+  - label: solid_state_band_gap_from_absorption
+    symbol: BGF
+    name: Band gap from absorption
+    domain: chemistry
+    test: "solid_state::band_gap_from_absorption"
+    avg_time_ns: 2239929.00
+  - label: solid_state_conductivity_semiconductor
+    symbol: CS
+    name: Conductivity semiconductor
+    domain: chemistry
+    test: "solid_state::conductivity_semiconductor"
+    avg_time_ns: 2115769.00
+  - label: solid_state_fermi_dirac
+    symbol: FD
+    name: Fermi dirac
+    domain: chemistry
+    test: "solid_state::fermi_dirac"
+    avg_time_ns: 2119719.00

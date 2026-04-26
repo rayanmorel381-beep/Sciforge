@@ -1,0 +1,94 @@
+element:
+  name: Potassium
+  symbol: K
+  atomic_number: 19
+  category: alkali metal
+  group: 1
+  period: 4
+  electron_configuration: "[Ar] 4s¹"
+  electronegativity: 0.82
+  atomic_mass: 39.0983
+
+isotopes:
+  - name: Potassium-38
+    symbol: "³⁸K"
+    mass_number: 38
+    neutrons: 19
+    atomic_mass: 37.96908
+    half_life: 7.636
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Argon-38
+    natural_abundance: 0.0
+
+  - name: Potassium-39
+    symbol: "³⁹K"
+    mass_number: 39
+    neutrons: 20
+    atomic_mass: 38.963707
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.932581
+    nuclear_spin: "3/2+"
+
+  - name: Potassium-40
+    symbol: "⁴⁰K"
+    mass_number: 40
+    neutrons: 21
+    atomic_mass: 39.963999
+    half_life: 1.248e9
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.8928
+        daughter: Calcium-40
+      - mode: electron capture
+        branching_ratio: 0.1072
+        daughter: Argon-40
+    natural_abundance: 0.000117
+
+  - name: Potassium-41
+    symbol: "⁴¹K"
+    mass_number: 41
+    neutrons: 22
+    atomic_mass: 40.961826
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.067302
+    nuclear_spin: "3/2+"
+
+  - name: Potassium-42
+    symbol: "⁴²K"
+    mass_number: 42
+    neutrons: 23
+    atomic_mass: 41.962403
+    half_life: 12.360
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Calcium-42
+    natural_abundance: 0.0
+
+  - name: Potassium-43
+    symbol: "⁴³K"
+    mass_number: 43
+    neutrons: 24
+    atomic_mass: 42.96072
+    half_life: 22.3
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Calcium-43
+    natural_abundance: 0.0

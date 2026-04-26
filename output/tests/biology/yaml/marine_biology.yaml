@@ -1,0 +1,27 @@
+category: marine_biology
+count: 4
+entries:
+  - label: marine_biology_bleaching_thermal_threshold
+    symbol: BTT
+    name: Bleaching thermal threshold
+    domain: biology
+    test: "marine_biology::bleaching_thermal_threshold"
+    avg_time_ns: 2267799.00
+  - label: marine_biology_fish_growth_von_bertalanffy
+    symbol: FGV
+    name: Fish growth von bertalanffy
+    domain: biology
+    test: "marine_biology::fish_growth_von_bertalanffy"
+    avg_time_ns: 2000309.00
+  - label: marine_biology_maximum_sustainable_yield
+    symbol: MSY
+    name: Maximum sustainable yield
+    domain: biology
+    test: "marine_biology::maximum_sustainable_yield"
+    avg_time_ns: 2086209.00
+  - label: marine_biology_ocean_acidification_ph
+    symbol: OAP
+    name: Ocean acidification ph
+    domain: biology
+    test: "marine_biology::ocean_acidification_ph"
+    avg_time_ns: 2526989.00

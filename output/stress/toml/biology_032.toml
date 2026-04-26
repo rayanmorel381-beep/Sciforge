@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi04"
+symbol = "OR"
+name = "bi032"
+target = "biology"
+module = "biostatistics"
+status = "ok"
+elapsed_ms = "2564"
+experiment_name = "biology_032"
+precision = "f64"
+elapsed_ms = 2564
+iterations = 1
+avg_time_ns = 2564000000.00
+min_time_ns = 2564000000.00
+max_time_ns = 2564000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.39
+result = "success=true code=Some(0) stdout_bytes=152 stderr_bytes=314"

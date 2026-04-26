@@ -1,0 +1,83 @@
+category: hb06
+count: 10
+entries:
+  - label: hub_051
+    symbol: FDD
+    name: hb051
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 294
+    avg_time_ns: 294000000.00
+  - label: hub_052
+    symbol: HUP
+    name: hb052
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5499
+    avg_time_ns: 5498999808.00
+  - label: hub_053
+    symbol: RE
+    name: hb053
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5588
+    avg_time_ns: 5587999744.00
+  - label: hub_054
+    symbol: CCS
+    name: hb054
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5611
+    avg_time_ns: 5610999808.00
+  - label: hub_055
+    symbol: IE
+    name: hb055
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5329
+    avg_time_ns: 5328999936.00
+  - label: hub_056
+    symbol: STE
+    name: hb056
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 449
+    avg_time_ns: 449000000.00
+  - label: hub_057
+    symbol: VER
+    name: hb057
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 314
+    avg_time_ns: 314000000.00
+  - label: hub_058
+    symbol: VDB
+    name: hb058
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 354
+    avg_time_ns: 354000000.00
+  - label: hub_059
+    symbol: VMO
+    name: hb059
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 135
+    avg_time_ns: 135000000.00
+  - label: hub_060
+    symbol: VSC
+    name: hb060
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3412
+    avg_time_ns: 3412000000.00

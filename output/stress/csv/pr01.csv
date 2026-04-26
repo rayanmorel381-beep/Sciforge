@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+parser_001,f64,3023,1,3023000000,3023000000,3023000000,0,0.33079723,success=true code=Some(0) stdout_bytes=140 stderr_bytes=312,pr01,CE,pr001,parser,csv,ok,3023
+parser_002,f64,2763,1,2763000000,2763000000,2763000000,0,0.36192545,success=true code=Some(0) stdout_bytes=149 stderr_bytes=260,pr01,CEP,pr002,parser,csv,ok,2763
+parser_003,f64,4752,1,4752000000,4752000000,4752000000,0,0.21043772,success=true code=Some(0) stdout_bytes=148 stderr_bytes=260,pr01,CEQ,pr003,parser,csv,ok,4752
+parser_004,f64,379,1,379000000,379000000,379000000,0,2.6385224,success=true code=Some(0) stdout_bytes=150 stderr_bytes=208,pr01,CLM,pr004,parser,csv,ok,379
+parser_005,f64,3039,1,3039000000,3039000000,3039000000,0,0.3290556,success=true code=Some(0) stdout_bytes=147 stderr_bytes=312,pr01,CPS,pr005,parser,csv,ok,3039
+parser_006,f64,1068,1,1068000000,1068000000,1068000000,0,0.9363296,success=true code=Some(0) stdout_bytes=141 stderr_bytes=260,pr01,CQ,pr006,parser,csv,ok,1068
+parser_007,f64,4208,1,4208000000,4208000000,4208000000,0,0.23764259,success=true code=Some(0) stdout_bytes=153 stderr_bytes=208,pr01,CUQ,pr007,parser,csv,ok,4208
+parser_008,f64,5068,1,5068000000,5068000000,5068000000,0,0.1973165,success=true code=Some(0) stdout_bytes=143 stderr_bytes=208,pr01,CV,pr008,parser,csv,ok,5068
+parser_009,f64,4893,1,4893000000,4893000000,4893000000,0,0.2043736,success=true code=Some(0) stdout_bytes=146 stderr_bytes=260,pr01,CVF,pr009,parser,csv,ok,4893
+parser_010,f64,4391,1,4391000000,4391000000,4391000000,0,0.22773856,success=true code=Some(0) stdout_bytes=146 stderr_bytes=260,pr01,CVT,pr010,parser,csv,ok,4391

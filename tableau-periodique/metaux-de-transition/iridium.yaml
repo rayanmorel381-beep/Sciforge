@@ -1,0 +1,52 @@
+element:
+  name: Iridium
+  symbol: Ir
+  atomic_number: 77
+  category: transition metal
+  group: 9
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d⁷ 6s²"
+  electronegativity: 2.20
+  atomic_mass: 192.217
+
+isotopes:
+  - name: Iridium-191
+    symbol: "¹⁹¹Ir"
+    mass_number: 191
+    neutrons: 114
+    atomic_mass: 190.960594
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.373
+    nuclear_spin: "3/2+"
+
+  - name: Iridium-192
+    symbol: "¹⁹²Ir"
+    mass_number: 192
+    neutrons: 115
+    atomic_mass: 191.962605
+    half_life: 73.827
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.953
+        daughter: Platinum-192
+      - mode: electron capture
+        branching_ratio: 0.047
+        daughter: Osmium-192
+    natural_abundance: 0.0
+
+  - name: Iridium-193
+    symbol: "¹⁹³Ir"
+    mass_number: 193
+    neutrons: 116
+    atomic_mass: 192.962926
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.627
+    nuclear_spin: "3/2+"

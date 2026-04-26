@@ -1,0 +1,104 @@
+element:
+  name: Ytterbium
+  symbol: Yb
+  atomic_number: 70
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 6s²"
+  electronegativity: 1.1
+  atomic_mass: 173.045
+
+isotopes:
+  - name: Ytterbium-168
+    symbol: "¹⁶⁸Yb"
+    mass_number: 168
+    neutrons: 98
+    atomic_mass: 167.933897
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00123
+
+  - name: Ytterbium-169
+    symbol: "¹⁶⁹Yb"
+    mass_number: 169
+    neutrons: 99
+    atomic_mass: 168.935190
+    half_life: 32.018
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Thulium-169
+    natural_abundance: 0.0
+
+  - name: Ytterbium-170
+    symbol: "¹⁷⁰Yb"
+    mass_number: 170
+    neutrons: 100
+    atomic_mass: 169.934762
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.02982
+
+  - name: Ytterbium-171
+    symbol: "¹⁷¹Yb"
+    mass_number: 171
+    neutrons: 101
+    atomic_mass: 170.936327
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1409
+    nuclear_spin: "1/2-"
+
+  - name: Ytterbium-172
+    symbol: "¹⁷²Yb"
+    mass_number: 172
+    neutrons: 102
+    atomic_mass: 171.936382
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2168
+
+  - name: Ytterbium-173
+    symbol: "¹⁷³Yb"
+    mass_number: 173
+    neutrons: 103
+    atomic_mass: 172.938211
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.16103
+    nuclear_spin: "5/2-"
+
+  - name: Ytterbium-174
+    symbol: "¹⁷⁴Yb"
+    mass_number: 174
+    neutrons: 104
+    atomic_mass: 173.938862
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.32026
+
+  - name: Ytterbium-176
+    symbol: "¹⁷⁶Yb"
+    mass_number: 176
+    neutrons: 106
+    atomic_mass: 175.942572
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.12996

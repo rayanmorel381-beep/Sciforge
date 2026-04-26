@@ -1,0 +1,17 @@
+{
+  "category": "noble gas",
+  "symbol": "Rn",
+  "name": "Radon",
+  "config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶",
+  "mass": "222",
+  "experiment_name": "Rn_Radon_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 33,
+  "iterations": 5000,
+  "avg_time_ns": 6705.93,
+  "min_time_ns": 6705.93,
+  "max_time_ns": 6705.93,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 151515.16,
+  "result": "Z=86 | Rn (Radon) | 222 u | noble gas | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶"
+}

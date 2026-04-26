@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi09"
+symbol = "SR"
+name = "bi087"
+target = "biology"
+module = "evolution"
+status = "ok"
+elapsed_ms = "473"
+experiment_name = "biology_087"
+precision = "f64"
+elapsed_ms = 473
+iterations = 1
+avg_time_ns = 473000000.00
+min_time_ns = 473000000.00
+max_time_ns = 473000000.00
+time_stddev = 0.0000
+iterations_per_sec = 2.11
+result = "success=true code=Some(0) stdout_bytes=155 stderr_bytes=262"

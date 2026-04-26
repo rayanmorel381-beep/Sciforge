@@ -1,0 +1,17 @@
+{
+  "category": "alkaline earth metal",
+  "symbol": "Ra",
+  "name": "Radium",
+  "config": "[Rn] 7s²",
+  "mass": "226",
+  "experiment_name": "Ra_Radium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 6,
+  "iterations": 1000,
+  "avg_time_ns": 6927.16,
+  "min_time_ns": 6927.16,
+  "max_time_ns": 6927.16,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 166666.67,
+  "result": "Z=88 | Ra (Radium) | 226 u | alkaline earth metal | [Rn] 7s²"
+}

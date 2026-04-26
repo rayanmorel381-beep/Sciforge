@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch06"
+symbol = "LEB"
+name = "ch051"
+target = "chemistry"
+module = "inorganic"
+status = "ok"
+elapsed_ms = "4726"
+experiment_name = "chemistry_051"
+precision = "f64"
+elapsed_ms = 4726
+iterations = 1
+avg_time_ns = 4726000128.00
+min_time_ns = 4726000128.00
+max_time_ns = 4726000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=163 stderr_bytes=266"

@@ -1,0 +1,98 @@
+element:
+  name: Germanium
+  symbol: Ge
+  atomic_number: 32
+  category: metalloid
+  group: 14
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s² 4p²"
+  electronegativity: 2.01
+  atomic_mass: 72.630
+
+isotopes:
+  - name: Germanium-68
+    symbol: "⁶⁸Ge"
+    mass_number: 68
+    neutrons: 36
+    atomic_mass: 67.92809
+    half_life: 270.95
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Gallium-68
+    natural_abundance: 0.0
+
+  - name: Germanium-70
+    symbol: "⁷⁰Ge"
+    mass_number: 70
+    neutrons: 38
+    atomic_mass: 69.924248
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2038
+
+  - name: Germanium-71
+    symbol: "⁷¹Ge"
+    mass_number: 71
+    neutrons: 39
+    atomic_mass: 70.924951
+    half_life: 11.43
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Gallium-71
+    natural_abundance: 0.0
+
+  - name: Germanium-72
+    symbol: "⁷²Ge"
+    mass_number: 72
+    neutrons: 40
+    atomic_mass: 71.922076
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2731
+
+  - name: Germanium-73
+    symbol: "⁷³Ge"
+    mass_number: 73
+    neutrons: 41
+    atomic_mass: 72.923459
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0776
+    nuclear_spin: "9/2+"
+
+  - name: Germanium-74
+    symbol: "⁷⁴Ge"
+    mass_number: 74
+    neutrons: 42
+    atomic_mass: 73.921178
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.3672
+
+  - name: Germanium-76
+    symbol: "⁷⁶Ge"
+    mass_number: 76
+    neutrons: 44
+    atomic_mass: 75.921403
+    half_life: 1.926e21
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta- (double electron emission)
+        branching_ratio: 1.0
+        daughter: Selenium-76
+    natural_abundance: 0.0783

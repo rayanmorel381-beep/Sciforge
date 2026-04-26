@@ -1,0 +1,109 @@
+element:
+  name: Sodium
+  symbol: Na
+  atomic_number: 11
+  category: alkali metal
+  group: 1
+  period: 3
+  electron_configuration: "[Ne] 3s¹"
+  electronegativity: 0.93
+  atomic_mass: 22.98976928
+
+isotopes:
+  - name: Sodium-20
+    symbol: "²⁰Na"
+    mass_number: 20
+    neutrons: 9
+    atomic_mass: 20.00735
+    half_life: 447.9
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.80
+      - mode: beta+ alpha emission
+        branching_ratio: 0.20
+    natural_abundance: 0.0
+
+  - name: Sodium-21
+    symbol: "²¹Na"
+    mass_number: 21
+    neutrons: 10
+    atomic_mass: 20.99765
+    half_life: 22.49
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Neon-21
+    natural_abundance: 0.0
+
+  - name: Sodium-22
+    symbol: "²²Na"
+    mass_number: 22
+    neutrons: 11
+    atomic_mass: 21.994437
+    half_life: 2.6018
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.899
+        daughter: Neon-22
+      - mode: electron capture
+        branching_ratio: 0.101
+    natural_abundance: 0.0
+
+  - name: Sodium-23
+    symbol: "²³Na"
+    mass_number: 23
+    neutrons: 12
+    atomic_mass: 22.989769
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "3/2+"
+
+  - name: Sodium-24
+    symbol: "²⁴Na"
+    mass_number: 24
+    neutrons: 13
+    atomic_mass: 23.990963
+    half_life: 14.997
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Magnesium-24
+    natural_abundance: 0.0
+
+  - name: Sodium-25
+    symbol: "²⁵Na"
+    mass_number: 25
+    neutrons: 14
+    atomic_mass: 24.98995
+    half_life: 59.1
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Magnesium-25
+    natural_abundance: 0.0
+
+  - name: Sodium-26
+    symbol: "²⁶Na"
+    mass_number: 26
+    neutrons: 15
+    atomic_mass: 25.99263
+    half_life: 1.077
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0

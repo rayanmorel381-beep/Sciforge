@@ -1,0 +1,111 @@
+element:
+  name: Krypton
+  symbol: Kr
+  atomic_number: 36
+  category: noble gas
+  group: 18
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s² 4p⁶"
+  electronegativity: 3.00
+  atomic_mass: 83.798
+
+isotopes:
+  - name: Krypton-78
+    symbol: "⁷⁸Kr"
+    mass_number: 78
+    neutrons: 42
+    atomic_mass: 77.920365
+    half_life: 9.2e21
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double electron capture
+        branching_ratio: 1.0
+        daughter: Selenium-78
+    natural_abundance: 0.00355
+
+  - name: Krypton-80
+    symbol: "⁸⁰Kr"
+    mass_number: 80
+    neutrons: 44
+    atomic_mass: 79.916378
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.02286
+
+  - name: Krypton-81
+    symbol: "⁸¹Kr"
+    mass_number: 81
+    neutrons: 45
+    atomic_mass: 80.916592
+    half_life: 2.29e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Bromine-81
+    natural_abundance: trace
+
+  - name: Krypton-82
+    symbol: "⁸²Kr"
+    mass_number: 82
+    neutrons: 46
+    atomic_mass: 81.913484
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.11593
+
+  - name: Krypton-83
+    symbol: "⁸³Kr"
+    mass_number: 83
+    neutrons: 47
+    atomic_mass: 82.914136
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.11500
+    nuclear_spin: "9/2+"
+
+  - name: Krypton-84
+    symbol: "⁸⁴Kr"
+    mass_number: 84
+    neutrons: 48
+    atomic_mass: 83.911507
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.56987
+    nuclear_spin: "0+"
+
+  - name: Krypton-85
+    symbol: "⁸⁵Kr"
+    mass_number: 85
+    neutrons: 49
+    atomic_mass: 84.912527
+    half_life: 10.756
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Rubidium-85
+    natural_abundance: 0.0
+
+  - name: Krypton-86
+    symbol: "⁸⁶Kr"
+    mass_number: 86
+    neutrons: 50
+    atomic_mass: 85.910611
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.17279
+    nuclear_spin: "0+"

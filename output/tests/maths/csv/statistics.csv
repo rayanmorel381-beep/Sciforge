@@ -1,0 +1,10 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+statistics::erf_zero,f64,1,1,1779029,1779029,1779029,0,1000,pass,statistics,EZ,Erf zero,maths,statistics::erf_zero
+statistics::geometric_mean,f64,1,1,1788200,1788200,1788200,0,1000,pass,statistics,GM,Geometric mean,maths,statistics::geometric_mean
+statistics::harmonic_mean,f64,1,1,1748879,1748879,1748879,0,1000,pass,statistics,HM,Harmonic mean,maths,statistics::harmonic_mean
+statistics::linear_regression_perfect,f64,1,1,1733909,1733909,1733909,0,1000,pass,statistics,LRP,Linear regression perfect,maths,statistics::linear_regression_perfect
+statistics::mean_basic,f64,1,1,1722679,1722679,1722679,0,1000,pass,statistics,MB,Mean basic,maths,statistics::mean_basic
+statistics::mean_permutation_invariant,f64,1,1,1768160,1768160,1768160,0,1000,pass,statistics,MPI,Mean permutation invariant,maths,statistics::mean_permutation_invariant
+statistics::std_dev_basic,f64,1,1,1723279,1723279,1723279,0,1000,pass,statistics,SDB,Std dev basic,maths,statistics::std_dev_basic
+statistics::weighted_mean,f64,1,1,1765579,1765579,1765579,0,1000,pass,statistics,WM,Weighted mean,maths,statistics::weighted_mean
+statistics::weighted_mean_scale_invariant_on_weights,f64,1,1,1824729,1824729,1824729,0,1000,pass,statistics,WMS,Weighted mean scale invariant on weights,maths,statistics::weighted_mean_scale_invariant_on_weights

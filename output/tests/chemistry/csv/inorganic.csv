@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+inorganic::lattice_energy_born_lande,f64,1,1,1807680,1807680,1807680,0,1000,pass,inorganic,LEB,Lattice energy born lande,chemistry,inorganic::lattice_energy_born_lande
+inorganic::magnetic_moment_spin_only,f64,1,1,1691509,1691509,1691509,0,1000,pass,inorganic,MMS,Magnetic moment spin only,chemistry,inorganic::magnetic_moment_spin_only
+inorganic::pauling_electronegativity_difference,f64,1,1,1691599,1691599,1691599,0,1000,pass,inorganic,PED,Pauling electronegativity difference,chemistry,inorganic::pauling_electronegativity_difference

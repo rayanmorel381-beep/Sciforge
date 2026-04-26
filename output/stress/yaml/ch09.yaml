@@ -1,0 +1,83 @@
+category: ch09
+count: 10
+entries:
+  - label: chemistry_081
+    symbol: BGF
+    name: ch081
+    target: chemistry
+    module: solid_state
+    status: ok
+    elapsed_ms: 5594
+    avg_time_ns: 5593999872.00
+  - label: chemistry_082
+    symbol: CS
+    name: ch082
+    target: chemistry
+    module: solid_state
+    status: ok
+    elapsed_ms: 1607
+    avg_time_ns: 1607000064.00
+  - label: chemistry_083
+    symbol: FD
+    name: ch083
+    target: chemistry
+    module: solid_state
+    status: ok
+    elapsed_ms: 4876
+    avg_time_ns: 4876000256.00
+  - label: chemistry_084
+    symbol: BPE
+    name: ch084
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 4915
+    avg_time_ns: 4914999808.00
+  - label: chemistry_085
+    symbol: FPD
+    name: ch085
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 5328
+    avg_time_ns: 5328000000.00
+  - label: chemistry_086
+    symbol: OP
+    name: ch086
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 5206
+    avg_time_ns: 5206000128.00
+  - label: chemistry_087
+    symbol: RL
+    name: ch087
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 5051
+    avg_time_ns: 5050999808.00
+  - label: chemistry_088
+    symbol: CSP
+    name: ch088
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 791
+    avg_time_ns: 791000000.00
+  - label: chemistry_089
+    symbol: LF
+    name: ch089
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 4923
+    avg_time_ns: 4922999808.00
+  - label: chemistry_090
+    symbol: RM
+    name: ch090
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 4966
+    avg_time_ns: 4966000128.00

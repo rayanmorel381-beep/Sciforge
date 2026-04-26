@@ -1,0 +1,8173 @@
+title: Stress Global
+count: 817
+entries:
+  - label: stress_summary
+    category: overview
+    symbol: SUM
+    name: Stress Summary
+    target: stress
+    module: overview
+    status: ok
+    elapsed_ms: 7638
+    avg_time_ns: 3595221760.00
+    iterations_per_sec: 0.13
+  - label: benchmark_summary
+    category: benchmark
+    symbol: SUM
+    name: BM Summary
+    target: benchmark
+    module: summary
+    status: ok
+    elapsed_ms: 75223
+    avg_time_ns: 2350718720.00
+    iterations_per_sec: 0.01
+  - label: benchmark_001
+    category: bm01
+    symbol: BSN
+    name: bm001
+    target: benchmark
+    module: bench_stddev_nonnegative
+    status: ok
+    elapsed_ms: 68
+    avg_time_ns: 68000000.00
+    iterations_per_sec: 14.71
+  - label: benchmark_002
+    category: bm01
+    symbol: BTC
+    name: bm002
+    target: benchmark
+    module: bench_timing_consistency
+    status: ok
+    elapsed_ms: 88
+    avg_time_ns: 88000000.00
+    iterations_per_sec: 11.36
+  - label: benchmark_003
+    category: bm01
+    symbol: DBM
+    name: bm003
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 4745
+    avg_time_ns: 4744999936.00
+    iterations_per_sec: 0.21
+  - label: benchmark_004
+    category: bm01
+    symbol: DE
+    name: bm004
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 4303
+    avg_time_ns: 4303000064.00
+    iterations_per_sec: 0.23
+  - label: benchmark_005
+    category: bm01
+    symbol: EBT
+    name: bm005
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 4130
+    avg_time_ns: 4129999872.00
+    iterations_per_sec: 0.24
+  - label: benchmark_006
+    category: bm01
+    symbol: EDR
+    name: bm006
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 309
+    avg_time_ns: 309000000.00
+    iterations_per_sec: 3.24
+  - label: benchmark_007
+    category: bm01
+    symbol: ESM
+    name: bm007
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 543
+    avg_time_ns: 543000000.00
+    iterations_per_sec: 1.84
+  - label: benchmark_008
+    category: bm01
+    symbol: RPF
+    name: bm008
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 234
+    avg_time_ns: 234000000.00
+    iterations_per_sec: 4.27
+  - label: benchmark_009
+    category: bm01
+    symbol: EDM
+    name: bm009
+    target: benchmark
+    module: encode_decode_multiple
+    status: ok
+    elapsed_ms: 606
+    avg_time_ns: 606000000.00
+    iterations_per_sec: 1.65
+  - label: benchmark_010
+    category: bm01
+    symbol: BRC
+    name: bm010
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 291
+    avg_time_ns: 291000000.00
+    iterations_per_sec: 3.44
+  - label: benchmark_011
+    category: bm02
+    symbol: BZI
+    name: bm011
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 283
+    avg_time_ns: 283000000.00
+    iterations_per_sec: 3.53
+  - label: benchmark_012
+    category: bm02
+    symbol: CHF
+    name: bm012
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 4879
+    avg_time_ns: 4879000064.00
+    iterations_per_sec: 0.20
+  - label: benchmark_013
+    category: bm02
+    symbol: HSI
+    name: bm013
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 71
+    avg_time_ns: 71000000.00
+    iterations_per_sec: 14.08
+  - label: benchmark_014
+    category: bm02
+    symbol: MB
+    name: bm014
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 135
+    avg_time_ns: 135000000.00
+    iterations_per_sec: 7.41
+  - label: benchmark_015
+    category: bm02
+    symbol: TCR
+    name: bm015
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 4843
+    avg_time_ns: 4842999808.00
+    iterations_per_sec: 0.21
+  - label: benchmark_016
+    category: bm02
+    symbol: VI4
+    name: bm016
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 4407
+    avg_time_ns: 4407000064.00
+    iterations_per_sec: 0.23
+  - label: benchmark_017
+    category: bm02
+    symbol: RCE
+    name: bm017
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 302
+    avg_time_ns: 302000000.00
+    iterations_per_sec: 3.31
+  - label: benchmark_018
+    category: bm02
+    symbol: RCH
+    name: bm018
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 4180
+    avg_time_ns: 4180000000.00
+    iterations_per_sec: 0.24
+  - label: benchmark_019
+    category: bm02
+    symbol: RHD
+    name: bm019
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 54
+    avg_time_ns: 54000000.00
+    iterations_per_sec: 18.52
+  - label: benchmark_020
+    category: bm02
+    symbol: RHE
+    name: bm020
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 286
+    avg_time_ns: 286000000.00
+    iterations_per_sec: 3.50
+  - label: benchmark_021
+    category: bm03
+    symbol: RHT
+    name: bm021
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 520
+    avg_time_ns: 520000000.00
+    iterations_per_sec: 1.92
+  - label: benchmark_022
+    category: bm03
+    symbol: RMH
+    name: bm022
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 4185
+    avg_time_ns: 4184999936.00
+    iterations_per_sec: 0.24
+  - label: benchmark_023
+    category: bm03
+    symbol: RMT
+    name: bm023
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 4886
+    avg_time_ns: 4886000128.00
+    iterations_per_sec: 0.20
+  - label: benchmark_024
+    category: bm03
+    symbol: RTO
+    name: bm024
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 280
+    avg_time_ns: 280000000.00
+    iterations_per_sec: 3.57
+  - label: benchmark_025
+    category: bm03
+    symbol: RAF
+    name: bm025
+    target: benchmark
+    module: report_all_formats
+    status: ok
+    elapsed_ms: 4791
+    avg_time_ns: 4791000064.00
+    iterations_per_sec: 0.21
+  - label: benchmark_026
+    category: bm03
+    symbol: RGA
+    name: bm026
+    target: benchmark
+    module: report_generate_all_fields
+    status: ok
+    elapsed_ms: 5030
+    avg_time_ns: 5030000128.00
+    iterations_per_sec: 0.20
+  - label: benchmark_027
+    category: bm03
+    symbol: HAP
+    name: bm027
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 6035
+    avg_time_ns: 6034999808.00
+    iterations_per_sec: 0.17
+  - label: benchmark_028
+    category: bm03
+    symbol: HRA
+    name: bm028
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 4504
+    avg_time_ns: 4504000000.00
+    iterations_per_sec: 0.22
+  - label: benchmark_029
+    category: bm03
+    symbol: RSR
+    name: bm029
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 5051
+    avg_time_ns: 5050999808.00
+    iterations_per_sec: 0.20
+  - label: benchmark_030
+    category: bm03
+    symbol: SSZ
+    name: bm030
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 1124
+    avg_time_ns: 1124000000.00
+    iterations_per_sec: 0.89
+  - label: benchmark_031
+    category: bm04
+    symbol: TA
+    name: bm031
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 1331
+    avg_time_ns: 1331000064.00
+    iterations_per_sec: 0.75
+  - label: benchmark_032
+    category: bm04
+    symbol: ZS
+    name: bm032
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 2729
+    avg_time_ns: 2728999936.00
+    iterations_per_sec: 0.37
+  - label: parser_summary
+    category: parser
+    symbol: SUM
+    name: PR Summary
+    target: parser
+    module: summary
+    status: ok
+    elapsed_ms: 269092
+    avg_time_ns: 3737388800.00
+    iterations_per_sec: 0.00
+  - label: parser_001
+    category: pr01
+    symbol: CE
+    name: pr001
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 3023
+    avg_time_ns: 3023000064.00
+    iterations_per_sec: 0.33
+  - label: parser_002
+    category: pr01
+    symbol: CEP
+    name: pr002
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 2763
+    avg_time_ns: 2763000064.00
+    iterations_per_sec: 0.36
+  - label: parser_003
+    category: pr01
+    symbol: CEQ
+    name: pr003
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4752
+    avg_time_ns: 4752000000.00
+    iterations_per_sec: 0.21
+  - label: parser_004
+    category: pr01
+    symbol: CLM
+    name: pr004
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 379
+    avg_time_ns: 379000000.00
+    iterations_per_sec: 2.64
+  - label: parser_005
+    category: pr01
+    symbol: CPS
+    name: pr005
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 3039
+    avg_time_ns: 3039000064.00
+    iterations_per_sec: 0.33
+  - label: parser_006
+    category: pr01
+    symbol: CQ
+    name: pr006
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 1068
+    avg_time_ns: 1068000000.00
+    iterations_per_sec: 0.94
+  - label: parser_007
+    category: pr01
+    symbol: CUQ
+    name: pr007
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4208
+    avg_time_ns: 4208000000.00
+    iterations_per_sec: 0.24
+  - label: parser_008
+    category: pr01
+    symbol: CV
+    name: pr008
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 5068
+    avg_time_ns: 5068000256.00
+    iterations_per_sec: 0.20
+  - label: parser_009
+    category: pr01
+    symbol: CVF
+    name: pr009
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4893
+    avg_time_ns: 4893000192.00
+    iterations_per_sec: 0.20
+  - label: parser_010
+    category: pr01
+    symbol: CVT
+    name: pr010
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4391
+    avg_time_ns: 4391000064.00
+    iterations_per_sec: 0.23
+  - label: parser_011
+    category: pr02
+    symbol: CWE
+    name: pr011
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 2875
+    avg_time_ns: 2875000064.00
+    iterations_per_sec: 0.35
+  - label: parser_012
+    category: pr02
+    symbol: CWR
+    name: pr012
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4827
+    avg_time_ns: 4826999808.00
+    iterations_per_sec: 0.21
+  - label: parser_013
+    category: pr02
+    symbol: HA
+    name: pr013
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4874
+    avg_time_ns: 4873999872.00
+    iterations_per_sec: 0.21
+  - label: parser_014
+    category: pr02
+    symbol: HC
+    name: pr014
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4982
+    avg_time_ns: 4982000128.00
+    iterations_per_sec: 0.20
+  - label: parser_015
+    category: pr02
+    symbol: HD
+    name: pr015
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4563
+    avg_time_ns: 4562999808.00
+    iterations_per_sec: 0.22
+  - label: parser_016
+    category: pr02
+    symbol: HE
+    name: pr016
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4528
+    avg_time_ns: 4528000000.00
+    iterations_per_sec: 0.22
+  - label: parser_017
+    category: pr02
+    symbol: HMD
+    name: pr017
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 5041
+    avg_time_ns: 5040999936.00
+    iterations_per_sec: 0.20
+  - label: parser_018
+    category: pr02
+    symbol: HN
+    name: pr018
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4040
+    avg_time_ns: 4040000000.00
+    iterations_per_sec: 0.25
+  - label: parser_019
+    category: pr02
+    symbol: HPT
+    name: pr019
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 2861
+    avg_time_ns: 2860999936.00
+    iterations_per_sec: 0.35
+  - label: parser_020
+    category: pr02
+    symbol: HSR
+    name: pr020
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4699
+    avg_time_ns: 4698999808.00
+    iterations_per_sec: 0.21
+  - label: parser_021
+    category: pr03
+    symbol: HSC
+    name: pr021
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4693
+    avg_time_ns: 4693000192.00
+    iterations_per_sec: 0.21
+  - label: parser_022
+    category: pr03
+    symbol: HS
+    name: pr022
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4926
+    avg_time_ns: 4926000128.00
+    iterations_per_sec: 0.20
+  - label: parser_023
+    category: pr03
+    symbol: HV
+    name: pr023
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 2856
+    avg_time_ns: 2856000000.00
+    iterations_per_sec: 0.35
+  - label: parser_024
+    category: pr03
+    symbol: HVT
+    name: pr024
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 5020
+    avg_time_ns: 5020000256.00
+    iterations_per_sec: 0.20
+  - label: parser_025
+    category: pr03
+    symbol: HV
+    name: pr025
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4235
+    avg_time_ns: 4235000064.00
+    iterations_per_sec: 0.24
+  - label: parser_026
+    category: pr03
+    symbol: JA
+    name: pr026
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 579
+    avg_time_ns: 579000000.00
+    iterations_per_sec: 1.73
+  - label: parser_027
+    category: pr03
+    symbol: JB
+    name: pr027
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 544
+    avg_time_ns: 544000000.00
+    iterations_per_sec: 1.84
+  - label: parser_028
+    category: pr03
+    symbol: JE
+    name: pr028
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4574
+    avg_time_ns: 4574000128.00
+    iterations_per_sec: 0.22
+  - label: parser_029
+    category: pr03
+    symbol: JE
+    name: pr029
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4185
+    avg_time_ns: 4184999936.00
+    iterations_per_sec: 0.24
+  - label: parser_030
+    category: pr03
+    symbol: JI
+    name: pr030
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4761
+    avg_time_ns: 4760999936.00
+    iterations_per_sec: 0.21
+  - label: parser_031
+    category: pr04
+    symbol: JMD
+    name: pr031
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4737
+    avg_time_ns: 4736999936.00
+    iterations_per_sec: 0.21
+  - label: parser_032
+    category: pr04
+    symbol: JNF
+    name: pr032
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4758
+    avg_time_ns: 4758000128.00
+    iterations_per_sec: 0.21
+  - label: parser_033
+    category: pr04
+    symbol: JN
+    name: pr033
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 353
+    avg_time_ns: 353000000.00
+    iterations_per_sec: 2.83
+  - label: parser_034
+    category: pr04
+    symbol: JN
+    name: pr034
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4638
+    avg_time_ns: 4638000128.00
+    iterations_per_sec: 0.22
+  - label: parser_035
+    category: pr04
+    symbol: JO
+    name: pr035
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4065
+    avg_time_ns: 4064999936.00
+    iterations_per_sec: 0.25
+  - label: parser_036
+    category: pr04
+    symbol: JS
+    name: pr036
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4979
+    avg_time_ns: 4978999808.00
+    iterations_per_sec: 0.20
+  - label: parser_037
+    category: pr04
+    symbol: JT
+    name: pr037
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4472
+    avg_time_ns: 4472000000.00
+    iterations_per_sec: 0.22
+  - label: parser_038
+    category: pr04
+    symbol: JVN
+    name: pr038
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4831
+    avg_time_ns: 4831000064.00
+    iterations_per_sec: 0.21
+  - label: parser_039
+    category: pr04
+    symbol: JVM
+    name: pr039
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 2722
+    avg_time_ns: 2721999872.00
+    iterations_per_sec: 0.37
+  - label: parser_040
+    category: pr04
+    symbol: MB
+    name: pr040
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 2489
+    avg_time_ns: 2488999936.00
+    iterations_per_sec: 0.40
+  - label: parser_041
+    category: pr05
+    symbol: MCB
+    name: pr041
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4360
+    avg_time_ns: 4360000000.00
+    iterations_per_sec: 0.23
+  - label: parser_042
+    category: pr05
+    symbol: MH
+    name: pr042
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 2688
+    avg_time_ns: 2688000000.00
+    iterations_per_sec: 0.37
+  - label: parser_043
+    category: pr05
+    symbol: ML
+    name: pr043
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4866
+    avg_time_ns: 4865999872.00
+    iterations_per_sec: 0.21
+  - label: parser_044
+    category: pr05
+    symbol: MT
+    name: pr044
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 2836
+    avg_time_ns: 2836000000.00
+    iterations_per_sec: 0.35
+  - label: parser_045
+    category: pr05
+    symbol: MTB
+    name: pr045
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4340
+    avg_time_ns: 4339999744.00
+    iterations_per_sec: 0.23
+  - label: parser_046
+    category: pr05
+    symbol: MVE
+    name: pr046
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4867
+    avg_time_ns: 4866999808.00
+    iterations_per_sec: 0.21
+  - label: parser_047
+    category: pr05
+    symbol: MVH
+    name: pr047
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 665
+    avg_time_ns: 665000000.00
+    iterations_per_sec: 1.50
+  - label: parser_048
+    category: pr05
+    symbol: MVT
+    name: pr048
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4744
+    avg_time_ns: 4744000000.00
+    iterations_per_sec: 0.21
+  - label: parser_049
+    category: pr05
+    symbol: MVT
+    name: pr049
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 2704
+    avg_time_ns: 2704000000.00
+    iterations_per_sec: 0.37
+  - label: parser_050
+    category: pr05
+    symbol: TA
+    name: pr050
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4673
+    avg_time_ns: 4672999936.00
+    iterations_per_sec: 0.21
+  - label: parser_051
+    category: pr06
+    symbol: TB
+    name: pr051
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4773
+    avg_time_ns: 4773000192.00
+    iterations_per_sec: 0.21
+  - label: parser_052
+    category: pr06
+    symbol: TEI
+    name: pr052
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4948
+    avg_time_ns: 4947999744.00
+    iterations_per_sec: 0.20
+  - label: parser_053
+    category: pr06
+    symbol: TF
+    name: pr053
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 1116
+    avg_time_ns: 1116000000.00
+    iterations_per_sec: 0.90
+  - label: parser_054
+    category: pr06
+    symbol: TI
+    name: pr054
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 5938
+    avg_time_ns: 5937999872.00
+    iterations_per_sec: 0.17
+  - label: parser_055
+    category: pr06
+    symbol: TMD
+    name: pr055
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4748
+    avg_time_ns: 4748000256.00
+    iterations_per_sec: 0.21
+  - label: parser_056
+    category: pr06
+    symbol: TMD
+    name: pr056
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4245
+    avg_time_ns: 4244999936.00
+    iterations_per_sec: 0.24
+  - label: parser_057
+    category: pr06
+    symbol: TS
+    name: pr057
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 5849
+    avg_time_ns: 5848999936.00
+    iterations_per_sec: 0.17
+  - label: parser_058
+    category: pr06
+    symbol: TT
+    name: pr058
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 2900
+    avg_time_ns: 2900000000.00
+    iterations_per_sec: 0.34
+  - label: parser_059
+    category: pr06
+    symbol: TV
+    name: pr059
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4652
+    avg_time_ns: 4652000256.00
+    iterations_per_sec: 0.21
+  - label: parser_060
+    category: pr06
+    symbol: TVM
+    name: pr060
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4573
+    avg_time_ns: 4573000192.00
+    iterations_per_sec: 0.22
+  - label: parser_061
+    category: pr07
+    symbol: YB
+    name: pr061
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4706
+    avg_time_ns: 4705999872.00
+    iterations_per_sec: 0.21
+  - label: parser_062
+    category: pr07
+    symbol: YEI
+    name: pr062
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4505
+    avg_time_ns: 4504999936.00
+    iterations_per_sec: 0.22
+  - label: parser_063
+    category: pr07
+    symbol: YM
+    name: pr063
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2811
+    avg_time_ns: 2811000064.00
+    iterations_per_sec: 0.36
+  - label: parser_064
+    category: pr07
+    symbol: YMD
+    name: pr064
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2446
+    avg_time_ns: 2446000128.00
+    iterations_per_sec: 0.41
+  - label: parser_065
+    category: pr07
+    symbol: YN
+    name: pr065
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 586
+    avg_time_ns: 586000000.00
+    iterations_per_sec: 1.71
+  - label: parser_066
+    category: pr07
+    symbol: YN
+    name: pr066
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 3682
+    avg_time_ns: 3681999872.00
+    iterations_per_sec: 0.27
+  - label: parser_067
+    category: pr07
+    symbol: YQS
+    name: pr067
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2826
+    avg_time_ns: 2825999872.00
+    iterations_per_sec: 0.35
+  - label: parser_068
+    category: pr07
+    symbol: YS
+    name: pr068
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4334
+    avg_time_ns: 4334000128.00
+    iterations_per_sec: 0.23
+  - label: parser_069
+    category: pr07
+    symbol: YS
+    name: pr069
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2517
+    avg_time_ns: 2516999936.00
+    iterations_per_sec: 0.40
+  - label: parser_070
+    category: pr07
+    symbol: YTN
+    name: pr070
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4652
+    avg_time_ns: 4652000256.00
+    iterations_per_sec: 0.21
+  - label: parser_071
+    category: pr08
+    symbol: YV
+    name: pr071
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 3869
+    avg_time_ns: 3868999936.00
+    iterations_per_sec: 0.26
+  - label: parser_072
+    category: pr08
+    symbol: YVM
+    name: pr072
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 382
+    avg_time_ns: 382000000.00
+    iterations_per_sec: 2.62
+  - label: constants_summary
+    category: constants
+    symbol: SUM
+    name: CT Summary
+    target: constants
+    module: summary
+    status: ok
+    elapsed_ms: 108775
+    avg_time_ns: 3399218688.00
+    iterations_per_sec: 0.01
+  - label: constants_001
+    category: ct01
+    symbol: AU
+    name: ct001
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 2844
+    avg_time_ns: 2844000000.00
+    iterations_per_sec: 0.35
+  - label: constants_002
+    category: ct01
+    symbol: CT
+    name: ct002
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 4659
+    avg_time_ns: 4658999808.00
+    iterations_per_sec: 0.21
+  - label: constants_003
+    category: ct01
+    symbol: EM
+    name: ct003
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 823
+    avg_time_ns: 823000000.00
+    iterations_per_sec: 1.22
+  - label: constants_004
+    category: ct01
+    symbol: HC
+    name: ct004
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 2764
+    avg_time_ns: 2764000000.00
+    iterations_per_sec: 0.36
+  - label: constants_005
+    category: ct01
+    symbol: LY
+    name: ct005
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 4171
+    avg_time_ns: 4171000064.00
+    iterations_per_sec: 0.24
+  - label: constants_006
+    category: ct01
+    symbol: Pa
+    name: ct006
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 3057
+    avg_time_ns: 3056999936.00
+    iterations_per_sec: 0.33
+  - label: constants_007
+    category: ct01
+    symbol: PGT
+    name: ct007
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 4561
+    avg_time_ns: 4560999936.00
+    iterations_per_sec: 0.22
+  - label: constants_008
+    category: ct01
+    symbol: SM
+    name: ct008
+    target: constants
+    module: astro
+    status: ok
+    elapsed_ms: 2592
+    avg_time_ns: 2592000000.00
+    iterations_per_sec: 0.39
+  - label: constants_009
+    category: ct01
+    symbol: ATK
+    name: ct009
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 4083
+    avg_time_ns: 4083000064.00
+    iterations_per_sec: 0.24
+  - label: constants_010
+    category: ct01
+    symbol: BR
+    name: ct010
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 2882
+    avg_time_ns: 2881999872.00
+    iterations_per_sec: 0.35
+  - label: constants_011
+    category: ct02
+    symbol: CW
+    name: ct011
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 2905
+    avg_time_ns: 2904999936.00
+    iterations_per_sec: 0.34
+  - label: constants_012
+    category: ct02
+    symbol: EM
+    name: ct012
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 4775
+    avg_time_ns: 4775000064.00
+    iterations_per_sec: 0.21
+  - label: constants_013
+    category: ct02
+    symbol: NM
+    name: ct013
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 5822
+    avg_time_ns: 5822000128.00
+    iterations_per_sec: 0.17
+  - label: constants_014
+    category: ct02
+    symbol: PHT
+    name: ct014
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 1656
+    avg_time_ns: 1656000000.00
+    iterations_per_sec: 0.60
+  - label: constants_015
+    category: ct02
+    symbol: PM
+    name: ct015
+    target: constants
+    module: atomic
+    status: ok
+    elapsed_ms: 2661
+    avg_time_ns: 2660999936.00
+    iterations_per_sec: 0.38
+  - label: constants_016
+    category: ct02
+    symbol: AN
+    name: ct016
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2935
+    avg_time_ns: 2935000064.00
+    iterations_per_sec: 0.34
+  - label: constants_017
+    category: ct02
+    symbol: BC
+    name: ct017
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 4243
+    avg_time_ns: 4243000064.00
+    iterations_per_sec: 0.24
+  - label: constants_018
+    category: ct02
+    symbol: CC
+    name: ct018
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 4794
+    avg_time_ns: 4793999872.00
+    iterations_per_sec: 0.21
+  - label: constants_019
+    category: ct02
+    symbol: EC
+    name: ct019
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2446
+    avg_time_ns: 2446000128.00
+    iterations_per_sec: 0.41
+  - label: constants_020
+    category: ct02
+    symbol: GC
+    name: ct020
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2487
+    avg_time_ns: 2487000064.00
+    iterations_per_sec: 0.40
+  - label: constants_021
+    category: ct03
+    symbol: GC
+    name: ct021
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 6045
+    avg_time_ns: 6045000192.00
+    iterations_per_sec: 0.17
+  - label: constants_022
+    category: ct03
+    symbol: PC
+    name: ct022
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 1458
+    avg_time_ns: 1458000000.00
+    iterations_per_sec: 0.69
+  - label: constants_023
+    category: ct03
+    symbol: RP
+    name: ct023
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2408
+    avg_time_ns: 2408000000.00
+    iterations_per_sec: 0.42
+  - label: constants_024
+    category: ct03
+    symbol: SOL
+    name: ct024
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 2075
+    avg_time_ns: 2075000064.00
+    iterations_per_sec: 0.48
+  - label: constants_025
+    category: ct03
+    symbol: SB
+    name: ct025
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 4761
+    avg_time_ns: 4760999936.00
+    iterations_per_sec: 0.21
+  - label: constants_026
+    category: ct03
+    symbol: ACI
+    name: ct026
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 2500
+    avg_time_ns: 2500000000.00
+    iterations_per_sec: 0.40
+  - label: constants_027
+    category: ct03
+    symbol: ATP
+    name: ct027
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 4177
+    avg_time_ns: 4176999936.00
+    iterations_per_sec: 0.24
+  - label: constants_028
+    category: ct03
+    symbol: CTJ
+    name: ct028
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 4820
+    avg_time_ns: 4819999744.00
+    iterations_per_sec: 0.21
+  - label: constants_029
+    category: ct03
+    symbol: DRR
+    name: ct029
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 2856
+    avg_time_ns: 2856000000.00
+    iterations_per_sec: 0.35
+  - label: constants_030
+    category: ct03
+    symbol: EJR
+    name: ct030
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 4061
+    avg_time_ns: 4060999936.00
+    iterations_per_sec: 0.25
+  - label: constants_031
+    category: ct04
+    symbol: ER
+    name: ct031
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 4900
+    avg_time_ns: 4899999744.00
+    iterations_per_sec: 0.20
+  - label: constants_032
+    category: ct04
+    symbol: ETJ
+    name: ct032
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 1554
+    avg_time_ns: 1554000000.00
+    iterations_per_sec: 0.64
+  - label: maths_summary
+    category: maths
+    symbol: SUM
+    name: MA Summary
+    target: maths
+    module: summary
+    status: ok
+    elapsed_ms: 218662
+    avg_time_ns: 3123742976.00
+    iterations_per_sec: 0.00
+  - label: maths_001
+    category: ma01
+    symbol: FF
+    name: ma001
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 2338
+    avg_time_ns: 2337999872.00
+    iterations_per_sec: 0.43
+  - label: maths_002
+    category: ma01
+    symbol: FDX
+    name: ma002
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 2627
+    avg_time_ns: 2627000064.00
+    iterations_per_sec: 0.38
+  - label: maths_003
+    category: ma01
+    symbol: RF
+    name: ma003
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 1054
+    avg_time_ns: 1054000000.00
+    iterations_per_sec: 0.95
+  - label: maths_004
+    category: ma01
+    symbol: SDX
+    name: ma004
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 4472
+    avg_time_ns: 4472000000.00
+    iterations_per_sec: 0.22
+  - label: maths_005
+    category: ma01
+    symbol: SBP
+    name: ma005
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 442
+    avg_time_ns: 442000000.00
+    iterations_per_sec: 2.26
+  - label: maths_006
+    category: ma01
+    symbol: CE
+    name: ma006
+    target: maths
+    module: complex
+    status: ok
+    elapsed_ms: 4299
+    avg_time_ns: 4298999808.00
+    iterations_per_sec: 0.23
+  - label: maths_007
+    category: ma01
+    symbol: CS
+    name: ma007
+    target: maths
+    module: complex
+    status: ok
+    elapsed_ms: 2862
+    avg_time_ns: 2862000128.00
+    iterations_per_sec: 0.35
+  - label: maths_008
+    category: ma01
+    symbol: MI
+    name: ma008
+    target: maths
+    module: complex
+    status: ok
+    elapsed_ms: 2584
+    avg_time_ns: 2584000000.00
+    iterations_per_sec: 0.39
+  - label: maths_009
+    category: ma01
+    symbol: DCS
+    name: ma009
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 6269
+    avg_time_ns: 6269000192.00
+    iterations_per_sec: 0.16
+  - label: maths_010
+    category: ma01
+    symbol: DGK
+    name: ma010
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 3108
+    avg_time_ns: 3108000000.00
+    iterations_per_sec: 0.32
+  - label: maths_011
+    category: ma02
+    symbol: DMP
+    name: ma011
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 4574
+    avg_time_ns: 4574000128.00
+    iterations_per_sec: 0.22
+  - label: maths_012
+    category: ma02
+    symbol: DUF
+    name: ma012
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 4000
+    avg_time_ns: 4000000000.00
+    iterations_per_sec: 0.25
+  - label: maths_013
+    category: ma02
+    symbol: DVM
+    name: ma013
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 337
+    avg_time_ns: 337000000.00
+    iterations_per_sec: 2.97
+  - label: maths_014
+    category: ma02
+    symbol: DWP
+    name: ma014
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 4755
+    avg_time_ns: 4754999808.00
+    iterations_per_sec: 0.21
+  - label: maths_015
+    category: ma02
+    symbol: FB
+    name: ma015
+    target: maths
+    module: fft
+    status: ok
+    elapsed_ms: 4278
+    avg_time_ns: 4278000128.00
+    iterations_per_sec: 0.23
+  - label: maths_016
+    category: ma02
+    symbol: HW
+    name: ma016
+    target: maths
+    module: fft
+    status: ok
+    elapsed_ms: 4633
+    avg_time_ns: 4632999936.00
+    iterations_per_sec: 0.22
+  - label: maths_017
+    category: ma02
+    symbol: PS
+    name: ma017
+    target: maths
+    module: fft
+    status: ok
+    elapsed_ms: 2699
+    avg_time_ns: 2699000064.00
+    iterations_per_sec: 0.37
+  - label: maths_018
+    category: ma02
+    symbol: Bf
+    name: ma018
+    target: maths
+    module: graph
+    status: ok
+    elapsed_ms: 4701
+    avg_time_ns: 4701000192.00
+    iterations_per_sec: 0.21
+  - label: maths_019
+    category: ma02
+    symbol: CC
+    name: ma019
+    target: maths
+    module: graph
+    status: ok
+    elapsed_ms: 2668
+    avg_time_ns: 2668000000.00
+    iterations_per_sec: 0.37
+  - label: maths_020
+    category: ma02
+    symbol: Di
+    name: ma020
+    target: maths
+    module: graph
+    status: ok
+    elapsed_ms: 2687
+    avg_time_ns: 2687000064.00
+    iterations_per_sec: 0.37
+  - label: maths_021
+    category: ma03
+    symbol: HSI
+    name: ma021
+    target: maths
+    module: integration
+    status: ok
+    elapsed_ms: 4921
+    avg_time_ns: 4920999936.00
+    iterations_per_sec: 0.20
+  - label: maths_022
+    category: ma03
+    symbol: HI
+    name: ma022
+    target: maths
+    module: interpolation
+    status: ok
+    elapsed_ms: 2920
+    avg_time_ns: 2920000000.00
+    iterations_per_sec: 0.34
+  - label: maths_023
+    category: ma03
+    symbol: LI
+    name: ma023
+    target: maths
+    module: interpolation
+    status: ok
+    elapsed_ms: 4235
+    avg_time_ns: 4235000064.00
+    iterations_per_sec: 0.24
+  - label: maths_024
+    category: ma03
+    symbol: LI
+    name: ma024
+    target: maths
+    module: interpolation
+    status: ok
+    elapsed_ms: 2836
+    avg_time_ns: 2836000000.00
+    iterations_per_sec: 0.35
+  - label: maths_025
+    category: ma03
+    symbol: CEI
+    name: ma025
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 2358
+    avg_time_ns: 2358000128.00
+    iterations_per_sec: 0.42
+  - label: maths_026
+    category: ma03
+    symbol: CEZ
+    name: ma026
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 4264
+    avg_time_ns: 4264000000.00
+    iterations_per_sec: 0.23
+  - label: maths_027
+    category: ma03
+    symbol: LCA
+    name: ma027
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 4374
+    avg_time_ns: 4374000128.00
+    iterations_per_sec: 0.23
+  - label: maths_028
+    category: ma03
+    symbol: MD2
+    name: ma028
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 413
+    avg_time_ns: 413000000.00
+    iterations_per_sec: 2.42
+  - label: maths_029
+    category: ma03
+    symbol: TTI
+    name: ma029
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 4679
+    avg_time_ns: 4679000064.00
+    iterations_per_sec: 0.21
+  - label: maths_030
+    category: ma03
+    symbol: PO
+    name: ma030
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 2888
+    avg_time_ns: 2888000000.00
+    iterations_per_sec: 0.35
+  - label: maths_031
+    category: ma04
+    symbol: PZ
+    name: ma031
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 2920
+    avg_time_ns: 2920000000.00
+    iterations_per_sec: 0.34
+  - label: maths_032
+    category: ma04
+    symbol: QP
+    name: ma032
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 2863
+    avg_time_ns: 2863000064.00
+    iterations_per_sec: 0.35
+  - label: maths_033
+    category: ma04
+    symbol: TZ
+    name: ma033
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 2881
+    avg_time_ns: 2880999936.00
+    iterations_per_sec: 0.35
+  - label: maths_034
+    category: ma04
+    symbol: HT
+    name: ma034
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 2430
+    avg_time_ns: 2430000128.00
+    iterations_per_sec: 0.41
+  - label: maths_035
+    category: ma04
+    symbol: PDD
+    name: ma035
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 2792
+    avg_time_ns: 2792000000.00
+    iterations_per_sec: 0.36
+  - label: maths_036
+    category: ma04
+    symbol: SR
+    name: ma036
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 2404
+    avg_time_ns: 2404000000.00
+    iterations_per_sec: 0.42
+  - label: maths_037
+    category: ma04
+    symbol: SD
+    name: ma037
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 4175
+    avg_time_ns: 4175000064.00
+    iterations_per_sec: 0.24
+  - label: maths_038
+    category: ma04
+    symbol: OE
+    name: ma038
+    target: maths
+    module: ode
+    status: ok
+    elapsed_ms: 3380
+    avg_time_ns: 3380000000.00
+    iterations_per_sec: 0.30
+  - label: maths_039
+    category: ma04
+    symbol: La
+    name: ma039
+    target: maths
+    module: optimization
+    status: ok
+    elapsed_ms: 2573
+    avg_time_ns: 2572999936.00
+    iterations_per_sec: 0.39
+  - label: maths_040
+    category: ma04
+    symbol: PB
+    name: ma040
+    target: maths
+    module: optimization
+    status: ok
+    elapsed_ms: 2900
+    avg_time_ns: 2900000000.00
+    iterations_per_sec: 0.34
+  - label: maths_041
+    category: ma05
+    symbol: QO
+    name: ma041
+    target: maths
+    module: optimization
+    status: ok
+    elapsed_ms: 2544
+    avg_time_ns: 2544000000.00
+    iterations_per_sec: 0.39
+  - label: maths_042
+    category: ma05
+    symbol: HE1
+    name: ma042
+    target: maths
+    module: pde
+    status: ok
+    elapsed_ms: 2725
+    avg_time_ns: 2724999936.00
+    iterations_per_sec: 0.37
+  - label: maths_043
+    category: ma05
+    symbol: WE1
+    name: ma043
+    target: maths
+    module: pde
+    status: ok
+    elapsed_ms: 2248
+    avg_time_ns: 2248000000.00
+    iterations_per_sec: 0.44
+  - label: maths_044
+    category: ma05
+    symbol: CT
+    name: ma044
+    target: maths
+    module: polynomial
+    status: ok
+    elapsed_ms: 3290
+    avg_time_ns: 3289999872.00
+    iterations_per_sec: 0.30
+  - label: maths_045
+    category: ma05
+    symbol: Le
+    name: ma045
+    target: maths
+    module: polynomial
+    status: ok
+    elapsed_ms: 306
+    avg_time_ns: 306000000.00
+    iterations_per_sec: 3.27
+  - label: maths_046
+    category: ma05
+    symbol: PRR
+    name: ma046
+    target: maths
+    module: polynomial
+    status: ok
+    elapsed_ms: 2903
+    avg_time_ns: 2903000064.00
+    iterations_per_sec: 0.34
+  - label: maths_047
+    category: ma05
+    symbol: MCP
+    name: ma047
+    target: maths
+    module: probability
+    status: ok
+    elapsed_ms: 4515
+    avg_time_ns: 4514999808.00
+    iterations_per_sec: 0.22
+  - label: maths_048
+    category: ma05
+    symbol: PEC
+    name: ma048
+    target: maths
+    module: probability
+    status: ok
+    elapsed_ms: 2896
+    avg_time_ns: 2896000000.00
+    iterations_per_sec: 0.35
+  - label: maths_049
+    category: ma05
+    symbol: PNP
+    name: ma049
+    target: maths
+    module: probability
+    status: ok
+    elapsed_ms: 3143
+    avg_time_ns: 3143000064.00
+    iterations_per_sec: 0.32
+  - label: maths_050
+    category: ma05
+    symbol: BG
+    name: ma050
+    target: maths
+    module: signal
+    status: ok
+    elapsed_ms: 3538
+    avg_time_ns: 3537999872.00
+    iterations_per_sec: 0.28
+  - label: maths_051
+    category: ma06
+    symbol: KF1
+    name: ma051
+    target: maths
+    module: signal
+    status: ok
+    elapsed_ms: 2916
+    avg_time_ns: 2916000000.00
+    iterations_per_sec: 0.34
+  - label: maths_052
+    category: ma06
+    symbol: LPR
+    name: ma052
+    target: maths
+    module: signal
+    status: ok
+    elapsed_ms: 2851
+    avg_time_ns: 2851000064.00
+    iterations_per_sec: 0.35
+  - label: maths_053
+    category: ma06
+    symbol: CG
+    name: ma053
+    target: maths
+    module: sparse
+    status: ok
+    elapsed_ms: 2219
+    avg_time_ns: 2219000064.00
+    iterations_per_sec: 0.45
+  - label: maths_054
+    category: ma06
+    symbol: JI
+    name: ma054
+    target: maths
+    module: sparse
+    status: ok
+    elapsed_ms: 3348
+    avg_time_ns: 3348000000.00
+    iterations_per_sec: 0.30
+  - label: maths_055
+    category: ma06
+    symbol: SA
+    name: ma055
+    target: maths
+    module: sparse
+    status: ok
+    elapsed_ms: 1130
+    avg_time_ns: 1130000000.00
+    iterations_per_sec: 0.88
+  - label: maths_056
+    category: ma06
+    symbol: EZ
+    name: ma056
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3250
+    avg_time_ns: 3249999872.00
+    iterations_per_sec: 0.31
+  - label: maths_057
+    category: ma06
+    symbol: GM
+    name: ma057
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3606
+    avg_time_ns: 3606000128.00
+    iterations_per_sec: 0.28
+  - label: maths_058
+    category: ma06
+    symbol: HM
+    name: ma058
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3319
+    avg_time_ns: 3319000064.00
+    iterations_per_sec: 0.30
+  - label: maths_059
+    category: ma06
+    symbol: LRP
+    name: ma059
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3652
+    avg_time_ns: 3652000000.00
+    iterations_per_sec: 0.27
+  - label: maths_060
+    category: ma06
+    symbol: MB
+    name: ma060
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3038
+    avg_time_ns: 3038000128.00
+    iterations_per_sec: 0.33
+  - label: maths_061
+    category: ma07
+    symbol: MPI
+    name: ma061
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3173
+    avg_time_ns: 3172999936.00
+    iterations_per_sec: 0.32
+  - label: maths_062
+    category: ma07
+    symbol: SDB
+    name: ma062
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3348
+    avg_time_ns: 3348000000.00
+    iterations_per_sec: 0.30
+  - label: maths_063
+    category: ma07
+    symbol: WM
+    name: ma063
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3285
+    avg_time_ns: 3284999936.00
+    iterations_per_sec: 0.30
+  - label: maths_064
+    category: ma07
+    symbol: WMS
+    name: ma064
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3273
+    avg_time_ns: 3272999936.00
+    iterations_per_sec: 0.31
+  - label: maths_065
+    category: ma07
+    symbol: TC
+    name: ma065
+    target: maths
+    module: tensor
+    status: ok
+    elapsed_ms: 3546
+    avg_time_ns: 3545999872.00
+    iterations_per_sec: 0.28
+  - label: maths_066
+    category: ma07
+    symbol: TD
+    name: ma066
+    target: maths
+    module: tensor
+    status: ok
+    elapsed_ms: 3181
+    avg_time_ns: 3180999936.00
+    iterations_per_sec: 0.31
+  - label: maths_067
+    category: ma07
+    symbol: TR
+    name: ma067
+    target: maths
+    module: tensor
+    status: ok
+    elapsed_ms: 3214
+    avg_time_ns: 3214000128.00
+    iterations_per_sec: 0.31
+  - label: maths_068
+    category: ma07
+    symbol: VD
+    name: ma068
+    target: maths
+    module: vector
+    status: ok
+    elapsed_ms: 2911
+    avg_time_ns: 2911000064.00
+    iterations_per_sec: 0.34
+  - label: maths_069
+    category: ma07
+    symbol: VL
+    name: ma069
+    target: maths
+    module: vector
+    status: ok
+    elapsed_ms: 3458
+    avg_time_ns: 3457999872.00
+    iterations_per_sec: 0.29
+  - label: maths_070
+    category: ma07
+    symbol: VP
+    name: ma070
+    target: maths
+    module: vector
+    status: ok
+    elapsed_ms: 3243
+    avg_time_ns: 3243000064.00
+    iterations_per_sec: 0.31
+  - label: physics_summary
+    category: physics
+    symbol: SUM
+    name: PH Summary
+    target: physics
+    module: summary
+    status: ok
+    elapsed_ms: 292117
+    avg_time_ns: 4001602816.00
+    iterations_per_sec: 0.00
+  - label: physics_001
+    category: ph01
+    symbol: DA
+    name: ph001
+    target: physics
+    module: acoustics
+    status: ok
+    elapsed_ms: 3552
+    avg_time_ns: 3552000000.00
+    iterations_per_sec: 0.28
+  - label: physics_002
+    category: ph01
+    symbol: ILD
+    name: ph002
+    target: physics
+    module: acoustics
+    status: ok
+    elapsed_ms: 3107
+    avg_time_ns: 3107000064.00
+    iterations_per_sec: 0.32
+  - label: physics_003
+    category: ph01
+    symbol: RTS
+    name: ph003
+    target: physics
+    module: acoustics
+    status: ok
+    elapsed_ms: 3303
+    avg_time_ns: 3303000064.00
+    iterations_per_sec: 0.30
+  - label: physics_004
+    category: ph01
+    symbol: SOS
+    name: ph004
+    target: physics
+    module: acoustics
+    status: ok
+    elapsed_ms: 3338
+    avg_time_ns: 3337999872.00
+    iterations_per_sec: 0.30
+  - label: physics_005
+    category: ph01
+    symbol: DGM
+    name: ph005
+    target: physics
+    module: dispatch
+    status: ok
+    elapsed_ms: 3075
+    avg_time_ns: 3075000064.00
+    iterations_per_sec: 0.33
+  - label: physics_006
+    category: ph01
+    symbol: DMP
+    name: ph006
+    target: physics
+    module: dispatch
+    status: ok
+    elapsed_ms: 3467
+    avg_time_ns: 3467000064.00
+    iterations_per_sec: 0.29
+  - label: physics_007
+    category: ph01
+    symbol: DUF
+    name: ph007
+    target: physics
+    module: dispatch
+    status: ok
+    elapsed_ms: 3274
+    avg_time_ns: 3273999872.00
+    iterations_per_sec: 0.31
+  - label: physics_008
+    category: ph01
+    symbol: DV
+    name: ph008
+    target: physics
+    module: dispatch
+    status: ok
+    elapsed_ms: 3927
+    avg_time_ns: 3927000064.00
+    iterations_per_sec: 0.25
+  - label: physics_009
+    category: ph01
+    symbol: HC
+    name: ph009
+    target: physics
+    module: dispatch
+    status: ok
+    elapsed_ms: 3559
+    avg_time_ns: 3559000064.00
+    iterations_per_sec: 0.28
+  - label: physics_010
+    category: ph01
+    symbol: MSD
+    name: ph010
+    target: physics
+    module: dispatch
+    status: ok
+    elapsed_ms: 4976
+    avg_time_ns: 4976000000.00
+    iterations_per_sec: 0.20
+  - label: physics_011
+    category: ph02
+    symbol: CPP
+    name: ph011
+    target: physics
+    module: electrodynamics
+    status: ok
+    elapsed_ms: 161
+    avg_time_ns: 161000000.00
+    iterations_per_sec: 6.21
+  - label: physics_012
+    category: ph02
+    symbol: EFP
+    name: ph012
+    target: physics
+    module: electrodynamics
+    status: ok
+    elapsed_ms: 3996
+    avg_time_ns: 3996000000.00
+    iterations_per_sec: 0.25
+  - label: physics_013
+    category: ph02
+    symbol: SD
+    name: ph013
+    target: physics
+    module: electrodynamics
+    status: ok
+    elapsed_ms: 3295
+    avg_time_ns: 3295000064.00
+    iterations_per_sec: 0.30
+  - label: physics_014
+    category: ph02
+    symbol: CPP
+    name: ph014
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3930
+    avg_time_ns: 3929999872.00
+    iterations_per_sec: 0.25
+  - label: physics_015
+    category: ph02
+    symbol: EFP
+    name: ph015
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3955
+    avg_time_ns: 3955000064.00
+    iterations_per_sec: 0.25
+  - label: physics_016
+    category: ph02
+    symbol: IS
+    name: ph016
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3971
+    avg_time_ns: 3971000064.00
+    iterations_per_sec: 0.25
+  - label: physics_017
+    category: ph02
+    symbol: MFW
+    name: ph017
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3886
+    avg_time_ns: 3886000128.00
+    iterations_per_sec: 0.26
+  - label: physics_018
+    category: ph02
+    symbol: ML
+    name: ph018
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 4407
+    avg_time_ns: 4407000064.00
+    iterations_per_sec: 0.23
+  - label: physics_019
+    category: ph02
+    symbol: MLQ
+    name: ph019
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3574
+    avg_time_ns: 3574000128.00
+    iterations_per_sec: 0.28
+  - label: physics_020
+    category: ph02
+    symbol: OC
+    name: ph020
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3304
+    avg_time_ns: 3304000000.00
+    iterations_per_sec: 0.30
+  - label: physics_021
+    category: ph03
+    symbol: OLR
+    name: ph021
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 314
+    avg_time_ns: 314000000.00
+    iterations_per_sec: 3.18
+  - label: physics_022
+    category: ph03
+    symbol: OR
+    name: ph022
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3486
+    avg_time_ns: 3486000128.00
+    iterations_per_sec: 0.29
+  - label: physics_023
+    category: ph03
+    symbol: OV
+    name: ph023
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3839
+    avg_time_ns: 3839000064.00
+    iterations_per_sec: 0.26
+  - label: physics_024
+    category: ph03
+    symbol: DS
+    name: ph024
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 3466
+    avg_time_ns: 3465999872.00
+    iterations_per_sec: 0.29
+  - label: physics_025
+    category: ph03
+    symbol: OC
+    name: ph025
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 3234
+    avg_time_ns: 3233999872.00
+    iterations_per_sec: 0.31
+  - label: physics_026
+    category: ph03
+    symbol: RRF
+    name: ph026
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 3599
+    avg_time_ns: 3599000064.00
+    iterations_per_sec: 0.28
+  - label: physics_027
+    category: ph03
+    symbol: VD
+    name: ph027
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 4532
+    avg_time_ns: 4531999744.00
+    iterations_per_sec: 0.22
+  - label: physics_028
+    category: ph03
+    symbol: BP
+    name: ph028
+    target: physics
+    module: fluid_mechanics
+    status: ok
+    elapsed_ms: 4437
+    avg_time_ns: 4437000192.00
+    iterations_per_sec: 0.23
+  - label: physics_029
+    category: ph03
+    symbol: DF
+    name: ph029
+    target: physics
+    module: fluid_mechanics
+    status: ok
+    elapsed_ms: 4139
+    avg_time_ns: 4139000064.00
+    iterations_per_sec: 0.24
+  - label: physics_030
+    category: ph03
+    symbol: RN
+    name: ph030
+    target: physics
+    module: fluid_mechanics
+    status: ok
+    elapsed_ms: 3374
+    avg_time_ns: 3374000128.00
+    iterations_per_sec: 0.30
+  - label: physics_031
+    category: ph04
+    symbol: DC
+    name: ph031
+    target: physics
+    module: materials
+    status: ok
+    elapsed_ms: 4757
+    avg_time_ns: 4757000192.00
+    iterations_per_sec: 0.21
+  - label: physics_032
+    category: ph04
+    symbol: FFL
+    name: ph032
+    target: physics
+    module: materials
+    status: ok
+    elapsed_ms: 4196
+    avg_time_ns: 4196000000.00
+    iterations_per_sec: 0.24
+  - label: physics_033
+    category: ph04
+    symbol: VC
+    name: ph033
+    target: physics
+    module: materials
+    status: ok
+    elapsed_ms: 3976
+    avg_time_ns: 3976000000.00
+    iterations_per_sec: 0.25
+  - label: physics_034
+    category: ph04
+    symbol: BF
+    name: ph034
+    target: physics
+    module: mechanics
+    status: ok
+    elapsed_ms: 4921
+    avg_time_ns: 4920999936.00
+    iterations_per_sec: 0.20
+  - label: physics_035
+    category: ph04
+    symbol: BP
+    name: ph035
+    target: physics
+    module: mechanics
+    status: ok
+    elapsed_ms: 4470
+    avg_time_ns: 4470000128.00
+    iterations_per_sec: 0.22
+  - label: physics_036
+    category: ph04
+    symbol: DSW
+    name: ph036
+    target: physics
+    module: mechanics
+    status: ok
+    elapsed_ms: 4605
+    avg_time_ns: 4605000192.00
+    iterations_per_sec: 0.22
+  - label: physics_037
+    category: ph04
+    symbol: DF
+    name: ph037
+    target: physics
+    module: mechanics
+    status: ok
+    elapsed_ms: 3999
+    avg_time_ns: 3999000064.00
+    iterations_per_sec: 0.25
+  - label: physics_038
+    category: ph04
+    symbol: HS
+    name: ph038
+    target: physics
+    module: mechanics
+    status: ok
+    elapsed_ms: 4033
+    avg_time_ns: 4032999936.00
+    iterations_per_sec: 0.25
+  - label: physics_039
+    category: ph04
+    symbol: HS
+    name: ph039
+    target: physics
+    module: mechanics
+    status: ok
+    elapsed_ms: 4891
+    avg_time_ns: 4890999808.00
+    iterations_per_sec: 0.20
+  - label: physics_040
+    category: ph04
+    symbol: MN
+    name: ph040
+    target: physics
+    module: mechanics
+    status: ok
+    elapsed_ms: 3451
+    avg_time_ns: 3451000064.00
+    iterations_per_sec: 0.29
+  - label: physics_041
+    category: ph05
+    symbol: BEP
+    name: ph041
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 3985
+    avg_time_ns: 3984999936.00
+    iterations_per_sec: 0.25
+  - label: physics_042
+    category: ph05
+    symbol: CB
+    name: ph042
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 3812
+    avg_time_ns: 3812000000.00
+    iterations_per_sec: 0.26
+  - label: physics_043
+    category: ph05
+    symbol: HLF
+    name: ph043
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 4536
+    avg_time_ns: 4536000000.00
+    iterations_per_sec: 0.22
+  - label: physics_044
+    category: ph05
+    symbol: NRF
+    name: ph044
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 4474
+    avg_time_ns: 4473999872.00
+    iterations_per_sec: 0.22
+  - label: physics_045
+    category: ph05
+    symbol: BA
+    name: ph045
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 2002
+    avg_time_ns: 2002000000.00
+    iterations_per_sec: 0.50
+  - label: physics_046
+    category: ph05
+    symbol: RC
+    name: ph046
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 4463
+    avg_time_ns: 4463000064.00
+    iterations_per_sec: 0.22
+  - label: physics_047
+    category: ph05
+    symbol: Sn
+    name: ph047
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 5205
+    avg_time_ns: 5205000192.00
+    iterations_per_sec: 0.19
+  - label: physics_048
+    category: ph05
+    symbol: TLE
+    name: ph048
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 3826
+    avg_time_ns: 3825999872.00
+    iterations_per_sec: 0.26
+  - label: physics_049
+    category: ph05
+    symbol: CT
+    name: ph049
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 4033
+    avg_time_ns: 4032999936.00
+    iterations_per_sec: 0.25
+  - label: physics_050
+    category: ph05
+    symbol: FSC
+    name: ph050
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 4747
+    avg_time_ns: 4746999808.00
+    iterations_per_sec: 0.21
+  - label: physics_051
+    category: ph06
+    symbol: PE
+    name: ph051
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 4005
+    avg_time_ns: 4004999936.00
+    iterations_per_sec: 0.25
+  - label: physics_052
+    category: ph06
+    symbol: PE
+    name: ph052
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 4961
+    avg_time_ns: 4960999936.00
+    iterations_per_sec: 0.20
+  - label: physics_053
+    category: ph06
+    symbol: HOE
+    name: ph053
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4382
+    avg_time_ns: 4382000128.00
+    iterations_per_sec: 0.23
+  - label: physics_054
+    category: ph06
+    symbol: HE
+    name: ph054
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4462
+    avg_time_ns: 4462000128.00
+    iterations_per_sec: 0.22
+  - label: physics_055
+    category: ph06
+    symbol: IWE
+    name: ph055
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4362
+    avg_time_ns: 4361999872.00
+    iterations_per_sec: 0.23
+  - label: physics_056
+    category: ph06
+    symbol: TC
+    name: ph056
+    target: physics
+    module: quantum
+    status: ok
+    elapsed_ms: 4521
+    avg_time_ns: 4520999936.00
+    iterations_per_sec: 0.22
+  - label: physics_057
+    category: ph06
+    symbol: CWS
+    name: ph057
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 4036
+    avg_time_ns: 4036000000.00
+    iterations_per_sec: 0.25
+  - label: physics_058
+    category: ph06
+    symbol: EMR
+    name: ph058
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 5062
+    avg_time_ns: 5062000128.00
+    iterations_per_sec: 0.20
+  - label: physics_059
+    category: ph06
+    symbol: GFA
+    name: ph059
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 4504
+    avg_time_ns: 4504000000.00
+    iterations_per_sec: 0.22
+  - label: physics_060
+    category: ph06
+    symbol: GFI
+    name: ph060
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 3460
+    avg_time_ns: 3460000000.00
+    iterations_per_sec: 0.29
+  - label: physics_061
+    category: ph07
+    symbol: LC
+    name: ph061
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 4628
+    avg_time_ns: 4627999744.00
+    iterations_per_sec: 0.22
+  - label: physics_062
+    category: ph07
+    symbol: PRP
+    name: ph062
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 4565
+    avg_time_ns: 4565000192.00
+    iterations_per_sec: 0.22
+  - label: physics_063
+    category: ph07
+    symbol: TD
+    name: ph063
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 3881
+    avg_time_ns: 3880999936.00
+    iterations_per_sec: 0.26
+  - label: physics_064
+    category: ph07
+    symbol: TDH
+    name: ph064
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 4890
+    avg_time_ns: 4889999872.00
+    iterations_per_sec: 0.20
+  - label: physics_065
+    category: ph07
+    symbol: HS
+    name: ph065
+    target: physics
+    module: solid_mechanics
+    status: ok
+    elapsed_ms: 3992
+    avg_time_ns: 3992000000.00
+    iterations_per_sec: 0.25
+  - label: physics_066
+    category: ph07
+    symbol: TS
+    name: ph066
+    target: physics
+    module: solid_mechanics
+    status: ok
+    elapsed_ms: 3446
+    avg_time_ns: 3446000128.00
+    iterations_per_sec: 0.29
+  - label: physics_067
+    category: ph07
+    symbol: VM
+    name: ph067
+    target: physics
+    module: solid_mechanics
+    status: ok
+    elapsed_ms: 4652
+    avg_time_ns: 4652000256.00
+    iterations_per_sec: 0.21
+  - label: physics_068
+    category: ph07
+    symbol: BD
+    name: ph068
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 4950
+    avg_time_ns: 4950000128.00
+    iterations_per_sec: 0.20
+  - label: physics_069
+    category: ph07
+    symbol: CE
+    name: ph069
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 4924
+    avg_time_ns: 4924000256.00
+    iterations_per_sec: 0.20
+  - label: physics_070
+    category: ph07
+    symbol: IGP
+    name: ph070
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 4804
+    avg_time_ns: 4803999744.00
+    iterations_per_sec: 0.21
+  - label: physics_071
+    category: ph08
+    symbol: IGT
+    name: ph071
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 4952
+    avg_time_ns: 4952000000.00
+    iterations_per_sec: 0.20
+  - label: physics_072
+    category: ph08
+    symbol: SBP
+    name: ph072
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 4767
+    avg_time_ns: 4767000064.00
+    iterations_per_sec: 0.21
+  - label: physics_073
+    category: ph08
+    symbol: WD
+    name: ph073
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 5052
+    avg_time_ns: 5052000256.00
+    iterations_per_sec: 0.20
+  - label: chemistry_summary
+    category: chemistry
+    symbol: SUM
+    name: CH Summary
+    target: chemistry
+    module: summary
+    status: ok
+    elapsed_ms: 434536
+    avg_time_ns: 4099396096.00
+    iterations_per_sec: 0.00
+  - label: chemistry_001
+    category: ch01
+    symbol: EPV
+    name: ch001
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4944
+    avg_time_ns: 4944000000.00
+    iterations_per_sec: 0.20
+  - label: chemistry_002
+    category: ch01
+    symbol: HH
+    name: ch002
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4724
+    avg_time_ns: 4723999744.00
+    iterations_per_sec: 0.21
+  - label: chemistry_003
+    category: ch01
+    symbol: HHE
+    name: ch003
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4750
+    avg_time_ns: 4750000128.00
+    iterations_per_sec: 0.21
+  - label: chemistry_004
+    category: ch01
+    symbol: PSA
+    name: ch004
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4550
+    avg_time_ns: 4550000128.00
+    iterations_per_sec: 0.22
+  - label: chemistry_005
+    category: ch01
+    symbol: PSB
+    name: ch005
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 3788
+    avg_time_ns: 3788000000.00
+    iterations_per_sec: 0.26
+  - label: chemistry_006
+    category: ch01
+    symbol: PR
+    name: ch006
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4531
+    avg_time_ns: 4530999808.00
+    iterations_per_sec: 0.22
+  - label: chemistry_007
+    category: ch01
+    symbol: ATR
+    name: ch007
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 5269
+    avg_time_ns: 5269000192.00
+    iterations_per_sec: 0.19
+  - label: chemistry_008
+    category: ch01
+    symbol: BL
+    name: ch008
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 4819
+    avg_time_ns: 4818999808.00
+    iterations_per_sec: 0.21
+  - label: chemistry_009
+    category: ch01
+    symbol: Di
+    name: ch009
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 4219
+    avg_time_ns: 4219000064.00
+    iterations_per_sec: 0.24
+  - label: chemistry_010
+    category: ch01
+    symbol: PR
+    name: ch010
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 4532
+    avg_time_ns: 4531999744.00
+    iterations_per_sec: 0.22
+  - label: chemistry_011
+    category: ch02
+    symbol: RF
+    name: ch011
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 3814
+    avg_time_ns: 3814000128.00
+    iterations_per_sec: 0.26
+  - label: chemistry_012
+    category: ch02
+    symbol: STN
+    name: ch012
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 3835
+    avg_time_ns: 3835000064.00
+    iterations_per_sec: 0.26
+  - label: chemistry_013
+    category: ch02
+    symbol: BDC
+    name: ch013
+    target: chemistry
+    module: colloids
+    status: ok
+    elapsed_ms: 4950
+    avg_time_ns: 4950000128.00
+    iterations_per_sec: 0.20
+  - label: chemistry_014
+    category: ch02
+    symbol: SS
+    name: ch014
+    target: chemistry
+    module: colloids
+    status: ok
+    elapsed_ms: 4492
+    avg_time_ns: 4492000256.00
+    iterations_per_sec: 0.22
+  - label: chemistry_015
+    category: ch02
+    symbol: ZPS
+    name: ch015
+    target: chemistry
+    module: colloids
+    status: ok
+    elapsed_ms: 4752
+    avg_time_ns: 4752000000.00
+    iterations_per_sec: 0.21
+  - label: chemistry_016
+    category: ch02
+    symbol: DHE
+    name: ch016
+    target: chemistry
+    module: computational
+    status: ok
+    elapsed_ms: 5222
+    avg_time_ns: 5222000128.00
+    iterations_per_sec: 0.19
+  - label: chemistry_017
+    category: ch02
+    symbol: GP
+    name: ch017
+    target: chemistry
+    module: computational
+    status: ok
+    elapsed_ms: 4887
+    avg_time_ns: 4887000064.00
+    iterations_per_sec: 0.20
+  - label: chemistry_018
+    category: ch02
+    symbol: TFK
+    name: ch018
+    target: chemistry
+    module: computational
+    status: ok
+    elapsed_ms: 5350
+    avg_time_ns: 5350000128.00
+    iterations_per_sec: 0.19
+  - label: chemistry_019
+    category: ch02
+    symbol: BL
+    name: ch019
+    target: chemistry
+    module: crystallography
+    status: ok
+    elapsed_ms: 4416
+    avg_time_ns: 4416000000.00
+    iterations_per_sec: 0.23
+  - label: chemistry_020
+    category: ch02
+    symbol: ISC
+    name: ch020
+    target: chemistry
+    module: crystallography
+    status: ok
+    elapsed_ms: 5013
+    avg_time_ns: 5013000192.00
+    iterations_per_sec: 0.20
+  - label: chemistry_021
+    category: ch03
+    symbol: SCS
+    name: ch021
+    target: chemistry
+    module: crystallography
+    status: ok
+    elapsed_ms: 4747
+    avg_time_ns: 4746999808.00
+    iterations_per_sec: 0.21
+  - label: chemistry_022
+    category: ch03
+    symbol: ATE
+    name: ch022
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 3404
+    avg_time_ns: 3404000000.00
+    iterations_per_sec: 0.29
+  - label: chemistry_023
+    category: ch03
+    symbol: CP
+    name: ch023
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 4825
+    avg_time_ns: 4824999936.00
+    iterations_per_sec: 0.21
+  - label: chemistry_024
+    category: ch03
+    symbol: DMP
+    name: ch024
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 3974
+    avg_time_ns: 3974000128.00
+    iterations_per_sec: 0.25
+  - label: chemistry_025
+    category: ch03
+    symbol: DUF
+    name: ch025
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 4686
+    avg_time_ns: 4686000128.00
+    iterations_per_sec: 0.21
+  - label: chemistry_026
+    category: ch03
+    symbol: GKR
+    name: ch026
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 636
+    avg_time_ns: 636000000.00
+    iterations_per_sec: 1.57
+  - label: chemistry_027
+    category: ch03
+    symbol: HLF
+    name: ch027
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 5119
+    avg_time_ns: 5119000064.00
+    iterations_per_sec: 0.20
+  - label: chemistry_028
+    category: ch03
+    symbol: NP
+    name: ch028
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 3939
+    avg_time_ns: 3939000064.00
+    iterations_per_sec: 0.25
+  - label: chemistry_029
+    category: ch03
+    symbol: RCA
+    name: ch029
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 5241
+    avg_time_ns: 5240999936.00
+    iterations_per_sec: 0.19
+  - label: chemistry_030
+    category: ch03
+    symbol: BV
+    name: ch030
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 4484
+    avg_time_ns: 4483999744.00
+    iterations_per_sec: 0.22
+  - label: chemistry_031
+    category: ch04
+    symbol: CP
+    name: ch031
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 4704
+    avg_time_ns: 4704000000.00
+    iterations_per_sec: 0.21
+  - label: chemistry_032
+    category: ch04
+    symbol: FM
+    name: ch032
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 3897
+    avg_time_ns: 3896999936.00
+    iterations_per_sec: 0.26
+  - label: chemistry_033
+    category: ch04
+    symbol: NP
+    name: ch033
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 4503
+    avg_time_ns: 4503000064.00
+    iterations_per_sec: 0.22
+  - label: chemistry_034
+    category: ch04
+    symbol: BOD
+    name: ch034
+    target: chemistry
+    module: environmental
+    status: ok
+    elapsed_ms: 3310
+    avg_time_ns: 3310000128.00
+    iterations_per_sec: 0.30
+  - label: chemistry_035
+    category: ch04
+    symbol: DOS
+    name: ch035
+    target: chemistry
+    module: environmental
+    status: ok
+    elapsed_ms: 3432
+    avg_time_ns: 3432000000.00
+    iterations_per_sec: 0.29
+  - label: chemistry_036
+    category: ch04
+    symbol: HLS
+    name: ch036
+    target: chemistry
+    module: environmental
+    status: ok
+    elapsed_ms: 5112
+    avg_time_ns: 5112000000.00
+    iterations_per_sec: 0.20
+  - label: chemistry_037
+    category: ch04
+    symbol: ECF
+    name: ch037
+    target: chemistry
+    module: equilibrium
+    status: ok
+    elapsed_ms: 4563
+    avg_time_ns: 4562999808.00
+    iterations_per_sec: 0.22
+  - label: chemistry_038
+    category: ch04
+    symbol: RQ
+    name: ch038
+    target: chemistry
+    module: equilibrium
+    status: ok
+    elapsed_ms: 4401
+    avg_time_ns: 4400999936.00
+    iterations_per_sec: 0.23
+  - label: chemistry_039
+    category: ch04
+    symbol: VH
+    name: ch039
+    target: chemistry
+    module: equilibrium
+    status: ok
+    elapsed_ms: 4672
+    avg_time_ns: 4672000000.00
+    iterations_per_sec: 0.21
+  - label: chemistry_040
+    category: ch04
+    symbol: BL
+    name: ch040
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4014
+    avg_time_ns: 4014000128.00
+    iterations_per_sec: 0.25
+  - label: chemistry_041
+    category: ch05
+    symbol: BLP
+    name: ch041
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4048
+    avg_time_ns: 4048000000.00
+    iterations_per_sec: 0.25
+  - label: chemistry_042
+    category: ch05
+    symbol: CL
+    name: ch042
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4736
+    avg_time_ns: 4736000000.00
+    iterations_per_sec: 0.21
+  - label: chemistry_043
+    category: ch05
+    symbol: DPP
+    name: ch043
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 5050
+    avg_time_ns: 5049999872.00
+    iterations_per_sec: 0.20
+  - label: chemistry_044
+    category: ch05
+    symbol: GLE
+    name: ch044
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4805
+    avg_time_ns: 4805000192.00
+    iterations_per_sec: 0.21
+  - label: chemistry_045
+    category: ch05
+    symbol: IGI
+    name: ch045
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4514
+    avg_time_ns: 4513999872.00
+    iterations_per_sec: 0.22
+  - label: chemistry_046
+    category: ch05
+    symbol: IGP
+    name: ch046
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4941
+    avg_time_ns: 4941000192.00
+    iterations_per_sec: 0.20
+  - label: chemistry_047
+    category: ch05
+    symbol: VDW
+    name: ch047
+    target: chemistry
+    module: gas_laws
+    status: ok
+    elapsed_ms: 4412
+    avg_time_ns: 4412000256.00
+    iterations_per_sec: 0.23
+  - label: chemistry_048
+    category: ch05
+    symbol: EF
+    name: ch048
+    target: chemistry
+    module: green_chemistry
+    status: ok
+    elapsed_ms: 3132
+    avg_time_ns: 3132000000.00
+    iterations_per_sec: 0.32
+  - label: chemistry_049
+    category: ch05
+    symbol: GAE
+    name: ch049
+    target: chemistry
+    module: green_chemistry
+    status: ok
+    elapsed_ms: 4606
+    avg_time_ns: 4606000128.00
+    iterations_per_sec: 0.22
+  - label: chemistry_050
+    category: ch05
+    symbol: RME
+    name: ch050
+    target: chemistry
+    module: green_chemistry
+    status: ok
+    elapsed_ms: 4579
+    avg_time_ns: 4578999808.00
+    iterations_per_sec: 0.22
+  - label: chemistry_051
+    category: ch06
+    symbol: LEB
+    name: ch051
+    target: chemistry
+    module: inorganic
+    status: ok
+    elapsed_ms: 4726
+    avg_time_ns: 4726000128.00
+    iterations_per_sec: 0.21
+  - label: chemistry_052
+    category: ch06
+    symbol: MMS
+    name: ch052
+    target: chemistry
+    module: inorganic
+    status: ok
+    elapsed_ms: 3860
+    avg_time_ns: 3860000000.00
+    iterations_per_sec: 0.26
+  - label: chemistry_053
+    category: ch06
+    symbol: PED
+    name: ch053
+    target: chemistry
+    module: inorganic
+    status: ok
+    elapsed_ms: 4998
+    avg_time_ns: 4998000128.00
+    iterations_per_sec: 0.20
+  - label: chemistry_054
+    category: ch06
+    symbol: EE
+    name: ch054
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 4442
+    avg_time_ns: 4441999872.00
+    iterations_per_sec: 0.23
+  - label: chemistry_055
+    category: ch06
+    symbol: HLF
+    name: ch055
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 4760
+    avg_time_ns: 4760000000.00
+    iterations_per_sec: 0.21
+  - label: chemistry_056
+    category: ch06
+    symbol: MM
+    name: ch056
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 4904
+    avg_time_ns: 4904000000.00
+    iterations_per_sec: 0.20
+  - label: chemistry_057
+    category: ch06
+    symbol: RCA
+    name: ch057
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 686
+    avg_time_ns: 686000000.00
+    iterations_per_sec: 1.46
+  - label: chemistry_058
+    category: ch06
+    symbol: BO
+    name: ch058
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 4951
+    avg_time_ns: 4951000064.00
+    iterations_per_sec: 0.20
+  - label: chemistry_059
+    category: ch06
+    symbol: DM
+    name: ch059
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 4746
+    avg_time_ns: 4745999872.00
+    iterations_per_sec: 0.21
+  - label: chemistry_060
+    category: ch06
+    symbol: FC
+    name: ch060
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 4321
+    avg_time_ns: 4320999936.00
+    iterations_per_sec: 0.23
+  - label: chemistry_061
+    category: ch07
+    symbol: MM
+    name: ch061
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 413
+    avg_time_ns: 413000000.00
+    iterations_per_sec: 2.42
+  - label: chemistry_062
+    category: ch07
+    symbol: BEP
+    name: ch062
+    target: chemistry
+    module: nuclear
+    status: ok
+    elapsed_ms: 5310
+    avg_time_ns: 5310000128.00
+    iterations_per_sec: 0.19
+  - label: chemistry_063
+    category: ch07
+    symbol: HLT
+    name: ch063
+    target: chemistry
+    module: nuclear
+    status: ok
+    elapsed_ms: 374
+    avg_time_ns: 374000000.00
+    iterations_per_sec: 2.67
+  - label: chemistry_064
+    category: ch07
+    symbol: QV
+    name: ch064
+    target: chemistry
+    module: nuclear
+    status: ok
+    elapsed_ms: 5278
+    avg_time_ns: 5278000128.00
+    iterations_per_sec: 0.19
+  - label: chemistry_065
+    category: ch07
+    symbol: DOU
+    name: ch065
+    target: chemistry
+    module: organic
+    status: ok
+    elapsed_ms: 4833
+    avg_time_ns: 4832999936.00
+    iterations_per_sec: 0.21
+  - label: chemistry_066
+    category: ch07
+    symbol: HE
+    name: ch066
+    target: chemistry
+    module: organic
+    status: ok
+    elapsed_ms: 2142
+    avg_time_ns: 2142000000.00
+    iterations_per_sec: 0.47
+  - label: chemistry_067
+    category: ch07
+    symbol: PCL
+    name: ch067
+    target: chemistry
+    module: organic
+    status: ok
+    elapsed_ms: 5195
+    avg_time_ns: 5194999808.00
+    iterations_per_sec: 0.19
+  - label: chemistry_068
+    category: ch07
+    symbol: FE
+    name: ch068
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 5006
+    avg_time_ns: 5006000128.00
+    iterations_per_sec: 0.20
+  - label: chemistry_069
+    category: ch07
+    symbol: PE
+    name: ch069
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 5568
+    avg_time_ns: 5568000000.00
+    iterations_per_sec: 0.18
+  - label: chemistry_070
+    category: ch07
+    symbol: QY
+    name: ch070
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 4873
+    avg_time_ns: 4872999936.00
+    iterations_per_sec: 0.21
+  - label: chemistry_071
+    category: ch08
+    symbol: SV
+    name: ch071
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 1750
+    avg_time_ns: 1750000000.00
+    iterations_per_sec: 0.57
+  - label: chemistry_072
+    category: ch08
+    symbol: CE
+    name: ch072
+    target: chemistry
+    module: polymers
+    status: ok
+    elapsed_ms: 4462
+    avg_time_ns: 4462000128.00
+    iterations_per_sec: 0.22
+  - label: chemistry_073
+    category: ch08
+    symbol: FHF
+    name: ch073
+    target: chemistry
+    module: polymers
+    status: ok
+    elapsed_ms: 4995
+    avg_time_ns: 4994999808.00
+    iterations_per_sec: 0.20
+  - label: chemistry_074
+    category: ch08
+    symbol: PI
+    name: ch074
+    target: chemistry
+    module: polymers
+    status: ok
+    elapsed_ms: 4924
+    avg_time_ns: 4924000256.00
+    iterations_per_sec: 0.20
+  - label: chemistry_075
+    category: ch08
+    symbol: HTP
+    name: ch075
+    target: chemistry
+    module: quantum_chem
+    status: ok
+    elapsed_ms: 3019
+    avg_time_ns: 3019000064.00
+    iterations_per_sec: 0.33
+  - label: chemistry_076
+    category: ch08
+    symbol: LBE
+    name: ch076
+    target: chemistry
+    module: quantum_chem
+    status: ok
+    elapsed_ms: 5091
+    avg_time_ns: 5090999808.00
+    iterations_per_sec: 0.20
+  - label: chemistry_077
+    category: ch08
+    symbol: MP
+    name: ch077
+    target: chemistry
+    module: quantum_chem
+    status: ok
+    elapsed_ms: 2709
+    avg_time_ns: 2708999936.00
+    iterations_per_sec: 0.37
+  - label: chemistry_078
+    category: ch08
+    symbol: CV
+    name: ch078
+    target: chemistry
+    module: reaction_engineering
+    status: ok
+    elapsed_ms: 4882
+    avg_time_ns: 4881999872.00
+    iterations_per_sec: 0.20
+  - label: chemistry_079
+    category: ch08
+    symbol: DN
+    name: ch079
+    target: chemistry
+    module: reaction_engineering
+    status: ok
+    elapsed_ms: 1696
+    avg_time_ns: 1696000000.00
+    iterations_per_sec: 0.59
+  - label: chemistry_080
+    category: ch08
+    symbol: PCF
+    name: ch080
+    target: chemistry
+    module: reaction_engineering
+    status: ok
+    elapsed_ms: 4765
+    avg_time_ns: 4765000192.00
+    iterations_per_sec: 0.21
+  - label: chemistry_081
+    category: ch09
+    symbol: BGF
+    name: ch081
+    target: chemistry
+    module: solid_state
+    status: ok
+    elapsed_ms: 5594
+    avg_time_ns: 5593999872.00
+    iterations_per_sec: 0.18
+  - label: chemistry_082
+    category: ch09
+    symbol: CS
+    name: ch082
+    target: chemistry
+    module: solid_state
+    status: ok
+    elapsed_ms: 1607
+    avg_time_ns: 1607000064.00
+    iterations_per_sec: 0.62
+  - label: chemistry_083
+    category: ch09
+    symbol: FD
+    name: ch083
+    target: chemistry
+    module: solid_state
+    status: ok
+    elapsed_ms: 4876
+    avg_time_ns: 4876000256.00
+    iterations_per_sec: 0.21
+  - label: chemistry_084
+    category: ch09
+    symbol: BPE
+    name: ch084
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 4915
+    avg_time_ns: 4914999808.00
+    iterations_per_sec: 0.20
+  - label: chemistry_085
+    category: ch09
+    symbol: FPD
+    name: ch085
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 5328
+    avg_time_ns: 5328000000.00
+    iterations_per_sec: 0.19
+  - label: chemistry_086
+    category: ch09
+    symbol: OP
+    name: ch086
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 5206
+    avg_time_ns: 5206000128.00
+    iterations_per_sec: 0.19
+  - label: chemistry_087
+    category: ch09
+    symbol: RL
+    name: ch087
+    target: chemistry
+    module: solutions
+    status: ok
+    elapsed_ms: 5051
+    avg_time_ns: 5050999808.00
+    iterations_per_sec: 0.20
+  - label: chemistry_088
+    category: ch09
+    symbol: CSP
+    name: ch088
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 791
+    avg_time_ns: 791000000.00
+    iterations_per_sec: 1.26
+  - label: chemistry_089
+    category: ch09
+    symbol: LF
+    name: ch089
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 4923
+    avg_time_ns: 4922999808.00
+    iterations_per_sec: 0.20
+  - label: chemistry_090
+    category: ch09
+    symbol: RM
+    name: ch090
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 4966
+    avg_time_ns: 4966000128.00
+    iterations_per_sec: 0.20
+  - label: chemistry_091
+    category: ch10
+    symbol: WTW
+    name: ch091
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 484
+    avg_time_ns: 484000000.00
+    iterations_per_sec: 2.07
+  - label: chemistry_092
+    category: ch10
+    symbol: AE
+    name: ch092
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 2979
+    avg_time_ns: 2979000064.00
+    iterations_per_sec: 0.34
+  - label: chemistry_093
+    category: ch10
+    symbol: LR
+    name: ch093
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 1758
+    avg_time_ns: 1758000000.00
+    iterations_per_sec: 0.57
+  - label: chemistry_094
+    category: ch10
+    symbol: PY
+    name: ch094
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 5013
+    avg_time_ns: 5013000192.00
+    iterations_per_sec: 0.20
+  - label: chemistry_095
+    category: ch10
+    symbol: TY
+    name: ch095
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 912
+    avg_time_ns: 912000000.00
+    iterations_per_sec: 1.10
+  - label: chemistry_096
+    category: ch10
+    symbol: CA
+    name: ch096
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 4819
+    avg_time_ns: 4818999808.00
+    iterations_per_sec: 0.21
+  - label: chemistry_097
+    category: ch10
+    symbol: FI
+    name: ch097
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 3041
+    avg_time_ns: 3040999936.00
+    iterations_per_sec: 0.33
+  - label: chemistry_098
+    category: ch10
+    symbol: LI
+    name: ch098
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 5155
+    avg_time_ns: 5154999808.00
+    iterations_per_sec: 0.19
+  - label: chemistry_099
+    category: ch10
+    symbol: LP
+    name: ch099
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 2615
+    avg_time_ns: 2615000064.00
+    iterations_per_sec: 0.38
+  - label: chemistry_100
+    category: ch10
+    symbol: CC
+    name: ch100
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 4890
+    avg_time_ns: 4889999872.00
+    iterations_per_sec: 0.20
+  - label: chemistry_101
+    category: ch11
+    symbol: EC
+    name: ch101
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 356
+    avg_time_ns: 356000000.00
+    iterations_per_sec: 2.81
+  - label: chemistry_102
+    category: ch11
+    symbol: GFE
+    name: ch102
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 5100
+    avg_time_ns: 5100000256.00
+    iterations_per_sec: 0.20
+  - label: chemistry_103
+    category: ch11
+    symbol: HL
+    name: ch103
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 4649
+    avg_time_ns: 4648999936.00
+    iterations_per_sec: 0.22
+  - label: chemistry_104
+    category: ch11
+    symbol: DCS
+    name: ch104
+    target: chemistry
+    module: transport
+    status: ok
+    elapsed_ms: 5579
+    avg_time_ns: 5578999808.00
+    iterations_per_sec: 0.18
+  - label: chemistry_105
+    category: ch11
+    symbol: FFL
+    name: ch105
+    target: chemistry
+    module: transport
+    status: ok
+    elapsed_ms: 1778
+    avg_time_ns: 1778000000.00
+    iterations_per_sec: 0.56
+  - label: chemistry_106
+    category: ch11
+    symbol: SN
+    name: ch106
+    target: chemistry
+    module: transport
+    status: ok
+    elapsed_ms: 1129
+    avg_time_ns: 1128999936.00
+    iterations_per_sec: 0.89
+  - label: biology_summary
+    category: biology
+    symbol: SUM
+    name: BI Summary
+    target: biology
+    module: summary
+    status: ok
+    elapsed_ms: 620109
+    avg_time_ns: 3388573696.00
+    iterations_per_sec: 0.00
+  - label: biology_001
+    category: bi01
+    symbol: CRL
+    name: bi001
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 5571
+    avg_time_ns: 5570999808.00
+    iterations_per_sec: 0.18
+  - label: biology_002
+    category: bi01
+    symbol: GMR
+    name: bi002
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 4923
+    avg_time_ns: 4922999808.00
+    iterations_per_sec: 0.20
+  - label: biology_003
+    category: bi01
+    symbol: MD
+    name: bi003
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 2500
+    avg_time_ns: 2500000000.00
+    iterations_per_sec: 0.40
+  - label: biology_004
+    category: bi01
+    symbol: RSS
+    name: bi004
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 1770
+    avg_time_ns: 1770000000.00
+    iterations_per_sec: 0.56
+  - label: biology_005
+    category: bi01
+    symbol: TS
+    name: bi005
+    target: biology
+    module: aging
+    status: ok
+    elapsed_ms: 2499
+    avg_time_ns: 2499000064.00
+    iterations_per_sec: 0.40
+  - label: biology_006
+    category: bi01
+    symbol: CES
+    name: bi006
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4498
+    avg_time_ns: 4497999872.00
+    iterations_per_sec: 0.22
+  - label: biology_007
+    category: bi01
+    symbol: EL
+    name: bi007
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4814
+    avg_time_ns: 4814000128.00
+    iterations_per_sec: 0.21
+  - label: biology_008
+    category: bi01
+    symbol: IT
+    name: bi008
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4379
+    avg_time_ns: 4378999808.00
+    iterations_per_sec: 0.23
+  - label: biology_009
+    category: bi01
+    symbol: SDW
+    name: bi009
+    target: biology
+    module: bioelectricity
+    status: ok
+    elapsed_ms: 4795
+    avg_time_ns: 4794999808.00
+    iterations_per_sec: 0.21
+  - label: biology_010
+    category: bi01
+    symbol: AEC
+    name: bi010
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 4762
+    avg_time_ns: 4761999872.00
+    iterations_per_sec: 0.21
+  - label: biology_011
+    category: bi02
+    symbol: GNA
+    name: bi011
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 1768
+    avg_time_ns: 1768000000.00
+    iterations_per_sec: 0.57
+  - label: biology_012
+    category: bi02
+    symbol: POR
+    name: bi012
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 4948
+    avg_time_ns: 4947999744.00
+    iterations_per_sec: 0.20
+  - label: biology_013
+    category: bi02
+    symbol: RCI
+    name: bi013
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 2498
+    avg_time_ns: 2497999872.00
+    iterations_per_sec: 0.40
+  - label: biology_014
+    category: bi02
+    symbol: LDG
+    name: bi014
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 386
+    avg_time_ns: 386000000.00
+    iterations_per_sec: 2.59
+  - label: biology_015
+    category: bi02
+    symbol: RSV
+    name: bi015
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 2227
+    avg_time_ns: 2227000064.00
+    iterations_per_sec: 0.45
+  - label: biology_016
+    category: bi02
+    symbol: RSL
+    name: bi016
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 5179
+    avg_time_ns: 5178999808.00
+    iterations_per_sec: 0.19
+  - label: biology_017
+    category: bi02
+    symbol: WLE
+    name: bi017
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 1651
+    avg_time_ns: 1651000064.00
+    iterations_per_sec: 0.61
+  - label: biology_018
+    category: bi02
+    symbol: AGC
+    name: bi018
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 5074
+    avg_time_ns: 5073999872.00
+    iterations_per_sec: 0.20
+  - label: biology_019
+    category: bi02
+    symbol: EDI
+    name: bi019
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 4985
+    avg_time_ns: 4984999936.00
+    iterations_per_sec: 0.20
+  - label: biology_020
+    category: bi02
+    symbol: SI
+    name: bi020
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 2731
+    avg_time_ns: 2731000064.00
+    iterations_per_sec: 0.37
+  - label: biology_021
+    category: bi03
+    symbol: SWS
+    name: bi021
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 1539
+    avg_time_ns: 1539000064.00
+    iterations_per_sec: 0.65
+  - label: biology_022
+    category: bi03
+    symbol: BCO
+    name: bi022
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 2129
+    avg_time_ns: 2128999936.00
+    iterations_per_sec: 0.47
+  - label: biology_023
+    category: bi03
+    symbol: GSL
+    name: bi023
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 5301
+    avg_time_ns: 5301000192.00
+    iterations_per_sec: 0.19
+  - label: biology_024
+    category: bi03
+    symbol: GRF
+    name: bi024
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 5093
+    avg_time_ns: 5093000192.00
+    iterations_per_sec: 0.20
+  - label: biology_025
+    category: bi03
+    symbol: JM
+    name: bi025
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 5172
+    avg_time_ns: 5171999744.00
+    iterations_per_sec: 0.19
+  - label: biology_026
+    category: bi03
+    symbol: FE
+    name: bi026
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 5193
+    avg_time_ns: 5192999936.00
+    iterations_per_sec: 0.19
+  - label: biology_027
+    category: bi03
+    symbol: HB
+    name: bi027
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 2258
+    avg_time_ns: 2257999872.00
+    iterations_per_sec: 0.44
+  - label: biology_028
+    category: bi03
+    symbol: LJ
+    name: bi028
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 5096
+    avg_time_ns: 5096000000.00
+    iterations_per_sec: 0.20
+  - label: biology_029
+    category: bi03
+    symbol: MT
+    name: bi029
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 5495
+    avg_time_ns: 5495000064.00
+    iterations_per_sec: 0.18
+  - label: biology_030
+    category: bi03
+    symbol: FS
+    name: bi030
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 555
+    avg_time_ns: 555000000.00
+    iterations_per_sec: 1.80
+  - label: biology_031
+    category: bi04
+    symbol: NNT
+    name: bi031
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 5535
+    avg_time_ns: 5535000064.00
+    iterations_per_sec: 0.18
+  - label: biology_032
+    category: bi04
+    symbol: OR
+    name: bi032
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 2564
+    avg_time_ns: 2564000000.00
+    iterations_per_sec: 0.39
+  - label: biology_033
+    category: bi04
+    symbol: Se
+    name: bi033
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 4978
+    avg_time_ns: 4977999872.00
+    iterations_per_sec: 0.20
+  - label: biology_034
+    category: bi04
+    symbol: Sp
+    name: bi034
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 4875
+    avg_time_ns: 4874999808.00
+    iterations_per_sec: 0.21
+  - label: biology_035
+    category: bi04
+    symbol: CLQ
+    name: bi035
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 4885
+    avg_time_ns: 4885000192.00
+    iterations_per_sec: 0.20
+  - label: biology_036
+    category: bi04
+    symbol: CKL
+    name: bi036
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 5409
+    avg_time_ns: 5408999936.00
+    iterations_per_sec: 0.18
+  - label: biology_037
+    category: bi04
+    symbol: TDT
+    name: bi037
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 2678
+    avg_time_ns: 2678000128.00
+    iterations_per_sec: 0.37
+  - label: biology_038
+    category: bi04
+    symbol: TGE
+    name: bi038
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 2430
+    avg_time_ns: 2430000128.00
+    iterations_per_sec: 0.41
+  - label: biology_039
+    category: bi04
+    symbol: CDT
+    name: bi039
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 2958
+    avg_time_ns: 2958000128.00
+    iterations_per_sec: 0.34
+  - label: biology_040
+    category: bi04
+    symbol: FFL
+    name: bi040
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 3040
+    avg_time_ns: 3040000000.00
+    iterations_per_sec: 0.33
+  - label: biology_041
+    category: bi05
+    symbol: LRB
+    name: bi041
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 2973
+    avg_time_ns: 2972999936.00
+    iterations_per_sec: 0.34
+  - label: biology_042
+    category: bi05
+    symbol: OP
+    name: bi042
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 2209
+    avg_time_ns: 2208999936.00
+    iterations_per_sec: 0.45
+  - label: biology_043
+    category: bi05
+    symbol: CAD
+    name: bi043
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 4794
+    avg_time_ns: 4793999872.00
+    iterations_per_sec: 0.21
+  - label: biology_044
+    category: bi05
+    symbol: JLR
+    name: bi044
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 2403
+    avg_time_ns: 2403000064.00
+    iterations_per_sec: 0.42
+  - label: biology_045
+    category: bi05
+    symbol: Ph
+    name: bi045
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 4970
+    avg_time_ns: 4969999872.00
+    iterations_per_sec: 0.20
+  - label: biology_046
+    category: bi05
+    symbol: ZS
+    name: bi046
+    target: biology
+    module: chronobiology
+    status: ok
+    elapsed_ms: 2278
+    avg_time_ns: 2278000128.00
+    iterations_per_sec: 0.44
+  - label: biology_047
+    category: bi05
+    symbol: CCR
+    name: bi047
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 4807
+    avg_time_ns: 4807000064.00
+    iterations_per_sec: 0.21
+  - label: biology_048
+    category: bi05
+    symbol: FPD
+    name: bi048
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 2437
+    avg_time_ns: 2436999936.00
+    iterations_per_sec: 0.41
+  - label: biology_049
+    category: bi05
+    symbol: SDA
+    name: bi049
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 2247
+    avg_time_ns: 2247000064.00
+    iterations_per_sec: 0.45
+  - label: biology_050
+    category: bi05
+    symbol: VP
+    name: bi050
+    target: biology
+    module: cryobiology
+    status: ok
+    elapsed_ms: 504
+    avg_time_ns: 504000000.00
+    iterations_per_sec: 1.98
+  - label: biology_051
+    category: bi06
+    symbol: FFM
+    name: bi051
+    target: biology
+    module: developmental
+    status: ok
+    elapsed_ms: 5835
+    avg_time_ns: 5834999808.00
+    iterations_per_sec: 0.17
+  - label: biology_052
+    category: bi06
+    symbol: LI
+    name: bi052
+    target: biology
+    module: developmental
+    status: ok
+    elapsed_ms: 5223
+    avg_time_ns: 5223000064.00
+    iterations_per_sec: 0.19
+  - label: biology_053
+    category: bi06
+    symbol: MGS
+    name: bi053
+    target: biology
+    module: developmental
+    status: ok
+    elapsed_ms: 5452
+    avg_time_ns: 5452000256.00
+    iterations_per_sec: 0.18
+  - label: biology_054
+    category: bi06
+    symbol: CF
+    name: bi054
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 538
+    avg_time_ns: 538000000.00
+    iterations_per_sec: 1.86
+  - label: biology_055
+    category: bi06
+    symbol: DMP
+    name: bi055
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 4215
+    avg_time_ns: 4215000064.00
+    iterations_per_sec: 0.24
+  - label: biology_056
+    category: bi06
+    symbol: DUF
+    name: bi056
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 2505
+    avg_time_ns: 2504999936.00
+    iterations_per_sec: 0.40
+  - label: biology_057
+    category: bi06
+    symbol: GMR
+    name: bi057
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 2927
+    avg_time_ns: 2927000064.00
+    iterations_per_sec: 0.34
+  - label: biology_058
+    category: bi06
+    symbol: MRK
+    name: bi058
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 2379
+    avg_time_ns: 2379000064.00
+    iterations_per_sec: 0.42
+  - label: biology_059
+    category: bi06
+    symbol: SR
+    name: bi059
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 5339
+    avg_time_ns: 5338999808.00
+    iterations_per_sec: 0.19
+  - label: biology_060
+    category: bi06
+    symbol: TS
+    name: bi060
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 5381
+    avg_time_ns: 5381000192.00
+    iterations_per_sec: 0.19
+  - label: biology_061
+    category: bi07
+    symbol: IS
+    name: bi061
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 2401
+    avg_time_ns: 2400999936.00
+    iterations_per_sec: 0.42
+  - label: biology_062
+    category: bi07
+    symbol: SD
+    name: bi062
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 1520
+    avg_time_ns: 1520000000.00
+    iterations_per_sec: 0.66
+  - label: biology_063
+    category: bi07
+    symbol: SD
+    name: bi063
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 5135
+    avg_time_ns: 5135000064.00
+    iterations_per_sec: 0.19
+  - label: biology_064
+    category: bi07
+    symbol: SR
+    name: bi064
+    target: biology
+    module: ecology
+    status: ok
+    elapsed_ms: 1594
+    avg_time_ns: 1594000000.00
+    iterations_per_sec: 0.63
+  - label: biology_065
+    category: bi07
+    symbol: HI
+    name: bi065
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 5352
+    avg_time_ns: 5352000000.00
+    iterations_per_sec: 0.19
+  - label: biology_066
+    category: bi07
+    symbol: HHL
+    name: bi066
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 1492
+    avg_time_ns: 1492000000.00
+    iterations_per_sec: 0.67
+  - label: biology_067
+    category: bi07
+    symbol: ISI
+    name: bi067
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 2876
+    avg_time_ns: 2876000000.00
+    iterations_per_sec: 0.35
+  - label: biology_068
+    category: bi07
+    symbol: RS
+    name: bi068
+    target: biology
+    module: endocrinology
+    status: ok
+    elapsed_ms: 2910
+    avg_time_ns: 2910000128.00
+    iterations_per_sec: 0.34
+  - label: biology_069
+    category: bi07
+    symbol: CII
+    name: bi069
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 2582
+    avg_time_ns: 2582000128.00
+    iterations_per_sec: 0.39
+  - label: biology_070
+    category: bi07
+    symbol: HE
+    name: bi070
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 2387
+    avg_time_ns: 2387000064.00
+    iterations_per_sec: 0.42
+  - label: biology_071
+    category: bi08
+    symbol: HHC
+    name: bi071
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 1614
+    avg_time_ns: 1614000000.00
+    iterations_per_sec: 0.62
+  - label: biology_072
+    category: bi08
+    symbol: LB
+    name: bi072
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 5216
+    avg_time_ns: 5216000000.00
+    iterations_per_sec: 0.19
+  - label: biology_073
+    category: bi08
+    symbol: MMH
+    name: bi073
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 2478
+    avg_time_ns: 2478000128.00
+    iterations_per_sec: 0.40
+  - label: biology_074
+    category: bi08
+    symbol: MMM
+    name: bi074
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 1453
+    avg_time_ns: 1452999936.00
+    iterations_per_sec: 0.69
+  - label: biology_075
+    category: bi08
+    symbol: MMS
+    name: bi075
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 2555
+    avg_time_ns: 2555000064.00
+    iterations_per_sec: 0.39
+  - label: biology_076
+    category: bi08
+    symbol: CML
+    name: bi076
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 5128
+    avg_time_ns: 5128000000.00
+    iterations_per_sec: 0.20
+  - label: biology_077
+    category: bi08
+    symbol: EIP
+    name: bi077
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 4955
+    avg_time_ns: 4954999808.00
+    iterations_per_sec: 0.20
+  - label: biology_078
+    category: bi08
+    symbol: NO
+    name: bi078
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 5209
+    avg_time_ns: 5208999936.00
+    iterations_per_sec: 0.19
+  - label: biology_079
+    category: bi08
+    symbol: RKE
+    name: bi079
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 2860
+    avg_time_ns: 2860000000.00
+    iterations_per_sec: 0.35
+  - label: biology_080
+    category: bi08
+    symbol: HRB
+    name: bi080
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 5271
+    avg_time_ns: 5271000064.00
+    iterations_per_sec: 0.19
+  - label: biology_081
+    category: bi09
+    symbol: HDP
+    name: bi081
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 1058
+    avg_time_ns: 1058000000.00
+    iterations_per_sec: 0.95
+  - label: biology_082
+    category: bi09
+    symbol: IFD
+    name: bi082
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 5046
+    avg_time_ns: 5046000128.00
+    iterations_per_sec: 0.20
+  - label: biology_083
+    category: bi09
+    symbol: TS
+    name: bi083
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 2181
+    avg_time_ns: 2180999936.00
+    iterations_per_sec: 0.46
+  - label: biology_084
+    category: bi09
+    symbol: AR
+    name: bi084
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 1519
+    avg_time_ns: 1519000064.00
+    iterations_per_sec: 0.66
+  - label: biology_085
+    category: bi09
+    symbol: FPN
+    name: bi085
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 2419
+    avg_time_ns: 2419000064.00
+    iterations_per_sec: 0.41
+  - label: biology_086
+    category: bi09
+    symbol: SRB
+    name: bi086
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 689
+    avg_time_ns: 689000000.00
+    iterations_per_sec: 1.45
+  - label: biology_087
+    category: bi09
+    symbol: SR
+    name: bi087
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 473
+    avg_time_ns: 473000000.00
+    iterations_per_sec: 2.11
+  - label: biology_088
+    category: bi09
+    symbol: BSH
+    name: bi088
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 2655
+    avg_time_ns: 2655000064.00
+    iterations_per_sec: 0.38
+  - label: biology_089
+    category: bi09
+    symbol: EPS
+    name: bi089
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 2144
+    avg_time_ns: 2144000000.00
+    iterations_per_sec: 0.47
+  - label: biology_090
+    category: bi09
+    symbol: HW
+    name: bi090
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 532
+    avg_time_ns: 532000000.00
+    iterations_per_sec: 1.88
+  - label: biology_091
+    category: bi10
+    symbol: MSB
+    name: bi091
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 5070
+    avg_time_ns: 5070000128.00
+    iterations_per_sec: 0.20
+  - label: biology_092
+    category: bi10
+    symbol: CAI
+    name: bi092
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 245
+    avg_time_ns: 245000000.00
+    iterations_per_sec: 4.08
+  - label: biology_093
+    category: bi10
+    symbol: GC
+    name: bi093
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 2482
+    avg_time_ns: 2481999872.00
+    iterations_per_sec: 0.40
+  - label: biology_094
+    category: bi10
+    symbol: GD
+    name: bi094
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 2078
+    avg_time_ns: 2078000000.00
+    iterations_per_sec: 0.48
+  - label: biology_095
+    category: bi10
+    symbol: SAF
+    name: bi095
+    target: biology
+    module: genomics
+    status: ok
+    elapsed_ms: 5270
+    avg_time_ns: 5270000128.00
+    iterations_per_sec: 0.19
+  - label: biology_096
+    category: bi10
+    symbol: AT
+    name: bi096
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 5253
+    avg_time_ns: 5253000192.00
+    iterations_per_sec: 0.19
+  - label: biology_097
+    category: bi10
+    symbol: CE
+    name: bi097
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 5087
+    avg_time_ns: 5087000064.00
+    iterations_per_sec: 0.20
+  - label: biology_098
+    category: bi10
+    symbol: HIF
+    name: bi098
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 1547
+    avg_time_ns: 1547000064.00
+    iterations_per_sec: 0.65
+  - label: biology_099
+    category: bi10
+    symbol: VE
+    name: bi099
+    target: biology
+    module: immunology
+    status: ok
+    elapsed_ms: 3230
+    avg_time_ns: 3230000128.00
+    iterations_per_sec: 0.31
+  - label: biology_100
+    category: bi10
+    symbol: BTT
+    name: bi100
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 1911
+    avg_time_ns: 1911000064.00
+    iterations_per_sec: 0.52
+  - label: biology_101
+    category: bi11
+    symbol: FGV
+    name: bi101
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 2249
+    avg_time_ns: 2248999936.00
+    iterations_per_sec: 0.44
+  - label: biology_102
+    category: bi11
+    symbol: MSY
+    name: bi102
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 5415
+    avg_time_ns: 5415000064.00
+    iterations_per_sec: 0.18
+  - label: biology_103
+    category: bi11
+    symbol: OAP
+    name: bi103
+    target: biology
+    module: marine_biology
+    status: ok
+    elapsed_ms: 2453
+    avg_time_ns: 2452999936.00
+    iterations_per_sec: 0.41
+  - label: biology_104
+    category: bi11
+    symbol: BF
+    name: bi104
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 3222
+    avg_time_ns: 3222000128.00
+    iterations_per_sec: 0.31
+  - label: biology_105
+    category: bi11
+    symbol: CSS
+    name: bi105
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 392
+    avg_time_ns: 392000000.00
+    iterations_per_sec: 2.55
+  - label: biology_106
+    category: bi11
+    symbol: GTB
+    name: bi106
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 1480
+    avg_time_ns: 1480000000.00
+    iterations_per_sec: 0.68
+  - label: biology_107
+    category: bi11
+    symbol: MG
+    name: bi107
+    target: biology
+    module: microbiology
+    status: ok
+    elapsed_ms: 4932
+    avg_time_ns: 4931999744.00
+    iterations_per_sec: 0.20
+  - label: biology_108
+    category: bi11
+    symbol: CUE
+    name: bi108
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 5032
+    avg_time_ns: 5032000000.00
+    iterations_per_sec: 0.20
+  - label: biology_109
+    category: bi11
+    symbol: DR
+    name: bi109
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 5577
+    avg_time_ns: 5576999936.00
+    iterations_per_sec: 0.18
+  - label: biology_110
+    category: bi11
+    symbol: HGR
+    name: bi110
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 3245
+    avg_time_ns: 3244999936.00
+    iterations_per_sec: 0.31
+  - label: biology_111
+    category: bi12
+    symbol: SGP
+    name: bi111
+    target: biology
+    module: mycology
+    status: ok
+    elapsed_ms: 2064
+    avg_time_ns: 2064000000.00
+    iterations_per_sec: 0.48
+  - label: biology_112
+    category: bi12
+    symbol: FF
+    name: bi112
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 2851
+    avg_time_ns: 2851000064.00
+    iterations_per_sec: 0.35
+  - label: biology_113
+    category: bi12
+    symbol: FR
+    name: bi113
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 5223
+    avg_time_ns: 5223000064.00
+    iterations_per_sec: 0.19
+  - label: biology_114
+    category: bi12
+    symbol: RWU
+    name: bi114
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 4965
+    avg_time_ns: 4965000192.00
+    iterations_per_sec: 0.20
+  - label: biology_115
+    category: bi12
+    symbol: SWC
+    name: bi115
+    target: biology
+    module: neuroscience
+    status: ok
+    elapsed_ms: 1565
+    avg_time_ns: 1564999936.00
+    iterations_per_sec: 0.64
+  - label: biology_116
+    category: bi12
+    symbol: BMR
+    name: bi116
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 4937
+    avg_time_ns: 4936999936.00
+    iterations_per_sec: 0.20
+  - label: biology_117
+    category: bi12
+    symbol: BMI
+    name: bi117
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 5329
+    avg_time_ns: 5328999936.00
+    iterations_per_sec: 0.19
+  - label: biology_118
+    category: bi12
+    symbol: NB
+    name: bi118
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 5159
+    avg_time_ns: 5159000064.00
+    iterations_per_sec: 0.19
+  - label: biology_119
+    category: bi12
+    symbol: RER
+    name: bi119
+    target: biology
+    module: nutrition
+    status: ok
+    elapsed_ms: 2047
+    avg_time_ns: 2047000064.00
+    iterations_per_sec: 0.49
+  - label: biology_120
+    category: bi12
+    symbol: ERD
+    name: bi120
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 4883
+    avg_time_ns: 4882999808.00
+    iterations_per_sec: 0.20
+  - label: biology_121
+    category: bi13
+    symbol: ER
+    name: bi121
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 4998
+    avg_time_ns: 4998000128.00
+    iterations_per_sec: 0.20
+  - label: biology_122
+    category: bi13
+    symbol: NDR
+    name: bi122
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 5073
+    avg_time_ns: 5072999936.00
+    iterations_per_sec: 0.20
+  - label: biology_123
+    category: bi13
+    symbol: RA
+    name: bi123
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 1498
+    avg_time_ns: 1498000000.00
+    iterations_per_sec: 0.67
+  - label: biology_124
+    category: bi13
+    symbol: FOI
+    name: bi124
+    target: biology
+    module: parasitology
+    status: ok
+    elapsed_ms: 2504
+    avg_time_ns: 2504000000.00
+    iterations_per_sec: 0.40
+  - label: biology_125
+    category: bi13
+    symbol: PR
+    name: bi125
+    target: biology
+    module: parasitology
+    status: ok
+    elapsed_ms: 748
+    avg_time_ns: 748000000.00
+    iterations_per_sec: 1.34
+  - label: biology_126
+    category: bi13
+    symbol: VBR
+    name: bi126
+    target: biology
+    module: parasitology
+    status: ok
+    elapsed_ms: 1472
+    avg_time_ns: 1472000000.00
+    iterations_per_sec: 0.68
+  - label: biology_127
+    category: bi13
+    symbol: Bi
+    name: bi127
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 2722
+    avg_time_ns: 2721999872.00
+    iterations_per_sec: 0.37
+  - label: biology_128
+    category: bi13
+    symbol: DRH
+    name: bi128
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 2203
+    avg_time_ns: 2203000064.00
+    iterations_per_sec: 0.45
+  - label: biology_129
+    category: bi13
+    symbol: HL
+    name: bi129
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 2935
+    avg_time_ns: 2935000064.00
+    iterations_per_sec: 0.34
+  - label: biology_130
+    category: bi13
+    symbol: TI
+    name: bi130
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 4971
+    avg_time_ns: 4970999808.00
+    iterations_per_sec: 0.20
+  - label: biology_131
+    category: bi14
+    symbol: JCD
+    name: bi131
+    target: biology
+    module: phylogenetics
+    status: ok
+    elapsed_ms: 2407
+    avg_time_ns: 2407000064.00
+    iterations_per_sec: 0.42
+  - label: biology_132
+    category: bi14
+    symbol: PS
+    name: bi132
+    target: biology
+    module: phylogenetics
+    status: ok
+    elapsed_ms: 5186
+    avg_time_ns: 5185999872.00
+    iterations_per_sec: 0.19
+  - label: biology_133
+    category: bi14
+    symbol: SI
+    name: bi133
+    target: biology
+    module: phylogenetics
+    status: ok
+    elapsed_ms: 5195
+    avg_time_ns: 5194999808.00
+    iterations_per_sec: 0.19
+  - label: biology_134
+    category: bi14
+    symbol: AGE
+    name: bi134
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 398
+    avg_time_ns: 398000000.00
+    iterations_per_sec: 2.51
+  - label: biology_135
+    category: bi14
+    symbol: FSM
+    name: bi135
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 2486
+    avg_time_ns: 2486000128.00
+    iterations_per_sec: 0.40
+  - label: biology_136
+    category: bi14
+    symbol: GFR
+    name: bi136
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 4897
+    avg_time_ns: 4896999936.00
+    iterations_per_sec: 0.20
+  - label: biology_137
+    category: bi14
+    symbol: OD
+    name: bi137
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 5203
+    avg_time_ns: 5202999808.00
+    iterations_per_sec: 0.19
+  - label: biology_138
+    category: bi14
+    symbol: BLC
+    name: bi138
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 1601
+    avg_time_ns: 1600999936.00
+    iterations_per_sec: 0.62
+  - label: biology_139
+    category: bi14
+    symbol: PLR
+    name: bi139
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 2104
+    avg_time_ns: 2104000000.00
+    iterations_per_sec: 0.48
+  - label: biology_140
+    category: bi14
+    symbol: TR
+    name: bi140
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 5056
+    avg_time_ns: 5056000000.00
+    iterations_per_sec: 0.20
+  - label: biology_141
+    category: bi15
+    symbol: WP
+    name: bi141
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 4865
+    avg_time_ns: 4864999936.00
+    iterations_per_sec: 0.21
+  - label: biology_142
+    category: bi15
+    symbol: CCF
+    name: bi142
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 5102
+    avg_time_ns: 5102000128.00
+    iterations_per_sec: 0.20
+  - label: biology_143
+    category: bi15
+    symbol: CGL
+    name: bi143
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 2109
+    avg_time_ns: 2108999936.00
+    iterations_per_sec: 0.47
+  - label: biology_144
+    category: bi15
+    symbol: LVC
+    name: bi144
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 4910
+    avg_time_ns: 4910000128.00
+    iterations_per_sec: 0.20
+  - label: biology_145
+    category: bi15
+    symbol: LVP
+    name: bi145
+    target: biology
+    module: population
+    status: ok
+    elapsed_ms: 1824
+    avg_time_ns: 1824000000.00
+    iterations_per_sec: 0.55
+  - label: biology_146
+    category: bi15
+    symbol: GI
+    name: bi146
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 2200
+    avg_time_ns: 2200000000.00
+    iterations_per_sec: 0.45
+  - label: biology_147
+    category: bi15
+    symbol: MAP
+    name: bi147
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 2173
+    avg_time_ns: 2172999936.00
+    iterations_per_sec: 0.46
+  - label: biology_148
+    category: bi15
+    symbol: MR
+    name: bi148
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 5424
+    avg_time_ns: 5424000000.00
+    iterations_per_sec: 0.18
+  - label: biology_149
+    category: bi15
+    symbol: PC
+    name: bi149
+    target: biology
+    module: proteomics
+    status: ok
+    elapsed_ms: 2950
+    avg_time_ns: 2950000128.00
+    iterations_per_sec: 0.34
+  - label: biology_150
+    category: bi15
+    symbol: OER
+    name: bi150
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 5288
+    avg_time_ns: 5288000000.00
+    iterations_per_sec: 0.19
+  - label: biology_151
+    category: bi16
+    symbol: RBE
+    name: bi151
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 2259
+    avg_time_ns: 2259000064.00
+    iterations_per_sec: 0.44
+  - label: biology_152
+    category: bi16
+    symbol: RLQ
+    name: bi152
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 576
+    avg_time_ns: 576000000.00
+    iterations_per_sec: 1.74
+  - label: biology_153
+    category: bi16
+    symbol: Tc
+    name: bi153
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 5240
+    avg_time_ns: 5240000000.00
+    iterations_per_sec: 0.19
+  - label: biology_154
+    category: bi16
+    symbol: FP
+    name: bi154
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 4872
+    avg_time_ns: 4872000000.00
+    iterations_per_sec: 0.21
+  - label: biology_155
+    category: bi16
+    symbol: HD
+    name: bi155
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 2163
+    avg_time_ns: 2163000064.00
+    iterations_per_sec: 0.46
+  - label: biology_156
+    category: bi16
+    symbol: ISR
+    name: bi156
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 1967
+    avg_time_ns: 1967000064.00
+    iterations_per_sec: 0.51
+  - label: biology_157
+    category: bi16
+    symbol: SMS
+    name: bi157
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 5097
+    avg_time_ns: 5096999936.00
+    iterations_per_sec: 0.20
+  - label: biology_158
+    category: bi16
+    symbol: NO
+    name: bi158
+    target: biology
+    module: stem_cell
+    status: ok
+    elapsed_ms: 2124
+    avg_time_ns: 2124000000.00
+    iterations_per_sec: 0.47
+  - label: biology_159
+    category: bi16
+    symbol: RE
+    name: bi159
+    target: biology
+    module: stem_cell
+    status: ok
+    elapsed_ms: 1985
+    avg_time_ns: 1984999936.00
+    iterations_per_sec: 0.50
+  - label: biology_160
+    category: bi16
+    symbol: SRP
+    name: bi160
+    target: biology
+    module: stem_cell
+    status: ok
+    elapsed_ms: 2296
+    avg_time_ns: 2296000000.00
+    iterations_per_sec: 0.44
+  - label: biology_161
+    category: bi17
+    symbol: AHP
+    name: bi161
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 4810
+    avg_time_ns: 4809999872.00
+    iterations_per_sec: 0.21
+  - label: biology_162
+    category: bi17
+    symbol: BFE
+    name: bi162
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 1873
+    avg_time_ns: 1872999936.00
+    iterations_per_sec: 0.53
+  - label: biology_163
+    category: bi17
+    symbol: ROG
+    name: bi163
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 2009
+    avg_time_ns: 2008999936.00
+    iterations_per_sec: 0.50
+  - label: biology_164
+    category: bi17
+    symbol: Rm
+    name: bi164
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 1878
+    avg_time_ns: 1878000000.00
+    iterations_per_sec: 0.53
+  - label: biology_165
+    category: bi17
+    symbol: AG
+    name: bi165
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 5170
+    avg_time_ns: 5169999872.00
+    iterations_per_sec: 0.19
+  - label: biology_166
+    category: bi17
+    symbol: COT
+    name: bi166
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 2279
+    avg_time_ns: 2279000064.00
+    iterations_per_sec: 0.44
+  - label: biology_167
+    category: bi17
+    symbol: HA
+    name: bi167
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 5307
+    avg_time_ns: 5306999808.00
+    iterations_per_sec: 0.19
+  - label: biology_168
+    category: bi17
+    symbol: HR
+    name: bi168
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 5310
+    avg_time_ns: 5310000128.00
+    iterations_per_sec: 0.19
+  - label: biology_169
+    category: bi17
+    symbol: MCC
+    name: bi169
+    target: biology
+    module: systems_biology
+    status: ok
+    elapsed_ms: 2285
+    avg_time_ns: 2284999936.00
+    iterations_per_sec: 0.44
+  - label: biology_170
+    category: bi17
+    symbol: OP
+    name: bi170
+    target: biology
+    module: systems_biology
+    status: ok
+    elapsed_ms: 5169
+    avg_time_ns: 5168999936.00
+    iterations_per_sec: 0.19
+  - label: biology_171
+    category: bi18
+    symbol: UI
+    name: bi171
+    target: biology
+    module: systems_biology
+    status: ok
+    elapsed_ms: 2216
+    avg_time_ns: 2216000000.00
+    iterations_per_sec: 0.45
+  - label: biology_172
+    category: bi18
+    symbol: CPO
+    name: bi172
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 2336
+    avg_time_ns: 2336000000.00
+    iterations_per_sec: 0.43
+  - label: biology_173
+    category: bi18
+    symbol: DRF
+    name: bi173
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 4204
+    avg_time_ns: 4204000000.00
+    iterations_per_sec: 0.24
+  - label: biology_174
+    category: bi18
+    symbol: OTR
+    name: bi174
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 4938
+    avg_time_ns: 4937999872.00
+    iterations_per_sec: 0.20
+  - label: biology_175
+    category: bi18
+    symbol: SP
+    name: bi175
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 407
+    avg_time_ns: 407000000.00
+    iterations_per_sec: 2.46
+  - label: biology_176
+    category: bi18
+    symbol: BR
+    name: bi176
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 4958
+    avg_time_ns: 4958000128.00
+    iterations_per_sec: 0.20
+  - label: biology_177
+    category: bi18
+    symbol: LP
+    name: bi177
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 5286
+    avg_time_ns: 5286000128.00
+    iterations_per_sec: 0.19
+  - label: biology_178
+    category: bi18
+    symbol: RQ
+    name: bi178
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 4971
+    avg_time_ns: 4970999808.00
+    iterations_per_sec: 0.20
+  - label: biology_179
+    category: bi18
+    symbol: TW
+    name: bi179
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 4924
+    avg_time_ns: 4924000256.00
+    iterations_per_sec: 0.20
+  - label: biology_180
+    category: bi18
+    symbol: BRN
+    name: bi180
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 2139
+    avg_time_ns: 2139000064.00
+    iterations_per_sec: 0.47
+  - label: biology_181
+    category: bi19
+    symbol: BS
+    name: bi181
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 706
+    avg_time_ns: 706000000.00
+    iterations_per_sec: 1.42
+  - label: biology_182
+    category: bi19
+    symbol: HIT
+    name: bi182
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 5055
+    avg_time_ns: 5055000064.00
+    iterations_per_sec: 0.20
+  - label: biology_183
+    category: bi19
+    symbol: VLD
+    name: bi183
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 5344
+    avg_time_ns: 5344000000.00
+    iterations_per_sec: 0.19
+  - label: geology_summary
+    category: geology
+    symbol: SUM
+    name: GE Summary
+    target: geology
+    module: summary
+    status: ok
+    elapsed_ms: 191729
+    avg_time_ns: 4357476864.00
+    iterations_per_sec: 0.01
+  - label: geology_001
+    category: ge01
+    symbol: AFR
+    name: ge001
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 724
+    avg_time_ns: 724000000.00
+    iterations_per_sec: 1.38
+  - label: geology_002
+    category: ge01
+    symbol: CA
+    name: ge002
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 4823
+    avg_time_ns: 4823000064.00
+    iterations_per_sec: 0.21
+  - label: geology_003
+    category: ge01
+    symbol: DC
+    name: ge003
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 5297
+    avg_time_ns: 5296999936.00
+    iterations_per_sec: 0.19
+  - label: geology_004
+    category: ge01
+    symbol: HLP
+    name: ge004
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 4968
+    avg_time_ns: 4968000000.00
+    iterations_per_sec: 0.20
+  - label: geology_005
+    category: ge01
+    symbol: RD
+    name: ge005
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 5155
+    avg_time_ns: 5154999808.00
+    iterations_per_sec: 0.19
+  - label: geology_006
+    category: ge01
+    symbol: RDH
+    name: ge006
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 4063
+    avg_time_ns: 4063000064.00
+    iterations_per_sec: 0.25
+  - label: geology_007
+    category: ge01
+    symbol: RDL
+    name: ge007
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 2397
+    avg_time_ns: 2396999936.00
+    iterations_per_sec: 0.42
+  - label: geology_008
+    category: ge01
+    symbol: CWR
+    name: ge008
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 4993
+    avg_time_ns: 4992999936.00
+    iterations_per_sec: 0.20
+  - label: geology_009
+    category: ge01
+    symbol: FER
+    name: ge009
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 3986
+    avg_time_ns: 3985999872.00
+    iterations_per_sec: 0.25
+  - label: geology_010
+    category: ge01
+    symbol: FWR
+    name: ge010
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 2748
+    avg_time_ns: 2748000000.00
+    iterations_per_sec: 0.36
+  - label: geology_011
+    category: ge02
+    symbol: VEI
+    name: ge011
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 5294
+    avg_time_ns: 5294000128.00
+    iterations_per_sec: 0.19
+  - label: geology_012
+    category: ge02
+    symbol: WET
+    name: ge012
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 5333
+    avg_time_ns: 5333000192.00
+    iterations_per_sec: 0.19
+  - label: geology_013
+    category: ge02
+    symbol: GBE
+    name: ge013
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 5073
+    avg_time_ns: 5072999936.00
+    iterations_per_sec: 0.20
+  - label: geology_014
+    category: ge02
+    symbol: GSI
+    name: ge014
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 2313
+    avg_time_ns: 2312999936.00
+    iterations_per_sec: 0.43
+  - label: geology_015
+    category: ge02
+    symbol: GSR
+    name: ge015
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 5410
+    avg_time_ns: 5409999872.00
+    iterations_per_sec: 0.18
+  - label: geology_016
+    category: ge02
+    symbol: IV
+    name: ge016
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 4868
+    avg_time_ns: 4867999744.00
+    iterations_per_sec: 0.21
+  - label: geology_017
+    category: ge02
+    symbol: SIV
+    name: ge017
+    target: geology
+    module: glaciology
+    status: ok
+    elapsed_ms: 2852
+    avg_time_ns: 2852000000.00
+    iterations_per_sec: 0.35
+  - label: geology_018
+    category: ge02
+    symbol: CV
+    name: ge018
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 5385
+    avg_time_ns: 5384999936.00
+    iterations_per_sec: 0.19
+  - label: geology_019
+    category: ge02
+    symbol: FN
+    name: ge019
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 5607
+    avg_time_ns: 5607000064.00
+    iterations_per_sec: 0.18
+  - label: geology_020
+    category: ge02
+    symbol: HET
+    name: ge020
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 4998
+    avg_time_ns: 4998000128.00
+    iterations_per_sec: 0.20
+  - label: geology_021
+    category: ge03
+    symbol: MV
+    name: ge021
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 4839
+    avg_time_ns: 4839000064.00
+    iterations_per_sec: 0.21
+  - label: geology_022
+    category: ge03
+    symbol: RN
+    name: ge022
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 4758
+    avg_time_ns: 4758000128.00
+    iterations_per_sec: 0.21
+  - label: geology_023
+    category: ge03
+    symbol: SP
+    name: ge023
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 4337
+    avg_time_ns: 4336999936.00
+    iterations_per_sec: 0.23
+  - label: geology_024
+    category: ge03
+    symbol: CQN
+    name: ge024
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 4987
+    avg_time_ns: 4986999808.00
+    iterations_per_sec: 0.20
+  - label: geology_025
+    category: ge03
+    symbol: CSV
+    name: ge025
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 5075
+    avg_time_ns: 5074999808.00
+    iterations_per_sec: 0.20
+  - label: geology_026
+    category: ge03
+    symbol: DI
+    name: ge026
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 5101
+    avg_time_ns: 5101000192.00
+    iterations_per_sec: 0.20
+  - label: geology_027
+    category: ge03
+    symbol: LT
+    name: ge027
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 5027
+    avg_time_ns: 5026999808.00
+    iterations_per_sec: 0.20
+  - label: geology_028
+    category: ge03
+    symbol: MN
+    name: ge028
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 5191
+    avg_time_ns: 5191000064.00
+    iterations_per_sec: 0.19
+  - label: geology_029
+    category: ge03
+    symbol: TAS
+    name: ge029
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 2761
+    avg_time_ns: 2760999936.00
+    iterations_per_sec: 0.36
+  - label: geology_030
+    category: ge03
+    symbol: VA
+    name: ge030
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 5532
+    avg_time_ns: 5532000256.00
+    iterations_per_sec: 0.18
+  - label: geology_031
+    category: ge04
+    symbol: GR
+    name: ge031
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 2849
+    avg_time_ns: 2848999936.00
+    iterations_per_sec: 0.35
+  - label: geology_032
+    category: ge04
+    symbol: GRD
+    name: ge032
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 167
+    avg_time_ns: 167000000.00
+    iterations_per_sec: 5.99
+  - label: geology_033
+    category: ge04
+    symbol: PWF
+    name: ge033
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 2797
+    avg_time_ns: 2796999936.00
+    iterations_per_sec: 0.36
+  - label: geology_034
+    category: ge04
+    symbol: PWV
+    name: ge034
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 5144
+    avg_time_ns: 5144000000.00
+    iterations_per_sec: 0.19
+  - label: geology_035
+    category: ge04
+    symbol: RAR
+    name: ge035
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 2813
+    avg_time_ns: 2812999936.00
+    iterations_per_sec: 0.36
+  - label: geology_036
+    category: ge04
+    symbol: RM
+    name: ge036
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 5154
+    avg_time_ns: 5153999872.00
+    iterations_per_sec: 0.19
+  - label: geology_037
+    category: ge04
+    symbol: SWV
+    name: ge037
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 4962
+    avg_time_ns: 4961999872.00
+    iterations_per_sec: 0.20
+  - label: geology_038
+    category: ge04
+    symbol: SE
+    name: ge038
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 4852
+    avg_time_ns: 4851999744.00
+    iterations_per_sec: 0.21
+  - label: geology_039
+    category: ge04
+    symbol: GG
+    name: ge039
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 5050
+    avg_time_ns: 5049999872.00
+    iterations_per_sec: 0.20
+  - label: geology_040
+    category: ge04
+    symbol: HF
+    name: ge040
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 5161
+    avg_time_ns: 5160999936.00
+    iterations_per_sec: 0.19
+  - label: geology_041
+    category: ge05
+    symbol: IE
+    name: ge041
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 2825
+    avg_time_ns: 2824999936.00
+    iterations_per_sec: 0.35
+  - label: geology_042
+    category: ge05
+    symbol: MN
+    name: ge042
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 5500
+    avg_time_ns: 5500000256.00
+    iterations_per_sec: 0.18
+  - label: geology_043
+    category: ge05
+    symbol: PV
+    name: ge043
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 5239
+    avg_time_ns: 5239000064.00
+    iterations_per_sec: 0.19
+  - label: geology_044
+    category: ge05
+    symbol: VA
+    name: ge044
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 5321
+    avg_time_ns: 5320999936.00
+    iterations_per_sec: 0.19
+  - label: astronomy_summary
+    category: astronomy
+    symbol: SUM
+    name: AS Summary
+    target: astronomy
+    module: summary
+    status: ok
+    elapsed_ms: 231515
+    avg_time_ns: 3923983104.00
+    iterations_per_sec: 0.00
+  - label: astronomy_001
+    category: as01
+    symbol: GF
+    name: as001
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 5310
+    avg_time_ns: 5310000128.00
+    iterations_per_sec: 0.19
+  - label: astronomy_002
+    category: as01
+    symbol: HS
+    name: as002
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 5303
+    avg_time_ns: 5303000064.00
+    iterations_per_sec: 0.19
+  - label: astronomy_003
+    category: as01
+    symbol: JDT
+    name: as003
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 5180
+    avg_time_ns: 5180000256.00
+    iterations_per_sec: 0.19
+  - label: astronomy_004
+    category: as01
+    symbol: SP
+    name: as004
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 4804
+    avg_time_ns: 4803999744.00
+    iterations_per_sec: 0.21
+  - label: astronomy_005
+    category: as01
+    symbol: ADW
+    name: as005
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5491
+    avg_time_ns: 5490999808.00
+    iterations_per_sec: 0.18
+  - label: astronomy_006
+    category: as01
+    symbol: AOU
+    name: as006
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5514
+    avg_time_ns: 5513999872.00
+    iterations_per_sec: 0.18
+  - label: astronomy_007
+    category: as01
+    symbol: AMR
+    name: as007
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5609
+    avg_time_ns: 5608999936.00
+    iterations_per_sec: 0.18
+  - label: astronomy_008
+    category: as01
+    symbol: AUF
+    name: as008
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 479
+    avg_time_ns: 479000000.00
+    iterations_per_sec: 2.09
+  - label: astronomy_009
+    category: as01
+    symbol: CTA
+    name: as009
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5741
+    avg_time_ns: 5741000192.00
+    iterations_per_sec: 0.17
+  - label: astronomy_010
+    category: as01
+    symbol: CTS
+    name: as010
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 970
+    avg_time_ns: 970000000.00
+    iterations_per_sec: 1.03
+  - label: astronomy_011
+    category: as02
+    symbol: CDI
+    name: as011
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5556
+    avg_time_ns: 5555999744.00
+    iterations_per_sec: 0.18
+  - label: astronomy_012
+    category: as02
+    symbol: CDZ
+    name: as012
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 951
+    avg_time_ns: 951000000.00
+    iterations_per_sec: 1.05
+  - label: astronomy_013
+    category: as02
+    symbol: CD
+    name: as013
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5516
+    avg_time_ns: 5516000256.00
+    iterations_per_sec: 0.18
+  - label: astronomy_014
+    category: as02
+    symbol: DDT
+    name: as014
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5287
+    avg_time_ns: 5287000064.00
+    iterations_per_sec: 0.19
+  - label: astronomy_015
+    category: as02
+    symbol: EZL
+    name: as015
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5091
+    avg_time_ns: 5090999808.00
+    iterations_per_sec: 0.20
+  - label: astronomy_016
+    category: as02
+    symbol: EZL
+    name: as016
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5463
+    avg_time_ns: 5463000064.00
+    iterations_per_sec: 0.18
+  - label: astronomy_017
+    category: as02
+    symbol: HAZ
+    name: as017
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 2667
+    avg_time_ns: 2667000064.00
+    iterations_per_sec: 0.37
+  - label: astronomy_018
+    category: as02
+    symbol: HEI
+    name: as018
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5276
+    avg_time_ns: 5276000256.00
+    iterations_per_sec: 0.19
+  - label: astronomy_019
+    category: as02
+    symbol: HV
+    name: as019
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 2640
+    avg_time_ns: 2640000000.00
+    iterations_per_sec: 0.38
+  - label: astronomy_020
+    category: as02
+    symbol: LTI
+    name: as020
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5437
+    avg_time_ns: 5437000192.00
+    iterations_per_sec: 0.18
+  - label: astronomy_021
+    category: as03
+    symbol: LAD
+    name: as021
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 1298
+    avg_time_ns: 1298000000.00
+    iterations_per_sec: 0.77
+  - label: astronomy_022
+    category: as03
+    symbol: RRV
+    name: as022
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5137
+    avg_time_ns: 5136999936.00
+    iterations_per_sec: 0.19
+  - label: astronomy_023
+    category: as03
+    symbol: SF
+    name: as023
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5555
+    avg_time_ns: 5554999808.00
+    iterations_per_sec: 0.18
+  - label: astronomy_024
+    category: as03
+    symbol: SFH
+    name: as024
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 4969
+    avg_time_ns: 4968999936.00
+    iterations_per_sec: 0.20
+  - label: astronomy_025
+    category: as03
+    symbol: GEV
+    name: as025
+    target: astronomy
+    module: galactic
+    status: ok
+    elapsed_ms: 5130
+    avg_time_ns: 5129999872.00
+    iterations_per_sec: 0.19
+  - label: astronomy_026
+    category: as03
+    symbol: GRV
+    name: as026
+    target: astronomy
+    module: galactic
+    status: ok
+    elapsed_ms: 3501
+    avg_time_ns: 3500999936.00
+    iterations_per_sec: 0.29
+  - label: astronomy_027
+    category: as03
+    symbol: TR
+    name: as027
+    target: astronomy
+    module: galactic
+    status: ok
+    elapsed_ms: 5135
+    avg_time_ns: 5135000064.00
+    iterations_per_sec: 0.19
+  - label: astronomy_028
+    category: as03
+    symbol: CD
+    name: as028
+    target: astronomy
+    module: impacts
+    status: ok
+    elapsed_ms: 5580
+    avg_time_ns: 5580000256.00
+    iterations_per_sec: 0.18
+  - label: astronomy_029
+    category: as03
+    symbol: FR
+    name: as029
+    target: astronomy
+    module: impacts
+    status: ok
+    elapsed_ms: 5343
+    avg_time_ns: 5343000064.00
+    iterations_per_sec: 0.19
+  - label: astronomy_030
+    category: as03
+    symbol: IV
+    name: as030
+    target: astronomy
+    module: impacts
+    status: ok
+    elapsed_ms: 602
+    avg_time_ns: 602000000.00
+    iterations_per_sec: 1.66
+  - label: astronomy_031
+    category: as04
+    symbol: CV
+    name: as031
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5524
+    avg_time_ns: 5523999744.00
+    iterations_per_sec: 0.18
+  - label: astronomy_032
+    category: as04
+    symbol: EV
+    name: as032
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5210
+    avg_time_ns: 5209999872.00
+    iterations_per_sec: 0.19
+  - label: astronomy_033
+    category: as04
+    symbol: EVC
+    name: as033
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 220
+    avg_time_ns: 220000000.00
+    iterations_per_sec: 4.55
+  - label: astronomy_034
+    category: as04
+    symbol: HDV
+    name: as034
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 2527
+    avg_time_ns: 2527000064.00
+    iterations_per_sec: 0.40
+  - label: astronomy_035
+    category: as04
+    symbol: KPE
+    name: as035
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5407
+    avg_time_ns: 5407000064.00
+    iterations_per_sec: 0.18
+  - label: astronomy_036
+    category: as04
+    symbol: PAC
+    name: as036
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5302
+    avg_time_ns: 5302000128.00
+    iterations_per_sec: 0.19
+  - label: astronomy_037
+    category: as04
+    symbol: RL
+    name: as037
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 437
+    avg_time_ns: 437000000.00
+    iterations_per_sec: 2.29
+  - label: astronomy_038
+    category: as04
+    symbol: SOI
+    name: as038
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 706
+    avg_time_ns: 706000000.00
+    iterations_per_sec: 1.42
+  - label: astronomy_039
+    category: as04
+    symbol: TAR
+    name: as039
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5660
+    avg_time_ns: 5660000256.00
+    iterations_per_sec: 0.18
+  - label: astronomy_040
+    category: as04
+    symbol: VVC
+    name: as040
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5399
+    avg_time_ns: 5399000064.00
+    iterations_per_sec: 0.19
+  - label: astronomy_041
+    category: as05
+    symbol: HZI
+    name: as041
+    target: astronomy
+    module: planetary
+    status: ok
+    elapsed_ms: 5431
+    avg_time_ns: 5431000064.00
+    iterations_per_sec: 0.18
+  - label: astronomy_042
+    category: as05
+    symbol: HZO
+    name: as042
+    target: astronomy
+    module: planetary
+    status: ok
+    elapsed_ms: 5248
+    avg_time_ns: 5248000000.00
+    iterations_per_sec: 0.19
+  - label: astronomy_043
+    category: as05
+    symbol: SG
+    name: as043
+    target: astronomy
+    module: planetary
+    status: ok
+    elapsed_ms: 5331
+    avg_time_ns: 5330999808.00
+    iterations_per_sec: 0.19
+  - label: astronomy_044
+    category: as05
+    symbol: RKE
+    name: as044
+    target: astronomy
+    module: rotation
+    status: ok
+    elapsed_ms: 4782
+    avg_time_ns: 4782000128.00
+    iterations_per_sec: 0.21
+  - label: astronomy_045
+    category: as05
+    symbol: SVA
+    name: as045
+    target: astronomy
+    module: rotation
+    status: ok
+    elapsed_ms: 2520
+    avg_time_ns: 2520000000.00
+    iterations_per_sec: 0.40
+  - label: astronomy_046
+    category: as05
+    symbol: AMA
+    name: as046
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 851
+    avg_time_ns: 851000000.00
+    iterations_per_sec: 1.18
+  - label: astronomy_047
+    category: as05
+    symbol: CL
+    name: as047
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 5710
+    avg_time_ns: 5710000128.00
+    iterations_per_sec: 0.18
+  - label: astronomy_048
+    category: as05
+    symbol: DM
+    name: as048
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 5616
+    avg_time_ns: 5616000000.00
+    iterations_per_sec: 0.18
+  - label: astronomy_049
+    category: as05
+    symbol: ELS
+    name: as049
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 5598
+    avg_time_ns: 5598000128.00
+    iterations_per_sec: 0.18
+  - label: astronomy_050
+    category: as05
+    symbol: LFR
+    name: as050
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 688
+    avg_time_ns: 688000000.00
+    iterations_per_sec: 1.45
+  - label: astronomy_051
+    category: as06
+    symbol: MSL
+    name: as051
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 3312
+    avg_time_ns: 3312000000.00
+    iterations_per_sec: 0.30
+  - label: astronomy_052
+    category: as06
+    symbol: MLM
+    name: as052
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 520
+    avg_time_ns: 520000000.00
+    iterations_per_sec: 1.92
+  - label: astronomy_053
+    category: as06
+    symbol: SR
+    name: as053
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 552
+    avg_time_ns: 552000000.00
+    iterations_per_sec: 1.81
+  - label: astronomy_054
+    category: as06
+    symbol: SBB
+    name: as054
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 606
+    avg_time_ns: 606000000.00
+    iterations_per_sec: 1.65
+  - label: astronomy_055
+    category: as06
+    symbol: SFI
+    name: as055
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 764
+    avg_time_ns: 764000000.00
+    iterations_per_sec: 1.31
+  - label: astronomy_056
+    category: as06
+    symbol: WPW
+    name: as056
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 5803
+    avg_time_ns: 5802999808.00
+    iterations_per_sec: 0.17
+  - label: astronomy_057
+    category: as06
+    symbol: STA
+    name: as057
+    target: astronomy
+    module: tides
+    status: ok
+    elapsed_ms: 4874
+    avg_time_ns: 4873999872.00
+    iterations_per_sec: 0.21
+  - label: astronomy_058
+    category: as06
+    symbol: TLT
+    name: as058
+    target: astronomy
+    module: tides
+    status: ok
+    elapsed_ms: 666
+    avg_time_ns: 666000000.00
+    iterations_per_sec: 1.50
+  - label: astronomy_059
+    category: as06
+    symbol: TP
+    name: as059
+    target: astronomy
+    module: tides
+    status: ok
+    elapsed_ms: 5716
+    avg_time_ns: 5715999744.00
+    iterations_per_sec: 0.17
+  - label: meteorology_summary
+    category: meteorology
+    symbol: SUM
+    name: ME Summary
+    target: meteorology
+    module: summary
+    status: ok
+    elapsed_ms: 179607
+    avg_time_ns: 3991266560.00
+    iterations_per_sec: 0.01
+  - label: meteorology_001
+    category: me01
+    symbol: BDW
+    name: me001
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 672
+    avg_time_ns: 672000000.00
+    iterations_per_sec: 1.49
+  - label: meteorology_002
+    category: me01
+    symbol: BF
+    name: me002
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 5483
+    avg_time_ns: 5482999808.00
+    iterations_per_sec: 0.18
+  - label: meteorology_003
+    category: me01
+    symbol: LRD
+    name: me003
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 5477
+    avg_time_ns: 5477000192.00
+    iterations_per_sec: 0.18
+  - label: meteorology_004
+    category: me01
+    symbol: PT
+    name: me004
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 5706
+    avg_time_ns: 5705999872.00
+    iterations_per_sec: 0.18
+  - label: meteorology_005
+    category: me01
+    symbol: SVI
+    name: me005
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 5418
+    avg_time_ns: 5417999872.00
+    iterations_per_sec: 0.18
+  - label: meteorology_006
+    category: me01
+    symbol: SVP
+    name: me006
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 5509
+    avg_time_ns: 5509000192.00
+    iterations_per_sec: 0.18
+  - label: meteorology_007
+    category: me01
+    symbol: SH
+    name: me007
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 5170
+    avg_time_ns: 5169999872.00
+    iterations_per_sec: 0.19
+  - label: meteorology_008
+    category: me01
+    symbol: CCS
+    name: me008
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 797
+    avg_time_ns: 797000000.00
+    iterations_per_sec: 1.25
+  - label: meteorology_009
+    category: me01
+    symbol: CP
+    name: me009
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 5308
+    avg_time_ns: 5308000256.00
+    iterations_per_sec: 0.19
+  - label: meteorology_010
+    category: me01
+    symbol: CZA
+    name: me010
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 5412
+    avg_time_ns: 5411999744.00
+    iterations_per_sec: 0.18
+  - label: meteorology_011
+    category: me02
+    symbol: ED
+    name: me011
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 493
+    avg_time_ns: 493000000.00
+    iterations_per_sec: 2.03
+  - label: meteorology_012
+    category: me02
+    symbol: GW
+    name: me012
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 512
+    avg_time_ns: 512000000.00
+    iterations_per_sec: 1.95
+  - label: meteorology_013
+    category: me02
+    symbol: RN
+    name: me013
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 5227
+    avg_time_ns: 5226999808.00
+    iterations_per_sec: 0.19
+  - label: meteorology_014
+    category: me02
+    symbol: RND
+    name: me014
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 750
+    avg_time_ns: 750000000.00
+    iterations_per_sec: 1.33
+  - label: meteorology_015
+    category: me02
+    symbol: RWS
+    name: me015
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 3868
+    avg_time_ns: 3868000000.00
+    iterations_per_sec: 0.26
+  - label: meteorology_016
+    category: me02
+    symbol: HS
+    name: me016
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 5470
+    avg_time_ns: 5470000128.00
+    iterations_per_sec: 0.18
+  - label: meteorology_017
+    category: me02
+    symbol: SLR
+    name: me017
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 5275
+    avg_time_ns: 5274999808.00
+    iterations_per_sec: 0.19
+  - label: meteorology_018
+    category: me02
+    symbol: SD
+    name: me018
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 5130
+    avg_time_ns: 5129999872.00
+    iterations_per_sec: 0.19
+  - label: meteorology_019
+    category: me02
+    symbol: SDI
+    name: me019
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 5316
+    avg_time_ns: 5315999744.00
+    iterations_per_sec: 0.19
+  - label: meteorology_020
+    category: me02
+    symbol: SS
+    name: me020
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 5488
+    avg_time_ns: 5488000000.00
+    iterations_per_sec: 0.18
+  - label: meteorology_021
+    category: me03
+    symbol: API
+    name: me021
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 5444
+    avg_time_ns: 5443999744.00
+    iterations_per_sec: 0.18
+  - label: meteorology_022
+    category: me03
+    symbol: IDF
+    name: me022
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 5382
+    avg_time_ns: 5382000128.00
+    iterations_per_sec: 0.19
+  - label: meteorology_023
+    category: me03
+    symbol: PE
+    name: me023
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 5367
+    avg_time_ns: 5367000064.00
+    iterations_per_sec: 0.19
+  - label: meteorology_024
+    category: me03
+    symbol: RR
+    name: me024
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 5824
+    avg_time_ns: 5824000000.00
+    iterations_per_sec: 0.17
+  - label: meteorology_025
+    category: me03
+    symbol: RRM
+    name: me025
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 5791
+    avg_time_ns: 5791000064.00
+    iterations_per_sec: 0.17
+  - label: meteorology_026
+    category: me03
+    symbol: SCN
+    name: me026
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 3791
+    avg_time_ns: 3791000064.00
+    iterations_per_sec: 0.26
+  - label: meteorology_027
+    category: me03
+    symbol: TVR
+    name: me027
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 4901
+    avg_time_ns: 4901000192.00
+    iterations_per_sec: 0.20
+  - label: meteorology_028
+    category: me03
+    symbol: TP
+    name: me028
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 5158
+    avg_time_ns: 5158000128.00
+    iterations_per_sec: 0.19
+  - label: meteorology_029
+    category: me03
+    symbol: AR
+    name: me029
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5530
+    avg_time_ns: 5529999872.00
+    iterations_per_sec: 0.18
+  - label: meteorology_030
+    category: me03
+    symbol: ET
+    name: me030
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5255
+    avg_time_ns: 5255000064.00
+    iterations_per_sec: 0.19
+  - label: meteorology_031
+    category: me04
+    symbol: PF
+    name: me031
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5086
+    avg_time_ns: 5086000128.00
+    iterations_per_sec: 0.20
+  - label: meteorology_032
+    category: me04
+    symbol: RFC
+    name: me032
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5283
+    avg_time_ns: 5282999808.00
+    iterations_per_sec: 0.19
+  - label: meteorology_033
+    category: me04
+    symbol: RFC
+    name: me033
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5636
+    avg_time_ns: 5635999744.00
+    iterations_per_sec: 0.18
+  - label: meteorology_034
+    category: me04
+    symbol: SBF
+    name: me034
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 825
+    avg_time_ns: 825000000.00
+    iterations_per_sec: 1.21
+  - label: meteorology_035
+    category: me04
+    symbol: SBF
+    name: me035
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 513
+    avg_time_ns: 513000000.00
+    iterations_per_sec: 1.95
+  - label: meteorology_036
+    category: me04
+    symbol: CPB
+    name: me036
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 393
+    avg_time_ns: 393000000.00
+    iterations_per_sec: 2.54
+  - label: meteorology_037
+    category: me04
+    symbol: CZF
+    name: me037
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 611
+    avg_time_ns: 611000000.00
+    iterations_per_sec: 1.64
+  - label: meteorology_038
+    category: me04
+    symbol: FS
+    name: me038
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 419
+    avg_time_ns: 419000000.00
+    iterations_per_sec: 2.39
+  - label: meteorology_039
+    category: me04
+    symbol: FSI
+    name: me039
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 3460
+    avg_time_ns: 3460000000.00
+    iterations_per_sec: 0.29
+  - label: meteorology_040
+    category: me04
+    symbol: PI
+    name: me040
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 5688
+    avg_time_ns: 5688000000.00
+    iterations_per_sec: 0.18
+  - label: meteorology_041
+    category: me05
+    symbol: BM
+    name: me041
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 3593
+    avg_time_ns: 3592999936.00
+    iterations_per_sec: 0.28
+  - label: meteorology_042
+    category: me05
+    symbol: BTM
+    name: me042
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 1791
+    avg_time_ns: 1791000064.00
+    iterations_per_sec: 0.56
+  - label: meteorology_043
+    category: me05
+    symbol: BZI
+    name: me043
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 5375
+    avg_time_ns: 5375000064.00
+    iterations_per_sec: 0.19
+  - label: meteorology_044
+    category: me05
+    symbol: WC
+    name: me044
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 486
+    avg_time_ns: 486000000.00
+    iterations_per_sec: 2.06
+  - label: meteorology_045
+    category: me05
+    symbol: WCD
+    name: me045
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 5524
+    avg_time_ns: 5523999744.00
+    iterations_per_sec: 0.18
+  - label: hub_summary
+    category: hub
+    symbol: SUM
+    name: HB Summary
+    target: hub
+    module: summary
+    status: ok
+    elapsed_ms: 240601
+    avg_time_ns: 2934158336.00
+    iterations_per_sec: 0.00
+  - label: hub_001
+    category: hb01
+    symbol: DE
+    name: hb001
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5552
+    avg_time_ns: 5552000000.00
+    iterations_per_sec: 0.18
+  - label: hub_002
+    category: hb01
+    symbol: HZI
+    name: hb002
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3374
+    avg_time_ns: 3374000128.00
+    iterations_per_sec: 0.30
+  - label: hub_003
+    category: hb01
+    symbol: HZO
+    name: hb003
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1037
+    avg_time_ns: 1037000000.00
+    iterations_per_sec: 0.96
+  - label: hub_004
+    category: hb01
+    symbol: SG
+    name: hb004
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 327
+    avg_time_ns: 327000000.00
+    iterations_per_sec: 3.06
+  - label: hub_005
+    category: hb01
+    symbol: USF
+    name: hb005
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 268
+    avg_time_ns: 268000000.00
+    iterations_per_sec: 3.73
+  - label: hub_006
+    category: hb01
+    symbol: DET
+    name: hb006
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 287
+    avg_time_ns: 287000000.00
+    iterations_per_sec: 3.48
+  - label: hub_007
+    category: hb01
+    symbol: FT
+    name: hb007
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5662
+    avg_time_ns: 5662000128.00
+    iterations_per_sec: 0.18
+  - label: hub_008
+    category: hb01
+    symbol: JM
+    name: hb008
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 588
+    avg_time_ns: 588000000.00
+    iterations_per_sec: 1.70
+  - label: hub_009
+    category: hb01
+    symbol: SR
+    name: hb009
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 365
+    avg_time_ns: 365000000.00
+    iterations_per_sec: 2.74
+  - label: hub_010
+    category: hb01
+    symbol: CW
+    name: hb010
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3346
+    avg_time_ns: 3345999872.00
+    iterations_per_sec: 0.30
+  - label: hub_011
+    category: hb02
+    symbol: EL
+    name: hb011
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 129
+    avg_time_ns: 129000000.00
+    iterations_per_sec: 7.75
+  - label: hub_012
+    category: hb02
+    symbol: HT
+    name: hb012
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1045
+    avg_time_ns: 1045000000.00
+    iterations_per_sec: 0.96
+  - label: hub_013
+    category: hb02
+    symbol: SR
+    name: hb013
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1969
+    avg_time_ns: 1968999936.00
+    iterations_per_sec: 0.51
+  - label: hub_014
+    category: hb02
+    symbol: AOD
+    name: hb014
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 445
+    avg_time_ns: 445000000.00
+    iterations_per_sec: 2.25
+  - label: hub_015
+    category: hb02
+    symbol: CD
+    name: hb015
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3476
+    avg_time_ns: 3476000000.00
+    iterations_per_sec: 0.29
+  - label: hub_016
+    category: hb02
+    symbol: HLC
+    name: hb016
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 4721
+    avg_time_ns: 4720999936.00
+    iterations_per_sec: 0.21
+  - label: hub_017
+    category: hb02
+    symbol: PR
+    name: hb017
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5413
+    avg_time_ns: 5413000192.00
+    iterations_per_sec: 0.18
+  - label: hub_018
+    category: hb02
+    symbol: DAL
+    name: hb018
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 565
+    avg_time_ns: 565000000.00
+    iterations_per_sec: 1.77
+  - label: hub_019
+    category: hb02
+    symbol: PAA
+    name: hb019
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5619
+    avg_time_ns: 5618999808.00
+    iterations_per_sec: 0.18
+  - label: hub_020
+    category: hb02
+    symbol: SBF
+    name: hb020
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5459
+    avg_time_ns: 5458999808.00
+    iterations_per_sec: 0.18
+  - label: hub_021
+    category: hb03
+    symbol: WPW
+    name: hb021
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 312
+    avg_time_ns: 312000000.00
+    iterations_per_sec: 3.21
+  - label: hub_022
+    category: hb03
+    symbol: ETN
+    name: hb022
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5692
+    avg_time_ns: 5692000256.00
+    iterations_per_sec: 0.18
+  - label: hub_023
+    category: hb03
+    symbol: GFE
+    name: hb023
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 712
+    avg_time_ns: 712000000.00
+    iterations_per_sec: 1.40
+  - label: hub_024
+    category: hb03
+    symbol: HH
+    name: hb024
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 318
+    avg_time_ns: 318000000.00
+    iterations_per_sec: 3.14
+  - label: hub_025
+    category: hb03
+    symbol: MMR
+    name: hb025
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5679
+    avg_time_ns: 5679000064.00
+    iterations_per_sec: 0.18
+  - label: hub_026
+    category: hb03
+    symbol: PFC
+    name: hb026
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5610
+    avg_time_ns: 5609999872.00
+    iterations_per_sec: 0.18
+  - label: hub_027
+    category: hb03
+    symbol: BRN
+    name: hb027
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5685
+    avg_time_ns: 5685000192.00
+    iterations_per_sec: 0.18
+  - label: hub_028
+    category: hb03
+    symbol: LGR
+    name: hb028
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5331
+    avg_time_ns: 5330999808.00
+    iterations_per_sec: 0.19
+  - label: hub_029
+    category: hb03
+    symbol: MCD
+    name: hb029
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 577
+    avg_time_ns: 577000000.00
+    iterations_per_sec: 1.73
+  - label: hub_030
+    category: hb03
+    symbol: SDI
+    name: hb030
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 338
+    avg_time_ns: 338000000.00
+    iterations_per_sec: 2.96
+  - label: hub_031
+    category: hb04
+    symbol: EM
+    name: hb031
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5419
+    avg_time_ns: 5418999808.00
+    iterations_per_sec: 0.18
+  - label: hub_032
+    category: hb04
+    symbol: FDF
+    name: hb032
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 485
+    avg_time_ns: 485000000.00
+    iterations_per_sec: 2.06
+  - label: hub_033
+    category: hb04
+    symbol: RN
+    name: hb033
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 4230
+    avg_time_ns: 4230000128.00
+    iterations_per_sec: 0.24
+  - label: hub_034
+    category: hb04
+    symbol: SDF
+    name: hb034
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5403
+    avg_time_ns: 5402999808.00
+    iterations_per_sec: 0.19
+  - label: hub_035
+    category: hb04
+    symbol: CAA
+    name: hb035
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5469
+    avg_time_ns: 5469000192.00
+    iterations_per_sec: 0.18
+  - label: hub_036
+    category: hb04
+    symbol: CE
+    name: hb036
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 472
+    avg_time_ns: 472000000.00
+    iterations_per_sec: 2.12
+  - label: hub_037
+    category: hb04
+    symbol: CPA
+    name: hb037
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3423
+    avg_time_ns: 3423000064.00
+    iterations_per_sec: 0.29
+  - label: hub_038
+    category: hb04
+    symbol: CRS
+    name: hb038
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 411
+    avg_time_ns: 411000000.00
+    iterations_per_sec: 2.43
+  - label: hub_039
+    category: hb04
+    symbol: CDB
+    name: hb039
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5370
+    avg_time_ns: 5369999872.00
+    iterations_per_sec: 0.19
+  - label: hub_040
+    category: hb04
+    symbol: CDE
+    name: hb040
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 371
+    avg_time_ns: 371000000.00
+    iterations_per_sec: 2.70
+  - label: hub_041
+    category: hb05
+    symbol: DN
+    name: hb041
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 305
+    avg_time_ns: 305000000.00
+    iterations_per_sec: 3.28
+  - label: hub_042
+    category: hb05
+    symbol: DC
+    name: hb042
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5428
+    avg_time_ns: 5427999744.00
+    iterations_per_sec: 0.18
+  - label: hub_043
+    category: hb05
+    symbol: MTC
+    name: hb043
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3606
+    avg_time_ns: 3606000128.00
+    iterations_per_sec: 0.28
+  - label: hub_044
+    category: hb05
+    symbol: PC
+    name: hb044
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5648
+    avg_time_ns: 5648000000.00
+    iterations_per_sec: 0.18
+  - label: hub_045
+    category: hb05
+    symbol: BA
+    name: hb045
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 457
+    avg_time_ns: 457000000.00
+    iterations_per_sec: 2.19
+  - label: hub_046
+    category: hb05
+    symbol: ESD
+    name: hb046
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 4686
+    avg_time_ns: 4686000128.00
+    iterations_per_sec: 0.21
+  - label: hub_047
+    category: hb05
+    symbol: SIR
+    name: hb047
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 253
+    avg_time_ns: 253000000.00
+    iterations_per_sec: 3.95
+  - label: hub_048
+    category: hb05
+    symbol: SWA
+    name: hb048
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 260
+    avg_time_ns: 260000000.00
+    iterations_per_sec: 3.85
+  - label: hub_049
+    category: hb05
+    symbol: IFR
+    name: hb049
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 430
+    avg_time_ns: 430000000.00
+    iterations_per_sec: 2.33
+  - label: hub_050
+    category: hb05
+    symbol: DBW
+    name: hb050
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 463
+    avg_time_ns: 463000000.00
+    iterations_per_sec: 2.16
+  - label: hub_051
+    category: hb06
+    symbol: FDD
+    name: hb051
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 294
+    avg_time_ns: 294000000.00
+    iterations_per_sec: 3.40
+  - label: hub_052
+    category: hb06
+    symbol: HUP
+    name: hb052
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5499
+    avg_time_ns: 5498999808.00
+    iterations_per_sec: 0.18
+  - label: hub_053
+    category: hb06
+    symbol: RE
+    name: hb053
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5588
+    avg_time_ns: 5587999744.00
+    iterations_per_sec: 0.18
+  - label: hub_054
+    category: hb06
+    symbol: CCS
+    name: hb054
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5611
+    avg_time_ns: 5610999808.00
+    iterations_per_sec: 0.18
+  - label: hub_055
+    category: hb06
+    symbol: IE
+    name: hb055
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5329
+    avg_time_ns: 5328999936.00
+    iterations_per_sec: 0.19
+  - label: hub_056
+    category: hb06
+    symbol: STE
+    name: hb056
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 449
+    avg_time_ns: 449000000.00
+    iterations_per_sec: 2.23
+  - label: hub_057
+    category: hb06
+    symbol: VER
+    name: hb057
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 314
+    avg_time_ns: 314000000.00
+    iterations_per_sec: 3.18
+  - label: hub_058
+    category: hb06
+    symbol: VDB
+    name: hb058
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 354
+    avg_time_ns: 354000000.00
+    iterations_per_sec: 2.82
+  - label: hub_059
+    category: hb06
+    symbol: VMO
+    name: hb059
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 135
+    avg_time_ns: 135000000.00
+    iterations_per_sec: 7.41
+  - label: hub_060
+    category: hb06
+    symbol: VSC
+    name: hb060
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3412
+    avg_time_ns: 3412000000.00
+    iterations_per_sec: 0.29
+  - label: hub_061
+    category: hb07
+    symbol: PCS
+    name: hb061
+    target: hub
+    module: pipeline
+    status: ok
+    elapsed_ms: 441
+    avg_time_ns: 441000000.00
+    iterations_per_sec: 2.27
+  - label: hub_062
+    category: hb07
+    symbol: PEI
+    name: hb062
+    target: hub
+    module: pipeline
+    status: ok
+    elapsed_ms: 280
+    avg_time_ns: 280000000.00
+    iterations_per_sec: 3.57
+  - label: hub_063
+    category: hb07
+    symbol: PNA
+    name: hb063
+    target: hub
+    module: pipeline
+    status: ok
+    elapsed_ms: 539
+    avg_time_ns: 539000000.00
+    iterations_per_sec: 1.86
+  - label: hub_064
+    category: hb07
+    symbol: PS
+    name: hb064
+    target: hub
+    module: pipeline
+    status: ok
+    elapsed_ms: 5604
+    avg_time_ns: 5603999744.00
+    iterations_per_sec: 0.18
+  - label: hub_065
+    category: hb07
+    symbol: AEW
+    name: hb065
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5688
+    avg_time_ns: 5688000000.00
+    iterations_per_sec: 0.18
+  - label: hub_066
+    category: hb07
+    symbol: AAA
+    name: hb066
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 346
+    avg_time_ns: 346000000.00
+    iterations_per_sec: 2.89
+  - label: hub_067
+    category: hb07
+    symbol: ACL
+    name: hb067
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 2303
+    avg_time_ns: 2303000064.00
+    iterations_per_sec: 0.43
+  - label: hub_068
+    category: hb07
+    symbol: AM
+    name: hb068
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5397
+    avg_time_ns: 5397000192.00
+    iterations_per_sec: 0.19
+  - label: hub_069
+    category: hb07
+    symbol: AR
+    name: hb069
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 249
+    avg_time_ns: 249000000.00
+    iterations_per_sec: 4.02
+  - label: hub_070
+    category: hb07
+    symbol: FCW
+    name: hb070
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5662
+    avg_time_ns: 5662000128.00
+    iterations_per_sec: 0.18
+  - label: hub_071
+    category: hb08
+    symbol: FD
+    name: hb071
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5388
+    avg_time_ns: 5388000256.00
+    iterations_per_sec: 0.19
+  - label: hub_072
+    category: hb08
+    symbol: FSO
+    name: hb072
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5302
+    avg_time_ns: 5302000128.00
+    iterations_per_sec: 0.19
+  - label: hub_073
+    category: hb08
+    symbol: KDB
+    name: hb073
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5567
+    avg_time_ns: 5567000064.00
+    iterations_per_sec: 0.18
+  - label: hub_074
+    category: hb08
+    symbol: KSP
+    name: hb074
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5480
+    avg_time_ns: 5480000000.00
+    iterations_per_sec: 0.18
+  - label: hub_075
+    category: hb08
+    symbol: LB
+    name: hb075
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 348
+    avg_time_ns: 348000000.00
+    iterations_per_sec: 2.87
+  - label: hub_076
+    category: hb08
+    symbol: LB
+    name: hb076
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5290
+    avg_time_ns: 5289999872.00
+    iterations_per_sec: 0.19
+  - label: hub_077
+    category: hb08
+    symbol: RCF
+    name: hb077
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5388
+    avg_time_ns: 5388000256.00
+    iterations_per_sec: 0.19
+  - label: hub_078
+    category: hb08
+    symbol: RD
+    name: hb078
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5549
+    avg_time_ns: 5549000192.00
+    iterations_per_sec: 0.18
+  - label: hub_079
+    category: hb08
+    symbol: RDS
+    name: hb079
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5562
+    avg_time_ns: 5561999872.00
+    iterations_per_sec: 0.18
+  - label: hub_080
+    category: hb08
+    symbol: RND
+    name: hb080
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 1721
+    avg_time_ns: 1720999936.00
+    iterations_per_sec: 0.58
+  - label: hub_081
+    category: hb09
+    symbol: RUR
+    name: hb081
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5690
+    avg_time_ns: 5689999872.00
+    iterations_per_sec: 0.18
+  - label: hub_082
+    category: hb09
+    symbol: SPI
+    name: hb082
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 3332
+    avg_time_ns: 3332000000.00
+    iterations_per_sec: 0.30
+  - label: scientific_validation_summary
+    category: scientific_validation
+    symbol: SUM
+    name: SV Summary
+    target: scientific_validation
+    module: summary
+    status: ok
+    elapsed_ms: 10974
+    avg_time_ns: 5487000064.00
+    iterations_per_sec: 0.09
+  - label: scientific_validation_001
+    category: sv01
+    symbol: CAC
+    name: sv001
+    target: scientific_validation
+    module: constants_are_consistent_with_public_domain_exports
+    status: ok
+    elapsed_ms: 5654
+    avg_time_ns: 5654000128.00
+    iterations_per_sec: 0.18
+  - label: scientific_validation_002
+    category: sv01
+    symbol: SEC
+    name: sv002
+    target: scientific_validation
+    module: systematic_edge_cases_remain_finite
+    status: ok
+    elapsed_ms: 5320
+    avg_time_ns: 5320000000.00
+    iterations_per_sec: 0.19
+  - label: scientific_properties_summary
+    category: scientific_properties
+    symbol: SUM
+    name: SP Summary
+    target: scientific_properties
+    module: summary
+    status: ok
+    elapsed_ms: 14023
+    avg_time_ns: 4674333696.00
+    iterations_per_sec: 0.07
+  - label: scientific_properties_001
+    category: sp01
+    symbol: MPH
+    name: sp001
+    target: scientific_properties
+    module: monotonicity_properties_hold_for_core_models
+    status: ok
+    elapsed_ms: 5599
+    avg_time_ns: 5599000064.00
+    iterations_per_sec: 0.18
+  - label: scientific_properties_002
+    category: sp01
+    symbol: NSH
+    name: sp002
+    target: scientific_properties
+    module: nan_safety_helpers_cover_all_scientific_domains
+    status: ok
+    elapsed_ms: 2793
+    avg_time_ns: 2792999936.00
+    iterations_per_sec: 0.36
+  - label: scientific_properties_003
+    category: sp01
+    symbol: RPS
+    name: sp003
+    target: scientific_properties
+    module: randomized_property_smoke_tests_stay_finite
+    status: ok
+    elapsed_ms: 5631
+    avg_time_ns: 5631000064.00
+    iterations_per_sec: 0.18

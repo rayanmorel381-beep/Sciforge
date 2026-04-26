@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma05"
+symbol = "PEC"
+name = "ma048"
+target = "maths"
+module = "probability"
+status = "ok"
+elapsed_ms = "2896"
+experiment_name = "maths_048"
+precision = "f64"
+elapsed_ms = 2896
+iterations = 1
+avg_time_ns = 2896000000.00
+min_time_ns = 2896000000.00
+max_time_ns = 2896000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.35
+result = "success=true code=Some(0) stdout_bytes=159 stderr_bytes=206"

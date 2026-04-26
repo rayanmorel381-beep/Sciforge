@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+integration::halton_sequence_integration,f64,1,1,1689589,1689589,1689589,0,1000,pass,integration,HSI,Halton sequence integration,maths,integration::halton_sequence_integration

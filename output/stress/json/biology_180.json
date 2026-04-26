@@ -1,0 +1,19 @@
+{
+  "category": "bi18",
+  "symbol": "BRN",
+  "name": "bi180",
+  "target": "biology",
+  "module": "virology",
+  "status": "ok",
+  "elapsed_ms": "2139",
+  "experiment_name": "biology_180",
+  "precision": "f64",
+  "elapsed_ms": 2139,
+  "iterations": 1,
+  "avg_time_ns": 2139000064.00,
+  "min_time_ns": 2139000064.00,
+  "max_time_ns": 2139000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.47,
+  "result": "success=true code=Some(0) stdout_bytes=168 stderr_bytes=314"
+}

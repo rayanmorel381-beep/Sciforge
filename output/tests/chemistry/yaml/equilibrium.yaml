@@ -1,0 +1,21 @@
+category: equilibrium
+count: 3
+entries:
+  - label: equilibrium_equilibrium_constant_from_gibbs
+    symbol: ECF
+    name: Equilibrium constant from gibbs
+    domain: chemistry
+    test: "equilibrium::equilibrium_constant_from_gibbs"
+    avg_time_ns: 1778409.00
+  - label: equilibrium_reaction_quotient
+    symbol: RQ
+    name: Reaction quotient
+    domain: chemistry
+    test: "equilibrium::reaction_quotient"
+    avg_time_ns: 1804550.00
+  - label: equilibrium_vant_hoff
+    symbol: VH
+    name: Vant hoff
+    domain: chemistry
+    test: "equilibrium::vant_hoff"
+    avg_time_ns: 1697389.00

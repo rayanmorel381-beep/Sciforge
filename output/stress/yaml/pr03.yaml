@@ -1,0 +1,83 @@
+category: pr03
+count: 10
+entries:
+  - label: parser_021
+    symbol: HSC
+    name: pr021
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4693
+    avg_time_ns: 4693000192.00
+  - label: parser_022
+    symbol: HS
+    name: pr022
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4926
+    avg_time_ns: 4926000128.00
+  - label: parser_023
+    symbol: HV
+    name: pr023
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 2856
+    avg_time_ns: 2856000000.00
+  - label: parser_024
+    symbol: HVT
+    name: pr024
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 5020
+    avg_time_ns: 5020000256.00
+  - label: parser_025
+    symbol: HV
+    name: pr025
+    target: parser
+    module: html
+    status: ok
+    elapsed_ms: 4235
+    avg_time_ns: 4235000064.00
+  - label: parser_026
+    symbol: JA
+    name: pr026
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 579
+    avg_time_ns: 579000000.00
+  - label: parser_027
+    symbol: JB
+    name: pr027
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 544
+    avg_time_ns: 544000000.00
+  - label: parser_028
+    symbol: JE
+    name: pr028
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4574
+    avg_time_ns: 4574000128.00
+  - label: parser_029
+    symbol: JE
+    name: pr029
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4185
+    avg_time_ns: 4184999936.00
+  - label: parser_030
+    symbol: JI
+    name: pr030
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 4761
+    avg_time_ns: 4760999936.00

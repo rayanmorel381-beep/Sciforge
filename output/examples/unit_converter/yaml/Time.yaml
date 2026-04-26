@@ -1,0 +1,17 @@
+category: Time
+count: 2
+entries:
+  - label: 1 day
+    symbol: day
+    name: 1 day
+    from: 1 day
+    to: 8.640000e4 s
+    conversion: 1 day → 8.640000e4 s
+    avg_time_ns: 4989.79
+  - label: 1 year
+    symbol: year
+    name: 1 year
+    from: 1 year
+    to: 8.766000e3 h
+    conversion: 1 year → 8.766000e3 h
+    avg_time_ns: 5427.91

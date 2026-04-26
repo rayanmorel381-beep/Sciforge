@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+optics::brewster_angle,f64,1,1,1849699,1849699,1849699,0,1000,pass,optics,BA,Brewster angle,physics,optics::brewster_angle
+optics::rayleigh_criterion,f64,1,1,1909329,1909329,1909329,0,1000,pass,optics,RC,Rayleigh criterion,physics,optics::rayleigh_criterion
+optics::snell,f64,1,1,1874799,1874799,1874799,0,1000,pass,optics,Sn,Snell,physics,optics::snell
+optics::thin_lens_equation,f64,2,1,2163920,2163920,2163920,0,500,pass,optics,TLE,Thin lens equation,physics,optics::thin_lens_equation

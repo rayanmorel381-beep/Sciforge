@@ -1,0 +1,17 @@
+[benchmark]
+category = "Temperature"
+symbol = "°C"
+name = "Human body temp"
+from = "37 °C"
+to = "3.101500e2 K"
+conversion = "37 °C → 3.101500e2 K"
+experiment_name = "Human body temp_convert"
+precision = "f64"
+elapsed_ms = 34
+iterations = 10000
+avg_time_ns = 3439.03
+min_time_ns = 3439.03
+max_time_ns = 3439.03
+time_stddev = 0.0000
+iterations_per_sec = 294117.66
+result = "Human body temp | 37 °C → 3.101500e2 K"

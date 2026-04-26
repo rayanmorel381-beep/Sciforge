@@ -1,0 +1,167 @@
+element:
+  name: Nitrogen
+  symbol: N
+  atomic_number: 7
+  category: nonmetal
+  group: 15
+  period: 2
+  electron_configuration: "1s² 2s² 2p³"
+  electronegativity: 3.04
+  atomic_mass: 14.007
+
+isotopes:
+  - name: Nitrogen-10
+    symbol: "¹⁰N"
+    mass_number: 10
+    neutrons: 3
+    atomic_mass: 10.04165
+    half_life: 2.0e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Nitrogen-11
+    symbol: "¹¹N"
+    mass_number: 11
+    neutrons: 4
+    atomic_mass: 11.02609
+    half_life: 5.9e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Nitrogen-12
+    symbol: "¹²N"
+    mass_number: 12
+    neutrons: 5
+    atomic_mass: 12.018613
+    half_life: 11.000
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.965
+        daughter: Carbon-12
+      - mode: beta+ alpha emission
+        branching_ratio: 0.035
+    natural_abundance: 0.0
+
+  - name: Nitrogen-13
+    symbol: "¹³N"
+    mass_number: 13
+    neutrons: 6
+    atomic_mass: 13.005739
+    half_life: 9.965
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Carbon-13
+    natural_abundance: 0.0
+
+  - name: Nitrogen-14
+    symbol: "¹⁴N"
+    mass_number: 14
+    neutrons: 7
+    atomic_mass: 14.003074
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.99636
+    nuclear_spin: "1+"
+
+  - name: Nitrogen-15
+    symbol: "¹⁵N"
+    mass_number: 15
+    neutrons: 8
+    atomic_mass: 15.000109
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00364
+    nuclear_spin: "1/2-"
+
+  - name: Nitrogen-16
+    symbol: "¹⁶N"
+    mass_number: 16
+    neutrons: 9
+    atomic_mass: 16.006102
+    half_life: 7.13
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.999
+        daughter: Oxygen-16
+      - mode: beta- alpha emission
+        branching_ratio: 0.001
+    natural_abundance: 0.0
+
+  - name: Nitrogen-17
+    symbol: "¹⁷N"
+    mass_number: 17
+    neutrons: 10
+    atomic_mass: 17.00845
+    half_life: 4.173
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 0.951
+      - mode: beta- (electron emission)
+        branching_ratio: 0.049
+    natural_abundance: 0.0
+
+  - name: Nitrogen-18
+    symbol: "¹⁸N"
+    mass_number: 18
+    neutrons: 11
+    atomic_mass: 18.01408
+    half_life: 619.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.77
+      - mode: beta- alpha emission
+        branching_ratio: 0.12
+      - mode: beta- neutron emission
+        branching_ratio: 0.11
+    natural_abundance: 0.0
+
+  - name: Nitrogen-19
+    symbol: "¹⁹N"
+    mass_number: 19
+    neutrons: 12
+    atomic_mass: 19.01703
+    half_life: 336.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 0.58
+      - mode: beta- (electron emission)
+        branching_ratio: 0.42
+    natural_abundance: 0.0
+
+  - name: Nitrogen-23
+    symbol: "²³N"
+    mass_number: 23
+    neutrons: 16
+    atomic_mass: 23.04122
+    half_life: 13.9
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0

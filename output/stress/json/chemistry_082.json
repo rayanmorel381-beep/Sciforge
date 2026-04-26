@@ -1,0 +1,19 @@
+{
+  "category": "ch09",
+  "symbol": "CS",
+  "name": "ch082",
+  "target": "chemistry",
+  "module": "solid_state",
+  "status": "ok",
+  "elapsed_ms": "1607",
+  "experiment_name": "chemistry_082",
+  "precision": "f64",
+  "elapsed_ms": 1607,
+  "iterations": 1,
+  "avg_time_ns": 1607000064.00,
+  "min_time_ns": 1607000064.00,
+  "max_time_ns": 1607000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.62,
+  "result": "success=true code=Some(0) stdout_bytes=166 stderr_bytes=266"
+}

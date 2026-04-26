@@ -1,0 +1,33 @@
+category: erosion
+count: 5
+entries:
+  - label: erosion_chemical_weathering_rate
+    symbol: CWR
+    name: Chemical weathering rate
+    domain: geology
+    test: "erosion::chemical_weathering_rate"
+    avg_time_ns: 1695009.00
+  - label: erosion_fluvial_erosion_rate
+    symbol: FER
+    name: Fluvial erosion rate
+    domain: geology
+    test: "erosion::fluvial_erosion_rate"
+    avg_time_ns: 1749459.00
+  - label: erosion_frost_weathering_rate
+    symbol: FWR
+    name: Frost weathering rate
+    domain: geology
+    test: "erosion::frost_weathering_rate"
+    avg_time_ns: 1697289.00
+  - label: erosion_volcanic_explosivity_index
+    symbol: VEI
+    name: Volcanic explosivity index
+    domain: geology
+    test: "erosion::volcanic_explosivity_index"
+    avg_time_ns: 1902340.00
+  - label: erosion_wind_erosion_threshold
+    symbol: WET
+    name: Wind erosion threshold
+    domain: geology
+    test: "erosion::wind_erosion_threshold"
+    avg_time_ns: 2304438.00

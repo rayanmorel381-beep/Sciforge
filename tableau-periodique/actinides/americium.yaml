@@ -1,0 +1,56 @@
+element:
+  name: Americium
+  symbol: Am
+  atomic_number: 95
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f⁷ 7s²"
+  electronegativity: 1.13
+  atomic_mass: 243.061381
+
+isotopes:
+  - name: Americium-241
+    symbol: "²⁴¹Am"
+    mass_number: 241
+    neutrons: 146
+    atomic_mass: 241.056829
+    half_life: 432.2
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Neptunium-237
+    natural_abundance: 0.0
+
+  - name: Americium-242m
+    symbol: "²⁴²ᵐAm"
+    mass_number: 242
+    neutrons: 147
+    atomic_mass: 242.059549
+    half_life: 141
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: isomeric transition
+        branching_ratio: 0.995
+        daughter: Americium-242
+      - mode: alpha
+        branching_ratio: 0.005
+        daughter: Neptunium-238
+    natural_abundance: 0.0
+
+  - name: Americium-243
+    symbol: "²⁴³Am"
+    mass_number: 243
+    neutrons: 148
+    atomic_mass: 243.061381
+    half_life: 7370
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Neptunium-239
+    natural_abundance: 0.0

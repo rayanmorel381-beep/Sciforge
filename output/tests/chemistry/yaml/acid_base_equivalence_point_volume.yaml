@@ -1,0 +1,15 @@
+category: acid_base
+symbol: EPV
+name: Equivalence point volume
+domain: chemistry
+test: "acid_base::equivalence_point_volume"
+experiment_name: "acid_base::equivalence_point_volume"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2152229.00
+min_time_ns: 2152229.00
+max_time_ns: 2152229.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

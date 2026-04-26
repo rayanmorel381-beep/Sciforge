@@ -1,0 +1,39 @@
+category: alkali metal
+count: 6
+entries:
+  - label: 003_Li
+    symbol: Li
+    name: Lithium
+    config: 1s² 2s¹
+    mass: 6.941
+    avg_time_ns: 249.70
+  - label: 011_Na
+    symbol: Na
+    name: Sodium
+    config: [Ne] 3s¹
+    mass: 22.98976928
+    avg_time_ns: 846.23
+  - label: 019_K
+    symbol: K
+    name: Potassium
+    config: [Ar] 4s¹
+    mass: 39.0983
+    avg_time_ns: 1526.03
+  - label: 037_Rb
+    symbol: Rb
+    name: Rubidium
+    config: [Kr] 5s¹
+    mass: 85.4678
+    avg_time_ns: 2895.13
+  - label: 055_Cs
+    symbol: Cs
+    name: Cesium
+    config: [Xe] 6s¹
+    mass: 132.90545196
+    avg_time_ns: 4324.45
+  - label: 087_Fr
+    symbol: Fr
+    name: Francium
+    config: [Rn] 7s¹
+    mass: 223
+    avg_time_ns: 6769.47

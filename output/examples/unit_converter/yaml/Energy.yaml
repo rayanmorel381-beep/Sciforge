@@ -1,0 +1,17 @@
+category: Energy
+count: 2
+entries:
+  - label: 1 eV
+    symbol: eV
+    name: 1 eV
+    from: 1 eV
+    to: 1.602177e-19 J
+    conversion: 1 eV → 1.602177e-19 J
+    avg_time_ns: 4721.06
+  - label: TNT equivalent
+    symbol: J
+    name: TNT equivalent
+    from: 4184000000 J
+    to: 1.000000e9 cal
+    conversion: 4184000000 J → 1.000000e9 cal
+    avg_time_ns: 4737.55

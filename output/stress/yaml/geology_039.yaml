@@ -1,0 +1,17 @@
+category: ge04
+symbol: GG
+name: ge039
+target: geology
+module: tectonics
+status: ok
+elapsed_ms: 5050
+experiment_name: geology_039
+precision: f64
+elapsed_ms: 5050
+iterations: 1
+avg_time_ns: 5049999872.00
+min_time_ns: 5049999872.00
+max_time_ns: 5049999872.00
+time_stddev: 0.0000
+iterations_per_sec: 0.20
+result: success=true code=Some(0) stdout_bytes=156 stderr_bytes=262

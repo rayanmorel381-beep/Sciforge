@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch07"
+symbol = "HLT"
+name = "ch063"
+target = "chemistry"
+module = "nuclear"
+status = "ok"
+elapsed_ms = "374"
+experiment_name = "chemistry_063"
+precision = "f64"
+elapsed_ms = 374
+iterations = 1
+avg_time_ns = 374000000.00
+min_time_ns = 374000000.00
+max_time_ns = 374000000.00
+time_stddev = 0.0000
+iterations_per_sec = 2.67
+result = "success=true code=Some(0) stdout_bytes=163 stderr_bytes=313"

@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+sparse::conjugate_gradient,f64,1,1,1964579,1964579,1964579,0,1000,pass,sparse,CG,Conjugate gradient,maths,sparse::conjugate_gradient
+sparse::jacobi_iterate,f64,1,1,1769559,1769559,1769559,0,1000,pass,sparse,JI,Jacobi iterate,maths,sparse::jacobi_iterate
+sparse::sparse_add,f64,1,1,1799959,1799959,1799959,0,1000,pass,sparse,SA,Sparse add,maths,sparse::sparse_add

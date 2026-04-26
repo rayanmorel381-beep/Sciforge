@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+meteorology_011,f64,493,1,493000000,493000000,493000000,0,2.0283976,success=true code=Some(0) stdout_bytes=147 stderr_bytes=322,me02,ED,me011,meteorology,dynamics,ok,493
+meteorology_012,f64,512,1,512000000,512000000,512000000,0,1.953125,success=true code=Some(0) stdout_bytes=152 stderr_bytes=322,me02,GW,me012,meteorology,dynamics,ok,512
+meteorology_013,f64,5227,1,5227000000,5227000000,5227000000,0,0.19131432,success=true code=Some(0) stdout_bytes=149 stderr_bytes=270,me02,RN,me013,meteorology,dynamics,ok,5227
+meteorology_014,f64,750,1,750000000,750000000,750000000,0,1.3333334,success=true code=Some(0) stdout_bytes=170 stderr_bytes=270,me02,RND,me014,meteorology,dynamics,ok,750
+meteorology_015,f64,3868,1,3868000000,3868000000,3868000000,0,0.25853154,success=true code=Some(0) stdout_bytes=153 stderr_bytes=270,me02,RWS,me015,meteorology,dynamics,ok,3868
+meteorology_016,f64,5470,1,5470000000,5470000000,5470000000,0,0.18281536,success=true code=Some(0) stdout_bytes=149 stderr_bytes=218,me02,HS,me016,meteorology,ocean,ok,5470
+meteorology_017,f64,5275,1,5275000000,5275000000,5275000000,0,0.18957347,success=true code=Some(0) stdout_bytes=155 stderr_bytes=218,me02,SLR,me017,meteorology,ocean,ok,5275
+meteorology_018,f64,5130,1,5130000000,5130000000,5130000000,0,0.19493178,success=true code=Some(0) stdout_bytes=149 stderr_bytes=270,me02,SD,me018,meteorology,ocean,ok,5130
+meteorology_019,f64,5316,1,5316000000,5316000000,5316000000,0,0.18811136,success=true code=Some(0) stdout_bytes=173 stderr_bytes=218,me02,SDI,me019,meteorology,ocean,ok,5316
+meteorology_020,f64,5488,1,5488000000,5488000000,5488000000,0,0.18221575,success=true code=Some(0) stdout_bytes=144 stderr_bytes=270,me02,SS,me020,meteorology,ocean,ok,5488

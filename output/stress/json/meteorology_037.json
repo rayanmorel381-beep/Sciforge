@@ -1,0 +1,19 @@
+{
+  "category": "me04",
+  "symbol": "CZF",
+  "name": "me037",
+  "target": "meteorology",
+  "module": "storms",
+  "status": "ok",
+  "elapsed_ms": "611",
+  "experiment_name": "meteorology_037",
+  "precision": "f64",
+  "elapsed_ms": 611,
+  "iterations": 1,
+  "avg_time_ns": 611000000.00,
+  "min_time_ns": 611000000.00,
+  "max_time_ns": 611000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1.64,
+  "result": "success=true code=Some(0) stdout_bytes=159 stderr_bytes=270"
+}

@@ -1,0 +1,131 @@
+element:
+  name: Argon
+  symbol: Ar
+  atomic_number: 18
+  category: noble gas
+  group: 18
+  period: 3
+  electron_configuration: "[Ne] 3s² 3p⁶"
+  electronegativity: null
+  atomic_mass: 39.948
+
+isotopes:
+  - name: Argon-33
+    symbol: "³³Ar"
+    mass_number: 33
+    neutrons: 15
+    atomic_mass: 32.98993
+    half_life: 173.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Chlorine-33
+    natural_abundance: 0.0
+
+  - name: Argon-35
+    symbol: "³⁵Ar"
+    mass_number: 35
+    neutrons: 17
+    atomic_mass: 34.97526
+    half_life: 1.7756
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Chlorine-35
+    natural_abundance: 0.0
+
+  - name: Argon-36
+    symbol: "³⁶Ar"
+    mass_number: 36
+    neutrons: 18
+    atomic_mass: 35.967546
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.003336
+    nuclear_spin: "0+"
+
+  - name: Argon-37
+    symbol: "³⁷Ar"
+    mass_number: 37
+    neutrons: 19
+    atomic_mass: 36.966776
+    half_life: 35.04
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Chlorine-37
+    natural_abundance: 0.0
+
+  - name: Argon-38
+    symbol: "³⁸Ar"
+    mass_number: 38
+    neutrons: 20
+    atomic_mass: 37.962732
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.000629
+    nuclear_spin: "0+"
+
+  - name: Argon-39
+    symbol: "³⁹Ar"
+    mass_number: 39
+    neutrons: 21
+    atomic_mass: 38.964313
+    half_life: 268.0
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Potassium-39
+    natural_abundance: trace
+
+  - name: Argon-40
+    symbol: "⁴⁰Ar"
+    mass_number: 40
+    neutrons: 22
+    atomic_mass: 39.962383
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.996035
+    nuclear_spin: "0+"
+
+  - name: Argon-41
+    symbol: "⁴¹Ar"
+    mass_number: 41
+    neutrons: 23
+    atomic_mass: 40.964501
+    half_life: 109.61
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Potassium-41
+    natural_abundance: 0.0
+
+  - name: Argon-42
+    symbol: "⁴²Ar"
+    mass_number: 42
+    neutrons: 24
+    atomic_mass: 41.96305
+    half_life: 32.9
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Potassium-42
+    natural_abundance: 0.0

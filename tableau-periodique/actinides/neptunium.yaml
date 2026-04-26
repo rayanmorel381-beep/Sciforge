@@ -1,0 +1,70 @@
+element:
+  name: Neptunium
+  symbol: Np
+  atomic_number: 93
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f⁴ 6d¹ 7s²"
+  electronegativity: 1.36
+  atomic_mass: 237.048174
+
+isotopes:
+  - name: Neptunium-235
+    symbol: "²³⁵Np"
+    mass_number: 235
+    neutrons: 142
+    atomic_mass: 235.044063
+    half_life: 396.1
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Uranium-235
+    natural_abundance: 0.0
+
+  - name: Neptunium-236
+    symbol: "²³⁶Np"
+    mass_number: 236
+    neutrons: 143
+    atomic_mass: 236.046570
+    half_life: 1.54e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.874
+        daughter: Uranium-236
+      - mode: beta-
+        branching_ratio: 0.126
+        daughter: Plutonium-236
+    natural_abundance: 0.0
+
+  - name: Neptunium-237
+    symbol: "²³⁷Np"
+    mass_number: 237
+    neutrons: 144
+    atomic_mass: 237.048174
+    half_life: 2.144e6
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Protactinium-233
+    natural_abundance: 0.0
+
+  - name: Neptunium-239
+    symbol: "²³⁹Np"
+    mass_number: 239
+    neutrons: 146
+    atomic_mass: 239.052939
+    half_life: 2.356
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Plutonium-239
+    natural_abundance: 0.0

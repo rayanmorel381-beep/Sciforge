@@ -1,0 +1,83 @@
+category: bi06
+count: 10
+entries:
+  - label: biology_051
+    symbol: FFM
+    name: bi051
+    target: biology
+    module: developmental
+    status: ok
+    elapsed_ms: 5835
+    avg_time_ns: 5834999808.00
+  - label: biology_052
+    symbol: LI
+    name: bi052
+    target: biology
+    module: developmental
+    status: ok
+    elapsed_ms: 5223
+    avg_time_ns: 5223000064.00
+  - label: biology_053
+    symbol: MGS
+    name: bi053
+    target: biology
+    module: developmental
+    status: ok
+    elapsed_ms: 5452
+    avg_time_ns: 5452000256.00
+  - label: biology_054
+    symbol: CF
+    name: bi054
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 538
+    avg_time_ns: 538000000.00
+  - label: biology_055
+    symbol: DMP
+    name: bi055
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 4215
+    avg_time_ns: 4215000064.00
+  - label: biology_056
+    symbol: DUF
+    name: bi056
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 2505
+    avg_time_ns: 2504999936.00
+  - label: biology_057
+    symbol: GMR
+    name: bi057
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 2927
+    avg_time_ns: 2927000064.00
+  - label: biology_058
+    symbol: MRK
+    name: bi058
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 2379
+    avg_time_ns: 2379000064.00
+  - label: biology_059
+    symbol: SR
+    name: bi059
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 5339
+    avg_time_ns: 5338999808.00
+  - label: biology_060
+    symbol: TS
+    name: bi060
+    target: biology
+    module: dispatch
+    status: ok
+    elapsed_ms: 5381
+    avg_time_ns: 5381000192.00

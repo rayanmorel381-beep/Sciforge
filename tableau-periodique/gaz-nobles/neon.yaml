@@ -1,0 +1,120 @@
+element:
+  name: Neon
+  symbol: Ne
+  atomic_number: 10
+  category: noble gas
+  group: 18
+  period: 2
+  electron_configuration: "1s² 2s² 2p⁶"
+  electronegativity: null
+  atomic_mass: 20.1797
+
+isotopes:
+  - name: Neon-17
+    symbol: "¹⁷Ne"
+    mass_number: 17
+    neutrons: 7
+    atomic_mass: 17.01772
+    half_life: 109.2
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.955
+      - mode: beta+ proton emission
+        branching_ratio: 0.040
+      - mode: beta+ alpha emission
+        branching_ratio: 0.005
+    natural_abundance: 0.0
+
+  - name: Neon-18
+    symbol: "¹⁸Ne"
+    mass_number: 18
+    neutrons: 8
+    atomic_mass: 18.00571
+    half_life: 1.6672
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Fluorine-18
+    natural_abundance: 0.0
+
+  - name: Neon-19
+    symbol: "¹⁹Ne"
+    mass_number: 19
+    neutrons: 9
+    atomic_mass: 19.001880
+    half_life: 17.274
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Fluorine-19
+    natural_abundance: 0.0
+
+  - name: Neon-20
+    symbol: "²⁰Ne"
+    mass_number: 20
+    neutrons: 10
+    atomic_mass: 19.992440
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.9048
+    nuclear_spin: "0+"
+
+  - name: Neon-21
+    symbol: "²¹Ne"
+    mass_number: 21
+    neutrons: 11
+    atomic_mass: 20.993847
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0027
+    nuclear_spin: "3/2+"
+
+  - name: Neon-22
+    symbol: "²²Ne"
+    mass_number: 22
+    neutrons: 12
+    atomic_mass: 21.991386
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0925
+    nuclear_spin: "0+"
+
+  - name: Neon-23
+    symbol: "²³Ne"
+    mass_number: 23
+    neutrons: 13
+    atomic_mass: 22.994467
+    half_life: 37.15
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Sodium-23
+    natural_abundance: 0.0
+
+  - name: Neon-24
+    symbol: "²⁴Ne"
+    mass_number: 24
+    neutrons: 14
+    atomic_mass: 23.993615
+    half_life: 3.38
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Sodium-24
+    natural_abundance: 0.0

@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi01"
+symbol = "CRL"
+name = "bi001"
+target = "biology"
+module = "aging"
+status = "ok"
+elapsed_ms = "5571"
+experiment_name = "biology_001"
+precision = "f64"
+elapsed_ms = 5571
+iterations = 1
+avg_time_ns = 5570999808.00
+min_time_ns = 5570999808.00
+max_time_ns = 5570999808.00
+time_stddev = 0.0000
+iterations_per_sec = 0.18
+result = "success=true code=Some(0) stdout_bytes=162 stderr_bytes=262"

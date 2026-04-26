@@ -1,0 +1,15 @@
+category: thermodynamics
+symbol: WD
+name: Wien displacement
+domain: physics
+test: "thermodynamics::wien_displacement"
+experiment_name: "thermodynamics::wien_displacement"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2000769.00
+min_time_ns: 2000769.00
+max_time_ns: 2000769.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

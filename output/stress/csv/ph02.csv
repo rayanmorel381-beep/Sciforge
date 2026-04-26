@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+physics_011,f64,161,1,161000000,161000000,161000000,0,6.21118,success=true code=Some(0) stdout_bytes=169 stderr_bytes=205,ph02,CPP,ph011,physics,electrodynamics,ok,161
+physics_012,f64,3996,1,3996000000,3996000000,3996000000,0,0.25025025,success=true code=Some(0) stdout_bytes=170 stderr_bytes=314,ph02,EFP,ph012,physics,electrodynamics,ok,3996
+physics_013,f64,3295,1,3295000000,3295000000,3295000000,0,0.30349013,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,ph02,SD,ph013,physics,electrodynamics,ok,3295
+physics_014,f64,3930,1,3930000000,3930000000,3930000000,0,0.2544529,success=true code=Some(0) stdout_bytes=170 stderr_bytes=210,ph02,CPP,ph014,physics,electromagnetism,ok,3930
+physics_015,f64,3955,1,3955000000,3955000000,3955000000,0,0.2528445,success=true code=Some(0) stdout_bytes=171 stderr_bytes=262,ph02,EFP,ph015,physics,electromagnetism,ok,3955
+physics_016,f64,3971,1,3971000000,3971000000,3971000000,0,0.25182575,success=true code=Some(0) stdout_bytes=163 stderr_bytes=262,ph02,IS,ph016,physics,electromagnetism,ok,3971
+physics_017,f64,3886,1,3886000000,3886000000,3886000000,0,0.25733402,success=true code=Some(0) stdout_bytes=163 stderr_bytes=262,ph02,MFW,ph017,physics,electromagnetism,ok,3886
+physics_018,f64,4407,1,4407000000,4407000000,4407000000,0,0.22691174,success=true code=Some(0) stdout_bytes=153 stderr_bytes=210,ph02,ML,ph018,physics,electromagnetism,ok,4407
+physics_019,f64,3574,1,3574000000,3574000000,3574000000,0,0.27979854,success=true code=Some(0) stdout_bytes=177 stderr_bytes=210,ph02,MLQ,ph019,physics,electromagnetism,ok,3574
+physics_020,f64,3304,1,3304000000,3304000000,3304000000,0,0.30266345,success=true code=Some(0) stdout_bytes=155 stderr_bytes=210,ph02,OC,ph020,physics,electromagnetism,ok,3304

@@ -1,0 +1,51 @@
+category: seismology
+count: 8
+entries:
+  - label: seismology_gutenberg_richter
+    symbol: GR
+    name: Gutenberg richter
+    domain: geology
+    test: "seismology::gutenberg_richter"
+    avg_time_ns: 1704649.00
+  - label: seismology_gutenberg_richter_decreases_with_magnitude
+    symbol: GRD
+    name: Gutenberg richter decreases with magnitude
+    domain: geology
+    test: "seismology::gutenberg_richter_decreases_with_magnitude"
+    avg_time_ns: 1694049.00
+  - label: seismology_p_wave_faster_than_s_wave
+    symbol: PWF
+    name: P wave faster than s wave
+    domain: geology
+    test: "seismology::p_wave_faster_than_s_wave"
+    avg_time_ns: 1672330.00
+  - label: seismology_p_wave_velocity
+    symbol: PWV
+    name: P wave velocity
+    domain: geology
+    test: "seismology::p_wave_velocity"
+    avg_time_ns: 2398169.00
+  - label: seismology_richter_amplitude_ratio_adds_one_magnitude
+    symbol: RAR
+    name: Richter amplitude ratio adds one magnitude
+    domain: geology
+    test: "seismology::richter_amplitude_ratio_adds_one_magnitude"
+    avg_time_ns: 1918229.00
+  - label: seismology_richter_magnitude
+    symbol: RM
+    name: Richter magnitude
+    domain: geology
+    test: "seismology::richter_magnitude"
+    avg_time_ns: 1805979.00
+  - label: seismology_s_wave_velocity
+    symbol: SWV
+    name: S wave velocity
+    domain: geology
+    test: "seismology::s_wave_velocity"
+    avg_time_ns: 1771049.00
+  - label: seismology_seismic_energy
+    symbol: SE
+    name: Seismic energy
+    domain: geology
+    test: "seismology::seismic_energy"
+    avg_time_ns: 1721629.00

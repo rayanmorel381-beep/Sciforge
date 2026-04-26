@@ -1,0 +1,21 @@
+category: optimization
+count: 3
+entries:
+  - label: optimization_lagrangian
+    symbol: La
+    name: Lagrangian
+    domain: maths
+    test: "optimization::lagrangian"
+    avg_time_ns: 1821789.00
+  - label: optimization_project_box
+    symbol: PB
+    name: Project box
+    domain: maths
+    test: "optimization::project_box"
+    avg_time_ns: 1922459.00
+  - label: optimization_quadratic_objective
+    symbol: QO
+    name: Quadratic objective
+    domain: maths
+    test: "optimization::quadratic_objective"
+    avg_time_ns: 1774419.00

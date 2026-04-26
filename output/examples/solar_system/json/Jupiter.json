@@ -1,0 +1,22 @@
+{
+  "category": "Gas Giant",
+  "symbol": "♃",
+  "name": "Jupiter",
+  "mass": "1.898e27 kg",
+  "radius": "69911 km",
+  "semi_major": "5.204 AU",
+  "kepler_period": "4335.92 days",
+  "circular_vel": "13.06 km/s",
+  "escape_vel": "60.20 km/s",
+  "hohmann_dv": "14.44 km/s",
+  "experiment_name": "Jupiter_orbit",
+  "precision": "f64",
+  "elapsed_ms": 8,
+  "iterations": 5000,
+  "avg_time_ns": 1797.72,
+  "min_time_ns": 1797.72,
+  "max_time_ns": 1797.72,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 625000.00,
+  "result": "Jupiter | T=4335.92 days | v_circ=13.06 km/s | v_esc=60.20 km/s | Hohmann Δv=14.44 km/s"
+}

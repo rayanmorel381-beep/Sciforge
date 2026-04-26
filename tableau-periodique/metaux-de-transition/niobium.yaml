@@ -1,0 +1,79 @@
+element:
+  name: Niobium
+  symbol: Nb
+  atomic_number: 41
+  category: transition metal
+  group: 5
+  period: 5
+  electron_configuration: "[Kr] 4d⁴ 5s¹"
+  electronegativity: 1.6
+  atomic_mass: 92.90637
+
+isotopes:
+  - name: Niobium-91
+    symbol: "⁹¹Nb"
+    mass_number: 91
+    neutrons: 50
+    atomic_mass: 90.906996
+    half_life: 680
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Zirconium-91
+    natural_abundance: 0.0
+
+  - name: Niobium-92
+    symbol: "⁹²Nb"
+    mass_number: 92
+    neutrons: 51
+    atomic_mass: 91.907194
+    half_life: 3.47e7
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Zirconium-92
+    natural_abundance: 0.0
+
+  - name: Niobium-93
+    symbol: "⁹³Nb"
+    mass_number: 93
+    neutrons: 52
+    atomic_mass: 92.906378
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "9/2+"
+
+  - name: Niobium-94
+    symbol: "⁹⁴Nb"
+    mass_number: 94
+    neutrons: 53
+    atomic_mass: 93.907284
+    half_life: 2.03e4
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Molybdenum-94
+    natural_abundance: 0.0
+
+  - name: Niobium-95
+    symbol: "⁹⁵Nb"
+    mass_number: 95
+    neutrons: 54
+    atomic_mass: 94.906836
+    half_life: 34.991
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Molybdenum-95
+    natural_abundance: 0.0

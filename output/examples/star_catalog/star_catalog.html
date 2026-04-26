@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Star Catalog — Luminosity, Magnitude, Schwarzschild Radius &amp; Main Sequence Lifetime</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0d1117;color:#c9d1d9;padding:2em;max-width:1800px;margin:0 auto}
+h1{color:#58a6ff;margin-bottom:.5em;font-size:2em}
+h2{color:#79c0ff;margin:1.5em 0 .5em;border-bottom:1px solid #21262d;padding-bottom:.3em}
+p{margin:.5em 0;line-height:1.6}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;font-size:.85em}
+th{background:#161b22;color:#58a6ff;position:sticky;top:0}
+tr:nth-child(even){background:#161b22}
+pre{background:#161b22;padding:1em;border-radius:6px;overflow-x:auto;max-height:600px;font-size:.8em}
+code{font-family:ui-monospace,monospace}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1em;margin:1em 0}
+.stat-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1em;text-align:center}
+.stat-card .num{font-size:2em;color:#58a6ff;font-weight:bold}
+.stat-card .lbl{font-size:.8em;color:#8b949e}
+.tabs{display:flex;gap:0;margin-top:1.5em;flex-wrap:wrap}
+.tab{padding:.6em 1.2em;cursor:pointer;background:#161b22;border:1px solid #30363d;border-bottom:none;border-radius:6px 6px 0 0;color:#8b949e;font-weight:600}
+.tab:hover{color:#c9d1d9}
+.tab.active{background:#0d1117;color:#58a6ff;border-bottom:1px solid #0d1117}
+.panel{display:none;border:1px solid #30363d;padding:1em;border-radius:0 6px 6px 6px}
+.panel.active{display:block}
+.fsel{width:100%;padding:.5em;margin-bottom:.8em;background:#161b22;color:#c9d1d9;border:1px solid #30363d;border-radius:4px;font-family:ui-monospace,monospace;font-size:.85em}
+.charts{display:grid;grid-template-columns:repeat(auto-fill,minmax(500px,1fr));gap:1.5em;margin:1em 0}
+.chart-box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1.2em}
+.chart-box h3{color:#79c0ff;font-size:.95em;margin-bottom:.8em}
+.ptable{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin:1.5em 0}
+.el{padding:6px 3px;text-align:center;border-radius:6px;min-height:68px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:transform .15s,box-shadow .15s;border:1px solid rgba(255,255,255,.06)}
+.el:hover{transform:scale(1.4);box-shadow:0 0 16px rgba(88,166,255,.6);z-index:10;position:relative}
+.el .z{font-size:.55em;opacity:.65;color:#8b949e}
+.el .sym{font-size:1.5em;font-weight:700;line-height:1.1}
+.el .mass{font-size:.5em;opacity:.55;color:#8b949e}
+.el .ns{font-size:.45em;opacity:.45;color:#58a6ff}
+.el .nm{font-size:.5em;opacity:.6;color:#8b949e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.empty{background:transparent}
+.marker{display:flex;align-items:center;justify-content:center;font-weight:700;color:#58a6ff;font-size:.85em}
+.legend{display:flex;flex-wrap:wrap;gap:.8em;margin:.8em 0;align-items:center}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.75em;color:#8b949e}
+.legend-swatch{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,.1)}
+@keyframes hl{0%{box-shadow:0 0 20px #58a6ff}100%{box-shadow:none}}
+.highlight{animation:hl 2s ease-out}
+.detail{display:none;margin:1.5em 0;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:1.5em;position:relative}
+.detail.open{display:grid;grid-template-columns:auto 1fr;gap:.6em 1.5em;align-items:baseline}
+.detail .close{position:absolute;top:10px;right:14px;cursor:pointer;color:#8b949e;font-size:1.4em;background:none;border:none}
+.detail .close:hover{color:#f85149}
+.detail .dk{color:#8b949e;font-size:.85em;text-align:right}
+.detail .dv{color:#c9d1d9;font-size:.95em;font-weight:600}
+.detail .dtitle{grid-column:1/-1;font-size:1.3em;font-weight:700;margin-bottom:.3em}
+.detail .files{grid-column:1/-1;display:flex;gap:.5em;margin-top:.5em}
+.detail .fbtn{padding:.3em .8em;background:#21262d;border:1px solid #30363d;border-radius:4px;color:#58a6ff;cursor:pointer;font-size:.8em;text-decoration:none}
+.detail .fbtn:hover{background:#30363d}
+.cat-0{background:linear-gradient(135deg,#1a3a1a,#0d0d0d);color:#7ee787}
+.cat-1{background:linear-gradient(135deg,#0a2a3a,#0d0d0d);color:#79c0ff}
+.cat-2{background:linear-gradient(135deg,#3a2a0a,#0d0d0d);color:#ffa657}
+.cat-3{background:linear-gradient(135deg,#3a1a2e,#0d0d0d);color:#d2a8ff}
+</style>
+</head>
+<body>
+
+<h1>Star Catalog — Luminosity, Magnitude, Schwarzschild Radius &amp; Main Sequence Lifetime</h1>
+<p>10 benchmark entries &mdash; 6 formats: CSV, JSON, YAML, TOML, BMK, Markdown.</p>
+
+<div class="stats">
+<div class="stat-card"><div class="num">10</div><div class="lbl">Elements</div></div>
+<div class="stat-card"><div class="num">6</div><div class="lbl">Formats</div></div>
+<div class="stat-card"><div class="num">62</div><div class="lbl">Files</div></div>
+</div>
+
+<h2>Interactive Grid</h2>
+<div class="legend">
+<div class="legend-item"><div class="legend-swatch cat-0"></div>Main Sequence</div>
+<div class="legend-item"><div class="legend-swatch cat-1"></div>Supergiant</div>
+<div class="legend-item"><div class="legend-swatch cat-2"></div>Red Dwarf</div>
+<div class="legend-item"><div class="legend-swatch cat-3"></div>Giant</div>
+</div>
+<div class="ptable">
+<div id="el-Sun" class="el cat-0" style="grid-row:1;grid-column:1" title="Sun - 1744.3ns" onclick="go('Sun')"><div class="sym">G</div><div class="nm">Sun</div><div class="ns">1744ns</div></div>
+<div id="el-Sirius A" class="el cat-0" style="grid-row:1;grid-column:2" title="Sirius A - 1677.3ns" onclick="go('Sirius A')"><div class="sym">A</div><div class="nm">Sirius A</div><div class="ns">1677ns</div></div>
+<div id="el-Betelgeuse" class="el cat-1" style="grid-row:1;grid-column:3" title="Betelgeuse - 1696.3ns" onclick="go('Betelgeuse')"><div class="sym">M</div><div class="nm">Betelgeuse</div><div class="ns">1696ns</div></div>
+<div id="el-Rigel" class="el cat-1" style="grid-row:1;grid-column:4" title="Rigel - 1671.6ns" onclick="go('Rigel')"><div class="sym">B</div><div class="nm">Rigel</div><div class="ns">1672ns</div></div>
+<div id="el-Vega" class="el cat-0" style="grid-row:1;grid-column:5" title="Vega - 1681.6ns" onclick="go('Vega')"><div class="sym">A</div><div class="nm">Vega</div><div class="ns">1682ns</div></div>
+<div id="el-Proxima Centauri" class="el cat-2" style="grid-row:2;grid-column:1" title="Proxima Centauri - 1704.3ns" onclick="go('Proxima Centauri')"><div class="sym">M</div><div class="nm">Proxima Centauri</div><div class="ns">1704ns</div></div>
+<div id="el-Polaris" class="el cat-1" style="grid-row:2;grid-column:2" title="Polaris - 1646.6ns" onclick="go('Polaris')"><div class="sym">F</div><div class="nm">Polaris</div><div class="ns">1647ns</div></div>
+<div id="el-Aldebaran" class="el cat-3" style="grid-row:2;grid-column:3" title="Aldebaran - 1723.6ns" onclick="go('Aldebaran')"><div class="sym">K</div><div class="nm">Aldebaran</div><div class="ns">1724ns</div></div>
+<div id="el-Deneb" class="el cat-1" style="grid-row:2;grid-column:4" title="Deneb - 1713.8ns" onclick="go('Deneb')"><div class="sym">A</div><div class="nm">Deneb</div><div class="ns">1714ns</div></div>
+<div id="el-Barnard's Star" class="el cat-2" style="grid-row:2;grid-column:5" title="Barnard's Star - 1759.2ns" onclick="go('Barnard's Star')"><div class="sym">M</div><div class="nm">Barnard's Star</div><div class="ns">1759ns</div></div>
+</div>
+
+<div id="detail" class="detail">
+<button class="close" onclick="closeDetail()">&times;</button>
+<div class="dtitle" id="d-title"></div>
+<div id="d-tags"></div>
+<div class="dk">Precision</div><div class="dv" id="d-prec"></div>
+<div class="dk">Iterations</div><div class="dv" id="d-iter"></div>
+<div class="dk">Avg Time</div><div class="dv" id="d-avg"></div>
+<div class="dk">Min Time</div><div class="dv" id="d-min"></div>
+<div class="dk">Max Time</div><div class="dv" id="d-max"></div>
+<div class="dk">Std Dev</div><div class="dv" id="d-std"></div>
+<div class="dk">Iters/sec</div><div class="dv" id="d-ips"></div>
+<div class="files" id="d-files"></div>
+</div>
+
+<h2>Data Formats</h2>
+<div class="tabs">
+<div class="tab active" onclick="switchTab(event,'csv')">CSV</div>
+<div class="tab" onclick="switchTab(event,'json')">JSON</div>
+<div class="tab" onclick="switchTab(event,'yaml')">YAML</div>
+<div class="tab" onclick="switchTab(event,'toml')">TOML</div>
+<div class="tab" onclick="switchTab(event,'bmk')">BMK</div>
+<div class="tab" onclick="switchTab(event,'mdprev')">Markdown</div>
+</div>
+<div id="csv" class="panel active">
+<select class="fsel" onchange="showFile('csv',this.value)">
+<option>Giant.csv</option>
+<option>Main_Sequence.csv</option>
+<option>Red_Dwarf.csv</option>
+<option>Supergiant.csv</option>
+<option>all.csv</option>
+</select>
+<div id="csv-code" style="overflow-x:auto;max-height:600px;overflow-y:auto"></div>
+</div>
+<div id="json" class="panel">
+<select class="fsel" onchange="showFile('json',this.value)">
+<option>Aldebaran.json</option>
+<option>Barnard&#39;s Star.json</option>
+<option>Betelgeuse.json</option>
+<option>Deneb.json</option>
+<option>Polaris.json</option>
+<option>Proxima Centauri.json</option>
+<option>Rigel.json</option>
+<option>Sirius A.json</option>
+<option>Sun.json</option>
+<option>Vega.json</option>
+<option>summary.json</option>
+</select>
+<pre><code id="json-code"></code></pre>
+</div>
+<div id="yaml" class="panel">
+<select class="fsel" onchange="showFile('yaml',this.value)">
+<option>Aldebaran.yaml</option>
+<option>Barnard&#39;s Star.yaml</option>
+<option>Betelgeuse.yaml</option>
+<option>Deneb.yaml</option>
+<option>Giant.yaml</option>
+<option>Main_Sequence.yaml</option>
+<option>Polaris.yaml</option>
+<option>Proxima Centauri.yaml</option>
+<option>Red_Dwarf.yaml</option>
+<option>Rigel.yaml</option>
+<option>Sirius A.yaml</option>
+<option>Sun.yaml</option>
+<option>Supergiant.yaml</option>
+<option>Vega.yaml</option>
+<option>summary.yaml</option>
+</select>
+<pre><code id="yaml-code"></code></pre>
+</div>
+<div id="toml" class="panel">
+<select class="fsel" onchange="showFile('toml',this.value)">
+<option>Aldebaran.toml</option>
+<option>Barnard&#39;s Star.toml</option>
+<option>Betelgeuse.toml</option>
+<option>Deneb.toml</option>
+<option>Polaris.toml</option>
+<option>Proxima Centauri.toml</option>
+<option>Rigel.toml</option>
+<option>Sirius A.toml</option>
+<option>Sun.toml</option>
+<option>Vega.toml</option>
+<option>summary.toml</option>
+</select>
+<pre><code id="toml-code"></code></pre>
+</div>
+<div id="bmk" class="panel">
+<select class="fsel" onchange="showFile('bmk',this.value)">
+<option>Aldebaran.bmk</option>
+<option>Barnard&#39;s Star.bmk</option>
+<option>Betelgeuse.bmk</option>
+<option>Deneb.bmk</option>
+<option>Polaris.bmk</option>
+<option>Proxima Centauri.bmk</option>
+<option>Rigel.bmk</option>
+<option>Sirius A.bmk</option>
+<option>Sun.bmk</option>
+<option>Vega.bmk</option>
+</select>
+<pre><code id="bmk-code"></code></pre>
+</div>
+<div id="mdprev" class="panel" style="max-height:700px;overflow-y:auto">
+<h2 style="color:#58a6ff;border-bottom:1px solid #21262d;padding-bottom:.3em;margin-bottom:.5em">Star Catalog — Luminosity, Magnitude, Schwarzschild Radius &amp; Main Sequence Lifetime</h2>
+<p style="line-height:1.6;margin:.4em 0">10 benchmark entries across 5 formats.</p>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Grid</h3>
+<pre><code>  Main Sequence   :   G    A    A
+  Supergiant      :   M    B    F    A
+  Red Dwarf       :   M    M
+  Giant           :   K
+</code></pre>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Directory Layout</h3>
+<pre><code>csv/
+  all.csv
+json/
+  {label}.json
+  summary.json
+yaml/
+  {label}.yaml
+  summary.yaml
+toml/
+  {label}.toml
+  summary.toml
+bmk/
+  {label}.bmk
+benchmark.html
+benchmark.md
+</code></pre>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Results</h3>
+<table>
+<thead>
+<tr><th>Label</th><th>category</th><th>symbol</th><th>name</th><th>spectral</th><th>mass</th><th>radius</th><th>temperature</th><th>luminosity</th><th>abs_magnitude</th><th>schwarzschild</th><th>ms_lifetime</th><th>wien_peak</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
+</thead><tbody>
+<tr><td>Sun</td><td>Main Sequence</td><td>G</td><td>Sun</td><td>G2V</td><td>1.000 M☉</td><td>1.000 R☉</td><td>5778 K</td><td>3.844e26 W</td><td>4.83</td><td>2954.28 m</td><td>0.0 Myr</td><td>502 nm</td><td>f64</td><td>5000</td><td>1744.29</td><td>625000.00</td></tr>
+<tr><td>Sirius A</td><td>Main Sequence</td><td>A</td><td>Sirius A</td><td>A1V</td><td>2.063 M☉</td><td>1.711 R☉</td><td>9940 K</td><td>9.856e27 W</td><td>1.43</td><td>6094.67 m</td><td>0.0 Myr</td><td>292 nm</td><td>f64</td><td>5000</td><td>1677.32</td><td>625000.00</td></tr>
+<tr><td>Betelgeuse</td><td>Supergiant</td><td>M</td><td>Betelgeuse</td><td>M1Ia</td><td>16.500 M☉</td><td>887.000 R☉</td><td>3600 K</td><td>4.557e31 W</td><td>-5.71</td><td>48745.54 m</td><td>0.0 Myr</td><td>805 nm</td><td>f64</td><td>5000</td><td>1696.30</td><td>625000.00</td></tr>
+<tr><td>Rigel</td><td>Supergiant</td><td>B</td><td>Rigel</td><td>B8Ia</td><td>21.000 M☉</td><td>78.900 R☉</td><td>12100 K</td><td>4.602e31 W</td><td>-6.98</td><td>62039.78 m</td><td>0.0 Myr</td><td>239 nm</td><td>f64</td><td>5000</td><td>1671.57</td><td>625000.00</td></tr>
+<tr><td>Vega</td><td>Main Sequence</td><td>A</td><td>Vega</td><td>A0V</td><td>2.135 M☉</td><td>2.362 R☉</td><td>9602 K</td><td>1.636e28 W</td><td>0.60</td><td>6307.38 m</td><td>0.0 Myr</td><td>302 nm</td><td>f64</td><td>5000</td><td>1681.65</td><td>625000.00</td></tr>
+<tr><td>Proxima Centauri</td><td>Red Dwarf</td><td>M</td><td>Proxima Centauri</td><td>M5.5Ve</td><td>0.122 M☉</td><td>0.154 R☉</td><td>3042 K</td><td>7.022e23 W</td><td>15.56</td><td>360.42 m</td><td>0.0 Myr</td><td>953 nm</td><td>f64</td><td>5000</td><td>1704.27</td><td>625000.00</td></tr>
+<tr><td>Polaris</td><td>Supergiant</td><td>F</td><td>Polaris</td><td>F7Ib</td><td>5.400 M☉</td><td>37.500 R☉</td><td>6015 K</td><td>6.348e29 W</td><td>-3.63</td><td>15953.09 m</td><td>0.0 Myr</td><td>482 nm</td><td>f64</td><td>5000</td><td>1646.64</td><td>625000.00</td></tr>
+<tr><td>Aldebaran</td><td>Giant</td><td>K</td><td>Aldebaran</td><td>K5III</td><td>1.160 M☉</td><td>44.130 R☉</td><td>3910 K</td><td>1.570e29 W</td><td>-0.69</td><td>3426.96 m</td><td>0.0 Myr</td><td>741 nm</td><td>f64</td><td>5000</td><td>1723.64</td><td>625000.00</td></tr>
+<tr><td>Deneb</td><td>Supergiant</td><td>A</td><td>Deneb</td><td>A2Ia</td><td>19.000 M☉</td><td>203.000 R☉</td><td>8525 K</td><td>7.506e31 W</td><td>-8.27</td><td>56131.23 m</td><td>0.0 Myr</td><td>340 nm</td><td>f64</td><td>5000</td><td>1713.84</td><td>625000.00</td></tr>
+<tr><td>Barnard&#39;s Star</td><td>Red Dwarf</td><td>M</td><td>Barnard&#39;s Star</td><td>M4Ve</td><td>0.144 M☉</td><td>0.196 R☉</td><td>3134 K</td><td>1.278e24 W</td><td>13.19</td><td>425.42 m</td><td>0.0 Myr</td><td>925 nm</td><td>f64</td><td>5000</td><td>1759.21</td><td>625000.00</td></tr>
+</tbody></table>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
+<p style="line-height:1.6;margin:.4em 0">### Category Distribution</p>
+<table>
+<thead>
+<tr><th>Category</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
+</thead><tbody>
+<tr><td>Main Sequence</td><td>3</td><td>1701.08</td><td>1677.32</td><td>1744.29</td></tr>
+<tr><td>Supergiant</td><td>4</td><td>1682.09</td><td>1646.64</td><td>1713.84</td></tr>
+<tr><td>Red Dwarf</td><td>2</td><td>1731.74</td><td>1704.27</td><td>1759.21</td></tr>
+<tr><td>Giant</td><td>1</td><td>1723.64</td><td>1723.64</td><td>1723.64</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>Polaris</td><td>1646.64</td></tr>
+<tr><td>2</td><td>Rigel</td><td>1671.57</td></tr>
+<tr><td>3</td><td>Sirius A</td><td>1677.32</td></tr>
+<tr><td>4</td><td>Vega</td><td>1681.65</td></tr>
+<tr><td>5</td><td>Betelgeuse</td><td>1696.30</td></tr>
+<tr><td>6</td><td>Proxima Centauri</td><td>1704.27</td></tr>
+<tr><td>7</td><td>Deneb</td><td>1713.84</td></tr>
+<tr><td>8</td><td>Aldebaran</td><td>1723.64</td></tr>
+<tr><td>9</td><td>Sun</td><td>1744.29</td></tr>
+<tr><td>10</td><td>Barnard&#39;s Star</td><td>1759.21</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>Barnard&#39;s Star</td><td>1759.21</td></tr>
+<tr><td>2</td><td>Sun</td><td>1744.29</td></tr>
+<tr><td>3</td><td>Aldebaran</td><td>1723.64</td></tr>
+<tr><td>4</td><td>Deneb</td><td>1713.84</td></tr>
+<tr><td>5</td><td>Proxima Centauri</td><td>1704.27</td></tr>
+<tr><td>6</td><td>Betelgeuse</td><td>1696.30</td></tr>
+<tr><td>7</td><td>Vega</td><td>1681.65</td></tr>
+<tr><td>8</td><td>Sirius A</td><td>1677.32</td></tr>
+<tr><td>9</td><td>Rigel</td><td>1671.57</td></tr>
+<tr><td>10</td><td>Polaris</td><td>1646.64</td></tr>
+</tbody></table>
+</div>
+
+<h2>Analytics</h2>
+<div class="charts">
+<div class="chart-box">
+<h3>Category Distribution</h3>
+<svg viewBox="0 0 650 122" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Main Sequence</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="322" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="496" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Supergiant</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="604" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">4</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Red Dwarf</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="215" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="389" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Giant</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="107" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="281" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Average Time per Category (ns)</h3>
+<svg viewBox="0 0 650 122" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Main Sequence</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="422" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="596" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1701.1</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Supergiant</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="417" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="591" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1682.1</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Red Dwarf</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="604" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1731.7</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Giant</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="427" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="601" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1723.6</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Fastest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Polaris</text>
+<rect x="168" y="4" width="402" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="576" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1646.6 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Rigel</text>
+<rect x="168" y="32" width="408" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="582" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1671.6 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sirius A</text>
+<rect x="168" y="60" width="409" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="583" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1677.3 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Vega</text>
+<rect x="168" y="88" width="411" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="585" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1681.6 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Betelgeuse</text>
+<rect x="168" y="116" width="414" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="588" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1696.3 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Proxima Centauri</text>
+<rect x="168" y="144" width="416" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="590" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1704.3 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Deneb</text>
+<rect x="168" y="172" width="418" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="592" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1713.8 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Aldebaran</text>
+<rect x="168" y="200" width="421" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="595" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1723.6 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sun</text>
+<rect x="168" y="228" width="426" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="600" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1744.3 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Barnard's Star</text>
+<rect x="168" y="256" width="430" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="604" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1759.2 ns</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Slowest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Barnard's Star</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1759.2 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sun</text>
+<rect x="168" y="32" width="426" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="600" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1744.3 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Aldebaran</text>
+<rect x="168" y="60" width="421" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="595" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1723.6 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Deneb</text>
+<rect x="168" y="88" width="418" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="592" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1713.8 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Proxima Centauri</text>
+<rect x="168" y="116" width="416" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="590" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1704.3 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Betelgeuse</text>
+<rect x="168" y="144" width="414" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="588" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1696.3 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Vega</text>
+<rect x="168" y="172" width="411" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="585" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1681.6 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Sirius A</text>
+<rect x="168" y="200" width="409" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="583" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1677.3 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Rigel</text>
+<rect x="168" y="228" width="408" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="582" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1671.6 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Polaris</text>
+<rect x="168" y="256" width="402" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="576" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1646.6 ns</text>
+</svg>
+</div>
+
+<div class="chart-box" style="grid-column:1/-1">
+<h3>Category Statistics</h3>
+<svg viewBox="0 0 900 146" style="width:100%;max-width:900px">
+<rect x="0" y="4" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
+<text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">Main Sequence</text>
+<text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=3</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 1701.1 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 1677.3 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 1744.3 ns</text>
+<rect x="0" y="38" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="38" width="4" height="28" rx="2" fill="#79c0ff"/>
+<text x="14" y="52" fill="#79c0ff" font-size="12" font-weight="bold" dominant-baseline="middle">Supergiant</text>
+<text x="250" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">n=4</text>
+<text x="350" y="52" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 1682.1 ns</text>
+<text x="520" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">min 1646.6 ns</text>
+<text x="680" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">max 1713.8 ns</text>
+<rect x="0" y="72" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="72" width="4" height="28" rx="2" fill="#ffa657"/>
+<text x="14" y="86" fill="#ffa657" font-size="12" font-weight="bold" dominant-baseline="middle">Red Dwarf</text>
+<text x="250" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="86" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 1731.7 ns</text>
+<text x="520" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">min 1704.3 ns</text>
+<text x="680" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">max 1759.2 ns</text>
+<rect x="0" y="106" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="106" width="4" height="28" rx="2" fill="#d2a8ff"/>
+<text x="14" y="120" fill="#d2a8ff" font-size="12" font-weight="bold" dominant-baseline="middle">Giant</text>
+<text x="250" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
+<text x="350" y="120" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 1723.6 ns</text>
+<text x="520" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">min 1723.6 ns</text>
+<text x="680" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">max 1723.6 ns</text>
+</svg>
+</div>
+
+</div>
+
+<script>
+var F={
+csv:{
+"Giant.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,spectral,mass,radius,temperature,luminosity,abs_magnitude,schwarzschild,ms_lifetime,wien_peak\nAldebaran_stellar,f64,8,5000,1723.6392,1723.6392,1723.6392,0,625000,Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm,Giant,K,Aldebaran,K5III,1.160 M☉,44.130 R☉,3910 K,1.570e29 W,-0.69,3426.96 m,0.0 Myr,741 nm\n",
+"Main_Sequence.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,spectral,mass,radius,temperature,luminosity,abs_magnitude,schwarzschild,ms_lifetime,wien_peak\nSun_stellar,f64,8,5000,1744.2892,1744.2892,1744.2892,0,625000,Sun (G2V) | L=3.844e26 W | M_abs=4.83 | R_s=2954.28 m | MS lifetime=0.0 Myr | Wien λ_max=502 nm,Main Sequence,G,Sun,G2V,1.000 M☉,1.000 R☉,5778 K,3.844e26 W,4.83,2954.28 m,0.0 Myr,502 nm\nSirius A_stellar,f64,8,5000,1677.3152,1677.3152,1677.3152,0,625000,Sirius A (A1V) | L=9.856e27 W | M_abs=1.43 | R_s=6094.67 m | MS lifetime=0.0 Myr | Wien λ_max=292 nm,Main Sequence,A,Sirius A,A1V,2.063 M☉,1.711 R☉,9940 K,9.856e27 W,1.43,6094.67 m,0.0 Myr,292 nm\nVega_stellar,f64,8,5000,1681.6492,1681.6492,1681.6492,0,625000,Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm,Main Sequence,A,Vega,A0V,2.135 M☉,2.362 R☉,9602 K,1.636e28 W,0.60,6307.38 m,0.0 Myr,302 nm\n",
+"Red_Dwarf.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,spectral,mass,radius,temperature,luminosity,abs_magnitude,schwarzschild,ms_lifetime,wien_peak\nProxima Centauri_stellar,f64,8,5000,1704.2712,1704.2712,1704.2712,0,625000,Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm,Red Dwarf,M,Proxima Centauri,M5.5Ve,0.122 M☉,0.154 R☉,3042 K,7.022e23 W,15.56,360.42 m,0.0 Myr,953 nm\nBarnard's Star_stellar,f64,8,5000,1759.2052,1759.2052,1759.2052,0,625000,Barnard's Star (M4Ve) | L=1.278e24 W | M_abs=13.19 | R_s=425.42 m | MS lifetime=0.0 Myr | Wien λ_max=925 nm,Red Dwarf,M,Barnard's Star,M4Ve,0.144 M☉,0.196 R☉,3134 K,1.278e24 W,13.19,425.42 m,0.0 Myr,925 nm\n",
+"Supergiant.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,spectral,mass,radius,temperature,luminosity,abs_magnitude,schwarzschild,ms_lifetime,wien_peak\nBetelgeuse_stellar,f64,8,5000,1696.3032,1696.3032,1696.3032,0,625000,Betelgeuse (M1Ia) | L=4.557e31 W | M_abs=-5.71 | R_s=48745.54 m | MS lifetime=0.0 Myr | Wien λ_max=805 nm,Supergiant,M,Betelgeuse,M1Ia,16.500 M☉,887.000 R☉,3600 K,4.557e31 W,-5.71,48745.54 m,0.0 Myr,805 nm\nRigel_stellar,f64,8,5000,1671.5734,1671.5734,1671.5734,0,625000,Rigel (B8Ia) | L=4.602e31 W | M_abs=-6.98 | R_s=62039.78 m | MS lifetime=0.0 Myr | Wien λ_max=239 nm,Supergiant,B,Rigel,B8Ia,21.000 M☉,78.900 R☉,12100 K,4.602e31 W,-6.98,62039.78 m,0.0 Myr,239 nm\nPolaris_stellar,f64,8,5000,1646.6434,1646.6434,1646.6434,0,625000,Polaris (F7Ib) | L=6.348e29 W | M_abs=-3.63 | R_s=15953.09 m | MS lifetime=0.0 Myr | Wien λ_max=482 nm,Supergiant,F,Polaris,F7Ib,5.400 M☉,37.500 R☉,6015 K,6.348e29 W,-3.63,15953.09 m,0.0 Myr,482 nm\nDeneb_stellar,f64,8,5000,1713.8392,1713.8392,1713.8392,0,625000,Deneb (A2Ia) | L=7.506e31 W | M_abs=-8.27 | R_s=56131.23 m | MS lifetime=0.0 Myr | Wien λ_max=340 nm,Supergiant,A,Deneb,A2Ia,19.000 M☉,203.000 R☉,8525 K,7.506e31 W,-8.27,56131.23 m,0.0 Myr,340 nm\n",
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,spectral,mass,radius,temperature,luminosity,abs_magnitude,schwarzschild,ms_lifetime,wien_peak\nSun_stellar,f64,8,5000,1744.2892,1744.2892,1744.2892,0,625000,Sun (G2V) | L=3.844e26 W | M_abs=4.83 | R_s=2954.28 m | MS lifetime=0.0 Myr | Wien λ_max=502 nm,Main Sequence,G,Sun,G2V,1.000 M☉,1.000 R☉,5778 K,3.844e26 W,4.83,2954.28 m,0.0 Myr,502 nm\nSirius A_stellar,f64,8,5000,1677.3152,1677.3152,1677.3152,0,625000,Sirius A (A1V) | L=9.856e27 W | M_abs=1.43 | R_s=6094.67 m | MS lifetime=0.0 Myr | Wien λ_max=292 nm,Main Sequence,A,Sirius A,A1V,2.063 M☉,1.711 R☉,9940 K,9.856e27 W,1.43,6094.67 m,0.0 Myr,292 nm\nBetelgeuse_stellar,f64,8,5000,1696.3032,1696.3032,1696.3032,0,625000,Betelgeuse (M1Ia) | L=4.557e31 W | M_abs=-5.71 | R_s=48745.54 m | MS lifetime=0.0 Myr | Wien λ_max=805 nm,Supergiant,M,Betelgeuse,M1Ia,16.500 M☉,887.000 R☉,3600 K,4.557e31 W,-5.71,48745.54 m,0.0 Myr,805 nm\nRigel_stellar,f64,8,5000,1671.5734,1671.5734,1671.5734,0,625000,Rigel (B8Ia) | L=4.602e31 W | M_abs=-6.98 | R_s=62039.78 m | MS lifetime=0.0 Myr | Wien λ_max=239 nm,Supergiant,B,Rigel,B8Ia,21.000 M☉,78.900 R☉,12100 K,4.602e31 W,-6.98,62039.78 m,0.0 Myr,239 nm\nVega_stellar,f64,8,5000,1681.6492,1681.6492,1681.6492,0,625000,Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm,Main Sequence,A,Vega,A0V,2.135 M☉,2.362 R☉,9602 K,1.636e28 W,0.60,6307.38 m,0.0 Myr,302 nm\nProxima Centauri_stellar,f64,8,5000,1704.2712,1704.2712,1704.2712,0,625000,Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm,Red Dwarf,M,Proxima Centauri,M5.5Ve,0.122 M☉,0.154 R☉,3042 K,7.022e23 W,15.56,360.42 m,0.0 Myr,953 nm\nPolaris_stellar,f64,8,5000,1646.6434,1646.6434,1646.6434,0,625000,Polaris (F7Ib) | L=6.348e29 W | M_abs=-3.63 | R_s=15953.09 m | MS lifetime=0.0 Myr | Wien λ_max=482 nm,Supergiant,F,Polaris,F7Ib,5.400 M☉,37.500 R☉,6015 K,6.348e29 W,-3.63,15953.09 m,0.0 Myr,482 nm\nAldebaran_stellar,f64,8,5000,1723.6392,1723.6392,1723.6392,0,625000,Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm,Giant,K,Aldebaran,K5III,1.160 M☉,44.130 R☉,3910 K,1.570e29 W,-0.69,3426.96 m,0.0 Myr,741 nm\nDeneb_stellar,f64,8,5000,1713.8392,1713.8392,1713.8392,0,625000,Deneb (A2Ia) | L=7.506e31 W | M_abs=-8.27 | R_s=56131.23 m | MS lifetime=0.0 Myr | Wien λ_max=340 nm,Supergiant,A,Deneb,A2Ia,19.000 M☉,203.000 R☉,8525 K,7.506e31 W,-8.27,56131.23 m,0.0 Myr,340 nm\nBarnard's Star_stellar,f64,8,5000,1759.2052,1759.2052,1759.2052,0,625000,Barnard's Star (M4Ve) | L=1.278e24 W | M_abs=13.19 | R_s=425.42 m | MS lifetime=0.0 Myr | Wien λ_max=925 nm,Red Dwarf,M,Barnard's Star,M4Ve,0.144 M☉,0.196 R☉,3134 K,1.278e24 W,13.19,425.42 m,0.0 Myr,925 nm\n"},
+json:{
+"Aldebaran.json":"{\n  \"category\": \"Giant\",\n  \"symbol\": \"K\",\n  \"name\": \"Aldebaran\",\n  \"spectral\": \"K5III\",\n  \"mass\": \"1.160 M☉\",\n  \"radius\": \"44.130 R☉\",\n  \"temperature\": \"3910 K\",\n  \"luminosity\": \"1.570e29 W\",\n  \"abs_magnitude\": \"-0.69\",\n  \"schwarzschild\": \"3426.96 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"741 nm\",\n  \"experiment_name\": \"Aldebaran_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1723.64,\n  \"min_time_ns\": 1723.64,\n  \"max_time_ns\": 1723.64,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm\"\n}",
+"Barnard's Star.json":"{\n  \"category\": \"Red Dwarf\",\n  \"symbol\": \"M\",\n  \"name\": \"Barnard's Star\",\n  \"spectral\": \"M4Ve\",\n  \"mass\": \"0.144 M☉\",\n  \"radius\": \"0.196 R☉\",\n  \"temperature\": \"3134 K\",\n  \"luminosity\": \"1.278e24 W\",\n  \"abs_magnitude\": \"13.19\",\n  \"schwarzschild\": \"425.42 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"925 nm\",\n  \"experiment_name\": \"Barnard's Star_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1759.21,\n  \"min_time_ns\": 1759.21,\n  \"max_time_ns\": 1759.21,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Barnard's Star (M4Ve) | L=1.278e24 W | M_abs=13.19 | R_s=425.42 m | MS lifetime=0.0 Myr | Wien λ_max=925 nm\"\n}",
+"Betelgeuse.json":"{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"M\",\n  \"name\": \"Betelgeuse\",\n  \"spectral\": \"M1Ia\",\n  \"mass\": \"16.500 M☉\",\n  \"radius\": \"887.000 R☉\",\n  \"temperature\": \"3600 K\",\n  \"luminosity\": \"4.557e31 W\",\n  \"abs_magnitude\": \"-5.71\",\n  \"schwarzschild\": \"48745.54 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"805 nm\",\n  \"experiment_name\": \"Betelgeuse_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1696.30,\n  \"min_time_ns\": 1696.30,\n  \"max_time_ns\": 1696.30,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Betelgeuse (M1Ia) | L=4.557e31 W | M_abs=-5.71 | R_s=48745.54 m | MS lifetime=0.0 Myr | Wien λ_max=805 nm\"\n}",
+"Deneb.json":"{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"A\",\n  \"name\": \"Deneb\",\n  \"spectral\": \"A2Ia\",\n  \"mass\": \"19.000 M☉\",\n  \"radius\": \"203.000 R☉\",\n  \"temperature\": \"8525 K\",\n  \"luminosity\": \"7.506e31 W\",\n  \"abs_magnitude\": \"-8.27\",\n  \"schwarzschild\": \"56131.23 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"340 nm\",\n  \"experiment_name\": \"Deneb_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1713.84,\n  \"min_time_ns\": 1713.84,\n  \"max_time_ns\": 1713.84,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Deneb (A2Ia) | L=7.506e31 W | M_abs=-8.27 | R_s=56131.23 m | MS lifetime=0.0 Myr | Wien λ_max=340 nm\"\n}",
+"Polaris.json":"{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"F\",\n  \"name\": \"Polaris\",\n  \"spectral\": \"F7Ib\",\n  \"mass\": \"5.400 M☉\",\n  \"radius\": \"37.500 R☉\",\n  \"temperature\": \"6015 K\",\n  \"luminosity\": \"6.348e29 W\",\n  \"abs_magnitude\": \"-3.63\",\n  \"schwarzschild\": \"15953.09 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"482 nm\",\n  \"experiment_name\": \"Polaris_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1646.64,\n  \"min_time_ns\": 1646.64,\n  \"max_time_ns\": 1646.64,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Polaris (F7Ib) | L=6.348e29 W | M_abs=-3.63 | R_s=15953.09 m | MS lifetime=0.0 Myr | Wien λ_max=482 nm\"\n}",
+"Proxima Centauri.json":"{\n  \"category\": \"Red Dwarf\",\n  \"symbol\": \"M\",\n  \"name\": \"Proxima Centauri\",\n  \"spectral\": \"M5.5Ve\",\n  \"mass\": \"0.122 M☉\",\n  \"radius\": \"0.154 R☉\",\n  \"temperature\": \"3042 K\",\n  \"luminosity\": \"7.022e23 W\",\n  \"abs_magnitude\": \"15.56\",\n  \"schwarzschild\": \"360.42 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"953 nm\",\n  \"experiment_name\": \"Proxima Centauri_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1704.27,\n  \"min_time_ns\": 1704.27,\n  \"max_time_ns\": 1704.27,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm\"\n}",
+"Rigel.json":"{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"B\",\n  \"name\": \"Rigel\",\n  \"spectral\": \"B8Ia\",\n  \"mass\": \"21.000 M☉\",\n  \"radius\": \"78.900 R☉\",\n  \"temperature\": \"12100 K\",\n  \"luminosity\": \"4.602e31 W\",\n  \"abs_magnitude\": \"-6.98\",\n  \"schwarzschild\": \"62039.78 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"239 nm\",\n  \"experiment_name\": \"Rigel_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1671.57,\n  \"min_time_ns\": 1671.57,\n  \"max_time_ns\": 1671.57,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Rigel (B8Ia) | L=4.602e31 W | M_abs=-6.98 | R_s=62039.78 m | MS lifetime=0.0 Myr | Wien λ_max=239 nm\"\n}",
+"Sirius A.json":"{\n  \"category\": \"Main Sequence\",\n  \"symbol\": \"A\",\n  \"name\": \"Sirius A\",\n  \"spectral\": \"A1V\",\n  \"mass\": \"2.063 M☉\",\n  \"radius\": \"1.711 R☉\",\n  \"temperature\": \"9940 K\",\n  \"luminosity\": \"9.856e27 W\",\n  \"abs_magnitude\": \"1.43\",\n  \"schwarzschild\": \"6094.67 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"292 nm\",\n  \"experiment_name\": \"Sirius A_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1677.32,\n  \"min_time_ns\": 1677.32,\n  \"max_time_ns\": 1677.32,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Sirius A (A1V) | L=9.856e27 W | M_abs=1.43 | R_s=6094.67 m | MS lifetime=0.0 Myr | Wien λ_max=292 nm\"\n}",
+"Sun.json":"{\n  \"category\": \"Main Sequence\",\n  \"symbol\": \"G\",\n  \"name\": \"Sun\",\n  \"spectral\": \"G2V\",\n  \"mass\": \"1.000 M☉\",\n  \"radius\": \"1.000 R☉\",\n  \"temperature\": \"5778 K\",\n  \"luminosity\": \"3.844e26 W\",\n  \"abs_magnitude\": \"4.83\",\n  \"schwarzschild\": \"2954.28 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"502 nm\",\n  \"experiment_name\": \"Sun_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1744.29,\n  \"min_time_ns\": 1744.29,\n  \"max_time_ns\": 1744.29,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Sun (G2V) | L=3.844e26 W | M_abs=4.83 | R_s=2954.28 m | MS lifetime=0.0 Myr | Wien λ_max=502 nm\"\n}",
+"Vega.json":"{\n  \"category\": \"Main Sequence\",\n  \"symbol\": \"A\",\n  \"name\": \"Vega\",\n  \"spectral\": \"A0V\",\n  \"mass\": \"2.135 M☉\",\n  \"radius\": \"2.362 R☉\",\n  \"temperature\": \"9602 K\",\n  \"luminosity\": \"1.636e28 W\",\n  \"abs_magnitude\": \"0.60\",\n  \"schwarzschild\": \"6307.38 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"302 nm\",\n  \"experiment_name\": \"Vega_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1681.65,\n  \"min_time_ns\": 1681.65,\n  \"max_time_ns\": 1681.65,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm\"\n}",
+"summary.json":"[\n{\n  \"category\": \"Main Sequence\",\n  \"symbol\": \"G\",\n  \"name\": \"Sun\",\n  \"spectral\": \"G2V\",\n  \"mass\": \"1.000 M☉\",\n  \"radius\": \"1.000 R☉\",\n  \"temperature\": \"5778 K\",\n  \"luminosity\": \"3.844e26 W\",\n  \"abs_magnitude\": \"4.83\",\n  \"schwarzschild\": \"2954.28 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"502 nm\",\n  \"experiment_name\": \"Sun_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1744.29,\n  \"min_time_ns\": 1744.29,\n  \"max_time_ns\": 1744.29,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Sun (G2V) | L=3.844e26 W | M_abs=4.83 | R_s=2954.28 m | MS lifetime=0.0 Myr | Wien λ_max=502 nm\"\n},\n{\n  \"category\": \"Main Sequence\",\n  \"symbol\": \"A\",\n  \"name\": \"Sirius A\",\n  \"spectral\": \"A1V\",\n  \"mass\": \"2.063 M☉\",\n  \"radius\": \"1.711 R☉\",\n  \"temperature\": \"9940 K\",\n  \"luminosity\": \"9.856e27 W\",\n  \"abs_magnitude\": \"1.43\",\n  \"schwarzschild\": \"6094.67 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"292 nm\",\n  \"experiment_name\": \"Sirius A_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1677.32,\n  \"min_time_ns\": 1677.32,\n  \"max_time_ns\": 1677.32,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Sirius A (A1V) | L=9.856e27 W | M_abs=1.43 | R_s=6094.67 m | MS lifetime=0.0 Myr | Wien λ_max=292 nm\"\n},\n{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"M\",\n  \"name\": \"Betelgeuse\",\n  \"spectral\": \"M1Ia\",\n  \"mass\": \"16.500 M☉\",\n  \"radius\": \"887.000 R☉\",\n  \"temperature\": \"3600 K\",\n  \"luminosity\": \"4.557e31 W\",\n  \"abs_magnitude\": \"-5.71\",\n  \"schwarzschild\": \"48745.54 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"805 nm\",\n  \"experiment_name\": \"Betelgeuse_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1696.30,\n  \"min_time_ns\": 1696.30,\n  \"max_time_ns\": 1696.30,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Betelgeuse (M1Ia) | L=4.557e31 W | M_abs=-5.71 | R_s=48745.54 m | MS lifetime=0.0 Myr | Wien λ_max=805 nm\"\n},\n{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"B\",\n  \"name\": \"Rigel\",\n  \"spectral\": \"B8Ia\",\n  \"mass\": \"21.000 M☉\",\n  \"radius\": \"78.900 R☉\",\n  \"temperature\": \"12100 K\",\n  \"luminosity\": \"4.602e31 W\",\n  \"abs_magnitude\": \"-6.98\",\n  \"schwarzschild\": \"62039.78 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"239 nm\",\n  \"experiment_name\": \"Rigel_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1671.57,\n  \"min_time_ns\": 1671.57,\n  \"max_time_ns\": 1671.57,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Rigel (B8Ia) | L=4.602e31 W | M_abs=-6.98 | R_s=62039.78 m | MS lifetime=0.0 Myr | Wien λ_max=239 nm\"\n},\n{\n  \"category\": \"Main Sequence\",\n  \"symbol\": \"A\",\n  \"name\": \"Vega\",\n  \"spectral\": \"A0V\",\n  \"mass\": \"2.135 M☉\",\n  \"radius\": \"2.362 R☉\",\n  \"temperature\": \"9602 K\",\n  \"luminosity\": \"1.636e28 W\",\n  \"abs_magnitude\": \"0.60\",\n  \"schwarzschild\": \"6307.38 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"302 nm\",\n  \"experiment_name\": \"Vega_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1681.65,\n  \"min_time_ns\": 1681.65,\n  \"max_time_ns\": 1681.65,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm\"\n},\n{\n  \"category\": \"Red Dwarf\",\n  \"symbol\": \"M\",\n  \"name\": \"Proxima Centauri\",\n  \"spectral\": \"M5.5Ve\",\n  \"mass\": \"0.122 M☉\",\n  \"radius\": \"0.154 R☉\",\n  \"temperature\": \"3042 K\",\n  \"luminosity\": \"7.022e23 W\",\n  \"abs_magnitude\": \"15.56\",\n  \"schwarzschild\": \"360.42 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"953 nm\",\n  \"experiment_name\": \"Proxima Centauri_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1704.27,\n  \"min_time_ns\": 1704.27,\n  \"max_time_ns\": 1704.27,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm\"\n},\n{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"F\",\n  \"name\": \"Polaris\",\n  \"spectral\": \"F7Ib\",\n  \"mass\": \"5.400 M☉\",\n  \"radius\": \"37.500 R☉\",\n  \"temperature\": \"6015 K\",\n  \"luminosity\": \"6.348e29 W\",\n  \"abs_magnitude\": \"-3.63\",\n  \"schwarzschild\": \"15953.09 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"482 nm\",\n  \"experiment_name\": \"Polaris_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1646.64,\n  \"min_time_ns\": 1646.64,\n  \"max_time_ns\": 1646.64,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Polaris (F7Ib) | L=6.348e29 W | M_abs=-3.63 | R_s=15953.09 m | MS lifetime=0.0 Myr | Wien λ_max=482 nm\"\n},\n{\n  \"category\": \"Giant\",\n  \"symbol\": \"K\",\n  \"name\": \"Aldebaran\",\n  \"spectral\": \"K5III\",\n  \"mass\": \"1.160 M☉\",\n  \"radius\": \"44.130 R☉\",\n  \"temperature\": \"3910 K\",\n  \"luminosity\": \"1.570e29 W\",\n  \"abs_magnitude\": \"-0.69\",\n  \"schwarzschild\": \"3426.96 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"741 nm\",\n  \"experiment_name\": \"Aldebaran_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1723.64,\n  \"min_time_ns\": 1723.64,\n  \"max_time_ns\": 1723.64,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm\"\n},\n{\n  \"category\": \"Supergiant\",\n  \"symbol\": \"A\",\n  \"name\": \"Deneb\",\n  \"spectral\": \"A2Ia\",\n  \"mass\": \"19.000 M☉\",\n  \"radius\": \"203.000 R☉\",\n  \"temperature\": \"8525 K\",\n  \"luminosity\": \"7.506e31 W\",\n  \"abs_magnitude\": \"-8.27\",\n  \"schwarzschild\": \"56131.23 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"340 nm\",\n  \"experiment_name\": \"Deneb_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1713.84,\n  \"min_time_ns\": 1713.84,\n  \"max_time_ns\": 1713.84,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Deneb (A2Ia) | L=7.506e31 W | M_abs=-8.27 | R_s=56131.23 m | MS lifetime=0.0 Myr | Wien λ_max=340 nm\"\n},\n{\n  \"category\": \"Red Dwarf\",\n  \"symbol\": \"M\",\n  \"name\": \"Barnard's Star\",\n  \"spectral\": \"M4Ve\",\n  \"mass\": \"0.144 M☉\",\n  \"radius\": \"0.196 R☉\",\n  \"temperature\": \"3134 K\",\n  \"luminosity\": \"1.278e24 W\",\n  \"abs_magnitude\": \"13.19\",\n  \"schwarzschild\": \"425.42 m\",\n  \"ms_lifetime\": \"0.0 Myr\",\n  \"wien_peak\": \"925 nm\",\n  \"experiment_name\": \"Barnard's Star_stellar\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 8,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 1759.21,\n  \"min_time_ns\": 1759.21,\n  \"max_time_ns\": 1759.21,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 625000.00,\n  \"result\": \"Barnard's Star (M4Ve) | L=1.278e24 W | M_abs=13.19 | R_s=425.42 m | MS lifetime=0.0 Myr | Wien λ_max=925 nm\"\n}\n]"},
+yaml:{
+"Aldebaran.yaml":"category: Giant\nsymbol: K\nname: Aldebaran\nspectral: K5III\nmass: 1.160 M☉\nradius: 44.130 R☉\ntemperature: 3910 K\nluminosity: 1.570e29 W\nabs_magnitude: -0.69\nschwarzschild: 3426.96 m\nms_lifetime: 0.0 Myr\nwien_peak: 741 nm\nexperiment_name: Aldebaran_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1723.64\nmin_time_ns: 1723.64\nmax_time_ns: 1723.64\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm\n",
+"Barnard's Star.yaml":"category: Red Dwarf\nsymbol: M\nname: Barnard's Star\nspectral: M4Ve\nmass: 0.144 M☉\nradius: 0.196 R☉\ntemperature: 3134 K\nluminosity: 1.278e24 W\nabs_magnitude: 13.19\nschwarzschild: 425.42 m\nms_lifetime: 0.0 Myr\nwien_peak: 925 nm\nexperiment_name: Barnard's Star_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1759.21\nmin_time_ns: 1759.21\nmax_time_ns: 1759.21\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Barnard's Star (M4Ve) | L=1.278e24 W | M_abs=13.19 | R_s=425.42 m | MS lifetime=0.0 Myr | Wien λ_max=925 nm\n",
+"Betelgeuse.yaml":"category: Supergiant\nsymbol: M\nname: Betelgeuse\nspectral: M1Ia\nmass: 16.500 M☉\nradius: 887.000 R☉\ntemperature: 3600 K\nluminosity: 4.557e31 W\nabs_magnitude: -5.71\nschwarzschild: 48745.54 m\nms_lifetime: 0.0 Myr\nwien_peak: 805 nm\nexperiment_name: Betelgeuse_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1696.30\nmin_time_ns: 1696.30\nmax_time_ns: 1696.30\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Betelgeuse (M1Ia) | L=4.557e31 W | M_abs=-5.71 | R_s=48745.54 m | MS lifetime=0.0 Myr | Wien λ_max=805 nm\n",
+"Deneb.yaml":"category: Supergiant\nsymbol: A\nname: Deneb\nspectral: A2Ia\nmass: 19.000 M☉\nradius: 203.000 R☉\ntemperature: 8525 K\nluminosity: 7.506e31 W\nabs_magnitude: -8.27\nschwarzschild: 56131.23 m\nms_lifetime: 0.0 Myr\nwien_peak: 340 nm\nexperiment_name: Deneb_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1713.84\nmin_time_ns: 1713.84\nmax_time_ns: 1713.84\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Deneb (A2Ia) | L=7.506e31 W | M_abs=-8.27 | R_s=56131.23 m | MS lifetime=0.0 Myr | Wien λ_max=340 nm\n",
+"Giant.yaml":"category: Giant\ncount: 1\nentries:\n  - label: Aldebaran\n    symbol: K\n    name: Aldebaran\n    spectral: K5III\n    mass: 1.160 M☉\n    radius: 44.130 R☉\n    temperature: 3910 K\n    luminosity: 1.570e29 W\n    abs_magnitude: -0.69\n    schwarzschild: 3426.96 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 741 nm\n    avg_time_ns: 1723.64\n",
+"Main_Sequence.yaml":"category: Main Sequence\ncount: 3\nentries:\n  - label: Sun\n    symbol: G\n    name: Sun\n    spectral: G2V\n    mass: 1.000 M☉\n    radius: 1.000 R☉\n    temperature: 5778 K\n    luminosity: 3.844e26 W\n    abs_magnitude: 4.83\n    schwarzschild: 2954.28 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 502 nm\n    avg_time_ns: 1744.29\n  - label: Sirius A\n    symbol: A\n    name: Sirius A\n    spectral: A1V\n    mass: 2.063 M☉\n    radius: 1.711 R☉\n    temperature: 9940 K\n    luminosity: 9.856e27 W\n    abs_magnitude: 1.43\n    schwarzschild: 6094.67 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 292 nm\n    avg_time_ns: 1677.32\n  - label: Vega\n    symbol: A\n    name: Vega\n    spectral: A0V\n    mass: 2.135 M☉\n    radius: 2.362 R☉\n    temperature: 9602 K\n    luminosity: 1.636e28 W\n    abs_magnitude: 0.60\n    schwarzschild: 6307.38 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 302 nm\n    avg_time_ns: 1681.65\n",
+"Polaris.yaml":"category: Supergiant\nsymbol: F\nname: Polaris\nspectral: F7Ib\nmass: 5.400 M☉\nradius: 37.500 R☉\ntemperature: 6015 K\nluminosity: 6.348e29 W\nabs_magnitude: -3.63\nschwarzschild: 15953.09 m\nms_lifetime: 0.0 Myr\nwien_peak: 482 nm\nexperiment_name: Polaris_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1646.64\nmin_time_ns: 1646.64\nmax_time_ns: 1646.64\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Polaris (F7Ib) | L=6.348e29 W | M_abs=-3.63 | R_s=15953.09 m | MS lifetime=0.0 Myr | Wien λ_max=482 nm\n",
+"Proxima Centauri.yaml":"category: Red Dwarf\nsymbol: M\nname: Proxima Centauri\nspectral: M5.5Ve\nmass: 0.122 M☉\nradius: 0.154 R☉\ntemperature: 3042 K\nluminosity: 7.022e23 W\nabs_magnitude: 15.56\nschwarzschild: 360.42 m\nms_lifetime: 0.0 Myr\nwien_peak: 953 nm\nexperiment_name: Proxima Centauri_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1704.27\nmin_time_ns: 1704.27\nmax_time_ns: 1704.27\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm\n",
+"Red_Dwarf.yaml":"category: Red Dwarf\ncount: 2\nentries:\n  - label: Proxima Centauri\n    symbol: M\n    name: Proxima Centauri\n    spectral: M5.5Ve\n    mass: 0.122 M☉\n    radius: 0.154 R☉\n    temperature: 3042 K\n    luminosity: 7.022e23 W\n    abs_magnitude: 15.56\n    schwarzschild: 360.42 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 953 nm\n    avg_time_ns: 1704.27\n  - label: Barnard's Star\n    symbol: M\n    name: Barnard's Star\n    spectral: M4Ve\n    mass: 0.144 M☉\n    radius: 0.196 R☉\n    temperature: 3134 K\n    luminosity: 1.278e24 W\n    abs_magnitude: 13.19\n    schwarzschild: 425.42 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 925 nm\n    avg_time_ns: 1759.21\n",
+"Rigel.yaml":"category: Supergiant\nsymbol: B\nname: Rigel\nspectral: B8Ia\nmass: 21.000 M☉\nradius: 78.900 R☉\ntemperature: 12100 K\nluminosity: 4.602e31 W\nabs_magnitude: -6.98\nschwarzschild: 62039.78 m\nms_lifetime: 0.0 Myr\nwien_peak: 239 nm\nexperiment_name: Rigel_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1671.57\nmin_time_ns: 1671.57\nmax_time_ns: 1671.57\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Rigel (B8Ia) | L=4.602e31 W | M_abs=-6.98 | R_s=62039.78 m | MS lifetime=0.0 Myr | Wien λ_max=239 nm\n",
+"Sirius A.yaml":"category: Main Sequence\nsymbol: A\nname: Sirius A\nspectral: A1V\nmass: 2.063 M☉\nradius: 1.711 R☉\ntemperature: 9940 K\nluminosity: 9.856e27 W\nabs_magnitude: 1.43\nschwarzschild: 6094.67 m\nms_lifetime: 0.0 Myr\nwien_peak: 292 nm\nexperiment_name: Sirius A_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1677.32\nmin_time_ns: 1677.32\nmax_time_ns: 1677.32\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Sirius A (A1V) | L=9.856e27 W | M_abs=1.43 | R_s=6094.67 m | MS lifetime=0.0 Myr | Wien λ_max=292 nm\n",
+"Sun.yaml":"category: Main Sequence\nsymbol: G\nname: Sun\nspectral: G2V\nmass: 1.000 M☉\nradius: 1.000 R☉\ntemperature: 5778 K\nluminosity: 3.844e26 W\nabs_magnitude: 4.83\nschwarzschild: 2954.28 m\nms_lifetime: 0.0 Myr\nwien_peak: 502 nm\nexperiment_name: Sun_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1744.29\nmin_time_ns: 1744.29\nmax_time_ns: 1744.29\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Sun (G2V) | L=3.844e26 W | M_abs=4.83 | R_s=2954.28 m | MS lifetime=0.0 Myr | Wien λ_max=502 nm\n",
+"Supergiant.yaml":"category: Supergiant\ncount: 4\nentries:\n  - label: Betelgeuse\n    symbol: M\n    name: Betelgeuse\n    spectral: M1Ia\n    mass: 16.500 M☉\n    radius: 887.000 R☉\n    temperature: 3600 K\n    luminosity: 4.557e31 W\n    abs_magnitude: -5.71\n    schwarzschild: 48745.54 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 805 nm\n    avg_time_ns: 1696.30\n  - label: Rigel\n    symbol: B\n    name: Rigel\n    spectral: B8Ia\n    mass: 21.000 M☉\n    radius: 78.900 R☉\n    temperature: 12100 K\n    luminosity: 4.602e31 W\n    abs_magnitude: -6.98\n    schwarzschild: 62039.78 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 239 nm\n    avg_time_ns: 1671.57\n  - label: Polaris\n    symbol: F\n    name: Polaris\n    spectral: F7Ib\n    mass: 5.400 M☉\n    radius: 37.500 R☉\n    temperature: 6015 K\n    luminosity: 6.348e29 W\n    abs_magnitude: -3.63\n    schwarzschild: 15953.09 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 482 nm\n    avg_time_ns: 1646.64\n  - label: Deneb\n    symbol: A\n    name: Deneb\n    spectral: A2Ia\n    mass: 19.000 M☉\n    radius: 203.000 R☉\n    temperature: 8525 K\n    luminosity: 7.506e31 W\n    abs_magnitude: -8.27\n    schwarzschild: 56131.23 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 340 nm\n    avg_time_ns: 1713.84\n",
+"Vega.yaml":"category: Main Sequence\nsymbol: A\nname: Vega\nspectral: A0V\nmass: 2.135 M☉\nradius: 2.362 R☉\ntemperature: 9602 K\nluminosity: 1.636e28 W\nabs_magnitude: 0.60\nschwarzschild: 6307.38 m\nms_lifetime: 0.0 Myr\nwien_peak: 302 nm\nexperiment_name: Vega_stellar\nprecision: f64\nelapsed_ms: 8\niterations: 5000\navg_time_ns: 1681.65\nmin_time_ns: 1681.65\nmax_time_ns: 1681.65\ntime_stddev: 0.0000\niterations_per_sec: 625000.00\nresult: Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm\n",
+"summary.yaml":"title: Star Catalog — Luminosity, Magnitude, Schwarzschild Radius & Main Sequence Lifetime\ncount: 10\nentries:\n  - label: Sun\n    category: Main Sequence\n    symbol: G\n    name: Sun\n    spectral: G2V\n    mass: 1.000 M☉\n    radius: 1.000 R☉\n    temperature: 5778 K\n    luminosity: 3.844e26 W\n    abs_magnitude: 4.83\n    schwarzschild: 2954.28 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 502 nm\n    avg_time_ns: 1744.29\n    iterations_per_sec: 625000.00\n  - label: Sirius A\n    category: Main Sequence\n    symbol: A\n    name: Sirius A\n    spectral: A1V\n    mass: 2.063 M☉\n    radius: 1.711 R☉\n    temperature: 9940 K\n    luminosity: 9.856e27 W\n    abs_magnitude: 1.43\n    schwarzschild: 6094.67 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 292 nm\n    avg_time_ns: 1677.32\n    iterations_per_sec: 625000.00\n  - label: Betelgeuse\n    category: Supergiant\n    symbol: M\n    name: Betelgeuse\n    spectral: M1Ia\n    mass: 16.500 M☉\n    radius: 887.000 R☉\n    temperature: 3600 K\n    luminosity: 4.557e31 W\n    abs_magnitude: -5.71\n    schwarzschild: 48745.54 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 805 nm\n    avg_time_ns: 1696.30\n    iterations_per_sec: 625000.00\n  - label: Rigel\n    category: Supergiant\n    symbol: B\n    name: Rigel\n    spectral: B8Ia\n    mass: 21.000 M☉\n    radius: 78.900 R☉\n    temperature: 12100 K\n    luminosity: 4.602e31 W\n    abs_magnitude: -6.98\n    schwarzschild: 62039.78 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 239 nm\n    avg_time_ns: 1671.57\n    iterations_per_sec: 625000.00\n  - label: Vega\n    category: Main Sequence\n    symbol: A\n    name: Vega\n    spectral: A0V\n    mass: 2.135 M☉\n    radius: 2.362 R☉\n    temperature: 9602 K\n    luminosity: 1.636e28 W\n    abs_magnitude: 0.60\n    schwarzschild: 6307.38 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 302 nm\n    avg_time_ns: 1681.65\n    iterations_per_sec: 625000.00\n  - label: Proxima Centauri\n    category: Red Dwarf\n    symbol: M\n    name: Proxima Centauri\n    spectral: M5.5Ve\n    mass: 0.122 M☉\n    radius: 0.154 R☉\n    temperature: 3042 K\n    luminosity: 7.022e23 W\n    abs_magnitude: 15.56\n    schwarzschild: 360.42 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 953 nm\n    avg_time_ns: 1704.27\n    iterations_per_sec: 625000.00\n  - label: Polaris\n    category: Supergiant\n    symbol: F\n    name: Polaris\n    spectral: F7Ib\n    mass: 5.400 M☉\n    radius: 37.500 R☉\n    temperature: 6015 K\n    luminosity: 6.348e29 W\n    abs_magnitude: -3.63\n    schwarzschild: 15953.09 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 482 nm\n    avg_time_ns: 1646.64\n    iterations_per_sec: 625000.00\n  - label: Aldebaran\n    category: Giant\n    symbol: K\n    name: Aldebaran\n    spectral: K5III\n    mass: 1.160 M☉\n    radius: 44.130 R☉\n    temperature: 3910 K\n    luminosity: 1.570e29 W\n    abs_magnitude: -0.69\n    schwarzschild: 3426.96 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 741 nm\n    avg_time_ns: 1723.64\n    iterations_per_sec: 625000.00\n  - label: Deneb\n    category: Supergiant\n    symbol: A\n    name: Deneb\n    spectral: A2Ia\n    mass: 19.000 M☉\n    radius: 203.000 R☉\n    temperature: 8525 K\n    luminosity: 7.506e31 W\n    abs_magnitude: -8.27\n    schwarzschild: 56131.23 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 340 nm\n    avg_time_ns: 1713.84\n    iterations_per_sec: 625000.00\n  - label: Barnard's Star\n    category: Red Dwarf\n    symbol: M\n    name: Barnard's Star\n    spectral: M4Ve\n    mass: 0.144 M☉\n    radius: 0.196 R☉\n    temperature: 3134 K\n    luminosity: 1.278e24 W\n    abs_magnitude: 13.19\n    schwarzschild: 425.42 m\n    ms_lifetime: 0.0 Myr\n    wien_peak: 925 nm\n    avg_time_ns: 1759.21\n    iterations_per_sec: 625000.00\n"},
+toml:{
+"Aldebaran.toml":"[benchmark]\ncategory = \"Giant\"\nsymbol = \"K\"\nname = \"Aldebaran\"\nspectral = \"K5III\"\nmass = \"1.160 M☉\"\nradius = \"44.130 R☉\"\ntemperature = \"3910 K\"\nluminosity = \"1.570e29 W\"\nabs_magnitude = \"-0.69\"\nschwarzschild = \"3426.96 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"741 nm\"\nexperiment_name = \"Aldebaran_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1723.64\nmin_time_ns = 1723.64\nmax_time_ns = 1723.64\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm\"\n",
+"Barnard's Star.toml":"[benchmark]\ncategory = \"Red Dwarf\"\nsymbol = \"M\"\nname = \"Barnard's Star\"\nspectral = \"M4Ve\"\nmass = \"0.144 M☉\"\nradius = \"0.196 R☉\"\ntemperature = \"3134 K\"\nluminosity = \"1.278e24 W\"\nabs_magnitude = \"13.19\"\nschwarzschild = \"425.42 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"925 nm\"\nexperiment_name = \"Barnard's Star_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1759.21\nmin_time_ns = 1759.21\nmax_time_ns = 1759.21\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Barnard's Star (M4Ve) | L=1.278e24 W | M_abs=13.19 | R_s=425.42 m | MS lifetime=0.0 Myr | Wien λ_max=925 nm\"\n",
+"Betelgeuse.toml":"[benchmark]\ncategory = \"Supergiant\"\nsymbol = \"M\"\nname = \"Betelgeuse\"\nspectral = \"M1Ia\"\nmass = \"16.500 M☉\"\nradius = \"887.000 R☉\"\ntemperature = \"3600 K\"\nluminosity = \"4.557e31 W\"\nabs_magnitude = \"-5.71\"\nschwarzschild = \"48745.54 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"805 nm\"\nexperiment_name = \"Betelgeuse_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1696.30\nmin_time_ns = 1696.30\nmax_time_ns = 1696.30\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Betelgeuse (M1Ia) | L=4.557e31 W | M_abs=-5.71 | R_s=48745.54 m | MS lifetime=0.0 Myr | Wien λ_max=805 nm\"\n",
+"Deneb.toml":"[benchmark]\ncategory = \"Supergiant\"\nsymbol = \"A\"\nname = \"Deneb\"\nspectral = \"A2Ia\"\nmass = \"19.000 M☉\"\nradius = \"203.000 R☉\"\ntemperature = \"8525 K\"\nluminosity = \"7.506e31 W\"\nabs_magnitude = \"-8.27\"\nschwarzschild = \"56131.23 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"340 nm\"\nexperiment_name = \"Deneb_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1713.84\nmin_time_ns = 1713.84\nmax_time_ns = 1713.84\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Deneb (A2Ia) | L=7.506e31 W | M_abs=-8.27 | R_s=56131.23 m | MS lifetime=0.0 Myr | Wien λ_max=340 nm\"\n",
+"Polaris.toml":"[benchmark]\ncategory = \"Supergiant\"\nsymbol = \"F\"\nname = \"Polaris\"\nspectral = \"F7Ib\"\nmass = \"5.400 M☉\"\nradius = \"37.500 R☉\"\ntemperature = \"6015 K\"\nluminosity = \"6.348e29 W\"\nabs_magnitude = \"-3.63\"\nschwarzschild = \"15953.09 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"482 nm\"\nexperiment_name = \"Polaris_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1646.64\nmin_time_ns = 1646.64\nmax_time_ns = 1646.64\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Polaris (F7Ib) | L=6.348e29 W | M_abs=-3.63 | R_s=15953.09 m | MS lifetime=0.0 Myr | Wien λ_max=482 nm\"\n",
+"Proxima Centauri.toml":"[benchmark]\ncategory = \"Red Dwarf\"\nsymbol = \"M\"\nname = \"Proxima Centauri\"\nspectral = \"M5.5Ve\"\nmass = \"0.122 M☉\"\nradius = \"0.154 R☉\"\ntemperature = \"3042 K\"\nluminosity = \"7.022e23 W\"\nabs_magnitude = \"15.56\"\nschwarzschild = \"360.42 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"953 nm\"\nexperiment_name = \"Proxima Centauri_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1704.27\nmin_time_ns = 1704.27\nmax_time_ns = 1704.27\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm\"\n",
+"Rigel.toml":"[benchmark]\ncategory = \"Supergiant\"\nsymbol = \"B\"\nname = \"Rigel\"\nspectral = \"B8Ia\"\nmass = \"21.000 M☉\"\nradius = \"78.900 R☉\"\ntemperature = \"12100 K\"\nluminosity = \"4.602e31 W\"\nabs_magnitude = \"-6.98\"\nschwarzschild = \"62039.78 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"239 nm\"\nexperiment_name = \"Rigel_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1671.57\nmin_time_ns = 1671.57\nmax_time_ns = 1671.57\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Rigel (B8Ia) | L=4.602e31 W | M_abs=-6.98 | R_s=62039.78 m | MS lifetime=0.0 Myr | Wien λ_max=239 nm\"\n",
+"Sirius A.toml":"[benchmark]\ncategory = \"Main Sequence\"\nsymbol = \"A\"\nname = \"Sirius A\"\nspectral = \"A1V\"\nmass = \"2.063 M☉\"\nradius = \"1.711 R☉\"\ntemperature = \"9940 K\"\nluminosity = \"9.856e27 W\"\nabs_magnitude = \"1.43\"\nschwarzschild = \"6094.67 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"292 nm\"\nexperiment_name = \"Sirius A_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1677.32\nmin_time_ns = 1677.32\nmax_time_ns = 1677.32\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Sirius A (A1V) | L=9.856e27 W | M_abs=1.43 | R_s=6094.67 m | MS lifetime=0.0 Myr | Wien λ_max=292 nm\"\n",
+"Sun.toml":"[benchmark]\ncategory = \"Main Sequence\"\nsymbol = \"G\"\nname = \"Sun\"\nspectral = \"G2V\"\nmass = \"1.000 M☉\"\nradius = \"1.000 R☉\"\ntemperature = \"5778 K\"\nluminosity = \"3.844e26 W\"\nabs_magnitude = \"4.83\"\nschwarzschild = \"2954.28 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"502 nm\"\nexperiment_name = \"Sun_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1744.29\nmin_time_ns = 1744.29\nmax_time_ns = 1744.29\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Sun (G2V) | L=3.844e26 W | M_abs=4.83 | R_s=2954.28 m | MS lifetime=0.0 Myr | Wien λ_max=502 nm\"\n",
+"Vega.toml":"[benchmark]\ncategory = \"Main Sequence\"\nsymbol = \"A\"\nname = \"Vega\"\nspectral = \"A0V\"\nmass = \"2.135 M☉\"\nradius = \"2.362 R☉\"\ntemperature = \"9602 K\"\nluminosity = \"1.636e28 W\"\nabs_magnitude = \"0.60\"\nschwarzschild = \"6307.38 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"302 nm\"\nexperiment_name = \"Vega_stellar\"\nprecision = \"f64\"\nelapsed_ms = 8\niterations = 5000\navg_time_ns = 1681.65\nmin_time_ns = 1681.65\nmax_time_ns = 1681.65\ntime_stddev = 0.0000\niterations_per_sec = 625000.00\nresult = \"Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm\"\n",
+"summary.toml":"title = \"Star Catalog — Luminosity, Magnitude, Schwarzschild Radius & Main Sequence Lifetime\"\ncount = 10\n\n[[entries]]\nlabel = \"Sun\"\ncategory = \"Main Sequence\"\nsymbol = \"G\"\nname = \"Sun\"\nspectral = \"G2V\"\nmass = \"1.000 M☉\"\nradius = \"1.000 R☉\"\ntemperature = \"5778 K\"\nluminosity = \"3.844e26 W\"\nabs_magnitude = \"4.83\"\nschwarzschild = \"2954.28 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"502 nm\"\navg_time_ns = 1744.29\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Sirius A\"\ncategory = \"Main Sequence\"\nsymbol = \"A\"\nname = \"Sirius A\"\nspectral = \"A1V\"\nmass = \"2.063 M☉\"\nradius = \"1.711 R☉\"\ntemperature = \"9940 K\"\nluminosity = \"9.856e27 W\"\nabs_magnitude = \"1.43\"\nschwarzschild = \"6094.67 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"292 nm\"\navg_time_ns = 1677.32\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Betelgeuse\"\ncategory = \"Supergiant\"\nsymbol = \"M\"\nname = \"Betelgeuse\"\nspectral = \"M1Ia\"\nmass = \"16.500 M☉\"\nradius = \"887.000 R☉\"\ntemperature = \"3600 K\"\nluminosity = \"4.557e31 W\"\nabs_magnitude = \"-5.71\"\nschwarzschild = \"48745.54 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"805 nm\"\navg_time_ns = 1696.30\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Rigel\"\ncategory = \"Supergiant\"\nsymbol = \"B\"\nname = \"Rigel\"\nspectral = \"B8Ia\"\nmass = \"21.000 M☉\"\nradius = \"78.900 R☉\"\ntemperature = \"12100 K\"\nluminosity = \"4.602e31 W\"\nabs_magnitude = \"-6.98\"\nschwarzschild = \"62039.78 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"239 nm\"\navg_time_ns = 1671.57\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Vega\"\ncategory = \"Main Sequence\"\nsymbol = \"A\"\nname = \"Vega\"\nspectral = \"A0V\"\nmass = \"2.135 M☉\"\nradius = \"2.362 R☉\"\ntemperature = \"9602 K\"\nluminosity = \"1.636e28 W\"\nabs_magnitude = \"0.60\"\nschwarzschild = \"6307.38 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"302 nm\"\navg_time_ns = 1681.65\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Proxima Centauri\"\ncategory = \"Red Dwarf\"\nsymbol = \"M\"\nname = \"Proxima Centauri\"\nspectral = \"M5.5Ve\"\nmass = \"0.122 M☉\"\nradius = \"0.154 R☉\"\ntemperature = \"3042 K\"\nluminosity = \"7.022e23 W\"\nabs_magnitude = \"15.56\"\nschwarzschild = \"360.42 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"953 nm\"\navg_time_ns = 1704.27\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Polaris\"\ncategory = \"Supergiant\"\nsymbol = \"F\"\nname = \"Polaris\"\nspectral = \"F7Ib\"\nmass = \"5.400 M☉\"\nradius = \"37.500 R☉\"\ntemperature = \"6015 K\"\nluminosity = \"6.348e29 W\"\nabs_magnitude = \"-3.63\"\nschwarzschild = \"15953.09 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"482 nm\"\navg_time_ns = 1646.64\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Aldebaran\"\ncategory = \"Giant\"\nsymbol = \"K\"\nname = \"Aldebaran\"\nspectral = \"K5III\"\nmass = \"1.160 M☉\"\nradius = \"44.130 R☉\"\ntemperature = \"3910 K\"\nluminosity = \"1.570e29 W\"\nabs_magnitude = \"-0.69\"\nschwarzschild = \"3426.96 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"741 nm\"\navg_time_ns = 1723.64\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Deneb\"\ncategory = \"Supergiant\"\nsymbol = \"A\"\nname = \"Deneb\"\nspectral = \"A2Ia\"\nmass = \"19.000 M☉\"\nradius = \"203.000 R☉\"\ntemperature = \"8525 K\"\nluminosity = \"7.506e31 W\"\nabs_magnitude = \"-8.27\"\nschwarzschild = \"56131.23 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"340 nm\"\navg_time_ns = 1713.84\niterations_per_sec = 625000.00\n\n[[entries]]\nlabel = \"Barnard's Star\"\ncategory = \"Red Dwarf\"\nsymbol = \"M\"\nname = \"Barnard's Star\"\nspectral = \"M4Ve\"\nmass = \"0.144 M☉\"\nradius = \"0.196 R☉\"\ntemperature = \"3134 K\"\nluminosity = \"1.278e24 W\"\nabs_magnitude = \"13.19\"\nschwarzschild = \"425.42 m\"\nms_lifetime = \"0.0 Myr\"\nwien_peak = \"925 nm\"\navg_time_ns = 1759.21\niterations_per_sec = 625000.00\n\n"},
+bmk:{
+"Aldebaran.bmk":"experiment_name: Aldebaran_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1723.64\nmin_time_ns:     1723.64\nmax_time_ns:     1723.64\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     188 bytes\n",
+"Barnard's Star.bmk":"experiment_name: Barnard's Star_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1759.21\nmin_time_ns:     1759.21\nmax_time_ns:     1759.21\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     193 bytes\n",
+"Betelgeuse.bmk":"experiment_name: Betelgeuse_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1696.30\nmin_time_ns:     1696.30\nmax_time_ns:     1696.30\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     189 bytes\n",
+"Deneb.bmk":"experiment_name: Deneb_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1713.84\nmin_time_ns:     1713.84\nmax_time_ns:     1713.84\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     184 bytes\n",
+"Polaris.bmk":"experiment_name: Polaris_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1646.64\nmin_time_ns:     1646.64\nmax_time_ns:     1646.64\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     186 bytes\n",
+"Proxima Centauri.bmk":"experiment_name: Proxima Centauri_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1704.27\nmin_time_ns:     1704.27\nmax_time_ns:     1704.27\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     195 bytes\n",
+"Rigel.bmk":"experiment_name: Rigel_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1671.57\nmin_time_ns:     1671.57\nmax_time_ns:     1671.57\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     184 bytes\n",
+"Sirius A.bmk":"experiment_name: Sirius A_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1677.32\nmin_time_ns:     1677.32\nmax_time_ns:     1677.32\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     187 bytes\n",
+"Sun.bmk":"experiment_name: Sun_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1744.29\nmin_time_ns:     1744.29\nmax_time_ns:     1744.29\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     182 bytes\n",
+"Vega.bmk":"experiment_name: Vega_stellar\nprecision:       f64\nelapsed_ms:      8\niterations:      5000\navg_time_ns:     1681.65\nmin_time_ns:     1681.65\nmax_time_ns:     1681.65\ntime_stddev:     0.0000\niterations/sec:  625000.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     183 bytes\n"}
+};
+var D={
+"Sun":{tags:{"category":"Main Sequence","symbol":"G","name":"Sun","spectral":"G2V","mass":"1.000 M☉","radius":"1.000 R☉","temperature":"5778 K","luminosity":"3.844e26 W","abs_magnitude":"4.83","schwarzschild":"2954.28 m","ms_lifetime":"0.0 Myr","wien_peak":"502 nm"},p:"f64",it:5000,avg:1744.29,mn:1744.29,mx:1744.29,sd:0.0000,ips:625000.00},
+"Sirius A":{tags:{"category":"Main Sequence","symbol":"A","name":"Sirius A","spectral":"A1V","mass":"2.063 M☉","radius":"1.711 R☉","temperature":"9940 K","luminosity":"9.856e27 W","abs_magnitude":"1.43","schwarzschild":"6094.67 m","ms_lifetime":"0.0 Myr","wien_peak":"292 nm"},p:"f64",it:5000,avg:1677.32,mn:1677.32,mx:1677.32,sd:0.0000,ips:625000.00},
+"Betelgeuse":{tags:{"category":"Supergiant","symbol":"M","name":"Betelgeuse","spectral":"M1Ia","mass":"16.500 M☉","radius":"887.000 R☉","temperature":"3600 K","luminosity":"4.557e31 W","abs_magnitude":"-5.71","schwarzschild":"48745.54 m","ms_lifetime":"0.0 Myr","wien_peak":"805 nm"},p:"f64",it:5000,avg:1696.30,mn:1696.30,mx:1696.30,sd:0.0000,ips:625000.00},
+"Rigel":{tags:{"category":"Supergiant","symbol":"B","name":"Rigel","spectral":"B8Ia","mass":"21.000 M☉","radius":"78.900 R☉","temperature":"12100 K","luminosity":"4.602e31 W","abs_magnitude":"-6.98","schwarzschild":"62039.78 m","ms_lifetime":"0.0 Myr","wien_peak":"239 nm"},p:"f64",it:5000,avg:1671.57,mn:1671.57,mx:1671.57,sd:0.0000,ips:625000.00},
+"Vega":{tags:{"category":"Main Sequence","symbol":"A","name":"Vega","spectral":"A0V","mass":"2.135 M☉","radius":"2.362 R☉","temperature":"9602 K","luminosity":"1.636e28 W","abs_magnitude":"0.60","schwarzschild":"6307.38 m","ms_lifetime":"0.0 Myr","wien_peak":"302 nm"},p:"f64",it:5000,avg:1681.65,mn:1681.65,mx:1681.65,sd:0.0000,ips:625000.00},
+"Proxima Centauri":{tags:{"category":"Red Dwarf","symbol":"M","name":"Proxima Centauri","spectral":"M5.5Ve","mass":"0.122 M☉","radius":"0.154 R☉","temperature":"3042 K","luminosity":"7.022e23 W","abs_magnitude":"15.56","schwarzschild":"360.42 m","ms_lifetime":"0.0 Myr","wien_peak":"953 nm"},p:"f64",it:5000,avg:1704.27,mn:1704.27,mx:1704.27,sd:0.0000,ips:625000.00},
+"Polaris":{tags:{"category":"Supergiant","symbol":"F","name":"Polaris","spectral":"F7Ib","mass":"5.400 M☉","radius":"37.500 R☉","temperature":"6015 K","luminosity":"6.348e29 W","abs_magnitude":"-3.63","schwarzschild":"15953.09 m","ms_lifetime":"0.0 Myr","wien_peak":"482 nm"},p:"f64",it:5000,avg:1646.64,mn:1646.64,mx:1646.64,sd:0.0000,ips:625000.00},
+"Aldebaran":{tags:{"category":"Giant","symbol":"K","name":"Aldebaran","spectral":"K5III","mass":"1.160 M☉","radius":"44.130 R☉","temperature":"3910 K","luminosity":"1.570e29 W","abs_magnitude":"-0.69","schwarzschild":"3426.96 m","ms_lifetime":"0.0 Myr","wien_peak":"741 nm"},p:"f64",it:5000,avg:1723.64,mn:1723.64,mx:1723.64,sd:0.0000,ips:625000.00},
+"Deneb":{tags:{"category":"Supergiant","symbol":"A","name":"Deneb","spectral":"A2Ia","mass":"19.000 M☉","radius":"203.000 R☉","temperature":"8525 K","luminosity":"7.506e31 W","abs_magnitude":"-8.27","schwarzschild":"56131.23 m","ms_lifetime":"0.0 Myr","wien_peak":"340 nm"},p:"f64",it:5000,avg:1713.84,mn:1713.84,mx:1713.84,sd:0.0000,ips:625000.00},
+"Barnard's Star":{tags:{"category":"Red Dwarf","symbol":"M","name":"Barnard's Star","spectral":"M4Ve","mass":"0.144 M☉","radius":"0.196 R☉","temperature":"3134 K","luminosity":"1.278e24 W","abs_magnitude":"13.19","schwarzschild":"425.42 m","ms_lifetime":"0.0 Myr","wien_peak":"925 nm"},p:"f64",it:5000,avg:1759.21,mn:1759.21,mx:1759.21,sd:0.0000,ips:625000.00}
+};
+function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
+function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}
+function go(id){var d=D[id];if(!d)return;var p=document.getElementById('detail');if(p){p.className='detail open';document.getElementById('d-title').textContent=id;var tg=document.getElementById('d-tags');tg.innerHTML='';var tkeys=Object.keys(d.tags);for(var i=0;i<tkeys.length;i++){var r=document.createElement('div');r.className='dk';r.textContent=tkeys[i];tg.appendChild(r);var v=document.createElement('div');v.className='dv';v.textContent=d.tags[tkeys[i]];tg.appendChild(v);}document.getElementById('d-prec').textContent=d.p;document.getElementById('d-iter').textContent=d.it;document.getElementById('d-avg').textContent=d.avg.toFixed(2)+' ns';document.getElementById('d-min').textContent=d.mn.toFixed(2)+' ns';document.getElementById('d-max').textContent=d.mx.toFixed(2)+' ns';document.getElementById('d-std').textContent=d.sd.toFixed(4);document.getElementById('d-ips').textContent=d.ips.toFixed(2);var fb=document.getElementById('d-files');if(fb){fb.innerHTML='';['json','yaml','toml'].forEach(function(fmt){var fk=id+'.'+fmt;if(F[fmt]&&F[fmt][fk]){var b=document.createElement('button');b.className='fbtn';b.textContent=fmt.toUpperCase();(function(f,k){b.onclick=function(){var ts=document.querySelectorAll('.tab');for(var i=0;i<ts.length;i++){if(ts[i].textContent.toLowerCase()===f){switchTab({target:ts[i]},f);break}}var s=document.querySelector('#'+f+' select');if(s){s.value=k;showFile(f,k)}}})(fmt,fk);fb.appendChild(b)}})}p.scrollIntoView({behavior:'smooth',block:'center'})}var el=document.getElementById('el-'+id);if(el){el.classList.add('highlight');setTimeout(function(){el.classList.remove('highlight')},2000)}}
+function closeDetail(){var p=document.getElementById('detail');if(p)p.className='detail'}
+['csv','json','yaml','toml','bmk'].forEach(function(fmt){var s=document.querySelector('#'+fmt+' select');if(s&&s.options.length>0)showFile(fmt,s.options[0].text)});
+</script>
+</body>
+</html>

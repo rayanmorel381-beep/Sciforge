@@ -1,0 +1,19 @@
+{
+  "category": "pr05",
+  "symbol": "MVT",
+  "name": "pr048",
+  "target": "parser",
+  "module": "markdown",
+  "status": "ok",
+  "elapsed_ms": "4744",
+  "experiment_name": "parser_048",
+  "precision": "f64",
+  "elapsed_ms": 4744,
+  "iterations": 1,
+  "avg_time_ns": 4744000000.00,
+  "min_time_ns": 4744000000.00,
+  "max_time_ns": 4744000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=149 stderr_bytes=208"
+}

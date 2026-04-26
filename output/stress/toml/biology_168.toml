@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi17"
+symbol = "HR"
+name = "bi168"
+target = "biology"
+module = "synthetic_biology"
+status = "ok"
+elapsed_ms = "5310"
+experiment_name = "biology_168"
+precision = "f64"
+elapsed_ms = 5310
+iterations = 1
+avg_time_ns = 5310000128.00
+min_time_ns = 5310000128.00
+max_time_ns = 5310000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=161 stderr_bytes=262"

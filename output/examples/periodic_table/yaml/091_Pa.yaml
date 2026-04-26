@@ -1,0 +1,15 @@
+category: actinide
+symbol: Pa
+name: Protactinium
+config: [Rn] 5f² 6d¹ 7s²
+mass: 231.03588
+experiment_name: Pa_Protactinium_benchmark
+precision: f32
+elapsed_ms: 7
+iterations: 1000
+avg_time_ns: 7072.09
+min_time_ns: 7072.09
+max_time_ns: 7072.09
+time_stddev: 0.0000
+iterations_per_sec: 142857.14
+result: Z=91 | Pa (Protactinium) | 231.03588 u | actinide | [Rn] 5f² 6d¹ 7s²

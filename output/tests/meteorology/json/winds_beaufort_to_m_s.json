@@ -1,0 +1,17 @@
+{
+  "category": "winds",
+  "symbol": "BTM",
+  "name": "Beaufort to m s",
+  "domain": "meteorology",
+  "test": "winds::beaufort_to_m_s",
+  "experiment_name": "winds::beaufort_to_m_s",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1879449.00,
+  "min_time_ns": 1879449.00,
+  "max_time_ns": 1879449.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

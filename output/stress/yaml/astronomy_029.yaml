@@ -1,0 +1,17 @@
+category: as03
+symbol: FR
+name: as029
+target: astronomy
+module: impacts
+status: ok
+elapsed_ms: 5343
+experiment_name: astronomy_029
+precision: f64
+elapsed_ms: 5343
+iterations: 1
+avg_time_ns: 5343000064.00
+min_time_ns: 5343000064.00
+max_time_ns: 5343000064.00
+time_stddev: 0.0000
+iterations_per_sec: 0.19
+result: success=true code=Some(0) stdout_bytes=150 stderr_bytes=214

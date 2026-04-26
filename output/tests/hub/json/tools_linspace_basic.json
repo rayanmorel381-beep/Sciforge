@@ -1,0 +1,17 @@
+{
+  "category": "tools",
+  "symbol": "LB",
+  "name": "Linspace basic",
+  "domain": "hub",
+  "test": "tools::linspace_basic",
+  "experiment_name": "tools::linspace_basic",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2410639.00,
+  "min_time_ns": 2410639.00,
+  "max_time_ns": 2410639.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

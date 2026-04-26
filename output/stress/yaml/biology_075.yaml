@@ -1,0 +1,17 @@
+category: bi08
+symbol: MMS
+name: bi075
+target: biology
+module: enzyme
+status: ok
+elapsed_ms: 2555
+experiment_name: biology_075
+precision: f64
+elapsed_ms: 2555
+iterations: 1
+avg_time_ns: 2555000064.00
+min_time_ns: 2555000064.00
+max_time_ns: 2555000064.00
+time_stddev: 0.0000
+iterations_per_sec: 0.39
+result: success=true code=Some(0) stdout_bytes=162 stderr_bytes=210

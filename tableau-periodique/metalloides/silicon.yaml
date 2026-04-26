@@ -1,0 +1,74 @@
+element:
+  name: Silicon
+  symbol: Si
+  atomic_number: 14
+  category: metalloid
+  group: 14
+  period: 3
+  electron_configuration: "[Ne] 3s² 3p²"
+  electronegativity: 1.90
+  atomic_mass: 28.085
+
+isotopes:
+  - name: Silicon-28
+    symbol: "²⁸Si"
+    mass_number: 28
+    neutrons: 14
+    atomic_mass: 27.976927
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.92223
+    nuclear_spin: "0+"
+
+  - name: Silicon-29
+    symbol: "²⁹Si"
+    mass_number: 29
+    neutrons: 15
+    atomic_mass: 28.976495
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.04685
+    nuclear_spin: "1/2+"
+
+  - name: Silicon-30
+    symbol: "³⁰Si"
+    mass_number: 30
+    neutrons: 16
+    atomic_mass: 29.973770
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.03092
+
+  - name: Silicon-31
+    symbol: "³¹Si"
+    mass_number: 31
+    neutrons: 17
+    atomic_mass: 30.975363
+    half_life: 157.36
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Phosphorus-31
+    natural_abundance: 0.0
+
+  - name: Silicon-32
+    symbol: "³²Si"
+    mass_number: 32
+    neutrons: 18
+    atomic_mass: 31.974148
+    half_life: 153.0
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Phosphorus-32
+    natural_abundance: 0.0

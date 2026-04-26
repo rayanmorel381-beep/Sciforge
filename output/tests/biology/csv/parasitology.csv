@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+parasitology::force_of_infection,f64,2,1,2076819,2076819,2076819,0,500,pass,parasitology,FOI,Force of infection,biology,parasitology::force_of_infection
+parasitology::parasite_r0,f64,2,1,2180789,2180789,2180789,0,500,pass,parasitology,PR,Parasite r0,biology,parasitology::parasite_r0
+parasitology::vector_borne_r0,f64,1,1,1930639,1930639,1930639,0,1000,pass,parasitology,VBR,Vector borne r0,biology,parasitology::vector_borne_r0

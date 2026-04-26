@@ -1,0 +1,25 @@
+element:
+  name: Oganesson
+  symbol: Og
+  atomic_number: 118
+  category: noble gas (predicted)
+  group: 18
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)"
+  electronegativity: null
+  atomic_mass: 294.0
+
+isotopes:
+  - name: Oganesson-294
+    symbol: "²⁹⁴Og"
+    mass_number: 294
+    neutrons: 176
+    atomic_mass: 294.21392
+    half_life: 0.69
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Livermorium-290
+    natural_abundance: 0.0

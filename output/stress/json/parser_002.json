@@ -1,0 +1,19 @@
+{
+  "category": "pr01",
+  "symbol": "CEP",
+  "name": "pr002",
+  "target": "parser",
+  "module": "csv",
+  "status": "ok",
+  "elapsed_ms": "2763",
+  "experiment_name": "parser_002",
+  "precision": "f64",
+  "elapsed_ms": 2763,
+  "iterations": 1,
+  "avg_time_ns": 2763000064.00,
+  "min_time_ns": 2763000064.00,
+  "max_time_ns": 2763000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.36,
+  "result": "success=true code=Some(0) stdout_bytes=149 stderr_bytes=260"
+}

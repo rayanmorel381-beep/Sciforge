@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+meteorology_041,f64,3593,1,3593000000,3593000000,3593000000,0,0.27831894,success=true code=Some(0) stdout_bytes=151 stderr_bytes=270,me05,BM,me041,meteorology,winds,ok,3593
+meteorology_042,f64,1791,1,1791000000,1791000000,1791000000,0,0.5583473,success=true code=Some(0) stdout_bytes=148 stderr_bytes=270,me05,BTM,me042,meteorology,winds,ok,1791
+meteorology_043,f64,5375,1,5375000000,5375000000,5375000000,0,0.18604651,success=true code=Some(0) stdout_bytes=154 stderr_bytes=374,me05,BZI,me043,meteorology,winds,ok,5375
+meteorology_044,f64,486,1,486000000,486000000,486000000,0,2.0576131,success=true code=Some(0) stdout_bytes=143 stderr_bytes=374,me05,WC,me044,meteorology,winds,ok,486
+meteorology_045,f64,5524,1,5524000000,5524000000,5524000000,0,0.18102825,success=true code=Some(0) stdout_bytes=163 stderr_bytes=218,me05,WCD,me045,meteorology,winds,ok,5524

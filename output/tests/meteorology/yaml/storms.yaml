@@ -1,0 +1,33 @@
+category: storms
+count: 5
+entries:
+  - label: storms_cape_positive_buoyancy
+    symbol: CPB
+    name: Cape positive buoyancy
+    domain: meteorology
+    test: "storms::cape_positive_buoyancy"
+    avg_time_ns: 2169088.00
+  - label: storms_cape_zero_for_equal_temps
+    symbol: CZF
+    name: Cape zero for equal temps
+    domain: meteorology
+    test: "storms::cape_zero_for_equal_temps"
+    avg_time_ns: 1882750.00
+  - label: storms_fujita_scale
+    symbol: FS
+    name: Fujita scale
+    domain: meteorology
+    test: "storms::fujita_scale"
+    avg_time_ns: 1791779.00
+  - label: storms_fujita_scale_increases_with_wind
+    symbol: FSI
+    name: Fujita scale increases with wind
+    domain: meteorology
+    test: "storms::fujita_scale_increases_with_wind"
+    avg_time_ns: 1902359.00
+  - label: storms_potential_intensity
+    symbol: PI
+    name: Potential intensity
+    domain: meteorology
+    test: "storms::potential_intensity"
+    avg_time_ns: 2269939.00

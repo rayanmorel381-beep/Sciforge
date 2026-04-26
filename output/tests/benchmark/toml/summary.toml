@@ -1,0 +1,21 @@
+title = "Benchmark Integration Test"
+count = 3
+
+[[entries]]
+label = "bench_alpha"
+group = "alpha"
+avg_time_ns = 16.50
+iterations_per_sec = 0.00
+
+[[entries]]
+label = "bench_beta"
+group = "beta"
+avg_time_ns = 14.10
+iterations_per_sec = 0.00
+
+[[entries]]
+label = "bench_gamma"
+group = "gamma"
+avg_time_ns = 13.20
+iterations_per_sec = 0.00
+

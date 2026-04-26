@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+physiology::alveolar_gas_equation,f64,1,1,1923229,1923229,1923229,0,1000,pass,physiology,AGE,Alveolar gas equation,biology,physiology::alveolar_gas_equation
+physiology::frank_starling_mechanism,f64,1,1,1882189,1882189,1882189,0,1000,pass,physiology,FSM,Frank starling mechanism,biology,physiology::frank_starling_mechanism
+physiology::glomerular_filtration_rate,f64,1,1,1904839,1904839,1904839,0,1000,pass,physiology,GFR,Glomerular filtration rate,biology,physiology::glomerular_filtration_rate
+physiology::oxygen_delivery,f64,1,1,1975999,1975999,1975999,0,1000,pass,physiology,OD,Oxygen delivery,biology,physiology::oxygen_delivery

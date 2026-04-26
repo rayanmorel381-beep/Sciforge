@@ -1,0 +1,83 @@
+category: ph02
+count: 10
+entries:
+  - label: physics_011
+    symbol: CPP
+    name: ph011
+    target: physics
+    module: electrodynamics
+    status: ok
+    elapsed_ms: 161
+    avg_time_ns: 161000000.00
+  - label: physics_012
+    symbol: EFP
+    name: ph012
+    target: physics
+    module: electrodynamics
+    status: ok
+    elapsed_ms: 3996
+    avg_time_ns: 3996000000.00
+  - label: physics_013
+    symbol: SD
+    name: ph013
+    target: physics
+    module: electrodynamics
+    status: ok
+    elapsed_ms: 3295
+    avg_time_ns: 3295000064.00
+  - label: physics_014
+    symbol: CPP
+    name: ph014
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3930
+    avg_time_ns: 3929999872.00
+  - label: physics_015
+    symbol: EFP
+    name: ph015
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3955
+    avg_time_ns: 3955000064.00
+  - label: physics_016
+    symbol: IS
+    name: ph016
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3971
+    avg_time_ns: 3971000064.00
+  - label: physics_017
+    symbol: MFW
+    name: ph017
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3886
+    avg_time_ns: 3886000128.00
+  - label: physics_018
+    symbol: ML
+    name: ph018
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 4407
+    avg_time_ns: 4407000064.00
+  - label: physics_019
+    symbol: MLQ
+    name: ph019
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3574
+    avg_time_ns: 3574000128.00
+  - label: physics_020
+    symbol: OC
+    name: ph020
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3304
+    avg_time_ns: 3304000000.00

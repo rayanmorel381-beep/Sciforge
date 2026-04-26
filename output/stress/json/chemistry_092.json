@@ -1,0 +1,19 @@
+{
+  "category": "ch10",
+  "symbol": "AE",
+  "name": "ch092",
+  "target": "chemistry",
+  "module": "stoichiometry",
+  "status": "ok",
+  "elapsed_ms": "2979",
+  "experiment_name": "chemistry_092",
+  "precision": "f64",
+  "elapsed_ms": 2979,
+  "iterations": 1,
+  "avg_time_ns": 2979000064.00,
+  "min_time_ns": 2979000064.00,
+  "max_time_ns": 2979000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.34,
+  "result": "success=true code=Some(0) stdout_bytes=154 stderr_bytes=214"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "lanthanide",
+  "symbol": "Ho",
+  "name": "Holmium",
+  "config": "[Xe] 4f¹¹ 6s²",
+  "mass": "164.93033",
+  "experiment_name": "Ho_Holmium_benchmark",
+  "precision": "f32",
+  "elapsed_ms": 5,
+  "iterations": 1000,
+  "avg_time_ns": 5231.69,
+  "min_time_ns": 5231.69,
+  "max_time_ns": 5231.69,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 200000.00,
+  "result": "Z=67 | Ho (Holmium) | 164.93033 u | lanthanide | [Xe] 4f¹¹ 6s²"
+}

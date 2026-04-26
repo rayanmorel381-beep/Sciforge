@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+He_Helium_benchmark,f64,0,5000,169.05,169.05,169.05,0,0,Z=2 | He (Helium) | 4.002602 u | noble gas | 1s²,noble gas,He,Helium,1s²,4.002602
+Ne_Neon_benchmark,f64,0,1000,775.56,775.56,775.56,0,0,Z=10 | Ne (Neon) | 20.1797 u | noble gas | 1s² 2s² 2p⁶,noble gas,Ne,Neon,1s² 2s² 2p⁶,20.1797
+Ar_Argon_benchmark,f64,13,10000,1392.3284,1392.3284,1392.3284,0,769230.75,Z=18 | Ar (Argon) | 39.948 u | noble gas | [Ne] 3s² 3p⁶,noble gas,Ar,Argon,[Ne] 3s² 3p⁶,39.948
+Kr_Krypton_benchmark,f64,27,10000,2785.3867,2785.3867,2785.3867,0,370370.38,Z=36 | Kr (Krypton) | 83.798 u | noble gas | [Ar] 3d¹⁰ 4s² 4p⁶,noble gas,Kr,Krypton,[Ar] 3d¹⁰ 4s² 4p⁶,83.798
+Xe_Xenon_benchmark,f64,41,10000,4163.1743,4163.1743,4163.1743,0,243902.44,Z=54 | Xe (Xenon) | 131.293 u | noble gas | [Kr] 4d¹⁰ 5s² 5p⁶,noble gas,Xe,Xenon,[Kr] 4d¹⁰ 5s² 5p⁶,131.293
+Rn_Radon_benchmark,f64,33,5000,6705.9272,6705.9272,6705.9272,0,151515.16,Z=86 | Rn (Radon) | 222 u | noble gas | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶,noble gas,Rn,Radon,[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶,222

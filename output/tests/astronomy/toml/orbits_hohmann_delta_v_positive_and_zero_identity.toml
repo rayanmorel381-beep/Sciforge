@@ -1,0 +1,16 @@
+[benchmark]
+category = "orbits"
+symbol = "HDV"
+name = "Hohmann delta v positive and zero identity"
+domain = "astronomy"
+test = "orbits::hohmann_delta_v_positive_and_zero_identity"
+experiment_name = "orbits::hohmann_delta_v_positive_and_zero_identity"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2555539.00
+min_time_ns = 2555539.00
+max_time_ns = 2555539.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

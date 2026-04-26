@@ -1,0 +1,17 @@
+{
+  "category": "transition metal",
+  "symbol": "Y",
+  "name": "Yttrium",
+  "config": "[Kr] 4d¹ 5s²",
+  "mass": "88.90584",
+  "experiment_name": "Y_Yttrium_benchmark",
+  "precision": "f32",
+  "elapsed_ms": 30,
+  "iterations": 10000,
+  "avg_time_ns": 3073.45,
+  "min_time_ns": 3073.45,
+  "max_time_ns": 3073.45,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 333333.34,
+  "result": "Z=39 | Y (Yttrium) | 88.90584 u | transition metal | [Kr] 4d¹ 5s²"
+}

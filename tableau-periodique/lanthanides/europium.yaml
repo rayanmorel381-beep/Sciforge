@@ -1,0 +1,86 @@
+element:
+  name: Europium
+  symbol: Eu
+  atomic_number: 63
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f⁷ 6s²"
+  electronegativity: 1.2
+  atomic_mass: 151.964
+
+isotopes:
+  - name: Europium-151
+    symbol: "¹⁵¹Eu"
+    mass_number: 151
+    neutrons: 88
+    atomic_mass: 150.919850
+    half_life: 4.62e18
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Promethium-147
+    natural_abundance: 0.4781
+    nuclear_spin: "5/2+"
+
+  - name: Europium-152
+    symbol: "¹⁵²Eu"
+    mass_number: 152
+    neutrons: 89
+    atomic_mass: 151.921745
+    half_life: 13.517
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.722
+        daughter: Samarium-152
+      - mode: beta-
+        branching_ratio: 0.278
+        daughter: Gadolinium-152
+    natural_abundance: 0.0
+
+  - name: Europium-153
+    symbol: "¹⁵³Eu"
+    mass_number: 153
+    neutrons: 90
+    atomic_mass: 152.921230
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.5219
+    nuclear_spin: "5/2+"
+
+  - name: Europium-154
+    symbol: "¹⁵⁴Eu"
+    mass_number: 154
+    neutrons: 91
+    atomic_mass: 153.922979
+    half_life: 8.593
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.998
+        daughter: Gadolinium-154
+      - mode: electron capture
+        branching_ratio: 0.002
+        daughter: Samarium-154
+    natural_abundance: 0.0
+
+  - name: Europium-155
+    symbol: "¹⁵⁵Eu"
+    mass_number: 155
+    neutrons: 92
+    atomic_mass: 154.922893
+    half_life: 4.7611
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Gadolinium-155
+    natural_abundance: 0.0

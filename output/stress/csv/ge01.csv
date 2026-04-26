@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+geology_001,f64,724,1,724000000,724000000,724000000,0,1.3812155,success=true code=Some(0) stdout_bytes=148 stderr_bytes=262,ge01,AFR,ge001,geology,dating,ok,724
+geology_002,f64,4823,1,4823000000,4823000000,4823000000,0,0.20733982,success=true code=Some(0) stdout_bytes=146 stderr_bytes=262,ge01,CA,ge002,geology,dating,ok,4823
+geology_003,f64,5297,1,5297000000,5297000000,5297000000,0,0.1887861,success=true code=Some(0) stdout_bytes=148 stderr_bytes=314,ge01,DC,ge003,geology,dating,ok,5297
+geology_004,f64,4968,1,4968000000,4968000000,4968000000,0,0.20128824,success=true code=Some(0) stdout_bytes=172 stderr_bytes=262,ge01,HLP,ge004,geology,dating,ok,4968
+geology_005,f64,5155,1,5155000000,5155000000,5155000000,0,0.19398642,success=true code=Some(0) stdout_bytes=151 stderr_bytes=314,ge01,RD,ge005,geology,dating,ok,5155
+geology_006,f64,4063,1,4063000000,4063000000,4063000000,0,0.24612355,success=true code=Some(0) stdout_bytes=160 stderr_bytes=262,ge01,RDH,ge006,geology,dating,ok,4063
+geology_007,f64,2397,1,2397000000,2397000000,2397000000,0,0.41718814,success=true code=Some(0) stdout_bytes=172 stderr_bytes=262,ge01,RDL,ge007,geology,dating,ok,2397
+geology_008,f64,4993,1,4993000000,4993000000,4993000000,0,0.2002804,success=true code=Some(0) stdout_bytes=159 stderr_bytes=262,ge01,CWR,ge008,geology,erosion,ok,4993
+geology_009,f64,3986,1,3986000000,3986000000,3986000000,0,0.25087807,success=true code=Some(0) stdout_bytes=155 stderr_bytes=262,ge01,FER,ge009,geology,erosion,ok,3986
+geology_010,f64,2748,1,2748000000,2748000000,2748000000,0,0.36390102,success=true code=Some(0) stdout_bytes=156 stderr_bytes=210,ge01,FWR,ge010,geology,erosion,ok,2748

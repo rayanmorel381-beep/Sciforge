@@ -1,0 +1,83 @@
+category: pr05
+count: 10
+entries:
+  - label: parser_041
+    symbol: MCB
+    name: pr041
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4360
+    avg_time_ns: 4360000000.00
+  - label: parser_042
+    symbol: MH
+    name: pr042
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 2688
+    avg_time_ns: 2688000000.00
+  - label: parser_043
+    symbol: ML
+    name: pr043
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4866
+    avg_time_ns: 4865999872.00
+  - label: parser_044
+    symbol: MT
+    name: pr044
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 2836
+    avg_time_ns: 2836000000.00
+  - label: parser_045
+    symbol: MTB
+    name: pr045
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4340
+    avg_time_ns: 4339999744.00
+  - label: parser_046
+    symbol: MVE
+    name: pr046
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4867
+    avg_time_ns: 4866999808.00
+  - label: parser_047
+    symbol: MVH
+    name: pr047
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 665
+    avg_time_ns: 665000000.00
+  - label: parser_048
+    symbol: MVT
+    name: pr048
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 4744
+    avg_time_ns: 4744000000.00
+  - label: parser_049
+    symbol: MVT
+    name: pr049
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 2704
+    avg_time_ns: 2704000000.00
+  - label: parser_050
+    symbol: TA
+    name: pr050
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4673
+    avg_time_ns: 4672999936.00

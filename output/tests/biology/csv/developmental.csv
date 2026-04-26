@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+developmental::french_flag_model,f64,1,1,1895879,1895879,1895879,0,1000,pass,developmental,FFM,French flag model,biology,developmental::french_flag_model
+developmental::lateral_inhibition,f64,1,1,1866539,1866539,1866539,0,1000,pass,developmental,LI,Lateral inhibition,biology,developmental::lateral_inhibition
+developmental::morphogen_gradient_steady,f64,1,1,1886909,1886909,1886909,0,1000,pass,developmental,MGS,Morphogen gradient steady,biology,developmental::morphogen_gradient_steady

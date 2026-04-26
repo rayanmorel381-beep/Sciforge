@@ -1,0 +1,41 @@
+[
+{
+  "group": "alpha",
+  "experiment_name": "bench_alpha",
+  "precision": "f64",
+  "elapsed_ms": 0,
+  "iterations": 100,
+  "avg_time_ns": 16.50,
+  "min_time_ns": 16.50,
+  "max_time_ns": 16.50,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "alpha completed"
+},
+{
+  "group": "beta",
+  "experiment_name": "bench_beta",
+  "precision": "f32",
+  "elapsed_ms": 0,
+  "iterations": 100,
+  "avg_time_ns": 14.10,
+  "min_time_ns": 14.10,
+  "max_time_ns": 14.10,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "beta completed"
+},
+{
+  "group": "gamma",
+  "experiment_name": "bench_gamma",
+  "precision": "f64",
+  "elapsed_ms": 0,
+  "iterations": 100,
+  "avg_time_ns": 13.20,
+  "min_time_ns": 13.20,
+  "max_time_ns": 13.20,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "gamma completed"
+}
+]

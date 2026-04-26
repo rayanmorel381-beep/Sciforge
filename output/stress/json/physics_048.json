@@ -1,0 +1,19 @@
+{
+  "category": "ph05",
+  "symbol": "TLE",
+  "name": "ph048",
+  "target": "physics",
+  "module": "optics",
+  "status": "ok",
+  "elapsed_ms": "3826",
+  "experiment_name": "physics_048",
+  "precision": "f64",
+  "elapsed_ms": 3826,
+  "iterations": 1,
+  "avg_time_ns": 3825999872.00,
+  "min_time_ns": 3825999872.00,
+  "max_time_ns": 3825999872.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.26,
+  "result": "success=true code=Some(0) stdout_bytes=152 stderr_bytes=262"
+}

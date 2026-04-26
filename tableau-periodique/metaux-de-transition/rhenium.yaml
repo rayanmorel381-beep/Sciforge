@@ -1,0 +1,69 @@
+element:
+  name: Rhenium
+  symbol: Re
+  atomic_number: 75
+  category: transition metal
+  group: 7
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d⁵ 6s²"
+  electronegativity: 1.9
+  atomic_mass: 186.207
+
+isotopes:
+  - name: Rhenium-185
+    symbol: "¹⁸⁵Re"
+    mass_number: 185
+    neutrons: 110
+    atomic_mass: 184.952955
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.3740
+    nuclear_spin: "5/2+"
+
+  - name: Rhenium-186
+    symbol: "¹⁸⁶Re"
+    mass_number: 186
+    neutrons: 111
+    atomic_mass: 185.954986
+    half_life: 3.7186
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.927
+        daughter: Osmium-186
+      - mode: electron capture
+        branching_ratio: 0.073
+        daughter: Tungsten-186
+    natural_abundance: 0.0
+
+  - name: Rhenium-187
+    symbol: "¹⁸⁷Re"
+    mass_number: 187
+    neutrons: 112
+    atomic_mass: 186.955753
+    half_life: 4.12e10
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Osmium-187
+    natural_abundance: 0.6260
+    nuclear_spin: "5/2+"
+
+  - name: Rhenium-188
+    symbol: "¹⁸⁸Re"
+    mass_number: 188
+    neutrons: 113
+    atomic_mass: 187.958114
+    half_life: 17.003
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Osmium-188
+    natural_abundance: 0.0

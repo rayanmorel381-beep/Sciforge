@@ -1,0 +1,31 @@
+category: Polar
+count: 2
+entries:
+  - label: McMurdo Base
+    symbol: Mc
+    name: McMurdo Base
+    altitude: 10 m
+    temperature: -18.0 °C
+    pressure: 984.0 hPa
+    relative_humidity: 60%
+    saturation_vp: 1.49 hPa
+    dew_point: -23.9 °C
+    density_altitude: -3948 m
+    potential_temp: 257.3 K
+    mixing_ratio: 0.57 g/kg
+    lcl: 602 m AGL
+    avg_time_ns: 5812.67
+  - label: Reykjavik
+    symbol: R
+    name: Reykjavik
+    altitude: 61 m
+    temperature: 4.6 °C
+    pressure: 1005.0 hPa
+    relative_humidity: 82%
+    saturation_vp: 8.48 hPa
+    dew_point: 1.8 °C
+    density_altitude: -1172 m
+    potential_temp: 278.4 K
+    mixing_ratio: 4.33 g/kg
+    lcl: 287 m AGL
+    avg_time_ns: 5642.68

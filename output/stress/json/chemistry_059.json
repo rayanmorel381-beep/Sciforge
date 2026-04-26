@@ -1,0 +1,19 @@
+{
+  "category": "ch06",
+  "symbol": "DM",
+  "name": "ch059",
+  "target": "chemistry",
+  "module": "molecular",
+  "status": "ok",
+  "elapsed_ms": "4746",
+  "experiment_name": "chemistry_059",
+  "precision": "f64",
+  "elapsed_ms": 4746,
+  "iterations": 1,
+  "avg_time_ns": 4745999872.00,
+  "min_time_ns": 4745999872.00,
+  "max_time_ns": 4745999872.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=151 stderr_bytes=266"
+}

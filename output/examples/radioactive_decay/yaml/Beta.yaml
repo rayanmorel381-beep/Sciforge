@@ -1,0 +1,16 @@
+category: Beta
+count: 1
+entries:
+  - label: ⁶⁰Co
+    symbol: ⁶⁰Co
+    name: Cobalt
+    Z: 27
+    A: 60
+    N: 33
+    half_life: 5.27 years
+    decay_constant: 4.1664e-9 s⁻¹
+    decay_mode: beta-
+    specific_activity: 4.182e13 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.489 MeV/nucleon
+    avg_time_ns: 2333.16

@@ -1,0 +1,93 @@
+element:
+  name: Gadolinium
+  symbol: Gd
+  atomic_number: 64
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f⁷ 5d¹ 6s²"
+  electronegativity: 1.20
+  atomic_mass: 157.25
+
+isotopes:
+  - name: Gadolinium-152
+    symbol: "¹⁵²Gd"
+    mass_number: 152
+    neutrons: 88
+    atomic_mass: 151.919791
+    half_life: 1.08e14
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Samarium-148
+    natural_abundance: 0.0020
+
+  - name: Gadolinium-154
+    symbol: "¹⁵⁴Gd"
+    mass_number: 154
+    neutrons: 90
+    atomic_mass: 153.920866
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0218
+
+  - name: Gadolinium-155
+    symbol: "¹⁵⁵Gd"
+    mass_number: 155
+    neutrons: 91
+    atomic_mass: 154.922622
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1480
+    nuclear_spin: "3/2-"
+
+  - name: Gadolinium-156
+    symbol: "¹⁵⁶Gd"
+    mass_number: 156
+    neutrons: 92
+    atomic_mass: 155.922123
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2047
+
+  - name: Gadolinium-157
+    symbol: "¹⁵⁷Gd"
+    mass_number: 157
+    neutrons: 93
+    atomic_mass: 156.923960
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1565
+    nuclear_spin: "3/2-"
+
+  - name: Gadolinium-158
+    symbol: "¹⁵⁸Gd"
+    mass_number: 158
+    neutrons: 94
+    atomic_mass: 157.924104
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2484
+
+  - name: Gadolinium-160
+    symbol: "¹⁶⁰Gd"
+    mass_number: 160
+    neutrons: 96
+    atomic_mass: 159.927054
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2186

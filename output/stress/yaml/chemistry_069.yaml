@@ -1,0 +1,17 @@
+category: ch07
+symbol: PE
+name: ch069
+target: chemistry
+module: photochemistry
+status: ok
+elapsed_ms: 5568
+experiment_name: chemistry_069
+precision: f64
+elapsed_ms: 5568
+iterations: 1
+avg_time_ns: 5568000000.00
+min_time_ns: 5568000000.00
+max_time_ns: 5568000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.18
+result: success=true code=Some(0) stdout_bytes=156 stderr_bytes=214

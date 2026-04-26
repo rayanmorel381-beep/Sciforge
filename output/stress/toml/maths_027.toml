@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma03"
+symbol = "LCA"
+name = "ma027"
+target = "maths"
+module = "linalg"
+status = "ok"
+elapsed_ms = "4374"
+experiment_name = "maths_027"
+precision = "f64"
+elapsed_ms = 4374
+iterations = 1
+avg_time_ns = 4374000128.00
+min_time_ns = 4374000128.00
+max_time_ns = 4374000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.23
+result = "success=true code=Some(0) stdout_bytes=158 stderr_bytes=258"

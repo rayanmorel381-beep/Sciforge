@@ -1,0 +1,19 @@
+{
+  "category": "bi04",
+  "symbol": "Sp",
+  "name": "bi034",
+  "target": "biology",
+  "module": "biostatistics",
+  "status": "ok",
+  "elapsed_ms": "4875",
+  "experiment_name": "biology_034",
+  "precision": "f64",
+  "elapsed_ms": 4875,
+  "iterations": 1,
+  "avg_time_ns": 4874999808.00,
+  "min_time_ns": 4874999808.00,
+  "max_time_ns": 4874999808.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=153 stderr_bytes=314"
+}

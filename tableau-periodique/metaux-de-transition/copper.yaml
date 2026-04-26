@@ -1,0 +1,69 @@
+element:
+  name: Copper
+  symbol: Cu
+  atomic_number: 29
+  category: transition metal
+  group: 11
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s¹"
+  electronegativity: 1.90
+  atomic_mass: 63.546
+
+isotopes:
+  - name: Copper-63
+    symbol: "⁶³Cu"
+    mass_number: 63
+    neutrons: 34
+    atomic_mass: 62.929598
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.6915
+    nuclear_spin: "3/2-"
+
+  - name: Copper-64
+    symbol: "⁶⁴Cu"
+    mass_number: 64
+    neutrons: 35
+    atomic_mass: 63.929764
+    half_life: 12.701
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta+
+        branching_ratio: 0.175
+        daughter: Nickel-64
+      - mode: beta-
+        branching_ratio: 0.385
+        daughter: Zinc-64
+      - mode: electron capture
+        branching_ratio: 0.44
+        daughter: Nickel-64
+    natural_abundance: 0.0
+
+  - name: Copper-65
+    symbol: "⁶⁵Cu"
+    mass_number: 65
+    neutrons: 36
+    atomic_mass: 64.927790
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.3085
+    nuclear_spin: "3/2-"
+
+  - name: Copper-67
+    symbol: "⁶⁷Cu"
+    mass_number: 67
+    neutrons: 38
+    atomic_mass: 66.927730
+    half_life: 61.83
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Zinc-67
+    natural_abundance: 0.0

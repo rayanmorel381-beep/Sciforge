@@ -1,0 +1,62 @@
+element:
+  name: Rutherfordium
+  symbol: Rf
+  atomic_number: 104
+  category: transition_metal
+  group: 4
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d² 7s²"
+  electronegativity: null
+  atomic_mass: 267.122
+
+isotopes:
+  - name: Rutherfordium-261
+    symbol: "²⁶¹Rf"
+    mass_number: 261
+    neutrons: 157
+    atomic_mass: 261.10877
+    half_life: 68
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.76
+        daughter: Nobelium-257
+      - mode: spontaneous_fission
+        branching_ratio: 0.14
+        daughter: null
+      - mode: electron_capture
+        branching_ratio: 0.10
+        daughter: Lawrencium-261
+    natural_abundance: 0.0
+
+  - name: Rutherfordium-263
+    symbol: "²⁶³Rf"
+    mass_number: 263
+    neutrons: 159
+    atomic_mass: 263.11249
+    half_life: 11
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 0.70
+        daughter: null
+      - mode: alpha
+        branching_ratio: 0.30
+        daughter: Nobelium-259
+    natural_abundance: 0.0
+
+  - name: Rutherfordium-267
+    symbol: "²⁶⁷Rf"
+    mass_number: 267
+    neutrons: 163
+    atomic_mass: 267.122
+    half_life: 1.3
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 1.0
+        daughter: null
+    natural_abundance: 0.0

@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_151,f64,2259,1,2259000000,2259000000,2259000000,0,0.44267374,success=true code=Some(0) stdout_bytes=174 stderr_bytes=210,bi16,RBE,bi151,biology,radiobiology,ok,2259
+biology_152,f64,576,1,576000000,576000000,576000000,0,1.7361112,success=true code=Some(0) stdout_bytes=172 stderr_bytes=262,bi16,RLQ,bi152,biology,radiobiology,ok,576
+biology_153,f64,5240,1,5240000000,5240000000,5240000000,0,0.1908397,success=true code=Some(0) stdout_bytes=144 stderr_bytes=366,bi16,Tc,bi153,biology,radiobiology,ok,5240
+biology_154,f64,4872,1,4872000000,4872000000,4872000000,0,0.20525451,success=true code=Some(0) stdout_bytes=166 stderr_bytes=262,bi16,FP,bi154,biology,reproduction,ok,4872
+biology_155,f64,2163,1,2163000000,2163000000,2163000000,0,0.46232086,success=true code=Some(0) stdout_bytes=153 stderr_bytes=210,bi16,HD,bi155,biology,reproduction,ok,2163
+biology_156,f64,1967,1,1967000000,1967000000,1967000000,0,0.5083884,success=true code=Some(0) stdout_bytes=157 stderr_bytes=262,bi16,ISR,bi156,biology,reproduction,ok,1967
+biology_157,f64,5097,1,5097000000,5097000000,5097000000,0,0.19619384,success=true code=Some(0) stdout_bytes=161 stderr_bytes=262,bi16,SMS,bi157,biology,reproduction,ok,5097
+biology_158,f64,2124,1,2124000000,2124000000,2124000000,0,0.4708098,success=true code=Some(0) stdout_bytes=153 stderr_bytes=210,bi16,NO,bi158,biology,stem_cell,ok,2124
+biology_159,f64,1985,1,1985000000,1985000000,1985000000,0,0.50377834,success=true code=Some(0) stdout_bytes=162 stderr_bytes=210,bi16,RE,bi159,biology,stem_cell,ok,1985
+biology_160,f64,2296,1,2296000000,2296000000,2296000000,0,0.43554008,success=true code=Some(0) stdout_bytes=162 stderr_bytes=262,bi16,SRP,bi160,biology,stem_cell,ok,2296

@@ -1,0 +1,122 @@
+element:
+  name: Tellurium
+  symbol: Te
+  atomic_number: 52
+  category: metalloid
+  group: 16
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s² 5p⁴"
+  electronegativity: 2.10
+  atomic_mass: 127.60
+
+isotopes:
+  - name: Tellurium-120
+    symbol: "¹²⁰Te"
+    mass_number: 120
+    neutrons: 68
+    atomic_mass: 119.904020
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0009
+
+  - name: Tellurium-122
+    symbol: "¹²²Te"
+    mass_number: 122
+    neutrons: 70
+    atomic_mass: 121.903044
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0255
+
+  - name: Tellurium-123
+    symbol: "¹²³Te"
+    mass_number: 123
+    neutrons: 71
+    atomic_mass: 122.904270
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0089
+    nuclear_spin: "1/2+"
+
+  - name: Tellurium-124
+    symbol: "¹²⁴Te"
+    mass_number: 124
+    neutrons: 72
+    atomic_mass: 123.902818
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0474
+
+  - name: Tellurium-125
+    symbol: "¹²⁵Te"
+    mass_number: 125
+    neutrons: 73
+    atomic_mass: 124.904431
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0707
+    nuclear_spin: "1/2+"
+
+  - name: Tellurium-126
+    symbol: "¹²⁶Te"
+    mass_number: 126
+    neutrons: 74
+    atomic_mass: 125.903312
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1884
+
+  - name: Tellurium-128
+    symbol: "¹²⁸Te"
+    mass_number: 128
+    neutrons: 76
+    atomic_mass: 127.904463
+    half_life: 2.2e24
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta- (double electron emission)
+        branching_ratio: 1.0
+        daughter: Xenon-128
+    natural_abundance: 0.3174
+
+  - name: Tellurium-129m
+    symbol: "¹²⁹ᵐTe"
+    mass_number: 129
+    neutrons: 77
+    atomic_mass: 128.906598
+    half_life: 33.6
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: isomeric transition
+        branching_ratio: 0.63
+      - mode: beta- (electron emission)
+        branching_ratio: 0.37
+    natural_abundance: 0.0
+
+  - name: Tellurium-130
+    symbol: "¹³⁰Te"
+    mass_number: 130
+    neutrons: 78
+    atomic_mass: 129.906224
+    half_life: 7.9e20
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta- (double electron emission)
+        branching_ratio: 1.0
+        daughter: Xenon-130
+    natural_abundance: 0.3408

@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch06"
+symbol = "HLF"
+name = "ch055"
+target = "chemistry"
+module = "kinetics"
+status = "ok"
+elapsed_ms = "4760"
+experiment_name = "chemistry_055"
+precision = "f64"
+elapsed_ms = 4760
+iterations = 1
+avg_time_ns = 4760000000.00
+min_time_ns = 4760000000.00
+max_time_ns = 4760000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=158 stderr_bytes=266"

@@ -1,0 +1,107 @@
+[package]
+name = "sciforge"
+version = "0.0.3"
+edition = "2024"
+description = "A comprehensive scientific computing library in pure Rust with zero dependencies"
+keywords = ["science", "mathematics", "physics", "chemistry", "computing"]
+categories = ["science", "mathematics"]
+readme = "README.md"
+license-file = "LICENSE"
+documentation = "https://docs.rs/crate/sciforge/latest"
+homepage = "https://rayanmorel381-beep.github.io/Sciforge/"
+repository = "https://github.com/rayanmorel381-beep/Sciforge"
+include = ["src/**/*", "tests/**/*", "docs/**/*", "tableau-periodique/**/*", "examples/**/*", "Cargo.toml", "README.md", "LICENSE", "ChangeLog.md", "ComingSoon.md", "Contributing.md"]
+
+[package.metadata.docs]
+changelog = "ChangeLog.md"
+coming-soon = "ComingSoon.md"
+contributing = "Contributing.md"
+presentation = "Presentation.html"
+
+[[test]]
+name = "benchmark"
+path = "tests/benchmark/main.rs"
+
+[[test]]
+name = "parser"
+path = "tests/parser/main.rs"
+
+[[test]]
+name = "constants"
+path = "tests/constants/main.rs"
+
+[[test]]
+name = "maths"
+path = "tests/maths/main.rs"
+
+[[test]]
+name = "physics"
+path = "tests/physics/main.rs"
+
+[[test]]
+name = "chemistry"
+path = "tests/chemistry/main.rs"
+
+[[test]]
+name = "biology"
+path = "tests/biology/main.rs"
+
+[[test]]
+name = "geology"
+path = "tests/geology/main.rs"
+
+[[test]]
+name = "astronomy"
+path = "tests/astronomy/main.rs"
+
+[[test]]
+name = "meteorology"
+path = "tests/meteorology/main.rs"
+
+[[test]]
+name = "hub"
+path = "tests/hub/main.rs"
+
+[[test]]
+name = "scientific_validation"
+path = "tests/scientific_validation.rs"
+
+[[test]]
+name = "scientific_properties"
+path = "tests/scientific_properties.rs"
+
+[[test]]
+name = "stress"
+path = "tests/stress/main.rs"
+
+[[example]]
+name = "periodic_table"
+path = "examples/periodic_table.rs"
+
+[[example]]
+name = "solar_system"
+path = "examples/solar_system.rs"
+
+[[example]]
+name = "chemical_reactions"
+path = "examples/chemical_reactions.rs"
+
+[[example]]
+name = "star_catalog"
+path = "examples/star_catalog.rs"
+
+[[example]]
+name = "weather_station"
+path = "examples/weather_station.rs"
+
+[[example]]
+name = "radioactive_decay"
+path = "examples/radioactive_decay.rs"
+
+[[example]]
+name = "unit_converter"
+path = "examples/unit_converter.rs"
+
+[[example]]
+name = "geological_ages"
+path = "examples/geological_ages.rs"

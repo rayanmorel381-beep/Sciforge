@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+benchmark_001,f64,68,1,68000000,68000000,68000000,0,14.705882,success=true code=Some(0) stdout_bytes=150 stderr_bytes=214,bm01,BSN,bm001,benchmark,bench_stddev_nonnegative,ok,68
+benchmark_002,f64,88,1,88000000,88000000,88000000,0,11.363636,success=true code=Some(0) stdout_bytes=150 stderr_bytes=214,bm01,BTC,bm002,benchmark,bench_timing_consistency,ok,88
+benchmark_003,f64,4745,1,4745000000,4745000000,4745000000,0,0.21074815,success=true code=Some(0) stdout_bytes=150 stderr_bytes=318,bm01,DBM,bm003,benchmark,encode,ok,4745
+benchmark_004,f64,4303,1,4303000000,4303000000,4303000000,0,0.232396,success=true code=Some(0) stdout_bytes=146 stderr_bytes=266,bm01,DE,bm004,benchmark,encode,ok,4303
+benchmark_005,f64,4130,1,4130000000,4130000000,4130000000,0,0.24213076,success=true code=Some(0) stdout_bytes=157 stderr_bytes=214,bm01,EBT,bm005,benchmark,encode,ok,4130
+benchmark_006,f64,309,1,309000000,309000000,309000000,0,3.2362459,success=true code=Some(0) stdout_bytes=157 stderr_bytes=214,bm01,EDR,bm006,benchmark,encode,ok,309
+benchmark_007,f64,543,1,543000000,543000000,543000000,0,1.8416207,success=true code=Some(0) stdout_bytes=162 stderr_bytes=266,bm01,ESM,bm007,benchmark,encode,ok,543
+benchmark_008,f64,234,1,234000000,234000000,234000000,0,4.2735043,success=true code=Some(0) stdout_bytes=160 stderr_bytes=214,bm01,RPF,bm008,benchmark,encode,ok,234
+benchmark_009,f64,606,1,606000000,606000000,606000000,0,1.650165,success=true code=Some(0) stdout_bytes=148 stderr_bytes=214,bm01,EDM,bm009,benchmark,encode_decode_multiple,ok,606
+benchmark_010,f64,291,1,291000000,291000000,291000000,0,3.4364262,success=true code=Some(0) stdout_bytes=152 stderr_bytes=214,bm01,BRC,bm010,benchmark,engine,ok,291

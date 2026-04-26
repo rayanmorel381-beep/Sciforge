@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+Be_Beryllium_benchmark,f64,0,1000,318.35,318.35,318.35,0,0,Z=4 | Be (Beryllium) | 9.0121831 u | alkaline earth metal | 1s² 2s²,alkaline earth metal,Be,Beryllium,1s² 2s²,9.0121831
+Mg_Magnesium_benchmark,f64,9,10000,926.4376,926.4376,926.4376,0,1111111.1,Z=12 | Mg (Magnesium) | 24.305 u | alkaline earth metal | [Ne] 3s²,alkaline earth metal,Mg,Magnesium,[Ne] 3s²,24.305
+Ca_Calcium_benchmark,f64,8,5000,1662.0872,1662.0872,1662.0872,0,625000,Z=20 | Ca (Calcium) | 40.078 u | alkaline earth metal | [Ar] 4s²,alkaline earth metal,Ca,Calcium,[Ar] 4s²,40.078
+Sr_Strontium_benchmark,f64,14,5000,2917.5327,2917.5327,2917.5327,0,357142.84,Z=38 | Sr (Strontium) | 87.62 u | alkaline earth metal | [Kr] 5s²,alkaline earth metal,Sr,Strontium,[Kr] 5s²,87.62
+Ba_Barium_benchmark,f64,21,5000,4288.228,4288.228,4288.228,0,238095.23,Z=56 | Ba (Barium) | 137.327 u | alkaline earth metal | [Xe] 6s²,alkaline earth metal,Ba,Barium,[Xe] 6s²,137.327
+Ra_Radium_benchmark,f64,6,1000,6927.157,6927.157,6927.157,0,166666.67,Z=88 | Ra (Radium) | 226 u | alkaline earth metal | [Rn] 7s²,alkaline earth metal,Ra,Radium,[Rn] 7s²,226

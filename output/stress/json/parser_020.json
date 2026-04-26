@@ -1,0 +1,19 @@
+{
+  "category": "pr02",
+  "symbol": "HSR",
+  "name": "pr020",
+  "target": "parser",
+  "module": "html",
+  "status": "ok",
+  "elapsed_ms": "4699",
+  "experiment_name": "parser_020",
+  "precision": "f64",
+  "elapsed_ms": 4699,
+  "iterations": 1,
+  "avg_time_ns": 4698999808.00,
+  "min_time_ns": 4698999808.00,
+  "max_time_ns": 4698999808.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=147 stderr_bytes=260"
+}

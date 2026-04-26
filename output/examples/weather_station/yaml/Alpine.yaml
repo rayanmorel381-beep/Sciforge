@@ -1,0 +1,45 @@
+category: Alpine
+count: 3
+entries:
+  - label: Denver Intl
+    symbol: D
+    name: Denver Intl
+    altitude: 1655 m
+    temperature: 10.1 °C
+    pressure: 835.0 hPa
+    relative_humidity: 45%
+    saturation_vp: 12.35 hPa
+    dew_point: -1.3 °C
+    density_altitude: 1464 m
+    potential_temp: 299.4 K
+    mixing_ratio: 4.17 g/kg
+    lcl: 1166 m AGL
+    avg_time_ns: 5595.95
+  - label: Mexico City
+    symbol: M
+    name: Mexico City
+    altitude: 2250 m
+    temperature: 16.0 °C
+    pressure: 773.0 hPa
+    relative_humidity: 52%
+    saturation_vp: 18.17 hPa
+    dew_point: 6.2 °C
+    density_altitude: 2910 m
+    potential_temp: 312.4 K
+    mixing_ratio: 7.70 g/kg
+    lcl: 1008 m AGL
+    avg_time_ns: 5636.10
+  - label: Lhasa
+    symbol: L
+    name: Lhasa
+    altitude: 3650 m
+    temperature: 8.5 °C
+    pressure: 652.0 hPa
+    relative_humidity: 35%
+    saturation_vp: 11.09 hPa
+    dew_point: -6.1 °C
+    density_altitude: 3746 m
+    potential_temp: 319.5 K
+    mixing_ratio: 3.73 g/kg
+    lcl: 1494 m AGL
+    avg_time_ns: 5548.93

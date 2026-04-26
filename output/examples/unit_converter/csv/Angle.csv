@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion
+Right angle_convert,f64,52,10000,5282.3174,5282.3174,5282.3174,0,192307.69,Right angle | 90 deg → 1.570796e0 rad,Angle,deg,Right angle,90 deg,1.570796e0 rad,90 deg → 1.570796e0 rad

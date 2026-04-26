@@ -1,0 +1,17 @@
+category: bi03
+symbol: FS
+name: bi030
+target: biology
+module: biostatistics
+status: ok
+elapsed_ms: 555
+experiment_name: biology_030
+precision: f64
+elapsed_ms: 555
+iterations: 1
+avg_time_ns: 555000000.00
+min_time_ns: 555000000.00
+max_time_ns: 555000000.00
+time_stddev: 0.0000
+iterations_per_sec: 1.80
+result: success=true code=Some(0) stdout_bytes=150 stderr_bytes=210

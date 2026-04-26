@@ -1,0 +1,27 @@
+pub const WINDCHILL_CONSTANT: f64 = 13.12;
+pub const WINDCHILL_TEMP_COEFF: f64 = 0.6215;
+pub const WINDCHILL_WIND_COEFF: f64 = 11.37;
+pub const WINDCHILL_WIND_EXP: f64 = 0.16;
+pub const WINDCHILL_INTERACTION: f64 = 0.3965;
+
+pub const HEAT_INDEX_CONSTANT: f64 = -42.379;
+pub const HEAT_INDEX_TEMP_COEFF: f64 = 2.049_015_23;
+pub const HEAT_INDEX_HUMIDITY_COEFF: f64 = 10.143_331_27;
+pub const HEAT_INDEX_INTERACTION: f64 = -0.224_755_41;
+pub const HEAT_INDEX_TEMP2: f64 = -6.837_83e-3;
+pub const HEAT_INDEX_HUMIDITY2: f64 = -5.481_717e-2;
+pub const HEAT_INDEX_T2H: f64 = 1.228_74e-3;
+pub const HEAT_INDEX_TH2: f64 = 8.528_2e-4;
+pub const HEAT_INDEX_T2H2: f64 = -1.99e-6;
+
+pub const BSA_DUBOIS_COEFF: f64 = 0.007_184;
+pub const BSA_WEIGHT_EXP: f64 = 0.425;
+pub const BSA_HEIGHT_EXP: f64 = 0.725;
+
+pub const HB_O2_CAPACITY: f64 = 1.34;
+pub const DISSOLVED_O2_COEFF: f64 = 0.003;
+pub const O2_DELIVERY_SCALING: f64 = 10.0;
+
+pub const MMHG_TO_PA: f64 = 133.322;
+
+pub const WINDKESSEL_SYSTOLIC_FRACTION: f64 = 0.35;

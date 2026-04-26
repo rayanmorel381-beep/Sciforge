@@ -1,0 +1,16 @@
+category: Temperature
+symbol: K
+name: Liquid nitrogen
+from: 77.36 K
+to: -1.957900e2 °C
+conversion: 77.36 K → -1.957900e2 °C
+experiment_name: Liquid nitrogen_convert
+precision: f64
+elapsed_ms: 34
+iterations: 10000
+avg_time_ns: 3463.80
+min_time_ns: 3463.80
+max_time_ns: 3463.80
+time_stddev: 0.0000
+iterations_per_sec: 294117.66
+result: Liquid nitrogen | 77.36 K → -1.957900e2 °C

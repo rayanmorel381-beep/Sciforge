@@ -1,0 +1,1833 @@
+title = "SciForge Biology Benchmarks"
+count = 183
+
+[[entries]]
+label = "aging_caloric_restriction_lifespan"
+category = "aging"
+symbol = "CRL"
+name = "Caloric restriction lifespan"
+domain = "biology"
+test = "aging::caloric_restriction_lifespan"
+avg_time_ns = 2388739.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "aging_gompertz_mortality_rate"
+category = "aging"
+symbol = "GMR"
+name = "Gompertz mortality rate"
+domain = "biology"
+test = "aging::gompertz_mortality_rate"
+avg_time_ns = 2356569.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "aging_mitochondrial_damage"
+category = "aging"
+symbol = "MD"
+name = "Mitochondrial damage"
+domain = "biology"
+test = "aging::mitochondrial_damage"
+avg_time_ns = 2735439.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "aging_ros_steady_state"
+category = "aging"
+symbol = "RSS"
+name = "Ros steady state"
+domain = "biology"
+test = "aging::ros_steady_state"
+avg_time_ns = 6062787.00
+iterations_per_sec = 166.67
+
+[[entries]]
+label = "aging_telomere_shortening"
+category = "aging"
+symbol = "TS"
+name = "Telomere shortening"
+domain = "biology"
+test = "aging::telomere_shortening"
+avg_time_ns = 4275508.00
+iterations_per_sec = 250.00
+
+[[entries]]
+label = "bioelectricity_cable_equation_steady"
+category = "bioelectricity"
+symbol = "CES"
+name = "Cable equation steady"
+domain = "biology"
+test = "bioelectricity::cable_equation_steady"
+avg_time_ns = 4533278.00
+iterations_per_sec = 250.00
+
+[[entries]]
+label = "bioelectricity_electrotonic_length"
+category = "bioelectricity"
+symbol = "EL"
+name = "Electrotonic length"
+domain = "biology"
+test = "bioelectricity::electrotonic_length"
+avg_time_ns = 10498526.00
+iterations_per_sec = 100.00
+
+[[entries]]
+label = "bioelectricity_impedance_tissue"
+category = "bioelectricity"
+symbol = "IT"
+name = "Impedance tissue"
+domain = "biology"
+test = "bioelectricity::impedance_tissue"
+avg_time_ns = 6269367.00
+iterations_per_sec = 166.67
+
+[[entries]]
+label = "bioelectricity_strength_duration_weiss"
+category = "bioelectricity"
+symbol = "SDW"
+name = "Strength duration weiss"
+domain = "biology"
+test = "bioelectricity::strength_duration_weiss"
+avg_time_ns = 2738959.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "bioenergetics_adenylate_energy_charge"
+category = "bioenergetics"
+symbol = "AEC"
+name = "Adenylate energy charge"
+domain = "biology"
+test = "bioenergetics::adenylate_energy_charge"
+avg_time_ns = 2351309.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "bioenergetics_glycolysis_net_atp"
+category = "bioenergetics"
+symbol = "GNA"
+name = "Glycolysis net atp"
+domain = "biology"
+test = "bioenergetics::glycolysis_net_atp"
+avg_time_ns = 2380898.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "bioenergetics_p_o_ratio"
+category = "bioenergetics"
+symbol = "POR"
+name = "P o ratio"
+domain = "biology"
+test = "bioenergetics::p_o_ratio"
+avg_time_ns = 2384720.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "bioenergetics_respiratory_control_index"
+category = "bioenergetics"
+symbol = "RCI"
+name = "Respiratory control index"
+domain = "biology"
+test = "bioenergetics::respiratory_control_index"
+avg_time_ns = 5900607.00
+iterations_per_sec = 200.00
+
+[[entries]]
+label = "biogeography_latitudinal_diversity_gradient"
+category = "biogeography"
+symbol = "LDG"
+name = "Latitudinal diversity gradient"
+domain = "biology"
+test = "biogeography::latitudinal_diversity_gradient"
+avg_time_ns = 3486678.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "biogeography_range_shift_velocity"
+category = "biogeography"
+symbol = "RSV"
+name = "Range shift velocity"
+domain = "biology"
+test = "biogeography::range_shift_velocity"
+avg_time_ns = 2481589.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "biogeography_range_size_latitude"
+category = "biogeography"
+symbol = "RSL"
+name = "Range size latitude"
+domain = "biology"
+test = "biogeography::range_size_latitude"
+avg_time_ns = 2274999.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "biogeography_wallace_line_effect"
+category = "biogeography"
+symbol = "WLE"
+name = "Wallace line effect"
+domain = "biology"
+test = "biogeography::wallace_line_effect"
+avg_time_ns = 4666338.00
+iterations_per_sec = 250.00
+
+[[entries]]
+label = "bioinformatics_alignment_gc_content"
+category = "bioinformatics"
+symbol = "AGC"
+name = "Alignment gc content"
+domain = "biology"
+test = "bioinformatics::alignment_gc_content"
+avg_time_ns = 2438749.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "bioinformatics_edit_distance_identical"
+category = "bioinformatics"
+symbol = "EDI"
+name = "Edit distance identical"
+domain = "biology"
+test = "bioinformatics::edit_distance_identical"
+avg_time_ns = 2452219.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "bioinformatics_sequence_identity"
+category = "bioinformatics"
+symbol = "SI"
+name = "Sequence identity"
+domain = "biology"
+test = "bioinformatics::sequence_identity"
+avg_time_ns = 2011779.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "bioinformatics_smith_waterman_score"
+category = "bioinformatics"
+symbol = "SWS"
+name = "Smith waterman score"
+domain = "biology"
+test = "bioinformatics::smith_waterman_score"
+avg_time_ns = 1977209.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "biomechanics_biomech_cardiac_output"
+category = "biomechanics"
+symbol = "BCO"
+name = "Biomech cardiac output"
+domain = "biology"
+test = "biomechanics::biomech_cardiac_output"
+avg_time_ns = 1778790.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "biomechanics_gait_stride_length"
+category = "biomechanics"
+symbol = "GSL"
+name = "Gait stride length"
+domain = "biology"
+test = "biomechanics::gait_stride_length"
+avg_time_ns = 1790669.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "biomechanics_ground_reaction_force"
+category = "biomechanics"
+symbol = "GRF"
+name = "Ground reaction force"
+domain = "biology"
+test = "biomechanics::ground_reaction_force"
+avg_time_ns = 1807159.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "biomechanics_joint_moment"
+category = "biomechanics"
+symbol = "JM"
+name = "Joint moment"
+domain = "biology"
+test = "biomechanics::joint_moment"
+avg_time_ns = 2017939.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "biophysics_fret_efficiency"
+category = "biophysics"
+symbol = "FE"
+name = "Fret efficiency"
+domain = "biology"
+test = "biophysics::fret_efficiency"
+avg_time_ns = 2613499.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "biophysics_harmonic_bond"
+category = "biophysics"
+symbol = "HB"
+name = "Harmonic bond"
+domain = "biology"
+test = "biophysics::harmonic_bond"
+avg_time_ns = 3845128.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "biophysics_lennard_jones"
+category = "biophysics"
+symbol = "LJ"
+name = "Lennard jones"
+domain = "biology"
+test = "biophysics::lennard_jones"
+avg_time_ns = 3076909.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "biophysics_membrane_tension"
+category = "biophysics"
+symbol = "MT"
+name = "Membrane tension"
+domain = "biology"
+test = "biophysics::membrane_tension"
+avg_time_ns = 2739149.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "biostatistics_f1_score"
+category = "biostatistics"
+symbol = "FS"
+name = "F1 score"
+domain = "biology"
+test = "biostatistics::f1_score"
+avg_time_ns = 2407649.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "biostatistics_number_needed_to_treat"
+category = "biostatistics"
+symbol = "NNT"
+name = "Number needed to treat"
+domain = "biology"
+test = "biostatistics::number_needed_to_treat"
+avg_time_ns = 1936359.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "biostatistics_odds_ratio"
+category = "biostatistics"
+symbol = "OR"
+name = "Odds ratio"
+domain = "biology"
+test = "biostatistics::odds_ratio"
+avg_time_ns = 1923639.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "biostatistics_sensitivity"
+category = "biostatistics"
+symbol = "Se"
+name = "Sensitivity"
+domain = "biology"
+test = "biostatistics::sensitivity"
+avg_time_ns = 2504969.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "biostatistics_specificity"
+category = "biostatistics"
+symbol = "Sp"
+name = "Specificity"
+domain = "biology"
+test = "biostatistics::specificity"
+avg_time_ns = 2157639.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cancer_biology_cancer_linear_quadratic_survival"
+category = "cancer_biology"
+symbol = "CLQ"
+name = "Cancer linear quadratic survival"
+domain = "biology"
+test = "cancer_biology::cancer_linear_quadratic_survival"
+avg_time_ns = 1898459.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cancer_biology_cell_kill_log"
+category = "cancer_biology"
+symbol = "CKL"
+name = "Cell kill log"
+domain = "biology"
+test = "cancer_biology::cell_kill_log"
+avg_time_ns = 1829739.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cancer_biology_tumor_doubling_time"
+category = "cancer_biology"
+symbol = "TDT"
+name = "Tumor doubling time"
+domain = "biology"
+test = "cancer_biology::tumor_doubling_time"
+avg_time_ns = 1934869.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cancer_biology_tumor_growth_exponential"
+category = "cancer_biology"
+symbol = "TGE"
+name = "Tumor growth exponential"
+domain = "biology"
+test = "cancer_biology::tumor_growth_exponential"
+avg_time_ns = 1873090.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cell_cell_doubling_time"
+category = "cell"
+symbol = "CDT"
+name = "Cell doubling time"
+domain = "biology"
+test = "cell::cell_doubling_time"
+avg_time_ns = 1920959.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cell_fick_first_law"
+category = "cell"
+symbol = "FFL"
+name = "Fick first law"
+domain = "biology"
+test = "cell::fick_first_law"
+avg_time_ns = 1816119.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cell_ligand_receptor_binding"
+category = "cell"
+symbol = "LRB"
+name = "Ligand receptor binding"
+domain = "biology"
+test = "cell::ligand_receptor_binding"
+avg_time_ns = 1868889.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cell_osmotic_pressure"
+category = "cell"
+symbol = "OP"
+name = "Osmotic pressure"
+domain = "biology"
+test = "cell::osmotic_pressure"
+avg_time_ns = 2372089.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "chronobiology_circadian_amplitude_damping"
+category = "chronobiology"
+symbol = "CAD"
+name = "Circadian amplitude damping"
+domain = "biology"
+test = "chronobiology::circadian_amplitude_damping"
+avg_time_ns = 2000019.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "chronobiology_jet_lag_recovery"
+category = "chronobiology"
+symbol = "JLR"
+name = "Jet lag recovery"
+domain = "biology"
+test = "chronobiology::jet_lag_recovery"
+avg_time_ns = 1860429.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "chronobiology_photoperiod"
+category = "chronobiology"
+symbol = "Ph"
+name = "Photoperiod"
+domain = "biology"
+test = "chronobiology::photoperiod"
+avg_time_ns = 2133809.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "chronobiology_zeitgeber_strength"
+category = "chronobiology"
+symbol = "ZS"
+name = "Zeitgeber strength"
+domain = "biology"
+test = "chronobiology::zeitgeber_strength"
+avg_time_ns = 1878409.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cryobiology_critical_cooling_rate"
+category = "cryobiology"
+symbol = "CCR"
+name = "Critical cooling rate"
+domain = "biology"
+test = "cryobiology::critical_cooling_rate"
+avg_time_ns = 2121980.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cryobiology_freezing_point_depression"
+category = "cryobiology"
+symbol = "FPD"
+name = "Freezing point depression"
+domain = "biology"
+test = "cryobiology::freezing_point_depression"
+avg_time_ns = 1963989.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cryobiology_storage_decay_arrhenius"
+category = "cryobiology"
+symbol = "SDA"
+name = "Storage decay arrhenius"
+domain = "biology"
+test = "cryobiology::storage_decay_arrhenius"
+avg_time_ns = 2451709.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cryobiology_vitrification_probability"
+category = "cryobiology"
+symbol = "VP"
+name = "Vitrification probability"
+domain = "biology"
+test = "cryobiology::vitrification_probability"
+avg_time_ns = 2126599.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "developmental_french_flag_model"
+category = "developmental"
+symbol = "FFM"
+name = "French flag model"
+domain = "biology"
+test = "developmental::french_flag_model"
+avg_time_ns = 1895879.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "developmental_lateral_inhibition"
+category = "developmental"
+symbol = "LI"
+name = "Lateral inhibition"
+domain = "biology"
+test = "developmental::lateral_inhibition"
+avg_time_ns = 1866539.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "developmental_morphogen_gradient_steady"
+category = "developmental"
+symbol = "MGS"
+name = "Morphogen gradient steady"
+domain = "biology"
+test = "developmental::morphogen_gradient_steady"
+avg_time_ns = 1886909.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_codon_frequency"
+category = "dispatch"
+symbol = "CF"
+name = "Codon frequency"
+domain = "biology"
+test = "dispatch::codon_frequency"
+avg_time_ns = 1860779.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_dispatch_missing_parameter_returns_error"
+category = "dispatch"
+symbol = "DMP"
+name = "Dispatch missing parameter returns error"
+domain = "biology"
+test = "dispatch::dispatch_missing_parameter_returns_error"
+avg_time_ns = 1907299.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_dispatch_unknown_function_returns_error"
+category = "dispatch"
+symbol = "DUF"
+name = "Dispatch unknown function returns error"
+domain = "biology"
+test = "dispatch::dispatch_unknown_function_returns_error"
+avg_time_ns = 1868900.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_gompertz_mortality_rate"
+category = "dispatch"
+symbol = "GMR"
+name = "Gompertz mortality rate"
+domain = "biology"
+test = "dispatch::gompertz_mortality_rate"
+avg_time_ns = 1763889.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_metabolic_rate_kleiber"
+category = "dispatch"
+symbol = "MRK"
+name = "Metabolic rate kleiber"
+domain = "biology"
+test = "dispatch::metabolic_rate_kleiber"
+avg_time_ns = 1806629.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_soil_respiration"
+category = "dispatch"
+symbol = "SR"
+name = "Soil respiration"
+domain = "biology"
+test = "dispatch::soil_respiration"
+avg_time_ns = 1778969.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_telomere_shortening"
+category = "dispatch"
+symbol = "TS"
+name = "Telomere shortening"
+domain = "biology"
+test = "dispatch::telomere_shortening"
+avg_time_ns = 1682540.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ecology_inverse_simpson"
+category = "ecology"
+symbol = "IS"
+name = "Inverse simpson"
+domain = "biology"
+test = "ecology::inverse_simpson"
+avg_time_ns = 1800289.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ecology_shannon_diversity"
+category = "ecology"
+symbol = "SD"
+name = "Shannon diversity"
+domain = "biology"
+test = "ecology::shannon_diversity"
+avg_time_ns = 1807199.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ecology_simpson_diversity"
+category = "ecology"
+symbol = "SD"
+name = "Simpson diversity"
+domain = "biology"
+test = "ecology::simpson_diversity"
+avg_time_ns = 1871009.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ecology_species_richness"
+category = "ecology"
+symbol = "SR"
+name = "Species richness"
+domain = "biology"
+test = "ecology::species_richness"
+avg_time_ns = 1806889.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "endocrinology_homa_ir"
+category = "endocrinology"
+symbol = "HI"
+name = "Homa ir"
+domain = "biology"
+test = "endocrinology::homa_ir"
+avg_time_ns = 1825890.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "endocrinology_hormone_half_life_clearance"
+category = "endocrinology"
+symbol = "HHL"
+name = "Hormone half life clearance"
+domain = "biology"
+test = "endocrinology::hormone_half_life_clearance"
+avg_time_ns = 1803669.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "endocrinology_insulin_sensitivity_index"
+category = "endocrinology"
+symbol = "ISI"
+name = "Insulin sensitivity index"
+domain = "biology"
+test = "endocrinology::insulin_sensitivity_index"
+avg_time_ns = 1869779.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "endocrinology_receptor_saturation"
+category = "endocrinology"
+symbol = "RS"
+name = "Receptor saturation"
+domain = "biology"
+test = "endocrinology::receptor_saturation"
+avg_time_ns = 1801319.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "enzyme_competitive_inhibition_increases_apparent_km"
+category = "enzyme"
+symbol = "CII"
+name = "Competitive inhibition increases apparent km"
+domain = "biology"
+test = "enzyme::competitive_inhibition_increases_apparent_km"
+avg_time_ns = 1819649.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "enzyme_hill_equation"
+category = "enzyme"
+symbol = "HE"
+name = "Hill equation"
+domain = "biology"
+test = "enzyme::hill_equation"
+avg_time_ns = 1988950.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "enzyme_hill_higher_cooperativity_reduces_rate_below_k"
+category = "enzyme"
+symbol = "HHC"
+name = "Hill higher cooperativity reduces rate below k"
+domain = "biology"
+test = "enzyme::hill_higher_cooperativity_reduces_rate_below_k"
+avg_time_ns = 1838419.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "enzyme_lineweaver_burk"
+category = "enzyme"
+symbol = "LB"
+name = "Lineweaver burk"
+domain = "biology"
+test = "enzyme::lineweaver_burk"
+avg_time_ns = 1836799.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "enzyme_michaelis_menten_half_vmax"
+category = "enzyme"
+symbol = "MMH"
+name = "Michaelis menten half vmax"
+domain = "biology"
+test = "enzyme::michaelis_menten_half_vmax"
+avg_time_ns = 1787419.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "enzyme_michaelis_menten_monotonic_with_substrate"
+category = "enzyme"
+symbol = "MMM"
+name = "Michaelis menten monotonic with substrate"
+domain = "biology"
+test = "enzyme::michaelis_menten_monotonic_with_substrate"
+avg_time_ns = 1969159.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "enzyme_michaelis_menten_saturation"
+category = "enzyme"
+symbol = "MMS"
+name = "Michaelis menten saturation"
+domain = "biology"
+test = "enzyme::michaelis_menten_saturation"
+avg_time_ns = 1820739.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "epigenetics_cpg_methylation_level"
+category = "epigenetics"
+symbol = "CML"
+name = "Cpg methylation level"
+domain = "biology"
+test = "epigenetics::cpg_methylation_level"
+avg_time_ns = 1843710.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "epigenetics_epigenetic_inheritance_probability"
+category = "epigenetics"
+symbol = "EIP"
+name = "Epigenetic inheritance probability"
+domain = "biology"
+test = "epigenetics::epigenetic_inheritance_probability"
+avg_time_ns = 1963089.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "epigenetics_nucleosome_occupancy"
+category = "epigenetics"
+symbol = "NO"
+name = "Nucleosome occupancy"
+domain = "biology"
+test = "epigenetics::nucleosome_occupancy"
+avg_time_ns = 1942579.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "epigenetics_rnai_knockdown_efficiency"
+category = "epigenetics"
+symbol = "RKE"
+name = "Rnai knockdown efficiency"
+domain = "biology"
+test = "epigenetics::rnai_knockdown_efficiency"
+avg_time_ns = 1803699.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ethology_hamilton_relatedness_benefit"
+category = "ethology"
+symbol = "HRB"
+name = "Hamilton relatedness benefit"
+domain = "biology"
+test = "ethology::hamilton_relatedness_benefit"
+avg_time_ns = 1914779.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ethology_hawk_dove_payoff"
+category = "ethology"
+symbol = "HDP"
+name = "Hawk dove payoff"
+domain = "biology"
+test = "ethology::hawk_dove_payoff"
+avg_time_ns = 1912059.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ethology_ideal_free_distribution"
+category = "ethology"
+symbol = "IFD"
+name = "Ideal free distribution"
+domain = "biology"
+test = "ethology::ideal_free_distribution"
+avg_time_ns = 1985480.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "ethology_territory_size"
+category = "ethology"
+symbol = "TS"
+name = "Territory size"
+domain = "biology"
+test = "ethology::territory_size"
+avg_time_ns = 3792648.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "evolution_adaptation_rate"
+category = "evolution"
+symbol = "AR"
+name = "Adaptation rate"
+domain = "biology"
+test = "evolution::adaptation_rate"
+avg_time_ns = 2163739.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "evolution_fixation_probability_neutral"
+category = "evolution"
+symbol = "FPN"
+name = "Fixation probability neutral"
+domain = "biology"
+test = "evolution::fixation_probability_neutral"
+avg_time_ns = 2308969.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "evolution_speciation_rate_bdi"
+category = "evolution"
+symbol = "SRB"
+name = "Speciation rate bdi"
+domain = "biology"
+test = "evolution::speciation_rate_bdi"
+avg_time_ns = 2089979.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "evolution_substitution_rate"
+category = "evolution"
+symbol = "SR"
+name = "Substitution rate"
+domain = "biology"
+test = "evolution::substitution_rate"
+avg_time_ns = 1925159.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "genetics_broad_sense_heritability"
+category = "genetics"
+symbol = "BSH"
+name = "Broad sense heritability"
+domain = "biology"
+test = "genetics::broad_sense_heritability"
+avg_time_ns = 2833199.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "genetics_effective_population_size"
+category = "genetics"
+symbol = "EPS"
+name = "Effective population size"
+domain = "biology"
+test = "genetics::effective_population_size"
+avg_time_ns = 2696249.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "genetics_hardy_weinberg"
+category = "genetics"
+symbol = "HW"
+name = "Hardy weinberg"
+domain = "biology"
+test = "genetics::hardy_weinberg"
+avg_time_ns = 2315369.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "genetics_mutation_selection_balance"
+category = "genetics"
+symbol = "MSB"
+name = "Mutation selection balance"
+domain = "biology"
+test = "genetics::mutation_selection_balance"
+avg_time_ns = 2644719.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "genomics_codon_adaptation_index"
+category = "genomics"
+symbol = "CAI"
+name = "Codon adaptation index"
+domain = "biology"
+test = "genomics::codon_adaptation_index"
+avg_time_ns = 2450358.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "genomics_gc_content"
+category = "genomics"
+symbol = "GC"
+name = "Gc content"
+domain = "biology"
+test = "genomics::gc_content"
+avg_time_ns = 1887440.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "genomics_gene_density"
+category = "genomics"
+symbol = "GD"
+name = "Gene density"
+domain = "biology"
+test = "genomics::gene_density"
+avg_time_ns = 2362429.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "genomics_snp_allele_frequency"
+category = "genomics"
+symbol = "SAF"
+name = "Snp allele frequency"
+domain = "biology"
+test = "genomics::snp_allele_frequency"
+avg_time_ns = 2466358.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "immunology_antibody_titer"
+category = "immunology"
+symbol = "AT"
+name = "Antibody titer"
+domain = "biology"
+test = "immunology::antibody_titer"
+avg_time_ns = 2071250.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "immunology_clonal_expansion"
+category = "immunology"
+symbol = "CE"
+name = "Clonal expansion"
+domain = "biology"
+test = "immunology::clonal_expansion"
+avg_time_ns = 1935659.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "immunology_herd_immunity_fraction"
+category = "immunology"
+symbol = "HIF"
+name = "Herd immunity fraction"
+domain = "biology"
+test = "immunology::herd_immunity_fraction"
+avg_time_ns = 2346389.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "immunology_vaccine_efficacy"
+category = "immunology"
+symbol = "VE"
+name = "Vaccine efficacy"
+domain = "biology"
+test = "immunology::vaccine_efficacy"
+avg_time_ns = 2118319.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "marine_biology_bleaching_thermal_threshold"
+category = "marine_biology"
+symbol = "BTT"
+name = "Bleaching thermal threshold"
+domain = "biology"
+test = "marine_biology::bleaching_thermal_threshold"
+avg_time_ns = 2267799.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "marine_biology_fish_growth_von_bertalanffy"
+category = "marine_biology"
+symbol = "FGV"
+name = "Fish growth von bertalanffy"
+domain = "biology"
+test = "marine_biology::fish_growth_von_bertalanffy"
+avg_time_ns = 2000309.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "marine_biology_maximum_sustainable_yield"
+category = "marine_biology"
+symbol = "MSY"
+name = "Maximum sustainable yield"
+domain = "biology"
+test = "marine_biology::maximum_sustainable_yield"
+avg_time_ns = 2086209.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "marine_biology_ocean_acidification_ph"
+category = "marine_biology"
+symbol = "OAP"
+name = "Ocean acidification ph"
+domain = "biology"
+test = "marine_biology::ocean_acidification_ph"
+avg_time_ns = 2526989.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "microbiology_biofilm_formation"
+category = "microbiology"
+symbol = "BF"
+name = "Biofilm formation"
+domain = "biology"
+test = "microbiology::biofilm_formation"
+avg_time_ns = 3084289.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "microbiology_chemostat_steady_state_biomass"
+category = "microbiology"
+symbol = "CSS"
+name = "Chemostat steady state biomass"
+domain = "biology"
+test = "microbiology::chemostat_steady_state_biomass"
+avg_time_ns = 2725198.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "microbiology_generation_time_bacteria"
+category = "microbiology"
+symbol = "GTB"
+name = "Generation time bacteria"
+domain = "biology"
+test = "microbiology::generation_time_bacteria"
+avg_time_ns = 2246459.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "microbiology_monod_growth"
+category = "microbiology"
+symbol = "MG"
+name = "Monod growth"
+domain = "biology"
+test = "microbiology::monod_growth"
+avg_time_ns = 1968609.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "mycology_carbon_use_efficiency"
+category = "mycology"
+symbol = "CUE"
+name = "Carbon use efficiency"
+domain = "biology"
+test = "mycology::carbon_use_efficiency"
+avg_time_ns = 2549219.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "mycology_decomposition_rate"
+category = "mycology"
+symbol = "DR"
+name = "Decomposition rate"
+domain = "biology"
+test = "mycology::decomposition_rate"
+avg_time_ns = 2068769.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "mycology_hyphal_growth_rate"
+category = "mycology"
+symbol = "HGR"
+name = "Hyphal growth rate"
+domain = "biology"
+test = "mycology::hyphal_growth_rate"
+avg_time_ns = 1888570.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "mycology_spore_germination_probability"
+category = "mycology"
+symbol = "SGP"
+name = "Spore germination probability"
+domain = "biology"
+test = "mycology::spore_germination_probability"
+avg_time_ns = 1850959.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "neuroscience_fano_factor"
+category = "neuroscience"
+symbol = "FF"
+name = "Fano factor"
+domain = "biology"
+test = "neuroscience::fano_factor"
+avg_time_ns = 1910339.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "neuroscience_firing_rate"
+category = "neuroscience"
+symbol = "FR"
+name = "Firing rate"
+domain = "biology"
+test = "neuroscience::firing_rate"
+avg_time_ns = 1881669.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "neuroscience_rescorla_wagner_update"
+category = "neuroscience"
+symbol = "RWU"
+name = "Rescorla wagner update"
+domain = "biology"
+test = "neuroscience::rescorla_wagner_update"
+avg_time_ns = 1852379.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "neuroscience_stdp_weight_change"
+category = "neuroscience"
+symbol = "SWC"
+name = "Stdp weight change"
+domain = "biology"
+test = "neuroscience::stdp_weight_change"
+avg_time_ns = 1871889.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "nutrition_basal_metabolic_rate_mifflin"
+category = "nutrition"
+symbol = "BMR"
+name = "Basal metabolic rate mifflin"
+domain = "biology"
+test = "nutrition::basal_metabolic_rate_mifflin"
+avg_time_ns = 1904810.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "nutrition_body_mass_index"
+category = "nutrition"
+symbol = "BMI"
+name = "Body mass index"
+domain = "biology"
+test = "nutrition::body_mass_index"
+avg_time_ns = 1865179.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "nutrition_nitrogen_balance"
+category = "nutrition"
+symbol = "NB"
+name = "Nitrogen balance"
+domain = "biology"
+test = "nutrition::nitrogen_balance"
+avg_time_ns = 2030039.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "nutrition_respiratory_exchange_ratio"
+category = "nutrition"
+symbol = "RER"
+name = "Respiratory exchange ratio"
+domain = "biology"
+test = "nutrition::respiratory_exchange_ratio"
+avg_time_ns = 1894079.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "paleobiology_evolutionary_rate_darwin"
+category = "paleobiology"
+symbol = "ERD"
+name = "Evolutionary rate darwin"
+domain = "biology"
+test = "paleobiology::evolutionary_rate_darwin"
+avg_time_ns = 1842559.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "paleobiology_extinction_rate"
+category = "paleobiology"
+symbol = "ER"
+name = "Extinction rate"
+domain = "biology"
+test = "paleobiology::extinction_rate"
+avg_time_ns = 1863559.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "paleobiology_net_diversification_rate"
+category = "paleobiology"
+symbol = "NDR"
+name = "Net diversification rate"
+domain = "biology"
+test = "paleobiology::net_diversification_rate"
+avg_time_ns = 1971260.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "paleobiology_radiometric_age"
+category = "paleobiology"
+symbol = "RA"
+name = "Radiometric age"
+domain = "biology"
+test = "paleobiology::radiometric_age"
+avg_time_ns = 1869729.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "parasitology_force_of_infection"
+category = "parasitology"
+symbol = "FOI"
+name = "Force of infection"
+domain = "biology"
+test = "parasitology::force_of_infection"
+avg_time_ns = 2076819.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "parasitology_parasite_r0"
+category = "parasitology"
+symbol = "PR"
+name = "Parasite r0"
+domain = "biology"
+test = "parasitology::parasite_r0"
+avg_time_ns = 2180789.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "parasitology_vector_borne_r0"
+category = "parasitology"
+symbol = "VBR"
+name = "Vector borne r0"
+domain = "biology"
+test = "parasitology::vector_borne_r0"
+avg_time_ns = 1930639.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "pharmacology_bioavailability"
+category = "pharmacology"
+symbol = "Bi"
+name = "Bioavailability"
+domain = "biology"
+test = "pharmacology::bioavailability"
+avg_time_ns = 1904209.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "pharmacology_dose_response_hill"
+category = "pharmacology"
+symbol = "DRH"
+name = "Dose response hill"
+domain = "biology"
+test = "pharmacology::dose_response_hill"
+avg_time_ns = 1935179.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "pharmacology_half_life"
+category = "pharmacology"
+symbol = "HL"
+name = "Half life"
+domain = "biology"
+test = "pharmacology::half_life"
+avg_time_ns = 2048649.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "pharmacology_therapeutic_index"
+category = "pharmacology"
+symbol = "TI"
+name = "Therapeutic index"
+domain = "biology"
+test = "pharmacology::therapeutic_index"
+avg_time_ns = 1950580.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "phylogenetics_jukes_cantor_distance"
+category = "phylogenetics"
+symbol = "JCD"
+name = "Jukes cantor distance"
+domain = "biology"
+test = "phylogenetics::jukes_cantor_distance"
+avg_time_ns = 2288709.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "phylogenetics_parsimony_score"
+category = "phylogenetics"
+symbol = "PS"
+name = "Parsimony score"
+domain = "biology"
+test = "phylogenetics::parsimony_score"
+avg_time_ns = 2182899.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "phylogenetics_sackin_index"
+category = "phylogenetics"
+symbol = "SI"
+name = "Sackin index"
+domain = "biology"
+test = "phylogenetics::sackin_index"
+avg_time_ns = 1973689.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "physiology_alveolar_gas_equation"
+category = "physiology"
+symbol = "AGE"
+name = "Alveolar gas equation"
+domain = "biology"
+test = "physiology::alveolar_gas_equation"
+avg_time_ns = 1923229.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "physiology_frank_starling_mechanism"
+category = "physiology"
+symbol = "FSM"
+name = "Frank starling mechanism"
+domain = "biology"
+test = "physiology::frank_starling_mechanism"
+avg_time_ns = 1882189.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "physiology_glomerular_filtration_rate"
+category = "physiology"
+symbol = "GFR"
+name = "Glomerular filtration rate"
+domain = "biology"
+test = "physiology::glomerular_filtration_rate"
+avg_time_ns = 1904839.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "physiology_oxygen_delivery"
+category = "physiology"
+symbol = "OD"
+name = "Oxygen delivery"
+domain = "biology"
+test = "physiology::oxygen_delivery"
+avg_time_ns = 1975999.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "plant_biology_beer_lambert_canopy"
+category = "plant_biology"
+symbol = "BLC"
+name = "Beer lambert canopy"
+domain = "biology"
+test = "plant_biology::beer_lambert_canopy"
+avg_time_ns = 1915580.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "plant_biology_photosynthesis_light_response"
+category = "plant_biology"
+symbol = "PLR"
+name = "Photosynthesis light response"
+domain = "biology"
+test = "plant_biology::photosynthesis_light_response"
+avg_time_ns = 2052199.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "plant_biology_transpiration_rate"
+category = "plant_biology"
+symbol = "TR"
+name = "Transpiration rate"
+domain = "biology"
+test = "plant_biology::transpiration_rate"
+avg_time_ns = 1957179.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "plant_biology_water_potential"
+category = "plant_biology"
+symbol = "WP"
+name = "Water potential"
+domain = "biology"
+test = "plant_biology::water_potential"
+avg_time_ns = 1887439.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "population_carrying_capacity_from_resources"
+category = "population"
+symbol = "CCF"
+name = "Carrying capacity from resources"
+domain = "biology"
+test = "population::carrying_capacity_from_resources"
+avg_time_ns = 1833369.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "population_cell_growth_logistic"
+category = "population"
+symbol = "CGL"
+name = "Cell growth logistic"
+domain = "biology"
+test = "population::cell_growth_logistic"
+avg_time_ns = 1889609.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "population_lotka_volterra_competition"
+category = "population"
+symbol = "LVC"
+name = "Lotka volterra competition"
+domain = "biology"
+test = "population::lotka_volterra_competition"
+avg_time_ns = 1850320.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "population_lotka_volterra_predator_prey"
+category = "population"
+symbol = "LVP"
+name = "Lotka volterra predator prey"
+domain = "biology"
+test = "population::lotka_volterra_predator_prey"
+avg_time_ns = 2126848.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "proteomics_gravy_index"
+category = "proteomics"
+symbol = "GI"
+name = "Gravy index"
+domain = "biology"
+test = "proteomics::gravy_index"
+avg_time_ns = 2137160.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "proteomics_mass_accuracy_ppm"
+category = "proteomics"
+symbol = "MAP"
+name = "Mass accuracy ppm"
+domain = "biology"
+test = "proteomics::mass_accuracy_ppm"
+avg_time_ns = 2516799.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "proteomics_mz_ratio"
+category = "proteomics"
+symbol = "MR"
+name = "Mz ratio"
+domain = "biology"
+test = "proteomics::mz_ratio"
+avg_time_ns = 2079879.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "proteomics_protein_coverage"
+category = "proteomics"
+symbol = "PC"
+name = "Protein coverage"
+domain = "biology"
+test = "proteomics::protein_coverage"
+avg_time_ns = 2017939.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "radiobiology_oxygen_enhancement_ratio"
+category = "radiobiology"
+symbol = "OER"
+name = "Oxygen enhancement ratio"
+domain = "biology"
+test = "radiobiology::oxygen_enhancement_ratio"
+avg_time_ns = 1931849.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "radiobiology_radio_biologically_effective_dose"
+category = "radiobiology"
+symbol = "RBE"
+name = "Radio biologically effective dose"
+domain = "biology"
+test = "radiobiology::radio_biologically_effective_dose"
+avg_time_ns = 2311359.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "radiobiology_radio_linear_quadratic_survival"
+category = "radiobiology"
+symbol = "RLQ"
+name = "Radio linear quadratic survival"
+domain = "biology"
+test = "radiobiology::radio_linear_quadratic_survival"
+avg_time_ns = 2226039.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "radiobiology_tcp"
+category = "radiobiology"
+symbol = "Tc"
+name = "Tcp"
+domain = "biology"
+test = "radiobiology::tcp"
+avg_time_ns = 2067209.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "reproduction_fertilization_probability"
+category = "reproduction"
+symbol = "FP"
+name = "Fertilization probability"
+domain = "biology"
+test = "reproduction::fertilization_probability"
+avg_time_ns = 2159619.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "reproduction_hcg_doubling"
+category = "reproduction"
+symbol = "HD"
+name = "Hcg doubling"
+domain = "biology"
+test = "reproduction::hcg_doubling"
+avg_time_ns = 2158919.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "reproduction_ivf_success_rate"
+category = "reproduction"
+symbol = "ISR"
+name = "Ivf success rate"
+domain = "biology"
+test = "reproduction::ivf_success_rate"
+avg_time_ns = 2084539.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "reproduction_sperm_motility_score"
+category = "reproduction"
+symbol = "SMS"
+name = "Sperm motility score"
+domain = "biology"
+test = "reproduction::sperm_motility_score"
+avg_time_ns = 1892929.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "stem_cell_niche_occupancy"
+category = "stem_cell"
+symbol = "NO"
+name = "Niche occupancy"
+domain = "biology"
+test = "stem_cell::niche_occupancy"
+avg_time_ns = 1925019.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "stem_cell_reprogramming_efficiency"
+category = "stem_cell"
+symbol = "RE"
+name = "Reprogramming efficiency"
+domain = "biology"
+test = "stem_cell::reprogramming_efficiency"
+avg_time_ns = 1896170.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "stem_cell_self_renewal_probability"
+category = "stem_cell"
+symbol = "SRP"
+name = "Self renewal probability"
+domain = "biology"
+test = "stem_cell::self_renewal_probability"
+avg_time_ns = 1880849.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "structural_alpha_helix_propensity"
+category = "structural"
+symbol = "AHP"
+name = "Alpha helix propensity"
+domain = "biology"
+test = "structural::alpha_helix_propensity"
+avg_time_ns = 1891369.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "structural_binding_free_energy"
+category = "structural"
+symbol = "BFE"
+name = "Binding free energy"
+domain = "biology"
+test = "structural::binding_free_energy"
+avg_time_ns = 1896969.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "structural_radius_of_gyration"
+category = "structural"
+symbol = "ROG"
+name = "Radius of gyration"
+domain = "biology"
+test = "structural::radius_of_gyration"
+avg_time_ns = 2033779.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "structural_rmsd"
+category = "structural"
+symbol = "Rm"
+name = "Rmsd"
+domain = "biology"
+test = "structural::rmsd"
+avg_time_ns = 1977709.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "synthetic_biology_and_gate"
+category = "synthetic_biology"
+symbol = "AG"
+name = "And gate"
+domain = "biology"
+test = "synthetic_biology::and_gate"
+avg_time_ns = 1884149.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "synthetic_biology_crispr_on_target_score"
+category = "synthetic_biology"
+symbol = "COT"
+name = "Crispr on target score"
+domain = "biology"
+test = "synthetic_biology::crispr_on_target_score"
+avg_time_ns = 2236349.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "synthetic_biology_hill_activation"
+category = "synthetic_biology"
+symbol = "HA"
+name = "Hill activation"
+domain = "biology"
+test = "synthetic_biology::hill_activation"
+avg_time_ns = 2132950.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "synthetic_biology_hill_repression"
+category = "synthetic_biology"
+symbol = "HR"
+name = "Hill repression"
+domain = "biology"
+test = "synthetic_biology::hill_repression"
+avg_time_ns = 1895859.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "systems_biology_metabolic_control_coefficient"
+category = "systems_biology"
+symbol = "MCC"
+name = "Metabolic control coefficient"
+domain = "biology"
+test = "systems_biology::metabolic_control_coefficient"
+avg_time_ns = 1841209.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "systems_biology_oscillation_period"
+category = "systems_biology"
+symbol = "OP"
+name = "Oscillation period"
+domain = "biology"
+test = "systems_biology::oscillation_period"
+avg_time_ns = 2125069.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "systems_biology_ultrasensitivity_index"
+category = "systems_biology"
+symbol = "UI"
+name = "Ultrasensitivity index"
+domain = "biology"
+test = "systems_biology::ultrasensitivity_index"
+avg_time_ns = 1995669.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "tissue_engineering_cell_proliferation_on_scaffold"
+category = "tissue_engineering"
+symbol = "CPO"
+name = "Cell proliferation on scaffold"
+domain = "biology"
+test = "tissue_engineering::cell_proliferation_on_scaffold"
+avg_time_ns = 2974159.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "tissue_engineering_degradation_rate_first_order"
+category = "tissue_engineering"
+symbol = "DRF"
+name = "Degradation rate first order"
+domain = "biology"
+test = "tissue_engineering::degradation_rate_first_order"
+avg_time_ns = 2174659.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "tissue_engineering_oxygen_transfer_rate"
+category = "tissue_engineering"
+symbol = "OTR"
+name = "Oxygen transfer rate"
+domain = "biology"
+test = "tissue_engineering::oxygen_transfer_rate"
+avg_time_ns = 2201789.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "tissue_engineering_scaffold_porosity"
+category = "tissue_engineering"
+symbol = "SP"
+name = "Scaffold porosity"
+domain = "biology"
+test = "tissue_engineering::scaffold_porosity"
+avg_time_ns = 2120669.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "toxicology_bcf_ratio"
+category = "toxicology"
+symbol = "BR"
+name = "Bcf ratio"
+domain = "biology"
+test = "toxicology::bcf_ratio"
+avg_time_ns = 2049629.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "toxicology_ld50_probit"
+category = "toxicology"
+symbol = "LP"
+name = "Ld50 probit"
+domain = "biology"
+test = "toxicology::ld50_probit"
+avg_time_ns = 1986869.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "toxicology_risk_quotient"
+category = "toxicology"
+symbol = "RQ"
+name = "Risk quotient"
+domain = "biology"
+test = "toxicology::risk_quotient"
+avg_time_ns = 1919359.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "toxicology_therapeutic_window"
+category = "toxicology"
+symbol = "TW"
+name = "Therapeutic window"
+domain = "biology"
+test = "toxicology::therapeutic_window"
+avg_time_ns = 2086099.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "virology_basic_reproduction_number_viral"
+category = "virology"
+symbol = "BRN"
+name = "Basic reproduction number viral"
+domain = "biology"
+test = "virology::basic_reproduction_number_viral"
+avg_time_ns = 1903999.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "virology_burst_size"
+category = "virology"
+symbol = "BS"
+name = "Burst size"
+domain = "biology"
+test = "virology::burst_size"
+avg_time_ns = 1872230.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "virology_herd_immunity_threshold"
+category = "virology"
+symbol = "HIT"
+name = "Herd immunity threshold"
+domain = "biology"
+test = "virology::herd_immunity_threshold"
+avg_time_ns = 1835129.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "virology_viral_load_decay"
+category = "virology"
+symbol = "VLD"
+name = "Viral load decay"
+domain = "biology"
+test = "virology::viral_load_decay"
+avg_time_ns = 1944849.00
+iterations_per_sec = 1000.00
+

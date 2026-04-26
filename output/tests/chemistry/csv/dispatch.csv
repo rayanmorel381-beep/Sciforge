@@ -1,0 +1,9 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+dispatch::arrhenius_temperature_effect,f64,2,1,2065189,2065189,2065189,0,500,pass,dispatch,ATE,Arrhenius temperature effect,chemistry,dispatch::arrhenius_temperature_effect
+dispatch::cell_potential,f64,2,1,2221699,2221699,2221699,0,500,pass,dispatch,CP,Cell potential,chemistry,dispatch::cell_potential
+dispatch::dispatch_missing_parameter_returns_error,f64,2,1,2209119,2209119,2209119,0,500,pass,dispatch,DMP,Dispatch missing parameter returns error,chemistry,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,2,1,2177829,2177829,2177829,0,500,pass,dispatch,DUF,Dispatch unknown function returns error,chemistry,dispatch::dispatch_unknown_function_returns_error
+dispatch::gibbs_keq_roundtrip,f64,2,1,2004119,2004119,2004119,0,500,pass,dispatch,GKR,Gibbs keq roundtrip,chemistry,dispatch::gibbs_keq_roundtrip
+dispatch::half_life_first_order,f64,1,1,1896219,1896219,1896219,0,1000,pass,dispatch,HLF,Half life first order,chemistry,dispatch::half_life_first_order
+dispatch::nernst_potential,f64,1,1,1826650,1826650,1826650,0,1000,pass,dispatch,NP,Nernst potential,chemistry,dispatch::nernst_potential
+dispatch::rate_constant_arrhenius,f64,1,1,1781359,1781359,1781359,0,1000,pass,dispatch,RCA,Rate constant arrhenius,chemistry,dispatch::rate_constant_arrhenius

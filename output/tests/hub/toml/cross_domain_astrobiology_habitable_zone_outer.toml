@@ -1,0 +1,16 @@
+[benchmark]
+category = "cross_domain"
+symbol = "HZO"
+name = "Habitable zone outer"
+domain = "hub"
+test = "cross_domain::astrobiology::habitable_zone_outer"
+experiment_name = "cross_domain::astrobiology::habitable_zone_outer"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1817039.00
+min_time_ns = 1817039.00
+max_time_ns = 1817039.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

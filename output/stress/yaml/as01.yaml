@@ -1,0 +1,83 @@
+category: as01
+count: 10
+entries:
+  - label: astronomy_001
+    symbol: GF
+    name: as001
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 5310
+    avg_time_ns: 5310000128.00
+  - label: astronomy_002
+    symbol: HS
+    name: as002
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 5303
+    avg_time_ns: 5303000064.00
+  - label: astronomy_003
+    symbol: JDT
+    name: as003
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 5180
+    avg_time_ns: 5180000256.00
+  - label: astronomy_004
+    symbol: SP
+    name: as004
+    target: astronomy
+    module: celestial
+    status: ok
+    elapsed_ms: 4804
+    avg_time_ns: 4803999744.00
+  - label: astronomy_005
+    symbol: ADW
+    name: as005
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5491
+    avg_time_ns: 5490999808.00
+  - label: astronomy_006
+    symbol: AOU
+    name: as006
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5514
+    avg_time_ns: 5513999872.00
+  - label: astronomy_007
+    symbol: AMR
+    name: as007
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5609
+    avg_time_ns: 5608999936.00
+  - label: astronomy_008
+    symbol: AUF
+    name: as008
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 479
+    avg_time_ns: 479000000.00
+  - label: astronomy_009
+    symbol: CTA
+    name: as009
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 5741
+    avg_time_ns: 5741000192.00
+  - label: astronomy_010
+    symbol: CTS
+    name: as010
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 970
+    avg_time_ns: 970000000.00

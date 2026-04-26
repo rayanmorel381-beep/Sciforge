@@ -1,0 +1,17 @@
+category: as06
+symbol: SFI
+name: as055
+target: astronomy
+module: stellar
+status: ok
+elapsed_ms: 764
+experiment_name: astronomy_055
+precision: f64
+elapsed_ms: 764
+iterations: 1
+avg_time_ns: 764000000.00
+min_time_ns: 764000000.00
+max_time_ns: 764000000.00
+time_stddev: 0.0000
+iterations_per_sec: 1.31
+result: success=true code=Some(0) stdout_bytes=171 stderr_bytes=214

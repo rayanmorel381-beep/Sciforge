@@ -1,0 +1,16 @@
+[benchmark]
+category = "metalloid"
+symbol = "Si"
+name = "Silicon"
+config = "[Ne] 3s² 3p²"
+mass = "28.085"
+experiment_name = "Si_Silicon_benchmark"
+precision = "f64"
+elapsed_ms = 5
+iterations = 5000
+avg_time_ns = 1140.37
+min_time_ns = 1140.37
+max_time_ns = 1140.37
+time_stddev = 0.0000
+iterations_per_sec = 1000000.00
+result = "Z=14 | Si (Silicon) | 28.085 u | metalloid | [Ne] 3s² 3p²"

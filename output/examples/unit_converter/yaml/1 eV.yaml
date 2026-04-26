@@ -1,0 +1,16 @@
+category: Energy
+symbol: eV
+name: 1 eV
+from: 1 eV
+to: 1.602177e-19 J
+conversion: 1 eV → 1.602177e-19 J
+experiment_name: 1 eV_convert
+precision: f64
+elapsed_ms: 47
+iterations: 10000
+avg_time_ns: 4721.06
+min_time_ns: 4721.06
+max_time_ns: 4721.06
+time_stddev: 0.0000
+iterations_per_sec: 212765.95
+result: 1 eV | 1 eV → 1.602177e-19 J

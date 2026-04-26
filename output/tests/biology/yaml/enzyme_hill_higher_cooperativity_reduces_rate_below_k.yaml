@@ -1,0 +1,15 @@
+category: enzyme
+symbol: HHC
+name: Hill higher cooperativity reduces rate below k
+domain: biology
+test: "enzyme::hill_higher_cooperativity_reduces_rate_below_k"
+experiment_name: "enzyme::hill_higher_cooperativity_reduces_rate_below_k"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1838419.00
+min_time_ns: 1838419.00
+max_time_ns: 1838419.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

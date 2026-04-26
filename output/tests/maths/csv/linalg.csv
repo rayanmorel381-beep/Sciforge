@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+linalg::complex_exp_i_pi,f64,2,1,2444709,2444709,2444709,0,500,pass,linalg,CEI,Complex exp i pi,maths,linalg::complex_exp_i_pi
+linalg::complex_exp_zero,f64,2,1,2179469,2179469,2179469,0,500,pass,linalg,CEZ,Complex exp zero,maths,linalg::complex_exp_zero
+linalg::levi_civita_antisymmetry,f64,2,1,2012899,2012899,2012899,0,500,pass,linalg,LCA,Levi civita antisymmetry,maths,linalg::levi_civita_antisymmetry
+linalg::matrix_det_2x2,f64,1,1,1764019,1764019,1764019,0,1000,pass,linalg,MD2,Matrix det 2x2,maths,linalg::matrix_det_2x2
+linalg::tensor_trace_identity,f64,1,1,1772459,1772459,1772459,0,1000,pass,linalg,TTI,Tensor trace identity,maths,linalg::tensor_trace_identity

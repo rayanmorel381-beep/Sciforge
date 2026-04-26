@@ -1,0 +1,15 @@
+category: halogen
+symbol: F
+name: Fluorine
+config: 1s² 2s² 2p⁵
+mass: 18.998403
+experiment_name: F_Fluorine_benchmark
+precision: f32
+elapsed_ms: 6
+iterations: 10000
+avg_time_ns: 697.91
+min_time_ns: 697.91
+max_time_ns: 697.91
+time_stddev: 0.0000
+iterations_per_sec: 1666666.62
+result: Z=9 | F (Fluorine) | 18.998403 u | halogen | 1s² 2s² 2p⁵

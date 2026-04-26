@@ -1,0 +1,76 @@
+element:
+  name: Lawrencium
+  symbol: Lr
+  atomic_number: 103
+  category: actinide
+  group: 3
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 7s² 7p¹"
+  electronegativity: 1.3
+  atomic_mass: 266.120
+
+isotopes:
+  - name: Lawrencium-256
+    symbol: "²⁵⁶Lr"
+    mass_number: 256
+    neutrons: 153
+    atomic_mass: 256.09863
+    half_life: 27
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.80
+        daughter: Mendelevium-252
+      - mode: electron_capture
+        branching_ratio: 0.20
+        daughter: Nobelium-256
+    natural_abundance: 0.0
+
+  - name: Lawrencium-260
+    symbol: "²⁶⁰Lr"
+    mass_number: 260
+    neutrons: 157
+    atomic_mass: 260.10551
+    half_life: 2.7
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.75
+        daughter: Mendelevium-256
+      - mode: electron_capture
+        branching_ratio: 0.15
+        daughter: Nobelium-260
+      - mode: spontaneous_fission
+        branching_ratio: 0.10
+        daughter: null
+    natural_abundance: 0.0
+
+  - name: Lawrencium-262
+    symbol: "²⁶²Lr"
+    mass_number: 262
+    neutrons: 159
+    atomic_mass: 262.10961
+    half_life: 3.6
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron_capture
+        branching_ratio: 1.0
+        daughter: Nobelium-262
+    natural_abundance: 0.0
+
+  - name: Lawrencium-266
+    symbol: "²⁶⁶Lr"
+    mass_number: 266
+    neutrons: 163
+    atomic_mass: 266.120
+    half_life: 11
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 1.0
+        daughter: null
+    natural_abundance: 0.0

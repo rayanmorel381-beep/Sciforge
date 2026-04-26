@@ -1,0 +1,68 @@
+category: Alpha
+count: 5
+entries:
+  - label: ²³⁸U
+    symbol: ²³⁸U
+    name: Uranium
+    Z: 92
+    A: 238
+    N: 146
+    half_life: 4.468e9 years
+    decay_constant: 4.9156e-18 s⁻¹
+    decay_mode: alpha
+    specific_activity: 1.244e4 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.571 MeV/nucleon
+    avg_time_ns: 2226.82
+  - label: ²³⁵U
+    symbol: ²³⁵U
+    name: Uranium
+    Z: 92
+    A: 235
+    N: 143
+    half_life: 704000000.00 years
+    decay_constant: 3.1197e-17 s⁻¹
+    decay_mode: alpha
+    specific_activity: 7.995e4 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.565 MeV/nucleon
+    avg_time_ns: 2250.62
+  - label: ²³²Th
+    symbol: ²³²Th
+    name: Thorium
+    Z: 90
+    A: 232
+    N: 142
+    half_life: 1.405e10 years
+    decay_constant: 1.5632e-18 s⁻¹
+    decay_mode: alpha
+    specific_activity: 4.058e3 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.570 MeV/nucleon
+    avg_time_ns: 2421.41
+  - label: ²³⁹Pu
+    symbol: ²³⁹Pu
+    name: Plutonium
+    Z: 94
+    A: 239
+    N: 145
+    half_life: 24110.00 years
+    decay_constant: 9.1094e-13 s⁻¹
+    decay_mode: alpha
+    specific_activity: 2.295e9 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.563 MeV/nucleon
+    avg_time_ns: 2407.81
+  - label: ²⁴¹Am
+    symbol: ²⁴¹Am
+    name: Americium
+    Z: 95
+    A: 241
+    N: 146
+    half_life: 432.20 years
+    decay_constant: 5.0816e-11 s⁻¹
+    decay_mode: alpha
+    specific_activity: 1.270e11 Bq/g
+    remaining_3hl: 125000 / 1M after 3 half-lives
+    binding_energy: 7.561 MeV/nucleon
+    avg_time_ns: 2720.78

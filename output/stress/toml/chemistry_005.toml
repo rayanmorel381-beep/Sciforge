@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch01"
+symbol = "PSB"
+name = "ch005"
+target = "chemistry"
+module = "acid_base"
+status = "ok"
+elapsed_ms = "3788"
+experiment_name = "chemistry_005"
+precision = "f64"
+elapsed_ms = 3788
+iterations = 1
+avg_time_ns = 3788000000.00
+min_time_ns = 3788000000.00
+max_time_ns = 3788000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.26
+result = "success=true code=Some(0) stdout_bytes=152 stderr_bytes=214"

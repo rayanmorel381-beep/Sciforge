@@ -1,0 +1,62 @@
+element:
+  name: Dubnium
+  symbol: Db
+  atomic_number: 105
+  category: transition_metal
+  group: 5
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d³ 7s²"
+  electronegativity: null
+  atomic_mass: 268.126
+
+isotopes:
+  - name: Dubnium-262
+    symbol: "²⁶²Db"
+    mass_number: 262
+    neutrons: 157
+    atomic_mass: 262.11407
+    half_life: 34
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.67
+        daughter: Lawrencium-258
+      - mode: spontaneous_fission
+        branching_ratio: 0.23
+        daughter: null
+      - mode: electron_capture
+        branching_ratio: 0.10
+        daughter: Rutherfordium-262
+    natural_abundance: 0.0
+
+  - name: Dubnium-268
+    symbol: "²⁶⁸Db"
+    mass_number: 268
+    neutrons: 163
+    atomic_mass: 268.126
+    half_life: 28
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 1.0
+        daughter: null
+    natural_abundance: 0.0
+
+  - name: Dubnium-270
+    symbol: "²⁷⁰Db"
+    mass_number: 270
+    neutrons: 165
+    atomic_mass: 270.131
+    half_life: 23.15
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 0.83
+        daughter: null
+      - mode: alpha
+        branching_ratio: 0.17
+        daughter: Lawrencium-266
+    natural_abundance: 0.0

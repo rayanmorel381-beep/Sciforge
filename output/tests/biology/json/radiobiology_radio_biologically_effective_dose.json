@@ -1,0 +1,17 @@
+{
+  "category": "radiobiology",
+  "symbol": "RBE",
+  "name": "Radio biologically effective dose",
+  "domain": "biology",
+  "test": "radiobiology::radio_biologically_effective_dose",
+  "experiment_name": "radiobiology::radio_biologically_effective_dose",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2311359.00,
+  "min_time_ns": 2311359.00,
+  "max_time_ns": 2311359.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

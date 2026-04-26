@@ -1,0 +1,19 @@
+{
+  "category": "ch04",
+  "symbol": "VH",
+  "name": "ch039",
+  "target": "chemistry",
+  "module": "equilibrium",
+  "status": "ok",
+  "elapsed_ms": "4672",
+  "experiment_name": "chemistry_039",
+  "precision": "f64",
+  "elapsed_ms": 4672,
+  "iterations": 1,
+  "avg_time_ns": 4672000000.00,
+  "min_time_ns": 4672000000.00,
+  "max_time_ns": 4672000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=149 stderr_bytes=318"
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weather Station — Atmospheric Pressure, Humidity &amp; Dew Point</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0d1117;color:#c9d1d9;padding:2em;max-width:1800px;margin:0 auto}
+h1{color:#58a6ff;margin-bottom:.5em;font-size:2em}
+h2{color:#79c0ff;margin:1.5em 0 .5em;border-bottom:1px solid #21262d;padding-bottom:.3em}
+p{margin:.5em 0;line-height:1.6}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;font-size:.85em}
+th{background:#161b22;color:#58a6ff;position:sticky;top:0}
+tr:nth-child(even){background:#161b22}
+pre{background:#161b22;padding:1em;border-radius:6px;overflow-x:auto;max-height:600px;font-size:.8em}
+code{font-family:ui-monospace,monospace}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1em;margin:1em 0}
+.stat-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1em;text-align:center}
+.stat-card .num{font-size:2em;color:#58a6ff;font-weight:bold}
+.stat-card .lbl{font-size:.8em;color:#8b949e}
+.tabs{display:flex;gap:0;margin-top:1.5em;flex-wrap:wrap}
+.tab{padding:.6em 1.2em;cursor:pointer;background:#161b22;border:1px solid #30363d;border-bottom:none;border-radius:6px 6px 0 0;color:#8b949e;font-weight:600}
+.tab:hover{color:#c9d1d9}
+.tab.active{background:#0d1117;color:#58a6ff;border-bottom:1px solid #0d1117}
+.panel{display:none;border:1px solid #30363d;padding:1em;border-radius:0 6px 6px 6px}
+.panel.active{display:block}
+.fsel{width:100%;padding:.5em;margin-bottom:.8em;background:#161b22;color:#c9d1d9;border:1px solid #30363d;border-radius:4px;font-family:ui-monospace,monospace;font-size:.85em}
+.charts{display:grid;grid-template-columns:repeat(auto-fill,minmax(500px,1fr));gap:1.5em;margin:1em 0}
+.chart-box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1.2em}
+.chart-box h3{color:#79c0ff;font-size:.95em;margin-bottom:.8em}
+.ptable{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin:1.5em 0}
+.el{padding:6px 3px;text-align:center;border-radius:6px;min-height:68px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:transform .15s,box-shadow .15s;border:1px solid rgba(255,255,255,.06)}
+.el:hover{transform:scale(1.4);box-shadow:0 0 16px rgba(88,166,255,.6);z-index:10;position:relative}
+.el .z{font-size:.55em;opacity:.65;color:#8b949e}
+.el .sym{font-size:1.5em;font-weight:700;line-height:1.1}
+.el .mass{font-size:.5em;opacity:.55;color:#8b949e}
+.el .ns{font-size:.45em;opacity:.45;color:#58a6ff}
+.el .nm{font-size:.5em;opacity:.6;color:#8b949e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.empty{background:transparent}
+.marker{display:flex;align-items:center;justify-content:center;font-weight:700;color:#58a6ff;font-size:.85em}
+.legend{display:flex;flex-wrap:wrap;gap:.8em;margin:.8em 0;align-items:center}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.75em;color:#8b949e}
+.legend-swatch{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,.1)}
+@keyframes hl{0%{box-shadow:0 0 20px #58a6ff}100%{box-shadow:none}}
+.highlight{animation:hl 2s ease-out}
+.detail{display:none;margin:1.5em 0;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:1.5em;position:relative}
+.detail.open{display:grid;grid-template-columns:auto 1fr;gap:.6em 1.5em;align-items:baseline}
+.detail .close{position:absolute;top:10px;right:14px;cursor:pointer;color:#8b949e;font-size:1.4em;background:none;border:none}
+.detail .close:hover{color:#f85149}
+.detail .dk{color:#8b949e;font-size:.85em;text-align:right}
+.detail .dv{color:#c9d1d9;font-size:.95em;font-weight:600}
+.detail .dtitle{grid-column:1/-1;font-size:1.3em;font-weight:700;margin-bottom:.3em}
+.detail .files{grid-column:1/-1;display:flex;gap:.5em;margin-top:.5em}
+.detail .fbtn{padding:.3em .8em;background:#21262d;border:1px solid #30363d;border-radius:4px;color:#58a6ff;cursor:pointer;font-size:.8em;text-decoration:none}
+.detail .fbtn:hover{background:#30363d}
+.cat-0{background:linear-gradient(135deg,#1a3a1a,#0d0d0d);color:#7ee787}
+.cat-1{background:linear-gradient(135deg,#0a2a3a,#0d0d0d);color:#79c0ff}
+.cat-2{background:linear-gradient(135deg,#3a2a0a,#0d0d0d);color:#ffa657}
+.cat-3{background:linear-gradient(135deg,#3a1a2e,#0d0d0d);color:#d2a8ff}
+.cat-4{background:linear-gradient(135deg,#3a1a2a,#0d0d0d);color:#ff7eb6}
+</style>
+</head>
+<body>
+
+<h1>Weather Station — Atmospheric Pressure, Humidity &amp; Dew Point</h1>
+<p>10 benchmark entries &mdash; 6 formats: CSV, JSON, YAML, TOML, BMK, Markdown.</p>
+
+<div class="stats">
+<div class="stat-card"><div class="num">10</div><div class="lbl">Elements</div></div>
+<div class="stat-card"><div class="num">6</div><div class="lbl">Formats</div></div>
+<div class="stat-card"><div class="num">64</div><div class="lbl">Files</div></div>
+</div>
+
+<h2>Interactive Grid</h2>
+<div class="legend">
+<div class="legend-item"><div class="legend-swatch cat-0"></div>Temperate</div>
+<div class="legend-item"><div class="legend-swatch cat-1"></div>Alpine</div>
+<div class="legend-item"><div class="legend-swatch cat-2"></div>Polar</div>
+<div class="legend-item"><div class="legend-swatch cat-3"></div>Tropical</div>
+<div class="legend-item"><div class="legend-swatch cat-4"></div>Arid</div>
+</div>
+<div class="ptable">
+<div id="el-Paris CDG" class="el cat-0" style="grid-row:1;grid-column:1" title="Paris CDG - 5629.8ns" onclick="go('Paris CDG')"><div class="sym">P</div><div class="nm">Paris CDG</div><div class="ns">5630ns</div></div>
+<div id="el-Tokyo Narita" class="el cat-0" style="grid-row:1;grid-column:2" title="Tokyo Narita - 5656.9ns" onclick="go('Tokyo Narita')"><div class="sym">T</div><div class="nm">Tokyo Narita</div><div class="ns">5657ns</div></div>
+<div id="el-Denver Intl" class="el cat-1" style="grid-row:1;grid-column:3" title="Denver Intl - 5596.0ns" onclick="go('Denver Intl')"><div class="sym">D</div><div class="nm">Denver Intl</div><div class="ns">5596ns</div></div>
+<div id="el-Mexico City" class="el cat-1" style="grid-row:1;grid-column:4" title="Mexico City - 5636.1ns" onclick="go('Mexico City')"><div class="sym">M</div><div class="nm">Mexico City</div><div class="ns">5636ns</div></div>
+<div id="el-McMurdo Base" class="el cat-2" style="grid-row:1;grid-column:5" title="McMurdo Base - 5812.7ns" onclick="go('McMurdo Base')"><div class="sym">Mc</div><div class="nm">McMurdo Base</div><div class="ns">5813ns</div></div>
+<div id="el-Nairobi" class="el cat-3" style="grid-row:2;grid-column:1" title="Nairobi - 5534.8ns" onclick="go('Nairobi')"><div class="sym">N</div><div class="nm">Nairobi</div><div class="ns">5535ns</div></div>
+<div id="el-Lhasa" class="el cat-1" style="grid-row:2;grid-column:2" title="Lhasa - 5548.9ns" onclick="go('Lhasa')"><div class="sym">L</div><div class="nm">Lhasa</div><div class="ns">5549ns</div></div>
+<div id="el-Death Valley" class="el cat-4" style="grid-row:2;grid-column:3" title="Death Valley - 5569.1ns" onclick="go('Death Valley')"><div class="sym">DV</div><div class="nm">Death Valley</div><div class="ns">5569ns</div></div>
+<div id="el-Reykjavik" class="el cat-2" style="grid-row:2;grid-column:4" title="Reykjavik - 5642.7ns" onclick="go('Reykjavik')"><div class="sym">R</div><div class="nm">Reykjavik</div><div class="ns">5643ns</div></div>
+<div id="el-Singapore" class="el cat-3" style="grid-row:2;grid-column:5" title="Singapore - 5640.5ns" onclick="go('Singapore')"><div class="sym">S</div><div class="nm">Singapore</div><div class="ns">5640ns</div></div>
+</div>
+
+<div id="detail" class="detail">
+<button class="close" onclick="closeDetail()">&times;</button>
+<div class="dtitle" id="d-title"></div>
+<div id="d-tags"></div>
+<div class="dk">Precision</div><div class="dv" id="d-prec"></div>
+<div class="dk">Iterations</div><div class="dv" id="d-iter"></div>
+<div class="dk">Avg Time</div><div class="dv" id="d-avg"></div>
+<div class="dk">Min Time</div><div class="dv" id="d-min"></div>
+<div class="dk">Max Time</div><div class="dv" id="d-max"></div>
+<div class="dk">Std Dev</div><div class="dv" id="d-std"></div>
+<div class="dk">Iters/sec</div><div class="dv" id="d-ips"></div>
+<div class="files" id="d-files"></div>
+</div>
+
+<h2>Data Formats</h2>
+<div class="tabs">
+<div class="tab active" onclick="switchTab(event,'csv')">CSV</div>
+<div class="tab" onclick="switchTab(event,'json')">JSON</div>
+<div class="tab" onclick="switchTab(event,'yaml')">YAML</div>
+<div class="tab" onclick="switchTab(event,'toml')">TOML</div>
+<div class="tab" onclick="switchTab(event,'bmk')">BMK</div>
+<div class="tab" onclick="switchTab(event,'mdprev')">Markdown</div>
+</div>
+<div id="csv" class="panel active">
+<select class="fsel" onchange="showFile('csv',this.value)">
+<option>Alpine.csv</option>
+<option>Arid.csv</option>
+<option>Polar.csv</option>
+<option>Temperate.csv</option>
+<option>Tropical.csv</option>
+<option>all.csv</option>
+</select>
+<div id="csv-code" style="overflow-x:auto;max-height:600px;overflow-y:auto"></div>
+</div>
+<div id="json" class="panel">
+<select class="fsel" onchange="showFile('json',this.value)">
+<option>Death Valley.json</option>
+<option>Denver Intl.json</option>
+<option>Lhasa.json</option>
+<option>McMurdo Base.json</option>
+<option>Mexico City.json</option>
+<option>Nairobi.json</option>
+<option>Paris CDG.json</option>
+<option>Reykjavik.json</option>
+<option>Singapore.json</option>
+<option>Tokyo Narita.json</option>
+<option>summary.json</option>
+</select>
+<pre><code id="json-code"></code></pre>
+</div>
+<div id="yaml" class="panel">
+<select class="fsel" onchange="showFile('yaml',this.value)">
+<option>Alpine.yaml</option>
+<option>Arid.yaml</option>
+<option>Death Valley.yaml</option>
+<option>Denver Intl.yaml</option>
+<option>Lhasa.yaml</option>
+<option>McMurdo Base.yaml</option>
+<option>Mexico City.yaml</option>
+<option>Nairobi.yaml</option>
+<option>Paris CDG.yaml</option>
+<option>Polar.yaml</option>
+<option>Reykjavik.yaml</option>
+<option>Singapore.yaml</option>
+<option>Temperate.yaml</option>
+<option>Tokyo Narita.yaml</option>
+<option>Tropical.yaml</option>
+<option>summary.yaml</option>
+</select>
+<pre><code id="yaml-code"></code></pre>
+</div>
+<div id="toml" class="panel">
+<select class="fsel" onchange="showFile('toml',this.value)">
+<option>Death Valley.toml</option>
+<option>Denver Intl.toml</option>
+<option>Lhasa.toml</option>
+<option>McMurdo Base.toml</option>
+<option>Mexico City.toml</option>
+<option>Nairobi.toml</option>
+<option>Paris CDG.toml</option>
+<option>Reykjavik.toml</option>
+<option>Singapore.toml</option>
+<option>Tokyo Narita.toml</option>
+<option>summary.toml</option>
+</select>
+<pre><code id="toml-code"></code></pre>
+</div>
+<div id="bmk" class="panel">
+<select class="fsel" onchange="showFile('bmk',this.value)">
+<option>Death Valley.bmk</option>
+<option>Denver Intl.bmk</option>
+<option>Lhasa.bmk</option>
+<option>McMurdo Base.bmk</option>
+<option>Mexico City.bmk</option>
+<option>Nairobi.bmk</option>
+<option>Paris CDG.bmk</option>
+<option>Reykjavik.bmk</option>
+<option>Singapore.bmk</option>
+<option>Tokyo Narita.bmk</option>
+</select>
+<pre><code id="bmk-code"></code></pre>
+</div>
+<div id="mdprev" class="panel" style="max-height:700px;overflow-y:auto">
+<h2 style="color:#58a6ff;border-bottom:1px solid #21262d;padding-bottom:.3em;margin-bottom:.5em">Weather Station — Atmospheric Pressure, Humidity &amp; Dew Point</h2>
+<p style="line-height:1.6;margin:.4em 0">10 benchmark entries across 5 formats.</p>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Grid</h3>
+<pre><code>  Temperate       :   P    T
+  Alpine          :   D    M    L
+  Polar           :  Mc    R
+  Tropical        :   N    S
+  Arid            :  DV
+</code></pre>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Directory Layout</h3>
+<pre><code>csv/
+  all.csv
+json/
+  {label}.json
+  summary.json
+yaml/
+  {label}.yaml
+  summary.yaml
+toml/
+  {label}.toml
+  summary.toml
+bmk/
+  {label}.bmk
+benchmark.html
+benchmark.md
+</code></pre>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Results</h3>
+<table>
+<thead>
+<tr><th>Label</th><th>category</th><th>symbol</th><th>name</th><th>altitude</th><th>temperature</th><th>pressure</th><th>relative_humidity</th><th>saturation_vp</th><th>dew_point</th><th>density_altitude</th><th>potential_temp</th><th>mixing_ratio</th><th>lcl</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
+</thead><tbody>
+<tr><td>Paris CDG</td><td>Temperate</td><td>P</td><td>Paris CDG</td><td>119 m</td><td>12.4 °C</td><td>1013.2 hPa</td><td>78%</td><td>14.39 hPa</td><td>8.7 °C</td><td>-164 m</td><td>285.5 K</td><td>6.97 g/kg</td><td>381 m AGL</td><td>f64</td><td>5000</td><td>5629.84</td><td>178571.42</td></tr>
+<tr><td>Tokyo Narita</td><td>Temperate</td><td>T</td><td>Tokyo Narita</td><td>44 m</td><td>16.3 °C</td><td>1015.0 hPa</td><td>71%</td><td>18.52 hPa</td><td>11.0 °C</td><td>211 m</td><td>289.3 K</td><td>8.16 g/kg</td><td>539 m AGL</td><td>f64</td><td>5000</td><td>5656.88</td><td>178571.42</td></tr>
+<tr><td>Denver Intl</td><td>Alpine</td><td>D</td><td>Denver Intl</td><td>1655 m</td><td>10.1 °C</td><td>835.0 hPa</td><td>45%</td><td>12.35 hPa</td><td>-1.3 °C</td><td>1464 m</td><td>299.4 K</td><td>4.17 g/kg</td><td>1166 m AGL</td><td>f64</td><td>5000</td><td>5595.95</td><td>185185.19</td></tr>
+<tr><td>Mexico City</td><td>Alpine</td><td>M</td><td>Mexico City</td><td>2250 m</td><td>16.0 °C</td><td>773.0 hPa</td><td>52%</td><td>18.17 hPa</td><td>6.2 °C</td><td>2910 m</td><td>312.4 K</td><td>7.70 g/kg</td><td>1008 m AGL</td><td>f64</td><td>5000</td><td>5636.10</td><td>178571.42</td></tr>
+<tr><td>McMurdo Base</td><td>Polar</td><td>Mc</td><td>McMurdo Base</td><td>10 m</td><td>-18.0 °C</td><td>984.0 hPa</td><td>60%</td><td>1.49 hPa</td><td>-23.9 °C</td><td>-3948 m</td><td>257.3 K</td><td>0.57 g/kg</td><td>602 m AGL</td><td>f64</td><td>5000</td><td>5812.67</td><td>172413.80</td></tr>
+<tr><td>Nairobi</td><td>Tropical</td><td>N</td><td>Nairobi</td><td>1795 m</td><td>19.0 °C</td><td>815.0 hPa</td><td>65%</td><td>21.96 hPa</td><td>12.3 °C</td><td>2706 m</td><td>310.9 K</td><td>11.09 g/kg</td><td>688 m AGL</td><td>f64</td><td>5000</td><td>5534.76</td><td>185185.19</td></tr>
+<tr><td>Lhasa</td><td>Alpine</td><td>L</td><td>Lhasa</td><td>3650 m</td><td>8.5 °C</td><td>652.0 hPa</td><td>35%</td><td>11.09 hPa</td><td>-6.1 °C</td><td>3746 m</td><td>319.5 K</td><td>3.73 g/kg</td><td>1494 m AGL</td><td>f64</td><td>5000</td><td>5548.93</td><td>185185.19</td></tr>
+<tr><td>Death Valley</td><td>Arid</td><td>DV</td><td>Death Valley</td><td>-86 m</td><td>38.5 °C</td><td>1025.0 hPa</td><td>12%</td><td>68.21 hPa</td><td>4.1 °C</td><td>2713 m</td><td>310.6 K</td><td>5.01 g/kg</td><td>3521 m AGL</td><td>f64</td><td>5000</td><td>5569.10</td><td>185185.19</td></tr>
+<tr><td>Reykjavik</td><td>Polar</td><td>R</td><td>Reykjavik</td><td>61 m</td><td>4.6 °C</td><td>1005.0 hPa</td><td>82%</td><td>8.48 hPa</td><td>1.8 °C</td><td>-1172 m</td><td>278.4 K</td><td>4.33 g/kg</td><td>287 m AGL</td><td>f64</td><td>5000</td><td>5642.68</td><td>178571.42</td></tr>
+<tr><td>Singapore</td><td>Tropical</td><td>S</td><td>Singapore</td><td>16 m</td><td>27.5 °C</td><td>1010.0 hPa</td><td>84%</td><td>36.72 hPa</td><td>24.6 °C</td><td>1520 m</td><td>300.9 K</td><td>19.59 g/kg</td><td>301 m AGL</td><td>f64</td><td>5000</td><td>5640.50</td><td>178571.42</td></tr>
+</tbody></table>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
+<p style="line-height:1.6;margin:.4em 0">### Category Distribution</p>
+<table>
+<thead>
+<tr><th>Category</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
+</thead><tbody>
+<tr><td>Temperate</td><td>2</td><td>5643.36</td><td>5629.84</td><td>5656.88</td></tr>
+<tr><td>Alpine</td><td>3</td><td>5593.66</td><td>5548.93</td><td>5636.10</td></tr>
+<tr><td>Polar</td><td>2</td><td>5727.68</td><td>5642.68</td><td>5812.67</td></tr>
+<tr><td>Tropical</td><td>2</td><td>5587.63</td><td>5534.76</td><td>5640.50</td></tr>
+<tr><td>Arid</td><td>1</td><td>5569.10</td><td>5569.10</td><td>5569.10</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>Nairobi</td><td>5534.76</td></tr>
+<tr><td>2</td><td>Lhasa</td><td>5548.93</td></tr>
+<tr><td>3</td><td>Death Valley</td><td>5569.10</td></tr>
+<tr><td>4</td><td>Denver Intl</td><td>5595.95</td></tr>
+<tr><td>5</td><td>Paris CDG</td><td>5629.84</td></tr>
+<tr><td>6</td><td>Mexico City</td><td>5636.10</td></tr>
+<tr><td>7</td><td>Singapore</td><td>5640.50</td></tr>
+<tr><td>8</td><td>Reykjavik</td><td>5642.68</td></tr>
+<tr><td>9</td><td>Tokyo Narita</td><td>5656.88</td></tr>
+<tr><td>10</td><td>McMurdo Base</td><td>5812.67</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>McMurdo Base</td><td>5812.67</td></tr>
+<tr><td>2</td><td>Tokyo Narita</td><td>5656.88</td></tr>
+<tr><td>3</td><td>Reykjavik</td><td>5642.68</td></tr>
+<tr><td>4</td><td>Singapore</td><td>5640.50</td></tr>
+<tr><td>5</td><td>Mexico City</td><td>5636.10</td></tr>
+<tr><td>6</td><td>Paris CDG</td><td>5629.84</td></tr>
+<tr><td>7</td><td>Denver Intl</td><td>5595.95</td></tr>
+<tr><td>8</td><td>Death Valley</td><td>5569.10</td></tr>
+<tr><td>9</td><td>Lhasa</td><td>5548.93</td></tr>
+<tr><td>10</td><td>Nairobi</td><td>5534.76</td></tr>
+</tbody></table>
+</div>
+
+<h2>Analytics</h2>
+<div class="charts">
+<div class="chart-box">
+<h3>Category Distribution</h3>
+<svg viewBox="0 0 650 150" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Temperate</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="286" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="460" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Alpine</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="604" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">3</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Polar</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="286" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="460" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Tropical</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="286" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="460" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2</text>
+<text x="160" y="130" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Arid</text>
+<rect x="168" y="116" width="430" height="22" rx="4" fill="#3a1a2a"/>
+<rect x="168" y="116" width="143" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="317" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Average Time per Category (ns)</h3>
+<svg viewBox="0 0 650 150" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Temperate</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="423" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="597" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5643.4</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Alpine</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="419" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="593" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5593.7</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Polar</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="604" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5727.7</text>
+<text x="160" y="102" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Tropical</text>
+<rect x="168" y="88" width="430" height="22" rx="4" fill="#3a1a2e"/>
+<rect x="168" y="88" width="419" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="593" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5587.6</text>
+<text x="160" y="130" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Arid</text>
+<rect x="168" y="116" width="430" height="22" rx="4" fill="#3a1a2a"/>
+<rect x="168" y="116" width="418" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="592" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5569.1</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Fastest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Nairobi</text>
+<rect x="168" y="4" width="409" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="583" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5534.8 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Lhasa</text>
+<rect x="168" y="32" width="410" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="584" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5548.9 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Death Valley</text>
+<rect x="168" y="60" width="411" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="585" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5569.1 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Denver Intl</text>
+<rect x="168" y="88" width="413" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="587" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5596.0 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Paris CDG</text>
+<rect x="168" y="116" width="416" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="590" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5629.8 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Mexico City</text>
+<rect x="168" y="144" width="416" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="590" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5636.1 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Singapore</text>
+<rect x="168" y="172" width="417" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="591" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5640.5 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Reykjavik</text>
+<rect x="168" y="200" width="417" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="591" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5642.7 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Tokyo Narita</text>
+<rect x="168" y="228" width="418" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="592" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5656.9 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">McMurdo Base</text>
+<rect x="168" y="256" width="430" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="604" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5812.7 ns</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Slowest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">McMurdo Base</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5812.7 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Tokyo Narita</text>
+<rect x="168" y="32" width="418" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="592" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5656.9 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Reykjavik</text>
+<rect x="168" y="60" width="417" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="591" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5642.7 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Singapore</text>
+<rect x="168" y="88" width="417" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="591" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5640.5 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Mexico City</text>
+<rect x="168" y="116" width="416" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="590" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5636.1 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Paris CDG</text>
+<rect x="168" y="144" width="416" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="590" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5629.8 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Denver Intl</text>
+<rect x="168" y="172" width="413" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="587" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5596.0 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Death Valley</text>
+<rect x="168" y="200" width="411" height="22" rx="4" fill="#ff7eb6" opacity=".8"/>
+<text x="585" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5569.1 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Lhasa</text>
+<rect x="168" y="228" width="410" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="584" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5548.9 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">Nairobi</text>
+<rect x="168" y="256" width="409" height="22" rx="4" fill="#d2a8ff" opacity=".8"/>
+<text x="583" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5534.8 ns</text>
+</svg>
+</div>
+
+<div class="chart-box" style="grid-column:1/-1">
+<h3>Category Statistics</h3>
+<svg viewBox="0 0 900 180" style="width:100%;max-width:900px">
+<rect x="0" y="4" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
+<text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">Temperate</text>
+<text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 5643.4 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 5629.8 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 5656.9 ns</text>
+<rect x="0" y="38" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="38" width="4" height="28" rx="2" fill="#79c0ff"/>
+<text x="14" y="52" fill="#79c0ff" font-size="12" font-weight="bold" dominant-baseline="middle">Alpine</text>
+<text x="250" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">n=3</text>
+<text x="350" y="52" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 5593.7 ns</text>
+<text x="520" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">min 5548.9 ns</text>
+<text x="680" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">max 5636.1 ns</text>
+<rect x="0" y="72" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="72" width="4" height="28" rx="2" fill="#ffa657"/>
+<text x="14" y="86" fill="#ffa657" font-size="12" font-weight="bold" dominant-baseline="middle">Polar</text>
+<text x="250" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="86" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 5727.7 ns</text>
+<text x="520" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">min 5642.7 ns</text>
+<text x="680" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">max 5812.7 ns</text>
+<rect x="0" y="106" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="106" width="4" height="28" rx="2" fill="#d2a8ff"/>
+<text x="14" y="120" fill="#d2a8ff" font-size="12" font-weight="bold" dominant-baseline="middle">Tropical</text>
+<text x="250" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">n=2</text>
+<text x="350" y="120" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 5587.6 ns</text>
+<text x="520" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">min 5534.8 ns</text>
+<text x="680" y="120" fill="#8b949e" font-size="11" dominant-baseline="middle">max 5640.5 ns</text>
+<rect x="0" y="140" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="140" width="4" height="28" rx="2" fill="#ff7eb6"/>
+<text x="14" y="154" fill="#ff7eb6" font-size="12" font-weight="bold" dominant-baseline="middle">Arid</text>
+<text x="250" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
+<text x="350" y="154" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 5569.1 ns</text>
+<text x="520" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">min 5569.1 ns</text>
+<text x="680" y="154" fill="#8b949e" font-size="11" dominant-baseline="middle">max 5569.1 ns</text>
+</svg>
+</div>
+
+</div>
+
+<script>
+var F={
+csv:{
+"Alpine.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,altitude,temperature,pressure,relative_humidity,saturation_vp,dew_point,density_altitude,potential_temp,mixing_ratio,lcl\nDenver Intl_weather,f64,27,5000,5595.9517,5595.9517,5595.9517,0,185185.19,Denver Intl | 1655m | 10.1 °C | RH=45% | Td=-1.3 °C | DA=1464 m | θ=299.4 K,Alpine,D,Denver Intl,1655 m,10.1 °C,835.0 hPa,45%,12.35 hPa,-1.3 °C,1464 m,299.4 K,4.17 g/kg,1166 m AGL\nMexico City_weather,f64,28,5000,5636.095,5636.095,5636.095,0,178571.42,Mexico City | 2250m | 16.0 °C | RH=52% | Td=6.2 °C | DA=2910 m | θ=312.4 K,Alpine,M,Mexico City,2250 m,16.0 °C,773.0 hPa,52%,18.17 hPa,6.2 °C,2910 m,312.4 K,7.70 g/kg,1008 m AGL\nLhasa_weather,f64,27,5000,5548.9297,5548.9297,5548.9297,0,185185.19,Lhasa | 3650m | 8.5 °C | RH=35% | Td=-6.1 °C | DA=3746 m | θ=319.5 K,Alpine,L,Lhasa,3650 m,8.5 °C,652.0 hPa,35%,11.09 hPa,-6.1 °C,3746 m,319.5 K,3.73 g/kg,1494 m AGL\n",
+"Arid.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,altitude,temperature,pressure,relative_humidity,saturation_vp,dew_point,density_altitude,potential_temp,mixing_ratio,lcl\nDeath Valley_weather,f64,27,5000,5569.0957,5569.0957,5569.0957,0,185185.19,Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K,Arid,DV,Death Valley,-86 m,38.5 °C,1025.0 hPa,12%,68.21 hPa,4.1 °C,2713 m,310.6 K,5.01 g/kg,3521 m AGL\n",
+"Polar.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,altitude,temperature,pressure,relative_humidity,saturation_vp,dew_point,density_altitude,potential_temp,mixing_ratio,lcl\nMcMurdo Base_weather,f64,29,5000,5812.6714,5812.6714,5812.6714,0,172413.8,McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K,Polar,Mc,McMurdo Base,10 m,-18.0 °C,984.0 hPa,60%,1.49 hPa,-23.9 °C,-3948 m,257.3 K,0.57 g/kg,602 m AGL\nReykjavik_weather,f64,28,5000,5642.683,5642.683,5642.683,0,178571.42,Reykjavik | 61m | 4.6 °C | RH=82% | Td=1.8 °C | DA=-1172 m | θ=278.4 K,Polar,R,Reykjavik,61 m,4.6 °C,1005.0 hPa,82%,8.48 hPa,1.8 °C,-1172 m,278.4 K,4.33 g/kg,287 m AGL\n",
+"Temperate.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,altitude,temperature,pressure,relative_humidity,saturation_vp,dew_point,density_altitude,potential_temp,mixing_ratio,lcl\nParis CDG_weather,f64,28,5000,5629.8374,5629.8374,5629.8374,0,178571.42,Paris CDG | 119m | 12.4 °C | RH=78% | Td=8.7 °C | DA=-164 m | θ=285.5 K,Temperate,P,Paris CDG,119 m,12.4 °C,1013.2 hPa,78%,14.39 hPa,8.7 °C,-164 m,285.5 K,6.97 g/kg,381 m AGL\nTokyo Narita_weather,f64,28,5000,5656.8774,5656.8774,5656.8774,0,178571.42,Tokyo Narita | 44m | 16.3 °C | RH=71% | Td=11.0 °C | DA=211 m | θ=289.3 K,Temperate,T,Tokyo Narita,44 m,16.3 °C,1015.0 hPa,71%,18.52 hPa,11.0 °C,211 m,289.3 K,8.16 g/kg,539 m AGL\n",
+"Tropical.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,altitude,temperature,pressure,relative_humidity,saturation_vp,dew_point,density_altitude,potential_temp,mixing_ratio,lcl\nNairobi_weather,f64,27,5000,5534.7617,5534.7617,5534.7617,0,185185.19,Nairobi | 1795m | 19.0 °C | RH=65% | Td=12.3 °C | DA=2706 m | θ=310.9 K,Tropical,N,Nairobi,1795 m,19.0 °C,815.0 hPa,65%,21.96 hPa,12.3 °C,2706 m,310.9 K,11.09 g/kg,688 m AGL\nSingapore_weather,f64,28,5000,5640.4956,5640.4956,5640.4956,0,178571.42,Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K,Tropical,S,Singapore,16 m,27.5 °C,1010.0 hPa,84%,36.72 hPa,24.6 °C,1520 m,300.9 K,19.59 g/kg,301 m AGL\n",
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,altitude,temperature,pressure,relative_humidity,saturation_vp,dew_point,density_altitude,potential_temp,mixing_ratio,lcl\nParis CDG_weather,f64,28,5000,5629.8374,5629.8374,5629.8374,0,178571.42,Paris CDG | 119m | 12.4 °C | RH=78% | Td=8.7 °C | DA=-164 m | θ=285.5 K,Temperate,P,Paris CDG,119 m,12.4 °C,1013.2 hPa,78%,14.39 hPa,8.7 °C,-164 m,285.5 K,6.97 g/kg,381 m AGL\nTokyo Narita_weather,f64,28,5000,5656.8774,5656.8774,5656.8774,0,178571.42,Tokyo Narita | 44m | 16.3 °C | RH=71% | Td=11.0 °C | DA=211 m | θ=289.3 K,Temperate,T,Tokyo Narita,44 m,16.3 °C,1015.0 hPa,71%,18.52 hPa,11.0 °C,211 m,289.3 K,8.16 g/kg,539 m AGL\nDenver Intl_weather,f64,27,5000,5595.9517,5595.9517,5595.9517,0,185185.19,Denver Intl | 1655m | 10.1 °C | RH=45% | Td=-1.3 °C | DA=1464 m | θ=299.4 K,Alpine,D,Denver Intl,1655 m,10.1 °C,835.0 hPa,45%,12.35 hPa,-1.3 °C,1464 m,299.4 K,4.17 g/kg,1166 m AGL\nMexico City_weather,f64,28,5000,5636.095,5636.095,5636.095,0,178571.42,Mexico City | 2250m | 16.0 °C | RH=52% | Td=6.2 °C | DA=2910 m | θ=312.4 K,Alpine,M,Mexico City,2250 m,16.0 °C,773.0 hPa,52%,18.17 hPa,6.2 °C,2910 m,312.4 K,7.70 g/kg,1008 m AGL\nMcMurdo Base_weather,f64,29,5000,5812.6714,5812.6714,5812.6714,0,172413.8,McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K,Polar,Mc,McMurdo Base,10 m,-18.0 °C,984.0 hPa,60%,1.49 hPa,-23.9 °C,-3948 m,257.3 K,0.57 g/kg,602 m AGL\nNairobi_weather,f64,27,5000,5534.7617,5534.7617,5534.7617,0,185185.19,Nairobi | 1795m | 19.0 °C | RH=65% | Td=12.3 °C | DA=2706 m | θ=310.9 K,Tropical,N,Nairobi,1795 m,19.0 °C,815.0 hPa,65%,21.96 hPa,12.3 °C,2706 m,310.9 K,11.09 g/kg,688 m AGL\nLhasa_weather,f64,27,5000,5548.9297,5548.9297,5548.9297,0,185185.19,Lhasa | 3650m | 8.5 °C | RH=35% | Td=-6.1 °C | DA=3746 m | θ=319.5 K,Alpine,L,Lhasa,3650 m,8.5 °C,652.0 hPa,35%,11.09 hPa,-6.1 °C,3746 m,319.5 K,3.73 g/kg,1494 m AGL\nDeath Valley_weather,f64,27,5000,5569.0957,5569.0957,5569.0957,0,185185.19,Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K,Arid,DV,Death Valley,-86 m,38.5 °C,1025.0 hPa,12%,68.21 hPa,4.1 °C,2713 m,310.6 K,5.01 g/kg,3521 m AGL\nReykjavik_weather,f64,28,5000,5642.683,5642.683,5642.683,0,178571.42,Reykjavik | 61m | 4.6 °C | RH=82% | Td=1.8 °C | DA=-1172 m | θ=278.4 K,Polar,R,Reykjavik,61 m,4.6 °C,1005.0 hPa,82%,8.48 hPa,1.8 °C,-1172 m,278.4 K,4.33 g/kg,287 m AGL\nSingapore_weather,f64,28,5000,5640.4956,5640.4956,5640.4956,0,178571.42,Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K,Tropical,S,Singapore,16 m,27.5 °C,1010.0 hPa,84%,36.72 hPa,24.6 °C,1520 m,300.9 K,19.59 g/kg,301 m AGL\n"},
+json:{
+"Death Valley.json":"{\n  \"category\": \"Arid\",\n  \"symbol\": \"DV\",\n  \"name\": \"Death Valley\",\n  \"altitude\": \"-86 m\",\n  \"temperature\": \"38.5 °C\",\n  \"pressure\": \"1025.0 hPa\",\n  \"relative_humidity\": \"12%\",\n  \"saturation_vp\": \"68.21 hPa\",\n  \"dew_point\": \"4.1 °C\",\n  \"density_altitude\": \"2713 m\",\n  \"potential_temp\": \"310.6 K\",\n  \"mixing_ratio\": \"5.01 g/kg\",\n  \"lcl\": \"3521 m AGL\",\n  \"experiment_name\": \"Death Valley_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5569.10,\n  \"min_time_ns\": 5569.10,\n  \"max_time_ns\": 5569.10,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K\"\n}",
+"Denver Intl.json":"{\n  \"category\": \"Alpine\",\n  \"symbol\": \"D\",\n  \"name\": \"Denver Intl\",\n  \"altitude\": \"1655 m\",\n  \"temperature\": \"10.1 °C\",\n  \"pressure\": \"835.0 hPa\",\n  \"relative_humidity\": \"45%\",\n  \"saturation_vp\": \"12.35 hPa\",\n  \"dew_point\": \"-1.3 °C\",\n  \"density_altitude\": \"1464 m\",\n  \"potential_temp\": \"299.4 K\",\n  \"mixing_ratio\": \"4.17 g/kg\",\n  \"lcl\": \"1166 m AGL\",\n  \"experiment_name\": \"Denver Intl_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5595.95,\n  \"min_time_ns\": 5595.95,\n  \"max_time_ns\": 5595.95,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Denver Intl | 1655m | 10.1 °C | RH=45% | Td=-1.3 °C | DA=1464 m | θ=299.4 K\"\n}",
+"Lhasa.json":"{\n  \"category\": \"Alpine\",\n  \"symbol\": \"L\",\n  \"name\": \"Lhasa\",\n  \"altitude\": \"3650 m\",\n  \"temperature\": \"8.5 °C\",\n  \"pressure\": \"652.0 hPa\",\n  \"relative_humidity\": \"35%\",\n  \"saturation_vp\": \"11.09 hPa\",\n  \"dew_point\": \"-6.1 °C\",\n  \"density_altitude\": \"3746 m\",\n  \"potential_temp\": \"319.5 K\",\n  \"mixing_ratio\": \"3.73 g/kg\",\n  \"lcl\": \"1494 m AGL\",\n  \"experiment_name\": \"Lhasa_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5548.93,\n  \"min_time_ns\": 5548.93,\n  \"max_time_ns\": 5548.93,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Lhasa | 3650m | 8.5 °C | RH=35% | Td=-6.1 °C | DA=3746 m | θ=319.5 K\"\n}",
+"McMurdo Base.json":"{\n  \"category\": \"Polar\",\n  \"symbol\": \"Mc\",\n  \"name\": \"McMurdo Base\",\n  \"altitude\": \"10 m\",\n  \"temperature\": \"-18.0 °C\",\n  \"pressure\": \"984.0 hPa\",\n  \"relative_humidity\": \"60%\",\n  \"saturation_vp\": \"1.49 hPa\",\n  \"dew_point\": \"-23.9 °C\",\n  \"density_altitude\": \"-3948 m\",\n  \"potential_temp\": \"257.3 K\",\n  \"mixing_ratio\": \"0.57 g/kg\",\n  \"lcl\": \"602 m AGL\",\n  \"experiment_name\": \"McMurdo Base_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 29,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5812.67,\n  \"min_time_ns\": 5812.67,\n  \"max_time_ns\": 5812.67,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 172413.80,\n  \"result\": \"McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K\"\n}",
+"Mexico City.json":"{\n  \"category\": \"Alpine\",\n  \"symbol\": \"M\",\n  \"name\": \"Mexico City\",\n  \"altitude\": \"2250 m\",\n  \"temperature\": \"16.0 °C\",\n  \"pressure\": \"773.0 hPa\",\n  \"relative_humidity\": \"52%\",\n  \"saturation_vp\": \"18.17 hPa\",\n  \"dew_point\": \"6.2 °C\",\n  \"density_altitude\": \"2910 m\",\n  \"potential_temp\": \"312.4 K\",\n  \"mixing_ratio\": \"7.70 g/kg\",\n  \"lcl\": \"1008 m AGL\",\n  \"experiment_name\": \"Mexico City_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5636.10,\n  \"min_time_ns\": 5636.10,\n  \"max_time_ns\": 5636.10,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Mexico City | 2250m | 16.0 °C | RH=52% | Td=6.2 °C | DA=2910 m | θ=312.4 K\"\n}",
+"Nairobi.json":"{\n  \"category\": \"Tropical\",\n  \"symbol\": \"N\",\n  \"name\": \"Nairobi\",\n  \"altitude\": \"1795 m\",\n  \"temperature\": \"19.0 °C\",\n  \"pressure\": \"815.0 hPa\",\n  \"relative_humidity\": \"65%\",\n  \"saturation_vp\": \"21.96 hPa\",\n  \"dew_point\": \"12.3 °C\",\n  \"density_altitude\": \"2706 m\",\n  \"potential_temp\": \"310.9 K\",\n  \"mixing_ratio\": \"11.09 g/kg\",\n  \"lcl\": \"688 m AGL\",\n  \"experiment_name\": \"Nairobi_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5534.76,\n  \"min_time_ns\": 5534.76,\n  \"max_time_ns\": 5534.76,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Nairobi | 1795m | 19.0 °C | RH=65% | Td=12.3 °C | DA=2706 m | θ=310.9 K\"\n}",
+"Paris CDG.json":"{\n  \"category\": \"Temperate\",\n  \"symbol\": \"P\",\n  \"name\": \"Paris CDG\",\n  \"altitude\": \"119 m\",\n  \"temperature\": \"12.4 °C\",\n  \"pressure\": \"1013.2 hPa\",\n  \"relative_humidity\": \"78%\",\n  \"saturation_vp\": \"14.39 hPa\",\n  \"dew_point\": \"8.7 °C\",\n  \"density_altitude\": \"-164 m\",\n  \"potential_temp\": \"285.5 K\",\n  \"mixing_ratio\": \"6.97 g/kg\",\n  \"lcl\": \"381 m AGL\",\n  \"experiment_name\": \"Paris CDG_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5629.84,\n  \"min_time_ns\": 5629.84,\n  \"max_time_ns\": 5629.84,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Paris CDG | 119m | 12.4 °C | RH=78% | Td=8.7 °C | DA=-164 m | θ=285.5 K\"\n}",
+"Reykjavik.json":"{\n  \"category\": \"Polar\",\n  \"symbol\": \"R\",\n  \"name\": \"Reykjavik\",\n  \"altitude\": \"61 m\",\n  \"temperature\": \"4.6 °C\",\n  \"pressure\": \"1005.0 hPa\",\n  \"relative_humidity\": \"82%\",\n  \"saturation_vp\": \"8.48 hPa\",\n  \"dew_point\": \"1.8 °C\",\n  \"density_altitude\": \"-1172 m\",\n  \"potential_temp\": \"278.4 K\",\n  \"mixing_ratio\": \"4.33 g/kg\",\n  \"lcl\": \"287 m AGL\",\n  \"experiment_name\": \"Reykjavik_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5642.68,\n  \"min_time_ns\": 5642.68,\n  \"max_time_ns\": 5642.68,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Reykjavik | 61m | 4.6 °C | RH=82% | Td=1.8 °C | DA=-1172 m | θ=278.4 K\"\n}",
+"Singapore.json":"{\n  \"category\": \"Tropical\",\n  \"symbol\": \"S\",\n  \"name\": \"Singapore\",\n  \"altitude\": \"16 m\",\n  \"temperature\": \"27.5 °C\",\n  \"pressure\": \"1010.0 hPa\",\n  \"relative_humidity\": \"84%\",\n  \"saturation_vp\": \"36.72 hPa\",\n  \"dew_point\": \"24.6 °C\",\n  \"density_altitude\": \"1520 m\",\n  \"potential_temp\": \"300.9 K\",\n  \"mixing_ratio\": \"19.59 g/kg\",\n  \"lcl\": \"301 m AGL\",\n  \"experiment_name\": \"Singapore_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5640.50,\n  \"min_time_ns\": 5640.50,\n  \"max_time_ns\": 5640.50,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K\"\n}",
+"Tokyo Narita.json":"{\n  \"category\": \"Temperate\",\n  \"symbol\": \"T\",\n  \"name\": \"Tokyo Narita\",\n  \"altitude\": \"44 m\",\n  \"temperature\": \"16.3 °C\",\n  \"pressure\": \"1015.0 hPa\",\n  \"relative_humidity\": \"71%\",\n  \"saturation_vp\": \"18.52 hPa\",\n  \"dew_point\": \"11.0 °C\",\n  \"density_altitude\": \"211 m\",\n  \"potential_temp\": \"289.3 K\",\n  \"mixing_ratio\": \"8.16 g/kg\",\n  \"lcl\": \"539 m AGL\",\n  \"experiment_name\": \"Tokyo Narita_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5656.88,\n  \"min_time_ns\": 5656.88,\n  \"max_time_ns\": 5656.88,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Tokyo Narita | 44m | 16.3 °C | RH=71% | Td=11.0 °C | DA=211 m | θ=289.3 K\"\n}",
+"summary.json":"[\n{\n  \"category\": \"Temperate\",\n  \"symbol\": \"P\",\n  \"name\": \"Paris CDG\",\n  \"altitude\": \"119 m\",\n  \"temperature\": \"12.4 °C\",\n  \"pressure\": \"1013.2 hPa\",\n  \"relative_humidity\": \"78%\",\n  \"saturation_vp\": \"14.39 hPa\",\n  \"dew_point\": \"8.7 °C\",\n  \"density_altitude\": \"-164 m\",\n  \"potential_temp\": \"285.5 K\",\n  \"mixing_ratio\": \"6.97 g/kg\",\n  \"lcl\": \"381 m AGL\",\n  \"experiment_name\": \"Paris CDG_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5629.84,\n  \"min_time_ns\": 5629.84,\n  \"max_time_ns\": 5629.84,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Paris CDG | 119m | 12.4 °C | RH=78% | Td=8.7 °C | DA=-164 m | θ=285.5 K\"\n},\n{\n  \"category\": \"Temperate\",\n  \"symbol\": \"T\",\n  \"name\": \"Tokyo Narita\",\n  \"altitude\": \"44 m\",\n  \"temperature\": \"16.3 °C\",\n  \"pressure\": \"1015.0 hPa\",\n  \"relative_humidity\": \"71%\",\n  \"saturation_vp\": \"18.52 hPa\",\n  \"dew_point\": \"11.0 °C\",\n  \"density_altitude\": \"211 m\",\n  \"potential_temp\": \"289.3 K\",\n  \"mixing_ratio\": \"8.16 g/kg\",\n  \"lcl\": \"539 m AGL\",\n  \"experiment_name\": \"Tokyo Narita_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5656.88,\n  \"min_time_ns\": 5656.88,\n  \"max_time_ns\": 5656.88,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Tokyo Narita | 44m | 16.3 °C | RH=71% | Td=11.0 °C | DA=211 m | θ=289.3 K\"\n},\n{\n  \"category\": \"Alpine\",\n  \"symbol\": \"D\",\n  \"name\": \"Denver Intl\",\n  \"altitude\": \"1655 m\",\n  \"temperature\": \"10.1 °C\",\n  \"pressure\": \"835.0 hPa\",\n  \"relative_humidity\": \"45%\",\n  \"saturation_vp\": \"12.35 hPa\",\n  \"dew_point\": \"-1.3 °C\",\n  \"density_altitude\": \"1464 m\",\n  \"potential_temp\": \"299.4 K\",\n  \"mixing_ratio\": \"4.17 g/kg\",\n  \"lcl\": \"1166 m AGL\",\n  \"experiment_name\": \"Denver Intl_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5595.95,\n  \"min_time_ns\": 5595.95,\n  \"max_time_ns\": 5595.95,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Denver Intl | 1655m | 10.1 °C | RH=45% | Td=-1.3 °C | DA=1464 m | θ=299.4 K\"\n},\n{\n  \"category\": \"Alpine\",\n  \"symbol\": \"M\",\n  \"name\": \"Mexico City\",\n  \"altitude\": \"2250 m\",\n  \"temperature\": \"16.0 °C\",\n  \"pressure\": \"773.0 hPa\",\n  \"relative_humidity\": \"52%\",\n  \"saturation_vp\": \"18.17 hPa\",\n  \"dew_point\": \"6.2 °C\",\n  \"density_altitude\": \"2910 m\",\n  \"potential_temp\": \"312.4 K\",\n  \"mixing_ratio\": \"7.70 g/kg\",\n  \"lcl\": \"1008 m AGL\",\n  \"experiment_name\": \"Mexico City_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5636.10,\n  \"min_time_ns\": 5636.10,\n  \"max_time_ns\": 5636.10,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Mexico City | 2250m | 16.0 °C | RH=52% | Td=6.2 °C | DA=2910 m | θ=312.4 K\"\n},\n{\n  \"category\": \"Polar\",\n  \"symbol\": \"Mc\",\n  \"name\": \"McMurdo Base\",\n  \"altitude\": \"10 m\",\n  \"temperature\": \"-18.0 °C\",\n  \"pressure\": \"984.0 hPa\",\n  \"relative_humidity\": \"60%\",\n  \"saturation_vp\": \"1.49 hPa\",\n  \"dew_point\": \"-23.9 °C\",\n  \"density_altitude\": \"-3948 m\",\n  \"potential_temp\": \"257.3 K\",\n  \"mixing_ratio\": \"0.57 g/kg\",\n  \"lcl\": \"602 m AGL\",\n  \"experiment_name\": \"McMurdo Base_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 29,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5812.67,\n  \"min_time_ns\": 5812.67,\n  \"max_time_ns\": 5812.67,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 172413.80,\n  \"result\": \"McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K\"\n},\n{\n  \"category\": \"Tropical\",\n  \"symbol\": \"N\",\n  \"name\": \"Nairobi\",\n  \"altitude\": \"1795 m\",\n  \"temperature\": \"19.0 °C\",\n  \"pressure\": \"815.0 hPa\",\n  \"relative_humidity\": \"65%\",\n  \"saturation_vp\": \"21.96 hPa\",\n  \"dew_point\": \"12.3 °C\",\n  \"density_altitude\": \"2706 m\",\n  \"potential_temp\": \"310.9 K\",\n  \"mixing_ratio\": \"11.09 g/kg\",\n  \"lcl\": \"688 m AGL\",\n  \"experiment_name\": \"Nairobi_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5534.76,\n  \"min_time_ns\": 5534.76,\n  \"max_time_ns\": 5534.76,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Nairobi | 1795m | 19.0 °C | RH=65% | Td=12.3 °C | DA=2706 m | θ=310.9 K\"\n},\n{\n  \"category\": \"Alpine\",\n  \"symbol\": \"L\",\n  \"name\": \"Lhasa\",\n  \"altitude\": \"3650 m\",\n  \"temperature\": \"8.5 °C\",\n  \"pressure\": \"652.0 hPa\",\n  \"relative_humidity\": \"35%\",\n  \"saturation_vp\": \"11.09 hPa\",\n  \"dew_point\": \"-6.1 °C\",\n  \"density_altitude\": \"3746 m\",\n  \"potential_temp\": \"319.5 K\",\n  \"mixing_ratio\": \"3.73 g/kg\",\n  \"lcl\": \"1494 m AGL\",\n  \"experiment_name\": \"Lhasa_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5548.93,\n  \"min_time_ns\": 5548.93,\n  \"max_time_ns\": 5548.93,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Lhasa | 3650m | 8.5 °C | RH=35% | Td=-6.1 °C | DA=3746 m | θ=319.5 K\"\n},\n{\n  \"category\": \"Arid\",\n  \"symbol\": \"DV\",\n  \"name\": \"Death Valley\",\n  \"altitude\": \"-86 m\",\n  \"temperature\": \"38.5 °C\",\n  \"pressure\": \"1025.0 hPa\",\n  \"relative_humidity\": \"12%\",\n  \"saturation_vp\": \"68.21 hPa\",\n  \"dew_point\": \"4.1 °C\",\n  \"density_altitude\": \"2713 m\",\n  \"potential_temp\": \"310.6 K\",\n  \"mixing_ratio\": \"5.01 g/kg\",\n  \"lcl\": \"3521 m AGL\",\n  \"experiment_name\": \"Death Valley_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 27,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5569.10,\n  \"min_time_ns\": 5569.10,\n  \"max_time_ns\": 5569.10,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 185185.19,\n  \"result\": \"Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K\"\n},\n{\n  \"category\": \"Polar\",\n  \"symbol\": \"R\",\n  \"name\": \"Reykjavik\",\n  \"altitude\": \"61 m\",\n  \"temperature\": \"4.6 °C\",\n  \"pressure\": \"1005.0 hPa\",\n  \"relative_humidity\": \"82%\",\n  \"saturation_vp\": \"8.48 hPa\",\n  \"dew_point\": \"1.8 °C\",\n  \"density_altitude\": \"-1172 m\",\n  \"potential_temp\": \"278.4 K\",\n  \"mixing_ratio\": \"4.33 g/kg\",\n  \"lcl\": \"287 m AGL\",\n  \"experiment_name\": \"Reykjavik_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5642.68,\n  \"min_time_ns\": 5642.68,\n  \"max_time_ns\": 5642.68,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Reykjavik | 61m | 4.6 °C | RH=82% | Td=1.8 °C | DA=-1172 m | θ=278.4 K\"\n},\n{\n  \"category\": \"Tropical\",\n  \"symbol\": \"S\",\n  \"name\": \"Singapore\",\n  \"altitude\": \"16 m\",\n  \"temperature\": \"27.5 °C\",\n  \"pressure\": \"1010.0 hPa\",\n  \"relative_humidity\": \"84%\",\n  \"saturation_vp\": \"36.72 hPa\",\n  \"dew_point\": \"24.6 °C\",\n  \"density_altitude\": \"1520 m\",\n  \"potential_temp\": \"300.9 K\",\n  \"mixing_ratio\": \"19.59 g/kg\",\n  \"lcl\": \"301 m AGL\",\n  \"experiment_name\": \"Singapore_weather\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 28,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 5640.50,\n  \"min_time_ns\": 5640.50,\n  \"max_time_ns\": 5640.50,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 178571.42,\n  \"result\": \"Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K\"\n}\n]"},
+yaml:{
+"Alpine.yaml":"category: Alpine\ncount: 3\nentries:\n  - label: Denver Intl\n    symbol: D\n    name: Denver Intl\n    altitude: 1655 m\n    temperature: 10.1 °C\n    pressure: 835.0 hPa\n    relative_humidity: 45%\n    saturation_vp: 12.35 hPa\n    dew_point: -1.3 °C\n    density_altitude: 1464 m\n    potential_temp: 299.4 K\n    mixing_ratio: 4.17 g/kg\n    lcl: 1166 m AGL\n    avg_time_ns: 5595.95\n  - label: Mexico City\n    symbol: M\n    name: Mexico City\n    altitude: 2250 m\n    temperature: 16.0 °C\n    pressure: 773.0 hPa\n    relative_humidity: 52%\n    saturation_vp: 18.17 hPa\n    dew_point: 6.2 °C\n    density_altitude: 2910 m\n    potential_temp: 312.4 K\n    mixing_ratio: 7.70 g/kg\n    lcl: 1008 m AGL\n    avg_time_ns: 5636.10\n  - label: Lhasa\n    symbol: L\n    name: Lhasa\n    altitude: 3650 m\n    temperature: 8.5 °C\n    pressure: 652.0 hPa\n    relative_humidity: 35%\n    saturation_vp: 11.09 hPa\n    dew_point: -6.1 °C\n    density_altitude: 3746 m\n    potential_temp: 319.5 K\n    mixing_ratio: 3.73 g/kg\n    lcl: 1494 m AGL\n    avg_time_ns: 5548.93\n",
+"Arid.yaml":"category: Arid\ncount: 1\nentries:\n  - label: Death Valley\n    symbol: DV\n    name: Death Valley\n    altitude: -86 m\n    temperature: 38.5 °C\n    pressure: 1025.0 hPa\n    relative_humidity: 12%\n    saturation_vp: 68.21 hPa\n    dew_point: 4.1 °C\n    density_altitude: 2713 m\n    potential_temp: 310.6 K\n    mixing_ratio: 5.01 g/kg\n    lcl: 3521 m AGL\n    avg_time_ns: 5569.10\n",
+"Death Valley.yaml":"category: Arid\nsymbol: DV\nname: Death Valley\naltitude: -86 m\ntemperature: 38.5 °C\npressure: 1025.0 hPa\nrelative_humidity: 12%\nsaturation_vp: 68.21 hPa\ndew_point: 4.1 °C\ndensity_altitude: 2713 m\npotential_temp: 310.6 K\nmixing_ratio: 5.01 g/kg\nlcl: 3521 m AGL\nexperiment_name: Death Valley_weather\nprecision: f64\nelapsed_ms: 27\niterations: 5000\navg_time_ns: 5569.10\nmin_time_ns: 5569.10\nmax_time_ns: 5569.10\ntime_stddev: 0.0000\niterations_per_sec: 185185.19\nresult: Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K\n",
+"Denver Intl.yaml":"category: Alpine\nsymbol: D\nname: Denver Intl\naltitude: 1655 m\ntemperature: 10.1 °C\npressure: 835.0 hPa\nrelative_humidity: 45%\nsaturation_vp: 12.35 hPa\ndew_point: -1.3 °C\ndensity_altitude: 1464 m\npotential_temp: 299.4 K\nmixing_ratio: 4.17 g/kg\nlcl: 1166 m AGL\nexperiment_name: Denver Intl_weather\nprecision: f64\nelapsed_ms: 27\niterations: 5000\navg_time_ns: 5595.95\nmin_time_ns: 5595.95\nmax_time_ns: 5595.95\ntime_stddev: 0.0000\niterations_per_sec: 185185.19\nresult: Denver Intl | 1655m | 10.1 °C | RH=45% | Td=-1.3 °C | DA=1464 m | θ=299.4 K\n",
+"Lhasa.yaml":"category: Alpine\nsymbol: L\nname: Lhasa\naltitude: 3650 m\ntemperature: 8.5 °C\npressure: 652.0 hPa\nrelative_humidity: 35%\nsaturation_vp: 11.09 hPa\ndew_point: -6.1 °C\ndensity_altitude: 3746 m\npotential_temp: 319.5 K\nmixing_ratio: 3.73 g/kg\nlcl: 1494 m AGL\nexperiment_name: Lhasa_weather\nprecision: f64\nelapsed_ms: 27\niterations: 5000\navg_time_ns: 5548.93\nmin_time_ns: 5548.93\nmax_time_ns: 5548.93\ntime_stddev: 0.0000\niterations_per_sec: 185185.19\nresult: Lhasa | 3650m | 8.5 °C | RH=35% | Td=-6.1 °C | DA=3746 m | θ=319.5 K\n",
+"McMurdo Base.yaml":"category: Polar\nsymbol: Mc\nname: McMurdo Base\naltitude: 10 m\ntemperature: -18.0 °C\npressure: 984.0 hPa\nrelative_humidity: 60%\nsaturation_vp: 1.49 hPa\ndew_point: -23.9 °C\ndensity_altitude: -3948 m\npotential_temp: 257.3 K\nmixing_ratio: 0.57 g/kg\nlcl: 602 m AGL\nexperiment_name: McMurdo Base_weather\nprecision: f64\nelapsed_ms: 29\niterations: 5000\navg_time_ns: 5812.67\nmin_time_ns: 5812.67\nmax_time_ns: 5812.67\ntime_stddev: 0.0000\niterations_per_sec: 172413.80\nresult: McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K\n",
+"Mexico City.yaml":"category: Alpine\nsymbol: M\nname: Mexico City\naltitude: 2250 m\ntemperature: 16.0 °C\npressure: 773.0 hPa\nrelative_humidity: 52%\nsaturation_vp: 18.17 hPa\ndew_point: 6.2 °C\ndensity_altitude: 2910 m\npotential_temp: 312.4 K\nmixing_ratio: 7.70 g/kg\nlcl: 1008 m AGL\nexperiment_name: Mexico City_weather\nprecision: f64\nelapsed_ms: 28\niterations: 5000\navg_time_ns: 5636.10\nmin_time_ns: 5636.10\nmax_time_ns: 5636.10\ntime_stddev: 0.0000\niterations_per_sec: 178571.42\nresult: Mexico City | 2250m | 16.0 °C | RH=52% | Td=6.2 °C | DA=2910 m | θ=312.4 K\n",
+"Nairobi.yaml":"category: Tropical\nsymbol: N\nname: Nairobi\naltitude: 1795 m\ntemperature: 19.0 °C\npressure: 815.0 hPa\nrelative_humidity: 65%\nsaturation_vp: 21.96 hPa\ndew_point: 12.3 °C\ndensity_altitude: 2706 m\npotential_temp: 310.9 K\nmixing_ratio: 11.09 g/kg\nlcl: 688 m AGL\nexperiment_name: Nairobi_weather\nprecision: f64\nelapsed_ms: 27\niterations: 5000\navg_time_ns: 5534.76\nmin_time_ns: 5534.76\nmax_time_ns: 5534.76\ntime_stddev: 0.0000\niterations_per_sec: 185185.19\nresult: Nairobi | 1795m | 19.0 °C | RH=65% | Td=12.3 °C | DA=2706 m | θ=310.9 K\n",
+"Paris CDG.yaml":"category: Temperate\nsymbol: P\nname: Paris CDG\naltitude: 119 m\ntemperature: 12.4 °C\npressure: 1013.2 hPa\nrelative_humidity: 78%\nsaturation_vp: 14.39 hPa\ndew_point: 8.7 °C\ndensity_altitude: -164 m\npotential_temp: 285.5 K\nmixing_ratio: 6.97 g/kg\nlcl: 381 m AGL\nexperiment_name: Paris CDG_weather\nprecision: f64\nelapsed_ms: 28\niterations: 5000\navg_time_ns: 5629.84\nmin_time_ns: 5629.84\nmax_time_ns: 5629.84\ntime_stddev: 0.0000\niterations_per_sec: 178571.42\nresult: Paris CDG | 119m | 12.4 °C | RH=78% | Td=8.7 °C | DA=-164 m | θ=285.5 K\n",
+"Polar.yaml":"category: Polar\ncount: 2\nentries:\n  - label: McMurdo Base\n    symbol: Mc\n    name: McMurdo Base\n    altitude: 10 m\n    temperature: -18.0 °C\n    pressure: 984.0 hPa\n    relative_humidity: 60%\n    saturation_vp: 1.49 hPa\n    dew_point: -23.9 °C\n    density_altitude: -3948 m\n    potential_temp: 257.3 K\n    mixing_ratio: 0.57 g/kg\n    lcl: 602 m AGL\n    avg_time_ns: 5812.67\n  - label: Reykjavik\n    symbol: R\n    name: Reykjavik\n    altitude: 61 m\n    temperature: 4.6 °C\n    pressure: 1005.0 hPa\n    relative_humidity: 82%\n    saturation_vp: 8.48 hPa\n    dew_point: 1.8 °C\n    density_altitude: -1172 m\n    potential_temp: 278.4 K\n    mixing_ratio: 4.33 g/kg\n    lcl: 287 m AGL\n    avg_time_ns: 5642.68\n",
+"Reykjavik.yaml":"category: Polar\nsymbol: R\nname: Reykjavik\naltitude: 61 m\ntemperature: 4.6 °C\npressure: 1005.0 hPa\nrelative_humidity: 82%\nsaturation_vp: 8.48 hPa\ndew_point: 1.8 °C\ndensity_altitude: -1172 m\npotential_temp: 278.4 K\nmixing_ratio: 4.33 g/kg\nlcl: 287 m AGL\nexperiment_name: Reykjavik_weather\nprecision: f64\nelapsed_ms: 28\niterations: 5000\navg_time_ns: 5642.68\nmin_time_ns: 5642.68\nmax_time_ns: 5642.68\ntime_stddev: 0.0000\niterations_per_sec: 178571.42\nresult: Reykjavik | 61m | 4.6 °C | RH=82% | Td=1.8 °C | DA=-1172 m | θ=278.4 K\n",
+"Singapore.yaml":"category: Tropical\nsymbol: S\nname: Singapore\naltitude: 16 m\ntemperature: 27.5 °C\npressure: 1010.0 hPa\nrelative_humidity: 84%\nsaturation_vp: 36.72 hPa\ndew_point: 24.6 °C\ndensity_altitude: 1520 m\npotential_temp: 300.9 K\nmixing_ratio: 19.59 g/kg\nlcl: 301 m AGL\nexperiment_name: Singapore_weather\nprecision: f64\nelapsed_ms: 28\niterations: 5000\navg_time_ns: 5640.50\nmin_time_ns: 5640.50\nmax_time_ns: 5640.50\ntime_stddev: 0.0000\niterations_per_sec: 178571.42\nresult: Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K\n",
+"Temperate.yaml":"category: Temperate\ncount: 2\nentries:\n  - label: Paris CDG\n    symbol: P\n    name: Paris CDG\n    altitude: 119 m\n    temperature: 12.4 °C\n    pressure: 1013.2 hPa\n    relative_humidity: 78%\n    saturation_vp: 14.39 hPa\n    dew_point: 8.7 °C\n    density_altitude: -164 m\n    potential_temp: 285.5 K\n    mixing_ratio: 6.97 g/kg\n    lcl: 381 m AGL\n    avg_time_ns: 5629.84\n  - label: Tokyo Narita\n    symbol: T\n    name: Tokyo Narita\n    altitude: 44 m\n    temperature: 16.3 °C\n    pressure: 1015.0 hPa\n    relative_humidity: 71%\n    saturation_vp: 18.52 hPa\n    dew_point: 11.0 °C\n    density_altitude: 211 m\n    potential_temp: 289.3 K\n    mixing_ratio: 8.16 g/kg\n    lcl: 539 m AGL\n    avg_time_ns: 5656.88\n",
+"Tokyo Narita.yaml":"category: Temperate\nsymbol: T\nname: Tokyo Narita\naltitude: 44 m\ntemperature: 16.3 °C\npressure: 1015.0 hPa\nrelative_humidity: 71%\nsaturation_vp: 18.52 hPa\ndew_point: 11.0 °C\ndensity_altitude: 211 m\npotential_temp: 289.3 K\nmixing_ratio: 8.16 g/kg\nlcl: 539 m AGL\nexperiment_name: Tokyo Narita_weather\nprecision: f64\nelapsed_ms: 28\niterations: 5000\navg_time_ns: 5656.88\nmin_time_ns: 5656.88\nmax_time_ns: 5656.88\ntime_stddev: 0.0000\niterations_per_sec: 178571.42\nresult: Tokyo Narita | 44m | 16.3 °C | RH=71% | Td=11.0 °C | DA=211 m | θ=289.3 K\n",
+"Tropical.yaml":"category: Tropical\ncount: 2\nentries:\n  - label: Nairobi\n    symbol: N\n    name: Nairobi\n    altitude: 1795 m\n    temperature: 19.0 °C\n    pressure: 815.0 hPa\n    relative_humidity: 65%\n    saturation_vp: 21.96 hPa\n    dew_point: 12.3 °C\n    density_altitude: 2706 m\n    potential_temp: 310.9 K\n    mixing_ratio: 11.09 g/kg\n    lcl: 688 m AGL\n    avg_time_ns: 5534.76\n  - label: Singapore\n    symbol: S\n    name: Singapore\n    altitude: 16 m\n    temperature: 27.5 °C\n    pressure: 1010.0 hPa\n    relative_humidity: 84%\n    saturation_vp: 36.72 hPa\n    dew_point: 24.6 °C\n    density_altitude: 1520 m\n    potential_temp: 300.9 K\n    mixing_ratio: 19.59 g/kg\n    lcl: 301 m AGL\n    avg_time_ns: 5640.50\n",
+"summary.yaml":"title: Weather Station — Atmospheric Pressure, Humidity & Dew Point\ncount: 10\nentries:\n  - label: Paris CDG\n    category: Temperate\n    symbol: P\n    name: Paris CDG\n    altitude: 119 m\n    temperature: 12.4 °C\n    pressure: 1013.2 hPa\n    relative_humidity: 78%\n    saturation_vp: 14.39 hPa\n    dew_point: 8.7 °C\n    density_altitude: -164 m\n    potential_temp: 285.5 K\n    mixing_ratio: 6.97 g/kg\n    lcl: 381 m AGL\n    avg_time_ns: 5629.84\n    iterations_per_sec: 178571.42\n  - label: Tokyo Narita\n    category: Temperate\n    symbol: T\n    name: Tokyo Narita\n    altitude: 44 m\n    temperature: 16.3 °C\n    pressure: 1015.0 hPa\n    relative_humidity: 71%\n    saturation_vp: 18.52 hPa\n    dew_point: 11.0 °C\n    density_altitude: 211 m\n    potential_temp: 289.3 K\n    mixing_ratio: 8.16 g/kg\n    lcl: 539 m AGL\n    avg_time_ns: 5656.88\n    iterations_per_sec: 178571.42\n  - label: Denver Intl\n    category: Alpine\n    symbol: D\n    name: Denver Intl\n    altitude: 1655 m\n    temperature: 10.1 °C\n    pressure: 835.0 hPa\n    relative_humidity: 45%\n    saturation_vp: 12.35 hPa\n    dew_point: -1.3 °C\n    density_altitude: 1464 m\n    potential_temp: 299.4 K\n    mixing_ratio: 4.17 g/kg\n    lcl: 1166 m AGL\n    avg_time_ns: 5595.95\n    iterations_per_sec: 185185.19\n  - label: Mexico City\n    category: Alpine\n    symbol: M\n    name: Mexico City\n    altitude: 2250 m\n    temperature: 16.0 °C\n    pressure: 773.0 hPa\n    relative_humidity: 52%\n    saturation_vp: 18.17 hPa\n    dew_point: 6.2 °C\n    density_altitude: 2910 m\n    potential_temp: 312.4 K\n    mixing_ratio: 7.70 g/kg\n    lcl: 1008 m AGL\n    avg_time_ns: 5636.10\n    iterations_per_sec: 178571.42\n  - label: McMurdo Base\n    category: Polar\n    symbol: Mc\n    name: McMurdo Base\n    altitude: 10 m\n    temperature: -18.0 °C\n    pressure: 984.0 hPa\n    relative_humidity: 60%\n    saturation_vp: 1.49 hPa\n    dew_point: -23.9 °C\n    density_altitude: -3948 m\n    potential_temp: 257.3 K\n    mixing_ratio: 0.57 g/kg\n    lcl: 602 m AGL\n    avg_time_ns: 5812.67\n    iterations_per_sec: 172413.80\n  - label: Nairobi\n    category: Tropical\n    symbol: N\n    name: Nairobi\n    altitude: 1795 m\n    temperature: 19.0 °C\n    pressure: 815.0 hPa\n    relative_humidity: 65%\n    saturation_vp: 21.96 hPa\n    dew_point: 12.3 °C\n    density_altitude: 2706 m\n    potential_temp: 310.9 K\n    mixing_ratio: 11.09 g/kg\n    lcl: 688 m AGL\n    avg_time_ns: 5534.76\n    iterations_per_sec: 185185.19\n  - label: Lhasa\n    category: Alpine\n    symbol: L\n    name: Lhasa\n    altitude: 3650 m\n    temperature: 8.5 °C\n    pressure: 652.0 hPa\n    relative_humidity: 35%\n    saturation_vp: 11.09 hPa\n    dew_point: -6.1 °C\n    density_altitude: 3746 m\n    potential_temp: 319.5 K\n    mixing_ratio: 3.73 g/kg\n    lcl: 1494 m AGL\n    avg_time_ns: 5548.93\n    iterations_per_sec: 185185.19\n  - label: Death Valley\n    category: Arid\n    symbol: DV\n    name: Death Valley\n    altitude: -86 m\n    temperature: 38.5 °C\n    pressure: 1025.0 hPa\n    relative_humidity: 12%\n    saturation_vp: 68.21 hPa\n    dew_point: 4.1 °C\n    density_altitude: 2713 m\n    potential_temp: 310.6 K\n    mixing_ratio: 5.01 g/kg\n    lcl: 3521 m AGL\n    avg_time_ns: 5569.10\n    iterations_per_sec: 185185.19\n  - label: Reykjavik\n    category: Polar\n    symbol: R\n    name: Reykjavik\n    altitude: 61 m\n    temperature: 4.6 °C\n    pressure: 1005.0 hPa\n    relative_humidity: 82%\n    saturation_vp: 8.48 hPa\n    dew_point: 1.8 °C\n    density_altitude: -1172 m\n    potential_temp: 278.4 K\n    mixing_ratio: 4.33 g/kg\n    lcl: 287 m AGL\n    avg_time_ns: 5642.68\n    iterations_per_sec: 178571.42\n  - label: Singapore\n    category: Tropical\n    symbol: S\n    name: Singapore\n    altitude: 16 m\n    temperature: 27.5 °C\n    pressure: 1010.0 hPa\n    relative_humidity: 84%\n    saturation_vp: 36.72 hPa\n    dew_point: 24.6 °C\n    density_altitude: 1520 m\n    potential_temp: 300.9 K\n    mixing_ratio: 19.59 g/kg\n    lcl: 301 m AGL\n    avg_time_ns: 5640.50\n    iterations_per_sec: 178571.42\n"},
+toml:{
+"Death Valley.toml":"[benchmark]\ncategory = \"Arid\"\nsymbol = \"DV\"\nname = \"Death Valley\"\naltitude = \"-86 m\"\ntemperature = \"38.5 °C\"\npressure = \"1025.0 hPa\"\nrelative_humidity = \"12%\"\nsaturation_vp = \"68.21 hPa\"\ndew_point = \"4.1 °C\"\ndensity_altitude = \"2713 m\"\npotential_temp = \"310.6 K\"\nmixing_ratio = \"5.01 g/kg\"\nlcl = \"3521 m AGL\"\nexperiment_name = \"Death Valley_weather\"\nprecision = \"f64\"\nelapsed_ms = 27\niterations = 5000\navg_time_ns = 5569.10\nmin_time_ns = 5569.10\nmax_time_ns = 5569.10\ntime_stddev = 0.0000\niterations_per_sec = 185185.19\nresult = \"Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K\"\n",
+"Denver Intl.toml":"[benchmark]\ncategory = \"Alpine\"\nsymbol = \"D\"\nname = \"Denver Intl\"\naltitude = \"1655 m\"\ntemperature = \"10.1 °C\"\npressure = \"835.0 hPa\"\nrelative_humidity = \"45%\"\nsaturation_vp = \"12.35 hPa\"\ndew_point = \"-1.3 °C\"\ndensity_altitude = \"1464 m\"\npotential_temp = \"299.4 K\"\nmixing_ratio = \"4.17 g/kg\"\nlcl = \"1166 m AGL\"\nexperiment_name = \"Denver Intl_weather\"\nprecision = \"f64\"\nelapsed_ms = 27\niterations = 5000\navg_time_ns = 5595.95\nmin_time_ns = 5595.95\nmax_time_ns = 5595.95\ntime_stddev = 0.0000\niterations_per_sec = 185185.19\nresult = \"Denver Intl | 1655m | 10.1 °C | RH=45% | Td=-1.3 °C | DA=1464 m | θ=299.4 K\"\n",
+"Lhasa.toml":"[benchmark]\ncategory = \"Alpine\"\nsymbol = \"L\"\nname = \"Lhasa\"\naltitude = \"3650 m\"\ntemperature = \"8.5 °C\"\npressure = \"652.0 hPa\"\nrelative_humidity = \"35%\"\nsaturation_vp = \"11.09 hPa\"\ndew_point = \"-6.1 °C\"\ndensity_altitude = \"3746 m\"\npotential_temp = \"319.5 K\"\nmixing_ratio = \"3.73 g/kg\"\nlcl = \"1494 m AGL\"\nexperiment_name = \"Lhasa_weather\"\nprecision = \"f64\"\nelapsed_ms = 27\niterations = 5000\navg_time_ns = 5548.93\nmin_time_ns = 5548.93\nmax_time_ns = 5548.93\ntime_stddev = 0.0000\niterations_per_sec = 185185.19\nresult = \"Lhasa | 3650m | 8.5 °C | RH=35% | Td=-6.1 °C | DA=3746 m | θ=319.5 K\"\n",
+"McMurdo Base.toml":"[benchmark]\ncategory = \"Polar\"\nsymbol = \"Mc\"\nname = \"McMurdo Base\"\naltitude = \"10 m\"\ntemperature = \"-18.0 °C\"\npressure = \"984.0 hPa\"\nrelative_humidity = \"60%\"\nsaturation_vp = \"1.49 hPa\"\ndew_point = \"-23.9 °C\"\ndensity_altitude = \"-3948 m\"\npotential_temp = \"257.3 K\"\nmixing_ratio = \"0.57 g/kg\"\nlcl = \"602 m AGL\"\nexperiment_name = \"McMurdo Base_weather\"\nprecision = \"f64\"\nelapsed_ms = 29\niterations = 5000\navg_time_ns = 5812.67\nmin_time_ns = 5812.67\nmax_time_ns = 5812.67\ntime_stddev = 0.0000\niterations_per_sec = 172413.80\nresult = \"McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K\"\n",
+"Mexico City.toml":"[benchmark]\ncategory = \"Alpine\"\nsymbol = \"M\"\nname = \"Mexico City\"\naltitude = \"2250 m\"\ntemperature = \"16.0 °C\"\npressure = \"773.0 hPa\"\nrelative_humidity = \"52%\"\nsaturation_vp = \"18.17 hPa\"\ndew_point = \"6.2 °C\"\ndensity_altitude = \"2910 m\"\npotential_temp = \"312.4 K\"\nmixing_ratio = \"7.70 g/kg\"\nlcl = \"1008 m AGL\"\nexperiment_name = \"Mexico City_weather\"\nprecision = \"f64\"\nelapsed_ms = 28\niterations = 5000\navg_time_ns = 5636.10\nmin_time_ns = 5636.10\nmax_time_ns = 5636.10\ntime_stddev = 0.0000\niterations_per_sec = 178571.42\nresult = \"Mexico City | 2250m | 16.0 °C | RH=52% | Td=6.2 °C | DA=2910 m | θ=312.4 K\"\n",
+"Nairobi.toml":"[benchmark]\ncategory = \"Tropical\"\nsymbol = \"N\"\nname = \"Nairobi\"\naltitude = \"1795 m\"\ntemperature = \"19.0 °C\"\npressure = \"815.0 hPa\"\nrelative_humidity = \"65%\"\nsaturation_vp = \"21.96 hPa\"\ndew_point = \"12.3 °C\"\ndensity_altitude = \"2706 m\"\npotential_temp = \"310.9 K\"\nmixing_ratio = \"11.09 g/kg\"\nlcl = \"688 m AGL\"\nexperiment_name = \"Nairobi_weather\"\nprecision = \"f64\"\nelapsed_ms = 27\niterations = 5000\navg_time_ns = 5534.76\nmin_time_ns = 5534.76\nmax_time_ns = 5534.76\ntime_stddev = 0.0000\niterations_per_sec = 185185.19\nresult = \"Nairobi | 1795m | 19.0 °C | RH=65% | Td=12.3 °C | DA=2706 m | θ=310.9 K\"\n",
+"Paris CDG.toml":"[benchmark]\ncategory = \"Temperate\"\nsymbol = \"P\"\nname = \"Paris CDG\"\naltitude = \"119 m\"\ntemperature = \"12.4 °C\"\npressure = \"1013.2 hPa\"\nrelative_humidity = \"78%\"\nsaturation_vp = \"14.39 hPa\"\ndew_point = \"8.7 °C\"\ndensity_altitude = \"-164 m\"\npotential_temp = \"285.5 K\"\nmixing_ratio = \"6.97 g/kg\"\nlcl = \"381 m AGL\"\nexperiment_name = \"Paris CDG_weather\"\nprecision = \"f64\"\nelapsed_ms = 28\niterations = 5000\navg_time_ns = 5629.84\nmin_time_ns = 5629.84\nmax_time_ns = 5629.84\ntime_stddev = 0.0000\niterations_per_sec = 178571.42\nresult = \"Paris CDG | 119m | 12.4 °C | RH=78% | Td=8.7 °C | DA=-164 m | θ=285.5 K\"\n",
+"Reykjavik.toml":"[benchmark]\ncategory = \"Polar\"\nsymbol = \"R\"\nname = \"Reykjavik\"\naltitude = \"61 m\"\ntemperature = \"4.6 °C\"\npressure = \"1005.0 hPa\"\nrelative_humidity = \"82%\"\nsaturation_vp = \"8.48 hPa\"\ndew_point = \"1.8 °C\"\ndensity_altitude = \"-1172 m\"\npotential_temp = \"278.4 K\"\nmixing_ratio = \"4.33 g/kg\"\nlcl = \"287 m AGL\"\nexperiment_name = \"Reykjavik_weather\"\nprecision = \"f64\"\nelapsed_ms = 28\niterations = 5000\navg_time_ns = 5642.68\nmin_time_ns = 5642.68\nmax_time_ns = 5642.68\ntime_stddev = 0.0000\niterations_per_sec = 178571.42\nresult = \"Reykjavik | 61m | 4.6 °C | RH=82% | Td=1.8 °C | DA=-1172 m | θ=278.4 K\"\n",
+"Singapore.toml":"[benchmark]\ncategory = \"Tropical\"\nsymbol = \"S\"\nname = \"Singapore\"\naltitude = \"16 m\"\ntemperature = \"27.5 °C\"\npressure = \"1010.0 hPa\"\nrelative_humidity = \"84%\"\nsaturation_vp = \"36.72 hPa\"\ndew_point = \"24.6 °C\"\ndensity_altitude = \"1520 m\"\npotential_temp = \"300.9 K\"\nmixing_ratio = \"19.59 g/kg\"\nlcl = \"301 m AGL\"\nexperiment_name = \"Singapore_weather\"\nprecision = \"f64\"\nelapsed_ms = 28\niterations = 5000\navg_time_ns = 5640.50\nmin_time_ns = 5640.50\nmax_time_ns = 5640.50\ntime_stddev = 0.0000\niterations_per_sec = 178571.42\nresult = \"Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K\"\n",
+"Tokyo Narita.toml":"[benchmark]\ncategory = \"Temperate\"\nsymbol = \"T\"\nname = \"Tokyo Narita\"\naltitude = \"44 m\"\ntemperature = \"16.3 °C\"\npressure = \"1015.0 hPa\"\nrelative_humidity = \"71%\"\nsaturation_vp = \"18.52 hPa\"\ndew_point = \"11.0 °C\"\ndensity_altitude = \"211 m\"\npotential_temp = \"289.3 K\"\nmixing_ratio = \"8.16 g/kg\"\nlcl = \"539 m AGL\"\nexperiment_name = \"Tokyo Narita_weather\"\nprecision = \"f64\"\nelapsed_ms = 28\niterations = 5000\navg_time_ns = 5656.88\nmin_time_ns = 5656.88\nmax_time_ns = 5656.88\ntime_stddev = 0.0000\niterations_per_sec = 178571.42\nresult = \"Tokyo Narita | 44m | 16.3 °C | RH=71% | Td=11.0 °C | DA=211 m | θ=289.3 K\"\n",
+"summary.toml":"title = \"Weather Station — Atmospheric Pressure, Humidity & Dew Point\"\ncount = 10\n\n[[entries]]\nlabel = \"Paris CDG\"\ncategory = \"Temperate\"\nsymbol = \"P\"\nname = \"Paris CDG\"\naltitude = \"119 m\"\ntemperature = \"12.4 °C\"\npressure = \"1013.2 hPa\"\nrelative_humidity = \"78%\"\nsaturation_vp = \"14.39 hPa\"\ndew_point = \"8.7 °C\"\ndensity_altitude = \"-164 m\"\npotential_temp = \"285.5 K\"\nmixing_ratio = \"6.97 g/kg\"\nlcl = \"381 m AGL\"\navg_time_ns = 5629.84\niterations_per_sec = 178571.42\n\n[[entries]]\nlabel = \"Tokyo Narita\"\ncategory = \"Temperate\"\nsymbol = \"T\"\nname = \"Tokyo Narita\"\naltitude = \"44 m\"\ntemperature = \"16.3 °C\"\npressure = \"1015.0 hPa\"\nrelative_humidity = \"71%\"\nsaturation_vp = \"18.52 hPa\"\ndew_point = \"11.0 °C\"\ndensity_altitude = \"211 m\"\npotential_temp = \"289.3 K\"\nmixing_ratio = \"8.16 g/kg\"\nlcl = \"539 m AGL\"\navg_time_ns = 5656.88\niterations_per_sec = 178571.42\n\n[[entries]]\nlabel = \"Denver Intl\"\ncategory = \"Alpine\"\nsymbol = \"D\"\nname = \"Denver Intl\"\naltitude = \"1655 m\"\ntemperature = \"10.1 °C\"\npressure = \"835.0 hPa\"\nrelative_humidity = \"45%\"\nsaturation_vp = \"12.35 hPa\"\ndew_point = \"-1.3 °C\"\ndensity_altitude = \"1464 m\"\npotential_temp = \"299.4 K\"\nmixing_ratio = \"4.17 g/kg\"\nlcl = \"1166 m AGL\"\navg_time_ns = 5595.95\niterations_per_sec = 185185.19\n\n[[entries]]\nlabel = \"Mexico City\"\ncategory = \"Alpine\"\nsymbol = \"M\"\nname = \"Mexico City\"\naltitude = \"2250 m\"\ntemperature = \"16.0 °C\"\npressure = \"773.0 hPa\"\nrelative_humidity = \"52%\"\nsaturation_vp = \"18.17 hPa\"\ndew_point = \"6.2 °C\"\ndensity_altitude = \"2910 m\"\npotential_temp = \"312.4 K\"\nmixing_ratio = \"7.70 g/kg\"\nlcl = \"1008 m AGL\"\navg_time_ns = 5636.10\niterations_per_sec = 178571.42\n\n[[entries]]\nlabel = \"McMurdo Base\"\ncategory = \"Polar\"\nsymbol = \"Mc\"\nname = \"McMurdo Base\"\naltitude = \"10 m\"\ntemperature = \"-18.0 °C\"\npressure = \"984.0 hPa\"\nrelative_humidity = \"60%\"\nsaturation_vp = \"1.49 hPa\"\ndew_point = \"-23.9 °C\"\ndensity_altitude = \"-3948 m\"\npotential_temp = \"257.3 K\"\nmixing_ratio = \"0.57 g/kg\"\nlcl = \"602 m AGL\"\navg_time_ns = 5812.67\niterations_per_sec = 172413.80\n\n[[entries]]\nlabel = \"Nairobi\"\ncategory = \"Tropical\"\nsymbol = \"N\"\nname = \"Nairobi\"\naltitude = \"1795 m\"\ntemperature = \"19.0 °C\"\npressure = \"815.0 hPa\"\nrelative_humidity = \"65%\"\nsaturation_vp = \"21.96 hPa\"\ndew_point = \"12.3 °C\"\ndensity_altitude = \"2706 m\"\npotential_temp = \"310.9 K\"\nmixing_ratio = \"11.09 g/kg\"\nlcl = \"688 m AGL\"\navg_time_ns = 5534.76\niterations_per_sec = 185185.19\n\n[[entries]]\nlabel = \"Lhasa\"\ncategory = \"Alpine\"\nsymbol = \"L\"\nname = \"Lhasa\"\naltitude = \"3650 m\"\ntemperature = \"8.5 °C\"\npressure = \"652.0 hPa\"\nrelative_humidity = \"35%\"\nsaturation_vp = \"11.09 hPa\"\ndew_point = \"-6.1 °C\"\ndensity_altitude = \"3746 m\"\npotential_temp = \"319.5 K\"\nmixing_ratio = \"3.73 g/kg\"\nlcl = \"1494 m AGL\"\navg_time_ns = 5548.93\niterations_per_sec = 185185.19\n\n[[entries]]\nlabel = \"Death Valley\"\ncategory = \"Arid\"\nsymbol = \"DV\"\nname = \"Death Valley\"\naltitude = \"-86 m\"\ntemperature = \"38.5 °C\"\npressure = \"1025.0 hPa\"\nrelative_humidity = \"12%\"\nsaturation_vp = \"68.21 hPa\"\ndew_point = \"4.1 °C\"\ndensity_altitude = \"2713 m\"\npotential_temp = \"310.6 K\"\nmixing_ratio = \"5.01 g/kg\"\nlcl = \"3521 m AGL\"\navg_time_ns = 5569.10\niterations_per_sec = 185185.19\n\n[[entries]]\nlabel = \"Reykjavik\"\ncategory = \"Polar\"\nsymbol = \"R\"\nname = \"Reykjavik\"\naltitude = \"61 m\"\ntemperature = \"4.6 °C\"\npressure = \"1005.0 hPa\"\nrelative_humidity = \"82%\"\nsaturation_vp = \"8.48 hPa\"\ndew_point = \"1.8 °C\"\ndensity_altitude = \"-1172 m\"\npotential_temp = \"278.4 K\"\nmixing_ratio = \"4.33 g/kg\"\nlcl = \"287 m AGL\"\navg_time_ns = 5642.68\niterations_per_sec = 178571.42\n\n[[entries]]\nlabel = \"Singapore\"\ncategory = \"Tropical\"\nsymbol = \"S\"\nname = \"Singapore\"\naltitude = \"16 m\"\ntemperature = \"27.5 °C\"\npressure = \"1010.0 hPa\"\nrelative_humidity = \"84%\"\nsaturation_vp = \"36.72 hPa\"\ndew_point = \"24.6 °C\"\ndensity_altitude = \"1520 m\"\npotential_temp = \"300.9 K\"\nmixing_ratio = \"19.59 g/kg\"\nlcl = \"301 m AGL\"\navg_time_ns = 5640.50\niterations_per_sec = 178571.42\n\n"},
+bmk:{
+"Death Valley.bmk":"experiment_name: Death Valley_weather\nprecision:       f64\nelapsed_ms:      27\niterations:      5000\navg_time_ns:     5569.10\nmin_time_ns:     5569.10\nmax_time_ns:     5569.10\ntime_stddev:     0.0000\niterations/sec:  185185.19\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     191 bytes\n",
+"Denver Intl.bmk":"experiment_name: Denver Intl_weather\nprecision:       f64\nelapsed_ms:      27\niterations:      5000\navg_time_ns:     5595.95\nmin_time_ns:     5595.95\nmax_time_ns:     5595.95\ntime_stddev:     0.0000\niterations/sec:  185185.19\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"Lhasa.bmk":"experiment_name: Lhasa_weather\nprecision:       f64\nelapsed_ms:      27\niterations:      5000\navg_time_ns:     5548.93\nmin_time_ns:     5548.93\nmax_time_ns:     5548.93\ntime_stddev:     0.0000\niterations/sec:  185185.19\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     184 bytes\n",
+"McMurdo Base.bmk":"experiment_name: McMurdo Base_weather\nprecision:       f64\nelapsed_ms:      29\niterations:      5000\navg_time_ns:     5812.67\nmin_time_ns:     5812.67\nmax_time_ns:     5812.67\ntime_stddev:     0.0000\niterations/sec:  172413.80\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     191 bytes\n",
+"Mexico City.bmk":"experiment_name: Mexico City_weather\nprecision:       f64\nelapsed_ms:      28\niterations:      5000\navg_time_ns:     5636.10\nmin_time_ns:     5636.10\nmax_time_ns:     5636.10\ntime_stddev:     0.0000\niterations/sec:  178571.42\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"Nairobi.bmk":"experiment_name: Nairobi_weather\nprecision:       f64\nelapsed_ms:      27\niterations:      5000\navg_time_ns:     5534.76\nmin_time_ns:     5534.76\nmax_time_ns:     5534.76\ntime_stddev:     0.0000\niterations/sec:  185185.19\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     186 bytes\n",
+"Paris CDG.bmk":"experiment_name: Paris CDG_weather\nprecision:       f64\nelapsed_ms:      28\niterations:      5000\navg_time_ns:     5629.84\nmin_time_ns:     5629.84\nmax_time_ns:     5629.84\ntime_stddev:     0.0000\niterations/sec:  178571.42\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     188 bytes\n",
+"Reykjavik.bmk":"experiment_name: Reykjavik_weather\nprecision:       f64\nelapsed_ms:      28\niterations:      5000\navg_time_ns:     5642.68\nmin_time_ns:     5642.68\nmax_time_ns:     5642.68\ntime_stddev:     0.0000\niterations/sec:  178571.42\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     188 bytes\n",
+"Singapore.bmk":"experiment_name: Singapore_weather\nprecision:       f64\nelapsed_ms:      28\niterations:      5000\navg_time_ns:     5640.50\nmin_time_ns:     5640.50\nmax_time_ns:     5640.50\ntime_stddev:     0.0000\niterations/sec:  178571.42\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     188 bytes\n",
+"Tokyo Narita.bmk":"experiment_name: Tokyo Narita_weather\nprecision:       f64\nelapsed_ms:      28\niterations:      5000\navg_time_ns:     5656.88\nmin_time_ns:     5656.88\nmax_time_ns:     5656.88\ntime_stddev:     0.0000\niterations/sec:  178571.42\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     191 bytes\n"}
+};
+var D={
+"Paris CDG":{tags:{"category":"Temperate","symbol":"P","name":"Paris CDG","altitude":"119 m","temperature":"12.4 °C","pressure":"1013.2 hPa","relative_humidity":"78%","saturation_vp":"14.39 hPa","dew_point":"8.7 °C","density_altitude":"-164 m","potential_temp":"285.5 K","mixing_ratio":"6.97 g/kg","lcl":"381 m AGL"},p:"f64",it:5000,avg:5629.84,mn:5629.84,mx:5629.84,sd:0.0000,ips:178571.42},
+"Tokyo Narita":{tags:{"category":"Temperate","symbol":"T","name":"Tokyo Narita","altitude":"44 m","temperature":"16.3 °C","pressure":"1015.0 hPa","relative_humidity":"71%","saturation_vp":"18.52 hPa","dew_point":"11.0 °C","density_altitude":"211 m","potential_temp":"289.3 K","mixing_ratio":"8.16 g/kg","lcl":"539 m AGL"},p:"f64",it:5000,avg:5656.88,mn:5656.88,mx:5656.88,sd:0.0000,ips:178571.42},
+"Denver Intl":{tags:{"category":"Alpine","symbol":"D","name":"Denver Intl","altitude":"1655 m","temperature":"10.1 °C","pressure":"835.0 hPa","relative_humidity":"45%","saturation_vp":"12.35 hPa","dew_point":"-1.3 °C","density_altitude":"1464 m","potential_temp":"299.4 K","mixing_ratio":"4.17 g/kg","lcl":"1166 m AGL"},p:"f64",it:5000,avg:5595.95,mn:5595.95,mx:5595.95,sd:0.0000,ips:185185.19},
+"Mexico City":{tags:{"category":"Alpine","symbol":"M","name":"Mexico City","altitude":"2250 m","temperature":"16.0 °C","pressure":"773.0 hPa","relative_humidity":"52%","saturation_vp":"18.17 hPa","dew_point":"6.2 °C","density_altitude":"2910 m","potential_temp":"312.4 K","mixing_ratio":"7.70 g/kg","lcl":"1008 m AGL"},p:"f64",it:5000,avg:5636.10,mn:5636.10,mx:5636.10,sd:0.0000,ips:178571.42},
+"McMurdo Base":{tags:{"category":"Polar","symbol":"Mc","name":"McMurdo Base","altitude":"10 m","temperature":"-18.0 °C","pressure":"984.0 hPa","relative_humidity":"60%","saturation_vp":"1.49 hPa","dew_point":"-23.9 °C","density_altitude":"-3948 m","potential_temp":"257.3 K","mixing_ratio":"0.57 g/kg","lcl":"602 m AGL"},p:"f64",it:5000,avg:5812.67,mn:5812.67,mx:5812.67,sd:0.0000,ips:172413.80},
+"Nairobi":{tags:{"category":"Tropical","symbol":"N","name":"Nairobi","altitude":"1795 m","temperature":"19.0 °C","pressure":"815.0 hPa","relative_humidity":"65%","saturation_vp":"21.96 hPa","dew_point":"12.3 °C","density_altitude":"2706 m","potential_temp":"310.9 K","mixing_ratio":"11.09 g/kg","lcl":"688 m AGL"},p:"f64",it:5000,avg:5534.76,mn:5534.76,mx:5534.76,sd:0.0000,ips:185185.19},
+"Lhasa":{tags:{"category":"Alpine","symbol":"L","name":"Lhasa","altitude":"3650 m","temperature":"8.5 °C","pressure":"652.0 hPa","relative_humidity":"35%","saturation_vp":"11.09 hPa","dew_point":"-6.1 °C","density_altitude":"3746 m","potential_temp":"319.5 K","mixing_ratio":"3.73 g/kg","lcl":"1494 m AGL"},p:"f64",it:5000,avg:5548.93,mn:5548.93,mx:5548.93,sd:0.0000,ips:185185.19},
+"Death Valley":{tags:{"category":"Arid","symbol":"DV","name":"Death Valley","altitude":"-86 m","temperature":"38.5 °C","pressure":"1025.0 hPa","relative_humidity":"12%","saturation_vp":"68.21 hPa","dew_point":"4.1 °C","density_altitude":"2713 m","potential_temp":"310.6 K","mixing_ratio":"5.01 g/kg","lcl":"3521 m AGL"},p:"f64",it:5000,avg:5569.10,mn:5569.10,mx:5569.10,sd:0.0000,ips:185185.19},
+"Reykjavik":{tags:{"category":"Polar","symbol":"R","name":"Reykjavik","altitude":"61 m","temperature":"4.6 °C","pressure":"1005.0 hPa","relative_humidity":"82%","saturation_vp":"8.48 hPa","dew_point":"1.8 °C","density_altitude":"-1172 m","potential_temp":"278.4 K","mixing_ratio":"4.33 g/kg","lcl":"287 m AGL"},p:"f64",it:5000,avg:5642.68,mn:5642.68,mx:5642.68,sd:0.0000,ips:178571.42},
+"Singapore":{tags:{"category":"Tropical","symbol":"S","name":"Singapore","altitude":"16 m","temperature":"27.5 °C","pressure":"1010.0 hPa","relative_humidity":"84%","saturation_vp":"36.72 hPa","dew_point":"24.6 °C","density_altitude":"1520 m","potential_temp":"300.9 K","mixing_ratio":"19.59 g/kg","lcl":"301 m AGL"},p:"f64",it:5000,avg:5640.50,mn:5640.50,mx:5640.50,sd:0.0000,ips:178571.42}
+};
+function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
+function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}
+function go(id){var d=D[id];if(!d)return;var p=document.getElementById('detail');if(p){p.className='detail open';document.getElementById('d-title').textContent=id;var tg=document.getElementById('d-tags');tg.innerHTML='';var tkeys=Object.keys(d.tags);for(var i=0;i<tkeys.length;i++){var r=document.createElement('div');r.className='dk';r.textContent=tkeys[i];tg.appendChild(r);var v=document.createElement('div');v.className='dv';v.textContent=d.tags[tkeys[i]];tg.appendChild(v);}document.getElementById('d-prec').textContent=d.p;document.getElementById('d-iter').textContent=d.it;document.getElementById('d-avg').textContent=d.avg.toFixed(2)+' ns';document.getElementById('d-min').textContent=d.mn.toFixed(2)+' ns';document.getElementById('d-max').textContent=d.mx.toFixed(2)+' ns';document.getElementById('d-std').textContent=d.sd.toFixed(4);document.getElementById('d-ips').textContent=d.ips.toFixed(2);var fb=document.getElementById('d-files');if(fb){fb.innerHTML='';['json','yaml','toml'].forEach(function(fmt){var fk=id+'.'+fmt;if(F[fmt]&&F[fmt][fk]){var b=document.createElement('button');b.className='fbtn';b.textContent=fmt.toUpperCase();(function(f,k){b.onclick=function(){var ts=document.querySelectorAll('.tab');for(var i=0;i<ts.length;i++){if(ts[i].textContent.toLowerCase()===f){switchTab({target:ts[i]},f);break}}var s=document.querySelector('#'+f+' select');if(s){s.value=k;showFile(f,k)}}})(fmt,fk);fb.appendChild(b)}})}p.scrollIntoView({behavior:'smooth',block:'center'})}var el=document.getElementById('el-'+id);if(el){el.classList.add('highlight');setTimeout(function(){el.classList.remove('highlight')},2000)}}
+function closeDetail(){var p=document.getElementById('detail');if(p)p.className='detail'}
+['csv','json','yaml','toml','bmk'].forEach(function(fmt){var s=document.querySelector('#'+fmt+' select');if(s&&s.options.length>0)showFile(fmt,s.options[0].text)});
+</script>
+</body>
+</html>

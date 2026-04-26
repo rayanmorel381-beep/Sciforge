@@ -1,0 +1,17 @@
+category: pr03
+symbol: JE
+name: pr028
+target: parser
+module: json
+status: ok
+elapsed_ms: 4574
+experiment_name: parser_028
+precision: f64
+elapsed_ms: 4574
+iterations: 1
+avg_time_ns: 4574000128.00
+min_time_ns: 4574000128.00
+max_time_ns: 4574000128.00
+time_stddev: 0.0000
+iterations_per_sec: 0.22
+result: success=true code=Some(0) stdout_bytes=140 stderr_bytes=312

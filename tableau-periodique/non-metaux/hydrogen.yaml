@@ -1,0 +1,100 @@
+element:
+  name: Hydrogen
+  symbol: H
+  atomic_number: 1
+  category: nonmetal
+  group: 1
+  period: 1
+  electron_configuration: "1s¹"
+  electronegativity: 2.20
+  atomic_mass: 1.008
+
+isotopes:
+  - name: Protium
+    symbol: "¹H"
+    mass_number: 1
+    neutrons: 0
+    atomic_mass: 1.007825
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.999885
+
+  - name: Deuterium
+    symbol: "²H"
+    mass_number: 2
+    neutrons: 1
+    atomic_mass: 2.014102
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.000115
+    nuclear_spin: "1+"
+
+  - name: Tritium
+    symbol: "³H"
+    mass_number: 3
+    neutrons: 2
+    atomic_mass: 3.016049
+    half_life: 12.32
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Helium-3
+    natural_abundance: trace
+
+  - name: Hydrogen-4
+    symbol: "⁴H"
+    mass_number: 4
+    neutrons: 3
+    atomic_mass: 4.02643
+    half_life: 1.39e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Hydrogen-5
+    symbol: "⁵H"
+    mass_number: 5
+    neutrons: 4
+    atomic_mass: 5.03531
+    half_life: 9.1e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: double neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Hydrogen-6
+    symbol: "⁶H"
+    mass_number: 6
+    neutrons: 5
+    atomic_mass: 6.04496
+    half_life: 2.9e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: triple neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Hydrogen-7
+    symbol: "⁷H"
+    mass_number: 7
+    neutrons: 6
+    atomic_mass: 7.05275
+    half_life: 2.3e-23
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0

@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+nuclear::binding_energy_per_nucleon,f64,1,1,1726649,1726649,1726649,0,1000,pass,nuclear,BEP,Binding energy per nucleon,chemistry,nuclear::binding_energy_per_nucleon
+nuclear::half_life_to_decay_constant,f64,1,1,1671649,1671649,1671649,0,1000,pass,nuclear,HLT,Half life to decay constant,chemistry,nuclear::half_life_to_decay_constant
+nuclear::q_value,f64,1,1,1667610,1667610,1667610,0,1000,pass,nuclear,QV,Q value,chemistry,nuclear::q_value

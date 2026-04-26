@@ -1,0 +1,83 @@
+category: bi18
+count: 10
+entries:
+  - label: biology_171
+    symbol: UI
+    name: bi171
+    target: biology
+    module: systems_biology
+    status: ok
+    elapsed_ms: 2216
+    avg_time_ns: 2216000000.00
+  - label: biology_172
+    symbol: CPO
+    name: bi172
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 2336
+    avg_time_ns: 2336000000.00
+  - label: biology_173
+    symbol: DRF
+    name: bi173
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 4204
+    avg_time_ns: 4204000000.00
+  - label: biology_174
+    symbol: OTR
+    name: bi174
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 4938
+    avg_time_ns: 4937999872.00
+  - label: biology_175
+    symbol: SP
+    name: bi175
+    target: biology
+    module: tissue_engineering
+    status: ok
+    elapsed_ms: 407
+    avg_time_ns: 407000000.00
+  - label: biology_176
+    symbol: BR
+    name: bi176
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 4958
+    avg_time_ns: 4958000128.00
+  - label: biology_177
+    symbol: LP
+    name: bi177
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 5286
+    avg_time_ns: 5286000128.00
+  - label: biology_178
+    symbol: RQ
+    name: bi178
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 4971
+    avg_time_ns: 4970999808.00
+  - label: biology_179
+    symbol: TW
+    name: bi179
+    target: biology
+    module: toxicology
+    status: ok
+    elapsed_ms: 4924
+    avg_time_ns: 4924000256.00
+  - label: biology_180
+    symbol: BRN
+    name: bi180
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 2139
+    avg_time_ns: 2139000064.00

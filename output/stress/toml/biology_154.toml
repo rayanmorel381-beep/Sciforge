@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi16"
+symbol = "FP"
+name = "bi154"
+target = "biology"
+module = "reproduction"
+status = "ok"
+elapsed_ms = "4872"
+experiment_name = "biology_154"
+precision = "f64"
+elapsed_ms = 4872
+iterations = 1
+avg_time_ns = 4872000000.00
+min_time_ns = 4872000000.00
+max_time_ns = 4872000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=166 stderr_bytes=262"

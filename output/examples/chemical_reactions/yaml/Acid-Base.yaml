@@ -1,0 +1,10 @@
+category: Acid-Base
+count: 1
+entries:
+  - label: Sulfuric acid neutralization
+    name: Sulfuric acid neutralization
+    formula: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O
+    reactant_mass: 178.0655 g/mol
+    product_mass: 178.0655 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 36085.16

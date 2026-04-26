@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi12"
+symbol = "RWU"
+name = "bi114"
+target = "biology"
+module = "neuroscience"
+status = "ok"
+elapsed_ms = "4965"
+experiment_name = "biology_114"
+precision = "f64"
+elapsed_ms = 4965
+iterations = 1
+avg_time_ns = 4965000192.00
+min_time_ns = 4965000192.00
+max_time_ns = 4965000192.00
+time_stddev = 0.0000
+iterations_per_sec = 0.20
+result = "success=true code=Some(0) stdout_bytes=163 stderr_bytes=210"

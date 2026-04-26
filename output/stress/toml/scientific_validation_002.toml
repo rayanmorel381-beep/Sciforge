@@ -1,0 +1,18 @@
+[benchmark]
+category = "sv01"
+symbol = "SEC"
+name = "sv002"
+target = "scientific_validation"
+module = "systematic_edge_cases_remain_finite"
+status = "ok"
+elapsed_ms = "5320"
+experiment_name = "scientific_validation_002"
+precision = "f64"
+elapsed_ms = 5320
+iterations = 1
+avg_time_ns = 5320000000.00
+min_time_ns = 5320000000.00
+max_time_ns = 5320000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=160 stderr_bytes=233"

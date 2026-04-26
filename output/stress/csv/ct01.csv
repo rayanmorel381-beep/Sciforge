@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+constants_001,f64,2844,1,2844000000,2844000000,2844000000,0,0.35161743,success=true code=Some(0) stdout_bytes=150 stderr_bytes=266,ct01,AU,ct001,constants,astro,ok,2844
+constants_002,f64,4659,1,4659000000,4659000000,4659000000,0,0.21463834,success=true code=Some(0) stdout_bytes=148 stderr_bytes=214,ct01,CT,ct002,constants,astro,ok,4659
+constants_003,f64,823,1,823000000,823000000,823000000,0,1.2150668,success=true code=Some(0) stdout_bytes=143 stderr_bytes=266,ct01,EM,ct003,constants,astro,ok,823
+constants_004,f64,2764,1,2764000000,2764000000,2764000000,0,0.3617945,success=true code=Some(0) stdout_bytes=148 stderr_bytes=266,ct01,HC,ct004,constants,astro,ok,2764
+constants_005,f64,4171,1,4171000000,4171000000,4171000000,0,0.23975065,success=true code=Some(0) stdout_bytes=143 stderr_bytes=266,ct01,LY,ct005,constants,astro,ok,4171
+constants_006,f64,3057,1,3057000000,3057000000,3057000000,0,0.3271181,success=true code=Some(0) stdout_bytes=139 stderr_bytes=266,ct01,Pa,ct006,constants,astro,ok,3057
+constants_007,f64,4561,1,4561000000,4561000000,4561000000,0,0.21925016,success=true code=Some(0) stdout_bytes=155 stderr_bytes=266,ct01,PGT,ct007,constants,astro,ok,4561
+constants_008,f64,2592,1,2592000000,2592000000,2592000000,0,0.38580248,success=true code=Some(0) stdout_bytes=143 stderr_bytes=266,ct01,SM,ct008,constants,astro,ok,2592
+constants_009,f64,4083,1,4083000000,4083000000,4083000000,0,0.24491796,success=true code=Some(0) stdout_bytes=143 stderr_bytes=214,ct01,ATK,ct009,constants,atomic,ok,4083
+constants_010,f64,2882,1,2882000000,2882000000,2882000000,0,0.34698126,success=true code=Some(0) stdout_bytes=145 stderr_bytes=422,ct01,BR,ct010,constants,atomic,ok,2882

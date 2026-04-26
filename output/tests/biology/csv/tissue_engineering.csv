@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+tissue_engineering::cell_proliferation_on_scaffold,f64,2,1,2974159,2974159,2974159,0,500,pass,tissue_engineering,CPO,Cell proliferation on scaffold,biology,tissue_engineering::cell_proliferation_on_scaffold
+tissue_engineering::degradation_rate_first_order,f64,2,1,2174659,2174659,2174659,0,500,pass,tissue_engineering,DRF,Degradation rate first order,biology,tissue_engineering::degradation_rate_first_order
+tissue_engineering::oxygen_transfer_rate,f64,2,1,2201789,2201789,2201789,0,500,pass,tissue_engineering,OTR,Oxygen transfer rate,biology,tissue_engineering::oxygen_transfer_rate
+tissue_engineering::scaffold_porosity,f64,2,1,2120669,2120669,2120669,0,500,pass,tissue_engineering,SP,Scaffold porosity,biology,tissue_engineering::scaffold_porosity

@@ -1,0 +1,16 @@
+[benchmark]
+category = "biogeography"
+symbol = "LDG"
+name = "Latitudinal diversity gradient"
+domain = "biology"
+test = "biogeography::latitudinal_diversity_gradient"
+experiment_name = "biogeography::latitudinal_diversity_gradient"
+precision = "f64"
+elapsed_ms = 3
+iterations = 1
+avg_time_ns = 3486678.00
+min_time_ns = 3486678.00
+max_time_ns = 3486678.00
+time_stddev = 0.0000
+iterations_per_sec = 333.33
+result = "pass"

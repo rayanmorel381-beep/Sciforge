@@ -1,0 +1,15 @@
+category: biostatistics
+symbol: NNT
+name: Number needed to treat
+domain: biology
+test: "biostatistics::number_needed_to_treat"
+experiment_name: "biostatistics::number_needed_to_treat"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1936359.00
+min_time_ns: 1936359.00
+max_time_ns: 1936359.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

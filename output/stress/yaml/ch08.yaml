@@ -1,0 +1,83 @@
+category: ch08
+count: 10
+entries:
+  - label: chemistry_071
+    symbol: SV
+    name: ch071
+    target: chemistry
+    module: photochemistry
+    status: ok
+    elapsed_ms: 1750
+    avg_time_ns: 1750000000.00
+  - label: chemistry_072
+    symbol: CE
+    name: ch072
+    target: chemistry
+    module: polymers
+    status: ok
+    elapsed_ms: 4462
+    avg_time_ns: 4462000128.00
+  - label: chemistry_073
+    symbol: FHF
+    name: ch073
+    target: chemistry
+    module: polymers
+    status: ok
+    elapsed_ms: 4995
+    avg_time_ns: 4994999808.00
+  - label: chemistry_074
+    symbol: PI
+    name: ch074
+    target: chemistry
+    module: polymers
+    status: ok
+    elapsed_ms: 4924
+    avg_time_ns: 4924000256.00
+  - label: chemistry_075
+    symbol: HTP
+    name: ch075
+    target: chemistry
+    module: quantum_chem
+    status: ok
+    elapsed_ms: 3019
+    avg_time_ns: 3019000064.00
+  - label: chemistry_076
+    symbol: LBE
+    name: ch076
+    target: chemistry
+    module: quantum_chem
+    status: ok
+    elapsed_ms: 5091
+    avg_time_ns: 5090999808.00
+  - label: chemistry_077
+    symbol: MP
+    name: ch077
+    target: chemistry
+    module: quantum_chem
+    status: ok
+    elapsed_ms: 2709
+    avg_time_ns: 2708999936.00
+  - label: chemistry_078
+    symbol: CV
+    name: ch078
+    target: chemistry
+    module: reaction_engineering
+    status: ok
+    elapsed_ms: 4882
+    avg_time_ns: 4881999872.00
+  - label: chemistry_079
+    symbol: DN
+    name: ch079
+    target: chemistry
+    module: reaction_engineering
+    status: ok
+    elapsed_ms: 1696
+    avg_time_ns: 1696000000.00
+  - label: chemistry_080
+    symbol: PCF
+    name: ch080
+    target: chemistry
+    module: reaction_engineering
+    status: ok
+    elapsed_ms: 4765
+    avg_time_ns: 4765000192.00

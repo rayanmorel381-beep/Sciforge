@@ -1,0 +1,17 @@
+{
+  "category": "nonmetal",
+  "symbol": "N",
+  "name": "Nitrogen",
+  "config": "1s² 2s² 2p³",
+  "mass": "14.007",
+  "experiment_name": "N_Nitrogen_benchmark",
+  "precision": "f32",
+  "elapsed_ms": 0,
+  "iterations": 1000,
+  "avg_time_ns": 551.92,
+  "min_time_ns": 551.92,
+  "max_time_ns": 551.92,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "Z=7 | N (Nitrogen) | 14.007 u | nonmetal | 1s² 2s² 2p³"
+}

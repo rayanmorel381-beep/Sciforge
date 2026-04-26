@@ -1,0 +1,17 @@
+category: ch03
+symbol: SCS
+name: ch021
+target: chemistry
+module: crystallography
+status: ok
+elapsed_ms: 4747
+experiment_name: chemistry_021
+precision: f64
+elapsed_ms: 4747
+iterations: 1
+avg_time_ns: 4746999808.00
+min_time_ns: 4746999808.00
+max_time_ns: 4746999808.00
+time_stddev: 0.0000
+iterations_per_sec: 0.21
+result: success=true code=Some(0) stdout_bytes=165 stderr_bytes=266

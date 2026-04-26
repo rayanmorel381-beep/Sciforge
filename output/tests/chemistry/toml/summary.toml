@@ -1,0 +1,1063 @@
+title = "SciForge Chemistry Test"
+count = 106
+
+[[entries]]
+label = "acid_base_equivalence_point_volume"
+category = "acid_base"
+symbol = "EPV"
+name = "Equivalence point volume"
+domain = "chemistry"
+test = "acid_base::equivalence_point_volume"
+avg_time_ns = 2152229.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "acid_base_henderson_hasselbalch"
+category = "acid_base"
+symbol = "HH"
+name = "Henderson hasselbalch"
+domain = "chemistry"
+test = "acid_base::henderson_hasselbalch"
+avg_time_ns = 1948919.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "acid_base_henderson_hasselbalch_excess_base"
+category = "acid_base"
+symbol = "HHE"
+name = "Henderson hasselbalch excess base"
+domain = "chemistry"
+test = "acid_base::henderson_hasselbalch_excess_base"
+avg_time_ns = 1829919.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "acid_base_ph_strong_acid"
+category = "acid_base"
+symbol = "PSA"
+name = "Ph strong acid"
+domain = "chemistry"
+test = "acid_base::ph_strong_acid"
+avg_time_ns = 1872120.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "acid_base_ph_strong_base"
+category = "acid_base"
+symbol = "PSB"
+name = "Ph strong base"
+domain = "chemistry"
+test = "acid_base::ph_strong_base"
+avg_time_ns = 1764459.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "acid_base_pka_roundtrip"
+category = "acid_base"
+symbol = "PR"
+name = "Pka roundtrip"
+domain = "chemistry"
+test = "acid_base::pka_roundtrip"
+avg_time_ns = 1756239.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "analytical_absorbance_transmittance_roundtrip"
+category = "analytical"
+symbol = "ATR"
+name = "Absorbance transmittance roundtrip"
+domain = "chemistry"
+test = "analytical::absorbance_transmittance_roundtrip"
+avg_time_ns = 2003619.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "analytical_beer_lambert"
+category = "analytical"
+symbol = "BL"
+name = "Beer lambert"
+domain = "chemistry"
+test = "analytical::beer_lambert"
+avg_time_ns = 2218109.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "analytical_dilution"
+category = "analytical"
+symbol = "Di"
+name = "Dilution"
+domain = "chemistry"
+test = "analytical::dilution"
+avg_time_ns = 2064179.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "analytical_percent_recovery"
+category = "analytical"
+symbol = "PR"
+name = "Percent recovery"
+domain = "chemistry"
+test = "analytical::percent_recovery"
+avg_time_ns = 2240749.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "analytical_retention_factor"
+category = "analytical"
+symbol = "RF"
+name = "Retention factor"
+domain = "chemistry"
+test = "analytical::retention_factor"
+avg_time_ns = 2247389.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "analytical_signal_to_noise"
+category = "analytical"
+symbol = "STN"
+name = "Signal to noise"
+domain = "chemistry"
+test = "analytical::signal_to_noise"
+avg_time_ns = 2168159.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "colloids_brownian_diffusion_coefficient"
+category = "colloids"
+symbol = "BDC"
+name = "Brownian diffusion coefficient"
+domain = "chemistry"
+test = "colloids::brownian_diffusion_coefficient"
+avg_time_ns = 2029799.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "colloids_stokes_sedimentation"
+category = "colloids"
+symbol = "SS"
+name = "Stokes sedimentation"
+domain = "chemistry"
+test = "colloids::stokes_sedimentation"
+avg_time_ns = 1762510.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "colloids_zeta_potential_smoluchowski"
+category = "colloids"
+symbol = "ZPS"
+name = "Zeta potential smoluchowski"
+domain = "chemistry"
+test = "colloids::zeta_potential_smoluchowski"
+avg_time_ns = 1731269.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "computational_dft_hartree_energy"
+category = "computational"
+symbol = "DHE"
+name = "Dft hartree energy"
+domain = "chemistry"
+test = "computational::dft_hartree_energy"
+avg_time_ns = 1938939.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "computational_gaussian_primitive"
+category = "computational"
+symbol = "GP"
+name = "Gaussian primitive"
+domain = "chemistry"
+test = "computational::gaussian_primitive"
+avg_time_ns = 1809959.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "computational_thomas_fermi_kinetic_energy"
+category = "computational"
+symbol = "TFK"
+name = "Thomas fermi kinetic energy"
+domain = "chemistry"
+test = "computational::thomas_fermi_kinetic_energy"
+avg_time_ns = 2034499.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "crystallography_bragg_law"
+category = "crystallography"
+symbol = "BL"
+name = "Bragg law"
+domain = "chemistry"
+test = "crystallography::bragg_law"
+avg_time_ns = 1782409.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "crystallography_interplanar_spacing_cubic"
+category = "crystallography"
+symbol = "ISC"
+name = "Interplanar spacing cubic"
+domain = "chemistry"
+test = "crystallography::interplanar_spacing_cubic"
+avg_time_ns = 1877910.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "crystallography_scherrer_crystal_size"
+category = "crystallography"
+symbol = "SCS"
+name = "Scherrer crystal size"
+domain = "chemistry"
+test = "crystallography::scherrer_crystal_size"
+avg_time_ns = 1949829.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_arrhenius_temperature_effect"
+category = "dispatch"
+symbol = "ATE"
+name = "Arrhenius temperature effect"
+domain = "chemistry"
+test = "dispatch::arrhenius_temperature_effect"
+avg_time_ns = 2065189.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "dispatch_cell_potential"
+category = "dispatch"
+symbol = "CP"
+name = "Cell potential"
+domain = "chemistry"
+test = "dispatch::cell_potential"
+avg_time_ns = 2221699.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "dispatch_dispatch_missing_parameter_returns_error"
+category = "dispatch"
+symbol = "DMP"
+name = "Dispatch missing parameter returns error"
+domain = "chemistry"
+test = "dispatch::dispatch_missing_parameter_returns_error"
+avg_time_ns = 2209119.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "dispatch_dispatch_unknown_function_returns_error"
+category = "dispatch"
+symbol = "DUF"
+name = "Dispatch unknown function returns error"
+domain = "chemistry"
+test = "dispatch::dispatch_unknown_function_returns_error"
+avg_time_ns = 2177829.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "dispatch_gibbs_keq_roundtrip"
+category = "dispatch"
+symbol = "GKR"
+name = "Gibbs keq roundtrip"
+domain = "chemistry"
+test = "dispatch::gibbs_keq_roundtrip"
+avg_time_ns = 2004119.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "dispatch_half_life_first_order"
+category = "dispatch"
+symbol = "HLF"
+name = "Half life first order"
+domain = "chemistry"
+test = "dispatch::half_life_first_order"
+avg_time_ns = 1896219.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_nernst_potential"
+category = "dispatch"
+symbol = "NP"
+name = "Nernst potential"
+domain = "chemistry"
+test = "dispatch::nernst_potential"
+avg_time_ns = 1826650.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "dispatch_rate_constant_arrhenius"
+category = "dispatch"
+symbol = "RCA"
+name = "Rate constant arrhenius"
+domain = "chemistry"
+test = "dispatch::rate_constant_arrhenius"
+avg_time_ns = 1781359.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "electrochemistry_butler_volmer"
+category = "electrochemistry"
+symbol = "BV"
+name = "Butler volmer"
+domain = "chemistry"
+test = "electrochemistry::butler_volmer"
+avg_time_ns = 1795849.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "electrochemistry_cell_potential"
+category = "electrochemistry"
+symbol = "CP"
+name = "Cell potential"
+domain = "chemistry"
+test = "electrochemistry::cell_potential"
+avg_time_ns = 1731119.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "electrochemistry_faraday_mass"
+category = "electrochemistry"
+symbol = "FM"
+name = "Faraday mass"
+domain = "chemistry"
+test = "electrochemistry::faraday_mass"
+avg_time_ns = 1732559.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "electrochemistry_nernst_potential"
+category = "electrochemistry"
+symbol = "NP"
+name = "Nernst potential"
+domain = "chemistry"
+test = "electrochemistry::nernst_potential"
+avg_time_ns = 1873560.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "environmental_biochemical_oxygen_demand"
+category = "environmental"
+symbol = "BOD"
+name = "Biochemical oxygen demand"
+domain = "chemistry"
+test = "environmental::biochemical_oxygen_demand"
+avg_time_ns = 1902919.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "environmental_dissolved_oxygen_saturation"
+category = "environmental"
+symbol = "DOS"
+name = "Dissolved oxygen saturation"
+domain = "chemistry"
+test = "environmental::dissolved_oxygen_saturation"
+avg_time_ns = 1753249.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "environmental_henry_law_solubility"
+category = "environmental"
+symbol = "HLS"
+name = "Henry law solubility"
+domain = "chemistry"
+test = "environmental::henry_law_solubility"
+avg_time_ns = 1720379.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "equilibrium_equilibrium_constant_from_gibbs"
+category = "equilibrium"
+symbol = "ECF"
+name = "Equilibrium constant from gibbs"
+domain = "chemistry"
+test = "equilibrium::equilibrium_constant_from_gibbs"
+avg_time_ns = 1778409.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "equilibrium_reaction_quotient"
+category = "equilibrium"
+symbol = "RQ"
+name = "Reaction quotient"
+domain = "chemistry"
+test = "equilibrium::reaction_quotient"
+avg_time_ns = 1804550.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "equilibrium_vant_hoff"
+category = "equilibrium"
+symbol = "VH"
+name = "Vant hoff"
+domain = "chemistry"
+test = "equilibrium::vant_hoff"
+avg_time_ns = 1697389.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_boyles_law"
+category = "gas_laws"
+symbol = "BL"
+name = "Boyles law"
+domain = "chemistry"
+test = "gas_laws::boyles_law"
+avg_time_ns = 1708059.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_boyles_law_pressure_halves_when_volume_doubles"
+category = "gas_laws"
+symbol = "BLP"
+name = "Boyles law pressure halves when volume doubles"
+domain = "chemistry"
+test = "gas_laws::boyles_law_pressure_halves_when_volume_doubles"
+avg_time_ns = 1769869.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_charles_law"
+category = "gas_laws"
+symbol = "CL"
+name = "Charles law"
+domain = "chemistry"
+test = "gas_laws::charles_law"
+avg_time_ns = 1704450.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_dalton_partial_pressure"
+category = "gas_laws"
+symbol = "DPP"
+name = "Dalton partial pressure"
+domain = "chemistry"
+test = "gas_laws::dalton_partial_pressure"
+avg_time_ns = 1768959.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_grahams_law_effusion"
+category = "gas_laws"
+symbol = "GLE"
+name = "Grahams law effusion"
+domain = "chemistry"
+test = "gas_laws::grahams_law_effusion"
+avg_time_ns = 1790609.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_ideal_gas_inverse_temperature_roundtrip"
+category = "gas_laws"
+symbol = "IGI"
+name = "Ideal gas inverse temperature roundtrip"
+domain = "chemistry"
+test = "gas_laws::ideal_gas_inverse_temperature_roundtrip"
+avg_time_ns = 1730139.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_ideal_gas_pressure_chem"
+category = "gas_laws"
+symbol = "IGP"
+name = "Ideal gas pressure chem"
+domain = "chemistry"
+test = "gas_laws::ideal_gas_pressure_chem"
+avg_time_ns = 1725939.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "gas_laws_van_der_waals_pressure"
+category = "gas_laws"
+symbol = "VDW"
+name = "Van der waals pressure"
+domain = "chemistry"
+test = "gas_laws::van_der_waals_pressure"
+avg_time_ns = 1751040.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "green_chemistry_e_factor"
+category = "green_chemistry"
+symbol = "EF"
+name = "E factor"
+domain = "chemistry"
+test = "green_chemistry::e_factor"
+avg_time_ns = 1677509.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "green_chemistry_gc_atom_economy"
+category = "green_chemistry"
+symbol = "GAE"
+name = "Gc atom economy"
+domain = "chemistry"
+test = "green_chemistry::gc_atom_economy"
+avg_time_ns = 1731189.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "green_chemistry_reaction_mass_efficiency"
+category = "green_chemistry"
+symbol = "RME"
+name = "Reaction mass efficiency"
+domain = "chemistry"
+test = "green_chemistry::reaction_mass_efficiency"
+avg_time_ns = 1690569.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "inorganic_lattice_energy_born_lande"
+category = "inorganic"
+symbol = "LEB"
+name = "Lattice energy born lande"
+domain = "chemistry"
+test = "inorganic::lattice_energy_born_lande"
+avg_time_ns = 1807680.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "inorganic_magnetic_moment_spin_only"
+category = "inorganic"
+symbol = "MMS"
+name = "Magnetic moment spin only"
+domain = "chemistry"
+test = "inorganic::magnetic_moment_spin_only"
+avg_time_ns = 1691509.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "inorganic_pauling_electronegativity_difference"
+category = "inorganic"
+symbol = "PED"
+name = "Pauling electronegativity difference"
+domain = "chemistry"
+test = "inorganic::pauling_electronegativity_difference"
+avg_time_ns = 1691599.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "kinetics_eyring_equation"
+category = "kinetics"
+symbol = "EE"
+name = "Eyring equation"
+domain = "chemistry"
+test = "kinetics::eyring_equation"
+avg_time_ns = 1750489.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "kinetics_half_life_first_order"
+category = "kinetics"
+symbol = "HLF"
+name = "Half life first order"
+domain = "chemistry"
+test = "kinetics::half_life_first_order"
+avg_time_ns = 1848190.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "kinetics_michaelis_menten"
+category = "kinetics"
+symbol = "MM"
+name = "Michaelis menten"
+domain = "chemistry"
+test = "kinetics::michaelis_menten"
+avg_time_ns = 3377648.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "kinetics_rate_constant_arrhenius"
+category = "kinetics"
+symbol = "RCA"
+name = "Rate constant arrhenius"
+domain = "chemistry"
+test = "kinetics::rate_constant_arrhenius"
+avg_time_ns = 2093079.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "molecular_bond_order"
+category = "molecular"
+symbol = "BO"
+name = "Bond order"
+domain = "chemistry"
+test = "molecular::bond_order"
+avg_time_ns = 1994989.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "molecular_dipole_moment"
+category = "molecular"
+symbol = "DM"
+name = "Dipole moment"
+domain = "chemistry"
+test = "molecular::dipole_moment"
+avg_time_ns = 1808279.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "molecular_formal_charge"
+category = "molecular"
+symbol = "FC"
+name = "Formal charge"
+domain = "chemistry"
+test = "molecular::formal_charge"
+avg_time_ns = 1829680.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "molecular_molar_mass"
+category = "molecular"
+symbol = "MM"
+name = "Molar mass"
+domain = "chemistry"
+test = "molecular::molar_mass"
+avg_time_ns = 2067879.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "nuclear_binding_energy_per_nucleon"
+category = "nuclear"
+symbol = "BEP"
+name = "Binding energy per nucleon"
+domain = "chemistry"
+test = "nuclear::binding_energy_per_nucleon"
+avg_time_ns = 1726649.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "nuclear_half_life_to_decay_constant"
+category = "nuclear"
+symbol = "HLT"
+name = "Half life to decay constant"
+domain = "chemistry"
+test = "nuclear::half_life_to_decay_constant"
+avg_time_ns = 1671649.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "nuclear_q_value"
+category = "nuclear"
+symbol = "QV"
+name = "Q value"
+domain = "chemistry"
+test = "nuclear::q_value"
+avg_time_ns = 1667610.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "organic_degree_of_unsaturation"
+category = "organic"
+symbol = "DOU"
+name = "Degree of unsaturation"
+domain = "chemistry"
+test = "organic::degree_of_unsaturation"
+avg_time_ns = 1646609.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "organic_hammett_equation"
+category = "organic"
+symbol = "HE"
+name = "Hammett equation"
+domain = "chemistry"
+test = "organic::hammett_equation"
+avg_time_ns = 1823799.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "organic_partition_coefficient_log_p"
+category = "organic"
+symbol = "PCL"
+name = "Partition coefficient log p"
+domain = "chemistry"
+test = "organic::partition_coefficient_log_p"
+avg_time_ns = 1731699.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "photochemistry_fret_efficiency"
+category = "photochemistry"
+symbol = "FE"
+name = "Fret efficiency"
+domain = "chemistry"
+test = "photochemistry::fret_efficiency"
+avg_time_ns = 1840690.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "photochemistry_photon_energy"
+category = "photochemistry"
+symbol = "PE"
+name = "Photon energy"
+domain = "chemistry"
+test = "photochemistry::photon_energy"
+avg_time_ns = 1723029.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "photochemistry_quantum_yield"
+category = "photochemistry"
+symbol = "QY"
+name = "Quantum yield"
+domain = "chemistry"
+test = "photochemistry::quantum_yield"
+avg_time_ns = 1793759.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "photochemistry_stern_volmer"
+category = "photochemistry"
+symbol = "SV"
+name = "Stern volmer"
+domain = "chemistry"
+test = "photochemistry::stern_volmer"
+avg_time_ns = 1739479.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "polymers_carothers_equation"
+category = "polymers"
+symbol = "CE"
+name = "Carothers equation"
+domain = "chemistry"
+test = "polymers::carothers_equation"
+avg_time_ns = 1703179.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "polymers_flory_huggins_free_energy"
+category = "polymers"
+symbol = "FHF"
+name = "Flory huggins free energy"
+domain = "chemistry"
+test = "polymers::flory_huggins_free_energy"
+avg_time_ns = 1682250.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "polymers_polydispersity_index"
+category = "polymers"
+symbol = "PI"
+name = "Polydispersity index"
+domain = "chemistry"
+test = "polymers::polydispersity_index"
+avg_time_ns = 1903169.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "quantum_chem_huckel_total_pi_energy"
+category = "quantum_chem"
+symbol = "HTP"
+name = "Huckel total pi energy"
+domain = "chemistry"
+test = "quantum_chem::huckel_total_pi_energy"
+avg_time_ns = 1971249.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "quantum_chem_lcao_bonding_energy"
+category = "quantum_chem"
+symbol = "LBE"
+name = "Lcao bonding energy"
+domain = "chemistry"
+test = "quantum_chem::lcao_bonding_energy"
+avg_time_ns = 1794769.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "quantum_chem_mulliken_population"
+category = "quantum_chem"
+symbol = "MP"
+name = "Mulliken population"
+domain = "chemistry"
+test = "quantum_chem::mulliken_population"
+avg_time_ns = 1785049.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "reaction_engineering_cstr_volume"
+category = "reaction_engineering"
+symbol = "CV"
+name = "Cstr volume"
+domain = "chemistry"
+test = "reaction_engineering::cstr_volume"
+avg_time_ns = 2875219.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "reaction_engineering_damkohler_number"
+category = "reaction_engineering"
+symbol = "DN"
+name = "Damkohler number"
+domain = "chemistry"
+test = "reaction_engineering::damkohler_number"
+avg_time_ns = 3150919.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "reaction_engineering_pfr_conversion_first_order"
+category = "reaction_engineering"
+symbol = "PCF"
+name = "Pfr conversion first order"
+domain = "chemistry"
+test = "reaction_engineering::pfr_conversion_first_order"
+avg_time_ns = 2530869.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "solid_state_band_gap_from_absorption"
+category = "solid_state"
+symbol = "BGF"
+name = "Band gap from absorption"
+domain = "chemistry"
+test = "solid_state::band_gap_from_absorption"
+avg_time_ns = 2239929.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "solid_state_conductivity_semiconductor"
+category = "solid_state"
+symbol = "CS"
+name = "Conductivity semiconductor"
+domain = "chemistry"
+test = "solid_state::conductivity_semiconductor"
+avg_time_ns = 2115769.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "solid_state_fermi_dirac"
+category = "solid_state"
+symbol = "FD"
+name = "Fermi dirac"
+domain = "chemistry"
+test = "solid_state::fermi_dirac"
+avg_time_ns = 2119719.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "solutions_boiling_point_elevation"
+category = "solutions"
+symbol = "BPE"
+name = "Boiling point elevation"
+domain = "chemistry"
+test = "solutions::boiling_point_elevation"
+avg_time_ns = 2250509.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "solutions_freezing_point_depression"
+category = "solutions"
+symbol = "FPD"
+name = "Freezing point depression"
+domain = "chemistry"
+test = "solutions::freezing_point_depression"
+avg_time_ns = 2644809.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "solutions_osmotic_pressure"
+category = "solutions"
+symbol = "OP"
+name = "Osmotic pressure"
+domain = "chemistry"
+test = "solutions::osmotic_pressure"
+avg_time_ns = 2594048.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "solutions_raoult_law"
+category = "solutions"
+symbol = "RL"
+name = "Raoult law"
+domain = "chemistry"
+test = "solutions::raoult_law"
+avg_time_ns = 2737569.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "spectroscopy_chemical_shift_ppm"
+category = "spectroscopy"
+symbol = "CSP"
+name = "Chemical shift ppm"
+domain = "chemistry"
+test = "spectroscopy::chemical_shift_ppm"
+avg_time_ns = 2717059.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "spectroscopy_larmor_frequency"
+category = "spectroscopy"
+symbol = "LF"
+name = "Larmor frequency"
+domain = "chemistry"
+test = "spectroscopy::larmor_frequency"
+avg_time_ns = 2713169.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "spectroscopy_reduced_mass"
+category = "spectroscopy"
+symbol = "RM"
+name = "Reduced mass"
+domain = "chemistry"
+test = "spectroscopy::reduced_mass"
+avg_time_ns = 2916349.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "spectroscopy_wavenumber_to_wavelength"
+category = "spectroscopy"
+symbol = "WTW"
+name = "Wavenumber to wavelength"
+domain = "chemistry"
+test = "spectroscopy::wavenumber_to_wavelength"
+avg_time_ns = 3368428.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "stoichiometry_atom_economy"
+category = "stoichiometry"
+symbol = "AE"
+name = "Atom economy"
+domain = "chemistry"
+test = "stoichiometry::atom_economy"
+avg_time_ns = 3047689.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "stoichiometry_limiting_reagent"
+category = "stoichiometry"
+symbol = "LR"
+name = "Limiting reagent"
+domain = "chemistry"
+test = "stoichiometry::limiting_reagent"
+avg_time_ns = 3037618.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "stoichiometry_percent_yield"
+category = "stoichiometry"
+symbol = "PY"
+name = "Percent yield"
+domain = "chemistry"
+test = "stoichiometry::percent_yield"
+avg_time_ns = 3129489.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "stoichiometry_theoretical_yield"
+category = "stoichiometry"
+symbol = "TY"
+name = "Theoretical yield"
+domain = "chemistry"
+test = "stoichiometry::theoretical_yield"
+avg_time_ns = 3511799.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "surface_contact_angle"
+category = "surface"
+symbol = "CA"
+name = "Contact angle"
+domain = "chemistry"
+test = "surface::contact_angle"
+avg_time_ns = 3160308.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "surface_freundlich_isotherm"
+category = "surface"
+symbol = "FI"
+name = "Freundlich isotherm"
+domain = "chemistry"
+test = "surface::freundlich_isotherm"
+avg_time_ns = 3029159.00
+iterations_per_sec = 333.33
+
+[[entries]]
+label = "surface_langmuir_isotherm"
+category = "surface"
+symbol = "LI"
+name = "Langmuir isotherm"
+domain = "chemistry"
+test = "surface::langmuir_isotherm"
+avg_time_ns = 2892998.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "surface_laplace_pressure"
+category = "surface"
+symbol = "LP"
+name = "Laplace pressure"
+domain = "chemistry"
+test = "surface::laplace_pressure"
+avg_time_ns = 2567289.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "thermochemistry_clausius_clapeyron"
+category = "thermochemistry"
+symbol = "CC"
+name = "Clausius clapeyron"
+domain = "chemistry"
+test = "thermochemistry::clausius_clapeyron"
+avg_time_ns = 2618499.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "thermochemistry_entropy_change"
+category = "thermochemistry"
+symbol = "EC"
+name = "Entropy change"
+domain = "chemistry"
+test = "thermochemistry::entropy_change"
+avg_time_ns = 2235949.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "thermochemistry_gibbs_free_energy"
+category = "thermochemistry"
+symbol = "GFE"
+name = "Gibbs free energy"
+domain = "chemistry"
+test = "thermochemistry::gibbs_free_energy"
+avg_time_ns = 1939139.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "thermochemistry_hess_law"
+category = "thermochemistry"
+symbol = "HL"
+name = "Hess law"
+domain = "chemistry"
+test = "thermochemistry::hess_law"
+avg_time_ns = 2055189.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "transport_diffusion_coefficient_stokes_einstein"
+category = "transport"
+symbol = "DCS"
+name = "Diffusion coefficient stokes einstein"
+domain = "chemistry"
+test = "transport::diffusion_coefficient_stokes_einstein"
+avg_time_ns = 1845280.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "transport_fick_first_law"
+category = "transport"
+symbol = "FFL"
+name = "Fick first law"
+domain = "chemistry"
+test = "transport::fick_first_law"
+avg_time_ns = 1939049.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "transport_sherwood_number"
+category = "transport"
+symbol = "SN"
+name = "Sherwood number"
+domain = "chemistry"
+test = "transport::sherwood_number"
+avg_time_ns = 3494328.00
+iterations_per_sec = 333.33
+

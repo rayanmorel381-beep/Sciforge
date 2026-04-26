@@ -1,0 +1,53 @@
+element:
+  name: Meitnerium
+  symbol: Mt
+  atomic_number: 109
+  category: unknown
+  group: 9
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d⁷ 7s²"
+  electronegativity: null
+  atomic_mass: 278.156
+
+isotopes:
+  - name: Meitnerium-274
+    symbol: "²⁷⁴Mt"
+    mass_number: 274
+    neutrons: 165
+    atomic_mass: 274.147
+    half_life: 0.44
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Bohrium-270
+    natural_abundance: 0.0
+
+  - name: Meitnerium-276
+    symbol: "²⁷⁶Mt"
+    mass_number: 276
+    neutrons: 167
+    atomic_mass: 276.152
+    half_life: 0.72
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Bohrium-272
+    natural_abundance: 0.0
+
+  - name: Meitnerium-278
+    symbol: "²⁷⁸Mt"
+    mass_number: 278
+    neutrons: 169
+    atomic_mass: 278.156
+    half_life: 4.5
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Bohrium-274
+    natural_abundance: 0.0

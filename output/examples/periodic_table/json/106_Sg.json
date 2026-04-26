@@ -1,0 +1,17 @@
+{
+  "category": "transition_metal",
+  "symbol": "Sg",
+  "name": "Seaborgium",
+  "config": "[Rn] 5f¹⁴ 6d⁴ 7s²",
+  "mass": "269.129",
+  "experiment_name": "Sg_Seaborgium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 8,
+  "iterations": 1000,
+  "avg_time_ns": 8401.15,
+  "min_time_ns": 8401.15,
+  "max_time_ns": 8401.15,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 125000.00,
+  "result": "Z=106 | Sg (Seaborgium) | 269.129 u | transition_metal | [Rn] 5f¹⁴ 6d⁴ 7s²"
+}

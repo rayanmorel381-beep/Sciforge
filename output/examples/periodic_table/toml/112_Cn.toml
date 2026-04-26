@@ -1,0 +1,16 @@
+[benchmark]
+category = "unknown"
+symbol = "Cn"
+name = "Copernicium"
+config = "[Rn] 5f¹⁴ 6d¹⁰ 7s²"
+mass = "285.177"
+experiment_name = "Cn_Copernicium_benchmark"
+precision = "f64"
+elapsed_ms = 10
+iterations = 1000
+avg_time_ns = 10072.36
+min_time_ns = 10072.36
+max_time_ns = 10072.36
+time_stddev = 0.0000
+iterations_per_sec = 100000.00
+result = "Z=112 | Cn (Copernicium) | 285.177 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s²"

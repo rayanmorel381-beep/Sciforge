@@ -1,0 +1,15 @@
+category: ecology
+symbol: SR
+name: Species richness
+domain: biology
+test: "ecology::species_richness"
+experiment_name: "ecology::species_richness"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1806889.00
+min_time_ns: 1806889.00
+max_time_ns: 1806889.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

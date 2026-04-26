@@ -1,0 +1,17 @@
+{
+  "category": "interpolation",
+  "symbol": "LI",
+  "name": "Lagrange interpolate",
+  "domain": "maths",
+  "test": "interpolation::lagrange_interpolate",
+  "experiment_name": "interpolation::lagrange_interpolate",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1660540.00,
+  "min_time_ns": 1660540.00,
+  "max_time_ns": 1660540.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

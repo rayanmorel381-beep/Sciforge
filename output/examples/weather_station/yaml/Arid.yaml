@@ -1,0 +1,17 @@
+category: Arid
+count: 1
+entries:
+  - label: Death Valley
+    symbol: DV
+    name: Death Valley
+    altitude: -86 m
+    temperature: 38.5 °C
+    pressure: 1025.0 hPa
+    relative_humidity: 12%
+    saturation_vp: 68.21 hPa
+    dew_point: 4.1 °C
+    density_altitude: 2713 m
+    potential_temp: 310.6 K
+    mixing_ratio: 5.01 g/kg
+    lcl: 3521 m AGL
+    avg_time_ns: 5569.10

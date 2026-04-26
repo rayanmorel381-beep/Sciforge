@@ -1,0 +1,16 @@
+[benchmark]
+category = "alkaline earth metal"
+symbol = "Ba"
+name = "Barium"
+config = "[Xe] 6s²"
+mass = "137.327"
+experiment_name = "Ba_Barium_benchmark"
+precision = "f64"
+elapsed_ms = 21
+iterations = 5000
+avg_time_ns = 4288.23
+min_time_ns = 4288.23
+max_time_ns = 4288.23
+time_stddev = 0.0000
+iterations_per_sec = 238095.23
+result = "Z=56 | Ba (Barium) | 137.327 u | alkaline earth metal | [Xe] 6s²"

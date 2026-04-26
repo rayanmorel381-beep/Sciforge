@@ -1,0 +1,51 @@
+category: ch11
+count: 6
+entries:
+  - label: chemistry_101
+    symbol: EC
+    name: ch101
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 356
+    avg_time_ns: 356000000.00
+  - label: chemistry_102
+    symbol: GFE
+    name: ch102
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 5100
+    avg_time_ns: 5100000256.00
+  - label: chemistry_103
+    symbol: HL
+    name: ch103
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 4649
+    avg_time_ns: 4648999936.00
+  - label: chemistry_104
+    symbol: DCS
+    name: ch104
+    target: chemistry
+    module: transport
+    status: ok
+    elapsed_ms: 5579
+    avg_time_ns: 5578999808.00
+  - label: chemistry_105
+    symbol: FFL
+    name: ch105
+    target: chemistry
+    module: transport
+    status: ok
+    elapsed_ms: 1778
+    avg_time_ns: 1778000000.00
+  - label: chemistry_106
+    symbol: SN
+    name: ch106
+    target: chemistry
+    module: transport
+    status: ok
+    elapsed_ms: 1129
+    avg_time_ns: 1128999936.00

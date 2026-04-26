@@ -1,0 +1,79 @@
+element:
+  name: Cobalt
+  symbol: Co
+  atomic_number: 27
+  category: transition metal
+  group: 9
+  period: 4
+  electron_configuration: "[Ar] 3d⁷ 4s²"
+  electronegativity: 1.88
+  atomic_mass: 58.933194
+
+isotopes:
+  - name: Cobalt-56
+    symbol: "⁵⁶Co"
+    mass_number: 56
+    neutrons: 29
+    atomic_mass: 55.939839
+    half_life: 77.236
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ / electron capture
+        branching_ratio: 1.0
+        daughter: Iron-56
+    natural_abundance: 0.0
+
+  - name: Cobalt-57
+    symbol: "⁵⁷Co"
+    mass_number: 57
+    neutrons: 30
+    atomic_mass: 56.936291
+    half_life: 271.74
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Iron-57
+    natural_abundance: 0.0
+
+  - name: Cobalt-58
+    symbol: "⁵⁸Co"
+    mass_number: 58
+    neutrons: 31
+    atomic_mass: 57.935753
+    half_life: 70.86
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ / electron capture
+        branching_ratio: 1.0
+        daughter: Iron-58
+    natural_abundance: 0.0
+
+  - name: Cobalt-59
+    symbol: "⁵⁹Co"
+    mass_number: 59
+    neutrons: 32
+    atomic_mass: 58.933195
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "7/2-"
+
+  - name: Cobalt-60
+    symbol: "⁶⁰Co"
+    mass_number: 60
+    neutrons: 33
+    atomic_mass: 59.933817
+    half_life: 5.2714
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Nickel-60
+    natural_abundance: 0.0

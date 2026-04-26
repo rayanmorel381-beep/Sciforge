@@ -1,0 +1,9 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+Al_Aluminium_benchmark,f32,1,1000,1010.41,1010.41,1010.41,0,1000000,Z=13 | Al (Aluminium) | 26.9815385 u | post-transition metal | [Ne] 3s² 3p¹,post-transition metal,Al,Aluminium,[Ne] 3s² 3p¹,26.9815385
+Ga_Gallium_benchmark,f32,2,1000,2456.658,2456.658,2456.658,0,500000,Z=31 | Ga (Gallium) | 69.723 u | post-transition metal | [Ar] 3d¹⁰ 4s² 4p¹,post-transition metal,Ga,Gallium,[Ar] 3d¹⁰ 4s² 4p¹,69.723
+In_Indium_benchmark,f32,4,1000,4352.588,4352.588,4352.588,0,250000,Z=49 | In (Indium) | 114.818 u | post-transition metal | [Kr] 4d¹⁰ 5s² 5p¹,post-transition metal,In,Indium,[Kr] 4d¹⁰ 5s² 5p¹,114.818
+Sn_Tin_benchmark,f64,19,5000,3820.3345,3820.3345,3820.3345,0,263157.9,Z=50 | Sn (Tin) | 118.71 u | post-transition metal | [Kr] 4d¹⁰ 5s² 5p²,post-transition metal,Sn,Tin,[Kr] 4d¹⁰ 5s² 5p²,118.71
+Tl_Thallium_benchmark,f32,63,10000,6350.1,6350.1,6350.1,0,158730.16,Z=81 | Tl (Thallium) | 204.38 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹,post-transition metal,Tl,Thallium,[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹,204.38
+Pb_Lead_benchmark,f64,6,1000,6397.037,6397.037,6397.037,0,166666.67,Z=82 | Pb (Lead) | 207.2 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²,post-transition metal,Pb,Lead,[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²,207.2
+Bi_Bismuth_benchmark,f32,32,5000,6530.201,6530.201,6530.201,0,156250,Z=83 | Bi (Bismuth) | 208.9804 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³,post-transition metal,Bi,Bismuth,[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³,208.9804
+Po_Polonium_benchmark,f64,65,10000,6547.832,6547.832,6547.832,0,153846.16,Z=84 | Po (Polonium) | 208.98243 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴,post-transition metal,Po,Polonium,[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴,208.98243

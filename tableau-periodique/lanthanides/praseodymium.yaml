@@ -1,0 +1,54 @@
+element:
+  name: Praseodymium
+  symbol: Pr
+  atomic_number: 59
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f³ 6s²"
+  electronegativity: 1.13
+  atomic_mass: 140.90766
+
+isotopes:
+  - name: Praseodymium-141
+    symbol: "¹⁴¹Pr"
+    mass_number: 141
+    neutrons: 82
+    atomic_mass: 140.907653
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "5/2+"
+
+  - name: Praseodymium-142
+    symbol: "¹⁴²Pr"
+    mass_number: 142
+    neutrons: 83
+    atomic_mass: 141.910045
+    half_life: 19.12
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.99984
+        daughter: Neodymium-142
+      - mode: electron capture
+        branching_ratio: 0.00016
+        daughter: Cerium-142
+    natural_abundance: 0.0
+
+  - name: Praseodymium-143
+    symbol: "¹⁴³Pr"
+    mass_number: 143
+    neutrons: 84
+    atomic_mass: 142.910817
+    half_life: 13.57
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Neodymium-143
+    natural_abundance: 0.0

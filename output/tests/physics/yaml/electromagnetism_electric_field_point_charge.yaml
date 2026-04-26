@@ -1,0 +1,15 @@
+category: electromagnetism
+symbol: EFP
+name: Electric field point charge
+domain: physics
+test: "electromagnetism::electric_field_point_charge"
+experiment_name: "electromagnetism::electric_field_point_charge"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1746880.00
+min_time_ns: 1746880.00
+max_time_ns: 1746880.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

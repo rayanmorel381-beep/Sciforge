@@ -1,0 +1,83 @@
+category: pr07
+count: 10
+entries:
+  - label: parser_061
+    symbol: YB
+    name: pr061
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4706
+    avg_time_ns: 4705999872.00
+  - label: parser_062
+    symbol: YEI
+    name: pr062
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4505
+    avg_time_ns: 4504999936.00
+  - label: parser_063
+    symbol: YM
+    name: pr063
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2811
+    avg_time_ns: 2811000064.00
+  - label: parser_064
+    symbol: YMD
+    name: pr064
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2446
+    avg_time_ns: 2446000128.00
+  - label: parser_065
+    symbol: YN
+    name: pr065
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 586
+    avg_time_ns: 586000000.00
+  - label: parser_066
+    symbol: YN
+    name: pr066
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 3682
+    avg_time_ns: 3681999872.00
+  - label: parser_067
+    symbol: YQS
+    name: pr067
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2826
+    avg_time_ns: 2825999872.00
+  - label: parser_068
+    symbol: YS
+    name: pr068
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4334
+    avg_time_ns: 4334000128.00
+  - label: parser_069
+    symbol: YS
+    name: pr069
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 2517
+    avg_time_ns: 2516999936.00
+  - label: parser_070
+    symbol: YTN
+    name: pr070
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 4652
+    avg_time_ns: 4652000256.00

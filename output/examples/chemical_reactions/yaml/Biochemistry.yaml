@@ -1,0 +1,10 @@
+category: Biochemistry
+count: 1
+entries:
+  - label: Photosynthesis
+    name: Photosynthesis
+    formula: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂
+    reactant_mass: 372.1440 g/mol
+    product_mass: 372.1440 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 23809.53

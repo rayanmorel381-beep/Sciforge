@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_111,f64,2064,1,2064000000,2064000000,2064000000,0,0.48449612,success=true code=Some(0) stdout_bytes=166 stderr_bytes=262,bi12,SGP,bi111,biology,mycology,ok,2064
+biology_112,f64,2851,1,2851000000,2851000000,2851000000,0,0.3507541,success=true code=Some(0) stdout_bytes=152 stderr_bytes=210,bi12,FF,bi112,biology,neuroscience,ok,2851
+biology_113,f64,5223,1,5223000000,5223000000,5223000000,0,0.19146085,success=true code=Some(0) stdout_bytes=152 stderr_bytes=262,bi12,FR,bi113,biology,neuroscience,ok,5223
+biology_114,f64,4965,1,4965000000,4965000000,4965000000,0,0.20140988,success=true code=Some(0) stdout_bytes=163 stderr_bytes=210,bi12,RWU,bi114,biology,neuroscience,ok,4965
+biology_115,f64,1565,1,1565000000,1565000000,1565000000,0,0.63897765,success=true code=Some(0) stdout_bytes=159 stderr_bytes=262,bi12,SWC,bi115,biology,neuroscience,ok,1565
+biology_116,f64,4937,1,4937000000,4937000000,4937000000,0,0.20255215,success=true code=Some(0) stdout_bytes=166 stderr_bytes=314,bi12,BMR,bi116,biology,nutrition,ok,4937
+biology_117,f64,5329,1,5329000000,5329000000,5329000000,0,0.18765247,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,bi12,BMI,bi117,biology,nutrition,ok,5329
+biology_118,f64,5159,1,5159000000,5159000000,5159000000,0,0.19383602,success=true code=Some(0) stdout_bytes=154 stderr_bytes=262,bi12,NB,bi118,biology,nutrition,ok,5159
+biology_119,f64,2047,1,2047000000,2047000000,2047000000,0,0.4885198,success=true code=Some(0) stdout_bytes=164 stderr_bytes=210,bi12,RER,bi119,biology,nutrition,ok,2047
+biology_120,f64,4883,1,4883000000,4883000000,4883000000,0,0.20479214,success=true code=Some(0) stdout_bytes=165 stderr_bytes=262,bi12,ERD,bi120,biology,paleobiology,ok,4883

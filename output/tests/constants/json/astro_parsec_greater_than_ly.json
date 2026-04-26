@@ -1,0 +1,17 @@
+{
+  "category": "astro",
+  "symbol": "PGT",
+  "name": "Parsec greater than ly",
+  "domain": "constants",
+  "test": "astro::parsec_greater_than_ly",
+  "experiment_name": "astro::parsec_greater_than_ly",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1131859.00,
+  "min_time_ns": 1131859.00,
+  "max_time_ns": 1131859.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

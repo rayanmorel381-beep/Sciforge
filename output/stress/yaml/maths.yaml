@@ -1,0 +1,11 @@
+category: maths
+count: 1
+entries:
+  - label: maths_summary
+    symbol: SUM
+    name: MA Summary
+    target: maths
+    module: summary
+    status: ok
+    elapsed_ms: 218662
+    avg_time_ns: 3123742976.00

@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion
+1 day_convert,f64,49,10000,4989.7856,4989.7856,4989.7856,0,204081.63,1 day | 1 day → 8.640000e4 s,Time,day,1 day,1 day,8.640000e4 s,1 day → 8.640000e4 s
+1 year_convert,f64,54,10000,5427.91,5427.91,5427.91,0,185185.19,1 year | 1 year → 8.766000e3 h,Time,year,1 year,1 year,8.766000e3 h,1 year → 8.766000e3 h

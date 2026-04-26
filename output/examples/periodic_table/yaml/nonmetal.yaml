@@ -1,0 +1,45 @@
+category: nonmetal
+count: 7
+entries:
+  - label: 001_H
+    symbol: H
+    name: Hydrogen
+    config: 1s¹
+    mass: 1.008
+    avg_time_ns: 90.48
+  - label: 006_C
+    symbol: C
+    name: Carbon
+    config: 1s² 2s² 2p²
+    mass: 12.011
+    avg_time_ns: 471.10
+  - label: 007_N
+    symbol: N
+    name: Nitrogen
+    config: 1s² 2s² 2p³
+    mass: 14.007
+    avg_time_ns: 551.92
+  - label: 008_O
+    symbol: O
+    name: Oxygen
+    config: 1s² 2s² 2p⁴
+    mass: 15.999
+    avg_time_ns: 620.61
+  - label: 015_P
+    symbol: P
+    name: Phosphorus
+    config: [Ne] 3s² 3p³
+    mass: 30.973762
+    avg_time_ns: 1160.05
+  - label: 016_S
+    symbol: S
+    name: Sulfur
+    config: [Ne] 3s² 3p⁴
+    mass: 32.06
+    avg_time_ns: 1249.86
+  - label: 034_Se
+    symbol: Se
+    name: Selenium
+    config: [Ar] 3d¹⁰ 4s² 4p⁴
+    mass: 78.971
+    avg_time_ns: 2592.98

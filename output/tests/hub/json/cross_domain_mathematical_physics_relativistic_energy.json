@@ -1,0 +1,17 @@
+{
+  "category": "cross_domain",
+  "symbol": "RE",
+  "name": "Relativistic energy",
+  "domain": "hub",
+  "test": "cross_domain::mathematical_physics::relativistic_energy",
+  "experiment_name": "cross_domain::mathematical_physics::relativistic_energy",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2060959.00,
+  "min_time_ns": 2060959.00,
+  "max_time_ns": 2060959.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

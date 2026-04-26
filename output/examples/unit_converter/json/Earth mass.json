@@ -1,0 +1,18 @@
+{
+  "category": "Mass",
+  "symbol": "kg",
+  "name": "Earth mass",
+  "from": "5972000000000000000000000 kg",
+  "to": "1.316601e25 lb",
+  "conversion": "5972000000000000000000000 kg → 1.316601e25 lb",
+  "experiment_name": "Earth mass_convert",
+  "precision": "f64",
+  "elapsed_ms": 38,
+  "iterations": 10000,
+  "avg_time_ns": 3899.77,
+  "min_time_ns": 3899.77,
+  "max_time_ns": 3899.77,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 263157.91,
+  "result": "Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb"
+}

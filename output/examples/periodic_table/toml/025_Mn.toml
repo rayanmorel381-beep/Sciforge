@@ -1,0 +1,16 @@
+[benchmark]
+category = "transition metal"
+symbol = "Mn"
+name = "Manganese"
+config = "[Ar] 3d⁵ 4s²"
+mass = "54.938044"
+experiment_name = "Mn_Manganese_benchmark"
+precision = "f32"
+elapsed_ms = 1
+iterations = 1000
+avg_time_ns = 1907.84
+min_time_ns = 1907.84
+max_time_ns = 1907.84
+time_stddev = 0.0000
+iterations_per_sec = 1000000.00
+result = "Z=25 | Mn (Manganese) | 54.938044 u | transition metal | [Ar] 3d⁵ 4s²"

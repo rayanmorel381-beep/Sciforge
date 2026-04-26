@@ -1,0 +1,15 @@
+category: pde
+symbol: WE1
+name: Wave equation 1d
+domain: maths
+test: "pde::wave_equation_1d"
+experiment_name: "pde::wave_equation_1d"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1734079.00
+min_time_ns: 1734079.00
+max_time_ns: 1734079.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

@@ -1,0 +1,17 @@
+{
+  "category": "transition metal",
+  "symbol": "Co",
+  "name": "Cobalt",
+  "config": "[Ar] 3d⁷ 4s²",
+  "mass": "58.933194",
+  "experiment_name": "Co_Cobalt_benchmark",
+  "precision": "f32",
+  "elapsed_ms": 20,
+  "iterations": 10000,
+  "avg_time_ns": 2080.07,
+  "min_time_ns": 2080.07,
+  "max_time_ns": 2080.07,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500000.00,
+  "result": "Z=27 | Co (Cobalt) | 58.933194 u | transition metal | [Ar] 3d⁷ 4s²"
+}

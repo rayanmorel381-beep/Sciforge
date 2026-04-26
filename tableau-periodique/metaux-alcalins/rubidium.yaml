@@ -1,0 +1,100 @@
+element:
+  name: Rubidium
+  symbol: Rb
+  atomic_number: 37
+  category: alkali metal
+  group: 1
+  period: 5
+  electron_configuration: "[Kr] 5s¹"
+  electronegativity: 0.82
+  atomic_mass: 85.4678
+
+isotopes:
+  - name: Rubidium-82
+    symbol: "⁸²Rb"
+    mass_number: 82
+    neutrons: 45
+    atomic_mass: 81.918209
+    half_life: 1.2575
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.955
+        daughter: Krypton-82
+      - mode: electron capture
+        branching_ratio: 0.045
+    natural_abundance: 0.0
+
+  - name: Rubidium-83
+    symbol: "⁸³Rb"
+    mass_number: 83
+    neutrons: 46
+    atomic_mass: 82.915110
+    half_life: 86.2
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Krypton-83
+    natural_abundance: 0.0
+
+  - name: Rubidium-84
+    symbol: "⁸⁴Rb"
+    mass_number: 84
+    neutrons: 47
+    atomic_mass: 83.914385
+    half_life: 32.82
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.038
+      - mode: electron capture
+        branching_ratio: 0.662
+      - mode: beta- (electron emission)
+        branching_ratio: 0.300
+    natural_abundance: 0.0
+
+  - name: Rubidium-85
+    symbol: "⁸⁵Rb"
+    mass_number: 85
+    neutrons: 48
+    atomic_mass: 84.911790
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.7217
+    nuclear_spin: "5/2-"
+
+  - name: Rubidium-86
+    symbol: "⁸⁶Rb"
+    mass_number: 86
+    neutrons: 49
+    atomic_mass: 85.911167
+    half_life: 18.642
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.995
+        daughter: Strontium-86
+      - mode: electron capture
+        branching_ratio: 0.005
+    natural_abundance: 0.0
+
+  - name: Rubidium-87
+    symbol: "⁸⁷Rb"
+    mass_number: 87
+    neutrons: 50
+    atomic_mass: 86.909181
+    half_life: 4.923e10
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Strontium-87
+    natural_abundance: 0.2783

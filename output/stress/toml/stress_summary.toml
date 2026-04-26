@@ -1,0 +1,18 @@
+[benchmark]
+category = "overview"
+symbol = "SUM"
+name = "Stress Summary"
+target = "stress"
+module = "overview"
+status = "ok"
+elapsed_ms = "7638"
+experiment_name = "stress_summary"
+precision = "f64"
+elapsed_ms = 7638
+iterations = 1
+avg_time_ns = 3595221760.00
+min_time_ns = 3595221760.00
+max_time_ns = 3595221760.00
+time_stddev = 0.0000
+iterations_per_sec = 0.13
+result = "jobs_total=803 jobs_ok=803 jobs_failed=0 jobs_sum_ms=2886963 min_job_ms=54 max_job_ms=6269 saturation_factor=377.97"

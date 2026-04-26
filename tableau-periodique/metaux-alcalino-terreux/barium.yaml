@@ -1,0 +1,136 @@
+element:
+  name: Barium
+  symbol: Ba
+  atomic_number: 56
+  category: alkaline earth metal
+  group: 2
+  period: 6
+  electron_configuration: "[Xe] 6s²"
+  electronegativity: 0.89
+  atomic_mass: 137.327
+
+isotopes:
+  - name: Barium-130
+    symbol: "¹³⁰Ba"
+    mass_number: 130
+    neutrons: 74
+    atomic_mass: 129.906321
+    half_life: 1.6e21
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double electron capture
+        branching_ratio: 1.0
+        daughter: Xenon-130
+    natural_abundance: 0.00106
+
+  - name: Barium-132
+    symbol: "¹³²Ba"
+    mass_number: 132
+    neutrons: 76
+    atomic_mass: 131.905061
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00101
+
+  - name: Barium-133
+    symbol: "¹³³Ba"
+    mass_number: 133
+    neutrons: 77
+    atomic_mass: 132.906007
+    half_life: 10.551
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Cesium-133
+    natural_abundance: 0.0
+
+  - name: Barium-134
+    symbol: "¹³⁴Ba"
+    mass_number: 134
+    neutrons: 78
+    atomic_mass: 133.904508
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.02417
+
+  - name: Barium-135
+    symbol: "¹³⁵Ba"
+    mass_number: 135
+    neutrons: 79
+    atomic_mass: 134.905689
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.06592
+    nuclear_spin: "3/2+"
+
+  - name: Barium-136
+    symbol: "¹³⁶Ba"
+    mass_number: 136
+    neutrons: 80
+    atomic_mass: 135.904576
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.07854
+
+  - name: Barium-137
+    symbol: "¹³⁷Ba"
+    mass_number: 137
+    neutrons: 81
+    atomic_mass: 136.905827
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.11232
+    nuclear_spin: "3/2+"
+
+  - name: Barium-138
+    symbol: "¹³⁸Ba"
+    mass_number: 138
+    neutrons: 82
+    atomic_mass: 137.905247
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.71698
+    nuclear_spin: "0+"
+
+  - name: Barium-139
+    symbol: "¹³⁹Ba"
+    mass_number: 139
+    neutrons: 83
+    atomic_mass: 138.908841
+    half_life: 83.06
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Lanthanum-139
+    natural_abundance: 0.0
+
+  - name: Barium-140
+    symbol: "¹⁴⁰Ba"
+    mass_number: 140
+    neutrons: 84
+    atomic_mass: 139.910606
+    half_life: 12.752
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Lanthanum-140
+    natural_abundance: 0.0

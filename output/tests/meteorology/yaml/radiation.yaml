@@ -1,0 +1,45 @@
+category: radiation
+count: 7
+entries:
+  - label: radiation_albedo_reflected
+    symbol: AR
+    name: Albedo reflected
+    domain: meteorology
+    test: "radiation::albedo_reflected"
+    avg_time_ns: 1844089.00
+  - label: radiation_effective_temperature
+    symbol: ET
+    name: Effective temperature
+    domain: meteorology
+    test: "radiation::effective_temperature"
+    avg_time_ns: 1704150.00
+  - label: radiation_planck_function
+    symbol: PF
+    name: Planck function
+    domain: meteorology
+    test: "radiation::planck_function"
+    avg_time_ns: 2855108.00
+  - label: radiation_radiative_forcing_co2
+    symbol: RFC
+    name: Radiative forcing co2
+    domain: meteorology
+    test: "radiation::radiative_forcing_co2"
+    avg_time_ns: 2303089.00
+  - label: radiation_radiative_forcing_co2_zero_when_equal_concentrations
+    symbol: RFC
+    name: Radiative forcing co2 zero when equal concentrations
+    domain: meteorology
+    test: "radiation::radiative_forcing_co2_zero_when_equal_concentrations"
+    avg_time_ns: 2190869.00
+  - label: radiation_stefan_boltzmann_flux
+    symbol: SBF
+    name: Stefan boltzmann flux
+    domain: meteorology
+    test: "radiation::stefan_boltzmann_flux"
+    avg_time_ns: 2202229.00
+  - label: radiation_stefan_boltzmann_flux_monotonic_with_temperature_sweep
+    symbol: SBF
+    name: Stefan boltzmann flux monotonic with temperature sweep
+    domain: meteorology
+    test: "radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep"
+    avg_time_ns: 2281370.00

@@ -1,0 +1,17 @@
+{
+  "category": "transition metal",
+  "symbol": "Pd",
+  "name": "Palladium",
+  "config": "[Kr] 4d¹⁰",
+  "mass": "106.42",
+  "experiment_name": "Pd_Palladium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 3,
+  "iterations": 1000,
+  "avg_time_ns": 3541.52,
+  "min_time_ns": 3541.52,
+  "max_time_ns": 3541.52,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 333333.34,
+  "result": "Z=46 | Pd (Palladium) | 106.42 u | transition metal | [Kr] 4d¹⁰"
+}

@@ -1,0 +1,66 @@
+element:
+  name: Thallium
+  symbol: Tl
+  atomic_number: 81
+  category: post-transition metal
+  group: 13
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹"
+  electronegativity: 1.62
+  atomic_mass: 204.38
+
+isotopes:
+  - name: Thallium-201
+    symbol: "²⁰¹Tl"
+    mass_number: 201
+    neutrons: 120
+    atomic_mass: 200.970819
+    half_life: 72.912
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Mercury-201
+    natural_abundance: 0.0
+
+  - name: Thallium-203
+    symbol: "²⁰³Tl"
+    mass_number: 203
+    neutrons: 122
+    atomic_mass: 202.972344
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2952
+    nuclear_spin: "1/2+"
+
+  - name: Thallium-204
+    symbol: "²⁰⁴Tl"
+    mass_number: 204
+    neutrons: 123
+    atomic_mass: 203.973864
+    half_life: 3.783
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.971
+        daughter: Lead-204
+      - mode: electron capture
+        branching_ratio: 0.029
+        daughter: Mercury-204
+    natural_abundance: 0.0
+
+  - name: Thallium-205
+    symbol: "²⁰⁵Tl"
+    mass_number: 205
+    neutrons: 124
+    atomic_mass: 204.974428
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.7048
+    nuclear_spin: "1/2+"

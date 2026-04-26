@@ -1,0 +1,19 @@
+{
+  "category": "as01",
+  "symbol": "HS",
+  "name": "as002",
+  "target": "astronomy",
+  "module": "celestial",
+  "status": "ok",
+  "elapsed_ms": "5303",
+  "experiment_name": "astronomy_002",
+  "precision": "f64",
+  "elapsed_ms": 5303,
+  "iterations": 1,
+  "avg_time_ns": 5303000064.00,
+  "min_time_ns": 5303000064.00,
+  "max_time_ns": 5303000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.19,
+  "result": "success=true code=Some(0) stdout_bytes=148 stderr_bytes=266"
+}

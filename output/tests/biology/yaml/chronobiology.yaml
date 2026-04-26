@@ -1,0 +1,27 @@
+category: chronobiology
+count: 4
+entries:
+  - label: chronobiology_circadian_amplitude_damping
+    symbol: CAD
+    name: Circadian amplitude damping
+    domain: biology
+    test: "chronobiology::circadian_amplitude_damping"
+    avg_time_ns: 2000019.00
+  - label: chronobiology_jet_lag_recovery
+    symbol: JLR
+    name: Jet lag recovery
+    domain: biology
+    test: "chronobiology::jet_lag_recovery"
+    avg_time_ns: 1860429.00
+  - label: chronobiology_photoperiod
+    symbol: Ph
+    name: Photoperiod
+    domain: biology
+    test: "chronobiology::photoperiod"
+    avg_time_ns: 2133809.00
+  - label: chronobiology_zeitgeber_strength
+    symbol: ZS
+    name: Zeitgeber strength
+    domain: biology
+    test: "chronobiology::zeitgeber_strength"
+    avg_time_ns: 1878409.00

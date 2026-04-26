@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+constants_021,f64,6045,1,6045000000,6045000000,6045000000,0,0.16542597,success=true code=Some(0) stdout_bytes=161 stderr_bytes=266,ct03,GC,ct021,constants,fundamental,ok,6045
+constants_022,f64,1458,1,1458000000,1458000000,1458000000,0,0.68587106,success=true code=Some(0) stdout_bytes=154 stderr_bytes=318,ct03,PC,ct022,constants,fundamental,ok,1458
+constants_023,f64,2408,1,2408000000,2408000000,2408000000,0,0.4152824,success=true code=Some(0) stdout_bytes=153 stderr_bytes=266,ct03,RP,ct023,constants,fundamental,ok,2408
+constants_024,f64,2075,1,2075000000,2075000000,2075000000,0,0.48192772,success=true code=Some(0) stdout_bytes=153 stderr_bytes=214,ct03,SOL,ct024,constants,fundamental,ok,2075
+constants_025,f64,4761,1,4761000000,4761000000,4761000000,0,0.21003991,success=true code=Some(0) stdout_bytes=155 stderr_bytes=422,ct03,SB,ct025,constants,fundamental,ok,4761
+constants_026,f64,2500,1,2500000000,2500000000,2500000000,0,0.4,success=true code=Some(0) stdout_bytes=166 stderr_bytes=214,ct03,ACI,ct026,constants,units,ok,2500
+constants_027,f64,4177,1,4177000000,4177000000,4177000000,0,0.23940627,success=true code=Some(0) stdout_bytes=146 stderr_bytes=318,ct03,ATP,ct027,constants,units,ok,4177
+constants_028,f64,4820,1,4820000000,4820000000,4820000000,0,0.20746888,success=true code=Some(0) stdout_bytes=149 stderr_bytes=318,ct03,CTJ,ct028,constants,units,ok,4820
+constants_029,f64,2856,1,2856000000,2856000000,2856000000,0,0.35014006,success=true code=Some(0) stdout_bytes=153 stderr_bytes=318,ct03,DRR,ct029,constants,units,ok,2856
+constants_030,f64,4061,1,4061000000,4061000000,4061000000,0,0.24624477,success=true code=Some(0) stdout_bytes=167 stderr_bytes=266,ct03,EJR,ct030,constants,units,ok,4061

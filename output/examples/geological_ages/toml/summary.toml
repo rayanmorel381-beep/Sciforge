@@ -1,0 +1,163 @@
+title = "Geological Ages — Radiometric Dating with Isotope Half-lives"
+count = 10
+
+[[entries]]
+label = "Jack Hills zircon"
+category = "Hadean"
+symbol = "U"
+name = "Jack Hills zircon"
+method = "U-Pb (238)"
+parent = "²³⁸U"
+daughter = "²⁰⁶Pb"
+ratio = "1.0200"
+half_life = "4.4680e9 years"
+decay_constant = "4.9156e-18 s⁻¹"
+computed_age = "4532.5 Myr"
+expected_age = "4400 Myr"
+avg_time_ns = 3817.20
+iterations_per_sec = 263157.91
+
+[[entries]]
+label = "Acasta Gneiss"
+category = "Hadean"
+symbol = "U"
+name = "Acasta Gneiss"
+method = "U-Pb (238)"
+parent = "²³⁸U"
+daughter = "²⁰⁶Pb"
+ratio = "0.8500"
+half_life = "4.4680e9 years"
+decay_constant = "4.9156e-18 s⁻¹"
+computed_age = "3965.7 Myr"
+expected_age = "4030 Myr"
+avg_time_ns = 3712.41
+iterations_per_sec = 277777.78
+
+[[entries]]
+label = "Isua Greenstone"
+category = "Archean"
+symbol = "U"
+name = "Isua Greenstone"
+method = "U-Pb (235)"
+parent = "²³⁵U"
+daughter = "²⁰⁷Pb"
+ratio = "0.5800"
+half_life = "7.0400e8 years"
+decay_constant = "3.1197e-17 s⁻¹"
+computed_age = "464.5 Myr"
+expected_age = "3800 Myr"
+avg_time_ns = 4527.30
+iterations_per_sec = 227272.73
+
+[[entries]]
+label = "Pilbara Craton"
+category = "Archean"
+symbol = "K"
+name = "Pilbara Craton"
+method = "K-Ar"
+parent = "⁴⁰K"
+daughter = "⁴⁰Ar"
+ratio = "0.1100"
+half_life = "1.2480e9 years"
+decay_constant = "1.7598e-17 s⁻¹"
+computed_age = "1294.7 Myr"
+expected_age = "3500 Myr"
+avg_time_ns = 4734.31
+iterations_per_sec = 217391.30
+
+[[entries]]
+label = "Kaapvaal Craton"
+category = "Archean"
+symbol = "U"
+name = "Kaapvaal Craton"
+method = "U-Pb (238)"
+parent = "²³⁸U"
+daughter = "²⁰⁶Pb"
+ratio = "0.6500"
+half_life = "4.4680e9 years"
+decay_constant = "4.9156e-18 s⁻¹"
+computed_age = "3228.2 Myr"
+expected_age = "3100 Myr"
+avg_time_ns = 3742.12
+iterations_per_sec = 277777.78
+
+[[entries]]
+label = "Bushveld Complex"
+category = "Proterozoic"
+symbol = "U"
+name = "Bushveld Complex"
+method = "U-Pb (238)"
+parent = "²³⁸U"
+daughter = "²⁰⁶Pb"
+ratio = "0.3200"
+half_life = "4.4680e9 years"
+decay_constant = "4.9156e-18 s⁻¹"
+computed_age = "1789.7 Myr"
+expected_age = "2055 Myr"
+avg_time_ns = 3766.45
+iterations_per_sec = 277777.78
+
+[[entries]]
+label = "Sudbury Impact"
+category = "Proterozoic"
+symbol = "U"
+name = "Sudbury Impact"
+method = "U-Pb (238)"
+parent = "²³⁸U"
+daughter = "²⁰⁶Pb"
+ratio = "0.2800"
+half_life = "4.4680e9 years"
+decay_constant = "4.9156e-18 s⁻¹"
+computed_age = "1591.4 Myr"
+expected_age = "1849 Myr"
+avg_time_ns = 3745.87
+iterations_per_sec = 277777.78
+
+[[entries]]
+label = "Deccan Traps"
+category = "Mesozoic"
+symbol = "K"
+name = "Deccan Traps"
+method = "K-Ar"
+parent = "⁴⁰K"
+daughter = "⁴⁰Ar"
+ratio = "0.0050"
+half_life = "1.2480e9 years"
+decay_constant = "1.7598e-17 s⁻¹"
+computed_age = "84.1 Myr"
+expected_age = "66 Myr"
+avg_time_ns = 4590.98
+iterations_per_sec = 227272.73
+
+[[entries]]
+label = "KT Boundary clay"
+category = "Cenozoic"
+symbol = "C"
+name = "KT Boundary clay"
+method = "C-14"
+parent = "¹⁴C"
+daughter = "¹⁴N"
+ratio = "0.0000"
+half_life = "5.7300e3 years"
+decay_constant = "3.8330e-12 s⁻¹"
+computed_age = "beyond range"
+expected_age = "65.0 kyr"
+avg_time_ns = 4595.33
+iterations_per_sec = 227272.73
+
+[[entries]]
+label = "Lascaux paintings"
+category = "Cenozoic"
+symbol = "C"
+name = "Lascaux paintings"
+method = "C-14"
+parent = "¹⁴C"
+daughter = "¹⁴N"
+ratio = "0.8200"
+half_life = "5.7300e3 years"
+decay_constant = "3.8330e-12 s⁻¹"
+computed_age = "1641 yr"
+expected_age = "17.0 kyr"
+avg_time_ns = 4756.22
+iterations_per_sec = 217391.30
+

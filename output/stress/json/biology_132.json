@@ -1,0 +1,19 @@
+{
+  "category": "bi14",
+  "symbol": "PS",
+  "name": "bi132",
+  "target": "biology",
+  "module": "phylogenetics",
+  "status": "ok",
+  "elapsed_ms": "5186",
+  "experiment_name": "biology_132",
+  "precision": "f64",
+  "elapsed_ms": 5186,
+  "iterations": 1,
+  "avg_time_ns": 5185999872.00,
+  "min_time_ns": 5185999872.00,
+  "max_time_ns": 5185999872.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.19,
+  "result": "success=true code=Some(0) stdout_bytes=157 stderr_bytes=262"
+}

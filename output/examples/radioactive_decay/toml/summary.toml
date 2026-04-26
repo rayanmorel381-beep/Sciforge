@@ -1,0 +1,207 @@
+title = "Radioactive Decay — Chains, Half-lives & Activities from Isotope Data"
+count = 12
+
+[[entries]]
+label = "²³⁸U"
+category = "Alpha"
+symbol = "²³⁸U"
+name = "Uranium"
+Z = "92"
+A = "238"
+N = "146"
+half_life = "4.468e9 years"
+decay_constant = "4.9156e-18 s⁻¹"
+decay_mode = "alpha"
+specific_activity = "1.244e4 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.571 MeV/nucleon"
+avg_time_ns = 2226.82
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "²³⁵U"
+category = "Alpha"
+symbol = "²³⁵U"
+name = "Uranium"
+Z = "92"
+A = "235"
+N = "143"
+half_life = "704000000.00 years"
+decay_constant = "3.1197e-17 s⁻¹"
+decay_mode = "alpha"
+specific_activity = "7.995e4 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.565 MeV/nucleon"
+avg_time_ns = 2250.62
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "²³²Th"
+category = "Alpha"
+symbol = "²³²Th"
+name = "Thorium"
+Z = "90"
+A = "232"
+N = "142"
+half_life = "1.405e10 years"
+decay_constant = "1.5632e-18 s⁻¹"
+decay_mode = "alpha"
+specific_activity = "4.058e3 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.570 MeV/nucleon"
+avg_time_ns = 2421.41
+iterations_per_sec = 416666.66
+
+[[entries]]
+label = "⁴⁰K"
+category = "Other"
+symbol = "⁴⁰K"
+name = "Potassium"
+Z = "19"
+A = "40"
+N = "21"
+half_life = "1.248e9 years"
+decay_constant = "1.7598e-17 s⁻¹"
+decay_mode = "beta- (electron emission)"
+specific_activity = "2.650e5 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.457 MeV/nucleon"
+avg_time_ns = 2266.50
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "¹⁴C"
+category = "Other"
+symbol = "¹⁴C"
+name = "Carbon"
+Z = "6"
+A = "14"
+N = "8"
+half_life = "5730.00 years"
+decay_constant = "3.8330e-12 s⁻¹"
+decay_mode = "beta- (electron emission)"
+specific_activity = "1.649e11 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.517 MeV/nucleon"
+avg_time_ns = 2285.18
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "²²⁶Ra"
+category = "Other"
+symbol = "²²⁶Ra"
+name = "Radium"
+Z = "88"
+A = "226"
+N = "138"
+half_life = "1600.00 years"
+decay_constant = "1.3727e-11 s⁻¹"
+decay_mode = "alpha emission"
+specific_activity = "3.658e10 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.568 MeV/nucleon"
+avg_time_ns = 2268.76
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "⁹⁰Sr"
+category = "Other"
+symbol = "⁹⁰Sr"
+name = "Strontium"
+Z = "38"
+A = "90"
+N = "52"
+half_life = "28.79 years"
+decay_constant = "7.6286e-10 s⁻¹"
+decay_mode = "beta- (electron emission)"
+specific_activity = "5.105e12 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.525 MeV/nucleon"
+avg_time_ns = 2214.38
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "¹³⁷Cs"
+category = "Other"
+symbol = "¹³⁷Cs"
+name = "Cesium"
+Z = "55"
+A = "137"
+N = "82"
+half_life = "30.17 years"
+decay_constant = "7.2804e-10 s⁻¹"
+decay_mode = "beta- (electron emission)"
+specific_activity = "3.200e12 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.552 MeV/nucleon"
+avg_time_ns = 2254.30
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "¹³¹I"
+category = "Other"
+symbol = "¹³¹I"
+name = "Iodine"
+Z = "53"
+A = "131"
+N = "78"
+half_life = "8.03 days"
+decay_constant = "9.9967e-7 s⁻¹"
+decay_mode = "beta- (electron emission)"
+specific_activity = "4.596e15 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.548 MeV/nucleon"
+avg_time_ns = 2220.21
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "⁶⁰Co"
+category = "Beta"
+symbol = "⁶⁰Co"
+name = "Cobalt"
+Z = "27"
+A = "60"
+N = "33"
+half_life = "5.27 years"
+decay_constant = "4.1664e-9 s⁻¹"
+decay_mode = "beta-"
+specific_activity = "4.182e13 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.489 MeV/nucleon"
+avg_time_ns = 2333.16
+iterations_per_sec = 454545.47
+
+[[entries]]
+label = "²³⁹Pu"
+category = "Alpha"
+symbol = "²³⁹Pu"
+name = "Plutonium"
+Z = "94"
+A = "239"
+N = "145"
+half_life = "24110.00 years"
+decay_constant = "9.1094e-13 s⁻¹"
+decay_mode = "alpha"
+specific_activity = "2.295e9 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.563 MeV/nucleon"
+avg_time_ns = 2407.81
+iterations_per_sec = 416666.66
+
+[[entries]]
+label = "²⁴¹Am"
+category = "Alpha"
+symbol = "²⁴¹Am"
+name = "Americium"
+Z = "95"
+A = "241"
+N = "146"
+half_life = "432.20 years"
+decay_constant = "5.0816e-11 s⁻¹"
+decay_mode = "alpha"
+specific_activity = "1.270e11 Bq/g"
+remaining_3hl = "125000 / 1M after 3 half-lives"
+binding_energy = "7.561 MeV/nucleon"
+avg_time_ns = 2720.78
+iterations_per_sec = 384615.38
+

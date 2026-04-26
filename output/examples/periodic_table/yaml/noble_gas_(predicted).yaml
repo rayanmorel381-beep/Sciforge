@@ -1,0 +1,9 @@
+category: noble gas (predicted)
+count: 1
+entries:
+  - label: 118_Og
+    symbol: Og
+    name: Oganesson
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)
+    mass: 294
+    avg_time_ns: 9873.80

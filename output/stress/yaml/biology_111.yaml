@@ -1,0 +1,17 @@
+category: bi12
+symbol: SGP
+name: bi111
+target: biology
+module: mycology
+status: ok
+elapsed_ms: 2064
+experiment_name: biology_111
+precision: f64
+elapsed_ms: 2064
+iterations: 1
+avg_time_ns: 2064000000.00
+min_time_ns: 2064000000.00
+max_time_ns: 2064000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.48
+result: success=true code=Some(0) stdout_bytes=166 stderr_bytes=262

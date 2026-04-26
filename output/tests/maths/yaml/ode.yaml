@@ -1,0 +1,9 @@
+category: ode
+count: 1
+entries:
+  - label: ode_ode_euler
+    symbol: OE
+    name: Ode euler
+    domain: maths
+    test: "ode::ode_euler"
+    avg_time_ns: 1969669.00

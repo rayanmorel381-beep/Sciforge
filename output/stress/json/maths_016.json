@@ -1,0 +1,19 @@
+{
+  "category": "ma02",
+  "symbol": "HW",
+  "name": "ma016",
+  "target": "maths",
+  "module": "fft",
+  "status": "ok",
+  "elapsed_ms": "4633",
+  "experiment_name": "maths_016",
+  "precision": "f64",
+  "elapsed_ms": 4633,
+  "iterations": 1,
+  "avg_time_ns": 4632999936.00,
+  "min_time_ns": 4632999936.00,
+  "max_time_ns": 4632999936.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.22,
+  "result": "success=true code=Some(0) stdout_bytes=142 stderr_bytes=206"
+}

@@ -1,0 +1,59 @@
+element:
+  name: Darmstadtium
+  symbol: Ds
+  atomic_number: 110
+  category: unknown
+  group: 10
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d⁸ 7s²"
+  electronegativity: null
+  atomic_mass: 281.165
+
+isotopes:
+  - name: Darmstadtium-279
+    symbol: "²⁷⁹Ds"
+    mass_number: 279
+    neutrons: 169
+    atomic_mass: 279.160
+    half_life: 0.18
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.90
+        daughter: Hassium-275
+      - mode: spontaneous_fission
+        branching_ratio: 0.10
+        daughter: null
+    natural_abundance: 0.0
+
+  - name: Darmstadtium-281
+    symbol: "²⁸¹Ds"
+    mass_number: 281
+    neutrons: 171
+    atomic_mass: 281.165
+    half_life: 12.7
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 0.94
+        daughter: null
+      - mode: alpha
+        branching_ratio: 0.06
+        daughter: Hassium-277
+    natural_abundance: 0.0
+
+  - name: Darmstadtium-282
+    symbol: "²⁸²Ds"
+    mass_number: 282
+    neutrons: 172
+    atomic_mass: 282.169
+    half_life: 0.067
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Hassium-278
+    natural_abundance: 0.0

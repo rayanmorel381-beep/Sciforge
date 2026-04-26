@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_181,f64,706,1,706000000,706000000,706000000,0,1.4164306,success=true code=Some(0) stdout_bytes=147 stderr_bytes=262,bi19,BS,bi181,biology,virology,ok,706
+biology_182,f64,5055,1,5055000000,5055000000,5055000000,0,0.19782394,success=true code=Some(0) stdout_bytes=160 stderr_bytes=210,bi19,HIT,bi182,biology,virology,ok,5055
+biology_183,f64,5344,1,5344000000,5344000000,5344000000,0,0.18712574,success=true code=Some(0) stdout_bytes=153 stderr_bytes=210,bi19,VLD,bi183,biology,virology,ok,5344

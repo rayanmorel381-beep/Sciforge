@@ -1,0 +1,16 @@
+[benchmark]
+category = "nonmetal"
+symbol = "O"
+name = "Oxygen"
+config = "1s² 2s² 2p⁴"
+mass = "15.999"
+experiment_name = "O_Oxygen_benchmark"
+precision = "f64"
+elapsed_ms = 3
+iterations = 5000
+avg_time_ns = 620.61
+min_time_ns = 620.61
+max_time_ns = 620.61
+time_stddev = 0.0000
+iterations_per_sec = 1666666.62
+result = "Z=8 | O (Oxygen) | 15.999 u | nonmetal | 1s² 2s² 2p⁴"

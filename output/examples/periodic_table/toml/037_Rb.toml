@@ -1,0 +1,16 @@
+[benchmark]
+category = "alkali metal"
+symbol = "Rb"
+name = "Rubidium"
+config = "[Kr] 5s¹"
+mass = "85.4678"
+experiment_name = "Rb_Rubidium_benchmark"
+precision = "f32"
+elapsed_ms = 2
+iterations = 1000
+avg_time_ns = 2895.13
+min_time_ns = 2895.13
+max_time_ns = 2895.13
+time_stddev = 0.0000
+iterations_per_sec = 500000.00
+result = "Z=37 | Rb (Rubidium) | 85.4678 u | alkali metal | [Kr] 5s¹"

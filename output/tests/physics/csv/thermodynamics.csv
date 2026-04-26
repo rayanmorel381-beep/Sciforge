@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+thermodynamics::boltzmann_distribution,f64,2,1,2035519,2035519,2035519,0,500,pass,thermodynamics,BD,Boltzmann distribution,physics,thermodynamics::boltzmann_distribution
+thermodynamics::carnot_efficiency,f64,2,1,2017850,2017850,2017850,0,500,pass,thermodynamics,CE,Carnot efficiency,physics,thermodynamics::carnot_efficiency
+thermodynamics::ideal_gas_pressure,f64,1,1,1943659,1943659,1943659,0,1000,pass,thermodynamics,IGP,Ideal gas pressure,physics,thermodynamics::ideal_gas_pressure
+thermodynamics::ideal_gas_temperature,f64,2,1,2147769,2147769,2147769,0,500,pass,thermodynamics,IGT,Ideal gas temperature,physics,thermodynamics::ideal_gas_temperature
+thermodynamics::stefan_boltzmann_power,f64,1,1,1895259,1895259,1895259,0,1000,pass,thermodynamics,SBP,Stefan boltzmann power,physics,thermodynamics::stefan_boltzmann_power
+thermodynamics::wien_displacement,f64,2,1,2000769,2000769,2000769,0,500,pass,thermodynamics,WD,Wien displacement,physics,thermodynamics::wien_displacement

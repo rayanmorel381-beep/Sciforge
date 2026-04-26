@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+genomics::codon_adaptation_index,f64,2,1,2450358,2450358,2450358,0,500,pass,genomics,CAI,Codon adaptation index,biology,genomics::codon_adaptation_index
+genomics::gc_content,f64,1,1,1887440,1887440,1887440,0,1000,pass,genomics,GC,Gc content,biology,genomics::gc_content
+genomics::gene_density,f64,2,1,2362429,2362429,2362429,0,500,pass,genomics,GD,Gene density,biology,genomics::gene_density
+genomics::snp_allele_frequency,f64,2,1,2466358,2466358,2466358,0,500,pass,genomics,SAF,Snp allele frequency,biology,genomics::snp_allele_frequency

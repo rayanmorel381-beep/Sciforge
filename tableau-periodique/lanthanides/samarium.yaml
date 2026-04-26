@@ -1,0 +1,109 @@
+element:
+  name: Samarium
+  symbol: Sm
+  atomic_number: 62
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f⁶ 6s²"
+  electronegativity: 1.17
+  atomic_mass: 150.36
+
+isotopes:
+  - name: Samarium-144
+    symbol: "¹⁴⁴Sm"
+    mass_number: 144
+    neutrons: 82
+    atomic_mass: 143.911999
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0307
+
+  - name: Samarium-147
+    symbol: "¹⁴⁷Sm"
+    mass_number: 147
+    neutrons: 85
+    atomic_mass: 146.914898
+    half_life: 1.06e11
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Neodymium-143
+    natural_abundance: 0.1499
+
+  - name: Samarium-148
+    symbol: "¹⁴⁸Sm"
+    mass_number: 148
+    neutrons: 86
+    atomic_mass: 147.914823
+    half_life: 7.0e15
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Neodymium-144
+    natural_abundance: 0.1124
+
+  - name: Samarium-149
+    symbol: "¹⁴⁹Sm"
+    mass_number: 149
+    neutrons: 87
+    atomic_mass: 148.917185
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1382
+    nuclear_spin: "7/2-"
+
+  - name: Samarium-150
+    symbol: "¹⁵⁰Sm"
+    mass_number: 150
+    neutrons: 88
+    atomic_mass: 149.917276
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0738
+
+  - name: Samarium-152
+    symbol: "¹⁵²Sm"
+    mass_number: 152
+    neutrons: 90
+    atomic_mass: 151.919732
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2675
+
+  - name: Samarium-153
+    symbol: "¹⁵³Sm"
+    mass_number: 153
+    neutrons: 91
+    atomic_mass: 152.922097
+    half_life: 46.284
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Europium-153
+    natural_abundance: 0.0
+
+  - name: Samarium-154
+    symbol: "¹⁵⁴Sm"
+    mass_number: 154
+    neutrons: 92
+    atomic_mass: 153.922209
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2275

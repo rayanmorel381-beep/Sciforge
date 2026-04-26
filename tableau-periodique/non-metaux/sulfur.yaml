@@ -1,0 +1,87 @@
+element:
+  name: Sulfur
+  symbol: S
+  atomic_number: 16
+  category: nonmetal
+  group: 16
+  period: 3
+  electron_configuration: "[Ne] 3s² 3p⁴"
+  electronegativity: 2.58
+  atomic_mass: 32.06
+
+isotopes:
+  - name: Sulfur-32
+    symbol: "³²S"
+    mass_number: 32
+    neutrons: 16
+    atomic_mass: 31.972071
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.9499
+    nuclear_spin: "0+"
+
+  - name: Sulfur-33
+    symbol: "³³S"
+    mass_number: 33
+    neutrons: 17
+    atomic_mass: 32.971459
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0075
+    nuclear_spin: "3/2+"
+
+  - name: Sulfur-34
+    symbol: "³⁴S"
+    mass_number: 34
+    neutrons: 18
+    atomic_mass: 33.967867
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0425
+    nuclear_spin: "0+"
+
+  - name: Sulfur-35
+    symbol: "³⁵S"
+    mass_number: 35
+    neutrons: 19
+    atomic_mass: 34.969032
+    half_life: 87.37
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Chlorine-35
+    natural_abundance: 0.0
+
+  - name: Sulfur-36
+    symbol: "³⁶S"
+    mass_number: 36
+    neutrons: 20
+    atomic_mass: 35.967081
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0001
+    nuclear_spin: "0+"
+
+  - name: Sulfur-38
+    symbol: "³⁸S"
+    mass_number: 38
+    neutrons: 22
+    atomic_mass: 37.97116
+    half_life: 170.3
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Chlorine-38
+    natural_abundance: 0.0

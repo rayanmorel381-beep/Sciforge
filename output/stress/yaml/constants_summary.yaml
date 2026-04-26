@@ -1,0 +1,17 @@
+category: constants
+symbol: SUM
+name: CT Summary
+target: constants
+module: summary
+status: ok
+elapsed_ms: 108775
+experiment_name: constants_summary
+precision: f64
+elapsed_ms: 108775
+iterations: 1
+avg_time_ns: 3399218688.00
+min_time_ns: 3399218688.00
+max_time_ns: 3399218688.00
+time_stddev: 0.0000
+iterations_per_sec: 0.01
+result: tests_total=32 tests_ok=32 tests_failed=0 elapsed_sum_ms=108775 min_ms=823 max_ms=6045 avg_ms=3399.22

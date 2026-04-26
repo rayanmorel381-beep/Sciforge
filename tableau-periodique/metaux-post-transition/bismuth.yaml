@@ -1,0 +1,102 @@
+element:
+  name: Bismuth
+  symbol: Bi
+  atomic_number: 83
+  category: post-transition metal
+  group: 15
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³"
+  electronegativity: 2.02
+  atomic_mass: 208.98040
+
+isotopes:
+  - name: Bismuth-207
+    symbol: "²⁰⁷Bi"
+    mass_number: 207
+    neutrons: 124
+    atomic_mass: 206.978471
+    half_life: 31.55
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Lead-207
+    natural_abundance: 0.0
+
+  - name: Bismuth-208
+    symbol: "²⁰⁸Bi"
+    mass_number: 208
+    neutrons: 125
+    atomic_mass: 207.979742
+    half_life: 3.68e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Lead-208
+    natural_abundance: 0.0
+
+  - name: Bismuth-209
+    symbol: "²⁰⁹Bi"
+    mass_number: 209
+    neutrons: 126
+    atomic_mass: 208.980399
+    half_life: 2.01e19
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Thallium-205
+    natural_abundance: 1.0
+    nuclear_spin: "9/2-"
+
+  - name: Bismuth-210
+    symbol: "²¹⁰Bi"
+    mass_number: 210
+    neutrons: 127
+    atomic_mass: 209.984120
+    half_life: 5.013
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Polonium-210
+    natural_abundance: 0.0
+
+  - name: Bismuth-212
+    symbol: "²¹²Bi"
+    mass_number: 212
+    neutrons: 129
+    atomic_mass: 211.991286
+    half_life: 60.55
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.6406
+        daughter: Polonium-212
+      - mode: alpha
+        branching_ratio: 0.3594
+        daughter: Thallium-208
+    natural_abundance: 0.0
+
+  - name: Bismuth-213
+    symbol: "²¹³Bi"
+    mass_number: 213
+    neutrons: 130
+    atomic_mass: 212.994385
+    half_life: 45.59
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.978
+        daughter: Polonium-213
+      - mode: alpha
+        branching_ratio: 0.022
+        daughter: Thallium-209
+    natural_abundance: 0.0

@@ -1,0 +1,16 @@
+[benchmark]
+category = "transition metal"
+symbol = "Ir"
+name = "Iridium"
+config = "[Xe] 4f¹⁴ 5d⁷ 6s²"
+mass = "192.217"
+experiment_name = "Ir_Iridium_benchmark"
+precision = "f32"
+elapsed_ms = 31
+iterations = 5000
+avg_time_ns = 6319.36
+min_time_ns = 6319.36
+max_time_ns = 6319.36
+time_stddev = 0.0000
+iterations_per_sec = 161290.33
+result = "Z=77 | Ir (Iridium) | 192.217 u | transition metal | [Xe] 4f¹⁴ 5d⁷ 6s²"

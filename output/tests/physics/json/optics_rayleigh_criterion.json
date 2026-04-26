@@ -1,0 +1,17 @@
+{
+  "category": "optics",
+  "symbol": "RC",
+  "name": "Rayleigh criterion",
+  "domain": "physics",
+  "test": "optics::rayleigh_criterion",
+  "experiment_name": "optics::rayleigh_criterion",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1909329.00,
+  "min_time_ns": 1909329.00,
+  "max_time_ns": 1909329.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

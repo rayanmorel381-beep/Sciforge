@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+surface::contact_angle,f64,3,1,3160308,3160308,3160308,0,333.33334,pass,surface,CA,Contact angle,chemistry,surface::contact_angle
+surface::freundlich_isotherm,f64,3,1,3029159,3029159,3029159,0,333.33334,pass,surface,FI,Freundlich isotherm,chemistry,surface::freundlich_isotherm
+surface::langmuir_isotherm,f64,2,1,2892998,2892998,2892998,0,500,pass,surface,LI,Langmuir isotherm,chemistry,surface::langmuir_isotherm
+surface::laplace_pressure,f64,2,1,2567289,2567289,2567289,0,500,pass,surface,LP,Laplace pressure,chemistry,surface::laplace_pressure

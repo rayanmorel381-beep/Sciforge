@@ -1,0 +1,65 @@
+element:
+  name: Rhodium
+  symbol: Rh
+  atomic_number: 45
+  category: transition metal
+  group: 9
+  period: 5
+  electron_configuration: "[Kr] 4d⁸ 5s¹"
+  electronegativity: 2.28
+  atomic_mass: 102.90550
+
+isotopes:
+  - name: Rhodium-99
+    symbol: "⁹⁹Rh"
+    mass_number: 99
+    neutrons: 54
+    atomic_mass: 98.908132
+    half_life: 16.1
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ / electron capture
+        branching_ratio: 1.0
+        daughter: Ruthenium-99
+    natural_abundance: 0.0
+
+  - name: Rhodium-101
+    symbol: "¹⁰¹Rh"
+    mass_number: 101
+    neutrons: 56
+    atomic_mass: 100.906164
+    half_life: 3.3
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Ruthenium-101
+    natural_abundance: 0.0
+
+  - name: Rhodium-103
+    symbol: "¹⁰³Rh"
+    mass_number: 103
+    neutrons: 58
+    atomic_mass: 102.905504
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "1/2-"
+
+  - name: Rhodium-105
+    symbol: "¹⁰⁵Rh"
+    mass_number: 105
+    neutrons: 60
+    atomic_mass: 104.905694
+    half_life: 35.36
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Palladium-105
+    natural_abundance: 0.0

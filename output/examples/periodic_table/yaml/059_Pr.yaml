@@ -1,0 +1,15 @@
+category: lanthanide
+symbol: Pr
+name: Praseodymium
+config: [Xe] 4f³ 6s²
+mass: 140.90766
+experiment_name: Pr_Praseodymium_benchmark
+precision: f32
+elapsed_ms: 22
+iterations: 5000
+avg_time_ns: 4559.97
+min_time_ns: 4559.97
+max_time_ns: 4559.97
+time_stddev: 0.0000
+iterations_per_sec: 227272.73
+result: Z=59 | Pr (Praseodymium) | 140.90766 u | lanthanide | [Xe] 4f³ 6s²

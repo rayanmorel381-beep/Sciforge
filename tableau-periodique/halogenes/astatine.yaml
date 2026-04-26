@@ -1,0 +1,134 @@
+element:
+  name: Astatine
+  symbol: At
+  atomic_number: 85
+  category: halogen
+  group: 17
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵"
+  electronegativity: 2.2
+  atomic_mass: 210.0
+
+isotopes:
+  - name: Astatine-205
+    symbol: "²⁰⁵At"
+    mass_number: 205
+    neutrons: 120
+    atomic_mass: 204.98607
+    half_life: 26.2
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 0.10
+      - mode: electron capture
+        branching_ratio: 0.90
+    natural_abundance: 0.0
+
+  - name: Astatine-207
+    symbol: "²⁰⁷At"
+    mass_number: 207
+    neutrons: 122
+    atomic_mass: 206.98578
+    half_life: 1.80
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.895
+      - mode: alpha emission
+        branching_ratio: 0.105
+    natural_abundance: 0.0
+
+  - name: Astatine-209
+    symbol: "²⁰⁹At"
+    mass_number: 209
+    neutrons: 124
+    atomic_mass: 208.98617
+    half_life: 5.41
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.958
+      - mode: alpha emission
+        branching_ratio: 0.042
+    natural_abundance: 0.0
+
+  - name: Astatine-210
+    symbol: "²¹⁰At"
+    mass_number: 210
+    neutrons: 125
+    atomic_mass: 209.98715
+    half_life: 8.1
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.998
+      - mode: alpha emission
+        branching_ratio: 0.002
+    natural_abundance: 0.0
+
+  - name: Astatine-211
+    symbol: "²¹¹At"
+    mass_number: 211
+    neutrons: 126
+    atomic_mass: 210.98750
+    half_life: 7.214
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.583
+        daughter: Polonium-211
+      - mode: alpha emission
+        branching_ratio: 0.417
+        daughter: Bismuth-207
+    natural_abundance: 0.0
+
+  - name: Astatine-215
+    symbol: "²¹⁵At"
+    mass_number: 215
+    neutrons: 130
+    atomic_mass: 214.99865
+    half_life: 0.1
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Bismuth-211
+    natural_abundance: trace
+
+  - name: Astatine-217
+    symbol: "²¹⁷At"
+    mass_number: 217
+    neutrons: 132
+    atomic_mass: 217.00472
+    half_life: 32.3
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 0.998
+        daughter: Bismuth-213
+      - mode: beta- (electron emission)
+        branching_ratio: 0.002
+    natural_abundance: trace
+
+  - name: Astatine-218
+    symbol: "²¹⁸At"
+    mass_number: 218
+    neutrons: 133
+    atomic_mass: 218.00869
+    half_life: 1.5
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 0.999
+        daughter: Bismuth-214
+      - mode: beta- (electron emission)
+        branching_ratio: 0.001
+    natural_abundance: trace

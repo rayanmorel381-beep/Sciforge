@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb04"
+symbol = "FDF"
+name = "hb032"
+target = "hub"
+module = "cross_domain"
+status = "ok"
+elapsed_ms = "485"
+experiment_name = "hub_032"
+precision = "f64"
+elapsed_ms = 485
+iterations = 1
+avg_time_ns = 485000000.00
+min_time_ns = 485000000.00
+max_time_ns = 485000000.00
+time_stddev = 0.0000
+iterations_per_sec = 2.06
+result = "success=true code=Some(0) stdout_bytes=171 stderr_bytes=358"

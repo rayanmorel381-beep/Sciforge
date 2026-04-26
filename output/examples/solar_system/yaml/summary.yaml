@@ -1,0 +1,107 @@
+title: Solar System — Orbital Mechanics (Kepler, Hohmann, Escape Velocities)
+count: 8
+entries:
+  - label: Mercury
+    category: Terrestrial
+    symbol: ☿
+    name: Mercury
+    mass: 3.301e23 kg
+    radius: 2440 km
+    semi_major: 0.387 AU
+    kepler_period: 87.95 days
+    circular_vel: 47.88 km/s
+    escape_vel: 4.25 km/s
+    hohmann_dv: 17.15 km/s
+    avg_time_ns: 1855.87
+    iterations_per_sec: 555555.56
+  - label: Venus
+    category: Terrestrial
+    symbol: ♀
+    name: Venus
+    mass: 4.868e24 kg
+    radius: 6052 km
+    semi_major: 0.723 AU
+    kepler_period: 224.67 days
+    circular_vel: 35.03 km/s
+    escape_vel: 10.36 km/s
+    hohmann_dv: 5.20 km/s
+    avg_time_ns: 1741.47
+    iterations_per_sec: 625000.00
+  - label: Earth
+    category: Terrestrial
+    symbol: ♁
+    name: Earth
+    mass: 5.972e24 kg
+    radius: 6372 km
+    semi_major: 1.000 AU
+    kepler_period: 365.19 days
+    circular_vel: 29.79 km/s
+    escape_vel: 11.19 km/s
+    hohmann_dv: — (origin)
+    avg_time_ns: 1730.09
+    iterations_per_sec: 625000.00
+  - label: Mars
+    category: Terrestrial
+    symbol: ♂
+    name: Mars
+    mass: 6.417e23 kg
+    radius: 3390 km
+    semi_major: 1.524 AU
+    kepler_period: 686.86 days
+    circular_vel: 24.13 km/s
+    escape_vel: 5.03 km/s
+    hohmann_dv: 5.59 km/s
+    avg_time_ns: 1792.81
+    iterations_per_sec: 625000.00
+  - label: Jupiter
+    category: Gas Giant
+    symbol: ♃
+    name: Jupiter
+    mass: 1.898e27 kg
+    radius: 69911 km
+    semi_major: 5.204 AU
+    kepler_period: 4335.92 days
+    circular_vel: 13.06 km/s
+    escape_vel: 60.20 km/s
+    hohmann_dv: 14.44 km/s
+    avg_time_ns: 1797.72
+    iterations_per_sec: 625000.00
+  - label: Saturn
+    category: Gas Giant
+    symbol: ♄
+    name: Saturn
+    mass: 5.683e26 kg
+    radius: 58232 km
+    semi_major: 9.582 AU
+    kepler_period: 10832.57 days
+    circular_vel: 9.62 km/s
+    escape_vel: 36.09 km/s
+    hohmann_dv: 15.74 km/s
+    avg_time_ns: 1849.66
+    iterations_per_sec: 555555.56
+  - label: Uranus
+    category: Ice Giant
+    symbol: ⛢
+    name: Uranus
+    mass: 8.681e25 kg
+    radius: 25362 km
+    semi_major: 19.201 AU
+    kepler_period: 30727.34 days
+    circular_vel: 6.80 km/s
+    escape_vel: 21.38 km/s
+    hohmann_dv: 15.94 km/s
+    avg_time_ns: 1818.38
+    iterations_per_sec: 555555.56
+  - label: Neptune
+    category: Ice Giant
+    symbol: ♆
+    name: Neptune
+    mass: 1.024e26 kg
+    radius: 24622 km
+    semi_major: 30.048 AU
+    kepler_period: 60151.16 days
+    circular_vel: 5.43 km/s
+    escape_vel: 23.56 km/s
+    hohmann_dv: 15.71 km/s
+    avg_time_ns: 1813.08
+    iterations_per_sec: 555555.56

@@ -1,0 +1,22 @@
+{
+  "category": "Ice Giant",
+  "symbol": "⛢",
+  "name": "Uranus",
+  "mass": "8.681e25 kg",
+  "radius": "25362 km",
+  "semi_major": "19.201 AU",
+  "kepler_period": "30727.34 days",
+  "circular_vel": "6.80 km/s",
+  "escape_vel": "21.38 km/s",
+  "hohmann_dv": "15.94 km/s",
+  "experiment_name": "Uranus_orbit",
+  "precision": "f64",
+  "elapsed_ms": 9,
+  "iterations": 5000,
+  "avg_time_ns": 1818.38,
+  "min_time_ns": 1818.38,
+  "max_time_ns": 1818.38,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 555555.56,
+  "result": "Uranus | T=30727.34 days | v_circ=6.80 km/s | v_esc=21.38 km/s | Hohmann Δv=15.94 km/s"
+}

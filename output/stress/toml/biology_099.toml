@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi10"
+symbol = "VE"
+name = "bi099"
+target = "biology"
+module = "immunology"
+status = "ok"
+elapsed_ms = "3230"
+experiment_name = "biology_099"
+precision = "f64"
+elapsed_ms = 3230
+iterations = 1
+avg_time_ns = 3230000128.00
+min_time_ns = 3230000128.00
+max_time_ns = 3230000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.31
+result = "success=true code=Some(0) stdout_bytes=155 stderr_bytes=314"

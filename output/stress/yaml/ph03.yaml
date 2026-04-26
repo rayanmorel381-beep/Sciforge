@@ -1,0 +1,83 @@
+category: ph03
+count: 10
+entries:
+  - label: physics_021
+    symbol: OLR
+    name: ph021
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 314
+    avg_time_ns: 314000000.00
+  - label: physics_022
+    symbol: OR
+    name: ph022
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3486
+    avg_time_ns: 3486000128.00
+  - label: physics_023
+    symbol: OV
+    name: ph023
+    target: physics
+    module: electromagnetism
+    status: ok
+    elapsed_ms: 3839
+    avg_time_ns: 3839000064.00
+  - label: physics_024
+    symbol: DS
+    name: ph024
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 3466
+    avg_time_ns: 3465999872.00
+  - label: physics_025
+    symbol: OC
+    name: ph025
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 3234
+    avg_time_ns: 3233999872.00
+  - label: physics_026
+    symbol: RRF
+    name: ph026
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 3599
+    avg_time_ns: 3599000064.00
+  - label: physics_027
+    symbol: VD
+    name: ph027
+    target: physics
+    module: electronics
+    status: ok
+    elapsed_ms: 4532
+    avg_time_ns: 4531999744.00
+  - label: physics_028
+    symbol: BP
+    name: ph028
+    target: physics
+    module: fluid_mechanics
+    status: ok
+    elapsed_ms: 4437
+    avg_time_ns: 4437000192.00
+  - label: physics_029
+    symbol: DF
+    name: ph029
+    target: physics
+    module: fluid_mechanics
+    status: ok
+    elapsed_ms: 4139
+    avg_time_ns: 4139000064.00
+  - label: physics_030
+    symbol: RN
+    name: ph030
+    target: physics
+    module: fluid_mechanics
+    status: ok
+    elapsed_ms: 3374
+    avg_time_ns: 3374000128.00

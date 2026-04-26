@@ -1,0 +1,16 @@
+[benchmark]
+category = "halogen"
+symbol = "Br"
+name = "Bromine"
+config = "[Ar] 3d¹⁰ 4s² 4p⁵"
+mass = "79.904"
+experiment_name = "Br_Bromine_benchmark"
+precision = "f32"
+elapsed_ms = 13
+iterations = 5000
+avg_time_ns = 2714.75
+min_time_ns = 2714.75
+max_time_ns = 2714.75
+time_stddev = 0.0000
+iterations_per_sec = 384615.38
+result = "Z=35 | Br (Bromine) | 79.904 u | halogen | [Ar] 3d¹⁰ 4s² 4p⁵"

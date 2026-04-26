@@ -1,0 +1,15 @@
+category: transition_metal
+symbol: Bh
+name: Bohrium
+config: [Rn] 5f¹⁴ 6d⁵ 7s²
+mass: 270.134
+experiment_name: Bh_Bohrium_benchmark
+precision: f32
+elapsed_ms: 42
+iterations: 5000
+avg_time_ns: 8499.11
+min_time_ns: 8499.11
+max_time_ns: 8499.11
+time_stddev: 0.0000
+iterations_per_sec: 119047.62
+result: Z=107 | Bh (Bohrium) | 270.134 u | transition_metal | [Rn] 5f¹⁴ 6d⁵ 7s²

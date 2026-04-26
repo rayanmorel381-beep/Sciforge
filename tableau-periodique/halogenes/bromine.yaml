@@ -1,0 +1,138 @@
+element:
+  name: Bromine
+  symbol: Br
+  atomic_number: 35
+  category: halogen
+  group: 17
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s² 4p⁵"
+  electronegativity: 2.96
+  atomic_mass: 79.904
+
+isotopes:
+  - name: Bromine-75
+    symbol: "⁷⁵Br"
+    mass_number: 75
+    neutrons: 40
+    atomic_mass: 74.96859
+    half_life: 96.7
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Selenium-75
+    natural_abundance: 0.0
+
+  - name: Bromine-76
+    symbol: "⁷⁶Br"
+    mass_number: 76
+    neutrons: 41
+    atomic_mass: 75.96854
+    half_life: 16.2
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Selenium-76
+    natural_abundance: 0.0
+
+  - name: Bromine-77
+    symbol: "⁷⁷Br"
+    mass_number: 77
+    neutrons: 42
+    atomic_mass: 76.92138
+    half_life: 57.04
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.994
+        daughter: Selenium-77
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.006
+    natural_abundance: 0.0
+
+  - name: Bromine-79
+    symbol: "⁷⁹Br"
+    mass_number: 79
+    neutrons: 44
+    atomic_mass: 78.918338
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.5069
+    nuclear_spin: "3/2-"
+
+  - name: Bromine-80
+    symbol: "⁸⁰Br"
+    mass_number: 80
+    neutrons: 45
+    atomic_mass: 79.918530
+    half_life: 17.68
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.917
+        daughter: Krypton-80
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.028
+      - mode: electron capture
+        branching_ratio: 0.055
+    natural_abundance: 0.0
+
+  - name: Bromine-81
+    symbol: "⁸¹Br"
+    mass_number: 81
+    neutrons: 46
+    atomic_mass: 80.916291
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.4931
+    nuclear_spin: "3/2-"
+
+  - name: Bromine-82
+    symbol: "⁸²Br"
+    mass_number: 82
+    neutrons: 47
+    atomic_mass: 81.916805
+    half_life: 35.282
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Krypton-82
+    natural_abundance: 0.0
+
+  - name: Bromine-83
+    symbol: "⁸³Br"
+    mass_number: 83
+    neutrons: 48
+    atomic_mass: 82.91518
+    half_life: 2.40
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Krypton-83
+    natural_abundance: 0.0
+
+  - name: Bromine-84
+    symbol: "⁸⁴Br"
+    mass_number: 84
+    neutrons: 49
+    atomic_mass: 83.91648
+    half_life: 31.80
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0

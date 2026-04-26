@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+Og_Oganesson_benchmark,f64,9,1000,9873.796,9873.796,9873.796,0,111111.11,Z=118 | Og (Oganesson) | 294 u | noble gas (predicted) | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted),noble gas (predicted),Og,Oganesson,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted),294

@@ -1,0 +1,15 @@
+category: cross_domain
+symbol: DE
+name: Drake equation
+domain: hub
+test: "cross_domain::astrobiology::drake_equation"
+experiment_name: "cross_domain::astrobiology::drake_equation"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2206008.00
+min_time_ns: 2206008.00
+max_time_ns: 2206008.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

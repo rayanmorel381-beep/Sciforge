@@ -1,0 +1,79 @@
+element:
+  name: Scandium
+  symbol: Sc
+  atomic_number: 21
+  category: transition metal
+  group: 3
+  period: 4
+  electron_configuration: "[Ar] 3d¹ 4s²"
+  electronegativity: 1.36
+  atomic_mass: 44.955908
+
+isotopes:
+  - name: Scandium-44
+    symbol: "⁴⁴Sc"
+    mass_number: 44
+    neutrons: 23
+    atomic_mass: 43.959403
+    half_life: 3.97
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.944
+      - mode: electron capture
+        branching_ratio: 0.056
+    natural_abundance: 0.0
+
+  - name: Scandium-45
+    symbol: "⁴⁵Sc"
+    mass_number: 45
+    neutrons: 24
+    atomic_mass: 44.955908
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "7/2-"
+
+  - name: Scandium-46
+    symbol: "⁴⁶Sc"
+    mass_number: 46
+    neutrons: 25
+    atomic_mass: 45.955170
+    half_life: 83.79
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Titanium-46
+    natural_abundance: 0.0
+
+  - name: Scandium-47
+    symbol: "⁴⁷Sc"
+    mass_number: 47
+    neutrons: 26
+    atomic_mass: 46.952408
+    half_life: 3.3492
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Titanium-47
+    natural_abundance: 0.0
+
+  - name: Scandium-48
+    symbol: "⁴⁸Sc"
+    mass_number: 48
+    neutrons: 27
+    atomic_mass: 47.952231
+    half_life: 43.67
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0

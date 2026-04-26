@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb08"
+symbol = "FSO"
+name = "hb072"
+target = "hub"
+module = "tools"
+status = "ok"
+elapsed_ms = "5302"
+experiment_name = "hub_072"
+precision = "f64"
+elapsed_ms = 5302
+iterations = 1
+avg_time_ns = 5302000128.00
+min_time_ns = 5302000128.00
+max_time_ns = 5302000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=157 stderr_bytes=254"

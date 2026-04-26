@@ -1,0 +1,16 @@
+category: Temperature
+symbol: K
+name: Sun surface
+from: 5778 K
+to: 9.940730e3 °F
+conversion: 5778 K → 9.940730e3 °F
+experiment_name: Sun surface_convert
+precision: f64
+elapsed_ms: 34
+iterations: 10000
+avg_time_ns: 3407.44
+min_time_ns: 3407.44
+max_time_ns: 3407.44
+time_stddev: 0.0000
+iterations_per_sec: 294117.66
+result: Sun surface | 5778 K → 9.940730e3 °F

@@ -1,0 +1,17 @@
+category: sp01
+symbol: NSH
+name: sp002
+target: scientific_properties
+module: nan_safety_helpers_cover_all_scientific_domains
+status: ok
+elapsed_ms: 2793
+experiment_name: scientific_properties_002
+precision: f64
+elapsed_ms: 2793
+iterations: 1
+avg_time_ns: 2792999936.00
+min_time_ns: 2792999936.00
+max_time_ns: 2792999936.00
+time_stddev: 0.0000
+iterations_per_sec: 0.36
+result: success=true code=Some(0) stdout_bytes=172 stderr_bytes=233

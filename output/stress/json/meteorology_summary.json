@@ -1,0 +1,19 @@
+{
+  "category": "meteorology",
+  "symbol": "SUM",
+  "name": "ME Summary",
+  "target": "meteorology",
+  "module": "summary",
+  "status": "ok",
+  "elapsed_ms": "179607",
+  "experiment_name": "meteorology_summary",
+  "precision": "f64",
+  "elapsed_ms": 179607,
+  "iterations": 1,
+  "avg_time_ns": 3991266560.00,
+  "min_time_ns": 3991266560.00,
+  "max_time_ns": 3991266560.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.01,
+  "result": "tests_total=45 tests_ok=45 tests_failed=0 elapsed_sum_ms=179607 min_ms=393 max_ms=5824 avg_ms=3991.27"
+}

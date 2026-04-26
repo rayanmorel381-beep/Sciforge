@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+genetics::broad_sense_heritability,f64,2,1,2833199,2833199,2833199,0,500,pass,genetics,BSH,Broad sense heritability,biology,genetics::broad_sense_heritability
+genetics::effective_population_size,f64,2,1,2696249,2696249,2696249,0,500,pass,genetics,EPS,Effective population size,biology,genetics::effective_population_size
+genetics::hardy_weinberg,f64,2,1,2315369,2315369,2315369,0,500,pass,genetics,HW,Hardy weinberg,biology,genetics::hardy_weinberg
+genetics::mutation_selection_balance,f64,2,1,2644719,2644719,2644719,0,500,pass,genetics,MSB,Mutation selection balance,biology,genetics::mutation_selection_balance

@@ -1,0 +1,83 @@
+category: hb01
+count: 10
+entries:
+  - label: hub_001
+    symbol: DE
+    name: hb001
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5552
+    avg_time_ns: 5552000000.00
+  - label: hub_002
+    symbol: HZI
+    name: hb002
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3374
+    avg_time_ns: 3374000128.00
+  - label: hub_003
+    symbol: HZO
+    name: hb003
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1037
+    avg_time_ns: 1037000000.00
+  - label: hub_004
+    symbol: SG
+    name: hb004
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 327
+    avg_time_ns: 327000000.00
+  - label: hub_005
+    symbol: USF
+    name: hb005
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 268
+    avg_time_ns: 268000000.00
+  - label: hub_006
+    symbol: DET
+    name: hb006
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 287
+    avg_time_ns: 287000000.00
+  - label: hub_007
+    symbol: FT
+    name: hb007
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 5662
+    avg_time_ns: 5662000128.00
+  - label: hub_008
+    symbol: JM
+    name: hb008
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 588
+    avg_time_ns: 588000000.00
+  - label: hub_009
+    symbol: SR
+    name: hb009
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 365
+    avg_time_ns: 365000000.00
+  - label: hub_010
+    symbol: CW
+    name: hb010
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 3346
+    avg_time_ns: 3345999872.00

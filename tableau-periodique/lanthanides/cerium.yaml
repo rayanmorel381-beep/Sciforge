@@ -1,0 +1,86 @@
+element:
+  name: Cerium
+  symbol: Ce
+  atomic_number: 58
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f¹ 5d¹ 6s²"
+  electronegativity: 1.12
+  atomic_mass: 140.116
+
+isotopes:
+  - name: Cerium-136
+    symbol: "¹³⁶Ce"
+    mass_number: 136
+    neutrons: 78
+    atomic_mass: 135.907172
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00185
+
+  - name: Cerium-138
+    symbol: "¹³⁸Ce"
+    mass_number: 138
+    neutrons: 80
+    atomic_mass: 137.905991
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00251
+
+  - name: Cerium-140
+    symbol: "¹⁴⁰Ce"
+    mass_number: 140
+    neutrons: 82
+    atomic_mass: 139.905439
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.88450
+
+  - name: Cerium-141
+    symbol: "¹⁴¹Ce"
+    mass_number: 141
+    neutrons: 83
+    atomic_mass: 140.908276
+    half_life: 32.508
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Praseodymium-141
+    natural_abundance: 0.0
+
+  - name: Cerium-142
+    symbol: "¹⁴²Ce"
+    mass_number: 142
+    neutrons: 84
+    atomic_mass: 141.909244
+    half_life: 5.0e16
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Barium-138
+    natural_abundance: 0.11114
+
+  - name: Cerium-144
+    symbol: "¹⁴⁴Ce"
+    mass_number: 144
+    neutrons: 86
+    atomic_mass: 143.913647
+    half_life: 284.91
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Praseodymium-144
+    natural_abundance: 0.0

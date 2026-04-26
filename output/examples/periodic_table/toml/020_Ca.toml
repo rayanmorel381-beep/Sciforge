@@ -1,0 +1,16 @@
+[benchmark]
+category = "alkaline earth metal"
+symbol = "Ca"
+name = "Calcium"
+config = "[Ar] 4s²"
+mass = "40.078"
+experiment_name = "Ca_Calcium_benchmark"
+precision = "f64"
+elapsed_ms = 8
+iterations = 5000
+avg_time_ns = 1662.09
+min_time_ns = 1662.09
+max_time_ns = 1662.09
+time_stddev = 0.0000
+iterations_per_sec = 625000.00
+result = "Z=20 | Ca (Calcium) | 40.078 u | alkaline earth metal | [Ar] 4s²"

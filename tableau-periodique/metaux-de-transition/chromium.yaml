@@ -1,0 +1,71 @@
+element:
+  name: Chromium
+  symbol: Cr
+  atomic_number: 24
+  category: transition metal
+  group: 6
+  period: 4
+  electron_configuration: "[Ar] 3d⁵ 4s¹"
+  electronegativity: 1.66
+  atomic_mass: 51.9961
+
+isotopes:
+  - name: Chromium-50
+    symbol: "⁵⁰Cr"
+    mass_number: 50
+    neutrons: 26
+    atomic_mass: 49.946044
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.04345
+
+  - name: Chromium-51
+    symbol: "⁵¹Cr"
+    mass_number: 51
+    neutrons: 27
+    atomic_mass: 50.944767
+    half_life: 27.7025
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Vanadium-51
+    natural_abundance: 0.0
+
+  - name: Chromium-52
+    symbol: "⁵²Cr"
+    mass_number: 52
+    neutrons: 28
+    atomic_mass: 51.940508
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.83789
+    nuclear_spin: "0+"
+
+  - name: Chromium-53
+    symbol: "⁵³Cr"
+    mass_number: 53
+    neutrons: 29
+    atomic_mass: 52.940649
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.09501
+    nuclear_spin: "3/2-"
+
+  - name: Chromium-54
+    symbol: "⁵⁴Cr"
+    mass_number: 54
+    neutrons: 30
+    atomic_mass: 53.938880
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.02365

@@ -1,0 +1,16 @@
+[benchmark]
+category = "actinide"
+symbol = "Es"
+name = "Einsteinium"
+config = "[Rn] 5f¹¹ 7s²"
+mass = "252.08298"
+experiment_name = "Es_Einsteinium_benchmark"
+precision = "f32"
+elapsed_ms = 78
+iterations = 10000
+avg_time_ns = 7814.70
+min_time_ns = 7814.70
+max_time_ns = 7814.70
+time_stddev = 0.0000
+iterations_per_sec = 128205.12
+result = "Z=99 | Es (Einsteinium) | 252.08298 u | actinide | [Rn] 5f¹¹ 7s²"

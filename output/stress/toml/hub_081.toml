@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb09"
+symbol = "RUR"
+name = "hb081"
+target = "hub"
+module = "tools"
+status = "ok"
+elapsed_ms = "5690"
+experiment_name = "hub_081"
+precision = "f64"
+elapsed_ms = 5690
+iterations = 1
+avg_time_ns = 5689999872.00
+min_time_ns = 5689999872.00
+max_time_ns = 5689999872.00
+time_stddev = 0.0000
+iterations_per_sec = 0.18
+result = "success=true code=Some(0) stdout_bytes=150 stderr_bytes=410"

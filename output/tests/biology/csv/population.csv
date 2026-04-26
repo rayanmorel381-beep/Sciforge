@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+population::carrying_capacity_from_resources,f64,1,1,1833369,1833369,1833369,0,1000,pass,population,CCF,Carrying capacity from resources,biology,population::carrying_capacity_from_resources
+population::cell_growth_logistic,f64,1,1,1889609,1889609,1889609,0,1000,pass,population,CGL,Cell growth logistic,biology,population::cell_growth_logistic
+population::lotka_volterra_competition,f64,1,1,1850320,1850320,1850320,0,1000,pass,population,LVC,Lotka volterra competition,biology,population::lotka_volterra_competition
+population::lotka_volterra_predator_prey,f64,2,1,2126848,2126848,2126848,0,500,pass,population,LVP,Lotka volterra predator prey,biology,population::lotka_volterra_predator_prey

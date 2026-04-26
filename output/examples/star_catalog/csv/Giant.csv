@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,spectral,mass,radius,temperature,luminosity,abs_magnitude,schwarzschild,ms_lifetime,wien_peak
+Aldebaran_stellar,f64,8,5000,1723.6392,1723.6392,1723.6392,0,625000,Aldebaran (K5III) | L=1.570e29 W | M_abs=-0.69 | R_s=3426.96 m | MS lifetime=0.0 Myr | Wien λ_max=741 nm,Giant,K,Aldebaran,K5III,1.160 M☉,44.130 R☉,3910 K,1.570e29 W,-0.69,3426.96 m,0.0 Myr,741 nm

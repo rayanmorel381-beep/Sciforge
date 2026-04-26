@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb06"
+symbol = "FDD"
+name = "hb051"
+target = "hub"
+module = "cross_domain"
+status = "ok"
+elapsed_ms = "294"
+experiment_name = "hub_051"
+precision = "f64"
+elapsed_ms = 294
+iterations = 1
+avg_time_ns = 294000000.00
+min_time_ns = 294000000.00
+max_time_ns = 294000000.00
+time_stddev = 0.0000
+iterations_per_sec = 3.40
+result = "success=true code=Some(0) stdout_bytes=186 stderr_bytes=254"

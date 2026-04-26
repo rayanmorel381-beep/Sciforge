@@ -1,0 +1,74 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+acoustics::doppler_approaching,f64,2,1,2312529,2312529,2312529,0,500,pass,acoustics,DA,Doppler approaching,physics,acoustics::doppler_approaching
+acoustics::intensity_level_db,f64,1,1,1958199,1958199,1958199,0,1000,pass,acoustics,ILD,Intensity level db,physics,acoustics::intensity_level_db
+acoustics::reverberation_time_sabine,f64,1,1,1754940,1754940,1754940,0,1000,pass,acoustics,RTS,Reverberation time sabine,physics,acoustics::reverberation_time_sabine
+acoustics::speed_of_sound_gas,f64,1,1,1791959,1791959,1791959,0,1000,pass,acoustics,SOS,Speed of sound gas,physics,acoustics::speed_of_sound_gas
+dispatch::diffraction_grating_maxima,f64,1,1,1789319,1789319,1789319,0,1000,pass,dispatch,DGM,Diffraction grating maxima,physics,dispatch::diffraction_grating_maxima
+dispatch::dispatch_missing_parameter_returns_error,f64,1,1,1931919,1931919,1931919,0,1000,pass,dispatch,DMP,Dispatch missing parameter returns error,physics,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,1,1,1862279,1862279,1862279,0,1000,pass,dispatch,DUF,Dispatch unknown function returns error,physics,dispatch::dispatch_unknown_function_returns_error
+dispatch::drift_velocity,f64,2,1,2513349,2513349,2513349,0,500,pass,dispatch,DV,Drift velocity,physics,dispatch::drift_velocity
+dispatch::hall_coefficient,f64,2,1,2171289,2171289,2171289,0,500,pass,dispatch,HC,Hall coefficient,physics,dispatch::hall_coefficient
+dispatch::maxwell_speed_distribution_peak,f64,2,1,2002669,2002669,2002669,0,500,pass,dispatch,MSD,Maxwell speed distribution peak,physics,dispatch::maxwell_speed_distribution_peak
+electrodynamics::capacitance_parallel_plate,f64,1,1,1770110,1770110,1770110,0,1000,pass,electrodynamics,CPP,Capacitance parallel plate,physics,electrodynamics::capacitance_parallel_plate
+electrodynamics::electric_field_point_charge,f64,1,1,1710169,1710169,1710169,0,1000,pass,electrodynamics,EFP,Electric field point charge,physics,electrodynamics::electric_field_point_charge
+electrodynamics::skin_depth,f64,1,1,1732869,1732869,1732869,0,1000,pass,electrodynamics,SD,Skin depth,physics,electrodynamics::skin_depth
+electromagnetism::capacitance_parallel_plate,f64,1,1,1701549,1701549,1701549,0,1000,pass,electromagnetism,CPP,Capacitance parallel plate,physics,electromagnetism::capacitance_parallel_plate
+electromagnetism::electric_field_point_charge,f64,1,1,1746880,1746880,1746880,0,1000,pass,electromagnetism,EFP,Electric field point charge,physics,electromagnetism::electric_field_point_charge
+electromagnetism::inductance_solenoid,f64,2,1,2022399,2022399,2022399,0,500,pass,electromagnetism,IS,Inductance solenoid,physics,electromagnetism::inductance_solenoid
+electromagnetism::magnetic_field_wire,f64,2,1,2174609,2174609,2174609,0,500,pass,electromagnetism,MFW,Magnetic field wire,physics,electromagnetism::magnetic_field_wire
+electromagnetism::malus_law,f64,2,1,2228739,2228739,2228739,0,500,pass,electromagnetism,ML,Malus law,physics,electromagnetism::malus_law
+electromagnetism::malus_law_quarter_turn_extinction,f64,2,1,2221529,2221529,2221529,0,500,pass,electromagnetism,MLQ,Malus law quarter turn extinction,physics,electromagnetism::malus_law_quarter_turn_extinction
+electromagnetism::ohm_current,f64,2,1,2390439,2390439,2390439,0,500,pass,electromagnetism,OC,Ohm current,physics,electromagnetism::ohm_current
+electromagnetism::ohm_law_roundtrip_consistency,f64,1,1,1970989,1970989,1970989,0,1000,pass,electromagnetism,OLR,Ohm law roundtrip consistency,physics,electromagnetism::ohm_law_roundtrip_consistency
+electromagnetism::ohm_resistance,f64,1,1,1864079,1864079,1864079,0,1000,pass,electromagnetism,OR,Ohm resistance,physics,electromagnetism::ohm_resistance
+electromagnetism::ohm_voltage,f64,1,1,1730559,1730559,1730559,0,1000,pass,electromagnetism,OV,Ohm voltage,physics,electromagnetism::ohm_voltage
+electronics::diode_shockley,f64,1,1,1889239,1889239,1889239,0,1000,pass,electronics,DS,Diode shockley,physics,electronics::diode_shockley
+electronics::ohm_current,f64,1,1,1945099,1945099,1945099,0,1000,pass,electronics,OC,Ohm current,physics,electronics::ohm_current
+electronics::rlc_resonant_frequency,f64,2,1,2261499,2261499,2261499,0,500,pass,electronics,RRF,Rlc resonant frequency,physics,electronics::rlc_resonant_frequency
+electronics::voltage_divider,f64,2,1,2060860,2060860,2060860,0,500,pass,electronics,VD,Voltage divider,physics,electronics::voltage_divider
+fluid_mechanics::bernoulli_pressure,f64,2,1,2060829,2060829,2060829,0,500,pass,fluid_mechanics,BP,Bernoulli pressure,physics,fluid_mechanics::bernoulli_pressure
+fluid_mechanics::drag_force,f64,1,1,1987399,1987399,1987399,0,1000,pass,fluid_mechanics,DF,Drag force,physics,fluid_mechanics::drag_force
+fluid_mechanics::reynolds_number,f64,1,1,1919159,1919159,1919159,0,1000,pass,fluid_mechanics,RN,Reynolds number,physics,fluid_mechanics::reynolds_number
+materials::diffusion_coefficient,f64,2,1,2138239,2138239,2138239,0,500,pass,materials,DC,Diffusion coefficient,physics,materials::diffusion_coefficient
+materials::fick_first_law,f64,1,1,1970789,1970789,1970789,0,1000,pass,materials,FFL,Fick first law,physics,materials::fick_first_law
+materials::vacancy_concentration,f64,1,1,1876959,1876959,1876959,0,1000,pass,materials,VC,Vacancy concentration,physics,materials::vacancy_concentration
+mechanics::beat_frequency,f64,1,1,1975609,1975609,1975609,0,1000,pass,mechanics,BF,Beat frequency,physics,mechanics::beat_frequency
+mechanics::bernoulli_pressure,f64,2,1,2089740,2089740,2089740,0,500,pass,mechanics,BP,Bernoulli pressure,physics,mechanics::bernoulli_pressure
+mechanics::doppler_shift_wavelength,f64,1,1,1858559,1858559,1858559,0,1000,pass,mechanics,DSW,Doppler shift wavelength,physics,mechanics::doppler_shift_wavelength
+mechanics::drag_force,f64,1,1,1911729,1911729,1911729,0,1000,pass,mechanics,DF,Drag force,physics,mechanics::drag_force
+mechanics::hooke_strain,f64,1,1,1926369,1926369,1926369,0,1000,pass,mechanics,HS,Hooke strain,physics,mechanics::hooke_strain
+mechanics::hooke_stress,f64,1,1,1879379,1879379,1879379,0,1000,pass,mechanics,HS,Hooke stress,physics,mechanics::hooke_stress
+mechanics::mach_number,f64,1,1,1798189,1798189,1798189,0,1000,pass,mechanics,MN,Mach number,physics,mechanics::mach_number
+nucleosynthesis::binding_energy_per_nucleon_semf,f64,1,1,1913979,1913979,1913979,0,1000,pass,nucleosynthesis,BEP,Binding energy per nucleon semf,physics,nucleosynthesis::binding_energy_per_nucleon_semf
+nucleosynthesis::coulomb_barrier,f64,1,1,1912740,1912740,1912740,0,1000,pass,nucleosynthesis,CB,Coulomb barrier,physics,nucleosynthesis::coulomb_barrier
+nucleosynthesis::half_life_from_constant,f64,1,1,1859329,1859329,1859329,0,1000,pass,nucleosynthesis,HLF,Half life from constant,physics,nucleosynthesis::half_life_from_constant
+nucleosynthesis::nuclear_radius_fm,f64,1,1,1916489,1916489,1916489,0,1000,pass,nucleosynthesis,NRF,Nuclear radius fm,physics,nucleosynthesis::nuclear_radius_fm
+optics::brewster_angle,f64,1,1,1849699,1849699,1849699,0,1000,pass,optics,BA,Brewster angle,physics,optics::brewster_angle
+optics::rayleigh_criterion,f64,1,1,1909329,1909329,1909329,0,1000,pass,optics,RC,Rayleigh criterion,physics,optics::rayleigh_criterion
+optics::snell,f64,1,1,1874799,1874799,1874799,0,1000,pass,optics,Sn,Snell,physics,optics::snell
+optics::thin_lens_equation,f64,2,1,2163920,2163920,2163920,0,500,pass,optics,TLE,Thin lens equation,physics,optics::thin_lens_equation
+particle::compton_time,f64,1,1,1861519,1861519,1861519,0,1000,pass,particle,CT,Compton time,physics,particle::compton_time
+particle::fine_structure_constant,f64,1,1,1784589,1784589,1784589,0,1000,pass,particle,FSC,Fine structure constant,physics,particle::fine_structure_constant
+particle::photon_energy,f64,1,1,1733939,1733939,1733939,0,1000,pass,particle,PE,Photon energy,physics,particle::photon_energy
+particle::planck_energy,f64,2,1,2185169,2185169,2185169,0,500,pass,particle,PE,Planck energy,physics,particle::planck_energy
+quantum::harmonic_oscillator_energy,f64,1,1,1914149,1914149,1914149,0,1000,pass,quantum,HOE,Harmonic oscillator energy,physics,quantum::harmonic_oscillator_energy
+quantum::hydrogen_energy,f64,2,1,2102140,2102140,2102140,0,500,pass,quantum,HE,Hydrogen energy,physics,quantum::hydrogen_energy
+quantum::infinite_well_energy,f64,1,1,1897629,1897629,1897629,0,1000,pass,quantum,IWE,Infinite well energy,physics,quantum::infinite_well_energy
+quantum::tunneling_coefficient,f64,1,1,1929499,1929499,1929499,0,1000,pass,quantum,TC,Tunneling coefficient,physics,quantum::tunneling_coefficient
+relativity::compton_wavelength_shift,f64,1,1,1908979,1908979,1908979,0,1000,pass,relativity,CWS,Compton wavelength shift,physics,relativity::compton_wavelength_shift
+relativity::energy_momentum_relation,f64,1,1,1932979,1932979,1932979,0,1000,pass,relativity,EMR,Energy momentum relation,physics,relativity::energy_momentum_relation
+relativity::gamma_factor_at_rest,f64,1,1,1903439,1903439,1903439,0,1000,pass,relativity,GFA,Gamma factor at rest,physics,relativity::gamma_factor_at_rest
+relativity::gamma_factor_increases_with_velocity,f64,1,1,1931599,1931599,1931599,0,1000,pass,relativity,GFI,Gamma factor increases with velocity,physics,relativity::gamma_factor_increases_with_velocity
+relativity::length_contraction,f64,2,1,2056500,2056500,2056500,0,500,pass,relativity,LC,Length contraction,physics,relativity::length_contraction
+relativity::planck_radiation_positive,f64,1,1,1946729,1946729,1946729,0,1000,pass,relativity,PRP,Planck radiation positive,physics,relativity::planck_radiation_positive
+relativity::time_dilation,f64,1,1,1764859,1764859,1764859,0,1000,pass,relativity,TD,Time dilation,physics,relativity::time_dilation
+relativity::time_dilation_high_v,f64,1,1,1842129,1842129,1842129,0,1000,pass,relativity,TDH,Time dilation high v,physics,relativity::time_dilation_high_v
+solid_mechanics::hooke_stress,f64,1,1,1930389,1930389,1930389,0,1000,pass,solid_mechanics,HS,Hooke stress,physics,solid_mechanics::hooke_stress
+solid_mechanics::thermal_stress,f64,2,1,2200219,2200219,2200219,0,500,pass,solid_mechanics,TS,Thermal stress,physics,solid_mechanics::thermal_stress
+solid_mechanics::von_mises,f64,1,1,1954739,1954739,1954739,0,1000,pass,solid_mechanics,VM,Von mises,physics,solid_mechanics::von_mises
+thermodynamics::boltzmann_distribution,f64,2,1,2035519,2035519,2035519,0,500,pass,thermodynamics,BD,Boltzmann distribution,physics,thermodynamics::boltzmann_distribution
+thermodynamics::carnot_efficiency,f64,2,1,2017850,2017850,2017850,0,500,pass,thermodynamics,CE,Carnot efficiency,physics,thermodynamics::carnot_efficiency
+thermodynamics::ideal_gas_pressure,f64,1,1,1943659,1943659,1943659,0,1000,pass,thermodynamics,IGP,Ideal gas pressure,physics,thermodynamics::ideal_gas_pressure
+thermodynamics::ideal_gas_temperature,f64,2,1,2147769,2147769,2147769,0,500,pass,thermodynamics,IGT,Ideal gas temperature,physics,thermodynamics::ideal_gas_temperature
+thermodynamics::stefan_boltzmann_power,f64,1,1,1895259,1895259,1895259,0,1000,pass,thermodynamics,SBP,Stefan boltzmann power,physics,thermodynamics::stefan_boltzmann_power
+thermodynamics::wien_displacement,f64,2,1,2000769,2000769,2000769,0,500,pass,thermodynamics,WD,Wien displacement,physics,thermodynamics::wien_displacement

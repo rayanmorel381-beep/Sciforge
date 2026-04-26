@@ -1,0 +1,17 @@
+category: as02
+symbol: HV
+name: as019
+target: astronomy
+module: cosmology
+status: ok
+elapsed_ms: 2640
+experiment_name: astronomy_019
+precision: f64
+elapsed_ms: 2640
+iterations: 1
+avg_time_ns: 2640000000.00
+min_time_ns: 2640000000.00
+max_time_ns: 2640000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.38
+result: success=true code=Some(0) stdout_bytes=152 stderr_bytes=266

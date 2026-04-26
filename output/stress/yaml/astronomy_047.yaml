@@ -1,0 +1,17 @@
+category: as05
+symbol: CL
+name: as047
+target: astronomy
+module: stellar
+status: ok
+elapsed_ms: 5710
+experiment_name: astronomy_047
+precision: f64
+elapsed_ms: 5710
+iterations: 1
+avg_time_ns: 5710000128.00
+min_time_ns: 5710000128.00
+max_time_ns: 5710000128.00
+time_stddev: 0.0000
+iterations_per_sec: 0.18
+result: success=true code=Some(0) stdout_bytes=154 stderr_bytes=318

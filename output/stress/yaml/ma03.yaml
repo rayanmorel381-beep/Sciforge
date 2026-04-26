@@ -1,0 +1,83 @@
+category: ma03
+count: 10
+entries:
+  - label: maths_021
+    symbol: HSI
+    name: ma021
+    target: maths
+    module: integration
+    status: ok
+    elapsed_ms: 4921
+    avg_time_ns: 4920999936.00
+  - label: maths_022
+    symbol: HI
+    name: ma022
+    target: maths
+    module: interpolation
+    status: ok
+    elapsed_ms: 2920
+    avg_time_ns: 2920000000.00
+  - label: maths_023
+    symbol: LI
+    name: ma023
+    target: maths
+    module: interpolation
+    status: ok
+    elapsed_ms: 4235
+    avg_time_ns: 4235000064.00
+  - label: maths_024
+    symbol: LI
+    name: ma024
+    target: maths
+    module: interpolation
+    status: ok
+    elapsed_ms: 2836
+    avg_time_ns: 2836000000.00
+  - label: maths_025
+    symbol: CEI
+    name: ma025
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 2358
+    avg_time_ns: 2358000128.00
+  - label: maths_026
+    symbol: CEZ
+    name: ma026
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 4264
+    avg_time_ns: 4264000000.00
+  - label: maths_027
+    symbol: LCA
+    name: ma027
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 4374
+    avg_time_ns: 4374000128.00
+  - label: maths_028
+    symbol: MD2
+    name: ma028
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 413
+    avg_time_ns: 413000000.00
+  - label: maths_029
+    symbol: TTI
+    name: ma029
+    target: maths
+    module: linalg
+    status: ok
+    elapsed_ms: 4679
+    avg_time_ns: 4679000064.00
+  - label: maths_030
+    symbol: PO
+    name: ma030
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 2888
+    avg_time_ns: 2888000000.00

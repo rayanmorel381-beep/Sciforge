@@ -1,0 +1,93 @@
+element:
+  name: Yttrium
+  symbol: Y
+  atomic_number: 39
+  category: transition metal
+  group: 3
+  period: 5
+  electron_configuration: "[Kr] 4d¹ 5s²"
+  electronegativity: 1.22
+  atomic_mass: 88.90584
+
+isotopes:
+  - name: Yttrium-86
+    symbol: "⁸⁶Y"
+    mass_number: 86
+    neutrons: 47
+    atomic_mass: 85.914886
+    half_life: 14.74
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta+
+        branching_ratio: 1.0
+        daughter: Strontium-86
+    natural_abundance: 0.0
+
+  - name: Yttrium-87
+    symbol: "⁸⁷Y"
+    mass_number: 87
+    neutrons: 48
+    atomic_mass: 86.910876
+    half_life: 79.8
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron capture / beta+
+        branching_ratio: 1.0
+        daughter: Strontium-87
+    natural_abundance: 0.0
+
+  - name: Yttrium-88
+    symbol: "⁸⁸Y"
+    mass_number: 88
+    neutrons: 49
+    atomic_mass: 87.909501
+    half_life: 106.626
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta+ / electron capture
+        branching_ratio: 1.0
+        daughter: Strontium-88
+    natural_abundance: 0.0
+
+  - name: Yttrium-89
+    symbol: "⁸⁹Y"
+    mass_number: 89
+    neutrons: 50
+    atomic_mass: 88.905848
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "1/2-"
+
+  - name: Yttrium-90
+    symbol: "⁹⁰Y"
+    mass_number: 90
+    neutrons: 51
+    atomic_mass: 89.907152
+    half_life: 64.053
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Zirconium-90
+    natural_abundance: 0.0
+
+  - name: Yttrium-91
+    symbol: "⁹¹Y"
+    mass_number: 91
+    neutrons: 52
+    atomic_mass: 90.907305
+    half_life: 58.51
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Zirconium-91
+    natural_abundance: 0.0

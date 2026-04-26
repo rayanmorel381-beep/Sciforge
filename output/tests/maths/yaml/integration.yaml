@@ -1,0 +1,9 @@
+category: integration
+count: 1
+entries:
+  - label: integration_halton_sequence_integration
+    symbol: HSI
+    name: Halton sequence integration
+    domain: maths
+    test: "integration::halton_sequence_integration"
+    avg_time_ns: 1689589.00

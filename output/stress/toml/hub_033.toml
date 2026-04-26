@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb04"
+symbol = "RN"
+name = "hb033"
+target = "hub"
+module = "cross_domain"
+status = "ok"
+elapsed_ms = "4230"
+experiment_name = "hub_033"
+precision = "f64"
+elapsed_ms = 4230
+iterations = 1
+avg_time_ns = 4230000128.00
+min_time_ns = 4230000128.00
+max_time_ns = 4230000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.24
+result = "success=true code=Some(0) stdout_bytes=167 stderr_bytes=254"

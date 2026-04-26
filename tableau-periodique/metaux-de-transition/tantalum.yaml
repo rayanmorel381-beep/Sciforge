@@ -1,0 +1,51 @@
+element:
+  name: Tantalum
+  symbol: Ta
+  atomic_number: 73
+  category: transition metal
+  group: 5
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d³ 6s²"
+  electronegativity: 1.5
+  atomic_mass: 180.94788
+
+isotopes:
+  - name: Tantalum-180m
+    symbol: "¹⁸⁰ᵐTa"
+    mass_number: 180
+    neutrons: 107
+    atomic_mass: 179.947465
+    half_life: 1.2e15
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: isomeric transition
+        branching_ratio: 1.0
+        daughter: Tantalum-180
+    natural_abundance: 0.0001201
+
+  - name: Tantalum-181
+    symbol: "¹⁸¹Ta"
+    mass_number: 181
+    neutrons: 108
+    atomic_mass: 180.947996
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.9998799
+    nuclear_spin: "7/2+"
+
+  - name: Tantalum-182
+    symbol: "¹⁸²Ta"
+    mass_number: 182
+    neutrons: 109
+    atomic_mass: 181.950152
+    half_life: 114.43
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Tungsten-182
+    natural_abundance: 0.0

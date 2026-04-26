@@ -1,0 +1,17 @@
+{
+  "category": "transition metal",
+  "symbol": "Cd",
+  "name": "Cadmium",
+  "config": "[Kr] 4d¹⁰ 5s²",
+  "mass": "112.414",
+  "experiment_name": "Cd_Cadmium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 36,
+  "iterations": 10000,
+  "avg_time_ns": 3665.32,
+  "min_time_ns": 3665.32,
+  "max_time_ns": 3665.32,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 277777.78,
+  "result": "Z=48 | Cd (Cadmium) | 112.414 u | transition metal | [Kr] 4d¹⁰ 5s²"
+}

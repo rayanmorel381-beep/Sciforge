@@ -1,0 +1,83 @@
+category: bi04
+count: 10
+entries:
+  - label: biology_031
+    symbol: NNT
+    name: bi031
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 5535
+    avg_time_ns: 5535000064.00
+  - label: biology_032
+    symbol: OR
+    name: bi032
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 2564
+    avg_time_ns: 2564000000.00
+  - label: biology_033
+    symbol: Se
+    name: bi033
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 4978
+    avg_time_ns: 4977999872.00
+  - label: biology_034
+    symbol: Sp
+    name: bi034
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 4875
+    avg_time_ns: 4874999808.00
+  - label: biology_035
+    symbol: CLQ
+    name: bi035
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 4885
+    avg_time_ns: 4885000192.00
+  - label: biology_036
+    symbol: CKL
+    name: bi036
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 5409
+    avg_time_ns: 5408999936.00
+  - label: biology_037
+    symbol: TDT
+    name: bi037
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 2678
+    avg_time_ns: 2678000128.00
+  - label: biology_038
+    symbol: TGE
+    name: bi038
+    target: biology
+    module: cancer_biology
+    status: ok
+    elapsed_ms: 2430
+    avg_time_ns: 2430000128.00
+  - label: biology_039
+    symbol: CDT
+    name: bi039
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 2958
+    avg_time_ns: 2958000128.00
+  - label: biology_040
+    symbol: FFL
+    name: bi040
+    target: biology
+    module: cell
+    status: ok
+    elapsed_ms: 3040
+    avg_time_ns: 3040000000.00

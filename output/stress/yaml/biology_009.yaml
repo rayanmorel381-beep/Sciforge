@@ -1,0 +1,17 @@
+category: bi01
+symbol: SDW
+name: bi009
+target: biology
+module: bioelectricity
+status: ok
+elapsed_ms: 4795
+experiment_name: biology_009
+precision: f64
+elapsed_ms: 4795
+iterations: 1
+avg_time_ns: 4794999808.00
+min_time_ns: 4794999808.00
+max_time_ns: 4794999808.00
+time_stddev: 0.0000
+iterations_per_sec: 0.21
+result: success=true code=Some(0) stdout_bytes=166 stderr_bytes=210

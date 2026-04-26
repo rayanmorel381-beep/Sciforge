@@ -1,0 +1,11 @@
+category: biology
+count: 1
+entries:
+  - label: biology_summary
+    symbol: SUM
+    name: BI Summary
+    target: biology
+    module: summary
+    status: ok
+    elapsed_ms: 620109
+    avg_time_ns: 3388573696.00

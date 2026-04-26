@@ -1,0 +1,83 @@
+category: ge04
+count: 10
+entries:
+  - label: geology_031
+    symbol: GR
+    name: ge031
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 2849
+    avg_time_ns: 2848999936.00
+  - label: geology_032
+    symbol: GRD
+    name: ge032
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 167
+    avg_time_ns: 167000000.00
+  - label: geology_033
+    symbol: PWF
+    name: ge033
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 2797
+    avg_time_ns: 2796999936.00
+  - label: geology_034
+    symbol: PWV
+    name: ge034
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 5144
+    avg_time_ns: 5144000000.00
+  - label: geology_035
+    symbol: RAR
+    name: ge035
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 2813
+    avg_time_ns: 2812999936.00
+  - label: geology_036
+    symbol: RM
+    name: ge036
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 5154
+    avg_time_ns: 5153999872.00
+  - label: geology_037
+    symbol: SWV
+    name: ge037
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 4962
+    avg_time_ns: 4961999872.00
+  - label: geology_038
+    symbol: SE
+    name: ge038
+    target: geology
+    module: seismology
+    status: ok
+    elapsed_ms: 4852
+    avg_time_ns: 4851999744.00
+  - label: geology_039
+    symbol: GG
+    name: ge039
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 5050
+    avg_time_ns: 5049999872.00
+  - label: geology_040
+    symbol: HF
+    name: ge040
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 5161
+    avg_time_ns: 5160999936.00

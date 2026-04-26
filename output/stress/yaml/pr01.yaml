@@ -1,0 +1,83 @@
+category: pr01
+count: 10
+entries:
+  - label: parser_001
+    symbol: CE
+    name: pr001
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 3023
+    avg_time_ns: 3023000064.00
+  - label: parser_002
+    symbol: CEP
+    name: pr002
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 2763
+    avg_time_ns: 2763000064.00
+  - label: parser_003
+    symbol: CEQ
+    name: pr003
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4752
+    avg_time_ns: 4752000000.00
+  - label: parser_004
+    symbol: CLM
+    name: pr004
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 379
+    avg_time_ns: 379000000.00
+  - label: parser_005
+    symbol: CPS
+    name: pr005
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 3039
+    avg_time_ns: 3039000064.00
+  - label: parser_006
+    symbol: CQ
+    name: pr006
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 1068
+    avg_time_ns: 1068000000.00
+  - label: parser_007
+    symbol: CUQ
+    name: pr007
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4208
+    avg_time_ns: 4208000000.00
+  - label: parser_008
+    symbol: CV
+    name: pr008
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 5068
+    avg_time_ns: 5068000256.00
+  - label: parser_009
+    symbol: CVF
+    name: pr009
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4893
+    avg_time_ns: 4893000192.00
+  - label: parser_010
+    symbol: CVT
+    name: pr010
+    target: parser
+    module: csv
+    status: ok
+    elapsed_ms: 4391
+    avg_time_ns: 4391000064.00

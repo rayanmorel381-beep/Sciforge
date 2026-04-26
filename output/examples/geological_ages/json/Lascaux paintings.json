@@ -1,0 +1,23 @@
+{
+  "category": "Cenozoic",
+  "symbol": "C",
+  "name": "Lascaux paintings",
+  "method": "C-14",
+  "parent": "¹⁴C",
+  "daughter": "¹⁴N",
+  "ratio": "0.8200",
+  "half_life": "5.7300e3 years",
+  "decay_constant": "3.8330e-12 s⁻¹",
+  "computed_age": "1641 yr",
+  "expected_age": "17.0 kyr",
+  "experiment_name": "Lascaux paintings_dating",
+  "precision": "f64",
+  "elapsed_ms": 23,
+  "iterations": 5000,
+  "avg_time_ns": 4756.22,
+  "min_time_ns": 4756.22,
+  "max_time_ns": 4756.22,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 217391.30,
+  "result": "Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr"
+}

@@ -1,0 +1,165 @@
+element:
+  name: Boron
+  symbol: B
+  atomic_number: 5
+  category: metalloid
+  group: 13
+  period: 2
+  electron_configuration: "1s² 2s² 2p¹"
+  electronegativity: 2.04
+  atomic_mass: 10.81
+
+isotopes:
+  - name: Boron-7
+    symbol: "⁷B"
+    mass_number: 7
+    neutrons: 2
+    atomic_mass: 7.02992
+    half_life: 3.5e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Boron-8
+    symbol: "⁸B"
+    mass_number: 8
+    neutrons: 3
+    atomic_mass: 8.02461
+    half_life: 770.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Beryllium-8
+    natural_abundance: 0.0
+
+  - name: Boron-9
+    symbol: "⁹B"
+    mass_number: 9
+    neutrons: 4
+    atomic_mass: 9.01333
+    half_life: 8.0e-19
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Boron-10
+    symbol: "¹⁰B"
+    mass_number: 10
+    neutrons: 5
+    atomic_mass: 10.012937
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.199
+    nuclear_spin: "3+"
+
+  - name: Boron-11
+    symbol: "¹¹B"
+    mass_number: 11
+    neutrons: 6
+    atomic_mass: 11.009305
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.801
+    nuclear_spin: "3/2-"
+
+  - name: Boron-12
+    symbol: "¹²B"
+    mass_number: 12
+    neutrons: 7
+    atomic_mass: 12.01435
+    half_life: 20.20
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.9714
+        daughter: Carbon-12
+      - mode: beta- alpha emission
+        branching_ratio: 0.0286
+    natural_abundance: 0.0
+
+  - name: Boron-13
+    symbol: "¹³B"
+    mass_number: 13
+    neutrons: 8
+    atomic_mass: 13.01778
+    half_life: 17.33
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.993
+        daughter: Carbon-13
+      - mode: beta- neutron emission
+        branching_ratio: 0.007
+    natural_abundance: 0.0
+
+  - name: Boron-14
+    symbol: "¹⁴B"
+    mass_number: 14
+    neutrons: 9
+    atomic_mass: 14.02540
+    half_life: 12.5
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.937
+      - mode: beta- neutron emission
+        branching_ratio: 0.063
+    natural_abundance: 0.0
+
+  - name: Boron-15
+    symbol: "¹⁵B"
+    mass_number: 15
+    neutrons: 10
+    atomic_mass: 15.03110
+    half_life: 9.87
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 0.93
+      - mode: beta- (electron emission)
+        branching_ratio: 0.07
+    natural_abundance: 0.0
+
+  - name: Boron-17
+    symbol: "¹⁷B"
+    mass_number: 17
+    neutrons: 12
+    atomic_mass: 17.04699
+    half_life: 5.08
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 0.63
+      - mode: beta- (electron emission)
+        branching_ratio: 0.37
+    natural_abundance: 0.0
+
+  - name: Boron-19
+    symbol: "¹⁹B"
+    mass_number: 19
+    neutrons: 14
+    atomic_mass: 19.06373
+    half_life: 2.92
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0

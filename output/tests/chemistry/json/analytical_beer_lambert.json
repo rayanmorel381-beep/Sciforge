@@ -1,0 +1,17 @@
+{
+  "category": "analytical",
+  "symbol": "BL",
+  "name": "Beer lambert",
+  "domain": "chemistry",
+  "test": "analytical::beer_lambert",
+  "experiment_name": "analytical::beer_lambert",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2218109.00,
+  "min_time_ns": 2218109.00,
+  "max_time_ns": 2218109.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

@@ -1,0 +1,15 @@
+category: dispatch
+symbol: DVM
+name: Dispatch vec midpoint
+domain: maths
+test: "dispatch::dispatch_vec_midpoint"
+experiment_name: "dispatch::dispatch_vec_midpoint"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1789629.00
+min_time_ns: 1789629.00
+max_time_ns: 1789629.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

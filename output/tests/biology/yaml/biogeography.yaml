@@ -1,0 +1,27 @@
+category: biogeography
+count: 4
+entries:
+  - label: biogeography_latitudinal_diversity_gradient
+    symbol: LDG
+    name: Latitudinal diversity gradient
+    domain: biology
+    test: "biogeography::latitudinal_diversity_gradient"
+    avg_time_ns: 3486678.00
+  - label: biogeography_range_shift_velocity
+    symbol: RSV
+    name: Range shift velocity
+    domain: biology
+    test: "biogeography::range_shift_velocity"
+    avg_time_ns: 2481589.00
+  - label: biogeography_range_size_latitude
+    symbol: RSL
+    name: Range size latitude
+    domain: biology
+    test: "biogeography::range_size_latitude"
+    avg_time_ns: 2274999.00
+  - label: biogeography_wallace_line_effect
+    symbol: WLE
+    name: Wallace line effect
+    domain: biology
+    test: "biogeography::wallace_line_effect"
+    avg_time_ns: 4666338.00

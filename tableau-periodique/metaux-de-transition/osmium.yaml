@@ -1,0 +1,107 @@
+element:
+  name: Osmium
+  symbol: Os
+  atomic_number: 76
+  category: transition metal
+  group: 8
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d⁶ 6s²"
+  electronegativity: 2.2
+  atomic_mass: 190.23
+
+isotopes:
+  - name: Osmium-184
+    symbol: "¹⁸⁴Os"
+    mass_number: 184
+    neutrons: 108
+    atomic_mass: 183.952489
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0002
+
+  - name: Osmium-186
+    symbol: "¹⁸⁶Os"
+    mass_number: 186
+    neutrons: 110
+    atomic_mass: 185.953838
+    half_life: 2.0e15
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Tungsten-182
+    natural_abundance: 0.0159
+
+  - name: Osmium-187
+    symbol: "¹⁸⁷Os"
+    mass_number: 187
+    neutrons: 111
+    atomic_mass: 186.955750
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0196
+    nuclear_spin: "1/2-"
+
+  - name: Osmium-188
+    symbol: "¹⁸⁸Os"
+    mass_number: 188
+    neutrons: 112
+    atomic_mass: 187.955838
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1324
+
+  - name: Osmium-189
+    symbol: "¹⁸⁹Os"
+    mass_number: 189
+    neutrons: 113
+    atomic_mass: 188.958148
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1615
+    nuclear_spin: "3/2-"
+
+  - name: Osmium-190
+    symbol: "¹⁹⁰Os"
+    mass_number: 190
+    neutrons: 114
+    atomic_mass: 189.958447
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2626
+
+  - name: Osmium-192
+    symbol: "¹⁹²Os"
+    mass_number: 192
+    neutrons: 116
+    atomic_mass: 191.961481
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.4078
+
+  - name: Osmium-194
+    symbol: "¹⁹⁴Os"
+    mass_number: 194
+    neutrons: 118
+    atomic_mass: 193.965182
+    half_life: 6.0
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Iridium-194
+    natural_abundance: 0.0

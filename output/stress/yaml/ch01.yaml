@@ -1,0 +1,83 @@
+category: ch01
+count: 10
+entries:
+  - label: chemistry_001
+    symbol: EPV
+    name: ch001
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4944
+    avg_time_ns: 4944000000.00
+  - label: chemistry_002
+    symbol: HH
+    name: ch002
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4724
+    avg_time_ns: 4723999744.00
+  - label: chemistry_003
+    symbol: HHE
+    name: ch003
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4750
+    avg_time_ns: 4750000128.00
+  - label: chemistry_004
+    symbol: PSA
+    name: ch004
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4550
+    avg_time_ns: 4550000128.00
+  - label: chemistry_005
+    symbol: PSB
+    name: ch005
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 3788
+    avg_time_ns: 3788000000.00
+  - label: chemistry_006
+    symbol: PR
+    name: ch006
+    target: chemistry
+    module: acid_base
+    status: ok
+    elapsed_ms: 4531
+    avg_time_ns: 4530999808.00
+  - label: chemistry_007
+    symbol: ATR
+    name: ch007
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 5269
+    avg_time_ns: 5269000192.00
+  - label: chemistry_008
+    symbol: BL
+    name: ch008
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 4819
+    avg_time_ns: 4818999808.00
+  - label: chemistry_009
+    symbol: Di
+    name: ch009
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 4219
+    avg_time_ns: 4219000064.00
+  - label: chemistry_010
+    symbol: PR
+    name: ch010
+    target: chemistry
+    module: analytical
+    status: ok
+    elapsed_ms: 4532
+    avg_time_ns: 4531999744.00

@@ -1,0 +1,57 @@
+element:
+  name: Actinium
+  symbol: Ac
+  atomic_number: 89
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 6d¹ 7s²"
+  electronegativity: 1.1
+  atomic_mass: 227.027752
+
+isotopes:
+  - name: Actinium-225
+    symbol: "²²⁵Ac"
+    mass_number: 225
+    neutrons: 136
+    atomic_mass: 225.023230
+    half_life: 9.920
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Francium-221
+    natural_abundance: 0.0
+
+
+  - name: Actinium-227
+    symbol: "²²⁷Ac"
+    mass_number: 227
+    neutrons: 138
+    atomic_mass: 227.027752
+    half_life: 21.772
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.9862
+        daughter: Thorium-227
+      - mode: alpha
+        branching_ratio: 0.0138
+        daughter: Francium-223
+    natural_abundance: 0.0
+
+  - name: Actinium-228
+    symbol: "²²⁸Ac"
+    mass_number: 228
+    neutrons: 139
+    atomic_mass: 228.031021
+    half_life: 6.15
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Thorium-228
+    natural_abundance: 0.0

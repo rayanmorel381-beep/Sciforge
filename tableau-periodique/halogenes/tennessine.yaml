@@ -1,0 +1,39 @@
+element:
+  name: Tennessine
+  symbol: Ts
+  atomic_number: 117
+  category: halogen
+  group: 17
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted)"
+  electronegativity: null
+  atomic_mass: 294.0
+
+isotopes:
+  - name: Tennessine-293
+    symbol: "²⁹³Ts"
+    mass_number: 293
+    neutrons: 176
+    atomic_mass: 293.20824
+    half_life: 22.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Moscovium-289
+    natural_abundance: 0.0
+
+  - name: Tennessine-294
+    symbol: "²⁹⁴Ts"
+    mass_number: 294
+    neutrons: 177
+    atomic_mass: 294.21046
+    half_life: 51.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Moscovium-290
+    natural_abundance: 0.0

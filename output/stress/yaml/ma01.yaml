@@ -1,0 +1,83 @@
+category: ma01
+count: 10
+entries:
+  - label: maths_001
+    symbol: FF
+    name: ma001
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 2338
+    avg_time_ns: 2337999872.00
+  - label: maths_002
+    symbol: FDX
+    name: ma002
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 2627
+    avg_time_ns: 2627000064.00
+  - label: maths_003
+    symbol: RF
+    name: ma003
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 1054
+    avg_time_ns: 1054000000.00
+  - label: maths_004
+    symbol: SDX
+    name: ma004
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 4472
+    avg_time_ns: 4472000000.00
+  - label: maths_005
+    symbol: SBP
+    name: ma005
+    target: maths
+    module: calculus
+    status: ok
+    elapsed_ms: 442
+    avg_time_ns: 442000000.00
+  - label: maths_006
+    symbol: CE
+    name: ma006
+    target: maths
+    module: complex
+    status: ok
+    elapsed_ms: 4299
+    avg_time_ns: 4298999808.00
+  - label: maths_007
+    symbol: CS
+    name: ma007
+    target: maths
+    module: complex
+    status: ok
+    elapsed_ms: 2862
+    avg_time_ns: 2862000128.00
+  - label: maths_008
+    symbol: MI
+    name: ma008
+    target: maths
+    module: complex
+    status: ok
+    elapsed_ms: 2584
+    avg_time_ns: 2584000000.00
+  - label: maths_009
+    symbol: DCS
+    name: ma009
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 6269
+    avg_time_ns: 6269000192.00
+  - label: maths_010
+    symbol: DGK
+    name: ma010
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 3108
+    avg_time_ns: 3108000000.00

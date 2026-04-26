@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+parser_071,f64,3869,1,3869000000,3869000000,3869000000,0,0.25846472,success=true code=Some(0) stdout_bytes=145 stderr_bytes=416,pr08,YV,pr071,parser,yaml,ok,3869
+parser_072,f64,382,1,382000000,382000000,382000000,0,2.617801,success=true code=Some(0) stdout_bytes=150 stderr_bytes=151,pr08,YVM,pr072,parser,yaml,ok,382

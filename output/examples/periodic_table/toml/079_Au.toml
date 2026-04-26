@@ -1,0 +1,16 @@
+[benchmark]
+category = "transition metal"
+symbol = "Au"
+name = "Gold"
+config = "[Xe] 4f¹⁴ 5d¹⁰ 6s¹"
+mass = "196.966569"
+experiment_name = "Au_Gold_benchmark"
+precision = "f32"
+elapsed_ms = 6
+iterations = 1000
+avg_time_ns = 6239.05
+min_time_ns = 6239.05
+max_time_ns = 6239.05
+time_stddev = 0.0000
+iterations_per_sec = 166666.67
+result = "Z=79 | Au (Gold) | 196.966569 u | transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s¹"

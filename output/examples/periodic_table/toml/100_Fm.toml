@@ -1,0 +1,16 @@
+[benchmark]
+category = "actinide"
+symbol = "Fm"
+name = "Fermium"
+config = "[Rn] 5f¹² 7s²"
+mass = "257.095105"
+experiment_name = "Fm_Fermium_benchmark"
+precision = "f64"
+elapsed_ms = 8
+iterations = 1000
+avg_time_ns = 8014.43
+min_time_ns = 8014.43
+max_time_ns = 8014.43
+time_stddev = 0.0000
+iterations_per_sec = 125000.00
+result = "Z=100 | Fm (Fermium) | 257.095105 u | actinide | [Rn] 5f¹² 7s²"

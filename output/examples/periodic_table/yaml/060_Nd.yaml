@@ -1,0 +1,15 @@
+category: lanthanide
+symbol: Nd
+name: Neodymium
+config: [Xe] 4f⁴ 6s²
+mass: 144.242
+experiment_name: Nd_Neodymium_benchmark
+precision: f64
+elapsed_ms: 46
+iterations: 10000
+avg_time_ns: 4696.36
+min_time_ns: 4696.36
+max_time_ns: 4696.36
+time_stddev: 0.0000
+iterations_per_sec: 217391.30
+result: Z=60 | Nd (Neodymium) | 144.242 u | lanthanide | [Xe] 4f⁴ 6s²

@@ -1,0 +1,70 @@
+element:
+  name: Tungsten
+  symbol: W
+  atomic_number: 74
+  category: transition metal
+  group: 6
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d⁴ 6s²"
+  electronegativity: 2.36
+  atomic_mass: 183.84
+
+isotopes:
+  - name: Tungsten-180
+    symbol: "¹⁸⁰W"
+    mass_number: 180
+    neutrons: 106
+    atomic_mass: 179.946704
+    half_life: 1.8e18
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Hafnium-176
+    natural_abundance: 0.0012
+
+  - name: Tungsten-182
+    symbol: "¹⁸²W"
+    mass_number: 182
+    neutrons: 108
+    atomic_mass: 181.948204
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2650
+
+  - name: Tungsten-183
+    symbol: "¹⁸³W"
+    mass_number: 183
+    neutrons: 109
+    atomic_mass: 182.950223
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1431
+    nuclear_spin: "1/2-"
+
+  - name: Tungsten-184
+    symbol: "¹⁸⁴W"
+    mass_number: 184
+    neutrons: 110
+    atomic_mass: 183.950931
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.3064
+
+  - name: Tungsten-186
+    symbol: "¹⁸⁶W"
+    mass_number: 186
+    neutrons: 112
+    atomic_mass: 185.954364
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2843

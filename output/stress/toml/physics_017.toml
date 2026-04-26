@@ -1,0 +1,18 @@
+[benchmark]
+category = "ph02"
+symbol = "MFW"
+name = "ph017"
+target = "physics"
+module = "electromagnetism"
+status = "ok"
+elapsed_ms = "3886"
+experiment_name = "physics_017"
+precision = "f64"
+elapsed_ms = 3886
+iterations = 1
+avg_time_ns = 3886000128.00
+min_time_ns = 3886000128.00
+max_time_ns = 3886000128.00
+time_stddev = 0.0000
+iterations_per_sec = 0.26
+result = "success=true code=Some(0) stdout_bytes=163 stderr_bytes=262"

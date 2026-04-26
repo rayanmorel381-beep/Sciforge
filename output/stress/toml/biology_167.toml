@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi17"
+symbol = "HA"
+name = "bi167"
+target = "biology"
+module = "synthetic_biology"
+status = "ok"
+elapsed_ms = "5307"
+experiment_name = "biology_167"
+precision = "f64"
+elapsed_ms = 5307
+iterations = 1
+avg_time_ns = 5306999808.00
+min_time_ns = 5306999808.00
+max_time_ns = 5306999808.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=161 stderr_bytes=418"

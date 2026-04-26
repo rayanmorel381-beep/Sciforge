@@ -1,0 +1,21 @@
+category: stem_cell
+count: 3
+entries:
+  - label: stem_cell_niche_occupancy
+    symbol: NO
+    name: Niche occupancy
+    domain: biology
+    test: "stem_cell::niche_occupancy"
+    avg_time_ns: 1925019.00
+  - label: stem_cell_reprogramming_efficiency
+    symbol: RE
+    name: Reprogramming efficiency
+    domain: biology
+    test: "stem_cell::reprogramming_efficiency"
+    avg_time_ns: 1896170.00
+  - label: stem_cell_self_renewal_probability
+    symbol: SRP
+    name: Self renewal probability
+    domain: biology
+    test: "stem_cell::self_renewal_probability"
+    avg_time_ns: 1880849.00

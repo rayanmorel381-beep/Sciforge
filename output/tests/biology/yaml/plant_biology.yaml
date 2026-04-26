@@ -1,0 +1,27 @@
+category: plant_biology
+count: 4
+entries:
+  - label: plant_biology_beer_lambert_canopy
+    symbol: BLC
+    name: Beer lambert canopy
+    domain: biology
+    test: "plant_biology::beer_lambert_canopy"
+    avg_time_ns: 1915580.00
+  - label: plant_biology_photosynthesis_light_response
+    symbol: PLR
+    name: Photosynthesis light response
+    domain: biology
+    test: "plant_biology::photosynthesis_light_response"
+    avg_time_ns: 2052199.00
+  - label: plant_biology_transpiration_rate
+    symbol: TR
+    name: Transpiration rate
+    domain: biology
+    test: "plant_biology::transpiration_rate"
+    avg_time_ns: 1957179.00
+  - label: plant_biology_water_potential
+    symbol: WP
+    name: Water potential
+    domain: biology
+    test: "plant_biology::water_potential"
+    avg_time_ns: 1887439.00

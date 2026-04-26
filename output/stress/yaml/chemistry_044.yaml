@@ -1,0 +1,17 @@
+category: ch05
+symbol: GLE
+name: ch044
+target: chemistry
+module: gas_laws
+status: ok
+elapsed_ms: 4805
+experiment_name: chemistry_044
+precision: f64
+elapsed_ms: 4805
+iterations: 1
+avg_time_ns: 4805000192.00
+min_time_ns: 4805000192.00
+max_time_ns: 4805000192.00
+time_stddev: 0.0000
+iterations_per_sec: 0.21
+result: success=true code=Some(0) stdout_bytes=157 stderr_bytes=370

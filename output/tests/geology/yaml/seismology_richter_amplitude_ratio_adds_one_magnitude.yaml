@@ -1,0 +1,15 @@
+category: seismology
+symbol: RAR
+name: Richter amplitude ratio adds one magnitude
+domain: geology
+test: "seismology::richter_amplitude_ratio_adds_one_magnitude"
+experiment_name: "seismology::richter_amplitude_ratio_adds_one_magnitude"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1918229.00
+min_time_ns: 1918229.00
+max_time_ns: 1918229.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

@@ -1,0 +1,18 @@
+{
+  "category": "Synthesis",
+  "name": "Water synthesis",
+  "formula": "2H₂ + O₂ → 2H₂O",
+  "reactant_mass": "36.0300 g/mol",
+  "product_mass": "36.0300 g/mol",
+  "atom_economy": "100.0%",
+  "experiment_name": "Water synthesis_calc",
+  "precision": "f64",
+  "elapsed_ms": 94,
+  "iterations": 5000,
+  "avg_time_ns": 18921.46,
+  "min_time_ns": 18921.46,
+  "max_time_ns": 18921.46,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 53191.49,
+  "result": "Water synthesis | 2H₂ + O₂ → 2H₂O | M(react)=36.0300 g/mol | M(prod)=36.0300 g/mol | Atom economy=100.0%"
+}

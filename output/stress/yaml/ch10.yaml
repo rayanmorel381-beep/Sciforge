@@ -1,0 +1,83 @@
+category: ch10
+count: 10
+entries:
+  - label: chemistry_091
+    symbol: WTW
+    name: ch091
+    target: chemistry
+    module: spectroscopy
+    status: ok
+    elapsed_ms: 484
+    avg_time_ns: 484000000.00
+  - label: chemistry_092
+    symbol: AE
+    name: ch092
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 2979
+    avg_time_ns: 2979000064.00
+  - label: chemistry_093
+    symbol: LR
+    name: ch093
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 1758
+    avg_time_ns: 1758000000.00
+  - label: chemistry_094
+    symbol: PY
+    name: ch094
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 5013
+    avg_time_ns: 5013000192.00
+  - label: chemistry_095
+    symbol: TY
+    name: ch095
+    target: chemistry
+    module: stoichiometry
+    status: ok
+    elapsed_ms: 912
+    avg_time_ns: 912000000.00
+  - label: chemistry_096
+    symbol: CA
+    name: ch096
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 4819
+    avg_time_ns: 4818999808.00
+  - label: chemistry_097
+    symbol: FI
+    name: ch097
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 3041
+    avg_time_ns: 3040999936.00
+  - label: chemistry_098
+    symbol: LI
+    name: ch098
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 5155
+    avg_time_ns: 5154999808.00
+  - label: chemistry_099
+    symbol: LP
+    name: ch099
+    target: chemistry
+    module: surface
+    status: ok
+    elapsed_ms: 2615
+    avg_time_ns: 2615000064.00
+  - label: chemistry_100
+    symbol: CC
+    name: ch100
+    target: chemistry
+    module: thermochemistry
+    status: ok
+    elapsed_ms: 4890
+    avg_time_ns: 4889999872.00

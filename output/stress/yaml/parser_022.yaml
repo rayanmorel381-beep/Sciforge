@@ -1,0 +1,17 @@
+category: pr03
+symbol: HS
+name: pr022
+target: parser
+module: html
+status: ok
+elapsed_ms: 4926
+experiment_name: parser_022
+precision: f64
+elapsed_ms: 4926
+iterations: 1
+avg_time_ns: 4926000128.00
+min_time_ns: 4926000128.00
+max_time_ns: 4926000128.00
+time_stddev: 0.0000
+iterations_per_sec: 0.20
+result: success=true code=Some(0) stdout_bytes=143 stderr_bytes=364

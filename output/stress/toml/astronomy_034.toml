@@ -1,0 +1,18 @@
+[benchmark]
+category = "as04"
+symbol = "HDV"
+name = "as034"
+target = "astronomy"
+module = "orbits"
+status = "ok"
+elapsed_ms = "2527"
+experiment_name = "astronomy_034"
+precision = "f64"
+elapsed_ms = 2527
+iterations = 1
+avg_time_ns = 2527000064.00
+min_time_ns = 2527000064.00
+max_time_ns = 2527000064.00
+time_stddev = 0.0000
+iterations_per_sec = 0.40
+result = "success=true code=Some(0) stdout_bytes=176 stderr_bytes=214"

@@ -1,0 +1,96 @@
+element:
+  name: Thorium
+  symbol: Th
+  atomic_number: 90
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 6d² 7s²"
+  electronegativity: 1.3
+  atomic_mass: 232.0377
+
+isotopes:
+  - name: Thorium-227
+    symbol: "²²⁷Th"
+    mass_number: 227
+    neutrons: 137
+    atomic_mass: 227.027704
+    half_life: 18.68
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Radium-223
+    natural_abundance: 0.0
+
+  - name: Thorium-228
+    symbol: "²²⁸Th"
+    mass_number: 228
+    neutrons: 138
+    atomic_mass: 228.028741
+    half_life: 1.9116
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Radium-224
+    natural_abundance: 0.0
+
+  - name: Thorium-229
+    symbol: "²²⁹Th"
+    mass_number: 229
+    neutrons: 139
+    atomic_mass: 229.031762
+    half_life: 7932
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Radium-225
+    natural_abundance: 0.0
+
+  - name: Thorium-230
+    symbol: "²³⁰Th"
+    mass_number: 230
+    neutrons: 140
+    atomic_mass: 230.033134
+    half_life: 7.538e4
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Radium-226
+    natural_abundance: 0.0
+
+  - name: Thorium-232
+    symbol: "²³²Th"
+    mass_number: 232
+    neutrons: 142
+    atomic_mass: 232.038055
+    half_life: 1.405e10
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Radium-228
+    natural_abundance: 1.0
+    nuclear_spin: "0+"
+
+  - name: Thorium-234
+    symbol: "²³⁴Th"
+    mass_number: 234
+    neutrons: 144
+    atomic_mass: 234.043601
+    half_life: 24.10
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Protactinium-234
+    natural_abundance: 0.0

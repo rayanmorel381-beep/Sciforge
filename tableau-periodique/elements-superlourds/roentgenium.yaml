@@ -1,0 +1,53 @@
+element:
+  name: Roentgenium
+  symbol: Rg
+  atomic_number: 111
+  category: unknown
+  group: 11
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d⁹ 7s²"
+  electronegativity: null
+  atomic_mass: 282.169
+
+isotopes:
+  - name: Roentgenium-279
+    symbol: "²⁷⁹Rg"
+    mass_number: 279
+    neutrons: 168
+    atomic_mass: 279.163
+    half_life: 0.17
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Meitnerium-275
+    natural_abundance: 0.0
+
+  - name: Roentgenium-280
+    symbol: "²⁸⁰Rg"
+    mass_number: 280
+    neutrons: 169
+    atomic_mass: 280.165
+    half_life: 3.6
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Meitnerium-276
+    natural_abundance: 0.0
+
+  - name: Roentgenium-282
+    symbol: "²⁸²Rg"
+    mass_number: 282
+    neutrons: 171
+    atomic_mass: 282.169
+    half_life: 0.73
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Meitnerium-278
+    natural_abundance: 0.0

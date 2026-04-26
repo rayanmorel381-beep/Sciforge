@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+optimization::lagrangian,f64,1,1,1821789,1821789,1821789,0,1000,pass,optimization,La,Lagrangian,maths,optimization::lagrangian
+optimization::project_box,f64,1,1,1922459,1922459,1922459,0,1000,pass,optimization,PB,Project box,maths,optimization::project_box
+optimization::quadratic_objective,f64,1,1,1774419,1774419,1774419,0,1000,pass,optimization,QO,Quadratic objective,maths,optimization::quadratic_objective

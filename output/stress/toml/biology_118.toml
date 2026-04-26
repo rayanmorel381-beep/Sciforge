@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi12"
+symbol = "NB"
+name = "bi118"
+target = "biology"
+module = "nutrition"
+status = "ok"
+elapsed_ms = "5159"
+experiment_name = "biology_118"
+precision = "f64"
+elapsed_ms = 5159
+iterations = 1
+avg_time_ns = 5159000064.00
+min_time_ns = 5159000064.00
+max_time_ns = 5159000064.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=154 stderr_bytes=262"

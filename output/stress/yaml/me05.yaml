@@ -1,0 +1,43 @@
+category: me05
+count: 5
+entries:
+  - label: meteorology_041
+    symbol: BM
+    name: me041
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 3593
+    avg_time_ns: 3592999936.00
+  - label: meteorology_042
+    symbol: BTM
+    name: me042
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 1791
+    avg_time_ns: 1791000064.00
+  - label: meteorology_043
+    symbol: BZI
+    name: me043
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 5375
+    avg_time_ns: 5375000064.00
+  - label: meteorology_044
+    symbol: WC
+    name: me044
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 486
+    avg_time_ns: 486000000.00
+  - label: meteorology_045
+    symbol: WCD
+    name: me045
+    target: meteorology
+    module: winds
+    status: ok
+    elapsed_ms: 5524
+    avg_time_ns: 5523999744.00

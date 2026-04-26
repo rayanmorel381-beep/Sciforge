@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+electrodynamics::capacitance_parallel_plate,f64,1,1,1770110,1770110,1770110,0,1000,pass,electrodynamics,CPP,Capacitance parallel plate,physics,electrodynamics::capacitance_parallel_plate
+electrodynamics::electric_field_point_charge,f64,1,1,1710169,1710169,1710169,0,1000,pass,electrodynamics,EFP,Electric field point charge,physics,electrodynamics::electric_field_point_charge
+electrodynamics::skin_depth,f64,1,1,1732869,1732869,1732869,0,1000,pass,electrodynamics,SD,Skin depth,physics,electrodynamics::skin_depth

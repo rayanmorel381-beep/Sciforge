@@ -1,0 +1,17 @@
+category: bi08
+symbol: HHC
+name: bi071
+target: biology
+module: enzyme
+status: ok
+elapsed_ms: 1614
+experiment_name: biology_071
+precision: f64
+elapsed_ms: 1614
+iterations: 1
+avg_time_ns: 1614000000.00
+min_time_ns: 1614000000.00
+max_time_ns: 1614000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.62
+result: success=true code=Some(0) stdout_bytes=181 stderr_bytes=262

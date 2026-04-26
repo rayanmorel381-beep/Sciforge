@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Radioactive Decay — Chains, Half-lives &amp; Activities from Isotope Data</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0d1117;color:#c9d1d9;padding:2em;max-width:1800px;margin:0 auto}
+h1{color:#58a6ff;margin-bottom:.5em;font-size:2em}
+h2{color:#79c0ff;margin:1.5em 0 .5em;border-bottom:1px solid #21262d;padding-bottom:.3em}
+p{margin:.5em 0;line-height:1.6}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;font-size:.85em}
+th{background:#161b22;color:#58a6ff;position:sticky;top:0}
+tr:nth-child(even){background:#161b22}
+pre{background:#161b22;padding:1em;border-radius:6px;overflow-x:auto;max-height:600px;font-size:.8em}
+code{font-family:ui-monospace,monospace}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1em;margin:1em 0}
+.stat-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1em;text-align:center}
+.stat-card .num{font-size:2em;color:#58a6ff;font-weight:bold}
+.stat-card .lbl{font-size:.8em;color:#8b949e}
+.tabs{display:flex;gap:0;margin-top:1.5em;flex-wrap:wrap}
+.tab{padding:.6em 1.2em;cursor:pointer;background:#161b22;border:1px solid #30363d;border-bottom:none;border-radius:6px 6px 0 0;color:#8b949e;font-weight:600}
+.tab:hover{color:#c9d1d9}
+.tab.active{background:#0d1117;color:#58a6ff;border-bottom:1px solid #0d1117}
+.panel{display:none;border:1px solid #30363d;padding:1em;border-radius:0 6px 6px 6px}
+.panel.active{display:block}
+.fsel{width:100%;padding:.5em;margin-bottom:.8em;background:#161b22;color:#c9d1d9;border:1px solid #30363d;border-radius:4px;font-family:ui-monospace,monospace;font-size:.85em}
+.charts{display:grid;grid-template-columns:repeat(auto-fill,minmax(500px,1fr));gap:1.5em;margin:1em 0}
+.chart-box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1.2em}
+.chart-box h3{color:#79c0ff;font-size:.95em;margin-bottom:.8em}
+.ptable{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin:1.5em 0}
+.el{padding:6px 3px;text-align:center;border-radius:6px;min-height:68px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:transform .15s,box-shadow .15s;border:1px solid rgba(255,255,255,.06)}
+.el:hover{transform:scale(1.4);box-shadow:0 0 16px rgba(88,166,255,.6);z-index:10;position:relative}
+.el .z{font-size:.55em;opacity:.65;color:#8b949e}
+.el .sym{font-size:1.5em;font-weight:700;line-height:1.1}
+.el .mass{font-size:.5em;opacity:.55;color:#8b949e}
+.el .ns{font-size:.45em;opacity:.45;color:#58a6ff}
+.el .nm{font-size:.5em;opacity:.6;color:#8b949e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.empty{background:transparent}
+.marker{display:flex;align-items:center;justify-content:center;font-weight:700;color:#58a6ff;font-size:.85em}
+.legend{display:flex;flex-wrap:wrap;gap:.8em;margin:.8em 0;align-items:center}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.75em;color:#8b949e}
+.legend-swatch{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,.1)}
+@keyframes hl{0%{box-shadow:0 0 20px #58a6ff}100%{box-shadow:none}}
+.highlight{animation:hl 2s ease-out}
+.detail{display:none;margin:1.5em 0;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:1.5em;position:relative}
+.detail.open{display:grid;grid-template-columns:auto 1fr;gap:.6em 1.5em;align-items:baseline}
+.detail .close{position:absolute;top:10px;right:14px;cursor:pointer;color:#8b949e;font-size:1.4em;background:none;border:none}
+.detail .close:hover{color:#f85149}
+.detail .dk{color:#8b949e;font-size:.85em;text-align:right}
+.detail .dv{color:#c9d1d9;font-size:.95em;font-weight:600}
+.detail .dtitle{grid-column:1/-1;font-size:1.3em;font-weight:700;margin-bottom:.3em}
+.detail .files{grid-column:1/-1;display:flex;gap:.5em;margin-top:.5em}
+.detail .fbtn{padding:.3em .8em;background:#21262d;border:1px solid #30363d;border-radius:4px;color:#58a6ff;cursor:pointer;font-size:.8em;text-decoration:none}
+.detail .fbtn:hover{background:#30363d}
+.cat-0{background:linear-gradient(135deg,#1a3a1a,#0d0d0d);color:#7ee787}
+.cat-1{background:linear-gradient(135deg,#0a2a3a,#0d0d0d);color:#79c0ff}
+.cat-2{background:linear-gradient(135deg,#3a2a0a,#0d0d0d);color:#ffa657}
+</style>
+</head>
+<body>
+
+<h1>Radioactive Decay — Chains, Half-lives &amp; Activities from Isotope Data</h1>
+<p>12 benchmark entries &mdash; 6 formats: CSV, JSON, YAML, TOML, BMK, Markdown.</p>
+
+<div class="stats">
+<div class="stat-card"><div class="num">12</div><div class="lbl">Elements</div></div>
+<div class="stat-card"><div class="num">6</div><div class="lbl">Formats</div></div>
+<div class="stat-card"><div class="num">70</div><div class="lbl">Files</div></div>
+</div>
+
+<h2>Interactive Grid</h2>
+<div class="legend">
+<div class="legend-item"><div class="legend-swatch cat-0"></div>Alpha</div>
+<div class="legend-item"><div class="legend-swatch cat-1"></div>Other</div>
+<div class="legend-item"><div class="legend-swatch cat-2"></div>Beta</div>
+</div>
+<div class="ptable">
+<div id="el-²³⁸U" class="el cat-0" style="grid-row:1;grid-column:1" title="Uranium - 2226.8ns" onclick="go('²³⁸U')"><div class="sym">²³⁸U</div><div class="nm">Uranium</div><div class="ns">2227ns</div></div>
+<div id="el-²³⁵U" class="el cat-0" style="grid-row:1;grid-column:2" title="Uranium - 2250.6ns" onclick="go('²³⁵U')"><div class="sym">²³⁵U</div><div class="nm">Uranium</div><div class="ns">2251ns</div></div>
+<div id="el-²³²Th" class="el cat-0" style="grid-row:1;grid-column:3" title="Thorium - 2421.4ns" onclick="go('²³²Th')"><div class="sym">²³²Th</div><div class="nm">Thorium</div><div class="ns">2421ns</div></div>
+<div id="el-⁴⁰K" class="el cat-1" style="grid-row:1;grid-column:4" title="Potassium - 2266.5ns" onclick="go('⁴⁰K')"><div class="sym">⁴⁰K</div><div class="nm">Potassium</div><div class="ns">2267ns</div></div>
+<div id="el-¹⁴C" class="el cat-1" style="grid-row:2;grid-column:1" title="Carbon - 2285.2ns" onclick="go('¹⁴C')"><div class="sym">¹⁴C</div><div class="nm">Carbon</div><div class="ns">2285ns</div></div>
+<div id="el-²²⁶Ra" class="el cat-1" style="grid-row:2;grid-column:2" title="Radium - 2268.8ns" onclick="go('²²⁶Ra')"><div class="sym">²²⁶Ra</div><div class="nm">Radium</div><div class="ns">2269ns</div></div>
+<div id="el-⁹⁰Sr" class="el cat-1" style="grid-row:2;grid-column:3" title="Strontium - 2214.4ns" onclick="go('⁹⁰Sr')"><div class="sym">⁹⁰Sr</div><div class="nm">Strontium</div><div class="ns">2214ns</div></div>
+<div id="el-¹³⁷Cs" class="el cat-1" style="grid-row:2;grid-column:4" title="Cesium - 2254.3ns" onclick="go('¹³⁷Cs')"><div class="sym">¹³⁷Cs</div><div class="nm">Cesium</div><div class="ns">2254ns</div></div>
+<div id="el-¹³¹I" class="el cat-1" style="grid-row:3;grid-column:1" title="Iodine - 2220.2ns" onclick="go('¹³¹I')"><div class="sym">¹³¹I</div><div class="nm">Iodine</div><div class="ns">2220ns</div></div>
+<div id="el-⁶⁰Co" class="el cat-2" style="grid-row:3;grid-column:2" title="Cobalt - 2333.2ns" onclick="go('⁶⁰Co')"><div class="sym">⁶⁰Co</div><div class="nm">Cobalt</div><div class="ns">2333ns</div></div>
+<div id="el-²³⁹Pu" class="el cat-0" style="grid-row:3;grid-column:3" title="Plutonium - 2407.8ns" onclick="go('²³⁹Pu')"><div class="sym">²³⁹Pu</div><div class="nm">Plutonium</div><div class="ns">2408ns</div></div>
+<div id="el-²⁴¹Am" class="el cat-0" style="grid-row:3;grid-column:4" title="Americium - 2720.8ns" onclick="go('²⁴¹Am')"><div class="sym">²⁴¹Am</div><div class="nm">Americium</div><div class="ns">2721ns</div></div>
+</div>
+
+<div id="detail" class="detail">
+<button class="close" onclick="closeDetail()">&times;</button>
+<div class="dtitle" id="d-title"></div>
+<div id="d-tags"></div>
+<div class="dk">Precision</div><div class="dv" id="d-prec"></div>
+<div class="dk">Iterations</div><div class="dv" id="d-iter"></div>
+<div class="dk">Avg Time</div><div class="dv" id="d-avg"></div>
+<div class="dk">Min Time</div><div class="dv" id="d-min"></div>
+<div class="dk">Max Time</div><div class="dv" id="d-max"></div>
+<div class="dk">Std Dev</div><div class="dv" id="d-std"></div>
+<div class="dk">Iters/sec</div><div class="dv" id="d-ips"></div>
+<div class="files" id="d-files"></div>
+</div>
+
+<h2>Data Formats</h2>
+<div class="tabs">
+<div class="tab active" onclick="switchTab(event,'csv')">CSV</div>
+<div class="tab" onclick="switchTab(event,'json')">JSON</div>
+<div class="tab" onclick="switchTab(event,'yaml')">YAML</div>
+<div class="tab" onclick="switchTab(event,'toml')">TOML</div>
+<div class="tab" onclick="switchTab(event,'bmk')">BMK</div>
+<div class="tab" onclick="switchTab(event,'mdprev')">Markdown</div>
+</div>
+<div id="csv" class="panel active">
+<select class="fsel" onchange="showFile('csv',this.value)">
+<option>Alpha.csv</option>
+<option>Beta.csv</option>
+<option>Other.csv</option>
+<option>all.csv</option>
+</select>
+<div id="csv-code" style="overflow-x:auto;max-height:600px;overflow-y:auto"></div>
+</div>
+<div id="json" class="panel">
+<select class="fsel" onchange="showFile('json',this.value)">
+<option>summary.json</option>
+<option>²²⁶Ra.json</option>
+<option>²³²Th.json</option>
+<option>²³⁵U.json</option>
+<option>²³⁸U.json</option>
+<option>²³⁹Pu.json</option>
+<option>²⁴¹Am.json</option>
+<option>¹³¹I.json</option>
+<option>¹³⁷Cs.json</option>
+<option>¹⁴C.json</option>
+<option>⁴⁰K.json</option>
+<option>⁶⁰Co.json</option>
+<option>⁹⁰Sr.json</option>
+</select>
+<pre><code id="json-code"></code></pre>
+</div>
+<div id="yaml" class="panel">
+<select class="fsel" onchange="showFile('yaml',this.value)">
+<option>Alpha.yaml</option>
+<option>Beta.yaml</option>
+<option>Other.yaml</option>
+<option>summary.yaml</option>
+<option>²²⁶Ra.yaml</option>
+<option>²³²Th.yaml</option>
+<option>²³⁵U.yaml</option>
+<option>²³⁸U.yaml</option>
+<option>²³⁹Pu.yaml</option>
+<option>²⁴¹Am.yaml</option>
+<option>¹³¹I.yaml</option>
+<option>¹³⁷Cs.yaml</option>
+<option>¹⁴C.yaml</option>
+<option>⁴⁰K.yaml</option>
+<option>⁶⁰Co.yaml</option>
+<option>⁹⁰Sr.yaml</option>
+</select>
+<pre><code id="yaml-code"></code></pre>
+</div>
+<div id="toml" class="panel">
+<select class="fsel" onchange="showFile('toml',this.value)">
+<option>summary.toml</option>
+<option>²²⁶Ra.toml</option>
+<option>²³²Th.toml</option>
+<option>²³⁵U.toml</option>
+<option>²³⁸U.toml</option>
+<option>²³⁹Pu.toml</option>
+<option>²⁴¹Am.toml</option>
+<option>¹³¹I.toml</option>
+<option>¹³⁷Cs.toml</option>
+<option>¹⁴C.toml</option>
+<option>⁴⁰K.toml</option>
+<option>⁶⁰Co.toml</option>
+<option>⁹⁰Sr.toml</option>
+</select>
+<pre><code id="toml-code"></code></pre>
+</div>
+<div id="bmk" class="panel">
+<select class="fsel" onchange="showFile('bmk',this.value)">
+<option>²²⁶Ra.bmk</option>
+<option>²³²Th.bmk</option>
+<option>²³⁵U.bmk</option>
+<option>²³⁸U.bmk</option>
+<option>²³⁹Pu.bmk</option>
+<option>²⁴¹Am.bmk</option>
+<option>¹³¹I.bmk</option>
+<option>¹³⁷Cs.bmk</option>
+<option>¹⁴C.bmk</option>
+<option>⁴⁰K.bmk</option>
+<option>⁶⁰Co.bmk</option>
+<option>⁹⁰Sr.bmk</option>
+</select>
+<pre><code id="bmk-code"></code></pre>
+</div>
+<div id="mdprev" class="panel" style="max-height:700px;overflow-y:auto">
+<h2 style="color:#58a6ff;border-bottom:1px solid #21262d;padding-bottom:.3em;margin-bottom:.5em">Radioactive Decay — Chains, Half-lives &amp; Activities from Isotope Data</h2>
+<p style="line-height:1.6;margin:.4em 0">12 benchmark entries across 5 formats.</p>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Grid</h3>
+<pre><code>  Alpha           : ²³⁸U  ²³⁵U  ²³²Th  ²³⁹Pu  ²⁴¹Am
+  Other           : ⁴⁰K  ¹⁴C  ²²⁶Ra  ⁹⁰Sr  ¹³⁷Cs  ¹³¹I
+  Beta            : ⁶⁰Co
+</code></pre>
+<hr style="border:none;border-top:1px solid #30363d;margin:1em 0">
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Directory Layout</h3>
+<pre><code>csv/
+  all.csv
+json/
+  {label}.json
+  summary.json
+yaml/
+  {label}.yaml
+  summary.yaml
+toml/
+  {label}.toml
+  summary.toml
+bmk/
+  {label}.bmk
+benchmark.html
+benchmark.md
+</code></pre>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Results</h3>
+<table>
+<thead>
+<tr><th>Label</th><th>category</th><th>symbol</th><th>name</th><th>Z</th><th>A</th><th>N</th><th>half_life</th><th>decay_constant</th><th>decay_mode</th><th>specific_activity</th><th>remaining_3hl</th><th>binding_energy</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
+</thead><tbody>
+<tr><td>²³⁸U</td><td>Alpha</td><td>²³⁸U</td><td>Uranium</td><td>92</td><td>238</td><td>146</td><td>4.468e9 years</td><td>4.9156e-18 s⁻¹</td><td>alpha</td><td>1.244e4 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.571 MeV/nucleon</td><td>f64</td><td>5000</td><td>2226.82</td><td>454545.47</td></tr>
+<tr><td>²³⁵U</td><td>Alpha</td><td>²³⁵U</td><td>Uranium</td><td>92</td><td>235</td><td>143</td><td>704000000.00 years</td><td>3.1197e-17 s⁻¹</td><td>alpha</td><td>7.995e4 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.565 MeV/nucleon</td><td>f64</td><td>5000</td><td>2250.62</td><td>454545.47</td></tr>
+<tr><td>²³²Th</td><td>Alpha</td><td>²³²Th</td><td>Thorium</td><td>90</td><td>232</td><td>142</td><td>1.405e10 years</td><td>1.5632e-18 s⁻¹</td><td>alpha</td><td>4.058e3 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.570 MeV/nucleon</td><td>f64</td><td>5000</td><td>2421.41</td><td>416666.66</td></tr>
+<tr><td>⁴⁰K</td><td>Other</td><td>⁴⁰K</td><td>Potassium</td><td>19</td><td>40</td><td>21</td><td>1.248e9 years</td><td>1.7598e-17 s⁻¹</td><td>beta- (electron emission)</td><td>2.650e5 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.457 MeV/nucleon</td><td>f64</td><td>5000</td><td>2266.50</td><td>454545.47</td></tr>
+<tr><td>¹⁴C</td><td>Other</td><td>¹⁴C</td><td>Carbon</td><td>6</td><td>14</td><td>8</td><td>5730.00 years</td><td>3.8330e-12 s⁻¹</td><td>beta- (electron emission)</td><td>1.649e11 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.517 MeV/nucleon</td><td>f64</td><td>5000</td><td>2285.18</td><td>454545.47</td></tr>
+<tr><td>²²⁶Ra</td><td>Other</td><td>²²⁶Ra</td><td>Radium</td><td>88</td><td>226</td><td>138</td><td>1600.00 years</td><td>1.3727e-11 s⁻¹</td><td>alpha emission</td><td>3.658e10 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.568 MeV/nucleon</td><td>f64</td><td>5000</td><td>2268.76</td><td>454545.47</td></tr>
+<tr><td>⁹⁰Sr</td><td>Other</td><td>⁹⁰Sr</td><td>Strontium</td><td>38</td><td>90</td><td>52</td><td>28.79 years</td><td>7.6286e-10 s⁻¹</td><td>beta- (electron emission)</td><td>5.105e12 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.525 MeV/nucleon</td><td>f64</td><td>5000</td><td>2214.38</td><td>454545.47</td></tr>
+<tr><td>¹³⁷Cs</td><td>Other</td><td>¹³⁷Cs</td><td>Cesium</td><td>55</td><td>137</td><td>82</td><td>30.17 years</td><td>7.2804e-10 s⁻¹</td><td>beta- (electron emission)</td><td>3.200e12 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.552 MeV/nucleon</td><td>f64</td><td>5000</td><td>2254.30</td><td>454545.47</td></tr>
+<tr><td>¹³¹I</td><td>Other</td><td>¹³¹I</td><td>Iodine</td><td>53</td><td>131</td><td>78</td><td>8.03 days</td><td>9.9967e-7 s⁻¹</td><td>beta- (electron emission)</td><td>4.596e15 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.548 MeV/nucleon</td><td>f64</td><td>5000</td><td>2220.21</td><td>454545.47</td></tr>
+<tr><td>⁶⁰Co</td><td>Beta</td><td>⁶⁰Co</td><td>Cobalt</td><td>27</td><td>60</td><td>33</td><td>5.27 years</td><td>4.1664e-9 s⁻¹</td><td>beta-</td><td>4.182e13 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.489 MeV/nucleon</td><td>f64</td><td>5000</td><td>2333.16</td><td>454545.47</td></tr>
+<tr><td>²³⁹Pu</td><td>Alpha</td><td>²³⁹Pu</td><td>Plutonium</td><td>94</td><td>239</td><td>145</td><td>24110.00 years</td><td>9.1094e-13 s⁻¹</td><td>alpha</td><td>2.295e9 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.563 MeV/nucleon</td><td>f64</td><td>5000</td><td>2407.81</td><td>416666.66</td></tr>
+<tr><td>²⁴¹Am</td><td>Alpha</td><td>²⁴¹Am</td><td>Americium</td><td>95</td><td>241</td><td>146</td><td>432.20 years</td><td>5.0816e-11 s⁻¹</td><td>alpha</td><td>1.270e11 Bq/g</td><td>125000 / 1M after 3 half-lives</td><td>7.561 MeV/nucleon</td><td>f64</td><td>5000</td><td>2720.78</td><td>384615.38</td></tr>
+</tbody></table>
+<h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
+<p style="line-height:1.6;margin:.4em 0">### Category Distribution</p>
+<table>
+<thead>
+<tr><th>Category</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
+</thead><tbody>
+<tr><td>Alpha</td><td>5</td><td>2405.49</td><td>2226.82</td><td>2720.78</td></tr>
+<tr><td>Other</td><td>6</td><td>2251.56</td><td>2214.38</td><td>2285.18</td></tr>
+<tr><td>Beta</td><td>1</td><td>2333.16</td><td>2333.16</td><td>2333.16</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>⁹⁰Sr</td><td>2214.38</td></tr>
+<tr><td>2</td><td>¹³¹I</td><td>2220.21</td></tr>
+<tr><td>3</td><td>²³⁸U</td><td>2226.82</td></tr>
+<tr><td>4</td><td>²³⁵U</td><td>2250.62</td></tr>
+<tr><td>5</td><td>¹³⁷Cs</td><td>2254.30</td></tr>
+<tr><td>6</td><td>⁴⁰K</td><td>2266.50</td></tr>
+<tr><td>7</td><td>²²⁶Ra</td><td>2268.76</td></tr>
+<tr><td>8</td><td>¹⁴C</td><td>2285.18</td></tr>
+<tr><td>9</td><td>⁶⁰Co</td><td>2333.16</td></tr>
+<tr><td>10</td><td>²³⁹Pu</td><td>2407.81</td></tr>
+</tbody></table>
+<p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
+<table>
+<thead>
+<tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>²⁴¹Am</td><td>2720.78</td></tr>
+<tr><td>2</td><td>²³²Th</td><td>2421.41</td></tr>
+<tr><td>3</td><td>²³⁹Pu</td><td>2407.81</td></tr>
+<tr><td>4</td><td>⁶⁰Co</td><td>2333.16</td></tr>
+<tr><td>5</td><td>¹⁴C</td><td>2285.18</td></tr>
+<tr><td>6</td><td>²²⁶Ra</td><td>2268.76</td></tr>
+<tr><td>7</td><td>⁴⁰K</td><td>2266.50</td></tr>
+<tr><td>8</td><td>¹³⁷Cs</td><td>2254.30</td></tr>
+<tr><td>9</td><td>²³⁵U</td><td>2250.62</td></tr>
+<tr><td>10</td><td>²³⁸U</td><td>2226.82</td></tr>
+</tbody></table>
+</div>
+
+<h2>Analytics</h2>
+<div class="charts">
+<div class="chart-box">
+<h3>Category Distribution</h3>
+<svg viewBox="0 0 650 94" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Alpha</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="358" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="532" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">5</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Other</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="604" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">6</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Beta</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="71" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="245" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">1</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Average Time per Category (ns)</h3>
+<svg viewBox="0 0 650 94" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Alpha</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2405.5</text>
+<text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Other</text>
+<rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
+<rect x="168" y="32" width="402" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="576" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2251.6</text>
+<text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">Beta</text>
+<rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
+<rect x="168" y="60" width="417" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="591" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2333.2</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Fastest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">⁹⁰Sr</text>
+<rect x="168" y="4" width="349" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="523" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2214.4 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">¹³¹I</text>
+<rect x="168" y="32" width="350" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="524" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2220.2 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²³⁸U</text>
+<rect x="168" y="60" width="351" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="525" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2226.8 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²³⁵U</text>
+<rect x="168" y="88" width="355" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="529" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2250.6 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">¹³⁷Cs</text>
+<rect x="168" y="116" width="356" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="530" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2254.3 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">⁴⁰K</text>
+<rect x="168" y="144" width="358" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="532" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2266.5 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²²⁶Ra</text>
+<rect x="168" y="172" width="358" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="532" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2268.8 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">¹⁴C</text>
+<rect x="168" y="200" width="361" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="535" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2285.2 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">⁶⁰Co</text>
+<rect x="168" y="228" width="368" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="542" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2333.2 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²³⁹Pu</text>
+<rect x="168" y="256" width="380" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="554" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2407.8 ns</text>
+</svg>
+</div>
+
+<div class="chart-box">
+<h3>Top 10 Slowest Entries</h3>
+<svg viewBox="0 0 650 290" style="width:100%;max-width:650px">
+<text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²⁴¹Am</text>
+<rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2720.8 ns</text>
+<text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²³²Th</text>
+<rect x="168" y="32" width="382" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="556" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2421.4 ns</text>
+<text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²³⁹Pu</text>
+<rect x="168" y="60" width="380" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="554" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2407.8 ns</text>
+<text x="160" y="102" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">⁶⁰Co</text>
+<rect x="168" y="88" width="368" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="542" y="102" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2333.2 ns</text>
+<text x="160" y="130" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">¹⁴C</text>
+<rect x="168" y="116" width="361" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="535" y="130" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2285.2 ns</text>
+<text x="160" y="158" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²²⁶Ra</text>
+<rect x="168" y="144" width="358" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="532" y="158" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2268.8 ns</text>
+<text x="160" y="186" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">⁴⁰K</text>
+<rect x="168" y="172" width="358" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="532" y="186" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2266.5 ns</text>
+<text x="160" y="214" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">¹³⁷Cs</text>
+<rect x="168" y="200" width="356" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="530" y="214" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2254.3 ns</text>
+<text x="160" y="242" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²³⁵U</text>
+<rect x="168" y="228" width="355" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="529" y="242" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2250.6 ns</text>
+<text x="160" y="270" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">²³⁸U</text>
+<rect x="168" y="256" width="351" height="22" rx="4" fill="#7ee787" opacity=".8"/>
+<text x="525" y="270" fill="#c9d1d9" font-size="11" dominant-baseline="middle">2226.8 ns</text>
+</svg>
+</div>
+
+<div class="chart-box" style="grid-column:1/-1">
+<h3>Category Statistics</h3>
+<svg viewBox="0 0 900 112" style="width:100%;max-width:900px">
+<rect x="0" y="4" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
+<text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">Alpha</text>
+<text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=5</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 2405.5 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 2226.8 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 2720.8 ns</text>
+<rect x="0" y="38" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="38" width="4" height="28" rx="2" fill="#79c0ff"/>
+<text x="14" y="52" fill="#79c0ff" font-size="12" font-weight="bold" dominant-baseline="middle">Other</text>
+<text x="250" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">n=6</text>
+<text x="350" y="52" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 2251.6 ns</text>
+<text x="520" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">min 2214.4 ns</text>
+<text x="680" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">max 2285.2 ns</text>
+<rect x="0" y="72" width="900" height="28" rx="4" fill="#161b22"/>
+<rect x="0" y="72" width="4" height="28" rx="2" fill="#ffa657"/>
+<text x="14" y="86" fill="#ffa657" font-size="12" font-weight="bold" dominant-baseline="middle">Beta</text>
+<text x="250" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
+<text x="350" y="86" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 2333.2 ns</text>
+<text x="520" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">min 2333.2 ns</text>
+<text x="680" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">max 2333.2 ns</text>
+</svg>
+</div>
+
+</div>
+
+<script>
+var F={
+csv:{
+"Alpha.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,Z,A,N,half_life,decay_constant,decay_mode,specific_activity,remaining_3hl,binding_energy\nUranium_238_decay,f64,11,5000,2226.8213,2226.8213,2226.8213,0,454545.47,²³⁸U (Uranium) | t½=4.468e9 years | λ=4.9156e-18 s⁻¹ | alpha | A_sp=1.244e4 Bq/g,Alpha,²³⁸U,Uranium,92,238,146,4.468e9 years,4.9156e-18 s⁻¹,alpha,1.244e4 Bq/g,125000 / 1M after 3 half-lives,7.571 MeV/nucleon\nUranium_235_decay,f64,11,5000,2250.617,2250.617,2250.617,0,454545.47,²³⁵U (Uranium) | t½=704000000.00 years | λ=3.1197e-17 s⁻¹ | alpha | A_sp=7.995e4 Bq/g,Alpha,²³⁵U,Uranium,92,235,143,704000000.00 years,3.1197e-17 s⁻¹,alpha,7.995e4 Bq/g,125000 / 1M after 3 half-lives,7.565 MeV/nucleon\nThorium_232_decay,f64,12,5000,2421.411,2421.411,2421.411,0,416666.66,²³²Th (Thorium) | t½=1.405e10 years | λ=1.5632e-18 s⁻¹ | alpha | A_sp=4.058e3 Bq/g,Alpha,²³²Th,Thorium,90,232,142,1.405e10 years,1.5632e-18 s⁻¹,alpha,4.058e3 Bq/g,125000 / 1M after 3 half-lives,7.570 MeV/nucleon\nPlutonium_239_decay,f64,12,5000,2407.811,2407.811,2407.811,0,416666.66,²³⁹Pu (Plutonium) | t½=24110.00 years | λ=9.1094e-13 s⁻¹ | alpha | A_sp=2.295e9 Bq/g,Alpha,²³⁹Pu,Plutonium,94,239,145,24110.00 years,9.1094e-13 s⁻¹,alpha,2.295e9 Bq/g,125000 / 1M after 3 half-lives,7.563 MeV/nucleon\nAmericium_241_decay,f64,13,5000,2720.7808,2720.7808,2720.7808,0,384615.38,²⁴¹Am (Americium) | t½=432.20 years | λ=5.0816e-11 s⁻¹ | alpha | A_sp=1.270e11 Bq/g,Alpha,²⁴¹Am,Americium,95,241,146,432.20 years,5.0816e-11 s⁻¹,alpha,1.270e11 Bq/g,125000 / 1M after 3 half-lives,7.561 MeV/nucleon\n",
+"Beta.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,Z,A,N,half_life,decay_constant,decay_mode,specific_activity,remaining_3hl,binding_energy\nCobalt_60_decay,f64,11,5000,2333.161,2333.161,2333.161,0,454545.47,⁶⁰Co (Cobalt) | t½=5.27 years | λ=4.1664e-9 s⁻¹ | beta- | A_sp=4.182e13 Bq/g,Beta,⁶⁰Co,Cobalt,27,60,33,5.27 years,4.1664e-9 s⁻¹,beta-,4.182e13 Bq/g,125000 / 1M after 3 half-lives,7.489 MeV/nucleon\n",
+"Other.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,Z,A,N,half_life,decay_constant,decay_mode,specific_activity,remaining_3hl,binding_energy\nPotassium_40_decay,f64,11,5000,2266.503,2266.503,2266.503,0,454545.47,⁴⁰K (Potassium) | t½=1.248e9 years | λ=1.7598e-17 s⁻¹ | beta- (electron emission) | A_sp=2.650e5 Bq/g,Other,⁴⁰K,Potassium,19,40,21,1.248e9 years,1.7598e-17 s⁻¹,beta- (electron emission),2.650e5 Bq/g,125000 / 1M after 3 half-lives,7.457 MeV/nucleon\nCarbon_14_decay,f64,11,5000,2285.183,2285.183,2285.183,0,454545.47,¹⁴C (Carbon) | t½=5730.00 years | λ=3.8330e-12 s⁻¹ | beta- (electron emission) | A_sp=1.649e11 Bq/g,Other,¹⁴C,Carbon,6,14,8,5730.00 years,3.8330e-12 s⁻¹,beta- (electron emission),1.649e11 Bq/g,125000 / 1M after 3 half-lives,7.517 MeV/nucleon\nRadium_226_decay,f64,11,5000,2268.757,2268.757,2268.757,0,454545.47,²²⁶Ra (Radium) | t½=1600.00 years | λ=1.3727e-11 s⁻¹ | alpha emission | A_sp=3.658e10 Bq/g,Other,²²⁶Ra,Radium,88,226,138,1600.00 years,1.3727e-11 s⁻¹,alpha emission,3.658e10 Bq/g,125000 / 1M after 3 half-lives,7.568 MeV/nucleon\nStrontium_90_decay,f64,11,5000,2214.381,2214.381,2214.381,0,454545.47,⁹⁰Sr (Strontium) | t½=28.79 years | λ=7.6286e-10 s⁻¹ | beta- (electron emission) | A_sp=5.105e12 Bq/g,Other,⁹⁰Sr,Strontium,38,90,52,28.79 years,7.6286e-10 s⁻¹,beta- (electron emission),5.105e12 Bq/g,125000 / 1M after 3 half-lives,7.525 MeV/nucleon\nCesium_137_decay,f64,11,5000,2254.305,2254.305,2254.305,0,454545.47,¹³⁷Cs (Cesium) | t½=30.17 years | λ=7.2804e-10 s⁻¹ | beta- (electron emission) | A_sp=3.200e12 Bq/g,Other,¹³⁷Cs,Cesium,55,137,82,30.17 years,7.2804e-10 s⁻¹,beta- (electron emission),3.200e12 Bq/g,125000 / 1M after 3 half-lives,7.552 MeV/nucleon\nIodine_131_decay,f64,11,5000,2220.211,2220.211,2220.211,0,454545.47,¹³¹I (Iodine) | t½=8.03 days | λ=9.9967e-7 s⁻¹ | beta- (electron emission) | A_sp=4.596e15 Bq/g,Other,¹³¹I,Iodine,53,131,78,8.03 days,9.9967e-7 s⁻¹,beta- (electron emission),4.596e15 Bq/g,125000 / 1M after 3 half-lives,7.548 MeV/nucleon\n",
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,Z,A,N,half_life,decay_constant,decay_mode,specific_activity,remaining_3hl,binding_energy\nUranium_238_decay,f64,11,5000,2226.8213,2226.8213,2226.8213,0,454545.47,²³⁸U (Uranium) | t½=4.468e9 years | λ=4.9156e-18 s⁻¹ | alpha | A_sp=1.244e4 Bq/g,Alpha,²³⁸U,Uranium,92,238,146,4.468e9 years,4.9156e-18 s⁻¹,alpha,1.244e4 Bq/g,125000 / 1M after 3 half-lives,7.571 MeV/nucleon\nUranium_235_decay,f64,11,5000,2250.617,2250.617,2250.617,0,454545.47,²³⁵U (Uranium) | t½=704000000.00 years | λ=3.1197e-17 s⁻¹ | alpha | A_sp=7.995e4 Bq/g,Alpha,²³⁵U,Uranium,92,235,143,704000000.00 years,3.1197e-17 s⁻¹,alpha,7.995e4 Bq/g,125000 / 1M after 3 half-lives,7.565 MeV/nucleon\nThorium_232_decay,f64,12,5000,2421.411,2421.411,2421.411,0,416666.66,²³²Th (Thorium) | t½=1.405e10 years | λ=1.5632e-18 s⁻¹ | alpha | A_sp=4.058e3 Bq/g,Alpha,²³²Th,Thorium,90,232,142,1.405e10 years,1.5632e-18 s⁻¹,alpha,4.058e3 Bq/g,125000 / 1M after 3 half-lives,7.570 MeV/nucleon\nPotassium_40_decay,f64,11,5000,2266.503,2266.503,2266.503,0,454545.47,⁴⁰K (Potassium) | t½=1.248e9 years | λ=1.7598e-17 s⁻¹ | beta- (electron emission) | A_sp=2.650e5 Bq/g,Other,⁴⁰K,Potassium,19,40,21,1.248e9 years,1.7598e-17 s⁻¹,beta- (electron emission),2.650e5 Bq/g,125000 / 1M after 3 half-lives,7.457 MeV/nucleon\nCarbon_14_decay,f64,11,5000,2285.183,2285.183,2285.183,0,454545.47,¹⁴C (Carbon) | t½=5730.00 years | λ=3.8330e-12 s⁻¹ | beta- (electron emission) | A_sp=1.649e11 Bq/g,Other,¹⁴C,Carbon,6,14,8,5730.00 years,3.8330e-12 s⁻¹,beta- (electron emission),1.649e11 Bq/g,125000 / 1M after 3 half-lives,7.517 MeV/nucleon\nRadium_226_decay,f64,11,5000,2268.757,2268.757,2268.757,0,454545.47,²²⁶Ra (Radium) | t½=1600.00 years | λ=1.3727e-11 s⁻¹ | alpha emission | A_sp=3.658e10 Bq/g,Other,²²⁶Ra,Radium,88,226,138,1600.00 years,1.3727e-11 s⁻¹,alpha emission,3.658e10 Bq/g,125000 / 1M after 3 half-lives,7.568 MeV/nucleon\nStrontium_90_decay,f64,11,5000,2214.381,2214.381,2214.381,0,454545.47,⁹⁰Sr (Strontium) | t½=28.79 years | λ=7.6286e-10 s⁻¹ | beta- (electron emission) | A_sp=5.105e12 Bq/g,Other,⁹⁰Sr,Strontium,38,90,52,28.79 years,7.6286e-10 s⁻¹,beta- (electron emission),5.105e12 Bq/g,125000 / 1M after 3 half-lives,7.525 MeV/nucleon\nCesium_137_decay,f64,11,5000,2254.305,2254.305,2254.305,0,454545.47,¹³⁷Cs (Cesium) | t½=30.17 years | λ=7.2804e-10 s⁻¹ | beta- (electron emission) | A_sp=3.200e12 Bq/g,Other,¹³⁷Cs,Cesium,55,137,82,30.17 years,7.2804e-10 s⁻¹,beta- (electron emission),3.200e12 Bq/g,125000 / 1M after 3 half-lives,7.552 MeV/nucleon\nIodine_131_decay,f64,11,5000,2220.211,2220.211,2220.211,0,454545.47,¹³¹I (Iodine) | t½=8.03 days | λ=9.9967e-7 s⁻¹ | beta- (electron emission) | A_sp=4.596e15 Bq/g,Other,¹³¹I,Iodine,53,131,78,8.03 days,9.9967e-7 s⁻¹,beta- (electron emission),4.596e15 Bq/g,125000 / 1M after 3 half-lives,7.548 MeV/nucleon\nCobalt_60_decay,f64,11,5000,2333.161,2333.161,2333.161,0,454545.47,⁶⁰Co (Cobalt) | t½=5.27 years | λ=4.1664e-9 s⁻¹ | beta- | A_sp=4.182e13 Bq/g,Beta,⁶⁰Co,Cobalt,27,60,33,5.27 years,4.1664e-9 s⁻¹,beta-,4.182e13 Bq/g,125000 / 1M after 3 half-lives,7.489 MeV/nucleon\nPlutonium_239_decay,f64,12,5000,2407.811,2407.811,2407.811,0,416666.66,²³⁹Pu (Plutonium) | t½=24110.00 years | λ=9.1094e-13 s⁻¹ | alpha | A_sp=2.295e9 Bq/g,Alpha,²³⁹Pu,Plutonium,94,239,145,24110.00 years,9.1094e-13 s⁻¹,alpha,2.295e9 Bq/g,125000 / 1M after 3 half-lives,7.563 MeV/nucleon\nAmericium_241_decay,f64,13,5000,2720.7808,2720.7808,2720.7808,0,384615.38,²⁴¹Am (Americium) | t½=432.20 years | λ=5.0816e-11 s⁻¹ | alpha | A_sp=1.270e11 Bq/g,Alpha,²⁴¹Am,Americium,95,241,146,432.20 years,5.0816e-11 s⁻¹,alpha,1.270e11 Bq/g,125000 / 1M after 3 half-lives,7.561 MeV/nucleon\n"},
+json:{
+"summary.json":"[\n{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³⁸U\",\n  \"name\": \"Uranium\",\n  \"Z\": \"92\",\n  \"A\": \"238\",\n  \"N\": \"146\",\n  \"half_life\": \"4.468e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"1.244e4 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.571 MeV/nucleon\",\n  \"experiment_name\": \"Uranium_238_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2226.82,\n  \"min_time_ns\": 2226.82,\n  \"max_time_ns\": 2226.82,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"²³⁸U (Uranium) | t½=4.468e9 years | λ=4.9156e-18 s⁻¹ | alpha | A_sp=1.244e4 Bq/g\"\n},\n{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³⁵U\",\n  \"name\": \"Uranium\",\n  \"Z\": \"92\",\n  \"A\": \"235\",\n  \"N\": \"143\",\n  \"half_life\": \"704000000.00 years\",\n  \"decay_constant\": \"3.1197e-17 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"7.995e4 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.565 MeV/nucleon\",\n  \"experiment_name\": \"Uranium_235_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2250.62,\n  \"min_time_ns\": 2250.62,\n  \"max_time_ns\": 2250.62,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"²³⁵U (Uranium) | t½=704000000.00 years | λ=3.1197e-17 s⁻¹ | alpha | A_sp=7.995e4 Bq/g\"\n},\n{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³²Th\",\n  \"name\": \"Thorium\",\n  \"Z\": \"90\",\n  \"A\": \"232\",\n  \"N\": \"142\",\n  \"half_life\": \"1.405e10 years\",\n  \"decay_constant\": \"1.5632e-18 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"4.058e3 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.570 MeV/nucleon\",\n  \"experiment_name\": \"Thorium_232_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 12,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2421.41,\n  \"min_time_ns\": 2421.41,\n  \"max_time_ns\": 2421.41,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"²³²Th (Thorium) | t½=1.405e10 years | λ=1.5632e-18 s⁻¹ | alpha | A_sp=4.058e3 Bq/g\"\n},\n{\n  \"category\": \"Other\",\n  \"symbol\": \"⁴⁰K\",\n  \"name\": \"Potassium\",\n  \"Z\": \"19\",\n  \"A\": \"40\",\n  \"N\": \"21\",\n  \"half_life\": \"1.248e9 years\",\n  \"decay_constant\": \"1.7598e-17 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"2.650e5 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.457 MeV/nucleon\",\n  \"experiment_name\": \"Potassium_40_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2266.50,\n  \"min_time_ns\": 2266.50,\n  \"max_time_ns\": 2266.50,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"⁴⁰K (Potassium) | t½=1.248e9 years | λ=1.7598e-17 s⁻¹ | beta- (electron emission) | A_sp=2.650e5 Bq/g\"\n},\n{\n  \"category\": \"Other\",\n  \"symbol\": \"¹⁴C\",\n  \"name\": \"Carbon\",\n  \"Z\": \"6\",\n  \"A\": \"14\",\n  \"N\": \"8\",\n  \"half_life\": \"5730.00 years\",\n  \"decay_constant\": \"3.8330e-12 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"1.649e11 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.517 MeV/nucleon\",\n  \"experiment_name\": \"Carbon_14_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2285.18,\n  \"min_time_ns\": 2285.18,\n  \"max_time_ns\": 2285.18,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"¹⁴C (Carbon) | t½=5730.00 years | λ=3.8330e-12 s⁻¹ | beta- (electron emission) | A_sp=1.649e11 Bq/g\"\n},\n{\n  \"category\": \"Other\",\n  \"symbol\": \"²²⁶Ra\",\n  \"name\": \"Radium\",\n  \"Z\": \"88\",\n  \"A\": \"226\",\n  \"N\": \"138\",\n  \"half_life\": \"1600.00 years\",\n  \"decay_constant\": \"1.3727e-11 s⁻¹\",\n  \"decay_mode\": \"alpha emission\",\n  \"specific_activity\": \"3.658e10 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.568 MeV/nucleon\",\n  \"experiment_name\": \"Radium_226_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2268.76,\n  \"min_time_ns\": 2268.76,\n  \"max_time_ns\": 2268.76,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"²²⁶Ra (Radium) | t½=1600.00 years | λ=1.3727e-11 s⁻¹ | alpha emission | A_sp=3.658e10 Bq/g\"\n},\n{\n  \"category\": \"Other\",\n  \"symbol\": \"⁹⁰Sr\",\n  \"name\": \"Strontium\",\n  \"Z\": \"38\",\n  \"A\": \"90\",\n  \"N\": \"52\",\n  \"half_life\": \"28.79 years\",\n  \"decay_constant\": \"7.6286e-10 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"5.105e12 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.525 MeV/nucleon\",\n  \"experiment_name\": \"Strontium_90_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2214.38,\n  \"min_time_ns\": 2214.38,\n  \"max_time_ns\": 2214.38,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"⁹⁰Sr (Strontium) | t½=28.79 years | λ=7.6286e-10 s⁻¹ | beta- (electron emission) | A_sp=5.105e12 Bq/g\"\n},\n{\n  \"category\": \"Other\",\n  \"symbol\": \"¹³⁷Cs\",\n  \"name\": \"Cesium\",\n  \"Z\": \"55\",\n  \"A\": \"137\",\n  \"N\": \"82\",\n  \"half_life\": \"30.17 years\",\n  \"decay_constant\": \"7.2804e-10 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"3.200e12 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.552 MeV/nucleon\",\n  \"experiment_name\": \"Cesium_137_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2254.30,\n  \"min_time_ns\": 2254.30,\n  \"max_time_ns\": 2254.30,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"¹³⁷Cs (Cesium) | t½=30.17 years | λ=7.2804e-10 s⁻¹ | beta- (electron emission) | A_sp=3.200e12 Bq/g\"\n},\n{\n  \"category\": \"Other\",\n  \"symbol\": \"¹³¹I\",\n  \"name\": \"Iodine\",\n  \"Z\": \"53\",\n  \"A\": \"131\",\n  \"N\": \"78\",\n  \"half_life\": \"8.03 days\",\n  \"decay_constant\": \"9.9967e-7 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"4.596e15 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.548 MeV/nucleon\",\n  \"experiment_name\": \"Iodine_131_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2220.21,\n  \"min_time_ns\": 2220.21,\n  \"max_time_ns\": 2220.21,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"¹³¹I (Iodine) | t½=8.03 days | λ=9.9967e-7 s⁻¹ | beta- (electron emission) | A_sp=4.596e15 Bq/g\"\n},\n{\n  \"category\": \"Beta\",\n  \"symbol\": \"⁶⁰Co\",\n  \"name\": \"Cobalt\",\n  \"Z\": \"27\",\n  \"A\": \"60\",\n  \"N\": \"33\",\n  \"half_life\": \"5.27 years\",\n  \"decay_constant\": \"4.1664e-9 s⁻¹\",\n  \"decay_mode\": \"beta-\",\n  \"specific_activity\": \"4.182e13 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.489 MeV/nucleon\",\n  \"experiment_name\": \"Cobalt_60_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2333.16,\n  \"min_time_ns\": 2333.16,\n  \"max_time_ns\": 2333.16,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"⁶⁰Co (Cobalt) | t½=5.27 years | λ=4.1664e-9 s⁻¹ | beta- | A_sp=4.182e13 Bq/g\"\n},\n{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³⁹Pu\",\n  \"name\": \"Plutonium\",\n  \"Z\": \"94\",\n  \"A\": \"239\",\n  \"N\": \"145\",\n  \"half_life\": \"24110.00 years\",\n  \"decay_constant\": \"9.1094e-13 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"2.295e9 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.563 MeV/nucleon\",\n  \"experiment_name\": \"Plutonium_239_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 12,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2407.81,\n  \"min_time_ns\": 2407.81,\n  \"max_time_ns\": 2407.81,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"²³⁹Pu (Plutonium) | t½=24110.00 years | λ=9.1094e-13 s⁻¹ | alpha | A_sp=2.295e9 Bq/g\"\n},\n{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²⁴¹Am\",\n  \"name\": \"Americium\",\n  \"Z\": \"95\",\n  \"A\": \"241\",\n  \"N\": \"146\",\n  \"half_life\": \"432.20 years\",\n  \"decay_constant\": \"5.0816e-11 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"1.270e11 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.561 MeV/nucleon\",\n  \"experiment_name\": \"Americium_241_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 13,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2720.78,\n  \"min_time_ns\": 2720.78,\n  \"max_time_ns\": 2720.78,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 384615.38,\n  \"result\": \"²⁴¹Am (Americium) | t½=432.20 years | λ=5.0816e-11 s⁻¹ | alpha | A_sp=1.270e11 Bq/g\"\n}\n]",
+"²²⁶Ra.json":"{\n  \"category\": \"Other\",\n  \"symbol\": \"²²⁶Ra\",\n  \"name\": \"Radium\",\n  \"Z\": \"88\",\n  \"A\": \"226\",\n  \"N\": \"138\",\n  \"half_life\": \"1600.00 years\",\n  \"decay_constant\": \"1.3727e-11 s⁻¹\",\n  \"decay_mode\": \"alpha emission\",\n  \"specific_activity\": \"3.658e10 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.568 MeV/nucleon\",\n  \"experiment_name\": \"Radium_226_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2268.76,\n  \"min_time_ns\": 2268.76,\n  \"max_time_ns\": 2268.76,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"²²⁶Ra (Radium) | t½=1600.00 years | λ=1.3727e-11 s⁻¹ | alpha emission | A_sp=3.658e10 Bq/g\"\n}",
+"²³²Th.json":"{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³²Th\",\n  \"name\": \"Thorium\",\n  \"Z\": \"90\",\n  \"A\": \"232\",\n  \"N\": \"142\",\n  \"half_life\": \"1.405e10 years\",\n  \"decay_constant\": \"1.5632e-18 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"4.058e3 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.570 MeV/nucleon\",\n  \"experiment_name\": \"Thorium_232_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 12,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2421.41,\n  \"min_time_ns\": 2421.41,\n  \"max_time_ns\": 2421.41,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"²³²Th (Thorium) | t½=1.405e10 years | λ=1.5632e-18 s⁻¹ | alpha | A_sp=4.058e3 Bq/g\"\n}",
+"²³⁵U.json":"{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³⁵U\",\n  \"name\": \"Uranium\",\n  \"Z\": \"92\",\n  \"A\": \"235\",\n  \"N\": \"143\",\n  \"half_life\": \"704000000.00 years\",\n  \"decay_constant\": \"3.1197e-17 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"7.995e4 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.565 MeV/nucleon\",\n  \"experiment_name\": \"Uranium_235_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2250.62,\n  \"min_time_ns\": 2250.62,\n  \"max_time_ns\": 2250.62,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"²³⁵U (Uranium) | t½=704000000.00 years | λ=3.1197e-17 s⁻¹ | alpha | A_sp=7.995e4 Bq/g\"\n}",
+"²³⁸U.json":"{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³⁸U\",\n  \"name\": \"Uranium\",\n  \"Z\": \"92\",\n  \"A\": \"238\",\n  \"N\": \"146\",\n  \"half_life\": \"4.468e9 years\",\n  \"decay_constant\": \"4.9156e-18 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"1.244e4 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.571 MeV/nucleon\",\n  \"experiment_name\": \"Uranium_238_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2226.82,\n  \"min_time_ns\": 2226.82,\n  \"max_time_ns\": 2226.82,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"²³⁸U (Uranium) | t½=4.468e9 years | λ=4.9156e-18 s⁻¹ | alpha | A_sp=1.244e4 Bq/g\"\n}",
+"²³⁹Pu.json":"{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²³⁹Pu\",\n  \"name\": \"Plutonium\",\n  \"Z\": \"94\",\n  \"A\": \"239\",\n  \"N\": \"145\",\n  \"half_life\": \"24110.00 years\",\n  \"decay_constant\": \"9.1094e-13 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"2.295e9 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.563 MeV/nucleon\",\n  \"experiment_name\": \"Plutonium_239_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 12,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2407.81,\n  \"min_time_ns\": 2407.81,\n  \"max_time_ns\": 2407.81,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 416666.66,\n  \"result\": \"²³⁹Pu (Plutonium) | t½=24110.00 years | λ=9.1094e-13 s⁻¹ | alpha | A_sp=2.295e9 Bq/g\"\n}",
+"²⁴¹Am.json":"{\n  \"category\": \"Alpha\",\n  \"symbol\": \"²⁴¹Am\",\n  \"name\": \"Americium\",\n  \"Z\": \"95\",\n  \"A\": \"241\",\n  \"N\": \"146\",\n  \"half_life\": \"432.20 years\",\n  \"decay_constant\": \"5.0816e-11 s⁻¹\",\n  \"decay_mode\": \"alpha\",\n  \"specific_activity\": \"1.270e11 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.561 MeV/nucleon\",\n  \"experiment_name\": \"Americium_241_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 13,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2720.78,\n  \"min_time_ns\": 2720.78,\n  \"max_time_ns\": 2720.78,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 384615.38,\n  \"result\": \"²⁴¹Am (Americium) | t½=432.20 years | λ=5.0816e-11 s⁻¹ | alpha | A_sp=1.270e11 Bq/g\"\n}",
+"¹³¹I.json":"{\n  \"category\": \"Other\",\n  \"symbol\": \"¹³¹I\",\n  \"name\": \"Iodine\",\n  \"Z\": \"53\",\n  \"A\": \"131\",\n  \"N\": \"78\",\n  \"half_life\": \"8.03 days\",\n  \"decay_constant\": \"9.9967e-7 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"4.596e15 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.548 MeV/nucleon\",\n  \"experiment_name\": \"Iodine_131_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2220.21,\n  \"min_time_ns\": 2220.21,\n  \"max_time_ns\": 2220.21,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"¹³¹I (Iodine) | t½=8.03 days | λ=9.9967e-7 s⁻¹ | beta- (electron emission) | A_sp=4.596e15 Bq/g\"\n}",
+"¹³⁷Cs.json":"{\n  \"category\": \"Other\",\n  \"symbol\": \"¹³⁷Cs\",\n  \"name\": \"Cesium\",\n  \"Z\": \"55\",\n  \"A\": \"137\",\n  \"N\": \"82\",\n  \"half_life\": \"30.17 years\",\n  \"decay_constant\": \"7.2804e-10 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"3.200e12 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.552 MeV/nucleon\",\n  \"experiment_name\": \"Cesium_137_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2254.30,\n  \"min_time_ns\": 2254.30,\n  \"max_time_ns\": 2254.30,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"¹³⁷Cs (Cesium) | t½=30.17 years | λ=7.2804e-10 s⁻¹ | beta- (electron emission) | A_sp=3.200e12 Bq/g\"\n}",
+"¹⁴C.json":"{\n  \"category\": \"Other\",\n  \"symbol\": \"¹⁴C\",\n  \"name\": \"Carbon\",\n  \"Z\": \"6\",\n  \"A\": \"14\",\n  \"N\": \"8\",\n  \"half_life\": \"5730.00 years\",\n  \"decay_constant\": \"3.8330e-12 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"1.649e11 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.517 MeV/nucleon\",\n  \"experiment_name\": \"Carbon_14_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2285.18,\n  \"min_time_ns\": 2285.18,\n  \"max_time_ns\": 2285.18,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"¹⁴C (Carbon) | t½=5730.00 years | λ=3.8330e-12 s⁻¹ | beta- (electron emission) | A_sp=1.649e11 Bq/g\"\n}",
+"⁴⁰K.json":"{\n  \"category\": \"Other\",\n  \"symbol\": \"⁴⁰K\",\n  \"name\": \"Potassium\",\n  \"Z\": \"19\",\n  \"A\": \"40\",\n  \"N\": \"21\",\n  \"half_life\": \"1.248e9 years\",\n  \"decay_constant\": \"1.7598e-17 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"2.650e5 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.457 MeV/nucleon\",\n  \"experiment_name\": \"Potassium_40_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2266.50,\n  \"min_time_ns\": 2266.50,\n  \"max_time_ns\": 2266.50,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"⁴⁰K (Potassium) | t½=1.248e9 years | λ=1.7598e-17 s⁻¹ | beta- (electron emission) | A_sp=2.650e5 Bq/g\"\n}",
+"⁶⁰Co.json":"{\n  \"category\": \"Beta\",\n  \"symbol\": \"⁶⁰Co\",\n  \"name\": \"Cobalt\",\n  \"Z\": \"27\",\n  \"A\": \"60\",\n  \"N\": \"33\",\n  \"half_life\": \"5.27 years\",\n  \"decay_constant\": \"4.1664e-9 s⁻¹\",\n  \"decay_mode\": \"beta-\",\n  \"specific_activity\": \"4.182e13 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.489 MeV/nucleon\",\n  \"experiment_name\": \"Cobalt_60_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2333.16,\n  \"min_time_ns\": 2333.16,\n  \"max_time_ns\": 2333.16,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"⁶⁰Co (Cobalt) | t½=5.27 years | λ=4.1664e-9 s⁻¹ | beta- | A_sp=4.182e13 Bq/g\"\n}",
+"⁹⁰Sr.json":"{\n  \"category\": \"Other\",\n  \"symbol\": \"⁹⁰Sr\",\n  \"name\": \"Strontium\",\n  \"Z\": \"38\",\n  \"A\": \"90\",\n  \"N\": \"52\",\n  \"half_life\": \"28.79 years\",\n  \"decay_constant\": \"7.6286e-10 s⁻¹\",\n  \"decay_mode\": \"beta- (electron emission)\",\n  \"specific_activity\": \"5.105e12 Bq/g\",\n  \"remaining_3hl\": \"125000 / 1M after 3 half-lives\",\n  \"binding_energy\": \"7.525 MeV/nucleon\",\n  \"experiment_name\": \"Strontium_90_decay\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 11,\n  \"iterations\": 5000,\n  \"avg_time_ns\": 2214.38,\n  \"min_time_ns\": 2214.38,\n  \"max_time_ns\": 2214.38,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 454545.47,\n  \"result\": \"⁹⁰Sr (Strontium) | t½=28.79 years | λ=7.6286e-10 s⁻¹ | beta- (electron emission) | A_sp=5.105e12 Bq/g\"\n}"},
+yaml:{
+"Alpha.yaml":"category: Alpha\ncount: 5\nentries:\n  - label: ²³⁸U\n    symbol: ²³⁸U\n    name: Uranium\n    Z: 92\n    A: 238\n    N: 146\n    half_life: 4.468e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    decay_mode: alpha\n    specific_activity: 1.244e4 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.571 MeV/nucleon\n    avg_time_ns: 2226.82\n  - label: ²³⁵U\n    symbol: ²³⁵U\n    name: Uranium\n    Z: 92\n    A: 235\n    N: 143\n    half_life: 704000000.00 years\n    decay_constant: 3.1197e-17 s⁻¹\n    decay_mode: alpha\n    specific_activity: 7.995e4 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.565 MeV/nucleon\n    avg_time_ns: 2250.62\n  - label: ²³²Th\n    symbol: ²³²Th\n    name: Thorium\n    Z: 90\n    A: 232\n    N: 142\n    half_life: 1.405e10 years\n    decay_constant: 1.5632e-18 s⁻¹\n    decay_mode: alpha\n    specific_activity: 4.058e3 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.570 MeV/nucleon\n    avg_time_ns: 2421.41\n  - label: ²³⁹Pu\n    symbol: ²³⁹Pu\n    name: Plutonium\n    Z: 94\n    A: 239\n    N: 145\n    half_life: 24110.00 years\n    decay_constant: 9.1094e-13 s⁻¹\n    decay_mode: alpha\n    specific_activity: 2.295e9 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.563 MeV/nucleon\n    avg_time_ns: 2407.81\n  - label: ²⁴¹Am\n    symbol: ²⁴¹Am\n    name: Americium\n    Z: 95\n    A: 241\n    N: 146\n    half_life: 432.20 years\n    decay_constant: 5.0816e-11 s⁻¹\n    decay_mode: alpha\n    specific_activity: 1.270e11 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.561 MeV/nucleon\n    avg_time_ns: 2720.78\n",
+"Beta.yaml":"category: Beta\ncount: 1\nentries:\n  - label: ⁶⁰Co\n    symbol: ⁶⁰Co\n    name: Cobalt\n    Z: 27\n    A: 60\n    N: 33\n    half_life: 5.27 years\n    decay_constant: 4.1664e-9 s⁻¹\n    decay_mode: beta-\n    specific_activity: 4.182e13 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.489 MeV/nucleon\n    avg_time_ns: 2333.16\n",
+"Other.yaml":"category: Other\ncount: 6\nentries:\n  - label: ⁴⁰K\n    symbol: ⁴⁰K\n    name: Potassium\n    Z: 19\n    A: 40\n    N: 21\n    half_life: 1.248e9 years\n    decay_constant: 1.7598e-17 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 2.650e5 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.457 MeV/nucleon\n    avg_time_ns: 2266.50\n  - label: ¹⁴C\n    symbol: ¹⁴C\n    name: Carbon\n    Z: 6\n    A: 14\n    N: 8\n    half_life: 5730.00 years\n    decay_constant: 3.8330e-12 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 1.649e11 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.517 MeV/nucleon\n    avg_time_ns: 2285.18\n  - label: ²²⁶Ra\n    symbol: ²²⁶Ra\n    name: Radium\n    Z: 88\n    A: 226\n    N: 138\n    half_life: 1600.00 years\n    decay_constant: 1.3727e-11 s⁻¹\n    decay_mode: alpha emission\n    specific_activity: 3.658e10 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.568 MeV/nucleon\n    avg_time_ns: 2268.76\n  - label: ⁹⁰Sr\n    symbol: ⁹⁰Sr\n    name: Strontium\n    Z: 38\n    A: 90\n    N: 52\n    half_life: 28.79 years\n    decay_constant: 7.6286e-10 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 5.105e12 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.525 MeV/nucleon\n    avg_time_ns: 2214.38\n  - label: ¹³⁷Cs\n    symbol: ¹³⁷Cs\n    name: Cesium\n    Z: 55\n    A: 137\n    N: 82\n    half_life: 30.17 years\n    decay_constant: 7.2804e-10 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 3.200e12 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.552 MeV/nucleon\n    avg_time_ns: 2254.30\n  - label: ¹³¹I\n    symbol: ¹³¹I\n    name: Iodine\n    Z: 53\n    A: 131\n    N: 78\n    half_life: 8.03 days\n    decay_constant: 9.9967e-7 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 4.596e15 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.548 MeV/nucleon\n    avg_time_ns: 2220.21\n",
+"summary.yaml":"title: Radioactive Decay — Chains, Half-lives & Activities from Isotope Data\ncount: 12\nentries:\n  - label: ²³⁸U\n    category: Alpha\n    symbol: ²³⁸U\n    name: Uranium\n    Z: 92\n    A: 238\n    N: 146\n    half_life: 4.468e9 years\n    decay_constant: 4.9156e-18 s⁻¹\n    decay_mode: alpha\n    specific_activity: 1.244e4 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.571 MeV/nucleon\n    avg_time_ns: 2226.82\n    iterations_per_sec: 454545.47\n  - label: ²³⁵U\n    category: Alpha\n    symbol: ²³⁵U\n    name: Uranium\n    Z: 92\n    A: 235\n    N: 143\n    half_life: 704000000.00 years\n    decay_constant: 3.1197e-17 s⁻¹\n    decay_mode: alpha\n    specific_activity: 7.995e4 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.565 MeV/nucleon\n    avg_time_ns: 2250.62\n    iterations_per_sec: 454545.47\n  - label: ²³²Th\n    category: Alpha\n    symbol: ²³²Th\n    name: Thorium\n    Z: 90\n    A: 232\n    N: 142\n    half_life: 1.405e10 years\n    decay_constant: 1.5632e-18 s⁻¹\n    decay_mode: alpha\n    specific_activity: 4.058e3 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.570 MeV/nucleon\n    avg_time_ns: 2421.41\n    iterations_per_sec: 416666.66\n  - label: ⁴⁰K\n    category: Other\n    symbol: ⁴⁰K\n    name: Potassium\n    Z: 19\n    A: 40\n    N: 21\n    half_life: 1.248e9 years\n    decay_constant: 1.7598e-17 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 2.650e5 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.457 MeV/nucleon\n    avg_time_ns: 2266.50\n    iterations_per_sec: 454545.47\n  - label: ¹⁴C\n    category: Other\n    symbol: ¹⁴C\n    name: Carbon\n    Z: 6\n    A: 14\n    N: 8\n    half_life: 5730.00 years\n    decay_constant: 3.8330e-12 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 1.649e11 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.517 MeV/nucleon\n    avg_time_ns: 2285.18\n    iterations_per_sec: 454545.47\n  - label: ²²⁶Ra\n    category: Other\n    symbol: ²²⁶Ra\n    name: Radium\n    Z: 88\n    A: 226\n    N: 138\n    half_life: 1600.00 years\n    decay_constant: 1.3727e-11 s⁻¹\n    decay_mode: alpha emission\n    specific_activity: 3.658e10 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.568 MeV/nucleon\n    avg_time_ns: 2268.76\n    iterations_per_sec: 454545.47\n  - label: ⁹⁰Sr\n    category: Other\n    symbol: ⁹⁰Sr\n    name: Strontium\n    Z: 38\n    A: 90\n    N: 52\n    half_life: 28.79 years\n    decay_constant: 7.6286e-10 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 5.105e12 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.525 MeV/nucleon\n    avg_time_ns: 2214.38\n    iterations_per_sec: 454545.47\n  - label: ¹³⁷Cs\n    category: Other\n    symbol: ¹³⁷Cs\n    name: Cesium\n    Z: 55\n    A: 137\n    N: 82\n    half_life: 30.17 years\n    decay_constant: 7.2804e-10 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 3.200e12 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.552 MeV/nucleon\n    avg_time_ns: 2254.30\n    iterations_per_sec: 454545.47\n  - label: ¹³¹I\n    category: Other\n    symbol: ¹³¹I\n    name: Iodine\n    Z: 53\n    A: 131\n    N: 78\n    half_life: 8.03 days\n    decay_constant: 9.9967e-7 s⁻¹\n    decay_mode: beta- (electron emission)\n    specific_activity: 4.596e15 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.548 MeV/nucleon\n    avg_time_ns: 2220.21\n    iterations_per_sec: 454545.47\n  - label: ⁶⁰Co\n    category: Beta\n    symbol: ⁶⁰Co\n    name: Cobalt\n    Z: 27\n    A: 60\n    N: 33\n    half_life: 5.27 years\n    decay_constant: 4.1664e-9 s⁻¹\n    decay_mode: beta-\n    specific_activity: 4.182e13 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.489 MeV/nucleon\n    avg_time_ns: 2333.16\n    iterations_per_sec: 454545.47\n  - label: ²³⁹Pu\n    category: Alpha\n    symbol: ²³⁹Pu\n    name: Plutonium\n    Z: 94\n    A: 239\n    N: 145\n    half_life: 24110.00 years\n    decay_constant: 9.1094e-13 s⁻¹\n    decay_mode: alpha\n    specific_activity: 2.295e9 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.563 MeV/nucleon\n    avg_time_ns: 2407.81\n    iterations_per_sec: 416666.66\n  - label: ²⁴¹Am\n    category: Alpha\n    symbol: ²⁴¹Am\n    name: Americium\n    Z: 95\n    A: 241\n    N: 146\n    half_life: 432.20 years\n    decay_constant: 5.0816e-11 s⁻¹\n    decay_mode: alpha\n    specific_activity: 1.270e11 Bq/g\n    remaining_3hl: 125000 / 1M after 3 half-lives\n    binding_energy: 7.561 MeV/nucleon\n    avg_time_ns: 2720.78\n    iterations_per_sec: 384615.38\n",
+"²²⁶Ra.yaml":"category: Other\nsymbol: ²²⁶Ra\nname: Radium\nZ: 88\nA: 226\nN: 138\nhalf_life: 1600.00 years\ndecay_constant: 1.3727e-11 s⁻¹\ndecay_mode: alpha emission\nspecific_activity: 3.658e10 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.568 MeV/nucleon\nexperiment_name: Radium_226_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2268.76\nmin_time_ns: 2268.76\nmax_time_ns: 2268.76\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ²²⁶Ra (Radium) | t½=1600.00 years | λ=1.3727e-11 s⁻¹ | alpha emission | A_sp=3.658e10 Bq/g\n",
+"²³²Th.yaml":"category: Alpha\nsymbol: ²³²Th\nname: Thorium\nZ: 90\nA: 232\nN: 142\nhalf_life: 1.405e10 years\ndecay_constant: 1.5632e-18 s⁻¹\ndecay_mode: alpha\nspecific_activity: 4.058e3 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.570 MeV/nucleon\nexperiment_name: Thorium_232_decay\nprecision: f64\nelapsed_ms: 12\niterations: 5000\navg_time_ns: 2421.41\nmin_time_ns: 2421.41\nmax_time_ns: 2421.41\ntime_stddev: 0.0000\niterations_per_sec: 416666.66\nresult: ²³²Th (Thorium) | t½=1.405e10 years | λ=1.5632e-18 s⁻¹ | alpha | A_sp=4.058e3 Bq/g\n",
+"²³⁵U.yaml":"category: Alpha\nsymbol: ²³⁵U\nname: Uranium\nZ: 92\nA: 235\nN: 143\nhalf_life: 704000000.00 years\ndecay_constant: 3.1197e-17 s⁻¹\ndecay_mode: alpha\nspecific_activity: 7.995e4 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.565 MeV/nucleon\nexperiment_name: Uranium_235_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2250.62\nmin_time_ns: 2250.62\nmax_time_ns: 2250.62\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ²³⁵U (Uranium) | t½=704000000.00 years | λ=3.1197e-17 s⁻¹ | alpha | A_sp=7.995e4 Bq/g\n",
+"²³⁸U.yaml":"category: Alpha\nsymbol: ²³⁸U\nname: Uranium\nZ: 92\nA: 238\nN: 146\nhalf_life: 4.468e9 years\ndecay_constant: 4.9156e-18 s⁻¹\ndecay_mode: alpha\nspecific_activity: 1.244e4 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.571 MeV/nucleon\nexperiment_name: Uranium_238_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2226.82\nmin_time_ns: 2226.82\nmax_time_ns: 2226.82\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ²³⁸U (Uranium) | t½=4.468e9 years | λ=4.9156e-18 s⁻¹ | alpha | A_sp=1.244e4 Bq/g\n",
+"²³⁹Pu.yaml":"category: Alpha\nsymbol: ²³⁹Pu\nname: Plutonium\nZ: 94\nA: 239\nN: 145\nhalf_life: 24110.00 years\ndecay_constant: 9.1094e-13 s⁻¹\ndecay_mode: alpha\nspecific_activity: 2.295e9 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.563 MeV/nucleon\nexperiment_name: Plutonium_239_decay\nprecision: f64\nelapsed_ms: 12\niterations: 5000\navg_time_ns: 2407.81\nmin_time_ns: 2407.81\nmax_time_ns: 2407.81\ntime_stddev: 0.0000\niterations_per_sec: 416666.66\nresult: ²³⁹Pu (Plutonium) | t½=24110.00 years | λ=9.1094e-13 s⁻¹ | alpha | A_sp=2.295e9 Bq/g\n",
+"²⁴¹Am.yaml":"category: Alpha\nsymbol: ²⁴¹Am\nname: Americium\nZ: 95\nA: 241\nN: 146\nhalf_life: 432.20 years\ndecay_constant: 5.0816e-11 s⁻¹\ndecay_mode: alpha\nspecific_activity: 1.270e11 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.561 MeV/nucleon\nexperiment_name: Americium_241_decay\nprecision: f64\nelapsed_ms: 13\niterations: 5000\navg_time_ns: 2720.78\nmin_time_ns: 2720.78\nmax_time_ns: 2720.78\ntime_stddev: 0.0000\niterations_per_sec: 384615.38\nresult: ²⁴¹Am (Americium) | t½=432.20 years | λ=5.0816e-11 s⁻¹ | alpha | A_sp=1.270e11 Bq/g\n",
+"¹³¹I.yaml":"category: Other\nsymbol: ¹³¹I\nname: Iodine\nZ: 53\nA: 131\nN: 78\nhalf_life: 8.03 days\ndecay_constant: 9.9967e-7 s⁻¹\ndecay_mode: beta- (electron emission)\nspecific_activity: 4.596e15 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.548 MeV/nucleon\nexperiment_name: Iodine_131_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2220.21\nmin_time_ns: 2220.21\nmax_time_ns: 2220.21\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ¹³¹I (Iodine) | t½=8.03 days | λ=9.9967e-7 s⁻¹ | beta- (electron emission) | A_sp=4.596e15 Bq/g\n",
+"¹³⁷Cs.yaml":"category: Other\nsymbol: ¹³⁷Cs\nname: Cesium\nZ: 55\nA: 137\nN: 82\nhalf_life: 30.17 years\ndecay_constant: 7.2804e-10 s⁻¹\ndecay_mode: beta- (electron emission)\nspecific_activity: 3.200e12 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.552 MeV/nucleon\nexperiment_name: Cesium_137_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2254.30\nmin_time_ns: 2254.30\nmax_time_ns: 2254.30\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ¹³⁷Cs (Cesium) | t½=30.17 years | λ=7.2804e-10 s⁻¹ | beta- (electron emission) | A_sp=3.200e12 Bq/g\n",
+"¹⁴C.yaml":"category: Other\nsymbol: ¹⁴C\nname: Carbon\nZ: 6\nA: 14\nN: 8\nhalf_life: 5730.00 years\ndecay_constant: 3.8330e-12 s⁻¹\ndecay_mode: beta- (electron emission)\nspecific_activity: 1.649e11 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.517 MeV/nucleon\nexperiment_name: Carbon_14_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2285.18\nmin_time_ns: 2285.18\nmax_time_ns: 2285.18\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ¹⁴C (Carbon) | t½=5730.00 years | λ=3.8330e-12 s⁻¹ | beta- (electron emission) | A_sp=1.649e11 Bq/g\n",
+"⁴⁰K.yaml":"category: Other\nsymbol: ⁴⁰K\nname: Potassium\nZ: 19\nA: 40\nN: 21\nhalf_life: 1.248e9 years\ndecay_constant: 1.7598e-17 s⁻¹\ndecay_mode: beta- (electron emission)\nspecific_activity: 2.650e5 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.457 MeV/nucleon\nexperiment_name: Potassium_40_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2266.50\nmin_time_ns: 2266.50\nmax_time_ns: 2266.50\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ⁴⁰K (Potassium) | t½=1.248e9 years | λ=1.7598e-17 s⁻¹ | beta- (electron emission) | A_sp=2.650e5 Bq/g\n",
+"⁶⁰Co.yaml":"category: Beta\nsymbol: ⁶⁰Co\nname: Cobalt\nZ: 27\nA: 60\nN: 33\nhalf_life: 5.27 years\ndecay_constant: 4.1664e-9 s⁻¹\ndecay_mode: beta-\nspecific_activity: 4.182e13 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.489 MeV/nucleon\nexperiment_name: Cobalt_60_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2333.16\nmin_time_ns: 2333.16\nmax_time_ns: 2333.16\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ⁶⁰Co (Cobalt) | t½=5.27 years | λ=4.1664e-9 s⁻¹ | beta- | A_sp=4.182e13 Bq/g\n",
+"⁹⁰Sr.yaml":"category: Other\nsymbol: ⁹⁰Sr\nname: Strontium\nZ: 38\nA: 90\nN: 52\nhalf_life: 28.79 years\ndecay_constant: 7.6286e-10 s⁻¹\ndecay_mode: beta- (electron emission)\nspecific_activity: 5.105e12 Bq/g\nremaining_3hl: 125000 / 1M after 3 half-lives\nbinding_energy: 7.525 MeV/nucleon\nexperiment_name: Strontium_90_decay\nprecision: f64\nelapsed_ms: 11\niterations: 5000\navg_time_ns: 2214.38\nmin_time_ns: 2214.38\nmax_time_ns: 2214.38\ntime_stddev: 0.0000\niterations_per_sec: 454545.47\nresult: ⁹⁰Sr (Strontium) | t½=28.79 years | λ=7.6286e-10 s⁻¹ | beta- (electron emission) | A_sp=5.105e12 Bq/g\n"},
+toml:{
+"summary.toml":"title = \"Radioactive Decay — Chains, Half-lives & Activities from Isotope Data\"\ncount = 12\n\n[[entries]]\nlabel = \"²³⁸U\"\ncategory = \"Alpha\"\nsymbol = \"²³⁸U\"\nname = \"Uranium\"\nZ = \"92\"\nA = \"238\"\nN = \"146\"\nhalf_life = \"4.468e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"1.244e4 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.571 MeV/nucleon\"\navg_time_ns = 2226.82\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"²³⁵U\"\ncategory = \"Alpha\"\nsymbol = \"²³⁵U\"\nname = \"Uranium\"\nZ = \"92\"\nA = \"235\"\nN = \"143\"\nhalf_life = \"704000000.00 years\"\ndecay_constant = \"3.1197e-17 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"7.995e4 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.565 MeV/nucleon\"\navg_time_ns = 2250.62\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"²³²Th\"\ncategory = \"Alpha\"\nsymbol = \"²³²Th\"\nname = \"Thorium\"\nZ = \"90\"\nA = \"232\"\nN = \"142\"\nhalf_life = \"1.405e10 years\"\ndecay_constant = \"1.5632e-18 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"4.058e3 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.570 MeV/nucleon\"\navg_time_ns = 2421.41\niterations_per_sec = 416666.66\n\n[[entries]]\nlabel = \"⁴⁰K\"\ncategory = \"Other\"\nsymbol = \"⁴⁰K\"\nname = \"Potassium\"\nZ = \"19\"\nA = \"40\"\nN = \"21\"\nhalf_life = \"1.248e9 years\"\ndecay_constant = \"1.7598e-17 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"2.650e5 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.457 MeV/nucleon\"\navg_time_ns = 2266.50\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"¹⁴C\"\ncategory = \"Other\"\nsymbol = \"¹⁴C\"\nname = \"Carbon\"\nZ = \"6\"\nA = \"14\"\nN = \"8\"\nhalf_life = \"5730.00 years\"\ndecay_constant = \"3.8330e-12 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"1.649e11 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.517 MeV/nucleon\"\navg_time_ns = 2285.18\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"²²⁶Ra\"\ncategory = \"Other\"\nsymbol = \"²²⁶Ra\"\nname = \"Radium\"\nZ = \"88\"\nA = \"226\"\nN = \"138\"\nhalf_life = \"1600.00 years\"\ndecay_constant = \"1.3727e-11 s⁻¹\"\ndecay_mode = \"alpha emission\"\nspecific_activity = \"3.658e10 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.568 MeV/nucleon\"\navg_time_ns = 2268.76\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"⁹⁰Sr\"\ncategory = \"Other\"\nsymbol = \"⁹⁰Sr\"\nname = \"Strontium\"\nZ = \"38\"\nA = \"90\"\nN = \"52\"\nhalf_life = \"28.79 years\"\ndecay_constant = \"7.6286e-10 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"5.105e12 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.525 MeV/nucleon\"\navg_time_ns = 2214.38\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"¹³⁷Cs\"\ncategory = \"Other\"\nsymbol = \"¹³⁷Cs\"\nname = \"Cesium\"\nZ = \"55\"\nA = \"137\"\nN = \"82\"\nhalf_life = \"30.17 years\"\ndecay_constant = \"7.2804e-10 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"3.200e12 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.552 MeV/nucleon\"\navg_time_ns = 2254.30\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"¹³¹I\"\ncategory = \"Other\"\nsymbol = \"¹³¹I\"\nname = \"Iodine\"\nZ = \"53\"\nA = \"131\"\nN = \"78\"\nhalf_life = \"8.03 days\"\ndecay_constant = \"9.9967e-7 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"4.596e15 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.548 MeV/nucleon\"\navg_time_ns = 2220.21\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"⁶⁰Co\"\ncategory = \"Beta\"\nsymbol = \"⁶⁰Co\"\nname = \"Cobalt\"\nZ = \"27\"\nA = \"60\"\nN = \"33\"\nhalf_life = \"5.27 years\"\ndecay_constant = \"4.1664e-9 s⁻¹\"\ndecay_mode = \"beta-\"\nspecific_activity = \"4.182e13 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.489 MeV/nucleon\"\navg_time_ns = 2333.16\niterations_per_sec = 454545.47\n\n[[entries]]\nlabel = \"²³⁹Pu\"\ncategory = \"Alpha\"\nsymbol = \"²³⁹Pu\"\nname = \"Plutonium\"\nZ = \"94\"\nA = \"239\"\nN = \"145\"\nhalf_life = \"24110.00 years\"\ndecay_constant = \"9.1094e-13 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"2.295e9 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.563 MeV/nucleon\"\navg_time_ns = 2407.81\niterations_per_sec = 416666.66\n\n[[entries]]\nlabel = \"²⁴¹Am\"\ncategory = \"Alpha\"\nsymbol = \"²⁴¹Am\"\nname = \"Americium\"\nZ = \"95\"\nA = \"241\"\nN = \"146\"\nhalf_life = \"432.20 years\"\ndecay_constant = \"5.0816e-11 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"1.270e11 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.561 MeV/nucleon\"\navg_time_ns = 2720.78\niterations_per_sec = 384615.38\n\n",
+"²²⁶Ra.toml":"[benchmark]\ncategory = \"Other\"\nsymbol = \"²²⁶Ra\"\nname = \"Radium\"\nZ = \"88\"\nA = \"226\"\nN = \"138\"\nhalf_life = \"1600.00 years\"\ndecay_constant = \"1.3727e-11 s⁻¹\"\ndecay_mode = \"alpha emission\"\nspecific_activity = \"3.658e10 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.568 MeV/nucleon\"\nexperiment_name = \"Radium_226_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2268.76\nmin_time_ns = 2268.76\nmax_time_ns = 2268.76\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"²²⁶Ra (Radium) | t½=1600.00 years | λ=1.3727e-11 s⁻¹ | alpha emission | A_sp=3.658e10 Bq/g\"\n",
+"²³²Th.toml":"[benchmark]\ncategory = \"Alpha\"\nsymbol = \"²³²Th\"\nname = \"Thorium\"\nZ = \"90\"\nA = \"232\"\nN = \"142\"\nhalf_life = \"1.405e10 years\"\ndecay_constant = \"1.5632e-18 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"4.058e3 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.570 MeV/nucleon\"\nexperiment_name = \"Thorium_232_decay\"\nprecision = \"f64\"\nelapsed_ms = 12\niterations = 5000\navg_time_ns = 2421.41\nmin_time_ns = 2421.41\nmax_time_ns = 2421.41\ntime_stddev = 0.0000\niterations_per_sec = 416666.66\nresult = \"²³²Th (Thorium) | t½=1.405e10 years | λ=1.5632e-18 s⁻¹ | alpha | A_sp=4.058e3 Bq/g\"\n",
+"²³⁵U.toml":"[benchmark]\ncategory = \"Alpha\"\nsymbol = \"²³⁵U\"\nname = \"Uranium\"\nZ = \"92\"\nA = \"235\"\nN = \"143\"\nhalf_life = \"704000000.00 years\"\ndecay_constant = \"3.1197e-17 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"7.995e4 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.565 MeV/nucleon\"\nexperiment_name = \"Uranium_235_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2250.62\nmin_time_ns = 2250.62\nmax_time_ns = 2250.62\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"²³⁵U (Uranium) | t½=704000000.00 years | λ=3.1197e-17 s⁻¹ | alpha | A_sp=7.995e4 Bq/g\"\n",
+"²³⁸U.toml":"[benchmark]\ncategory = \"Alpha\"\nsymbol = \"²³⁸U\"\nname = \"Uranium\"\nZ = \"92\"\nA = \"238\"\nN = \"146\"\nhalf_life = \"4.468e9 years\"\ndecay_constant = \"4.9156e-18 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"1.244e4 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.571 MeV/nucleon\"\nexperiment_name = \"Uranium_238_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2226.82\nmin_time_ns = 2226.82\nmax_time_ns = 2226.82\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"²³⁸U (Uranium) | t½=4.468e9 years | λ=4.9156e-18 s⁻¹ | alpha | A_sp=1.244e4 Bq/g\"\n",
+"²³⁹Pu.toml":"[benchmark]\ncategory = \"Alpha\"\nsymbol = \"²³⁹Pu\"\nname = \"Plutonium\"\nZ = \"94\"\nA = \"239\"\nN = \"145\"\nhalf_life = \"24110.00 years\"\ndecay_constant = \"9.1094e-13 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"2.295e9 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.563 MeV/nucleon\"\nexperiment_name = \"Plutonium_239_decay\"\nprecision = \"f64\"\nelapsed_ms = 12\niterations = 5000\navg_time_ns = 2407.81\nmin_time_ns = 2407.81\nmax_time_ns = 2407.81\ntime_stddev = 0.0000\niterations_per_sec = 416666.66\nresult = \"²³⁹Pu (Plutonium) | t½=24110.00 years | λ=9.1094e-13 s⁻¹ | alpha | A_sp=2.295e9 Bq/g\"\n",
+"²⁴¹Am.toml":"[benchmark]\ncategory = \"Alpha\"\nsymbol = \"²⁴¹Am\"\nname = \"Americium\"\nZ = \"95\"\nA = \"241\"\nN = \"146\"\nhalf_life = \"432.20 years\"\ndecay_constant = \"5.0816e-11 s⁻¹\"\ndecay_mode = \"alpha\"\nspecific_activity = \"1.270e11 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.561 MeV/nucleon\"\nexperiment_name = \"Americium_241_decay\"\nprecision = \"f64\"\nelapsed_ms = 13\niterations = 5000\navg_time_ns = 2720.78\nmin_time_ns = 2720.78\nmax_time_ns = 2720.78\ntime_stddev = 0.0000\niterations_per_sec = 384615.38\nresult = \"²⁴¹Am (Americium) | t½=432.20 years | λ=5.0816e-11 s⁻¹ | alpha | A_sp=1.270e11 Bq/g\"\n",
+"¹³¹I.toml":"[benchmark]\ncategory = \"Other\"\nsymbol = \"¹³¹I\"\nname = \"Iodine\"\nZ = \"53\"\nA = \"131\"\nN = \"78\"\nhalf_life = \"8.03 days\"\ndecay_constant = \"9.9967e-7 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"4.596e15 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.548 MeV/nucleon\"\nexperiment_name = \"Iodine_131_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2220.21\nmin_time_ns = 2220.21\nmax_time_ns = 2220.21\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"¹³¹I (Iodine) | t½=8.03 days | λ=9.9967e-7 s⁻¹ | beta- (electron emission) | A_sp=4.596e15 Bq/g\"\n",
+"¹³⁷Cs.toml":"[benchmark]\ncategory = \"Other\"\nsymbol = \"¹³⁷Cs\"\nname = \"Cesium\"\nZ = \"55\"\nA = \"137\"\nN = \"82\"\nhalf_life = \"30.17 years\"\ndecay_constant = \"7.2804e-10 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"3.200e12 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.552 MeV/nucleon\"\nexperiment_name = \"Cesium_137_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2254.30\nmin_time_ns = 2254.30\nmax_time_ns = 2254.30\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"¹³⁷Cs (Cesium) | t½=30.17 years | λ=7.2804e-10 s⁻¹ | beta- (electron emission) | A_sp=3.200e12 Bq/g\"\n",
+"¹⁴C.toml":"[benchmark]\ncategory = \"Other\"\nsymbol = \"¹⁴C\"\nname = \"Carbon\"\nZ = \"6\"\nA = \"14\"\nN = \"8\"\nhalf_life = \"5730.00 years\"\ndecay_constant = \"3.8330e-12 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"1.649e11 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.517 MeV/nucleon\"\nexperiment_name = \"Carbon_14_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2285.18\nmin_time_ns = 2285.18\nmax_time_ns = 2285.18\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"¹⁴C (Carbon) | t½=5730.00 years | λ=3.8330e-12 s⁻¹ | beta- (electron emission) | A_sp=1.649e11 Bq/g\"\n",
+"⁴⁰K.toml":"[benchmark]\ncategory = \"Other\"\nsymbol = \"⁴⁰K\"\nname = \"Potassium\"\nZ = \"19\"\nA = \"40\"\nN = \"21\"\nhalf_life = \"1.248e9 years\"\ndecay_constant = \"1.7598e-17 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"2.650e5 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.457 MeV/nucleon\"\nexperiment_name = \"Potassium_40_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2266.50\nmin_time_ns = 2266.50\nmax_time_ns = 2266.50\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"⁴⁰K (Potassium) | t½=1.248e9 years | λ=1.7598e-17 s⁻¹ | beta- (electron emission) | A_sp=2.650e5 Bq/g\"\n",
+"⁶⁰Co.toml":"[benchmark]\ncategory = \"Beta\"\nsymbol = \"⁶⁰Co\"\nname = \"Cobalt\"\nZ = \"27\"\nA = \"60\"\nN = \"33\"\nhalf_life = \"5.27 years\"\ndecay_constant = \"4.1664e-9 s⁻¹\"\ndecay_mode = \"beta-\"\nspecific_activity = \"4.182e13 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.489 MeV/nucleon\"\nexperiment_name = \"Cobalt_60_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2333.16\nmin_time_ns = 2333.16\nmax_time_ns = 2333.16\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"⁶⁰Co (Cobalt) | t½=5.27 years | λ=4.1664e-9 s⁻¹ | beta- | A_sp=4.182e13 Bq/g\"\n",
+"⁹⁰Sr.toml":"[benchmark]\ncategory = \"Other\"\nsymbol = \"⁹⁰Sr\"\nname = \"Strontium\"\nZ = \"38\"\nA = \"90\"\nN = \"52\"\nhalf_life = \"28.79 years\"\ndecay_constant = \"7.6286e-10 s⁻¹\"\ndecay_mode = \"beta- (electron emission)\"\nspecific_activity = \"5.105e12 Bq/g\"\nremaining_3hl = \"125000 / 1M after 3 half-lives\"\nbinding_energy = \"7.525 MeV/nucleon\"\nexperiment_name = \"Strontium_90_decay\"\nprecision = \"f64\"\nelapsed_ms = 11\niterations = 5000\navg_time_ns = 2214.38\nmin_time_ns = 2214.38\nmax_time_ns = 2214.38\ntime_stddev = 0.0000\niterations_per_sec = 454545.47\nresult = \"⁹⁰Sr (Strontium) | t½=28.79 years | λ=7.6286e-10 s⁻¹ | beta- (electron emission) | A_sp=5.105e12 Bq/g\"\n"},
+bmk:{
+"²²⁶Ra.bmk":"experiment_name: Radium_226_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2268.76\nmin_time_ns:     2268.76\nmax_time_ns:     2268.76\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     187 bytes\n",
+"²³²Th.bmk":"experiment_name: Thorium_232_decay\nprecision:       f64\nelapsed_ms:      12\niterations:      5000\navg_time_ns:     2421.41\nmin_time_ns:     2421.41\nmax_time_ns:     2421.41\ntime_stddev:     0.0000\niterations/sec:  416666.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     188 bytes\n",
+"²³⁵U.bmk":"experiment_name: Uranium_235_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2250.62\nmin_time_ns:     2250.62\nmax_time_ns:     2250.62\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     188 bytes\n",
+"²³⁸U.bmk":"experiment_name: Uranium_238_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2226.82\nmin_time_ns:     2226.82\nmax_time_ns:     2226.82\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     188 bytes\n",
+"²³⁹Pu.bmk":"experiment_name: Plutonium_239_decay\nprecision:       f64\nelapsed_ms:      12\niterations:      5000\navg_time_ns:     2407.81\nmin_time_ns:     2407.81\nmax_time_ns:     2407.81\ntime_stddev:     0.0000\niterations/sec:  416666.66\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"²⁴¹Am.bmk":"experiment_name: Americium_241_decay\nprecision:       f64\nelapsed_ms:      13\niterations:      5000\navg_time_ns:     2720.78\nmin_time_ns:     2720.78\nmax_time_ns:     2720.78\ntime_stddev:     0.0000\niterations/sec:  384615.38\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     190 bytes\n",
+"¹³¹I.bmk":"experiment_name: Iodine_131_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2220.21\nmin_time_ns:     2220.21\nmax_time_ns:     2220.21\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     187 bytes\n",
+"¹³⁷Cs.bmk":"experiment_name: Cesium_137_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2254.30\nmin_time_ns:     2254.30\nmax_time_ns:     2254.30\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     187 bytes\n",
+"¹⁴C.bmk":"experiment_name: Carbon_14_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2285.18\nmin_time_ns:     2285.18\nmax_time_ns:     2285.18\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     186 bytes\n",
+"⁴⁰K.bmk":"experiment_name: Potassium_40_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2266.50\nmin_time_ns:     2266.50\nmax_time_ns:     2266.50\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     189 bytes\n",
+"⁶⁰Co.bmk":"experiment_name: Cobalt_60_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2333.16\nmin_time_ns:     2333.16\nmax_time_ns:     2333.16\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     186 bytes\n",
+"⁹⁰Sr.bmk":"experiment_name: Strontium_90_decay\nprecision:       f64\nelapsed_ms:      11\niterations:      5000\navg_time_ns:     2214.38\nmin_time_ns:     2214.38\nmax_time_ns:     2214.38\ntime_stddev:     0.0000\niterations/sec:  454545.47\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     189 bytes\n"}
+};
+var D={
+"²³⁸U":{tags:{"category":"Alpha","symbol":"²³⁸U","name":"Uranium","Z":"92","A":"238","N":"146","half_life":"4.468e9 years","decay_constant":"4.9156e-18 s⁻¹","decay_mode":"alpha","specific_activity":"1.244e4 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.571 MeV/nucleon"},p:"f64",it:5000,avg:2226.82,mn:2226.82,mx:2226.82,sd:0.0000,ips:454545.47},
+"²³⁵U":{tags:{"category":"Alpha","symbol":"²³⁵U","name":"Uranium","Z":"92","A":"235","N":"143","half_life":"704000000.00 years","decay_constant":"3.1197e-17 s⁻¹","decay_mode":"alpha","specific_activity":"7.995e4 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.565 MeV/nucleon"},p:"f64",it:5000,avg:2250.62,mn:2250.62,mx:2250.62,sd:0.0000,ips:454545.47},
+"²³²Th":{tags:{"category":"Alpha","symbol":"²³²Th","name":"Thorium","Z":"90","A":"232","N":"142","half_life":"1.405e10 years","decay_constant":"1.5632e-18 s⁻¹","decay_mode":"alpha","specific_activity":"4.058e3 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.570 MeV/nucleon"},p:"f64",it:5000,avg:2421.41,mn:2421.41,mx:2421.41,sd:0.0000,ips:416666.66},
+"⁴⁰K":{tags:{"category":"Other","symbol":"⁴⁰K","name":"Potassium","Z":"19","A":"40","N":"21","half_life":"1.248e9 years","decay_constant":"1.7598e-17 s⁻¹","decay_mode":"beta- (electron emission)","specific_activity":"2.650e5 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.457 MeV/nucleon"},p:"f64",it:5000,avg:2266.50,mn:2266.50,mx:2266.50,sd:0.0000,ips:454545.47},
+"¹⁴C":{tags:{"category":"Other","symbol":"¹⁴C","name":"Carbon","Z":"6","A":"14","N":"8","half_life":"5730.00 years","decay_constant":"3.8330e-12 s⁻¹","decay_mode":"beta- (electron emission)","specific_activity":"1.649e11 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.517 MeV/nucleon"},p:"f64",it:5000,avg:2285.18,mn:2285.18,mx:2285.18,sd:0.0000,ips:454545.47},
+"²²⁶Ra":{tags:{"category":"Other","symbol":"²²⁶Ra","name":"Radium","Z":"88","A":"226","N":"138","half_life":"1600.00 years","decay_constant":"1.3727e-11 s⁻¹","decay_mode":"alpha emission","specific_activity":"3.658e10 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.568 MeV/nucleon"},p:"f64",it:5000,avg:2268.76,mn:2268.76,mx:2268.76,sd:0.0000,ips:454545.47},
+"⁹⁰Sr":{tags:{"category":"Other","symbol":"⁹⁰Sr","name":"Strontium","Z":"38","A":"90","N":"52","half_life":"28.79 years","decay_constant":"7.6286e-10 s⁻¹","decay_mode":"beta- (electron emission)","specific_activity":"5.105e12 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.525 MeV/nucleon"},p:"f64",it:5000,avg:2214.38,mn:2214.38,mx:2214.38,sd:0.0000,ips:454545.47},
+"¹³⁷Cs":{tags:{"category":"Other","symbol":"¹³⁷Cs","name":"Cesium","Z":"55","A":"137","N":"82","half_life":"30.17 years","decay_constant":"7.2804e-10 s⁻¹","decay_mode":"beta- (electron emission)","specific_activity":"3.200e12 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.552 MeV/nucleon"},p:"f64",it:5000,avg:2254.30,mn:2254.30,mx:2254.30,sd:0.0000,ips:454545.47},
+"¹³¹I":{tags:{"category":"Other","symbol":"¹³¹I","name":"Iodine","Z":"53","A":"131","N":"78","half_life":"8.03 days","decay_constant":"9.9967e-7 s⁻¹","decay_mode":"beta- (electron emission)","specific_activity":"4.596e15 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.548 MeV/nucleon"},p:"f64",it:5000,avg:2220.21,mn:2220.21,mx:2220.21,sd:0.0000,ips:454545.47},
+"⁶⁰Co":{tags:{"category":"Beta","symbol":"⁶⁰Co","name":"Cobalt","Z":"27","A":"60","N":"33","half_life":"5.27 years","decay_constant":"4.1664e-9 s⁻¹","decay_mode":"beta-","specific_activity":"4.182e13 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.489 MeV/nucleon"},p:"f64",it:5000,avg:2333.16,mn:2333.16,mx:2333.16,sd:0.0000,ips:454545.47},
+"²³⁹Pu":{tags:{"category":"Alpha","symbol":"²³⁹Pu","name":"Plutonium","Z":"94","A":"239","N":"145","half_life":"24110.00 years","decay_constant":"9.1094e-13 s⁻¹","decay_mode":"alpha","specific_activity":"2.295e9 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.563 MeV/nucleon"},p:"f64",it:5000,avg:2407.81,mn:2407.81,mx:2407.81,sd:0.0000,ips:416666.66},
+"²⁴¹Am":{tags:{"category":"Alpha","symbol":"²⁴¹Am","name":"Americium","Z":"95","A":"241","N":"146","half_life":"432.20 years","decay_constant":"5.0816e-11 s⁻¹","decay_mode":"alpha","specific_activity":"1.270e11 Bq/g","remaining_3hl":"125000 / 1M after 3 half-lives","binding_energy":"7.561 MeV/nucleon"},p:"f64",it:5000,avg:2720.78,mn:2720.78,mx:2720.78,sd:0.0000,ips:384615.38}
+};
+function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
+function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}
+function go(id){var d=D[id];if(!d)return;var p=document.getElementById('detail');if(p){p.className='detail open';document.getElementById('d-title').textContent=id;var tg=document.getElementById('d-tags');tg.innerHTML='';var tkeys=Object.keys(d.tags);for(var i=0;i<tkeys.length;i++){var r=document.createElement('div');r.className='dk';r.textContent=tkeys[i];tg.appendChild(r);var v=document.createElement('div');v.className='dv';v.textContent=d.tags[tkeys[i]];tg.appendChild(v);}document.getElementById('d-prec').textContent=d.p;document.getElementById('d-iter').textContent=d.it;document.getElementById('d-avg').textContent=d.avg.toFixed(2)+' ns';document.getElementById('d-min').textContent=d.mn.toFixed(2)+' ns';document.getElementById('d-max').textContent=d.mx.toFixed(2)+' ns';document.getElementById('d-std').textContent=d.sd.toFixed(4);document.getElementById('d-ips').textContent=d.ips.toFixed(2);var fb=document.getElementById('d-files');if(fb){fb.innerHTML='';['json','yaml','toml'].forEach(function(fmt){var fk=id+'.'+fmt;if(F[fmt]&&F[fmt][fk]){var b=document.createElement('button');b.className='fbtn';b.textContent=fmt.toUpperCase();(function(f,k){b.onclick=function(){var ts=document.querySelectorAll('.tab');for(var i=0;i<ts.length;i++){if(ts[i].textContent.toLowerCase()===f){switchTab({target:ts[i]},f);break}}var s=document.querySelector('#'+f+' select');if(s){s.value=k;showFile(f,k)}}})(fmt,fk);fb.appendChild(b)}})}p.scrollIntoView({behavior:'smooth',block:'center'})}var el=document.getElementById('el-'+id);if(el){el.classList.add('highlight');setTimeout(function(){el.classList.remove('highlight')},2000)}}
+function closeDetail(){var p=document.getElementById('detail');if(p)p.className='detail'}
+['csv','json','yaml','toml','bmk'].forEach(function(fmt){var s=document.querySelector('#'+fmt+' select');if(s&&s.options.length>0)showFile(fmt,s.options[0].text)});
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+category: me04
+count: 10
+entries:
+  - label: meteorology_031
+    symbol: PF
+    name: me031
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5086
+    avg_time_ns: 5086000128.00
+  - label: meteorology_032
+    symbol: RFC
+    name: me032
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5283
+    avg_time_ns: 5282999808.00
+  - label: meteorology_033
+    symbol: RFC
+    name: me033
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 5636
+    avg_time_ns: 5635999744.00
+  - label: meteorology_034
+    symbol: SBF
+    name: me034
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 825
+    avg_time_ns: 825000000.00
+  - label: meteorology_035
+    symbol: SBF
+    name: me035
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 513
+    avg_time_ns: 513000000.00
+  - label: meteorology_036
+    symbol: CPB
+    name: me036
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 393
+    avg_time_ns: 393000000.00
+  - label: meteorology_037
+    symbol: CZF
+    name: me037
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 611
+    avg_time_ns: 611000000.00
+  - label: meteorology_038
+    symbol: FS
+    name: me038
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 419
+    avg_time_ns: 419000000.00
+  - label: meteorology_039
+    symbol: FSI
+    name: me039
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 3460
+    avg_time_ns: 3460000000.00
+  - label: meteorology_040
+    symbol: PI
+    name: me040
+    target: meteorology
+    module: storms
+    status: ok
+    elapsed_ms: 5688
+    avg_time_ns: 5688000000.00

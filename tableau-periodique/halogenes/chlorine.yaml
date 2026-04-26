@@ -1,0 +1,135 @@
+element:
+  name: Chlorine
+  symbol: Cl
+  atomic_number: 17
+  category: halogen
+  group: 17
+  period: 3
+  electron_configuration: "[Ne] 3s² 3p⁵"
+  electronegativity: 3.16
+  atomic_mass: 35.45
+
+isotopes:
+  - name: Chlorine-32
+    symbol: "³²Cl"
+    mass_number: 32
+    neutrons: 15
+    atomic_mass: 31.98569
+    half_life: 298.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Sulfur-32
+    natural_abundance: 0.0
+
+  - name: Chlorine-33
+    symbol: "³³Cl"
+    mass_number: 33
+    neutrons: 16
+    atomic_mass: 32.97745
+    half_life: 2.5038
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Sulfur-33
+    natural_abundance: 0.0
+
+  - name: Chlorine-34
+    symbol: "³⁴Cl"
+    mass_number: 34
+    neutrons: 17
+    atomic_mass: 33.97376
+    half_life: 1.5264
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Sulfur-34
+    natural_abundance: 0.0
+
+  - name: Chlorine-35
+    symbol: "³⁵Cl"
+    mass_number: 35
+    neutrons: 18
+    atomic_mass: 34.968853
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.7576
+    nuclear_spin: "3/2+"
+
+  - name: Chlorine-36
+    symbol: "³⁶Cl"
+    mass_number: 36
+    neutrons: 19
+    atomic_mass: 35.968307
+    half_life: 3.01e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.981
+        daughter: Argon-36
+      - mode: electron capture
+        branching_ratio: 0.019
+        daughter: Sulfur-36
+    natural_abundance: trace
+
+  - name: Chlorine-37
+    symbol: "³⁷Cl"
+    mass_number: 37
+    neutrons: 20
+    atomic_mass: 36.965903
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2424
+    nuclear_spin: "3/2+"
+
+  - name: Chlorine-38
+    symbol: "³⁸Cl"
+    mass_number: 38
+    neutrons: 21
+    atomic_mass: 37.968011
+    half_life: 37.24
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Argon-38
+    natural_abundance: 0.0
+
+  - name: Chlorine-39
+    symbol: "³⁹Cl"
+    mass_number: 39
+    neutrons: 22
+    atomic_mass: 38.96801
+    half_life: 55.6
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Argon-39
+    natural_abundance: 0.0
+
+  - name: Chlorine-40
+    symbol: "⁴⁰Cl"
+    mass_number: 40
+    neutrons: 23
+    atomic_mass: 39.97042
+    half_life: 1.35
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0

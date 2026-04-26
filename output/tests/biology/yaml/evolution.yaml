@@ -1,0 +1,27 @@
+category: evolution
+count: 4
+entries:
+  - label: evolution_adaptation_rate
+    symbol: AR
+    name: Adaptation rate
+    domain: biology
+    test: "evolution::adaptation_rate"
+    avg_time_ns: 2163739.00
+  - label: evolution_fixation_probability_neutral
+    symbol: FPN
+    name: Fixation probability neutral
+    domain: biology
+    test: "evolution::fixation_probability_neutral"
+    avg_time_ns: 2308969.00
+  - label: evolution_speciation_rate_bdi
+    symbol: SRB
+    name: Speciation rate bdi
+    domain: biology
+    test: "evolution::speciation_rate_bdi"
+    avg_time_ns: 2089979.00
+  - label: evolution_substitution_rate
+    symbol: SR
+    name: Substitution rate
+    domain: biology
+    test: "evolution::substitution_rate"
+    avg_time_ns: 1925159.00

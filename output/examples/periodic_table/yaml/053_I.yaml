@@ -1,0 +1,15 @@
+category: halogen
+symbol: I
+name: Iodine
+config: [Kr] 4d¹⁰ 5s² 5p⁵
+mass: 126.90447
+experiment_name: I_Iodine_benchmark
+precision: f32
+elapsed_ms: 20
+iterations: 5000
+avg_time_ns: 4075.38
+min_time_ns: 4075.38
+max_time_ns: 4075.38
+time_stddev: 0.0000
+iterations_per_sec: 250000.00
+result: Z=53 | I (Iodine) | 126.90447 u | halogen | [Kr] 4d¹⁰ 5s² 5p⁵

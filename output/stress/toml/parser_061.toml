@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr07"
+symbol = "YB"
+name = "pr061"
+target = "parser"
+module = "yaml"
+status = "ok"
+elapsed_ms = "4706"
+experiment_name = "parser_061"
+precision = "f64"
+elapsed_ms = 4706
+iterations = 1
+avg_time_ns = 4705999872.00
+min_time_ns = 4705999872.00
+max_time_ns = 4705999872.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=141 stderr_bytes=312"

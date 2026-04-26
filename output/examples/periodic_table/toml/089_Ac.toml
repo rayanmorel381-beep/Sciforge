@@ -1,0 +1,16 @@
+[benchmark]
+category = "actinide"
+symbol = "Ac"
+name = "Actinium"
+config = "[Rn] 6d¹ 7s²"
+mass = "227.027752"
+experiment_name = "Ac_Actinium_benchmark"
+precision = "f32"
+elapsed_ms = 34
+iterations = 5000
+avg_time_ns = 6975.24
+min_time_ns = 6975.24
+max_time_ns = 6975.24
+time_stddev = 0.0000
+iterations_per_sec = 147058.83
+result = "Z=89 | Ac (Actinium) | 227.027752 u | actinide | [Rn] 6d¹ 7s²"

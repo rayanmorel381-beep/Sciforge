@@ -1,0 +1,18 @@
+[benchmark]
+category = "bm01"
+symbol = "BRC"
+name = "bm010"
+target = "benchmark"
+module = "engine"
+status = "ok"
+elapsed_ms = "291"
+experiment_name = "benchmark_010"
+precision = "f64"
+elapsed_ms = 291
+iterations = 1
+avg_time_ns = 291000000.00
+min_time_ns = 291000000.00
+max_time_ns = 291000000.00
+time_stddev = 0.0000
+iterations_per_sec = 3.44
+result = "success=true code=Some(0) stdout_bytes=152 stderr_bytes=214"

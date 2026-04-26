@@ -1,0 +1,22 @@
+category: Supergiant
+symbol: F
+name: Polaris
+spectral: F7Ib
+mass: 5.400 M☉
+radius: 37.500 R☉
+temperature: 6015 K
+luminosity: 6.348e29 W
+abs_magnitude: -3.63
+schwarzschild: 15953.09 m
+ms_lifetime: 0.0 Myr
+wien_peak: 482 nm
+experiment_name: Polaris_stellar
+precision: f64
+elapsed_ms: 8
+iterations: 5000
+avg_time_ns: 1646.64
+min_time_ns: 1646.64
+max_time_ns: 1646.64
+time_stddev: 0.0000
+iterations_per_sec: 625000.00
+result: Polaris (F7Ib) | L=6.348e29 W | M_abs=-3.63 | R_s=15953.09 m | MS lifetime=0.0 Myr | Wien λ_max=482 nm

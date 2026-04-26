@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+scientific_validation_001,f64,5654,1,5654000000,5654000000,5654000000,0,0.17686594,success=true code=Some(0) stdout_bytes=176 stderr_bytes=441,sv01,CAC,sv001,scientific_validation,constants_are_consistent_with_public_domain_exports,ok,5654
+scientific_validation_002,f64,5320,1,5320000000,5320000000,5320000000,0,0.18796992,success=true code=Some(0) stdout_bytes=160 stderr_bytes=233,sv01,SEC,sv002,scientific_validation,systematic_edge_cases_remain_finite,ok,5320

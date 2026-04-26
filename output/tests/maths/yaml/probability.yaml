@@ -1,0 +1,21 @@
+category: probability
+count: 3
+entries:
+  - label: probability_monte_carlo_pi
+    symbol: MCP
+    name: Monte carlo pi
+    domain: maths
+    test: "probability::monte_carlo_pi"
+    avg_time_ns: 3363089.00
+  - label: probability_prob_exponential_cdf
+    symbol: PEC
+    name: Prob exponential cdf
+    domain: maths
+    test: "probability::prob_exponential_cdf"
+    avg_time_ns: 1985959.00
+  - label: probability_prob_normal_pdf
+    symbol: PNP
+    name: Prob normal pdf
+    domain: maths
+    test: "probability::prob_normal_pdf"
+    avg_time_ns: 1760199.00

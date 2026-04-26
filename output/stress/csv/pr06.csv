@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+parser_051,f64,4773,1,4773000000,4773000000,4773000000,0,0.20951183,success=true code=Some(0) stdout_bytes=141 stderr_bytes=312,pr06,TB,pr051,parser,toml,ok,4773
+parser_052,f64,4948,1,4948000000,4948000000,4948000000,0,0.20210186,success=true code=Some(0) stdout_bytes=151 stderr_bytes=208,pr06,TEI,pr052,parser,toml,ok,4948
+parser_053,f64,1116,1,1116000000,1116000000,1116000000,0,0.89605737,success=true code=Some(0) stdout_bytes=142 stderr_bytes=260,pr06,TF,pr053,parser,toml,ok,1116
+parser_054,f64,5938,1,5938000000,5938000000,5938000000,0,0.16840687,success=true code=Some(0) stdout_bytes=144 stderr_bytes=260,pr06,TI,pr054,parser,toml,ok,5938
+parser_055,f64,4748,1,4748000000,4748000000,4748000000,0,0.210615,success=true code=Some(0) stdout_bytes=146 stderr_bytes=208,pr06,TMD,pr055,parser,toml,ok,4748
+parser_056,f64,4245,1,4245000000,4245000000,4245000000,0,0.23557127,success=true code=Some(0) stdout_bytes=155 stderr_bytes=260,pr06,TMD,pr056,parser,toml,ok,4245
+parser_057,f64,5849,1,5849000000,5849000000,5849000000,0,0.1709694,success=true code=Some(0) stdout_bytes=143 stderr_bytes=260,pr06,TS,pr057,parser,toml,ok,5849
+parser_058,f64,2900,1,2900000000,2900000000,2900000000,0,0.3448276,success=true code=Some(0) stdout_bytes=142 stderr_bytes=364,pr06,TT,pr058,parser,toml,ok,2900
+parser_059,f64,4652,1,4652000000,4652000000,4652000000,0,0.2149613,success=true code=Some(0) stdout_bytes=145 stderr_bytes=208,pr06,TV,pr059,parser,toml,ok,4652
+parser_060,f64,4573,1,4573000000,4573000000,4573000000,0,0.21867482,success=true code=Some(0) stdout_bytes=150 stderr_bytes=208,pr06,TVM,pr060,parser,toml,ok,4573

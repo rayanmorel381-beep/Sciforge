@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,method,parent,daughter,ratio,half_life,decay_constant,computed_age,expected_age
+KT Boundary clay_dating,f64,22,5000,4595.3296,4595.3296,4595.3296,0,227272.73,KT Boundary clay | C-14 | D/P=0.0000 | t½=5.7300e3 years | Computed: beyond range | Expected: 65.0 kyr,Cenozoic,C,KT Boundary clay,C-14,¹⁴C,¹⁴N,0.0000,5.7300e3 years,3.8330e-12 s⁻¹,beyond range,65.0 kyr
+Lascaux paintings_dating,f64,23,5000,4756.218,4756.218,4756.218,0,217391.3,Lascaux paintings | C-14 | D/P=0.8200 | t½=5.7300e3 years | Computed: 1641 yr | Expected: 17.0 kyr,Cenozoic,C,Lascaux paintings,C-14,¹⁴C,¹⁴N,0.8200,5.7300e3 years,3.8330e-12 s⁻¹,1641 yr,17.0 kyr

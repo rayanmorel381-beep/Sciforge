@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+pipeline::pipeline_chained_stages,f64,2,1,2302369,2302369,2302369,0,500,pass,pipeline,PCS,Pipeline chained stages,hub,pipeline::pipeline_chained_stages
+pipeline::pipeline_empty_input,f64,1,1,1826319,1826319,1826319,0,1000,pass,pipeline,PEI,Pipeline empty input,hub,pipeline::pipeline_empty_input
+pipeline::pipeline_normalize_and_filter,f64,2,1,2458799,2458799,2458799,0,500,pass,pipeline,PNA,Pipeline normalize and filter,hub,pipeline::pipeline_normalize_and_filter
+pipeline::pipeline_scale,f64,2,1,2815099,2815099,2815099,0,500,pass,pipeline,PS,Pipeline scale,hub,pipeline::pipeline_scale

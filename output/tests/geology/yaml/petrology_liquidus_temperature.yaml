@@ -1,0 +1,15 @@
+category: petrology
+symbol: LT
+name: Liquidus temperature
+domain: geology
+test: "petrology::liquidus_temperature"
+experiment_name: "petrology::liquidus_temperature"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1673029.00
+min_time_ns: 1673029.00
+max_time_ns: 1673029.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

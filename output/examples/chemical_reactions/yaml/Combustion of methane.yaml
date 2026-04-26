@@ -1,0 +1,16 @@
+category: Combustion
+name: Combustion of methane
+formula: CH₄ + 2O₂ → CO₂ + 2H₂O
+reactant_mass: 80.0390 g/mol
+product_mass: 80.0390 g/mol
+atom_economy: 100.0%
+experiment_name: Combustion of methane_calc
+precision: f64
+elapsed_ms: 115
+iterations: 5000
+avg_time_ns: 23088.09
+min_time_ns: 23088.09
+max_time_ns: 23088.09
+time_stddev: 0.0000
+iterations_per_sec: 43478.26
+result: Combustion of methane | CH₄ + 2O₂ → CO₂ + 2H₂O | M(react)=80.0390 g/mol | M(prod)=80.0390 g/mol | Atom economy=100.0%

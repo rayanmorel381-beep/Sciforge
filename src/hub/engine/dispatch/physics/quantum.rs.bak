@@ -1,0 +1,790 @@
+use super::super::params::*;
+use crate::hub::domain::common::errors::{HubError, HubResult};
+use crate::hub::domain::physics as phys;
+use crate::hub::engine::experience::runner::RunOutput;
+use crate::maths::complex::Complex;
+
+pub(super) fn dispatch(func: &str, p: &Params) -> HubResult<RunOutput> {
+    match func {
+        "associated_legendre" => Ok(RunOutput::Scalar(phys::quantum::associated_legendre(
+            get_i(p, "l")? as u32,
+            get_i(p, "m")? as i32,
+            get_f(p, "x")?,
+        ))),
+        "bohr_radius" => Ok(RunOutput::Scalar(phys::quantum::bohr_radius())),
+        "clebsch_gordan" => Ok(RunOutput::Scalar(phys::quantum::clebsch_gordan(
+            get_f(p, "j1")?,
+            get_f(p, "m1")?,
+            get_f(p, "j2")?,
+            get_f(p, "m2")?,
+            get_f(p, "j")?,
+            get_f(p, "m")?,
+        ))),
+        "harmonic_oscillator_energy" => Ok(RunOutput::Scalar(
+            phys::quantum::harmonic_oscillator_energy(get_i(p, "n")? as u32, get_f(p, "omega")?),
+        )),
+        "harmonic_oscillator_wf" => Ok(RunOutput::Scalar(phys::quantum::harmonic_oscillator_wf(
+            get_i(p, "n")? as u32,
+            get_f(p, "x")?,
+            get_f(p, "mass")?,
+            get_f(p, "omega")?,
+        ))),
+        "hydrogen_energy" => Ok(RunOutput::Scalar(phys::quantum::hydrogen_energy(
+            get_i(p, "n")? as u32,
+        ))),
+        "hydrogen_radial_r10" => Ok(RunOutput::Scalar(phys::quantum::hydrogen_radial_r10(
+            get_f(p, "r")?,
+        ))),
+        "hydrogen_radial_r20" => Ok(RunOutput::Scalar(phys::quantum::hydrogen_radial_r20(
+            get_f(p, "r")?,
+        ))),
+        "hydrogen_radial_r21" => Ok(RunOutput::Scalar(phys::quantum::hydrogen_radial_r21(
+            get_f(p, "r")?,
+        ))),
+        "infinite_well_energy" => Ok(RunOutput::Scalar(phys::quantum::infinite_well_energy(
+            get_i(p, "n")? as u32,
+            get_f(p, "length")?,
+            get_f(p, "mass")?,
+        ))),
+        "infinite_well_wf" => Ok(RunOutput::Scalar(phys::quantum::infinite_well_wf(
+            get_i(p, "n")? as u32,
+            get_f(p, "x")?,
+            get_f(p, "length")?,
+        ))),
+        "landau_levels" => Ok(RunOutput::Scalar(phys::quantum::landau_levels(
+            get_i(p, "n")? as u32,
+            get_f(p, "b_field")?,
+            get_f(p, "mass")?,
+            get_f(p, "charge")?,
+        ))),
+        "spherical_harmonic_real" => Ok(RunOutput::Scalar(phys::quantum::spherical_harmonic_real(
+            get_i(p, "l")? as u32,
+            get_i(p, "m")? as i32,
+            get_f(p, "theta")?,
+            get_f(p, "phi")?,
+        ))),
+        "tunneling_coefficient" => Ok(RunOutput::Scalar(phys::quantum::tunneling_coefficient(
+            get_f(p, "energy")?,
+            get_f(p, "v0")?,
+            get_f(p, "width")?,
+            get_f(p, "mass")?,
+        ))),
+        "wigner_3j" => Ok(RunOutput::Scalar(phys::quantum::wigner_3j(
+            get_f(p, "j1")?,
+            get_f(p, "j2")?,
+            get_f(p, "j3")?,
+            get_f(p, "m1")?,
+            get_f(p, "m2")?,
+            get_f(p, "m3")?,
+        ))),
+        "zeeman_splitting" => Ok(RunOutput::Scalar(phys::quantum::zeeman_splitting(
+            get_i(p, "m_l")? as i32,
+            get_f(p, "b_field")?,
+        ))),
+        "angular_momentum_coupling" => {
+            let r = phys::quantum::angular_momentum_coupling(get_f(p, "j1")?, get_f(p, "j2")?);
+            Ok(RunOutput::Matrix(
+                r.iter().map(|&(a, b, c)| vec![a, b, c]).collect(),
+            ))
+        }
+        "anticommutator" => {
+            let a: Vec<Vec<Complex>> = get_m(p, "a")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let b: Vec<Vec<Complex>> = get_m(p, "b")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let r = phys::quantum::anticommutator(&a, &b);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "apply_gate" => {
+            let gate: Vec<Vec<Complex>> = get_m(p, "gate")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let state = get_cv(p, "state")?;
+            let r = phys::quantum::apply_gate(&gate, &state);
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "apply_single_qubit_gate" => {
+            let gate: Vec<Vec<Complex>> = get_m(p, "gate")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let mut state = get_cv(p, "state")?;
+            phys::quantum::apply_single_qubit_gate(
+                &gate,
+                &mut state,
+                get_u(p, "target")?,
+                get_u(p, "n_qubits")?,
+            );
+            Ok(RunOutput::ComplexVector(
+                state.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "bell_phi_minus" => {
+            let r = phys::quantum::bell_phi_minus();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "bell_phi_plus" => {
+            let r = phys::quantum::bell_phi_plus();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "bell_psi_minus" => {
+            let r = phys::quantum::bell_psi_minus();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "bell_psi_plus" => {
+            let r = phys::quantum::bell_psi_plus();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "bloch_vector" => {
+            let cv = get_cv(p, "state")?;
+            let r = phys::quantum::bloch_vector(&[cv[0], cv[1]]);
+            Ok(RunOutput::Triple(r.0, r.1, r.2))
+        }
+        "cnot_gate" => {
+            let r = phys::quantum::cnot_gate();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "commutator" => {
+            let a: Vec<Vec<Complex>> = get_m(p, "a")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let b: Vec<Vec<Complex>> = get_m(p, "b")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let r = phys::quantum::commutator(&a, &b);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "concurrence_2qubit" => {
+            let rho: Vec<Vec<Complex>> = get_m(p, "rho")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Scalar(phys::quantum::concurrence_2qubit(&rho)))
+        }
+        "cz_gate" => {
+            let r = phys::quantum::cz_gate();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "density_matrix" => {
+            let state = get_cv(p, "state")?;
+            let r = phys::quantum::density_matrix(&state);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "dirac_gamma0" => {
+            let r = phys::quantum::dirac_gamma0();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "dirac_gamma1" => {
+            let r = phys::quantum::dirac_gamma1();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "dirac_gamma2" => {
+            let r = phys::quantum::dirac_gamma2();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "dirac_gamma3" => {
+            let r = phys::quantum::dirac_gamma3();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "entanglement_entropy" => {
+            let state = get_cv(p, "state")?;
+            Ok(RunOutput::Scalar(phys::quantum::entanglement_entropy(
+                &state,
+                get_u(p, "dim_a")?,
+            )))
+        }
+        "expectation_momentum" => {
+            let psi = get_cv(p, "psi")?;
+            Ok(RunOutput::Scalar(phys::quantum::expectation_momentum(
+                &psi,
+                get_f(p, "dx")?,
+            )))
+        }
+        "expectation_position" => {
+            let psi = get_cv(p, "psi")?;
+            Ok(RunOutput::Scalar(phys::quantum::expectation_position(
+                &psi,
+                get_v(p, "x")?,
+                get_f(p, "dx")?,
+            )))
+        }
+        "expectation_value" => {
+            let op: Vec<Vec<Complex>> = get_m(p, "operator")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let state = get_cv(p, "state")?;
+            let r = phys::quantum::expectation_value(&op, &state);
+            Ok(RunOutput::Complex(r.re, r.im))
+        }
+        "fermi_golden_rule" => {
+            let vm: Vec<Vec<Complex>> = get_m(p, "v_matrix")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let initial = get_cv(p, "initial")?;
+            let finals: Vec<Vec<Complex>> = get_m(p, "finals")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Scalar(phys::quantum::fermi_golden_rule(
+                &vm,
+                &initial,
+                &finals,
+                get_f(p, "density_of_states")?,
+            )))
+        }
+        "fidelity_mixed" => {
+            let rho: Vec<Vec<Complex>> = get_m(p, "rho")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let sigma: Vec<Vec<Complex>> = get_m(p, "sigma")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Scalar(phys::quantum::fidelity_mixed(
+                &rho, &sigma,
+            )))
+        }
+        "fidelity_pure" => {
+            let psi = get_cv(p, "psi")?;
+            let phi = get_cv(p, "phi")?;
+            Ok(RunOutput::Scalar(phys::quantum::fidelity_pure(&psi, &phi)))
+        }
+        "first_order_energy" => {
+            let vm: Vec<Vec<Complex>> = get_m(p, "v_matrix")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let state = get_cv(p, "state")?;
+            Ok(RunOutput::Scalar(phys::quantum::first_order_energy(
+                &vm, &state,
+            )))
+        }
+        "first_order_state" => {
+            let vm: Vec<Vec<Complex>> = get_m(p, "v_matrix")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let states: Vec<Vec<Complex>> = get_m(p, "states")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let r = phys::quantum::first_order_state(
+                get_v(p, "h0_energies")?,
+                &vm,
+                &states,
+                get_u(p, "n_index")?,
+            );
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "gamma5" => {
+            let r = phys::quantum::gamma5();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "gaussian_packet" => {
+            let r = phys::quantum::gaussian_packet(
+                get_f(p, "x")?,
+                get_f(p, "x0")?,
+                get_f(p, "sigma")?,
+                get_f(p, "k0")?,
+            );
+            Ok(RunOutput::Complex(r.re, r.im))
+        }
+        "hadamard_gate" => {
+            let r = phys::quantum::hadamard_gate();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "identity_2" => {
+            let r = phys::quantum::identity_2();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "inner_product" => {
+            let psi = get_cv(p, "psi")?;
+            let phi = get_cv(p, "phi")?;
+            let r = phys::quantum::inner_product(&psi, &phi, get_f(p, "dx")?);
+            Ok(RunOutput::Complex(r.re, r.im))
+        }
+        "is_hermitian" => {
+            let m: Vec<Vec<Complex>> = get_m(p, "m")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Boolean(phys::quantum::is_hermitian(&m)))
+        }
+        "is_unitary" => {
+            let m: Vec<Vec<Complex>> = get_m(p, "m")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Boolean(phys::quantum::is_unitary(&m)))
+        }
+        "jz_operator" => {
+            let r = phys::quantum::jz_operator(get_f(p, "j")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "ladder_operator_minus" => {
+            let r = phys::quantum::ladder_operator_minus(get_f(p, "j")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "ladder_operator_plus" => {
+            let r = phys::quantum::ladder_operator_plus(get_f(p, "j")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "measure_probabilities" => {
+            let state = get_cv(p, "state")?;
+            Ok(RunOutput::Vector(phys::quantum::measure_probabilities(
+                &state,
+            )))
+        }
+        "normalize_wavefunction" => {
+            let mut psi = get_cv(p, "psi")?;
+            phys::quantum::normalize(&mut psi, get_f(p, "dx")?);
+            Ok(RunOutput::ComplexVector(
+                psi.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "partial_trace_b" => {
+            let rho: Vec<Vec<Complex>> = get_m(p, "rho")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let r = phys::quantum::partial_trace_b(&rho, get_u(p, "dim_a")?, get_u(p, "dim_b")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "pauli_x" => {
+            let r = phys::quantum::pauli_x();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "pauli_y" => {
+            let r = phys::quantum::pauli_y();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "pauli_z" => {
+            let r = phys::quantum::pauli_z();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "phase_gate" => {
+            let r = phys::quantum::phase_gate(get_f(p, "phi")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "plane_wave" => {
+            let r = phys::quantum::plane_wave(
+                get_f(p, "x")?,
+                get_f(p, "k")?,
+                get_f(p, "omega")?,
+                get_f(p, "t")?,
+            );
+            Ok(RunOutput::Complex(r.re, r.im))
+        }
+        "probability_density" => {
+            let psi = get_cv(p, "psi")?;
+            Ok(RunOutput::Vector(phys::quantum::probability_density(&psi)))
+        }
+        "purity" => {
+            let rho: Vec<Vec<Complex>> = get_m(p, "rho")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Scalar(phys::quantum::purity(&rho)))
+        }
+        "rotation_operator" => {
+            let pauli = match get_str(p, "pauli")? {
+                "x" => phys::quantum::pauli_x(),
+                "y" => phys::quantum::pauli_y(),
+                "z" => phys::quantum::pauli_z(),
+                other => return Err(HubError::InvalidInput(format!("unknown pauli: {other}"))),
+            };
+            let r = phys::quantum::rotation_operator(get_f(p, "angle")?, &pauli);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "rx_gate" => {
+            let r = phys::quantum::rx_gate(get_f(p, "theta")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "ry_gate" => {
+            let r = phys::quantum::ry_gate(get_f(p, "theta")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "rz_gate" => {
+            let r = phys::quantum::rz_gate(get_f(p, "theta")?);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "s_gate" => {
+            let r = phys::quantum::s_gate();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "second_order_energy" => {
+            let vm: Vec<Vec<Complex>> = get_m(p, "v_matrix")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let states: Vec<Vec<Complex>> = get_m(p, "states")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Scalar(phys::quantum::second_order_energy(
+                get_v(p, "h0_energies")?,
+                &vm,
+                &states,
+                get_u(p, "n_index")?,
+            )))
+        }
+        "spherical_harmonic" => {
+            let r = phys::quantum::spherical_harmonic(
+                get_i(p, "l")? as u32,
+                get_i(p, "m")? as i32,
+                get_f(p, "theta")?,
+                get_f(p, "phi")?,
+            );
+            Ok(RunOutput::Complex(r.re, r.im))
+        }
+        "spin_down" => {
+            let r = phys::quantum::spin_down();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "spin_minus_x" => {
+            let r = phys::quantum::spin_minus_x();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "spin_minus_y" => {
+            let r = phys::quantum::spin_minus_y();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "spin_plus_x" => {
+            let r = phys::quantum::spin_plus_x();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "spin_plus_y" => {
+            let r = phys::quantum::spin_plus_y();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "spin_up" => {
+            let r = phys::quantum::spin_up();
+            Ok(RunOutput::ComplexVector(
+                r.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "swap_gate" => {
+            let r = phys::quantum::swap_gate();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "t_gate" => {
+            let r = phys::quantum::t_gate();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "quantum_tensor_product" => {
+            let a: Vec<Vec<Complex>> = get_m(p, "a")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let b: Vec<Vec<Complex>> = get_m(p, "b")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let r = phys::quantum::tensor_product(&a, &b);
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "time_evolve_split_step" => {
+            let mut psi = get_cv(p, "psi")?;
+            phys::quantum::time_evolve_split_step(
+                &mut psi,
+                get_v(p, "v")?,
+                get_f(p, "dx")?,
+                get_f(p, "dt")?,
+                get_f(p, "mass")?,
+                get_u(p, "steps")?,
+            );
+            Ok(RunOutput::ComplexVector(
+                psi.iter().map(|c| (c.re, c.im)).collect(),
+            ))
+        }
+        "toffoli_gate" => {
+            let r = phys::quantum::toffoli_gate();
+            Ok(RunOutput::ComplexMatrix(
+                r.iter()
+                    .map(|row| row.iter().map(|c| (c.re, c.im)).collect())
+                    .collect(),
+            ))
+        }
+        "trace_complex" => {
+            let m: Vec<Vec<Complex>> = get_m(p, "m")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let r = phys::quantum::trace_complex(&m);
+            Ok(RunOutput::Complex(r.re, r.im))
+        }
+        "transition_probability" => {
+            let psi_i = get_cv(p, "psi_initial")?;
+            let psi_f = get_cv(p, "psi_final")?;
+            Ok(RunOutput::Scalar(phys::quantum::transition_probability(
+                &psi_i,
+                &psi_f,
+                get_f(p, "dx")?,
+            )))
+        }
+        "uncertainty_product" => {
+            let a: Vec<Vec<Complex>> = get_m(p, "op_a")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let b: Vec<Vec<Complex>> = get_m(p, "op_b")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let state = get_cv(p, "state")?;
+            Ok(RunOutput::Scalar(phys::quantum::uncertainty_product(
+                &a, &b, &state,
+            )))
+        }
+        "quantum_variance" => {
+            let op: Vec<Vec<Complex>> = get_m(p, "operator")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let state = get_cv(p, "state")?;
+            Ok(RunOutput::Scalar(phys::quantum::variance(&op, &state)))
+        }
+        "variational_energy" => {
+            let h: Vec<Vec<Complex>> = get_m(p, "hamiltonian")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            let trial = get_cv(p, "trial")?;
+            Ok(RunOutput::Scalar(phys::quantum::variational_energy(
+                &h, &trial,
+            )))
+        }
+        "von_neumann_entropy" => {
+            let rho: Vec<Vec<Complex>> = get_m(p, "rho")?
+                .iter()
+                .map(|row| row.chunks(2).map(|c| Complex::new(c[0], c[1])).collect())
+                .collect();
+            Ok(RunOutput::Scalar(phys::quantum::von_neumann_entropy(&rho)))
+        }
+        "quantum_bohr_radius_nth" => Ok(RunOutput::Scalar(phys::quantum::bohr_radius_nth(
+            get_i(p, "n")? as u32,
+            get_f(p, "z_eff")?,
+        ))),
+        "hydrogen_energy_level" => Ok(RunOutput::Scalar(phys::quantum::hydrogen_energy_level(
+            get_i(p, "n")? as u32,
+        ))),
+        "hydrogen_energy_level_z" => Ok(RunOutput::Scalar(phys::quantum::hydrogen_energy_level_z(
+            get_i(p, "n")? as u32,
+            get_f(p, "z")?,
+        ))),
+        "rydberg_wavelength" => Ok(RunOutput::Scalar(phys::quantum::rydberg_wavelength(
+            get_i(p, "n1")? as u32,
+            get_i(p, "n2")? as u32,
+        ))),
+        "quantum_compton_wavelength_shift" => Ok(RunOutput::Scalar(
+            phys::quantum::compton_wavelength_shift(get_f(p, "theta")?),
+        )),
+        "quantum_cyclotron_frequency" => Ok(RunOutput::Scalar(phys::quantum::cyclotron_frequency(
+            get_f(p, "b_field")?,
+        ))),
+        "cyclotron_frequency_particle" => Ok(RunOutput::Scalar(
+            phys::quantum::cyclotron_frequency_particle(
+                get_f(p, "charge")?,
+                get_f(p, "mass")?,
+                get_f(p, "b_field")?,
+            ),
+        )),
+        "quantum_larmor_radius" => Ok(RunOutput::Scalar(phys::quantum::larmor_radius(
+            get_f(p, "v_perp")?,
+            get_f(p, "b_field")?,
+        ))),
+        "larmor_radius_particle" => Ok(RunOutput::Scalar(phys::quantum::larmor_radius_particle(
+            get_f(p, "mass")?,
+            get_f(p, "v_perp")?,
+            get_f(p, "charge")?,
+            get_f(p, "b_field")?,
+        ))),
+        "nuclear_zeeman_splitting" => Ok(RunOutput::Scalar(
+            phys::quantum::nuclear_zeeman_splitting(get_f(p, "m_i")?, get_f(p, "b_field")?),
+        )),
+        "anomalous_zeeman_splitting" => Ok(RunOutput::Scalar(
+            phys::quantum::anomalous_zeeman_splitting(
+                get_f(p, "m_j")?,
+                get_f(p, "g_j")?,
+                get_f(p, "b_field")?,
+            ),
+        )),
+        "muonic_hydrogen_energy" => Ok(RunOutput::Scalar(phys::quantum::muonic_hydrogen_energy(
+            get_i(p, "n")? as u32,
+        ))),
+        "muonic_bohr_radius" => Ok(RunOutput::Scalar(phys::quantum::muonic_bohr_radius())),
+        "tau_lepton_mass" => Ok(RunOutput::Scalar(phys::quantum::tau_lepton_mass())),
+        "muon_mass_kg" => Ok(RunOutput::Scalar(phys::quantum::muon_mass_kg())),
+        "proton_gyromagnetic_ratio" => Ok(RunOutput::Scalar(
+            phys::quantum::proton_gyromagnetic_ratio(get_f(p, "b_field")?),
+        )),
+        "neutron_mass" => Ok(RunOutput::Scalar(phys::quantum::neutron_mass())),
+        "proton_mass" => Ok(RunOutput::Scalar(phys::quantum::proton_mass())),
+        "reduced_mass" => Ok(RunOutput::Scalar(phys::quantum::reduced_mass(
+            get_f(p, "m1")?,
+            get_f(p, "m2")?,
+        ))),
+        "de_broglie_wavelength" => Ok(RunOutput::Scalar(phys::quantum::de_broglie_wavelength(
+            get_f(p, "mass")?,
+            get_f(p, "velocity")?,
+        ))),
+        "magnetic_moment_orbital" => Ok(RunOutput::Scalar(phys::quantum::magnetic_moment_orbital(
+            get_i(p, "m_l")? as i32,
+        ))),
+        "fine_structure_splitting" => {
+            Ok(RunOutput::Scalar(phys::quantum::fine_structure_splitting(
+                get_i(p, "n")? as u32,
+                get_f(p, "j")?,
+                get_f(p, "z")?,
+            )))
+        }
+        "hyperfine_splitting_hydrogen" => Ok(RunOutput::Scalar(
+            phys::quantum::hyperfine_splitting_hydrogen(),
+        )),
+        _ => Err(HubError::InvalidInput(format!("unknown function: {func}"))),
+    }
+}

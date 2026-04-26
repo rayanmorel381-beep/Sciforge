@@ -1,0 +1,15 @@
+category: nonmetal
+symbol: S
+name: Sulfur
+config: [Ne] 3s² 3p⁴
+mass: 32.06
+experiment_name: S_Sulfur_benchmark
+precision: f64
+elapsed_ms: 1
+iterations: 1000
+avg_time_ns: 1249.86
+min_time_ns: 1249.86
+max_time_ns: 1249.86
+time_stddev: 0.0000
+iterations_per_sec: 1000000.00
+result: Z=16 | S (Sulfur) | 32.06 u | nonmetal | [Ne] 3s² 3p⁴

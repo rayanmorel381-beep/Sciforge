@@ -1,0 +1,39 @@
+category: hydrology
+count: 6
+entries:
+  - label: hydrology_chezy_velocity
+    symbol: CV
+    name: Chezy velocity
+    domain: geology
+    test: "hydrology::chezy_velocity"
+    avg_time_ns: 1775680.00
+  - label: hydrology_froude_number
+    symbol: FN
+    name: Froude number
+    domain: geology
+    test: "hydrology::froude_number"
+    avg_time_ns: 2316238.00
+  - label: hydrology_hjulstrom_erosion_threshold
+    symbol: HET
+    name: Hjulstrom erosion threshold
+    domain: geology
+    test: "hydrology::hjulstrom_erosion_threshold"
+    avg_time_ns: 1943800.00
+  - label: hydrology_manning_velocity
+    symbol: MV
+    name: Manning velocity
+    domain: geology
+    test: "hydrology::manning_velocity"
+    avg_time_ns: 2200399.00
+  - label: hydrology_reynolds_number
+    symbol: RN
+    name: Reynolds number
+    domain: geology
+    test: "hydrology::reynolds_number"
+    avg_time_ns: 1900639.00
+  - label: hydrology_stream_power
+    symbol: SP
+    name: Stream power
+    domain: geology
+    test: "hydrology::stream_power"
+    avg_time_ns: 1702869.00

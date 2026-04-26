@@ -1,0 +1,17 @@
+category: hb03
+symbol: PFC
+name: hb026
+target: hub
+module: cross_domain
+status: ok
+elapsed_ms: 5610
+experiment_name: hub_026
+precision: f64
+elapsed_ms: 5610
+iterations: 1
+avg_time_ns: 5609999872.00
+min_time_ns: 5609999872.00
+max_time_ns: 5609999872.00
+time_stddev: 0.0000
+iterations_per_sec: 0.18
+result: success=true code=Some(0) stdout_bytes=175 stderr_bytes=358

@@ -1,0 +1,15 @@
+category: mechanics
+symbol: BF
+name: Beat frequency
+domain: physics
+test: "mechanics::beat_frequency"
+experiment_name: "mechanics::beat_frequency"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1975609.00
+min_time_ns: 1975609.00
+max_time_ns: 1975609.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

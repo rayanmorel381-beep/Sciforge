@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb03"
+symbol = "MCD"
+name = "hb029"
+target = "hub"
+module = "cross_domain"
+status = "ok"
+elapsed_ms = "577"
+experiment_name = "hub_029"
+precision = "f64"
+elapsed_ms = 577
+iterations = 1
+avg_time_ns = 577000000.00
+min_time_ns = 577000000.00
+max_time_ns = 577000000.00
+time_stddev = 0.0000
+iterations_per_sec = 1.73
+result = "success=true code=Some(0) stdout_bytes=180 stderr_bytes=202"

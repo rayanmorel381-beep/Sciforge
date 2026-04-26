@@ -1,0 +1,16 @@
+[benchmark]
+category = "reaction_engineering"
+symbol = "CV"
+name = "Cstr volume"
+domain = "chemistry"
+test = "reaction_engineering::cstr_volume"
+experiment_name = "reaction_engineering::cstr_volume"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2875219.00
+min_time_ns = 2875219.00
+max_time_ns = 2875219.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

@@ -1,0 +1,24 @@
+[benchmark]
+category = "Alpine"
+symbol = "M"
+name = "Mexico City"
+altitude = "2250 m"
+temperature = "16.0 °C"
+pressure = "773.0 hPa"
+relative_humidity = "52%"
+saturation_vp = "18.17 hPa"
+dew_point = "6.2 °C"
+density_altitude = "2910 m"
+potential_temp = "312.4 K"
+mixing_ratio = "7.70 g/kg"
+lcl = "1008 m AGL"
+experiment_name = "Mexico City_weather"
+precision = "f64"
+elapsed_ms = 28
+iterations = 5000
+avg_time_ns = 5636.10
+min_time_ns = 5636.10
+max_time_ns = 5636.10
+time_stddev = 0.0000
+iterations_per_sec = 178571.42
+result = "Mexico City | 2250m | 16.0 °C | RH=52% | Td=6.2 °C | DA=2910 m | θ=312.4 K"

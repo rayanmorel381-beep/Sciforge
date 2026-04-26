@@ -1,0 +1,23 @@
+category: Polar
+symbol: Mc
+name: McMurdo Base
+altitude: 10 m
+temperature: -18.0 °C
+pressure: 984.0 hPa
+relative_humidity: 60%
+saturation_vp: 1.49 hPa
+dew_point: -23.9 °C
+density_altitude: -3948 m
+potential_temp: 257.3 K
+mixing_ratio: 0.57 g/kg
+lcl: 602 m AGL
+experiment_name: McMurdo Base_weather
+precision: f64
+elapsed_ms: 29
+iterations: 5000
+avg_time_ns: 5812.67
+min_time_ns: 5812.67
+max_time_ns: 5812.67
+time_stddev: 0.0000
+iterations_per_sec: 172413.80
+result: McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K

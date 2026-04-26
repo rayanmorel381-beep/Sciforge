@@ -1,0 +1,17 @@
+{
+  "category": "transition metal",
+  "symbol": "Os",
+  "name": "Osmium",
+  "config": "[Xe] 4f¹⁴ 5d⁶ 6s²",
+  "mass": "190.23",
+  "experiment_name": "Os_Osmium_benchmark",
+  "precision": "f64",
+  "elapsed_ms": 5,
+  "iterations": 1000,
+  "avg_time_ns": 5805.46,
+  "min_time_ns": 5805.46,
+  "max_time_ns": 5805.46,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 200000.00,
+  "result": "Z=76 | Os (Osmium) | 190.23 u | transition metal | [Xe] 4f¹⁴ 5d⁶ 6s²"
+}

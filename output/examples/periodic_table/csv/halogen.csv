@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+F_Fluorine_benchmark,f32,6,10000,697.9116,697.9116,697.9116,0,1666666.6,Z=9 | F (Fluorine) | 18.998403 u | halogen | 1s² 2s² 2p⁵,halogen,F,Fluorine,1s² 2s² 2p⁵,18.998403
+Cl_Chlorine_benchmark,f32,6,5000,1319.6993,1319.6993,1319.6993,0,833333.3,Z=17 | Cl (Chlorine) | 35.45 u | halogen | [Ne] 3s² 3p⁵,halogen,Cl,Chlorine,[Ne] 3s² 3p⁵,35.45
+Br_Bromine_benchmark,f32,13,5000,2714.7488,2714.7488,2714.7488,0,384615.38,Z=35 | Br (Bromine) | 79.904 u | halogen | [Ar] 3d¹⁰ 4s² 4p⁵,halogen,Br,Bromine,[Ar] 3d¹⁰ 4s² 4p⁵,79.904
+I_Iodine_benchmark,f32,20,5000,4075.3823,4075.3823,4075.3823,0,250000,Z=53 | I (Iodine) | 126.90447 u | halogen | [Kr] 4d¹⁰ 5s² 5p⁵,halogen,I,Iodine,[Kr] 4d¹⁰ 5s² 5p⁵,126.90447
+At_Astatine_benchmark,f32,6,1000,6571.247,6571.247,6571.247,0,166666.67,Z=85 | At (Astatine) | 210 u | halogen | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵,halogen,At,Astatine,[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵,210
+Ts_Tennessine_benchmark,f32,94,10000,9498.325,9498.325,9498.325,0,106382.98,Z=117 | Ts (Tennessine) | 294 u | halogen | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted),halogen,Ts,Tennessine,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted),294

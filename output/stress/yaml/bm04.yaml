@@ -1,0 +1,19 @@
+category: bm04
+count: 2
+entries:
+  - label: benchmark_031
+    symbol: TA
+    name: bm031
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 1331
+    avg_time_ns: 1331000064.00
+  - label: benchmark_032
+    symbol: ZS
+    name: bm032
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 2729
+    avg_time_ns: 2728999936.00

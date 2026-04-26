@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_031,f64,5535,1,5535000000,5535000000,5535000000,0,0.18066847,success=true code=Some(0) stdout_bytes=164 stderr_bytes=210,bi04,NNT,bi031,biology,biostatistics,ok,5535
+biology_032,f64,2564,1,2564000000,2564000000,2564000000,0,0.3900156,success=true code=Some(0) stdout_bytes=152 stderr_bytes=314,bi04,OR,bi032,biology,biostatistics,ok,2564
+biology_033,f64,4978,1,4978000000,4978000000,4978000000,0,0.2008839,success=true code=Some(0) stdout_bytes=153 stderr_bytes=210,bi04,Se,bi033,biology,biostatistics,ok,4978
+biology_034,f64,4875,1,4875000000,4875000000,4875000000,0,0.20512821,success=true code=Some(0) stdout_bytes=153 stderr_bytes=314,bi04,Sp,bi034,biology,biostatistics,ok,4875
+biology_035,f64,4885,1,4885000000,4885000000,4885000000,0,0.2047083,success=true code=Some(0) stdout_bytes=175 stderr_bytes=366,bi04,CLQ,bi035,biology,cancer_biology,ok,4885
+biology_036,f64,5409,1,5409000000,5409000000,5409000000,0,0.18487705,success=true code=Some(0) stdout_bytes=156 stderr_bytes=262,bi04,CKL,bi036,biology,cancer_biology,ok,5409
+biology_037,f64,2678,1,2678000000,2678000000,2678000000,0,0.373413,success=true code=Some(0) stdout_bytes=162 stderr_bytes=314,bi04,TDT,bi037,biology,cancer_biology,ok,2678
+biology_038,f64,2430,1,2430000000,2430000000,2430000000,0,0.41152263,success=true code=Some(0) stdout_bytes=167 stderr_bytes=262,bi04,TGE,bi038,biology,cancer_biology,ok,2430
+biology_039,f64,2958,1,2958000000,2958000000,2958000000,0,0.33806625,success=true code=Some(0) stdout_bytes=151 stderr_bytes=210,bi04,CDT,bi039,biology,cell,ok,2958
+biology_040,f64,3040,1,3040000000,3040000000,3040000000,0,0.32894737,success=true code=Some(0) stdout_bytes=147 stderr_bytes=210,bi04,FFL,bi040,biology,cell,ok,3040

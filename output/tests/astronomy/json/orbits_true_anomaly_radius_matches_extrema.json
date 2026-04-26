@@ -1,0 +1,17 @@
+{
+  "category": "orbits",
+  "symbol": "TAR",
+  "name": "True anomaly radius matches extrema",
+  "domain": "astronomy",
+  "test": "orbits::true_anomaly_radius_matches_extrema",
+  "experiment_name": "orbits::true_anomaly_radius_matches_extrema",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2493759.00,
+  "min_time_ns": 2493759.00,
+  "max_time_ns": 2493759.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

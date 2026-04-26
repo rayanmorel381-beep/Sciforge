@@ -1,0 +1,15 @@
+category: atomic
+symbol: CW
+name: Compton wavelength
+domain: constants
+test: "atomic::compton_wavelength"
+experiment_name: "atomic::compton_wavelength"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1145809.00
+min_time_ns: 1145809.00
+max_time_ns: 1145809.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

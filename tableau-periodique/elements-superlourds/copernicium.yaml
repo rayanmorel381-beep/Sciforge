@@ -1,0 +1,42 @@
+element:
+  name: Copernicium
+  symbol: Cn
+  atomic_number: 112
+  category: unknown
+  group: 12
+  period: 7
+  electron_configuration: "[Rn] 5f¹⁴ 6d¹⁰ 7s²"
+  electronegativity: null
+  atomic_mass: 285.177
+
+isotopes:
+  - name: Copernicium-283
+    symbol: "²⁸³Cn"
+    mass_number: 283
+    neutrons: 171
+    atomic_mass: 283.173
+    half_life: 4.0
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 0.90
+        daughter: Darmstadtium-279
+      - mode: spontaneous_fission
+        branching_ratio: 0.10
+        daughter: null
+    natural_abundance: 0.0
+
+  - name: Copernicium-285
+    symbol: "²⁸⁵Cn"
+    mass_number: 285
+    neutrons: 173
+    atomic_mass: 285.177
+    half_life: 29
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Darmstadtium-281
+    natural_abundance: 0.0

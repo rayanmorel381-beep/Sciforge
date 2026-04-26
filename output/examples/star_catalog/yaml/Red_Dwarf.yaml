@@ -1,0 +1,29 @@
+category: Red Dwarf
+count: 2
+entries:
+  - label: Proxima Centauri
+    symbol: M
+    name: Proxima Centauri
+    spectral: M5.5Ve
+    mass: 0.122 M☉
+    radius: 0.154 R☉
+    temperature: 3042 K
+    luminosity: 7.022e23 W
+    abs_magnitude: 15.56
+    schwarzschild: 360.42 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 953 nm
+    avg_time_ns: 1704.27
+  - label: Barnard's Star
+    symbol: M
+    name: Barnard's Star
+    spectral: M4Ve
+    mass: 0.144 M☉
+    radius: 0.196 R☉
+    temperature: 3134 K
+    luminosity: 1.278e24 W
+    abs_magnitude: 13.19
+    schwarzschild: 425.42 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 925 nm
+    avg_time_ns: 1759.21

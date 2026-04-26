@@ -1,0 +1,17 @@
+category: ma04
+symbol: PZ
+name: ma031
+target: maths
+module: misc
+status: ok
+elapsed_ms: 2920
+experiment_name: maths_031
+precision: f64
+elapsed_ms: 2920
+iterations: 1
+avg_time_ns: 2920000000.00
+min_time_ns: 2920000000.00
+max_time_ns: 2920000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.34
+result: success=true code=Some(0) stdout_bytes=141 stderr_bytes=310

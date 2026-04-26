@@ -1,0 +1,110 @@
+element:
+  name: Selenium
+  symbol: Se
+  atomic_number: 34
+  category: nonmetal
+  group: 16
+  period: 4
+  electron_configuration: "[Ar] 3d¹⁰ 4s² 4p⁴"
+  electronegativity: 2.55
+  atomic_mass: 78.971
+
+isotopes:
+  - name: Selenium-74
+    symbol: "⁷⁴Se"
+    mass_number: 74
+    neutrons: 40
+    atomic_mass: 73.922477
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0089
+
+  - name: Selenium-75
+    symbol: "⁷⁵Se"
+    mass_number: 75
+    neutrons: 41
+    atomic_mass: 74.922524
+    half_life: 119.779
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Arsenic-75
+    natural_abundance: 0.0
+
+  - name: Selenium-76
+    symbol: "⁷⁶Se"
+    mass_number: 76
+    neutrons: 42
+    atomic_mass: 75.919214
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0937
+
+  - name: Selenium-77
+    symbol: "⁷⁷Se"
+    mass_number: 77
+    neutrons: 43
+    atomic_mass: 76.919914
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0763
+    nuclear_spin: "1/2-"
+
+  - name: Selenium-78
+    symbol: "⁷⁸Se"
+    mass_number: 78
+    neutrons: 44
+    atomic_mass: 77.917310
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2377
+
+  - name: Selenium-79
+    symbol: "⁷⁹Se"
+    mass_number: 79
+    neutrons: 45
+    atomic_mass: 78.918500
+    half_life: 3.27e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Bromine-79
+    natural_abundance: trace
+
+  - name: Selenium-80
+    symbol: "⁸⁰Se"
+    mass_number: 80
+    neutrons: 46
+    atomic_mass: 79.916522
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.4961
+    nuclear_spin: "0+"
+
+  - name: Selenium-82
+    symbol: "⁸²Se"
+    mass_number: 82
+    neutrons: 48
+    atomic_mass: 81.916700
+    half_life: 0.87e20
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta- (double electron emission)
+        branching_ratio: 1.0
+        daughter: Krypton-82
+    natural_abundance: 0.0873

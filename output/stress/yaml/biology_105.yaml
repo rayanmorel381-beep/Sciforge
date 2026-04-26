@@ -1,0 +1,17 @@
+category: bi11
+symbol: CSS
+name: bi105
+target: biology
+module: microbiology
+status: ok
+elapsed_ms: 392
+experiment_name: biology_105
+precision: f64
+elapsed_ms: 392
+iterations: 1
+avg_time_ns: 392000000.00
+min_time_ns: 392000000.00
+max_time_ns: 392000000.00
+time_stddev: 0.0000
+iterations_per_sec: 2.55
+result: success=true code=Some(0) stdout_bytes=171 stderr_bytes=210

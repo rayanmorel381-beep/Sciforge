@@ -1,0 +1,83 @@
+category: ma02
+count: 10
+entries:
+  - label: maths_011
+    symbol: DMP
+    name: ma011
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 4574
+    avg_time_ns: 4574000128.00
+  - label: maths_012
+    symbol: DUF
+    name: ma012
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 4000
+    avg_time_ns: 4000000000.00
+  - label: maths_013
+    symbol: DVM
+    name: ma013
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 337
+    avg_time_ns: 337000000.00
+  - label: maths_014
+    symbol: DWP
+    name: ma014
+    target: maths
+    module: dispatch
+    status: ok
+    elapsed_ms: 4755
+    avg_time_ns: 4754999808.00
+  - label: maths_015
+    symbol: FB
+    name: ma015
+    target: maths
+    module: fft
+    status: ok
+    elapsed_ms: 4278
+    avg_time_ns: 4278000128.00
+  - label: maths_016
+    symbol: HW
+    name: ma016
+    target: maths
+    module: fft
+    status: ok
+    elapsed_ms: 4633
+    avg_time_ns: 4632999936.00
+  - label: maths_017
+    symbol: PS
+    name: ma017
+    target: maths
+    module: fft
+    status: ok
+    elapsed_ms: 2699
+    avg_time_ns: 2699000064.00
+  - label: maths_018
+    symbol: Bf
+    name: ma018
+    target: maths
+    module: graph
+    status: ok
+    elapsed_ms: 4701
+    avg_time_ns: 4701000192.00
+  - label: maths_019
+    symbol: CC
+    name: ma019
+    target: maths
+    module: graph
+    status: ok
+    elapsed_ms: 2668
+    avg_time_ns: 2668000000.00
+  - label: maths_020
+    symbol: Di
+    name: ma020
+    target: maths
+    module: graph
+    status: ok
+    elapsed_ms: 2687
+    avg_time_ns: 2687000064.00

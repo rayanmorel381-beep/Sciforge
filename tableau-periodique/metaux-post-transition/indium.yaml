@@ -1,0 +1,69 @@
+element:
+  name: Indium
+  symbol: In
+  atomic_number: 49
+  category: post-transition metal
+  group: 13
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s² 5p¹"
+  electronegativity: 1.78
+  atomic_mass: 114.818
+
+isotopes:
+  - name: Indium-111
+    symbol: "¹¹¹In"
+    mass_number: 111
+    neutrons: 62
+    atomic_mass: 110.905103
+    half_life: 2.8047
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Cadmium-111
+    natural_abundance: 0.0
+
+  - name: Indium-113
+    symbol: "¹¹³In"
+    mass_number: 113
+    neutrons: 64
+    atomic_mass: 112.904058
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0429
+    nuclear_spin: "9/2+"
+
+  - name: Indium-114m
+    symbol: "¹¹⁴ᵐIn"
+    mass_number: 114
+    neutrons: 65
+    atomic_mass: 113.904914
+    half_life: 49.51
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: isomeric transition
+        branching_ratio: 0.965
+        daughter: Indium-114
+      - mode: electron capture
+        branching_ratio: 0.035
+        daughter: Cadmium-114
+    natural_abundance: 0.0
+
+  - name: Indium-115
+    symbol: "¹¹⁵In"
+    mass_number: 115
+    neutrons: 66
+    atomic_mass: 114.903878
+    half_life: 4.41e14
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Tin-115
+    natural_abundance: 0.9571
+    nuclear_spin: "9/2+"

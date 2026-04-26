@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma02"
+symbol = "DVM"
+name = "ma013"
+target = "maths"
+module = "dispatch"
+status = "ok"
+elapsed_ms = "337"
+experiment_name = "maths_013"
+precision = "f64"
+elapsed_ms = 337
+iterations = 1
+avg_time_ns = 337000000.00
+min_time_ns = 337000000.00
+max_time_ns = 337000000.00
+time_stddev = 0.0000
+iterations_per_sec = 2.97
+result = "success=true code=Some(0) stdout_bytes=157 stderr_bytes=201"

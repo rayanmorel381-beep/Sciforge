@@ -1,0 +1,65 @@
+element:
+  name: Mendelevium
+  symbol: Md
+  atomic_number: 101
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f¹³ 7s²"
+  electronegativity: 1.3
+  atomic_mass: 258.098431
+
+isotopes:
+  - name: Mendelevium-257
+    symbol: "²⁵⁷Md"
+    mass_number: 257
+    neutrons: 156
+    atomic_mass: 257.095541
+    half_life: 5.52
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: electron_capture
+        branching_ratio: 0.85
+        daughter: Fermium-257
+      - mode: alpha
+        branching_ratio: 0.15
+        daughter: Einsteinium-253
+    natural_abundance: 0.0
+
+  - name: Mendelevium-258
+    symbol: "²⁵⁸Md"
+    mass_number: 258
+    neutrons: 157
+    atomic_mass: 258.098431
+    half_life: 51.5
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Einsteinium-254
+    natural_abundance: 0.0
+
+  - name: Mendelevium-260
+    symbol: "²⁶⁰Md"
+    mass_number: 260
+    neutrons: 159
+    atomic_mass: 260.10365
+    half_life: 31.8
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: spontaneous_fission
+        branching_ratio: 0.5
+        daughter: null
+      - mode: alpha
+        branching_ratio: 0.25
+        daughter: Einsteinium-256
+      - mode: electron_capture
+        branching_ratio: 0.15
+        daughter: Fermium-260
+      - mode: beta-
+        branching_ratio: 0.10
+        daughter: Nobelium-260
+    natural_abundance: 0.0

@@ -1,0 +1,96 @@
+element:
+  name: Neodymium
+  symbol: Nd
+  atomic_number: 60
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f⁴ 6s²"
+  electronegativity: 1.14
+  atomic_mass: 144.242
+
+isotopes:
+  - name: Neodymium-142
+    symbol: "¹⁴²Nd"
+    mass_number: 142
+    neutrons: 82
+    atomic_mass: 141.907723
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.27152
+
+  - name: Neodymium-143
+    symbol: "¹⁴³Nd"
+    mass_number: 143
+    neutrons: 83
+    atomic_mass: 142.909814
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.12174
+    nuclear_spin: "7/2-"
+
+  - name: Neodymium-144
+    symbol: "¹⁴⁴Nd"
+    mass_number: 144
+    neutrons: 84
+    atomic_mass: 143.910087
+    half_life: 2.29e15
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Cerium-140
+    natural_abundance: 0.23798
+
+  - name: Neodymium-145
+    symbol: "¹⁴⁵Nd"
+    mass_number: 145
+    neutrons: 85
+    atomic_mass: 144.912574
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.08293
+    nuclear_spin: "7/2-"
+
+  - name: Neodymium-146
+    symbol: "¹⁴⁶Nd"
+    mass_number: 146
+    neutrons: 86
+    atomic_mass: 145.913117
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.17189
+
+  - name: Neodymium-148
+    symbol: "¹⁴⁸Nd"
+    mass_number: 148
+    neutrons: 88
+    atomic_mass: 147.916893
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.05756
+
+  - name: Neodymium-150
+    symbol: "¹⁵⁰Nd"
+    mass_number: 150
+    neutrons: 90
+    atomic_mass: 149.920891
+    half_life: 6.7e18
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta-
+        branching_ratio: 1.0
+        daughter: Samarium-150
+    natural_abundance: 0.05638

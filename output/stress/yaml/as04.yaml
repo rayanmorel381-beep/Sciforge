@@ -1,0 +1,83 @@
+category: as04
+count: 10
+entries:
+  - label: astronomy_031
+    symbol: CV
+    name: as031
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5524
+    avg_time_ns: 5523999744.00
+  - label: astronomy_032
+    symbol: EV
+    name: as032
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5210
+    avg_time_ns: 5209999872.00
+  - label: astronomy_033
+    symbol: EVC
+    name: as033
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 220
+    avg_time_ns: 220000000.00
+  - label: astronomy_034
+    symbol: HDV
+    name: as034
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 2527
+    avg_time_ns: 2527000064.00
+  - label: astronomy_035
+    symbol: KPE
+    name: as035
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5407
+    avg_time_ns: 5407000064.00
+  - label: astronomy_036
+    symbol: PAC
+    name: as036
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5302
+    avg_time_ns: 5302000128.00
+  - label: astronomy_037
+    symbol: RL
+    name: as037
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 437
+    avg_time_ns: 437000000.00
+  - label: astronomy_038
+    symbol: SOI
+    name: as038
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 706
+    avg_time_ns: 706000000.00
+  - label: astronomy_039
+    symbol: TAR
+    name: as039
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5660
+    avg_time_ns: 5660000256.00
+  - label: astronomy_040
+    symbol: VVC
+    name: as040
+    target: astronomy
+    module: orbits
+    status: ok
+    elapsed_ms: 5399
+    avg_time_ns: 5399000064.00

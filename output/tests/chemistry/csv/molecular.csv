@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+molecular::bond_order,f64,1,1,1994989,1994989,1994989,0,1000,pass,molecular,BO,Bond order,chemistry,molecular::bond_order
+molecular::dipole_moment,f64,1,1,1808279,1808279,1808279,0,1000,pass,molecular,DM,Dipole moment,chemistry,molecular::dipole_moment
+molecular::formal_charge,f64,1,1,1829680,1829680,1829680,0,1000,pass,molecular,FC,Formal charge,chemistry,molecular::formal_charge
+molecular::molar_mass,f64,2,1,2067879,2067879,2067879,0,500,pass,molecular,MM,Molar mass,chemistry,molecular::molar_mass

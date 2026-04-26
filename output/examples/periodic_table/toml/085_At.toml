@@ -1,0 +1,16 @@
+[benchmark]
+category = "halogen"
+symbol = "At"
+name = "Astatine"
+config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵"
+mass = "210"
+experiment_name = "At_Astatine_benchmark"
+precision = "f32"
+elapsed_ms = 6
+iterations = 1000
+avg_time_ns = 6571.25
+min_time_ns = 6571.25
+max_time_ns = 6571.25
+time_stddev = 0.0000
+iterations_per_sec = 166666.67
+result = "Z=85 | At (Astatine) | 210 u | halogen | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵"

@@ -1,0 +1,83 @@
+element:
+  name: Uranium
+  symbol: U
+  atomic_number: 92
+  category: actinide
+  group: null
+  period: 7
+  electron_configuration: "[Rn] 5f³ 6d¹ 7s²"
+  electronegativity: 1.38
+  atomic_mass: 238.02891
+
+isotopes:
+  - name: Uranium-233
+    symbol: "²³³U"
+    mass_number: 233
+    neutrons: 141
+    atomic_mass: 233.039635
+    half_life: 1.592e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Thorium-229
+    natural_abundance: 0.0
+
+  - name: Uranium-234
+    symbol: "²³⁴U"
+    mass_number: 234
+    neutrons: 142
+    atomic_mass: 234.040952
+    half_life: 2.455e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Thorium-230
+    natural_abundance: 0.000054
+
+  - name: Uranium-235
+    symbol: "²³⁵U"
+    mass_number: 235
+    neutrons: 143
+    atomic_mass: 235.043930
+    half_life: 7.04e8
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Thorium-231
+    natural_abundance: 0.007204
+    nuclear_spin: "7/2-"
+
+  - name: Uranium-236
+    symbol: "²³⁶U"
+    mass_number: 236
+    neutrons: 144
+    atomic_mass: 236.045568
+    half_life: 2.342e7
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Thorium-232
+    natural_abundance: 0.0
+
+  - name: Uranium-238
+    symbol: "²³⁸U"
+    mass_number: 238
+    neutrons: 146
+    atomic_mass: 238.050788
+    half_life: 4.468e9
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: alpha
+        branching_ratio: 1.0
+        daughter: Thorium-234
+    natural_abundance: 0.992742
+    nuclear_spin: "0+"

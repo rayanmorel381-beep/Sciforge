@@ -1,0 +1,17 @@
+category: geology
+symbol: SUM
+name: GE Summary
+target: geology
+module: summary
+status: ok
+elapsed_ms: 191729
+experiment_name: geology_summary
+precision: f64
+elapsed_ms: 191729
+iterations: 1
+avg_time_ns: 4357476864.00
+min_time_ns: 4357476864.00
+max_time_ns: 4357476864.00
+time_stddev: 0.0000
+iterations_per_sec: 0.01
+result: tests_total=44 tests_ok=44 tests_failed=0 elapsed_sum_ms=191729 min_ms=167 max_ms=5607 avg_ms=4357.48

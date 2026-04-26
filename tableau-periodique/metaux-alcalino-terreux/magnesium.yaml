@@ -1,0 +1,89 @@
+element:
+  name: Magnesium
+  symbol: Mg
+  atomic_number: 12
+  category: alkaline earth metal
+  group: 2
+  period: 3
+  electron_configuration: "[Ne] 3s²"
+  electronegativity: 1.31
+  atomic_mass: 24.305
+
+isotopes:
+  - name: Magnesium-23
+    symbol: "²³Mg"
+    mass_number: 23
+    neutrons: 11
+    atomic_mass: 22.99412
+    half_life: 11.317
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Sodium-23
+    natural_abundance: 0.0
+
+  - name: Magnesium-24
+    symbol: "²⁴Mg"
+    mass_number: 24
+    neutrons: 12
+    atomic_mass: 23.985042
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.7899
+    nuclear_spin: "0+"
+
+  - name: Magnesium-25
+    symbol: "²⁵Mg"
+    mass_number: 25
+    neutrons: 13
+    atomic_mass: 24.985837
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1000
+    nuclear_spin: "5/2+"
+
+  - name: Magnesium-26
+    symbol: "²⁶Mg"
+    mass_number: 26
+    neutrons: 14
+    atomic_mass: 25.982593
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1101
+    nuclear_spin: "0+"
+
+  - name: Magnesium-27
+    symbol: "²⁷Mg"
+    mass_number: 27
+    neutrons: 15
+    atomic_mass: 26.984341
+    half_life: 9.458
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Aluminum-27
+    natural_abundance: 0.0
+
+  - name: Magnesium-28
+    symbol: "²⁸Mg"
+    mass_number: 28
+    neutrons: 16
+    atomic_mass: 27.983877
+    half_life: 20.915
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Aluminum-28
+    natural_abundance: 0.0

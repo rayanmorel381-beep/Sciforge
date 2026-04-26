@@ -1,0 +1,39 @@
+category: tectonics
+count: 6
+entries:
+  - label: tectonics_geothermal_gradient
+    symbol: GG
+    name: Geothermal gradient
+    domain: geology
+    test: "tectonics::geothermal_gradient"
+    avg_time_ns: 1749840.00
+  - label: tectonics_heat_flow
+    symbol: HF
+    name: Heat flow
+    domain: geology
+    test: "tectonics::heat_flow"
+    avg_time_ns: 1757359.00
+  - label: tectonics_isostatic_equilibrium
+    symbol: IE
+    name: Isostatic equilibrium
+    domain: geology
+    test: "tectonics::isostatic_equilibrium"
+    avg_time_ns: 2578839.00
+  - label: tectonics_mg_number
+    symbol: MN
+    name: Mg number
+    domain: geology
+    test: "tectonics::mg_number"
+    avg_time_ns: 2736879.00
+  - label: tectonics_plate_velocity
+    symbol: PV
+    name: Plate velocity
+    domain: geology
+    test: "tectonics::plate_velocity"
+    avg_time_ns: 2190369.00
+  - label: tectonics_viscosity_arrhenius
+    symbol: VA
+    name: Viscosity arrhenius
+    domain: geology
+    test: "tectonics::viscosity_arrhenius"
+    avg_time_ns: 2167569.00

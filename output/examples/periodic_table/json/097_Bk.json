@@ -1,0 +1,17 @@
+{
+  "category": "actinide",
+  "symbol": "Bk",
+  "name": "Berkelium",
+  "config": "[Rn] 5f⁹ 7s²",
+  "mass": "247.070307",
+  "experiment_name": "Bk_Berkelium_benchmark",
+  "precision": "f32",
+  "elapsed_ms": 7,
+  "iterations": 1000,
+  "avg_time_ns": 7534.16,
+  "min_time_ns": 7534.16,
+  "max_time_ns": 7534.16,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 142857.14,
+  "result": "Z=97 | Bk (Berkelium) | 247.070307 u | actinide | [Rn] 5f⁹ 7s²"
+}

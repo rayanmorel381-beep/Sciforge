@@ -1,0 +1,135 @@
+element:
+  name: Fluorine
+  symbol: F
+  atomic_number: 9
+  category: halogen
+  group: 17
+  period: 2
+  electron_configuration: "1s² 2s² 2p⁵"
+  electronegativity: 3.98
+  atomic_mass: 18.998403
+
+isotopes:
+  - name: Fluorine-14
+    symbol: "¹⁴F"
+    mass_number: 14
+    neutrons: 5
+    atomic_mass: 14.03506
+    half_life: 5.0e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Fluorine-15
+    symbol: "¹⁵F"
+    mass_number: 15
+    neutrons: 6
+    atomic_mass: 15.01801
+    half_life: 4.1e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: proton emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Fluorine-17
+    symbol: "¹⁷F"
+    mass_number: 17
+    neutrons: 8
+    atomic_mass: 17.002095
+    half_life: 64.49
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Oxygen-17
+    natural_abundance: 0.0
+
+  - name: Fluorine-18
+    symbol: "¹⁸F"
+    mass_number: 18
+    neutrons: 9
+    atomic_mass: 18.000938
+    half_life: 109.77
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.967
+        daughter: Oxygen-18
+      - mode: electron capture
+        branching_ratio: 0.033
+    natural_abundance: 0.0
+
+  - name: Fluorine-19
+    symbol: "¹⁹F"
+    mass_number: 19
+    neutrons: 10
+    atomic_mass: 18.998403
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "1/2+"
+
+  - name: Fluorine-20
+    symbol: "²⁰F"
+    mass_number: 20
+    neutrons: 11
+    atomic_mass: 19.999981
+    half_life: 11.163
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Neon-20
+    natural_abundance: 0.0
+
+  - name: Fluorine-21
+    symbol: "²¹F"
+    mass_number: 21
+    neutrons: 12
+    atomic_mass: 20.99995
+    half_life: 4.158
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Neon-21
+    natural_abundance: 0.0
+
+  - name: Fluorine-22
+    symbol: "²²F"
+    mass_number: 22
+    neutrons: 13
+    atomic_mass: 22.00300
+    half_life: 4.23
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.89
+      - mode: beta- neutron emission
+        branching_ratio: 0.11
+    natural_abundance: 0.0
+
+  - name: Fluorine-29
+    symbol: "²⁹F"
+    mass_number: 29
+    neutrons: 20
+    atomic_mass: 29.04326
+    half_life: 2.6
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- neutron emission
+        branching_ratio: 1.0
+    natural_abundance: 0.0

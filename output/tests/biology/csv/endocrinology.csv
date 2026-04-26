@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+endocrinology::homa_ir,f64,1,1,1825890,1825890,1825890,0,1000,pass,endocrinology,HI,Homa ir,biology,endocrinology::homa_ir
+endocrinology::hormone_half_life_clearance,f64,1,1,1803669,1803669,1803669,0,1000,pass,endocrinology,HHL,Hormone half life clearance,biology,endocrinology::hormone_half_life_clearance
+endocrinology::insulin_sensitivity_index,f64,1,1,1869779,1869779,1869779,0,1000,pass,endocrinology,ISI,Insulin sensitivity index,biology,endocrinology::insulin_sensitivity_index
+endocrinology::receptor_saturation,f64,1,1,1801319,1801319,1801319,0,1000,pass,endocrinology,RS,Receptor saturation,biology,endocrinology::receptor_saturation

@@ -1,0 +1,16 @@
+category: Giant
+count: 1
+entries:
+  - label: Aldebaran
+    symbol: K
+    name: Aldebaran
+    spectral: K5III
+    mass: 1.160 M☉
+    radius: 44.130 R☉
+    temperature: 3910 K
+    luminosity: 1.570e29 W
+    abs_magnitude: -0.69
+    schwarzschild: 3426.96 m
+    ms_lifetime: 0.0 Myr
+    wien_peak: 741 nm
+    avg_time_ns: 1723.64

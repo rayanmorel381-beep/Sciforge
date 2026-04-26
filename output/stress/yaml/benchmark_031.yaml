@@ -1,0 +1,17 @@
+category: bm04
+symbol: TA
+name: bm031
+target: benchmark
+module: simulation
+status: ok
+elapsed_ms: 1331
+experiment_name: benchmark_031
+precision: f64
+elapsed_ms: 1331
+iterations: 1
+avg_time_ns: 1331000064.00
+min_time_ns: 1331000064.00
+max_time_ns: 1331000064.00
+time_stddev: 0.0000
+iterations_per_sec: 0.75
+result: success=true code=Some(0) stdout_bytes=151 stderr_bytes=266

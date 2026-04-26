@@ -1,0 +1,11 @@
+category: parser
+count: 1
+entries:
+  - label: parser_summary
+    symbol: SUM
+    name: PR Summary
+    target: parser
+    module: summary
+    status: ok
+    elapsed_ms: 269092
+    avg_time_ns: 3737388800.00

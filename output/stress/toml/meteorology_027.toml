@@ -1,0 +1,18 @@
+[benchmark]
+category = "me03"
+symbol = "TVR"
+name = "me027"
+target = "meteorology"
+module = "precipitation"
+status = "ok"
+elapsed_ms = "4901"
+experiment_name = "meteorology_027"
+precision = "f64"
+elapsed_ms = 4901
+iterations = 1
+avg_time_ns = 4901000192.00
+min_time_ns = 4901000192.00
+max_time_ns = 4901000192.00
+time_stddev = 0.0000
+iterations_per_sec = 0.20
+result = "success=true code=Some(0) stdout_bytes=167 stderr_bytes=270"

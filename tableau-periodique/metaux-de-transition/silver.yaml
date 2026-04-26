@@ -1,0 +1,97 @@
+element:
+  name: Silver
+  symbol: Ag
+  atomic_number: 47
+  category: transition metal
+  group: 11
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s¹"
+  electronegativity: 1.93
+  atomic_mass: 107.8682
+
+isotopes:
+  - name: Silver-105
+    symbol: "¹⁰⁵Ag"
+    mass_number: 105
+    neutrons: 58
+    atomic_mass: 104.906529
+    half_life: 41.29
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Palladium-105
+    natural_abundance: 0.0
+
+  - name: Silver-107
+    symbol: "¹⁰⁷Ag"
+    mass_number: 107
+    neutrons: 60
+    atomic_mass: 106.905097
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.51839
+    nuclear_spin: "1/2-"
+
+  - name: Silver-108m
+    symbol: "¹⁰⁸ᵐAg"
+    mass_number: 108
+    neutrons: 61
+    atomic_mass: 107.905956
+    half_life: 418
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.912
+        daughter: Palladium-108
+      - mode: isomeric transition
+        branching_ratio: 0.088
+        daughter: Silver-108
+    natural_abundance: 0.0
+
+  - name: Silver-109
+    symbol: "¹⁰⁹Ag"
+    mass_number: 109
+    neutrons: 62
+    atomic_mass: 108.904752
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.48161
+    nuclear_spin: "1/2-"
+
+  - name: Silver-110m
+    symbol: "¹¹⁰ᵐAg"
+    mass_number: 110
+    neutrons: 63
+    atomic_mass: 109.906107
+    half_life: 249.83
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.987
+        daughter: Cadmium-110
+      - mode: isomeric transition
+        branching_ratio: 0.013
+        daughter: Silver-110
+    natural_abundance: 0.0
+
+  - name: Silver-111
+    symbol: "¹¹¹Ag"
+    mass_number: 111
+    neutrons: 64
+    atomic_mass: 110.905291
+    half_life: 7.45
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Cadmium-111
+    natural_abundance: 0.0

@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma05"
+symbol = "MCP"
+name = "ma047"
+target = "maths"
+module = "probability"
+status = "ok"
+elapsed_ms = "4515"
+experiment_name = "maths_047"
+precision = "f64"
+elapsed_ms = 4515
+iterations = 1
+avg_time_ns = 4514999808.00
+min_time_ns = 4514999808.00
+max_time_ns = 4514999808.00
+time_stddev = 0.0000
+iterations_per_sec = 0.22
+result = "success=true code=Some(0) stdout_bytes=153 stderr_bytes=206"

@@ -1,0 +1,69 @@
+category: stellar
+count: 11
+entries:
+  - label: stellar_absolute_magnitude_and_distance_modulus_roundtrip
+    symbol: AMA
+    name: Absolute magnitude and distance modulus roundtrip
+    domain: astronomy
+    test: "stellar::absolute_magnitude_and_distance_modulus_roundtrip"
+    avg_time_ns: 2343329.00
+  - label: stellar_chandrasekhar_limit
+    symbol: CL
+    name: Chandrasekhar limit
+    domain: astronomy
+    test: "stellar::chandrasekhar_limit"
+    avg_time_ns: 2510739.00
+  - label: stellar_distance_modulus
+    symbol: DM
+    name: Distance modulus
+    domain: astronomy
+    test: "stellar::distance_modulus"
+    avg_time_ns: 2460459.00
+  - label: stellar_eddington_luminosity_scales_linearly_with_mass
+    symbol: ELS
+    name: Eddington luminosity scales linearly with mass
+    domain: astronomy
+    test: "stellar::eddington_luminosity_scales_linearly_with_mass"
+    avg_time_ns: 2349879.00
+  - label: stellar_luminosity_from_radius_temp
+    symbol: LFR
+    name: Luminosity from radius temp
+    domain: astronomy
+    test: "stellar::luminosity_from_radius_temp"
+    avg_time_ns: 2222319.00
+  - label: stellar_main_sequence_lifetime
+    symbol: MSL
+    name: Main sequence lifetime
+    domain: astronomy
+    test: "stellar::main_sequence_lifetime"
+    avg_time_ns: 2103799.00
+  - label: stellar_mass_luminosity_monotonic_in_solar_range
+    symbol: MLM
+    name: Mass luminosity monotonic in solar range
+    domain: astronomy
+    test: "stellar::mass_luminosity_monotonic_in_solar_range"
+    avg_time_ns: 1933069.00
+  - label: stellar_schwarzschild_radius
+    symbol: SR
+    name: Schwarzschild radius
+    domain: astronomy
+    test: "stellar::schwarzschild_radius"
+    avg_time_ns: 1887099.00
+  - label: stellar_stefan_boltzmann_blackbody
+    symbol: SBB
+    name: Stefan boltzmann blackbody
+    domain: astronomy
+    test: "stellar::stefan_boltzmann_blackbody"
+    avg_time_ns: 1837400.00
+  - label: stellar_stellar_flux_inverse_square_distance
+    symbol: SFI
+    name: Stellar flux inverse square distance
+    domain: astronomy
+    test: "stellar::stellar_flux_inverse_square_distance"
+    avg_time_ns: 2429828.00
+  - label: stellar_wien_peak_wavelength
+    symbol: WPW
+    name: Wien peak wavelength
+    domain: astronomy
+    test: "stellar::wien_peak_wavelength"
+    avg_time_ns: 2136050.00

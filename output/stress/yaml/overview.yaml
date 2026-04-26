@@ -1,0 +1,11 @@
+category: overview
+count: 1
+entries:
+  - label: stress_summary
+    symbol: SUM
+    name: Stress Summary
+    target: stress
+    module: overview
+    status: ok
+    elapsed_ms: 7638
+    avg_time_ns: 3595221760.00

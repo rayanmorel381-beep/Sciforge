@@ -1,0 +1,17 @@
+[benchmark]
+category = "Acid-Base"
+name = "Sulfuric acid neutralization"
+formula = "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O"
+reactant_mass = "178.0655 g/mol"
+product_mass = "178.0655 g/mol"
+atom_economy = "100.0%"
+experiment_name = "Sulfuric acid neutralization_calc"
+precision = "f64"
+elapsed_ms = 180
+iterations = 5000
+avg_time_ns = 36085.16
+min_time_ns = 36085.16
+max_time_ns = 36085.16
+time_stddev = 0.0000
+iterations_per_sec = 27777.78
+result = "Sulfuric acid neutralization | H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O | M(react)=178.0655 g/mol | M(prod)=178.0655 g/mol | Atom economy=100.0%"

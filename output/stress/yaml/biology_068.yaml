@@ -1,0 +1,17 @@
+category: bi07
+symbol: RS
+name: bi068
+target: biology
+module: endocrinology
+status: ok
+elapsed_ms: 2910
+experiment_name: biology_068
+precision: f64
+elapsed_ms: 2910
+iterations: 1
+avg_time_ns: 2910000128.00
+min_time_ns: 2910000128.00
+max_time_ns: 2910000128.00
+time_stddev: 0.0000
+iterations_per_sec: 0.34
+result: success=true code=Some(0) stdout_bytes=161 stderr_bytes=262

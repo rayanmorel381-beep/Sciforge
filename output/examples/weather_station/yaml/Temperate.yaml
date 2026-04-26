@@ -1,0 +1,31 @@
+category: Temperate
+count: 2
+entries:
+  - label: Paris CDG
+    symbol: P
+    name: Paris CDG
+    altitude: 119 m
+    temperature: 12.4 °C
+    pressure: 1013.2 hPa
+    relative_humidity: 78%
+    saturation_vp: 14.39 hPa
+    dew_point: 8.7 °C
+    density_altitude: -164 m
+    potential_temp: 285.5 K
+    mixing_ratio: 6.97 g/kg
+    lcl: 381 m AGL
+    avg_time_ns: 5629.84
+  - label: Tokyo Narita
+    symbol: T
+    name: Tokyo Narita
+    altitude: 44 m
+    temperature: 16.3 °C
+    pressure: 1015.0 hPa
+    relative_humidity: 71%
+    saturation_vp: 18.52 hPa
+    dew_point: 11.0 °C
+    density_altitude: 211 m
+    potential_temp: 289.3 K
+    mixing_ratio: 8.16 g/kg
+    lcl: 539 m AGL
+    avg_time_ns: 5656.88

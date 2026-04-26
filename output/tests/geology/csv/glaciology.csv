@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+glaciology::glacial_bed_erosion,f64,2,1,2156729,2156729,2156729,0,500,pass,glaciology,GBE,Glacial bed erosion,geology,glaciology::glacial_bed_erosion
+glaciology::glen_strain_increases_with_stress,f64,2,1,2050680,2050680,2050680,0,500,pass,glaciology,GSI,Glen strain increases with stress,geology,glaciology::glen_strain_increases_with_stress
+glaciology::glen_strain_rate,f64,1,1,1764559,1764559,1764559,0,1000,pass,glaciology,GSR,Glen strain rate,geology,glaciology::glen_strain_rate
+glaciology::ice_viscosity,f64,1,1,1694559,1694559,1694559,0,1000,pass,glaciology,IV,Ice viscosity,geology,glaciology::ice_viscosity
+glaciology::shallow_ice_velocity,f64,1,1,1719449,1719449,1719449,0,1000,pass,glaciology,SIV,Shallow ice velocity,geology,glaciology::shallow_ice_velocity

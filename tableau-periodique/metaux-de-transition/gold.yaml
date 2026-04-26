@@ -1,0 +1,82 @@
+element:
+  name: Gold
+  symbol: Au
+  atomic_number: 79
+  category: transition metal
+  group: 11
+  period: 6
+  electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s¹"
+  electronegativity: 2.54
+  atomic_mass: 196.966569
+
+isotopes:
+  - name: Gold-195
+    symbol: "¹⁹⁵Au"
+    mass_number: 195
+    neutrons: 116
+    atomic_mass: 194.965035
+    half_life: 186.10
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Platinum-195
+    natural_abundance: 0.0
+
+  - name: Gold-196
+    symbol: "¹⁹⁶Au"
+    mass_number: 196
+    neutrons: 117
+    atomic_mass: 195.966570
+    half_life: 6.1669
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.93
+        daughter: Platinum-196
+      - mode: beta-
+        branching_ratio: 0.07
+        daughter: Mercury-196
+    natural_abundance: 0.0
+
+  - name: Gold-197
+    symbol: "¹⁹⁷Au"
+    mass_number: 197
+    neutrons: 118
+    atomic_mass: 196.966569
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "3/2+"
+
+  - name: Gold-198
+    symbol: "¹⁹⁸Au"
+    mass_number: 198
+    neutrons: 119
+    atomic_mass: 197.968244
+    half_life: 2.6941
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Mercury-198
+    natural_abundance: 0.0
+
+  - name: Gold-199
+    symbol: "¹⁹⁹Au"
+    mass_number: 199
+    neutrons: 120
+    atomic_mass: 198.968765
+    half_life: 3.139
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Mercury-199
+    natural_abundance: 0.0

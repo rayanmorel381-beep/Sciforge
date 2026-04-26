@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+reaction_engineering::cstr_volume,f64,2,1,2875219,2875219,2875219,0,500,pass,reaction_engineering,CV,Cstr volume,chemistry,reaction_engineering::cstr_volume
+reaction_engineering::damkohler_number,f64,3,1,3150919,3150919,3150919,0,333.33334,pass,reaction_engineering,DN,Damkohler number,chemistry,reaction_engineering::damkohler_number
+reaction_engineering::pfr_conversion_first_order,f64,2,1,2530869,2530869,2530869,0,500,pass,reaction_engineering,PCF,Pfr conversion first order,chemistry,reaction_engineering::pfr_conversion_first_order

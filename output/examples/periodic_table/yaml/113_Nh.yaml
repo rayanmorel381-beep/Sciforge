@@ -1,0 +1,15 @@
+category: unknown
+symbol: Nh
+name: Nihonium
+config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹
+mass: 286.182
+experiment_name: Nh_Nihonium_benchmark
+precision: f32
+elapsed_ms: 47
+iterations: 5000
+avg_time_ns: 9439.48
+min_time_ns: 9439.48
+max_time_ns: 9439.48
+time_stddev: 0.0000
+iterations_per_sec: 106382.98
+result: Z=113 | Nh (Nihonium) | 286.182 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹

@@ -1,0 +1,87 @@
+element:
+  name: Francium
+  symbol: Fr
+  atomic_number: 87
+  category: alkali metal
+  group: 1
+  period: 7
+  electron_configuration: "[Rn] 7s¹"
+  electronegativity: 0.7
+  atomic_mass: 223.0
+
+isotopes:
+  - name: Francium-208
+    symbol: "²⁰⁸Fr"
+    mass_number: 208
+    neutrons: 121
+    atomic_mass: 208.00360
+    half_life: 59.1
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 0.89
+      - mode: electron capture
+        branching_ratio: 0.11
+    natural_abundance: 0.0
+
+  - name: Francium-210
+    symbol: "²¹⁰Fr"
+    mass_number: 210
+    neutrons: 123
+    atomic_mass: 210.00339
+    half_life: 3.18
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 0.60
+      - mode: electron capture
+        branching_ratio: 0.40
+    natural_abundance: 0.0
+
+  - name: Francium-212
+    symbol: "²¹²Fr"
+    mass_number: 212
+    neutrons: 125
+    atomic_mass: 212.00462
+    half_life: 20.0
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 0.57
+      - mode: alpha emission
+        branching_ratio: 0.43
+    natural_abundance: 0.0
+
+  - name: Francium-221
+    symbol: "²²¹Fr"
+    mass_number: 221
+    neutrons: 134
+    atomic_mass: 221.01426
+    half_life: 4.9
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: alpha emission
+        branching_ratio: 1.0
+        daughter: Astatine-217
+    natural_abundance: trace
+
+  - name: Francium-223
+    symbol: "²²³Fr"
+    mass_number: 223
+    neutrons: 136
+    atomic_mass: 223.01974
+    half_life: 22.00
+    half_life_unit: minutes
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.99994
+        daughter: Radium-223
+      - mode: alpha emission
+        branching_ratio: 0.00006
+        daughter: Astatine-219
+    natural_abundance: trace

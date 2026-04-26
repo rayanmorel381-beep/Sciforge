@@ -1,0 +1,21 @@
+category: phylogenetics
+count: 3
+entries:
+  - label: phylogenetics_jukes_cantor_distance
+    symbol: JCD
+    name: Jukes cantor distance
+    domain: biology
+    test: "phylogenetics::jukes_cantor_distance"
+    avg_time_ns: 2288709.00
+  - label: phylogenetics_parsimony_score
+    symbol: PS
+    name: Parsimony score
+    domain: biology
+    test: "phylogenetics::parsimony_score"
+    avg_time_ns: 2182899.00
+  - label: phylogenetics_sackin_index
+    symbol: SI
+    name: Sackin index
+    domain: biology
+    test: "phylogenetics::sackin_index"
+    avg_time_ns: 1973689.00

@@ -1,0 +1,11 @@
+category: scientific_properties
+count: 1
+entries:
+  - label: scientific_properties_summary
+    symbol: SUM
+    name: SP Summary
+    target: scientific_properties
+    module: summary
+    status: ok
+    elapsed_ms: 14023
+    avg_time_ns: 4674333696.00

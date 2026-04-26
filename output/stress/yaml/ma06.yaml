@@ -1,0 +1,83 @@
+category: ma06
+count: 10
+entries:
+  - label: maths_051
+    symbol: KF1
+    name: ma051
+    target: maths
+    module: signal
+    status: ok
+    elapsed_ms: 2916
+    avg_time_ns: 2916000000.00
+  - label: maths_052
+    symbol: LPR
+    name: ma052
+    target: maths
+    module: signal
+    status: ok
+    elapsed_ms: 2851
+    avg_time_ns: 2851000064.00
+  - label: maths_053
+    symbol: CG
+    name: ma053
+    target: maths
+    module: sparse
+    status: ok
+    elapsed_ms: 2219
+    avg_time_ns: 2219000064.00
+  - label: maths_054
+    symbol: JI
+    name: ma054
+    target: maths
+    module: sparse
+    status: ok
+    elapsed_ms: 3348
+    avg_time_ns: 3348000000.00
+  - label: maths_055
+    symbol: SA
+    name: ma055
+    target: maths
+    module: sparse
+    status: ok
+    elapsed_ms: 1130
+    avg_time_ns: 1130000000.00
+  - label: maths_056
+    symbol: EZ
+    name: ma056
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3250
+    avg_time_ns: 3249999872.00
+  - label: maths_057
+    symbol: GM
+    name: ma057
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3606
+    avg_time_ns: 3606000128.00
+  - label: maths_058
+    symbol: HM
+    name: ma058
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3319
+    avg_time_ns: 3319000064.00
+  - label: maths_059
+    symbol: LRP
+    name: ma059
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3652
+    avg_time_ns: 3652000000.00
+  - label: maths_060
+    symbol: MB
+    name: ma060
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 3038
+    avg_time_ns: 3038000128.00

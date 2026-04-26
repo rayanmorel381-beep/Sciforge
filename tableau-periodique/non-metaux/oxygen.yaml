@@ -1,0 +1,176 @@
+element:
+  name: Oxygen
+  symbol: O
+  atomic_number: 8
+  category: nonmetal
+  group: 16
+  period: 2
+  electron_configuration: "1s² 2s² 2p⁴"
+  electronegativity: 3.44
+  atomic_mass: 15.999
+
+isotopes:
+  - name: Oxygen-12
+    symbol: "¹²O"
+    mass_number: 12
+    neutrons: 4
+    atomic_mass: 12.03440
+    half_life: 5.8e-22
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: two-proton emission
+        branching_ratio: 0.60
+      - mode: proton emission
+        branching_ratio: 0.40
+    natural_abundance: 0.0
+
+  - name: Oxygen-13
+    symbol: "¹³O"
+    mass_number: 13
+    neutrons: 5
+    atomic_mass: 13.02481
+    half_life: 8.58
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 0.898
+      - mode: beta+ proton emission
+        branching_ratio: 0.102
+    natural_abundance: 0.0
+
+  - name: Oxygen-14
+    symbol: "¹⁴O"
+    mass_number: 14
+    neutrons: 6
+    atomic_mass: 14.008596
+    half_life: 70.620
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Nitrogen-14
+    natural_abundance: 0.0
+
+  - name: Oxygen-15
+    symbol: "¹⁵O"
+    mass_number: 15
+    neutrons: 7
+    atomic_mass: 15.003066
+    half_life: 122.24
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta+ (positron emission)
+        branching_ratio: 1.0
+        daughter: Nitrogen-15
+    natural_abundance: 0.0
+
+  - name: Oxygen-16
+    symbol: "¹⁶O"
+    mass_number: 16
+    neutrons: 8
+    atomic_mass: 15.994915
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.99757
+    nuclear_spin: "0+"
+
+  - name: Oxygen-17
+    symbol: "¹⁷O"
+    mass_number: 17
+    neutrons: 9
+    atomic_mass: 16.999132
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00038
+    nuclear_spin: "5/2+"
+
+  - name: Oxygen-18
+    symbol: "¹⁸O"
+    mass_number: 18
+    neutrons: 10
+    atomic_mass: 17.999161
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00205
+    nuclear_spin: "0+"
+
+  - name: Oxygen-19
+    symbol: "¹⁹O"
+    mass_number: 19
+    neutrons: 11
+    atomic_mass: 19.003580
+    half_life: 26.464
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Fluorine-19
+    natural_abundance: 0.0
+
+  - name: Oxygen-20
+    symbol: "²⁰O"
+    mass_number: 20
+    neutrons: 12
+    atomic_mass: 20.00408
+    half_life: 13.51
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Fluorine-20
+    natural_abundance: 0.0
+
+  - name: Oxygen-21
+    symbol: "²¹O"
+    mass_number: 21
+    neutrons: 13
+    atomic_mass: 21.00866
+    half_life: 3.42
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+    natural_abundance: 0.0
+
+  - name: Oxygen-22
+    symbol: "²²O"
+    mass_number: 22
+    neutrons: 14
+    atomic_mass: 22.01000
+    half_life: 2.25
+    half_life_unit: seconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.78
+      - mode: beta- neutron emission
+        branching_ratio: 0.22
+    natural_abundance: 0.0
+
+  - name: Oxygen-24
+    symbol: "²⁴O"
+    mass_number: 24
+    neutrons: 16
+    atomic_mass: 24.01986
+    half_life: 65.0
+    half_life_unit: milliseconds
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 0.42
+      - mode: beta- neutron emission
+        branching_ratio: 0.58
+    natural_abundance: 0.0

@@ -1,0 +1,23 @@
+category: Tropical
+symbol: S
+name: Singapore
+altitude: 16 m
+temperature: 27.5 °C
+pressure: 1010.0 hPa
+relative_humidity: 84%
+saturation_vp: 36.72 hPa
+dew_point: 24.6 °C
+density_altitude: 1520 m
+potential_temp: 300.9 K
+mixing_ratio: 19.59 g/kg
+lcl: 301 m AGL
+experiment_name: Singapore_weather
+precision: f64
+elapsed_ms: 28
+iterations: 5000
+avg_time_ns: 5640.50
+min_time_ns: 5640.50
+max_time_ns: 5640.50
+time_stddev: 0.0000
+iterations_per_sec: 178571.42
+result: Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K

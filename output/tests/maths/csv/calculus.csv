@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+calculus::falling_factorial,f64,2,1,2097549,2097549,2097549,0,500,pass,calculus,FF,Falling factorial,maths,calculus::falling_factorial
+calculus::first_derivative_x_squared,f64,1,1,1928369,1928369,1928369,0,1000,pass,calculus,FDX,First derivative x squared,maths,calculus::first_derivative_x_squared
+calculus::rising_factorial,f64,1,1,1884860,1884860,1884860,0,1000,pass,calculus,RF,Rising factorial,maths,calculus::rising_factorial
+calculus::second_derivative_x_squared,f64,1,1,1798479,1798479,1798479,0,1000,pass,calculus,SDX,Second derivative x squared,maths,calculus::second_derivative_x_squared
+calculus::stat_binomial_pmf,f64,1,1,1840889,1840889,1840889,0,1000,pass,calculus,SBP,Stat binomial pmf,maths,calculus::stat_binomial_pmf

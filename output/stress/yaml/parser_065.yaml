@@ -1,0 +1,17 @@
+category: pr07
+symbol: YN
+name: pr065
+target: parser
+module: yaml
+status: ok
+elapsed_ms: 586
+experiment_name: parser_065
+precision: f64
+elapsed_ms: 586
+iterations: 1
+avg_time_ns: 586000000.00
+min_time_ns: 586000000.00
+max_time_ns: 586000000.00
+time_stddev: 0.0000
+iterations_per_sec: 1.71
+result: success=true code=Some(0) stdout_bytes=141 stderr_bytes=260

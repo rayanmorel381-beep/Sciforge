@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+hub_031,f64,5419,1,5419000000,5419000000,5419000000,0,0.18453589,success=true code=Some(0) stdout_bytes=176 stderr_bytes=306,hb04,EM,hb031,hub,cross_domain,ok,5419
+hub_032,f64,485,1,485000000,485000000,485000000,0,2.0618556,success=true code=Some(0) stdout_bytes=171 stderr_bytes=358,hb04,FDF,hb032,hub,cross_domain,ok,485
+hub_033,f64,4230,1,4230000000,4230000000,4230000000,0,0.23640662,success=true code=Some(0) stdout_bytes=167 stderr_bytes=254,hb04,RN,hb033,hub,cross_domain,ok,4230
+hub_034,f64,5403,1,5403000000,5403000000,5403000000,0,0.18508236,success=true code=Some(0) stdout_bytes=169 stderr_bytes=202,hb04,SDF,hb034,hub,cross_domain,ok,5403
+hub_035,f64,5469,1,5469000000,5469000000,5469000000,0,0.18284878,success=true code=Some(0) stdout_bytes=170 stderr_bytes=202,hb04,CAA,hb035,hub,cross_domain,ok,5469
+hub_036,f64,472,1,472000000,472000000,472000000,0,2.118644,success=true code=Some(0) stdout_bytes=154 stderr_bytes=254,hb04,CE,hb036,hub,cross_domain,ok,472
+hub_037,f64,3423,1,3423000000,3423000000,3423000000,0,0.2921414,success=true code=Some(0) stdout_bytes=170 stderr_bytes=254,hb04,CPA,hb037,hub,cross_domain,ok,3423
+hub_038,f64,411,1,411000000,411000000,411000000,0,2.43309,success=true code=Some(0) stdout_bytes=163 stderr_bytes=358,hb04,CRS,hb038,hub,cross_domain,ok,411
+hub_039,f64,5370,1,5370000000,5370000000,5370000000,0,0.18621974,success=true code=Some(0) stdout_bytes=174 stderr_bytes=254,hb04,CDB,hb039,hub,cross_domain,ok,5370
+hub_040,f64,371,1,371000000,371000000,371000000,0,2.695418,success=true code=Some(0) stdout_bytes=174 stderr_bytes=202,hb04,CDE,hb040,hub,cross_domain,ok,371

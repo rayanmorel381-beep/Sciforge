@@ -1,0 +1,16 @@
+[benchmark]
+category = "lanthanide"
+symbol = "Eu"
+name = "Europium"
+config = "[Xe] 4f⁷ 6s²"
+mass = "151.964"
+experiment_name = "Eu_Europium_benchmark"
+precision = "f32"
+elapsed_ms = 48
+iterations = 10000
+avg_time_ns = 4832.15
+min_time_ns = 4832.15
+max_time_ns = 4832.15
+time_stddev = 0.0000
+iterations_per_sec = 208333.33
+result = "Z=63 | Eu (Europium) | 151.964 u | lanthanide | [Xe] 4f⁷ 6s²"

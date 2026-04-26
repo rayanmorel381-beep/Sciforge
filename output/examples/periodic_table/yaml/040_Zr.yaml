@@ -1,0 +1,15 @@
+category: transition metal
+symbol: Zr
+name: Zirconium
+config: [Kr] 4d² 5s²
+mass: 91.224
+experiment_name: Zr_Zirconium_benchmark
+precision: f64
+elapsed_ms: 3
+iterations: 1000
+avg_time_ns: 3129.57
+min_time_ns: 3129.57
+max_time_ns: 3129.57
+time_stddev: 0.0000
+iterations_per_sec: 333333.34
+result: Z=40 | Zr (Zirconium) | 91.224 u | transition metal | [Kr] 4d² 5s²

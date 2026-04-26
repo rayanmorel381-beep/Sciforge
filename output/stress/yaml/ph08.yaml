@@ -1,0 +1,27 @@
+category: ph08
+count: 3
+entries:
+  - label: physics_071
+    symbol: IGT
+    name: ph071
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 4952
+    avg_time_ns: 4952000000.00
+  - label: physics_072
+    symbol: SBP
+    name: ph072
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 4767
+    avg_time_ns: 4767000064.00
+  - label: physics_073
+    symbol: WD
+    name: ph073
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 5052
+    avg_time_ns: 5052000256.00

@@ -1,0 +1,18 @@
+[benchmark]
+category = "as01"
+symbol = "ADW"
+name = "as005"
+target = "astronomy"
+module = "cosmology"
+status = "ok"
+elapsed_ms = "5491"
+experiment_name = "astronomy_005"
+precision = "f64"
+elapsed_ms = 5491
+iterations = 1
+avg_time_ns = 5490999808.00
+min_time_ns = 5490999808.00
+max_time_ns = 5490999808.00
+time_stddev = 0.0000
+iterations_per_sec = 0.18
+result = "success=true code=Some(0) stdout_bytes=164 stderr_bytes=370"

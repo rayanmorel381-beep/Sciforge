@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+biogeography::latitudinal_diversity_gradient,f64,3,1,3486678,3486678,3486678,0,333.33334,pass,biogeography,LDG,Latitudinal diversity gradient,biology,biogeography::latitudinal_diversity_gradient
+biogeography::range_shift_velocity,f64,2,1,2481589,2481589,2481589,0,500,pass,biogeography,RSV,Range shift velocity,biology,biogeography::range_shift_velocity
+biogeography::range_size_latitude,f64,2,1,2274999,2274999,2274999,0,500,pass,biogeography,RSL,Range size latitude,biology,biogeography::range_size_latitude
+biogeography::wallace_line_effect,f64,4,1,4666338,4666338,4666338,0,250,pass,biogeography,WLE,Wallace line effect,biology,biogeography::wallace_line_effect

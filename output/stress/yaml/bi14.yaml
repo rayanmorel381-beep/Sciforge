@@ -1,0 +1,83 @@
+category: bi14
+count: 10
+entries:
+  - label: biology_131
+    symbol: JCD
+    name: bi131
+    target: biology
+    module: phylogenetics
+    status: ok
+    elapsed_ms: 2407
+    avg_time_ns: 2407000064.00
+  - label: biology_132
+    symbol: PS
+    name: bi132
+    target: biology
+    module: phylogenetics
+    status: ok
+    elapsed_ms: 5186
+    avg_time_ns: 5185999872.00
+  - label: biology_133
+    symbol: SI
+    name: bi133
+    target: biology
+    module: phylogenetics
+    status: ok
+    elapsed_ms: 5195
+    avg_time_ns: 5194999808.00
+  - label: biology_134
+    symbol: AGE
+    name: bi134
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 398
+    avg_time_ns: 398000000.00
+  - label: biology_135
+    symbol: FSM
+    name: bi135
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 2486
+    avg_time_ns: 2486000128.00
+  - label: biology_136
+    symbol: GFR
+    name: bi136
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 4897
+    avg_time_ns: 4896999936.00
+  - label: biology_137
+    symbol: OD
+    name: bi137
+    target: biology
+    module: physiology
+    status: ok
+    elapsed_ms: 5203
+    avg_time_ns: 5202999808.00
+  - label: biology_138
+    symbol: BLC
+    name: bi138
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 1601
+    avg_time_ns: 1600999936.00
+  - label: biology_139
+    symbol: PLR
+    name: bi139
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 2104
+    avg_time_ns: 2104000000.00
+  - label: biology_140
+    symbol: TR
+    name: bi140
+    target: biology
+    module: plant_biology
+    status: ok
+    elapsed_ms: 5056
+    avg_time_ns: 5056000000.00

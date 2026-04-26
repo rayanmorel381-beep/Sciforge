@@ -1,0 +1,19 @@
+{
+  "category": "ma02",
+  "symbol": "Di",
+  "name": "ma020",
+  "target": "maths",
+  "module": "graph",
+  "status": "ok",
+  "elapsed_ms": "2687",
+  "experiment_name": "maths_020",
+  "precision": "f64",
+  "elapsed_ms": 2687,
+  "iterations": 1,
+  "avg_time_ns": 2687000064.00,
+  "min_time_ns": 2687000064.00,
+  "max_time_ns": 2687000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.37,
+  "result": "success=true code=Some(0) stdout_bytes=141 stderr_bytes=258"
+}

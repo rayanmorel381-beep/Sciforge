@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,name,formula,reactant_mass,product_mass,atom_economy
+Rust formation_calc,f64,165,5000,33188.98,33188.98,33188.98,0,30303.031,Rust formation | 4Fe + 3O₂ → 2Fe₂O₃ | M(react)=319.3740 g/mol | M(prod)=319.3740 g/mol | Atom economy=100.0%,Oxidation,Rust formation,4Fe + 3O₂ → 2Fe₂O₃,319.3740 g/mol,319.3740 g/mol,100.0%
+Thermite reaction_calc,f64,220,5000,44191.375,44191.375,44191.375,0,22727.273,Thermite reaction | 2Al + Fe₂O₃ → Al₂O₃ + 2Fe | M(react)=213.6501 g/mol | M(prod)=213.6501 g/mol | Atom economy=100.0%,Oxidation,Thermite reaction,2Al + Fe₂O₃ → Al₂O₃ + 2Fe,213.6501 g/mol,213.6501 g/mol,100.0%

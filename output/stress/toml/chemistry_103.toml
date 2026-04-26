@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch11"
+symbol = "HL"
+name = "ch103"
+target = "chemistry"
+module = "thermochemistry"
+status = "ok"
+elapsed_ms = "4649"
+experiment_name = "chemistry_103"
+precision = "f64"
+elapsed_ms = 4649
+iterations = 1
+avg_time_ns = 4648999936.00
+min_time_ns = 4648999936.00
+max_time_ns = 4648999936.00
+time_stddev = 0.0000
+iterations_per_sec = 0.22
+result = "success=true code=Some(0) stdout_bytes=152 stderr_bytes=266"

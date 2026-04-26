@@ -1,0 +1,121 @@
+element:
+  name: Cadmium
+  symbol: Cd
+  atomic_number: 48
+  category: transition metal
+  group: 12
+  period: 5
+  electron_configuration: "[Kr] 4d¹⁰ 5s²"
+  electronegativity: 1.69
+  atomic_mass: 112.414
+
+isotopes:
+  - name: Cadmium-106
+    symbol: "¹⁰⁶Cd"
+    mass_number: 106
+    neutrons: 58
+    atomic_mass: 105.906459
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0125
+
+  - name: Cadmium-108
+    symbol: "¹⁰⁸Cd"
+    mass_number: 108
+    neutrons: 60
+    atomic_mass: 107.904184
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.0089
+
+  - name: Cadmium-109
+    symbol: "¹⁰⁹Cd"
+    mass_number: 109
+    neutrons: 61
+    atomic_mass: 108.904982
+    half_life: 461.4
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Silver-109
+    natural_abundance: 0.0
+
+  - name: Cadmium-110
+    symbol: "¹¹⁰Cd"
+    mass_number: 110
+    neutrons: 62
+    atomic_mass: 109.903002
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1249
+
+  - name: Cadmium-111
+    symbol: "¹¹¹Cd"
+    mass_number: 111
+    neutrons: 63
+    atomic_mass: 110.904178
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.1280
+    nuclear_spin: "1/2+"
+
+  - name: Cadmium-112
+    symbol: "¹¹²Cd"
+    mass_number: 112
+    neutrons: 64
+    atomic_mass: 111.902758
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2413
+
+  - name: Cadmium-113
+    symbol: "¹¹³Cd"
+    mass_number: 113
+    neutrons: 65
+    atomic_mass: 112.904402
+    half_life: 8.04e15
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Indium-113
+    natural_abundance: 0.1222
+    nuclear_spin: "1/2+"
+
+  - name: Cadmium-114
+    symbol: "¹¹⁴Cd"
+    mass_number: 114
+    neutrons: 66
+    atomic_mass: 113.903359
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.2873
+
+  - name: Cadmium-116
+    symbol: "¹¹⁶Cd"
+    mass_number: 116
+    neutrons: 68
+    atomic_mass: 115.904756
+    half_life: 2.9e19
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta-
+        branching_ratio: 1.0
+        daughter: Tin-116
+    natural_abundance: 0.0749

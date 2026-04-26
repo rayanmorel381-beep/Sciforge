@@ -1,0 +1,39 @@
+category: thermodynamics
+count: 6
+entries:
+  - label: thermodynamics_boltzmann_distribution
+    symbol: BD
+    name: Boltzmann distribution
+    domain: physics
+    test: "thermodynamics::boltzmann_distribution"
+    avg_time_ns: 2035519.00
+  - label: thermodynamics_carnot_efficiency
+    symbol: CE
+    name: Carnot efficiency
+    domain: physics
+    test: "thermodynamics::carnot_efficiency"
+    avg_time_ns: 2017850.00
+  - label: thermodynamics_ideal_gas_pressure
+    symbol: IGP
+    name: Ideal gas pressure
+    domain: physics
+    test: "thermodynamics::ideal_gas_pressure"
+    avg_time_ns: 1943659.00
+  - label: thermodynamics_ideal_gas_temperature
+    symbol: IGT
+    name: Ideal gas temperature
+    domain: physics
+    test: "thermodynamics::ideal_gas_temperature"
+    avg_time_ns: 2147769.00
+  - label: thermodynamics_stefan_boltzmann_power
+    symbol: SBP
+    name: Stefan boltzmann power
+    domain: physics
+    test: "thermodynamics::stefan_boltzmann_power"
+    avg_time_ns: 1895259.00
+  - label: thermodynamics_wien_displacement
+    symbol: WD
+    name: Wien displacement
+    domain: physics
+    test: "thermodynamics::wien_displacement"
+    avg_time_ns: 2000769.00

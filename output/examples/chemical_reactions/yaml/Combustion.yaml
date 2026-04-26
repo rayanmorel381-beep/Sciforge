@@ -1,0 +1,10 @@
+category: Combustion
+count: 1
+entries:
+  - label: Combustion of methane
+    name: Combustion of methane
+    formula: CH₄ + 2O₂ → CO₂ + 2H₂O
+    reactant_mass: 80.0390 g/mol
+    product_mass: 80.0390 g/mol
+    atom_economy: 100.0%
+    avg_time_ns: 23088.09

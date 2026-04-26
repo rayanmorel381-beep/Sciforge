@@ -1,0 +1,19 @@
+{
+  "category": "hb05",
+  "symbol": "DN",
+  "name": "hb041",
+  "target": "hub",
+  "module": "cross_domain",
+  "status": "ok",
+  "elapsed_ms": "305",
+  "experiment_name": "hub_041",
+  "precision": "f64",
+  "elapsed_ms": 305,
+  "iterations": 1,
+  "avg_time_ns": 305000000.00,
+  "min_time_ns": 305000000.00,
+  "max_time_ns": 305000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 3.28,
+  "result": "success=true code=Some(0) stdout_bytes=168 stderr_bytes=254"
+}

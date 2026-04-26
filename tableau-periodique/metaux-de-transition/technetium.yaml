@@ -1,0 +1,81 @@
+element:
+  name: Technetium
+  symbol: Tc
+  atomic_number: 43
+  category: transition metal
+  group: 7
+  period: 5
+  electron_configuration: "[Kr] 4d⁵ 5s²"
+  electronegativity: 1.9
+  atomic_mass: 97.907216
+
+isotopes:
+  - name: Technetium-95m
+    symbol: "⁹⁵ᵐTc"
+    mass_number: 95
+    neutrons: 52
+    atomic_mass: 94.907657
+    half_life: 61
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Molybdenum-95
+    natural_abundance: 0.0
+
+  - name: Technetium-97
+    symbol: "⁹⁷Tc"
+    mass_number: 97
+    neutrons: 54
+    atomic_mass: 96.906365
+    half_life: 4.21e6
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Molybdenum-97
+    natural_abundance: 0.0
+
+  - name: Technetium-98
+    symbol: "⁹⁸Tc"
+    mass_number: 98
+    neutrons: 55
+    atomic_mass: 97.907216
+    half_life: 4.2e6
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Ruthenium-98
+    natural_abundance: 0.0
+
+  - name: Technetium-99
+    symbol: "⁹⁹Tc"
+    mass_number: 99
+    neutrons: 56
+    atomic_mass: 98.906255
+    half_life: 2.111e5
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Ruthenium-99
+    natural_abundance: 0.0
+
+  - name: Technetium-99m
+    symbol: "⁹⁹ᵐTc"
+    mass_number: 99
+    neutrons: 56
+    atomic_mass: 98.906255
+    half_life: 6.0067
+    half_life_unit: hours
+    stable: false
+    decay_modes:
+      - mode: isomeric transition
+        branching_ratio: 1.0
+        daughter: Technetium-99
+    natural_abundance: 0.0

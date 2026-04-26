@@ -1,0 +1,124 @@
+element:
+  name: Calcium
+  symbol: Ca
+  atomic_number: 20
+  category: alkaline earth metal
+  group: 2
+  period: 4
+  electron_configuration: "[Ar] 4s²"
+  electronegativity: 1.00
+  atomic_mass: 40.078
+
+isotopes:
+  - name: Calcium-40
+    symbol: "⁴⁰Ca"
+    mass_number: 40
+    neutrons: 20
+    atomic_mass: 39.962591
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.96941
+    nuclear_spin: "0+"
+
+  - name: Calcium-41
+    symbol: "⁴¹Ca"
+    mass_number: 41
+    neutrons: 21
+    atomic_mass: 40.962278
+    half_life: 9.94e4
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Potassium-41
+    natural_abundance: trace
+
+  - name: Calcium-42
+    symbol: "⁴²Ca"
+    mass_number: 42
+    neutrons: 22
+    atomic_mass: 41.958618
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00647
+
+  - name: Calcium-43
+    symbol: "⁴³Ca"
+    mass_number: 43
+    neutrons: 23
+    atomic_mass: 42.958767
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00135
+    nuclear_spin: "7/2-"
+
+  - name: Calcium-44
+    symbol: "⁴⁴Ca"
+    mass_number: 44
+    neutrons: 24
+    atomic_mass: 43.955482
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.02086
+
+  - name: Calcium-45
+    symbol: "⁴⁵Ca"
+    mass_number: 45
+    neutrons: 25
+    atomic_mass: 44.956187
+    half_life: 162.67
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Scandium-45
+    natural_abundance: 0.0
+
+  - name: Calcium-46
+    symbol: "⁴⁶Ca"
+    mass_number: 46
+    neutrons: 26
+    atomic_mass: 45.953693
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 0.00004
+
+  - name: Calcium-47
+    symbol: "⁴⁷Ca"
+    mass_number: 47
+    neutrons: 27
+    atomic_mass: 46.954546
+    half_life: 4.536
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta- (electron emission)
+        branching_ratio: 1.0
+        daughter: Scandium-47
+    natural_abundance: 0.0
+
+  - name: Calcium-48
+    symbol: "⁴⁸Ca"
+    mass_number: 48
+    neutrons: 28
+    atomic_mass: 47.952534
+    half_life: 6.4e19
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: double beta- (double electron emission)
+        branching_ratio: 1.0
+        daughter: Titanium-48
+    natural_abundance: 0.00187

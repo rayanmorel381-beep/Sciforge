@@ -1,0 +1,31 @@
+category: Tropical
+count: 2
+entries:
+  - label: Nairobi
+    symbol: N
+    name: Nairobi
+    altitude: 1795 m
+    temperature: 19.0 °C
+    pressure: 815.0 hPa
+    relative_humidity: 65%
+    saturation_vp: 21.96 hPa
+    dew_point: 12.3 °C
+    density_altitude: 2706 m
+    potential_temp: 310.9 K
+    mixing_ratio: 11.09 g/kg
+    lcl: 688 m AGL
+    avg_time_ns: 5534.76
+  - label: Singapore
+    symbol: S
+    name: Singapore
+    altitude: 16 m
+    temperature: 27.5 °C
+    pressure: 1010.0 hPa
+    relative_humidity: 84%
+    saturation_vp: 36.72 hPa
+    dew_point: 24.6 °C
+    density_altitude: 1520 m
+    potential_temp: 300.9 K
+    mixing_ratio: 19.59 g/kg
+    lcl: 301 m AGL
+    avg_time_ns: 5640.50

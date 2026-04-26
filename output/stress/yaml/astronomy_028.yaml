@@ -1,0 +1,17 @@
+category: as03
+symbol: CD
+name: as028
+target: astronomy
+module: impacts
+status: ok
+elapsed_ms: 5580
+experiment_name: astronomy_028
+precision: f64
+elapsed_ms: 5580
+iterations: 1
+avg_time_ns: 5580000256.00
+min_time_ns: 5580000256.00
+max_time_ns: 5580000256.00
+time_stddev: 0.0000
+iterations_per_sec: 0.18
+result: success=true code=Some(0) stdout_bytes=150 stderr_bytes=214

@@ -1,0 +1,947 @@
+title: Periodic Table of Elements — Data from IUPAC, 2024 edition
+count: 118
+entries:
+  - label: 001_H
+    category: nonmetal
+    symbol: H
+    name: Hydrogen
+    config: 1s¹
+    mass: 1.008
+    avg_time_ns: 90.48
+    iterations_per_sec: 0.00
+  - label: 002_He
+    category: noble gas
+    symbol: He
+    name: Helium
+    config: 1s²
+    mass: 4.002602
+    avg_time_ns: 169.05
+    iterations_per_sec: 0.00
+  - label: 003_Li
+    category: alkali metal
+    symbol: Li
+    name: Lithium
+    config: 1s² 2s¹
+    mass: 6.941
+    avg_time_ns: 249.70
+    iterations_per_sec: 5000000.00
+  - label: 004_Be
+    category: alkaline earth metal
+    symbol: Be
+    name: Beryllium
+    config: 1s² 2s²
+    mass: 9.0121831
+    avg_time_ns: 318.35
+    iterations_per_sec: 0.00
+  - label: 005_B
+    category: metalloid
+    symbol: B
+    name: Boron
+    config: 1s² 2s² 2p¹
+    mass: 10.81
+    avg_time_ns: 402.31
+    iterations_per_sec: 2500000.00
+  - label: 006_C
+    category: nonmetal
+    symbol: C
+    name: Carbon
+    config: 1s² 2s² 2p²
+    mass: 12.011
+    avg_time_ns: 471.10
+    iterations_per_sec: 2500000.00
+  - label: 007_N
+    category: nonmetal
+    symbol: N
+    name: Nitrogen
+    config: 1s² 2s² 2p³
+    mass: 14.007
+    avg_time_ns: 551.92
+    iterations_per_sec: 0.00
+  - label: 008_O
+    category: nonmetal
+    symbol: O
+    name: Oxygen
+    config: 1s² 2s² 2p⁴
+    mass: 15.999
+    avg_time_ns: 620.61
+    iterations_per_sec: 1666666.62
+  - label: 009_F
+    category: halogen
+    symbol: F
+    name: Fluorine
+    config: 1s² 2s² 2p⁵
+    mass: 18.998403
+    avg_time_ns: 697.91
+    iterations_per_sec: 1666666.62
+  - label: 010_Ne
+    category: noble gas
+    symbol: Ne
+    name: Neon
+    config: 1s² 2s² 2p⁶
+    mass: 20.1797
+    avg_time_ns: 775.56
+    iterations_per_sec: 0.00
+  - label: 011_Na
+    category: alkali metal
+    symbol: Na
+    name: Sodium
+    config: [Ne] 3s¹
+    mass: 22.98976928
+    avg_time_ns: 846.23
+    iterations_per_sec: 1250000.00
+  - label: 012_Mg
+    category: alkaline earth metal
+    symbol: Mg
+    name: Magnesium
+    config: [Ne] 3s²
+    mass: 24.305
+    avg_time_ns: 926.44
+    iterations_per_sec: 1111111.12
+  - label: 013_Al
+    category: post-transition metal
+    symbol: Al
+    name: Aluminium
+    config: [Ne] 3s² 3p¹
+    mass: 26.9815385
+    avg_time_ns: 1010.41
+    iterations_per_sec: 1000000.00
+  - label: 014_Si
+    category: metalloid
+    symbol: Si
+    name: Silicon
+    config: [Ne] 3s² 3p²
+    mass: 28.085
+    avg_time_ns: 1140.37
+    iterations_per_sec: 1000000.00
+  - label: 015_P
+    category: nonmetal
+    symbol: P
+    name: Phosphorus
+    config: [Ne] 3s² 3p³
+    mass: 30.973762
+    avg_time_ns: 1160.05
+    iterations_per_sec: 909090.94
+  - label: 016_S
+    category: nonmetal
+    symbol: S
+    name: Sulfur
+    config: [Ne] 3s² 3p⁴
+    mass: 32.06
+    avg_time_ns: 1249.86
+    iterations_per_sec: 1000000.00
+  - label: 017_Cl
+    category: halogen
+    symbol: Cl
+    name: Chlorine
+    config: [Ne] 3s² 3p⁵
+    mass: 35.45
+    avg_time_ns: 1319.70
+    iterations_per_sec: 833333.31
+  - label: 018_Ar
+    category: noble gas
+    symbol: Ar
+    name: Argon
+    config: [Ne] 3s² 3p⁶
+    mass: 39.948
+    avg_time_ns: 1392.33
+    iterations_per_sec: 769230.75
+  - label: 019_K
+    category: alkali metal
+    symbol: K
+    name: Potassium
+    config: [Ar] 4s¹
+    mass: 39.0983
+    avg_time_ns: 1526.03
+    iterations_per_sec: 1000000.00
+  - label: 020_Ca
+    category: alkaline earth metal
+    symbol: Ca
+    name: Calcium
+    config: [Ar] 4s²
+    mass: 40.078
+    avg_time_ns: 1662.09
+    iterations_per_sec: 625000.00
+  - label: 021_Sc
+    category: transition metal
+    symbol: Sc
+    name: Scandium
+    config: [Ar] 3d¹ 4s²
+    mass: 44.955908
+    avg_time_ns: 1636.08
+    iterations_per_sec: 625000.00
+  - label: 022_Ti
+    category: transition metal
+    symbol: Ti
+    name: Titanium
+    config: [Ar] 3d² 4s²
+    mass: 47.867
+    avg_time_ns: 1694.40
+    iterations_per_sec: 1000000.00
+  - label: 023_V
+    category: transition metal
+    symbol: V
+    name: Vanadium
+    config: [Ar] 3d³ 4s²
+    mass: 50.9415
+    avg_time_ns: 1794.18
+    iterations_per_sec: 625000.00
+  - label: 024_Cr
+    category: transition metal
+    symbol: Cr
+    name: Chromium
+    config: [Ar] 3d⁵ 4s¹
+    mass: 51.9961
+    avg_time_ns: 1952.34
+    iterations_per_sec: 526315.81
+  - label: 025_Mn
+    category: transition metal
+    symbol: Mn
+    name: Manganese
+    config: [Ar] 3d⁵ 4s²
+    mass: 54.938044
+    avg_time_ns: 1907.84
+    iterations_per_sec: 1000000.00
+  - label: 026_Fe
+    category: transition metal
+    symbol: Fe
+    name: Iron
+    config: [Ar] 3d⁶ 4s²
+    mass: 55.845
+    avg_time_ns: 2015.35
+    iterations_per_sec: 500000.00
+  - label: 027_Co
+    category: transition metal
+    symbol: Co
+    name: Cobalt
+    config: [Ar] 3d⁷ 4s²
+    mass: 58.933194
+    avg_time_ns: 2080.07
+    iterations_per_sec: 500000.00
+  - label: 028_Ni
+    category: transition metal
+    symbol: Ni
+    name: Nickel
+    config: [Ar] 3d⁸ 4s²
+    mass: 58.6934
+    avg_time_ns: 2148.77
+    iterations_per_sec: 500000.00
+  - label: 029_Cu
+    category: transition metal
+    symbol: Cu
+    name: Copper
+    config: [Ar] 3d¹⁰ 4s¹
+    mass: 63.546
+    avg_time_ns: 2224.89
+    iterations_per_sec: 454545.47
+  - label: 030_Zn
+    category: transition metal
+    symbol: Zn
+    name: Zinc
+    config: [Ar] 3d¹⁰ 4s²
+    mass: 65.38
+    avg_time_ns: 2326.91
+    iterations_per_sec: 434782.59
+  - label: 031_Ga
+    category: post-transition metal
+    symbol: Ga
+    name: Gallium
+    config: [Ar] 3d¹⁰ 4s² 4p¹
+    mass: 69.723
+    avg_time_ns: 2456.66
+    iterations_per_sec: 500000.00
+  - label: 032_Ge
+    category: metalloid
+    symbol: Ge
+    name: Germanium
+    config: [Ar] 3d¹⁰ 4s² 4p²
+    mass: 72.63
+    avg_time_ns: 2461.49
+    iterations_per_sec: 416666.66
+  - label: 033_As
+    category: metalloid
+    symbol: As
+    name: Arsenic
+    config: [Ar] 3d¹⁰ 4s² 4p³
+    mass: 74.921595
+    avg_time_ns: 2543.32
+    iterations_per_sec: 400000.00
+  - label: 034_Se
+    category: nonmetal
+    symbol: Se
+    name: Selenium
+    config: [Ar] 3d¹⁰ 4s² 4p⁴
+    mass: 78.971
+    avg_time_ns: 2592.98
+    iterations_per_sec: 500000.00
+  - label: 035_Br
+    category: halogen
+    symbol: Br
+    name: Bromine
+    config: [Ar] 3d¹⁰ 4s² 4p⁵
+    mass: 79.904
+    avg_time_ns: 2714.75
+    iterations_per_sec: 384615.38
+  - label: 036_Kr
+    category: noble gas
+    symbol: Kr
+    name: Krypton
+    config: [Ar] 3d¹⁰ 4s² 4p⁶
+    mass: 83.798
+    avg_time_ns: 2785.39
+    iterations_per_sec: 370370.38
+  - label: 037_Rb
+    category: alkali metal
+    symbol: Rb
+    name: Rubidium
+    config: [Kr] 5s¹
+    mass: 85.4678
+    avg_time_ns: 2895.13
+    iterations_per_sec: 500000.00
+  - label: 038_Sr
+    category: alkaline earth metal
+    symbol: Sr
+    name: Strontium
+    config: [Kr] 5s²
+    mass: 87.62
+    avg_time_ns: 2917.53
+    iterations_per_sec: 357142.84
+  - label: 039_Y
+    category: transition metal
+    symbol: Y
+    name: Yttrium
+    config: [Kr] 4d¹ 5s²
+    mass: 88.90584
+    avg_time_ns: 3073.45
+    iterations_per_sec: 333333.34
+  - label: 040_Zr
+    category: transition metal
+    symbol: Zr
+    name: Zirconium
+    config: [Kr] 4d² 5s²
+    mass: 91.224
+    avg_time_ns: 3129.57
+    iterations_per_sec: 333333.34
+  - label: 041_Nb
+    category: transition metal
+    symbol: Nb
+    name: Niobium
+    config: [Kr] 4d⁴ 5s¹
+    mass: 92.90637
+    avg_time_ns: 3122.35
+    iterations_per_sec: 333333.34
+  - label: 042_Mo
+    category: transition metal
+    symbol: Mo
+    name: Molybdenum
+    config: [Kr] 4d⁵ 5s¹
+    mass: 95.95
+    avg_time_ns: 3299.01
+    iterations_per_sec: 312500.00
+  - label: 043_Tc
+    category: transition metal
+    symbol: Tc
+    name: Technetium
+    config: [Kr] 4d⁵ 5s²
+    mass: 97.907216
+    avg_time_ns: 3284.76
+    iterations_per_sec: 333333.34
+  - label: 044_Ru
+    category: transition metal
+    symbol: Ru
+    name: Ruthenium
+    config: [Kr] 4d⁷ 5s¹
+    mass: 101.07
+    avg_time_ns: 3692.70
+    iterations_per_sec: 277777.78
+  - label: 045_Rh
+    category: transition metal
+    symbol: Rh
+    name: Rhodium
+    config: [Kr] 4d⁸ 5s¹
+    mass: 102.9055
+    avg_time_ns: 3461.99
+    iterations_per_sec: 294117.66
+  - label: 046_Pd
+    category: transition metal
+    symbol: Pd
+    name: Palladium
+    config: [Kr] 4d¹⁰
+    mass: 106.42
+    avg_time_ns: 3541.52
+    iterations_per_sec: 333333.34
+  - label: 047_Ag
+    category: transition metal
+    symbol: Ag
+    name: Silver
+    config: [Kr] 4d¹⁰ 5s¹
+    mass: 107.8682
+    avg_time_ns: 3631.66
+    iterations_per_sec: 277777.78
+  - label: 048_Cd
+    category: transition metal
+    symbol: Cd
+    name: Cadmium
+    config: [Kr] 4d¹⁰ 5s²
+    mass: 112.414
+    avg_time_ns: 3665.32
+    iterations_per_sec: 277777.78
+  - label: 049_In
+    category: post-transition metal
+    symbol: In
+    name: Indium
+    config: [Kr] 4d¹⁰ 5s² 5p¹
+    mass: 114.818
+    avg_time_ns: 4352.59
+    iterations_per_sec: 250000.00
+  - label: 050_Sn
+    category: post-transition metal
+    symbol: Sn
+    name: Tin
+    config: [Kr] 4d¹⁰ 5s² 5p²
+    mass: 118.71
+    avg_time_ns: 3820.33
+    iterations_per_sec: 263157.91
+  - label: 051_Sb
+    category: metalloid
+    symbol: Sb
+    name: Antimony
+    config: [Kr] 4d¹⁰ 5s² 5p³
+    mass: 121.76
+    avg_time_ns: 3933.09
+    iterations_per_sec: 256410.25
+  - label: 052_Te
+    category: metalloid
+    symbol: Te
+    name: Tellurium
+    config: [Kr] 4d¹⁰ 5s² 5p⁴
+    mass: 127.6
+    avg_time_ns: 3963.67
+    iterations_per_sec: 333333.34
+  - label: 053_I
+    category: halogen
+    symbol: I
+    name: Iodine
+    config: [Kr] 4d¹⁰ 5s² 5p⁵
+    mass: 126.90447
+    avg_time_ns: 4075.38
+    iterations_per_sec: 250000.00
+  - label: 054_Xe
+    category: noble gas
+    symbol: Xe
+    name: Xenon
+    config: [Kr] 4d¹⁰ 5s² 5p⁶
+    mass: 131.293
+    avg_time_ns: 4163.17
+    iterations_per_sec: 243902.44
+  - label: 055_Cs
+    category: alkali metal
+    symbol: Cs
+    name: Cesium
+    config: [Xe] 6s¹
+    mass: 132.90545196
+    avg_time_ns: 4324.45
+    iterations_per_sec: 250000.00
+  - label: 056_Ba
+    category: alkaline earth metal
+    symbol: Ba
+    name: Barium
+    config: [Xe] 6s²
+    mass: 137.327
+    avg_time_ns: 4288.23
+    iterations_per_sec: 238095.23
+  - label: 057_La
+    category: lanthanide
+    symbol: La
+    name: Lanthanum
+    config: [Xe] 5d¹ 6s²
+    mass: 138.90547
+    avg_time_ns: 4438.56
+    iterations_per_sec: 227272.73
+  - label: 058_Ce
+    category: lanthanide
+    symbol: Ce
+    name: Cerium
+    config: [Xe] 4f¹ 5d¹ 6s²
+    mass: 140.116
+    avg_time_ns: 4410.13
+    iterations_per_sec: 250000.00
+  - label: 059_Pr
+    category: lanthanide
+    symbol: Pr
+    name: Praseodymium
+    config: [Xe] 4f³ 6s²
+    mass: 140.90766
+    avg_time_ns: 4559.97
+    iterations_per_sec: 227272.73
+  - label: 060_Nd
+    category: lanthanide
+    symbol: Nd
+    name: Neodymium
+    config: [Xe] 4f⁴ 6s²
+    mass: 144.242
+    avg_time_ns: 4696.36
+    iterations_per_sec: 217391.30
+  - label: 061_Pm
+    category: lanthanide
+    symbol: Pm
+    name: Promethium
+    config: [Xe] 4f⁵ 6s²
+    mass: 144.912749
+    avg_time_ns: 4666.57
+    iterations_per_sec: 250000.00
+  - label: 062_Sm
+    category: lanthanide
+    symbol: Sm
+    name: Samarium
+    config: [Xe] 4f⁶ 6s²
+    mass: 150.36
+    avg_time_ns: 4767.45
+    iterations_per_sec: 217391.30
+  - label: 063_Eu
+    category: lanthanide
+    symbol: Eu
+    name: Europium
+    config: [Xe] 4f⁷ 6s²
+    mass: 151.964
+    avg_time_ns: 4832.15
+    iterations_per_sec: 208333.33
+  - label: 064_Gd
+    category: lanthanide
+    symbol: Gd
+    name: Gadolinium
+    config: [Xe] 4f⁷ 5d¹ 6s²
+    mass: 157.25
+    avg_time_ns: 4872.53
+    iterations_per_sec: 250000.00
+  - label: 065_Tb
+    category: lanthanide
+    symbol: Tb
+    name: Terbium
+    config: [Xe] 4f⁹ 6s²
+    mass: 158.92535
+    avg_time_ns: 5021.52
+    iterations_per_sec: 200000.00
+  - label: 066_Dy
+    category: lanthanide
+    symbol: Dy
+    name: Dysprosium
+    config: [Xe] 4f¹⁰ 6s²
+    mass: 162.5
+    avg_time_ns: 5111.67
+    iterations_per_sec: 196078.44
+  - label: 067_Ho
+    category: lanthanide
+    symbol: Ho
+    name: Holmium
+    config: [Xe] 4f¹¹ 6s²
+    mass: 164.93033
+    avg_time_ns: 5231.69
+    iterations_per_sec: 200000.00
+  - label: 068_Er
+    category: lanthanide
+    symbol: Er
+    name: Erbium
+    config: [Xe] 4f¹² 6s²
+    mass: 167.259
+    avg_time_ns: 5226.24
+    iterations_per_sec: 192307.69
+  - label: 069_Tm
+    category: lanthanide
+    symbol: Tm
+    name: Thulium
+    config: [Xe] 4f¹³ 6s²
+    mass: 168.93422
+    avg_time_ns: 5317.33
+    iterations_per_sec: 188679.25
+  - label: 070_Yb
+    category: lanthanide
+    symbol: Yb
+    name: Ytterbium
+    config: [Xe] 4f¹⁴ 6s²
+    mass: 173.045
+    avg_time_ns: 5331.37
+    iterations_per_sec: 200000.00
+  - label: 071_Lu
+    category: lanthanide
+    symbol: Lu
+    name: Lutetium
+    config: [Xe] 4f¹⁴ 5d¹ 6s²
+    mass: 174.9668
+    avg_time_ns: 5450.91
+    iterations_per_sec: 185185.19
+  - label: 072_Hf
+    category: transition metal
+    symbol: Hf
+    name: Hafnium
+    config: [Xe] 4f¹⁴ 5d² 6s²
+    mass: 178.49
+    avg_time_ns: 5537.44
+    iterations_per_sec: 181818.19
+  - label: 073_Ta
+    category: transition metal
+    symbol: Ta
+    name: Tantalum
+    config: [Xe] 4f¹⁴ 5d³ 6s²
+    mass: 180.94788
+    avg_time_ns: 5554.75
+    iterations_per_sec: 200000.00
+  - label: 074_W
+    category: transition metal
+    symbol: W
+    name: Tungsten
+    config: [Xe] 4f¹⁴ 5d⁴ 6s²
+    mass: 183.84
+    avg_time_ns: 5673.61
+    iterations_per_sec: 178571.42
+  - label: 075_Re
+    category: transition metal
+    symbol: Re
+    name: Rhenium
+    config: [Xe] 4f¹⁴ 5d⁵ 6s²
+    mass: 186.207
+    avg_time_ns: 5804.09
+    iterations_per_sec: 172413.80
+  - label: 076_Os
+    category: transition metal
+    symbol: Os
+    name: Osmium
+    config: [Xe] 4f¹⁴ 5d⁶ 6s²
+    mass: 190.23
+    avg_time_ns: 5805.46
+    iterations_per_sec: 200000.00
+  - label: 077_Ir
+    category: transition metal
+    symbol: Ir
+    name: Iridium
+    config: [Xe] 4f¹⁴ 5d⁷ 6s²
+    mass: 192.217
+    avg_time_ns: 6319.36
+    iterations_per_sec: 161290.33
+  - label: 078_Pt
+    category: transition metal
+    symbol: Pt
+    name: Platinum
+    config: [Xe] 4f¹⁴ 5d⁹ 6s¹
+    mass: 195.084
+    avg_time_ns: 6245.62
+    iterations_per_sec: 161290.33
+  - label: 079_Au
+    category: transition metal
+    symbol: Au
+    name: Gold
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s¹
+    mass: 196.966569
+    avg_time_ns: 6239.05
+    iterations_per_sec: 166666.67
+  - label: 080_Hg
+    category: transition metal
+    symbol: Hg
+    name: Mercury
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s²
+    mass: 200.592
+    avg_time_ns: 6227.39
+    iterations_per_sec: 161290.33
+  - label: 081_Tl
+    category: post-transition metal
+    symbol: Tl
+    name: Thallium
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹
+    mass: 204.38
+    avg_time_ns: 6350.10
+    iterations_per_sec: 158730.16
+  - label: 082_Pb
+    category: post-transition metal
+    symbol: Pb
+    name: Lead
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²
+    mass: 207.2
+    avg_time_ns: 6397.04
+    iterations_per_sec: 166666.67
+  - label: 083_Bi
+    category: post-transition metal
+    symbol: Bi
+    name: Bismuth
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³
+    mass: 208.9804
+    avg_time_ns: 6530.20
+    iterations_per_sec: 156250.00
+  - label: 084_Po
+    category: post-transition metal
+    symbol: Po
+    name: Polonium
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴
+    mass: 208.98243
+    avg_time_ns: 6547.83
+    iterations_per_sec: 153846.16
+  - label: 085_At
+    category: halogen
+    symbol: At
+    name: Astatine
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵
+    mass: 210
+    avg_time_ns: 6571.25
+    iterations_per_sec: 166666.67
+  - label: 086_Rn
+    category: noble gas
+    symbol: Rn
+    name: Radon
+    config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶
+    mass: 222
+    avg_time_ns: 6705.93
+    iterations_per_sec: 151515.16
+  - label: 087_Fr
+    category: alkali metal
+    symbol: Fr
+    name: Francium
+    config: [Rn] 7s¹
+    mass: 223
+    avg_time_ns: 6769.47
+    iterations_per_sec: 149253.73
+  - label: 088_Ra
+    category: alkaline earth metal
+    symbol: Ra
+    name: Radium
+    config: [Rn] 7s²
+    mass: 226
+    avg_time_ns: 6927.16
+    iterations_per_sec: 166666.67
+  - label: 089_Ac
+    category: actinide
+    symbol: Ac
+    name: Actinium
+    config: [Rn] 6d¹ 7s²
+    mass: 227.027752
+    avg_time_ns: 6975.24
+    iterations_per_sec: 147058.83
+  - label: 090_Th
+    category: actinide
+    symbol: Th
+    name: Thorium
+    config: [Rn] 6d² 7s²
+    mass: 232.0377
+    avg_time_ns: 7089.71
+    iterations_per_sec: 142857.14
+  - label: 091_Pa
+    category: actinide
+    symbol: Pa
+    name: Protactinium
+    config: [Rn] 5f² 6d¹ 7s²
+    mass: 231.03588
+    avg_time_ns: 7072.09
+    iterations_per_sec: 142857.14
+  - label: 092_U
+    category: actinide
+    symbol: U
+    name: Uranium
+    config: [Rn] 5f³ 6d¹ 7s²
+    mass: 238.02891
+    avg_time_ns: 7316.16
+    iterations_per_sec: 138888.89
+  - label: 093_Np
+    category: actinide
+    symbol: Np
+    name: Neptunium
+    config: [Rn] 5f⁴ 6d¹ 7s²
+    mass: 237.048174
+    avg_time_ns: 7245.58
+    iterations_per_sec: 138888.89
+  - label: 094_Pu
+    category: actinide
+    symbol: Pu
+    name: Plutonium
+    config: [Rn] 5f⁶ 7s²
+    mass: 244.064204
+    avg_time_ns: 7277.76
+    iterations_per_sec: 142857.14
+  - label: 095_Am
+    category: actinide
+    symbol: Am
+    name: Americium
+    config: [Rn] 5f⁷ 7s²
+    mass: 243.061381
+    avg_time_ns: 7388.27
+    iterations_per_sec: 138888.89
+  - label: 096_Cm
+    category: actinide
+    symbol: Cm
+    name: Curium
+    config: [Rn] 5f⁷ 6d¹ 7s²
+    mass: 247.070354
+    avg_time_ns: 7501.51
+    iterations_per_sec: 133333.33
+  - label: 097_Bk
+    category: actinide
+    symbol: Bk
+    name: Berkelium
+    config: [Rn] 5f⁹ 7s²
+    mass: 247.070307
+    avg_time_ns: 7534.16
+    iterations_per_sec: 142857.14
+  - label: 098_Cf
+    category: actinide
+    symbol: Cf
+    name: Californium
+    config: [Rn] 5f¹⁰ 7s²
+    mass: 251.079587
+    avg_time_ns: 7762.57
+    iterations_per_sec: 131578.95
+  - label: 099_Es
+    category: actinide
+    symbol: Es
+    name: Einsteinium
+    config: [Rn] 5f¹¹ 7s²
+    mass: 252.08298
+    avg_time_ns: 7814.70
+    iterations_per_sec: 128205.12
+  - label: 100_Fm
+    category: actinide
+    symbol: Fm
+    name: Fermium
+    config: [Rn] 5f¹² 7s²
+    mass: 257.095105
+    avg_time_ns: 8014.43
+    iterations_per_sec: 125000.00
+  - label: 101_Md
+    category: actinide
+    symbol: Md
+    name: Mendelevium
+    config: [Rn] 5f¹³ 7s²
+    mass: 258.098431
+    avg_time_ns: 7986.83
+    iterations_per_sec: 128205.12
+  - label: 102_No
+    category: actinide
+    symbol: No
+    name: Nobelium
+    config: [Rn] 5f¹⁴ 7s²
+    mass: 259.10103
+    avg_time_ns: 8098.21
+    iterations_per_sec: 125000.00
+  - label: 103_Lr
+    category: actinide
+    symbol: Lr
+    name: Lawrencium
+    config: [Rn] 5f¹⁴ 7s² 7p¹
+    mass: 266.12
+    avg_time_ns: 7958.24
+    iterations_per_sec: 142857.14
+  - label: 104_Rf
+    category: transition_metal
+    symbol: Rf
+    name: Rutherfordium
+    config: [Rn] 5f¹⁴ 6d² 7s²
+    mass: 267.122
+    avg_time_ns: 8047.03
+    iterations_per_sec: 125000.00
+  - label: 105_Db
+    category: transition_metal
+    symbol: Db
+    name: Dubnium
+    config: [Rn] 5f¹⁴ 6d³ 7s²
+    mass: 268.126
+    avg_time_ns: 8232.80
+    iterations_per_sec: 121951.22
+  - label: 106_Sg
+    category: transition_metal
+    symbol: Sg
+    name: Seaborgium
+    config: [Rn] 5f¹⁴ 6d⁴ 7s²
+    mass: 269.129
+    avg_time_ns: 8401.15
+    iterations_per_sec: 125000.00
+  - label: 107_Bh
+    category: transition_metal
+    symbol: Bh
+    name: Bohrium
+    config: [Rn] 5f¹⁴ 6d⁵ 7s²
+    mass: 270.134
+    avg_time_ns: 8499.11
+    iterations_per_sec: 119047.62
+  - label: 108_Hs
+    category: transition_metal
+    symbol: Hs
+    name: Hassium
+    config: [Rn] 5f¹⁴ 6d⁶ 7s²
+    mass: 269.134
+    avg_time_ns: 9304.38
+    iterations_per_sec: 107526.88
+  - label: 109_Mt
+    category: unknown
+    symbol: Mt
+    name: Meitnerium
+    config: [Rn] 5f¹⁴ 6d⁷ 7s²
+    mass: 278.156
+    avg_time_ns: 8830.90
+    iterations_per_sec: 125000.00
+  - label: 110_Ds
+    category: unknown
+    symbol: Ds
+    name: Darmstadtium
+    config: [Rn] 5f¹⁴ 6d⁸ 7s²
+    mass: 281.165
+    avg_time_ns: 8897.69
+    iterations_per_sec: 113636.37
+  - label: 111_Rg
+    category: unknown
+    symbol: Rg
+    name: Roentgenium
+    config: [Rn] 5f¹⁴ 6d⁹ 7s²
+    mass: 282.169
+    avg_time_ns: 8706.14
+    iterations_per_sec: 114942.53
+  - label: 112_Cn
+    category: unknown
+    symbol: Cn
+    name: Copernicium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s²
+    mass: 285.177
+    avg_time_ns: 10072.36
+    iterations_per_sec: 100000.00
+  - label: 113_Nh
+    category: unknown
+    symbol: Nh
+    name: Nihonium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹
+    mass: 286.182
+    avg_time_ns: 9439.48
+    iterations_per_sec: 106382.98
+  - label: 114_Fl
+    category: unknown
+    symbol: Fl
+    name: Flerovium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²
+    mass: 289.19
+    avg_time_ns: 10116.05
+    iterations_per_sec: 99009.90
+  - label: 115_Mc
+    category: unknown
+    symbol: Mc
+    name: Moscovium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³
+    mass: 290.196
+    avg_time_ns: 8778.98
+    iterations_per_sec: 125000.00
+  - label: 116_Lv
+    category: unknown
+    symbol: Lv
+    name: Livermorium
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴
+    mass: 293.205
+    avg_time_ns: 9629.90
+    iterations_per_sec: 104166.66
+  - label: 117_Ts
+    category: halogen
+    symbol: Ts
+    name: Tennessine
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted)
+    mass: 294
+    avg_time_ns: 9498.33
+    iterations_per_sec: 106382.98
+  - label: 118_Og
+    category: noble gas (predicted)
+    symbol: Og
+    name: Oganesson
+    config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)
+    mass: 294
+    avg_time_ns: 9873.80
+    iterations_per_sec: 111111.11

@@ -1,0 +1,183 @@
+title = "Weather Station — Atmospheric Pressure, Humidity & Dew Point"
+count = 10
+
+[[entries]]
+label = "Paris CDG"
+category = "Temperate"
+symbol = "P"
+name = "Paris CDG"
+altitude = "119 m"
+temperature = "12.4 °C"
+pressure = "1013.2 hPa"
+relative_humidity = "78%"
+saturation_vp = "14.39 hPa"
+dew_point = "8.7 °C"
+density_altitude = "-164 m"
+potential_temp = "285.5 K"
+mixing_ratio = "6.97 g/kg"
+lcl = "381 m AGL"
+avg_time_ns = 5629.84
+iterations_per_sec = 178571.42
+
+[[entries]]
+label = "Tokyo Narita"
+category = "Temperate"
+symbol = "T"
+name = "Tokyo Narita"
+altitude = "44 m"
+temperature = "16.3 °C"
+pressure = "1015.0 hPa"
+relative_humidity = "71%"
+saturation_vp = "18.52 hPa"
+dew_point = "11.0 °C"
+density_altitude = "211 m"
+potential_temp = "289.3 K"
+mixing_ratio = "8.16 g/kg"
+lcl = "539 m AGL"
+avg_time_ns = 5656.88
+iterations_per_sec = 178571.42
+
+[[entries]]
+label = "Denver Intl"
+category = "Alpine"
+symbol = "D"
+name = "Denver Intl"
+altitude = "1655 m"
+temperature = "10.1 °C"
+pressure = "835.0 hPa"
+relative_humidity = "45%"
+saturation_vp = "12.35 hPa"
+dew_point = "-1.3 °C"
+density_altitude = "1464 m"
+potential_temp = "299.4 K"
+mixing_ratio = "4.17 g/kg"
+lcl = "1166 m AGL"
+avg_time_ns = 5595.95
+iterations_per_sec = 185185.19
+
+[[entries]]
+label = "Mexico City"
+category = "Alpine"
+symbol = "M"
+name = "Mexico City"
+altitude = "2250 m"
+temperature = "16.0 °C"
+pressure = "773.0 hPa"
+relative_humidity = "52%"
+saturation_vp = "18.17 hPa"
+dew_point = "6.2 °C"
+density_altitude = "2910 m"
+potential_temp = "312.4 K"
+mixing_ratio = "7.70 g/kg"
+lcl = "1008 m AGL"
+avg_time_ns = 5636.10
+iterations_per_sec = 178571.42
+
+[[entries]]
+label = "McMurdo Base"
+category = "Polar"
+symbol = "Mc"
+name = "McMurdo Base"
+altitude = "10 m"
+temperature = "-18.0 °C"
+pressure = "984.0 hPa"
+relative_humidity = "60%"
+saturation_vp = "1.49 hPa"
+dew_point = "-23.9 °C"
+density_altitude = "-3948 m"
+potential_temp = "257.3 K"
+mixing_ratio = "0.57 g/kg"
+lcl = "602 m AGL"
+avg_time_ns = 5812.67
+iterations_per_sec = 172413.80
+
+[[entries]]
+label = "Nairobi"
+category = "Tropical"
+symbol = "N"
+name = "Nairobi"
+altitude = "1795 m"
+temperature = "19.0 °C"
+pressure = "815.0 hPa"
+relative_humidity = "65%"
+saturation_vp = "21.96 hPa"
+dew_point = "12.3 °C"
+density_altitude = "2706 m"
+potential_temp = "310.9 K"
+mixing_ratio = "11.09 g/kg"
+lcl = "688 m AGL"
+avg_time_ns = 5534.76
+iterations_per_sec = 185185.19
+
+[[entries]]
+label = "Lhasa"
+category = "Alpine"
+symbol = "L"
+name = "Lhasa"
+altitude = "3650 m"
+temperature = "8.5 °C"
+pressure = "652.0 hPa"
+relative_humidity = "35%"
+saturation_vp = "11.09 hPa"
+dew_point = "-6.1 °C"
+density_altitude = "3746 m"
+potential_temp = "319.5 K"
+mixing_ratio = "3.73 g/kg"
+lcl = "1494 m AGL"
+avg_time_ns = 5548.93
+iterations_per_sec = 185185.19
+
+[[entries]]
+label = "Death Valley"
+category = "Arid"
+symbol = "DV"
+name = "Death Valley"
+altitude = "-86 m"
+temperature = "38.5 °C"
+pressure = "1025.0 hPa"
+relative_humidity = "12%"
+saturation_vp = "68.21 hPa"
+dew_point = "4.1 °C"
+density_altitude = "2713 m"
+potential_temp = "310.6 K"
+mixing_ratio = "5.01 g/kg"
+lcl = "3521 m AGL"
+avg_time_ns = 5569.10
+iterations_per_sec = 185185.19
+
+[[entries]]
+label = "Reykjavik"
+category = "Polar"
+symbol = "R"
+name = "Reykjavik"
+altitude = "61 m"
+temperature = "4.6 °C"
+pressure = "1005.0 hPa"
+relative_humidity = "82%"
+saturation_vp = "8.48 hPa"
+dew_point = "1.8 °C"
+density_altitude = "-1172 m"
+potential_temp = "278.4 K"
+mixing_ratio = "4.33 g/kg"
+lcl = "287 m AGL"
+avg_time_ns = 5642.68
+iterations_per_sec = 178571.42
+
+[[entries]]
+label = "Singapore"
+category = "Tropical"
+symbol = "S"
+name = "Singapore"
+altitude = "16 m"
+temperature = "27.5 °C"
+pressure = "1010.0 hPa"
+relative_humidity = "84%"
+saturation_vp = "36.72 hPa"
+dew_point = "24.6 °C"
+density_altitude = "1520 m"
+potential_temp = "300.9 K"
+mixing_ratio = "19.59 g/kg"
+lcl = "301 m AGL"
+avg_time_ns = 5640.50
+iterations_per_sec = 178571.42
+

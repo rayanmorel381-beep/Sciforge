@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
+Li_Lithium_benchmark,f32,2,10000,249.6999,249.6999,249.6999,0,5000000,Z=3 | Li (Lithium) | 6.941 u | alkali metal | 1s² 2s¹,alkali metal,Li,Lithium,1s² 2s¹,6.941
+Na_Sodium_benchmark,f32,4,5000,846.2316,846.2316,846.2316,0,1250000,Z=11 | Na (Sodium) | 22.98976928 u | alkali metal | [Ne] 3s¹,alkali metal,Na,Sodium,[Ne] 3s¹,22.98976928
+K_Potassium_benchmark,f32,1,1000,1526.03,1526.03,1526.03,0,1000000,Z=19 | K (Potassium) | 39.0983 u | alkali metal | [Ar] 4s¹,alkali metal,K,Potassium,[Ar] 4s¹,39.0983
+Rb_Rubidium_benchmark,f32,2,1000,2895.129,2895.129,2895.129,0,500000,Z=37 | Rb (Rubidium) | 85.4678 u | alkali metal | [Kr] 5s¹,alkali metal,Rb,Rubidium,[Kr] 5s¹,85.4678
+Cs_Cesium_benchmark,f32,4,1000,4324.448,4324.448,4324.448,0,250000,Z=55 | Cs (Cesium) | 132.90545196 u | alkali metal | [Xe] 6s¹,alkali metal,Cs,Cesium,[Xe] 6s¹,132.90545196
+Fr_Francium_benchmark,f32,67,10000,6769.4673,6769.4673,6769.4673,0,149253.73,Z=87 | Fr (Francium) | 223 u | alkali metal | [Rn] 7s¹,alkali metal,Fr,Francium,[Rn] 7s¹,223

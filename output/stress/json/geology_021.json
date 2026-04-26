@@ -1,0 +1,19 @@
+{
+  "category": "ge03",
+  "symbol": "MV",
+  "name": "ge021",
+  "target": "geology",
+  "module": "hydrology",
+  "status": "ok",
+  "elapsed_ms": "4839",
+  "experiment_name": "geology_021",
+  "precision": "f64",
+  "elapsed_ms": 4839,
+  "iterations": 1,
+  "avg_time_ns": 4839000064.00,
+  "min_time_ns": 4839000064.00,
+  "max_time_ns": 4839000064.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=153 stderr_bytes=314"
+}

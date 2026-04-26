@@ -1,0 +1,15 @@
+category: cancer_biology
+symbol: TGE
+name: Tumor growth exponential
+domain: biology
+test: "cancer_biology::tumor_growth_exponential"
+experiment_name: "cancer_biology::tumor_growth_exponential"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1873090.00
+min_time_ns: 1873090.00
+max_time_ns: 1873090.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

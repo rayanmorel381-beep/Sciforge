@@ -1,0 +1,68 @@
+element:
+  name: Thulium
+  symbol: Tm
+  atomic_number: 69
+  category: lanthanide
+  group: null
+  period: 6
+  electron_configuration: "[Xe] 4f¹³ 6s²"
+  electronegativity: 1.25
+  atomic_mass: 168.93422
+
+isotopes:
+  - name: Thulium-167
+    symbol: "¹⁶⁷Tm"
+    mass_number: 167
+    neutrons: 98
+    atomic_mass: 166.932852
+    half_life: 9.25
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: electron capture
+        branching_ratio: 1.0
+        daughter: Erbium-167
+    natural_abundance: 0.0
+
+  - name: Thulium-169
+    symbol: "¹⁶⁹Tm"
+    mass_number: 169
+    neutrons: 100
+    atomic_mass: 168.934213
+    half_life: null
+    half_life_unit: null
+    stable: true
+    decay_modes: []
+    natural_abundance: 1.0
+    nuclear_spin: "1/2+"
+
+  - name: Thulium-170
+    symbol: "¹⁷⁰Tm"
+    mass_number: 170
+    neutrons: 101
+    atomic_mass: 169.935801
+    half_life: 128.6
+    half_life_unit: days
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 0.9986
+        daughter: Ytterbium-170
+      - mode: electron capture
+        branching_ratio: 0.0014
+        daughter: Erbium-170
+    natural_abundance: 0.0
+
+  - name: Thulium-171
+    symbol: "¹⁷¹Tm"
+    mass_number: 171
+    neutrons: 102
+    atomic_mass: 170.936429
+    half_life: 1.92
+    half_life_unit: years
+    stable: false
+    decay_modes:
+      - mode: beta-
+        branching_ratio: 1.0
+        daughter: Ytterbium-171
+    natural_abundance: 0.0

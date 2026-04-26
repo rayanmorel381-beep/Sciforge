@@ -1,0 +1,27 @@
+category: Proterozoic
+count: 2
+entries:
+  - label: Bushveld Complex
+    symbol: U
+    name: Bushveld Complex
+    method: U-Pb (238)
+    parent: ²³⁸U
+    daughter: ²⁰⁶Pb
+    ratio: 0.3200
+    half_life: 4.4680e9 years
+    decay_constant: 4.9156e-18 s⁻¹
+    computed_age: 1789.7 Myr
+    expected_age: 2055 Myr
+    avg_time_ns: 3766.45
+  - label: Sudbury Impact
+    symbol: U
+    name: Sudbury Impact
+    method: U-Pb (238)
+    parent: ²³⁸U
+    daughter: ²⁰⁶Pb
+    ratio: 0.2800
+    half_life: 4.4680e9 years
+    decay_constant: 4.9156e-18 s⁻¹
+    computed_age: 1591.4 Myr
+    expected_age: 1849 Myr
+    avg_time_ns: 3745.87
