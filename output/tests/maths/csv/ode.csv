@@ -1,2 +1,2 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-ode::ode_euler,f64,1,1,1969669,1969669,1969669,0,1000,pass,ode,OE,Ode euler,maths,ode::ode_euler
+ode::ode_euler,f64,2,1,2024311,2024311,2024311,0,500,pass,ode,OE,Ode euler,maths,ode::ode_euler

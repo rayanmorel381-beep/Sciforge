@@ -14,12 +14,12 @@
   "lcl": "688 m AGL",
   "experiment_name": "Nairobi_weather",
   "precision": "f64",
-  "elapsed_ms": 27,
+  "elapsed_ms": 30,
   "iterations": 5000,
-  "avg_time_ns": 5534.76,
-  "min_time_ns": 5534.76,
-  "max_time_ns": 5534.76,
+  "avg_time_ns": 6022.63,
+  "min_time_ns": 6022.63,
+  "max_time_ns": 6022.63,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 185185.19,
+  "iterations_per_sec": 166666.67,
   "result": "Nairobi | 1795m | 19.0 °C | RH=65% | Td=12.3 °C | DA=2706 m | θ=310.9 K"
 }

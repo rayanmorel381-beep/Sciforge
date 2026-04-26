@@ -15,9 +15,9 @@ experiment_name: Denver Intl_weather
 precision: f64
 elapsed_ms: 27
 iterations: 5000
-avg_time_ns: 5595.95
-min_time_ns: 5595.95
-max_time_ns: 5595.95
+avg_time_ns: 5547.55
+min_time_ns: 5547.55
+max_time_ns: 5547.55
 time_stddev: 0.0000
 iterations_per_sec: 185185.19
 result: Denver Intl | 1655m | 10.1 °C | RH=45% | Td=-1.3 °C | DA=1464 m | θ=299.4 K

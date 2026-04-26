@@ -8,9 +8,9 @@
   "precision": "f32",
   "elapsed_ms": 6,
   "iterations": 1000,
-  "avg_time_ns": 6571.25,
-  "min_time_ns": 6571.25,
-  "max_time_ns": 6571.25,
+  "avg_time_ns": 6666.44,
+  "min_time_ns": 6666.44,
+  "max_time_ns": 6666.44,
   "time_stddev": 0.0000,
   "iterations_per_sec": 166666.67,
   "result": "Z=85 | At (Astatine) | 210 u | halogen | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵"

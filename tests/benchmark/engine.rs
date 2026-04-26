@@ -40,10 +40,10 @@ fn magic_bytes() {
 
 #[test]
 fn version_is_4() {
-    assert_eq!(BENCHMARK_VERSION, 4);
+    assert_eq!(BENCHMARK_VERSION, 5);
 }
 
 #[test]
 fn header_size_is_168() {
-    assert_eq!(BENCHMARK_HEADER_SIZE, 168);
+    assert_eq!(BENCHMARK_HEADER_SIZE, 216);
 }

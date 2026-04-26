@@ -8,10 +8,10 @@
   "precision": "f64",
   "elapsed_ms": 33,
   "iterations": 5000,
-  "avg_time_ns": 6705.93,
-  "min_time_ns": 6705.93,
-  "max_time_ns": 6705.93,
+  "avg_time_ns": 6607.90,
+  "min_time_ns": 6607.90,
+  "max_time_ns": 6607.90,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 151515.16,
+  "iterations_per_sec": 151515.15,
   "result": "Z=86 | Rn (Radon) | 222 u | noble gas | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶"
 }

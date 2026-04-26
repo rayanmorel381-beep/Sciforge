@@ -6,22 +6,22 @@ entries:
     name: Adenylate energy charge
     domain: biology
     test: "bioenergetics::adenylate_energy_charge"
-    avg_time_ns: 2351309.00
+    avg_time_ns: 2341121.00
   - label: bioenergetics_glycolysis_net_atp
     symbol: GNA
     name: Glycolysis net atp
     domain: biology
     test: "bioenergetics::glycolysis_net_atp"
-    avg_time_ns: 2380898.00
+    avg_time_ns: 2435710.00
   - label: bioenergetics_p_o_ratio
     symbol: POR
     name: P o ratio
     domain: biology
     test: "bioenergetics::p_o_ratio"
-    avg_time_ns: 2384720.00
+    avg_time_ns: 2501671.00
   - label: bioenergetics_respiratory_control_index
     symbol: RCI
     name: Respiratory control index
     domain: biology
     test: "bioenergetics::respiratory_control_index"
-    avg_time_ns: 5900607.00
+    avg_time_ns: 2315860.00

@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion
-Marathon distance_convert,f64,24,10000,2419.2188,2419.2188,2419.2188,0,416666.66,Marathon distance | 42.195 km → 2.621876e1 mi,Length,km,Marathon distance,42.195 km,2.621876e1 mi,42.195 km → 2.621876e1 mi
-Everest height_convert,f64,24,10000,2472.558,2472.558,2472.558,0,416666.66,Everest height | 8848.86 m → 2.903169e4 ft,Length,m,Everest height,8848.86 m,2.903169e4 ft,8848.86 m → 2.903169e4 ft
-Light-year_convert,f64,24,10000,2447.654,2447.654,2447.654,0,416666.66,Light-year | 1 ly → 9.460730e12 km,Length,ly,Light-year,1 ly,9.460730e12 km,1 ly → 9.460730e12 km
+Marathon distance_convert,f64,26,10000,2648.7915,2648.7915,2648.7915,0,384615.3846153846,Marathon distance | 42.195 km → 2.621876e1 mi,Length,km,Marathon distance,42.195 km,2.621876e1 mi,42.195 km → 2.621876e1 mi
+Everest height_convert,f64,31,10000,3121.2386,3121.2386,3121.2386,0,322580.6451612903,Everest height | 8848.86 m → 2.903169e4 ft,Length,m,Everest height,8848.86 m,2.903169e4 ft,8848.86 m → 2.903169e4 ft
+Light-year_convert,f64,30,10000,3035.2385,3035.2385,3035.2385,0,333333.3333333333,Light-year | 1 ly → 9.460730e12 km,Length,ly,Light-year,1 ly,9.460730e12 km,1 ly → 9.460730e12 km

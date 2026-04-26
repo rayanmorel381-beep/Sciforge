@@ -5,11 +5,11 @@ domain: chemistry
 test: "dispatch::dispatch_unknown_function_returns_error"
 experiment_name: "dispatch::dispatch_unknown_function_returns_error"
 precision: f64
-elapsed_ms: 2
+elapsed_ms: 5
 iterations: 1
-avg_time_ns: 2177829.00
-min_time_ns: 2177829.00
-max_time_ns: 2177829.00
+avg_time_ns: 5294451.00
+min_time_ns: 5294451.00
+max_time_ns: 5294451.00
 time_stddev: 0.0000
-iterations_per_sec: 500.00
+iterations_per_sec: 200.00
 result: pass

@@ -15,9 +15,9 @@
   "precision": "f64",
   "elapsed_ms": 8,
   "iterations": 5000,
-  "avg_time_ns": 1696.30,
-  "min_time_ns": 1696.30,
-  "max_time_ns": 1696.30,
+  "avg_time_ns": 1751.97,
+  "min_time_ns": 1751.97,
+  "max_time_ns": 1751.97,
   "time_stddev": 0.0000,
   "iterations_per_sec": 625000.00,
   "result": "Betelgeuse (M1Ia) | L=4.557e31 W | M_abs=-5.71 | R_s=48745.54 m | MS lifetime=0.0 Myr | Wien λ_max=805 nm"

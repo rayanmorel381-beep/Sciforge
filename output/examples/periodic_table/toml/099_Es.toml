@@ -8,9 +8,9 @@ experiment_name = "Es_Einsteinium_benchmark"
 precision = "f32"
 elapsed_ms = 78
 iterations = 10000
-avg_time_ns = 7814.70
-min_time_ns = 7814.70
-max_time_ns = 7814.70
+avg_time_ns = 7817.05
+min_time_ns = 7817.05
+max_time_ns = 7817.05
 time_stddev = 0.0000
-iterations_per_sec = 128205.12
+iterations_per_sec = 128205.13
 result = "Z=99 | Es (Einsteinium) | 252.08298 u | actinide | [Rn] 5f¹¹ 7s²"

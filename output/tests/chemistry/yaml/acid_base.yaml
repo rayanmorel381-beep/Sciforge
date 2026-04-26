@@ -6,34 +6,34 @@ entries:
     name: Equivalence point volume
     domain: chemistry
     test: "acid_base::equivalence_point_volume"
-    avg_time_ns: 2152229.00
+    avg_time_ns: 2903591.00
   - label: acid_base_henderson_hasselbalch
     symbol: HH
     name: Henderson hasselbalch
     domain: chemistry
     test: "acid_base::henderson_hasselbalch"
-    avg_time_ns: 1948919.00
+    avg_time_ns: 2454720.00
   - label: acid_base_henderson_hasselbalch_excess_base
     symbol: HHE
     name: Henderson hasselbalch excess base
     domain: chemistry
     test: "acid_base::henderson_hasselbalch_excess_base"
-    avg_time_ns: 1829919.00
+    avg_time_ns: 2384241.00
   - label: acid_base_ph_strong_acid
     symbol: PSA
     name: Ph strong acid
     domain: chemistry
     test: "acid_base::ph_strong_acid"
-    avg_time_ns: 1872120.00
+    avg_time_ns: 2154050.00
   - label: acid_base_ph_strong_base
     symbol: PSB
     name: Ph strong base
     domain: chemistry
     test: "acid_base::ph_strong_base"
-    avg_time_ns: 1764459.00
+    avg_time_ns: 2168290.00
   - label: acid_base_pka_roundtrip
     symbol: PR
     name: Pka roundtrip
     domain: chemistry
     test: "acid_base::pka_roundtrip"
-    avg_time_ns: 1756239.00
+    avg_time_ns: 2187291.00

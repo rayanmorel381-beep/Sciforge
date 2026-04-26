@@ -13,12 +13,12 @@
   "wien_peak": "502 nm",
   "experiment_name": "Sun_stellar",
   "precision": "f64",
-  "elapsed_ms": 8,
+  "elapsed_ms": 9,
   "iterations": 5000,
-  "avg_time_ns": 1744.29,
-  "min_time_ns": 1744.29,
-  "max_time_ns": 1744.29,
+  "avg_time_ns": 1815.82,
+  "min_time_ns": 1815.82,
+  "max_time_ns": 1815.82,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 625000.00,
+  "iterations_per_sec": 555555.56,
   "result": "Sun (G2V) | L=3.844e26 W | M_abs=4.83 | R_s=2954.28 m | MS lifetime=0.0 Myr | Wien λ_max=502 nm"
 }

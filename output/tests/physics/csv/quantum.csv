@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-quantum::harmonic_oscillator_energy,f64,1,1,1914149,1914149,1914149,0,1000,pass,quantum,HOE,Harmonic oscillator energy,physics,quantum::harmonic_oscillator_energy
-quantum::hydrogen_energy,f64,2,1,2102140,2102140,2102140,0,500,pass,quantum,HE,Hydrogen energy,physics,quantum::hydrogen_energy
-quantum::infinite_well_energy,f64,1,1,1897629,1897629,1897629,0,1000,pass,quantum,IWE,Infinite well energy,physics,quantum::infinite_well_energy
-quantum::tunneling_coefficient,f64,1,1,1929499,1929499,1929499,0,1000,pass,quantum,TC,Tunneling coefficient,physics,quantum::tunneling_coefficient
+quantum::harmonic_oscillator_energy,f64,1,1,1747010,1747010,1747010,0,1000,pass,quantum,HOE,Harmonic oscillator energy,physics,quantum::harmonic_oscillator_energy
+quantum::hydrogen_energy,f64,1,1,1762821,1762821,1762821,0,1000,pass,quantum,HE,Hydrogen energy,physics,quantum::hydrogen_energy
+quantum::infinite_well_energy,f64,2,1,2011990,2011990,2011990,0,500,pass,quantum,IWE,Infinite well energy,physics,quantum::infinite_well_energy
+quantum::tunneling_coefficient,f64,2,1,2256030,2256030,2256030,0,500,pass,quantum,TC,Tunneling coefficient,physics,quantum::tunneling_coefficient

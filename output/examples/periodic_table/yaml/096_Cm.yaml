@@ -5,11 +5,11 @@ config: [Rn] 5f⁷ 6d¹ 7s²
 mass: 247.070354
 experiment_name: Cm_Curium_benchmark
 precision: f64
-elapsed_ms: 75
+elapsed_ms: 76
 iterations: 10000
-avg_time_ns: 7501.51
-min_time_ns: 7501.51
-max_time_ns: 7501.51
+avg_time_ns: 7677.89
+min_time_ns: 7677.89
+max_time_ns: 7677.89
 time_stddev: 0.0000
-iterations_per_sec: 133333.33
+iterations_per_sec: 131578.95
 result: Z=96 | Cm (Curium) | 247.070354 u | actinide | [Rn] 5f⁷ 6d¹ 7s²

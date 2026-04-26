@@ -8,9 +8,9 @@ experiment_name = "Db_Dubnium_benchmark"
 precision = "f32"
 elapsed_ms = 82
 iterations = 10000
-avg_time_ns = 8232.80
-min_time_ns = 8232.80
-max_time_ns = 8232.80
+avg_time_ns = 8299.34
+min_time_ns = 8299.34
+max_time_ns = 8299.34
 time_stddev = 0.0000
 iterations_per_sec = 121951.22
 result = "Z=105 | Db (Dubnium) | 268.126 u | transition_metal | [Rn] 5f¹⁴ 6d³ 7s²"

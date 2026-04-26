@@ -16,10 +16,10 @@
   "precision": "f64",
   "elapsed_ms": 28,
   "iterations": 5000,
-  "avg_time_ns": 5629.84,
-  "min_time_ns": 5629.84,
-  "max_time_ns": 5629.84,
+  "avg_time_ns": 5650.99,
+  "min_time_ns": 5650.99,
+  "max_time_ns": 5650.99,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 178571.42,
+  "iterations_per_sec": 178571.43,
   "result": "Paris CDG | 119m | 12.4 °C | RH=78% | Td=8.7 °C | DA=-164 m | θ=285.5 K"
 }

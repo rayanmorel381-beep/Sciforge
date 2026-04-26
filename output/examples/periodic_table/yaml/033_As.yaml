@@ -7,9 +7,9 @@ experiment_name: As_Arsenic_benchmark
 precision: f32
 elapsed_ms: 25
 iterations: 10000
-avg_time_ns: 2543.32
-min_time_ns: 2543.32
-max_time_ns: 2543.32
+avg_time_ns: 2569.77
+min_time_ns: 2569.77
+max_time_ns: 2569.77
 time_stddev: 0.0000
 iterations_per_sec: 400000.00
 result: Z=33 | As (Arsenic) | 74.921595 u | metalloid | [Ar] 3d¹⁰ 4s² 4p³

@@ -8,9 +8,9 @@
   "precision": "f32",
   "elapsed_ms": 53,
   "iterations": 10000,
-  "avg_time_ns": 5317.33,
-  "min_time_ns": 5317.33,
-  "max_time_ns": 5317.33,
+  "avg_time_ns": 5381.33,
+  "min_time_ns": 5381.33,
+  "max_time_ns": 5381.33,
   "time_stddev": 0.0000,
   "iterations_per_sec": 188679.25,
   "result": "Z=69 | Tm (Thulium) | 168.93422 u | lanthanide | [Xe] 4f¹³ 6s²"

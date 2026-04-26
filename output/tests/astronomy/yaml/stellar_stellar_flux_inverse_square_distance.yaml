@@ -5,11 +5,11 @@ domain: astronomy
 test: "stellar::stellar_flux_inverse_square_distance"
 experiment_name: "stellar::stellar_flux_inverse_square_distance"
 precision: f64
-elapsed_ms: 2
+elapsed_ms: 1
 iterations: 1
-avg_time_ns: 2429828.00
-min_time_ns: 2429828.00
-max_time_ns: 2429828.00
+avg_time_ns: 1939220.00
+min_time_ns: 1939220.00
+max_time_ns: 1939220.00
 time_stddev: 0.0000
-iterations_per_sec: 500.00
+iterations_per_sec: 1000.00
 result: pass

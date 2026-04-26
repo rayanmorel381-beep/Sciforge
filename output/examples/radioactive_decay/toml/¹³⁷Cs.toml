@@ -15,9 +15,9 @@ experiment_name = "Cesium_137_decay"
 precision = "f64"
 elapsed_ms = 11
 iterations = 5000
-avg_time_ns = 2254.30
-min_time_ns = 2254.30
-max_time_ns = 2254.30
+avg_time_ns = 2306.20
+min_time_ns = 2306.20
+max_time_ns = 2306.20
 time_stddev = 0.0000
-iterations_per_sec = 454545.47
+iterations_per_sec = 454545.45
 result = "¹³⁷Cs (Cesium) | t½=30.17 years | λ=7.2804e-10 s⁻¹ | beta- (electron emission) | A_sp=3.200e12 Bq/g"

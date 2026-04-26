@@ -6,22 +6,22 @@ entries:
     name: Codon adaptation index
     domain: biology
     test: "genomics::codon_adaptation_index"
-    avg_time_ns: 2450358.00
+    avg_time_ns: 2338820.00
   - label: genomics_gc_content
     symbol: GC
     name: Gc content
     domain: biology
     test: "genomics::gc_content"
-    avg_time_ns: 1887440.00
+    avg_time_ns: 2979830.00
   - label: genomics_gene_density
     symbol: GD
     name: Gene density
     domain: biology
     test: "genomics::gene_density"
-    avg_time_ns: 2362429.00
+    avg_time_ns: 2610051.00
   - label: genomics_snp_allele_frequency
     symbol: SAF
     name: Snp allele frequency
     domain: biology
     test: "genomics::snp_allele_frequency"
-    avg_time_ns: 2466358.00
+    avg_time_ns: 2450610.00

@@ -71,7 +71,7 @@ code{font-family:ui-monospace,monospace}
 <div class="legend">
 </div>
 <div class="ptable">
-<div id="el-lbl" class="el cat-0" style="grid-row:1;grid-column:1" title="Lbl - 20.0ns" onclick="go('lbl')"><div class="sym">L</div><div class="nm">Lbl</div><div class="ns">20ns</div></div>
+<div id="el-lbl" class="el cat-0" style="grid-row:1;grid-column:1" title="Lbl - 13.8ns" onclick="go('lbl')"><div class="sym">L</div><div class="nm">Lbl</div><div class="ns">14ns</div></div>
 </div>
 
 <div id="detail" class="detail">
@@ -162,7 +162,7 @@ benchmark.md
 <thead>
 <tr><th>Label</th><th>k</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
 </thead><tbody>
-<tr><td>lbl</td><td>v</td><td>f64</td><td>50</td><td>20.00</td><td>0.00</td></tr>
+<tr><td>lbl</td><td>v</td><td>f64</td><td>50</td><td>13.80</td><td>0.00</td></tr>
 </tbody></table>
 <h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
 <p style="line-height:1.6;margin:.4em 0">### K Distribution</p>
@@ -170,21 +170,21 @@ benchmark.md
 <thead>
 <tr><th>K</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
 </thead><tbody>
-<tr><td>v</td><td>1</td><td>20.00</td><td>20.00</td><td>20.00</td></tr>
+<tr><td>v</td><td>1</td><td>13.80</td><td>13.80</td><td>13.80</td></tr>
 </tbody></table>
 <p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
 <table>
 <thead>
 <tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
 </thead><tbody>
-<tr><td>1</td><td>lbl</td><td>20.00</td></tr>
+<tr><td>1</td><td>lbl</td><td>13.80</td></tr>
 </tbody></table>
 <p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
 <table>
 <thead>
 <tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
 </thead><tbody>
-<tr><td>1</td><td>lbl</td><td>20.00</td></tr>
+<tr><td>1</td><td>lbl</td><td>13.80</td></tr>
 </tbody></table>
 </div>
 
@@ -206,7 +206,7 @@ benchmark.md
 <text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">v</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">20.0</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">13.8</text>
 </svg>
 </div>
 
@@ -215,7 +215,7 @@ benchmark.md
 <svg viewBox="0 0 650 38" style="width:100%;max-width:650px">
 <text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">lbl</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">20.0 ns</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">13.8 ns</text>
 </svg>
 </div>
 
@@ -224,7 +224,7 @@ benchmark.md
 <svg viewBox="0 0 650 38" style="width:100%;max-width:650px">
 <text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">lbl</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">20.0 ns</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">13.8 ns</text>
 </svg>
 </div>
 
@@ -235,9 +235,9 @@ benchmark.md
 <rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
 <text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">v</text>
 <text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
-<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 20.0 ns</text>
-<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 20.0 ns</text>
-<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 20.0 ns</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 13.8 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 13.8 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 13.8 ns</text>
 </svg>
 </div>
 
@@ -246,23 +246,23 @@ benchmark.md
 <script>
 var F={
 csv:{
-"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,k\nentry_test,f64,0,50,20,20,20,0,0,test_result,v\n",
-"v.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,k\nentry_test,f64,0,50,20,20,20,0,0,test_result,v\n"},
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,k\nentry_test,f64,0,50,13.8,13.8,13.8,0,0,test_result,v\n",
+"v.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,k\nentry_test,f64,0,50,13.8,13.8,13.8,0,0,test_result,v\n"},
 json:{
-"lbl.json":"{\n  \"k\": \"v\",\n  \"experiment_name\": \"entry_test\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 50,\n  \"avg_time_ns\": 20.00,\n  \"min_time_ns\": 20.00,\n  \"max_time_ns\": 20.00,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"test_result\"\n}",
-"summary.json":"[\n{\n  \"k\": \"v\",\n  \"experiment_name\": \"entry_test\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 50,\n  \"avg_time_ns\": 20.00,\n  \"min_time_ns\": 20.00,\n  \"max_time_ns\": 20.00,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"test_result\"\n}\n]"},
+"lbl.json":"{\n  \"k\": \"v\",\n  \"experiment_name\": \"entry_test\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 50,\n  \"avg_time_ns\": 13.80,\n  \"min_time_ns\": 13.80,\n  \"max_time_ns\": 13.80,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"test_result\"\n}",
+"summary.json":"[\n{\n  \"k\": \"v\",\n  \"experiment_name\": \"entry_test\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 50,\n  \"avg_time_ns\": 13.80,\n  \"min_time_ns\": 13.80,\n  \"max_time_ns\": 13.80,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"test_result\"\n}\n]"},
 yaml:{
-"lbl.yaml":"k: v\nexperiment_name: entry_test\nprecision: f64\nelapsed_ms: 0\niterations: 50\navg_time_ns: 20.00\nmin_time_ns: 20.00\nmax_time_ns: 20.00\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: test_result\n",
-"summary.yaml":"title: Entry Test\ncount: 1\nentries:\n  - label: lbl\n    k: v\n    avg_time_ns: 20.00\n    iterations_per_sec: 0.00\n",
-"v.yaml":"k: v\ncount: 1\nentries:\n  - label: lbl\n    avg_time_ns: 20.00\n"},
+"lbl.yaml":"k: v\nexperiment_name: entry_test\nprecision: f64\nelapsed_ms: 0\niterations: 50\navg_time_ns: 13.80\nmin_time_ns: 13.80\nmax_time_ns: 13.80\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: test_result\n",
+"summary.yaml":"title: Entry Test\ncount: 1\nentries:\n  - label: lbl\n    k: v\n    avg_time_ns: 13.80\n    iterations_per_sec: 0.00\n",
+"v.yaml":"k: v\ncount: 1\nentries:\n  - label: lbl\n    avg_time_ns: 13.80\n"},
 toml:{
-"lbl.toml":"[benchmark]\nk = \"v\"\nexperiment_name = \"entry_test\"\nprecision = \"f64\"\nelapsed_ms = 0\niterations = 50\navg_time_ns = 20.00\nmin_time_ns = 20.00\nmax_time_ns = 20.00\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"test_result\"\n",
-"summary.toml":"title = \"Entry Test\"\ncount = 1\n\n[[entries]]\nlabel = \"lbl\"\nk = \"v\"\navg_time_ns = 20.00\niterations_per_sec = 0.00\n\n"},
+"lbl.toml":"[benchmark]\nk = \"v\"\nexperiment_name = \"entry_test\"\nprecision = \"f64\"\nelapsed_ms = 0\niterations = 50\navg_time_ns = 13.80\nmin_time_ns = 13.80\nmax_time_ns = 13.80\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"test_result\"\n",
+"summary.toml":"title = \"Entry Test\"\ncount = 1\n\n[[entries]]\nlabel = \"lbl\"\nk = \"v\"\navg_time_ns = 13.80\niterations_per_sec = 0.00\n\n"},
 bmk:{
-"lbl.bmk":"experiment_name: entry_test\nprecision:       f64\nelapsed_ms:      0\niterations:      50\navg_time_ns:     20.00\nmin_time_ns:     20.00\nmax_time_ns:     20.00\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     181 bytes\n"}
+"lbl.bmk":"experiment_name: entry_test\nprecision:       f64\nelapsed_ms:      0\niterations:      50\navg_time_ns:     13.80\nmin_time_ns:     13.80\nmax_time_ns:     13.80\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     229 bytes\n"}
 };
 var D={
-"lbl":{tags:{"k":"v"},p:"f64",it:50,avg:20.00,mn:20.00,mx:20.00,sd:0.0000,ips:0.00}
+"lbl":{tags:{"k":"v"},p:"f64",it:50,avg:13.80,mn:13.80,mx:13.80,sd:0.0000,ips:0.00}
 };
 function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
 function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}

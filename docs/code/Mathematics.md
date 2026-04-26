@@ -45,10 +45,10 @@ This page documents the source implementation behind `sciforge::maths`, includin
 - `optimization`
 - `pde`
 - `polynomial`
-- `probability`
+- `probability` — submodules: `bayesian`, `distributions`, `markov`, `monte_carlo`, `sampling`
 - `signal`
 - `sparse`
-- `statistics`
+- `statistics` — submodules: `clustering`, `descriptive`, `distributions`, `hypothesis`, `regression`
 - `tensor`
 - `vector`
 

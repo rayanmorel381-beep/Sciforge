@@ -6,22 +6,22 @@ entries:
     name: Carrying capacity from resources
     domain: biology
     test: "population::carrying_capacity_from_resources"
-    avg_time_ns: 1833369.00
+    avg_time_ns: 2503810.00
   - label: population_cell_growth_logistic
     symbol: CGL
     name: Cell growth logistic
     domain: biology
     test: "population::cell_growth_logistic"
-    avg_time_ns: 1889609.00
+    avg_time_ns: 2344941.00
   - label: population_lotka_volterra_competition
     symbol: LVC
     name: Lotka volterra competition
     domain: biology
     test: "population::lotka_volterra_competition"
-    avg_time_ns: 1850320.00
+    avg_time_ns: 2632460.00
   - label: population_lotka_volterra_predator_prey
     symbol: LVP
     name: Lotka volterra predator prey
     domain: biology
     test: "population::lotka_volterra_predator_prey"
-    avg_time_ns: 2126848.00
+    avg_time_ns: 2593361.00

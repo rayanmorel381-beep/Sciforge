@@ -6,34 +6,34 @@ entries:
     name: Dispatch complex sqrt
     domain: maths
     test: "dispatch::dispatch_complex_sqrt"
-    avg_time_ns: 2057909.00
+    avg_time_ns: 2284841.00
   - label: dispatch_dispatch_gaussian_kernel_smooth
     symbol: DGK
     name: Dispatch gaussian kernel smooth
     domain: maths
     test: "dispatch::dispatch_gaussian_kernel_smooth"
-    avg_time_ns: 2152220.00
+    avg_time_ns: 2393200.00
   - label: dispatch_dispatch_missing_parameter_returns_error
     symbol: DMP
     name: Dispatch missing parameter returns error
     domain: maths
     test: "dispatch::dispatch_missing_parameter_returns_error"
-    avg_time_ns: 1859399.00
+    avg_time_ns: 2029660.00
   - label: dispatch_dispatch_unknown_function_returns_error
     symbol: DUF
     name: Dispatch unknown function returns error
     domain: maths
     test: "dispatch::dispatch_unknown_function_returns_error"
-    avg_time_ns: 1785359.00
+    avg_time_ns: 1959641.00
   - label: dispatch_dispatch_vec_midpoint
     symbol: DVM
     name: Dispatch vec midpoint
     domain: maths
     test: "dispatch::dispatch_vec_midpoint"
-    avg_time_ns: 1789629.00
+    avg_time_ns: 1864300.00
   - label: dispatch_dispatch_wave_packet_gaussian
     symbol: DWP
     name: Dispatch wave packet gaussian
     domain: maths
     test: "dispatch::dispatch_wave_packet_gaussian"
-    avg_time_ns: 1752669.00
+    avg_time_ns: 1816500.00

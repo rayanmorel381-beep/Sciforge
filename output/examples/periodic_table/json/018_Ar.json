@@ -6,12 +6,12 @@
   "mass": "39.948",
   "experiment_name": "Ar_Argon_benchmark",
   "precision": "f64",
-  "elapsed_ms": 13,
+  "elapsed_ms": 14,
   "iterations": 10000,
-  "avg_time_ns": 1392.33,
-  "min_time_ns": 1392.33,
-  "max_time_ns": 1392.33,
+  "avg_time_ns": 1447.26,
+  "min_time_ns": 1447.26,
+  "max_time_ns": 1447.26,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 769230.75,
+  "iterations_per_sec": 714285.71,
   "result": "Z=18 | Ar (Argon) | 39.948 u | noble gas | [Ne] 3s² 3p⁶"
 }

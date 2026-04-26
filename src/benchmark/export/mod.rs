@@ -27,17 +27,17 @@ pub const PTABLE_CATS: [&str; 10] = [
 pub struct GroupStats<'a> {
     pub groups: Vec<&'a str>,
     pub counts: BTreeMap<&'a str, usize>,
-    pub sums: BTreeMap<&'a str, f32>,
-    pub mins: BTreeMap<&'a str, f32>,
-    pub maxs: BTreeMap<&'a str, f32>,
+    pub sums: BTreeMap<&'a str, f64>,
+    pub mins: BTreeMap<&'a str, f64>,
+    pub maxs: BTreeMap<&'a str, f64>,
 }
 
 pub fn compute_group_stats<'a>(entries: &[Entry<'a>]) -> GroupStats<'a> {
     let mut groups: Vec<&'a str> = Vec::new();
     let mut counts: BTreeMap<&'a str, usize> = BTreeMap::new();
-    let mut sums: BTreeMap<&'a str, f32> = BTreeMap::new();
-    let mut mins: BTreeMap<&'a str, f32> = BTreeMap::new();
-    let mut maxs: BTreeMap<&'a str, f32> = BTreeMap::new();
+    let mut sums: BTreeMap<&'a str, f64> = BTreeMap::new();
+    let mut mins: BTreeMap<&'a str, f64> = BTreeMap::new();
+    let mut maxs: BTreeMap<&'a str, f64> = BTreeMap::new();
 
     for entry in entries {
         let val = entry.tags.first().map(|(_, v)| *v).unwrap_or("other");
@@ -46,7 +46,7 @@ pub fn compute_group_stats<'a>(entries: &[Entry<'a>]) -> GroupStats<'a> {
         }
         *counts.entry(val).or_insert(0) += 1;
         *sums.entry(val).or_insert(0.0) += entry.metrics.avg_time_ns;
-        let mn = mins.entry(val).or_insert(f32::MAX);
+        let mn = mins.entry(val).or_insert(f64::MAX);
         if entry.metrics.avg_time_ns < *mn {
             *mn = entry.metrics.avg_time_ns;
         }

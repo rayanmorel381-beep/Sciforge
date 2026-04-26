@@ -12,7 +12,7 @@ entries:
     decay_constant: 4.9156e-18 s⁻¹
     computed_age: 4532.5 Myr
     expected_age: 4400 Myr
-    avg_time_ns: 3817.20
+    avg_time_ns: 3713.78
   - label: Acasta Gneiss
     symbol: U
     name: Acasta Gneiss
@@ -24,4 +24,4 @@ entries:
     decay_constant: 4.9156e-18 s⁻¹
     computed_age: 3965.7 Myr
     expected_age: 4030 Myr
-    avg_time_ns: 3712.41
+    avg_time_ns: 3755.43

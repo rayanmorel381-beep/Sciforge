@@ -2,4 +2,4 @@ group: beta
 count: 1
 entries:
   - label: bench_beta
-    avg_time_ns: 14.10
+    avg_time_ns: 9.00

@@ -5,11 +5,11 @@ config: [Kr] 4d⁵ 5s¹
 mass: 95.95
 experiment_name: Mo_Molybdenum_benchmark
 precision: f64
-elapsed_ms: 32
+elapsed_ms: 33
 iterations: 10000
-avg_time_ns: 3299.01
-min_time_ns: 3299.01
-max_time_ns: 3299.01
+avg_time_ns: 3338.47
+min_time_ns: 3338.47
+max_time_ns: 3338.47
 time_stddev: 0.0000
-iterations_per_sec: 312500.00
+iterations_per_sec: 303030.30
 result: Z=42 | Mo (Molybdenum) | 95.95 u | transition metal | [Kr] 4d⁵ 5s¹

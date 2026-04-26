@@ -6,22 +6,22 @@ entries:
     name: Binding energy per nucleon semf
     domain: physics
     test: "nucleosynthesis::binding_energy_per_nucleon_semf"
-    avg_time_ns: 1913979.00
+    avg_time_ns: 1809541.00
   - label: nucleosynthesis_coulomb_barrier
     symbol: CB
     name: Coulomb barrier
     domain: physics
     test: "nucleosynthesis::coulomb_barrier"
-    avg_time_ns: 1912740.00
+    avg_time_ns: 1725570.00
   - label: nucleosynthesis_half_life_from_constant
     symbol: HLF
     name: Half life from constant
     domain: physics
     test: "nucleosynthesis::half_life_from_constant"
-    avg_time_ns: 1859329.00
+    avg_time_ns: 1766100.00
   - label: nucleosynthesis_nuclear_radius_fm
     symbol: NRF
     name: Nuclear radius fm
     domain: physics
     test: "nucleosynthesis::nuclear_radius_fm"
-    avg_time_ns: 1916489.00
+    avg_time_ns: 1866100.00

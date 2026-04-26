@@ -14,6 +14,19 @@ Each module has a detailed ChangeLog with full function tables.
 
 ---
 
+## [0.0.4] - 2026-04-26
+
+| Module | Changes |
+|---|---|
+| [Astronomy](ChangeLog/astronomy.md) | New `tides` (6 fn), `rotation` (7 fn), `impacts` (5 fn) submodules; GR perihelion precession in `orbits` |
+| [Benchmark](ChangeLog/benchmark.md) | f32 → f64 precision migration (12 fields); `BENCHMARK_VERSION` 4 → 5; `BENCHMARK_HEADER_SIZE` 168 → 216 |
+| [Constants](ChangeLog/constants.md) | 6 new particle-physics constants (`G_F`, `ALPHA_S`, `MUON_MASS`, `TAU_MASS`, `NEUTRINO_MASS_UPPER`, `R_INF`); full planetary constants Mercury → Neptune |
+| [Mathematics](ChangeLog/mathematics.md) | New `probability/bayesian` (8 fn); new `statistics/clustering` PCA + k-means + DBSCAN + silhouette (6 fn); `error_propagation` + `monte_carlo_uncertainty` in `probability/monte_carlo` |
+| [Meteorology](ChangeLog/meteorology.md) | New `winds` (21 fn) and `storms` (5 fn) submodules; `rayleigh_phase` in `atmosphere` |
+| [Testing](ChangeLog/testing.md) | 814 → 823 tests (+9) |
+
+---
+
 ## [0.0.3] - 2026-04-11
 
 | Module | Changes |

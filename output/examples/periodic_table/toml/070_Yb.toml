@@ -8,9 +8,9 @@ experiment_name = "Yb_Ytterbium_benchmark"
 precision = "f64"
 elapsed_ms = 5
 iterations = 1000
-avg_time_ns = 5331.37
-min_time_ns = 5331.37
-max_time_ns = 5331.37
+avg_time_ns = 5344.40
+min_time_ns = 5344.40
+max_time_ns = 5344.40
 time_stddev = 0.0000
 iterations_per_sec = 200000.00
 result = "Z=70 | Yb (Ytterbium) | 173.045 u | lanthanide | [Xe] 4f¹⁴ 6s²"

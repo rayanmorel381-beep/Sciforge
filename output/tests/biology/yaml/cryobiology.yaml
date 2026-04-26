@@ -6,22 +6,22 @@ entries:
     name: Critical cooling rate
     domain: biology
     test: "cryobiology::critical_cooling_rate"
-    avg_time_ns: 2121980.00
+    avg_time_ns: 1964320.00
   - label: cryobiology_freezing_point_depression
     symbol: FPD
     name: Freezing point depression
     domain: biology
     test: "cryobiology::freezing_point_depression"
-    avg_time_ns: 1963989.00
+    avg_time_ns: 1903521.00
   - label: cryobiology_storage_decay_arrhenius
     symbol: SDA
     name: Storage decay arrhenius
     domain: biology
     test: "cryobiology::storage_decay_arrhenius"
-    avg_time_ns: 2451709.00
+    avg_time_ns: 1958450.00
   - label: cryobiology_vitrification_probability
     symbol: VP
     name: Vitrification probability
     domain: biology
     test: "cryobiology::vitrification_probability"
-    avg_time_ns: 2126599.00
+    avg_time_ns: 2174830.00

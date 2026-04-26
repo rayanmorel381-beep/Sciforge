@@ -6,58 +6,58 @@ entries:
     name: Circular velocity
     domain: astronomy
     test: "orbits::circular_velocity"
-    avg_time_ns: 1827569.00
+    avg_time_ns: 1964850.00
   - label: orbits_escape_velocity
     symbol: EV
     name: Escape velocity
     domain: astronomy
     test: "orbits::escape_velocity"
-    avg_time_ns: 2249449.00
+    avg_time_ns: 1773520.00
   - label: orbits_escape_vs_circular_velocity_ratio
     symbol: EVC
     name: Escape vs circular velocity ratio
     domain: astronomy
     test: "orbits::escape_vs_circular_velocity_ratio"
-    avg_time_ns: 1980699.00
+    avg_time_ns: 1773721.00
   - label: orbits_hohmann_delta_v_positive_and_zero_identity
     symbol: HDV
     name: Hohmann delta v positive and zero identity
     domain: astronomy
     test: "orbits::hohmann_delta_v_positive_and_zero_identity"
-    avg_time_ns: 2555539.00
+    avg_time_ns: 1977900.00
   - label: orbits_kepler_period_earth
     symbol: KPE
     name: Kepler period earth
     domain: astronomy
     test: "orbits::kepler_period_earth"
-    avg_time_ns: 2288119.00
+    avg_time_ns: 1785530.00
   - label: orbits_periapsis_apoapsis_consistency
     symbol: PAC
     name: Periapsis apoapsis consistency
     domain: astronomy
     test: "orbits::periapsis_apoapsis_consistency"
-    avg_time_ns: 2193379.00
+    avg_time_ns: 1774631.00
   - label: orbits_roche_limit
     symbol: RL
     name: Roche limit
     domain: astronomy
     test: "orbits::roche_limit"
-    avg_time_ns: 2279879.00
+    avg_time_ns: 1893530.00
   - label: orbits_sphere_of_influence_earth
     symbol: SOI
     name: Sphere of influence earth
     domain: astronomy
     test: "orbits::sphere_of_influence_earth"
-    avg_time_ns: 2176399.00
+    avg_time_ns: 1948590.00
   - label: orbits_true_anomaly_radius_matches_extrema
     symbol: TAR
     name: True anomaly radius matches extrema
     domain: astronomy
     test: "orbits::true_anomaly_radius_matches_extrema"
-    avg_time_ns: 2493759.00
+    avg_time_ns: 1913171.00
   - label: orbits_vis_viva_circular
     symbol: VVC
     name: Vis viva circular
     domain: astronomy
     test: "orbits::vis_viva_circular"
-    avg_time_ns: 2235179.00
+    avg_time_ns: 1839940.00

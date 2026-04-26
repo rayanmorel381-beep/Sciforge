@@ -1,6 +1,6 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-ocean::henry_solubility,f64,1,1,1912980,1912980,1912980,0,1000,pass,ocean,HS,Henry solubility,meteorology,ocean::henry_solubility
-ocean::sea_level_rise_thermal,f64,1,1,1780869,1780869,1780869,0,1000,pass,ocean,SLR,Sea level rise thermal,meteorology,ocean::sea_level_rise_thermal
-ocean::seawater_density,f64,1,1,1763929,1763929,1763929,0,1000,pass,ocean,SD,Seawater density,meteorology,ocean::seawater_density
-ocean::seawater_density_increases_with_salinity,f64,1,1,1738789,1738789,1738789,0,1000,pass,ocean,SDI,Seawater density increases with salinity,meteorology,ocean::seawater_density_increases_with_salinity
-ocean::sound_speed,f64,2,1,2631619,2631619,2631619,0,500,pass,ocean,SS,Sound speed,meteorology,ocean::sound_speed
+ocean::henry_solubility,f64,2,1,2061620,2061620,2061620,0,500,pass,ocean,HS,Henry solubility,meteorology,ocean::henry_solubility
+ocean::sea_level_rise_thermal,f64,1,1,1772630,1772630,1772630,0,1000,pass,ocean,SLR,Sea level rise thermal,meteorology,ocean::sea_level_rise_thermal
+ocean::seawater_density,f64,1,1,1886241,1886241,1886241,0,1000,pass,ocean,SD,Seawater density,meteorology,ocean::seawater_density
+ocean::seawater_density_increases_with_salinity,f64,1,1,1752250,1752250,1752250,0,1000,pass,ocean,SDI,Seawater density increases with salinity,meteorology,ocean::seawater_density_increases_with_salinity
+ocean::sound_speed,f64,1,1,1720930,1720930,1720930,0,1000,pass,ocean,SS,Sound speed,meteorology,ocean::sound_speed

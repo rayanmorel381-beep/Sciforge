@@ -11,7 +11,7 @@ entries:
     circular_vel: 47.88 km/s
     escape_vel: 4.25 km/s
     hohmann_dv: 17.15 km/s
-    avg_time_ns: 1855.87
+    avg_time_ns: 1863.60
   - label: Venus
     symbol: ♀
     name: Venus
@@ -22,7 +22,7 @@ entries:
     circular_vel: 35.03 km/s
     escape_vel: 10.36 km/s
     hohmann_dv: 5.20 km/s
-    avg_time_ns: 1741.47
+    avg_time_ns: 1768.45
   - label: Earth
     symbol: ♁
     name: Earth
@@ -33,7 +33,7 @@ entries:
     circular_vel: 29.79 km/s
     escape_vel: 11.19 km/s
     hohmann_dv: — (origin)
-    avg_time_ns: 1730.09
+    avg_time_ns: 1747.73
   - label: Mars
     symbol: ♂
     name: Mars
@@ -44,4 +44,4 @@ entries:
     circular_vel: 24.13 km/s
     escape_vel: 5.03 km/s
     hohmann_dv: 5.59 km/s
-    avg_time_ns: 1792.81
+    avg_time_ns: 1752.94

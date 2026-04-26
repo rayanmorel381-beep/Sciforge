@@ -7,11 +7,11 @@ product_mass = "213.6501 g/mol"
 atom_economy = "100.0%"
 experiment_name = "Thermite reaction_calc"
 precision = "f64"
-elapsed_ms = 220
+elapsed_ms = 224
 iterations = 5000
-avg_time_ns = 44191.38
-min_time_ns = 44191.38
-max_time_ns = 44191.38
+avg_time_ns = 44899.57
+min_time_ns = 44899.57
+max_time_ns = 44899.57
 time_stddev = 0.0000
-iterations_per_sec = 22727.27
+iterations_per_sec = 22321.43
 result = "Thermite reaction | 2Al + Fe₂O₃ → Al₂O₃ + 2Fe | M(react)=213.6501 g/mol | M(prod)=213.6501 g/mol | Atom economy=100.0%"

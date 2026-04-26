@@ -1,6 +1,6 @@
 [package]
 name = "sciforge"
-version = "0.0.3"
+version = "0.0.4"
 edition = "2024"
 description = "A comprehensive scientific computing library in pure Rust with zero dependencies"
 keywords = ["science", "mathematics", "physics", "chemistry", "computing"]
@@ -10,7 +10,7 @@ license-file = "LICENSE"
 documentation = "https://docs.rs/crate/sciforge/latest"
 homepage = "https://rayanmorel381-beep.github.io/Sciforge/"
 repository = "https://github.com/rayanmorel381-beep/Sciforge"
-include = ["src/**/*", "tests/**/*", "docs/**/*", "tableau-periodique/**/*", "examples/**/*", "Cargo.toml", "README.md", "LICENSE", "ChangeLog.md", "ComingSoon.md", "Contributing.md"]
+include = ["src/**/*", "tests/**/*", "docs/**/*", "tableau-periodique/**/*", "examples/**/*", "Cargo.toml", "README.md", "LICENSE", "ChangeLog.md", "ComingSoon.md", "Contributing.md", "Sciforge.png", "Sciforge.svg"]
 
 [package.metadata.docs]
 changelog = "ChangeLog.md"

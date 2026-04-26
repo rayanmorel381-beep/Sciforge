@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-structural::alpha_helix_propensity,f64,1,1,1891369,1891369,1891369,0,1000,pass,structural,AHP,Alpha helix propensity,biology,structural::alpha_helix_propensity
-structural::binding_free_energy,f64,1,1,1896969,1896969,1896969,0,1000,pass,structural,BFE,Binding free energy,biology,structural::binding_free_energy
-structural::radius_of_gyration,f64,2,1,2033779,2033779,2033779,0,500,pass,structural,ROG,Radius of gyration,biology,structural::radius_of_gyration
-structural::rmsd,f64,1,1,1977709,1977709,1977709,0,1000,pass,structural,Rm,Rmsd,biology,structural::rmsd
+structural::alpha_helix_propensity,f64,2,1,2037840,2037840,2037840,0,500,pass,structural,AHP,Alpha helix propensity,biology,structural::alpha_helix_propensity
+structural::binding_free_energy,f64,1,1,1905720,1905720,1905720,0,1000,pass,structural,BFE,Binding free energy,biology,structural::binding_free_energy
+structural::radius_of_gyration,f64,1,1,1969751,1969751,1969751,0,1000,pass,structural,ROG,Radius of gyration,biology,structural::radius_of_gyration
+structural::rmsd,f64,2,1,2034190,2034190,2034190,0,500,pass,structural,Rm,Rmsd,biology,structural::rmsd

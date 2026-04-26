@@ -6,22 +6,22 @@ entries:
     name: Broad sense heritability
     domain: biology
     test: "genetics::broad_sense_heritability"
-    avg_time_ns: 2833199.00
+    avg_time_ns: 2426830.00
   - label: genetics_effective_population_size
     symbol: EPS
     name: Effective population size
     domain: biology
     test: "genetics::effective_population_size"
-    avg_time_ns: 2696249.00
+    avg_time_ns: 2504571.00
   - label: genetics_hardy_weinberg
     symbol: HW
     name: Hardy weinberg
     domain: biology
     test: "genetics::hardy_weinberg"
-    avg_time_ns: 2315369.00
+    avg_time_ns: 2340090.00
   - label: genetics_mutation_selection_balance
     symbol: MSB
     name: Mutation selection balance
     domain: biology
     test: "genetics::mutation_selection_balance"
-    avg_time_ns: 2644719.00
+    avg_time_ns: 2557661.00

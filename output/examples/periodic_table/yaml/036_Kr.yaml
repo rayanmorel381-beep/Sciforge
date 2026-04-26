@@ -5,11 +5,11 @@ config: [Ar] 3d¹⁰ 4s² 4p⁶
 mass: 83.798
 experiment_name: Kr_Krypton_benchmark
 precision: f64
-elapsed_ms: 27
+elapsed_ms: 28
 iterations: 10000
-avg_time_ns: 2785.39
-min_time_ns: 2785.39
-max_time_ns: 2785.39
+avg_time_ns: 2877.84
+min_time_ns: 2877.84
+max_time_ns: 2877.84
 time_stddev: 0.0000
-iterations_per_sec: 370370.38
+iterations_per_sec: 357142.86
 result: Z=36 | Kr (Krypton) | 83.798 u | noble gas | [Ar] 3d¹⁰ 4s² 4p⁶

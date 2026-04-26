@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-computational::dft_hartree_energy,f64,1,1,1938939,1938939,1938939,0,1000,pass,computational,DHE,Dft hartree energy,chemistry,computational::dft_hartree_energy
-computational::gaussian_primitive,f64,1,1,1809959,1809959,1809959,0,1000,pass,computational,GP,Gaussian primitive,chemistry,computational::gaussian_primitive
-computational::thomas_fermi_kinetic_energy,f64,2,1,2034499,2034499,2034499,0,500,pass,computational,TFK,Thomas fermi kinetic energy,chemistry,computational::thomas_fermi_kinetic_energy
+computational::dft_hartree_energy,f64,2,1,2306270,2306270,2306270,0,500,pass,computational,DHE,Dft hartree energy,chemistry,computational::dft_hartree_energy
+computational::gaussian_primitive,f64,2,1,2332441,2332441,2332441,0,500,pass,computational,GP,Gaussian primitive,chemistry,computational::gaussian_primitive
+computational::thomas_fermi_kinetic_energy,f64,2,1,2591490,2591490,2591490,0,500,pass,computational,TFK,Thomas fermi kinetic energy,chemistry,computational::thomas_fermi_kinetic_energy

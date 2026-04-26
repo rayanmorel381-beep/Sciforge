@@ -6,16 +6,16 @@ entries:
     name: Bfs
     domain: maths
     test: "graph::bfs"
-    avg_time_ns: 1824929.00
+    avg_time_ns: 1982491.00
   - label: graph_connected_components
     symbol: CC
     name: Connected components
     domain: maths
     test: "graph::connected_components"
-    avg_time_ns: 1751820.00
+    avg_time_ns: 2281410.00
   - label: graph_dijkstra
     symbol: Di
     name: Dijkstra
     domain: maths
     test: "graph::dijkstra"
-    avg_time_ns: 1701189.00
+    avg_time_ns: 2460870.00

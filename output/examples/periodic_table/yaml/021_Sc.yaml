@@ -7,9 +7,9 @@ experiment_name: Sc_Scandium_benchmark
 precision: f32
 elapsed_ms: 16
 iterations: 10000
-avg_time_ns: 1636.08
-min_time_ns: 1636.08
-max_time_ns: 1636.08
+avg_time_ns: 1643.54
+min_time_ns: 1643.54
+max_time_ns: 1643.54
 time_stddev: 0.0000
 iterations_per_sec: 625000.00
 result: Z=21 | Sc (Scandium) | 44.955908 u | transition metal | [Ar] 3d¹ 4s²

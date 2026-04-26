@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-colloids::brownian_diffusion_coefficient,f64,2,1,2029799,2029799,2029799,0,500,pass,colloids,BDC,Brownian diffusion coefficient,chemistry,colloids::brownian_diffusion_coefficient
-colloids::stokes_sedimentation,f64,1,1,1762510,1762510,1762510,0,1000,pass,colloids,SS,Stokes sedimentation,chemistry,colloids::stokes_sedimentation
-colloids::zeta_potential_smoluchowski,f64,1,1,1731269,1731269,1731269,0,1000,pass,colloids,ZPS,Zeta potential smoluchowski,chemistry,colloids::zeta_potential_smoluchowski
+colloids::brownian_diffusion_coefficient,f64,1,1,1941600,1941600,1941600,0,1000,pass,colloids,BDC,Brownian diffusion coefficient,chemistry,colloids::brownian_diffusion_coefficient
+colloids::stokes_sedimentation,f64,2,1,2076290,2076290,2076290,0,500,pass,colloids,SS,Stokes sedimentation,chemistry,colloids::stokes_sedimentation
+colloids::zeta_potential_smoluchowski,f64,2,1,2469781,2469781,2469781,0,500,pass,colloids,ZPS,Zeta potential smoluchowski,chemistry,colloids::zeta_potential_smoluchowski

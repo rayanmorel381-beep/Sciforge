@@ -6,22 +6,22 @@ entries:
     name: Fano factor
     domain: biology
     test: "neuroscience::fano_factor"
-    avg_time_ns: 1910339.00
+    avg_time_ns: 2247280.00
   - label: neuroscience_firing_rate
     symbol: FR
     name: Firing rate
     domain: biology
     test: "neuroscience::firing_rate"
-    avg_time_ns: 1881669.00
+    avg_time_ns: 2609161.00
   - label: neuroscience_rescorla_wagner_update
     symbol: RWU
     name: Rescorla wagner update
     domain: biology
     test: "neuroscience::rescorla_wagner_update"
-    avg_time_ns: 1852379.00
+    avg_time_ns: 2473070.00
   - label: neuroscience_stdp_weight_change
     symbol: SWC
     name: Stdp weight change
     domain: biology
     test: "neuroscience::stdp_weight_change"
-    avg_time_ns: 1871889.00
+    avg_time_ns: 2540100.00

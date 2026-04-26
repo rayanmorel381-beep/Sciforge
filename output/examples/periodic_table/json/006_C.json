@@ -6,12 +6,12 @@
   "mass": "12.011",
   "experiment_name": "C_Carbon_benchmark",
   "precision": "f64",
-  "elapsed_ms": 4,
+  "elapsed_ms": 5,
   "iterations": 10000,
-  "avg_time_ns": 471.10,
-  "min_time_ns": 471.10,
-  "max_time_ns": 471.10,
+  "avg_time_ns": 514.79,
+  "min_time_ns": 514.79,
+  "max_time_ns": 514.79,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 2500000.00,
+  "iterations_per_sec": 2000000.00,
   "result": "Z=6 | C (Carbon) | 12.011 u | nonmetal | 1s² 2s² 2p²"
 }

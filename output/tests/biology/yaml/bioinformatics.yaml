@@ -6,22 +6,22 @@ entries:
     name: Alignment gc content
     domain: biology
     test: "bioinformatics::alignment_gc_content"
-    avg_time_ns: 2438749.00
+    avg_time_ns: 2170491.00
   - label: bioinformatics_edit_distance_identical
     symbol: EDI
     name: Edit distance identical
     domain: biology
     test: "bioinformatics::edit_distance_identical"
-    avg_time_ns: 2452219.00
+    avg_time_ns: 1919790.00
   - label: bioinformatics_sequence_identity
     symbol: SI
     name: Sequence identity
     domain: biology
     test: "bioinformatics::sequence_identity"
-    avg_time_ns: 2011779.00
+    avg_time_ns: 1916170.00
   - label: bioinformatics_smith_waterman_score
     symbol: SWS
     name: Smith waterman score
     domain: biology
     test: "bioinformatics::smith_waterman_score"
-    avg_time_ns: 1977209.00
+    avg_time_ns: 2269051.00

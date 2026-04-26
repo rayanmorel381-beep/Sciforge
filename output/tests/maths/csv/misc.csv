@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-misc::poly_one,f64,1,1,1701799,1701799,1701799,0,1000,pass,misc,PO,Poly one,maths,misc::poly_one
-misc::poly_zero,f64,2,1,2202689,2202689,2202689,0,500,pass,misc,PZ,Poly zero,maths,misc::poly_zero
-misc::quaternion_pure,f64,1,1,1961720,1961720,1961720,0,1000,pass,misc,QP,Quaternion pure,maths,misc::quaternion_pure
-misc::tensor_zeros,f64,1,1,1889299,1889299,1889299,0,1000,pass,misc,TZ,Tensor zeros,maths,misc::tensor_zeros
+misc::poly_one,f64,2,1,2082020,2082020,2082020,0,500,pass,misc,PO,Poly one,maths,misc::poly_one
+misc::poly_zero,f64,1,1,1918300,1918300,1918300,0,1000,pass,misc,PZ,Poly zero,maths,misc::poly_zero
+misc::quaternion_pure,f64,1,1,1839071,1839071,1839071,0,1000,pass,misc,QP,Quaternion pure,maths,misc::quaternion_pure
+misc::tensor_zeros,f64,1,1,1972660,1972660,1972660,0,1000,pass,misc,TZ,Tensor zeros,maths,misc::tensor_zeros

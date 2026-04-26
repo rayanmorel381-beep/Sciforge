@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-microbiology::biofilm_formation,f64,3,1,3084289,3084289,3084289,0,333.33334,pass,microbiology,BF,Biofilm formation,biology,microbiology::biofilm_formation
-microbiology::chemostat_steady_state_biomass,f64,2,1,2725198,2725198,2725198,0,500,pass,microbiology,CSS,Chemostat steady state biomass,biology,microbiology::chemostat_steady_state_biomass
-microbiology::generation_time_bacteria,f64,2,1,2246459,2246459,2246459,0,500,pass,microbiology,GTB,Generation time bacteria,biology,microbiology::generation_time_bacteria
-microbiology::monod_growth,f64,1,1,1968609,1968609,1968609,0,1000,pass,microbiology,MG,Monod growth,biology,microbiology::monod_growth
+microbiology::biofilm_formation,f64,2,1,2306190,2306190,2306190,0,500,pass,microbiology,BF,Biofilm formation,biology,microbiology::biofilm_formation
+microbiology::chemostat_steady_state_biomass,f64,2,1,2471660,2471660,2471660,0,500,pass,microbiology,CSS,Chemostat steady state biomass,biology,microbiology::chemostat_steady_state_biomass
+microbiology::generation_time_bacteria,f64,2,1,2360381,2360381,2360381,0,500,pass,microbiology,GTB,Generation time bacteria,biology,microbiology::generation_time_bacteria
+microbiology::monod_growth,f64,2,1,2351260,2351260,2351260,0,500,pass,microbiology,MG,Monod growth,biology,microbiology::monod_growth

@@ -7,9 +7,9 @@ experiment_name: Am_Americium_benchmark
 precision: f32
 elapsed_ms: 36
 iterations: 5000
-avg_time_ns: 7388.27
-min_time_ns: 7388.27
-max_time_ns: 7388.27
+avg_time_ns: 7340.23
+min_time_ns: 7340.23
+max_time_ns: 7340.23
 time_stddev: 0.0000
 iterations_per_sec: 138888.89
 result: Z=95 | Am (Americium) | 243.061381 u | actinide | [Rn] 5f⁷ 7s²

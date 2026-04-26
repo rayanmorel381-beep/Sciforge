@@ -110,7 +110,7 @@ benchmark.md
 <thead>
 <tr><th>Label</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
 </thead><tbody>
-<tr><td>rt</td><td>f32</td><td>25</td><td>28.40</td><td>0.00</td></tr>
+<tr><td>rt</td><td>f32</td><td>25</td><td>20.40</td><td>0.00</td></tr>
 </tbody></table>
 <h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
 <p style="line-height:1.6;margin:.4em 0">### Group Distribution</p>
@@ -118,21 +118,21 @@ benchmark.md
 <thead>
 <tr><th>Group</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
 </thead><tbody>
-<tr><td>other</td><td>1</td><td>28.40</td><td>28.40</td><td>28.40</td></tr>
+<tr><td>other</td><td>1</td><td>20.40</td><td>20.40</td><td>20.40</td></tr>
 </tbody></table>
 <p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
 <table>
 <thead>
 <tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
 </thead><tbody>
-<tr><td>1</td><td>rt</td><td>28.40</td></tr>
+<tr><td>1</td><td>rt</td><td>20.40</td></tr>
 </tbody></table>
 <p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
 <table>
 <thead>
 <tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
 </thead><tbody>
-<tr><td>1</td><td>rt</td><td>28.40</td></tr>
+<tr><td>1</td><td>rt</td><td>20.40</td></tr>
 </tbody></table>
 </div>
 
@@ -154,7 +154,7 @@ benchmark.md
 <text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">other</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">28.4</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">20.4</text>
 </svg>
 </div>
 
@@ -163,7 +163,7 @@ benchmark.md
 <svg viewBox="0 0 650 38" style="width:100%;max-width:650px">
 <text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">rt</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">28.4 ns</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">20.4 ns</text>
 </svg>
 </div>
 
@@ -172,7 +172,7 @@ benchmark.md
 <svg viewBox="0 0 650 38" style="width:100%;max-width:650px">
 <text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">rt</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">28.4 ns</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">20.4 ns</text>
 </svg>
 </div>
 
@@ -183,9 +183,9 @@ benchmark.md
 <rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
 <text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">other</text>
 <text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
-<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 28.4 ns</text>
-<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 28.4 ns</text>
-<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 28.4 ns</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 20.4 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 20.4 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 20.4 ns</text>
 </svg>
 </div>
 
@@ -194,21 +194,21 @@ benchmark.md
 <script>
 var F={
 csv:{
-"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result\nrt_export,f32,0,25,28.4,28.4,28.4,0,0,roundtrip\n"},
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result\nrt_export,f32,0,25,20.4,20.4,20.4,0,0,roundtrip\n"},
 json:{
-"rt.json":"{\n  \"experiment_name\": \"rt_export\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 25,\n  \"avg_time_ns\": 28.40,\n  \"min_time_ns\": 28.40,\n  \"max_time_ns\": 28.40,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"roundtrip\"\n}",
-"summary.json":"[\n{\n  \"experiment_name\": \"rt_export\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 25,\n  \"avg_time_ns\": 28.40,\n  \"min_time_ns\": 28.40,\n  \"max_time_ns\": 28.40,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"roundtrip\"\n}\n]"},
+"rt.json":"{\n  \"experiment_name\": \"rt_export\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 25,\n  \"avg_time_ns\": 20.40,\n  \"min_time_ns\": 20.40,\n  \"max_time_ns\": 20.40,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"roundtrip\"\n}",
+"summary.json":"[\n{\n  \"experiment_name\": \"rt_export\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 25,\n  \"avg_time_ns\": 20.40,\n  \"min_time_ns\": 20.40,\n  \"max_time_ns\": 20.40,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"roundtrip\"\n}\n]"},
 yaml:{
-"rt.yaml":"experiment_name: rt_export\nprecision: f32\nelapsed_ms: 0\niterations: 25\navg_time_ns: 28.40\nmin_time_ns: 28.40\nmax_time_ns: 28.40\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: roundtrip\n",
-"summary.yaml":"title: Roundtrip\ncount: 1\nentries:\n  - label: rt\n    avg_time_ns: 28.40\n    iterations_per_sec: 0.00\n"},
+"rt.yaml":"experiment_name: rt_export\nprecision: f32\nelapsed_ms: 0\niterations: 25\navg_time_ns: 20.40\nmin_time_ns: 20.40\nmax_time_ns: 20.40\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: roundtrip\n",
+"summary.yaml":"title: Roundtrip\ncount: 1\nentries:\n  - label: rt\n    avg_time_ns: 20.40\n    iterations_per_sec: 0.00\n"},
 toml:{
-"rt.toml":"[benchmark]\nexperiment_name = \"rt_export\"\nprecision = \"f32\"\nelapsed_ms = 0\niterations = 25\navg_time_ns = 28.40\nmin_time_ns = 28.40\nmax_time_ns = 28.40\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"roundtrip\"\n",
-"summary.toml":"title = \"Roundtrip\"\ncount = 1\n\n[[entries]]\nlabel = \"rt\"\navg_time_ns = 28.40\niterations_per_sec = 0.00\n\n"},
+"rt.toml":"[benchmark]\nexperiment_name = \"rt_export\"\nprecision = \"f32\"\nelapsed_ms = 0\niterations = 25\navg_time_ns = 20.40\nmin_time_ns = 20.40\nmax_time_ns = 20.40\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"roundtrip\"\n",
+"summary.toml":"title = \"Roundtrip\"\ncount = 1\n\n[[entries]]\nlabel = \"rt\"\navg_time_ns = 20.40\niterations_per_sec = 0.00\n\n"},
 bmk:{
-"rt.bmk":"experiment_name: rt_export\nprecision:       f32\nelapsed_ms:      0\niterations:      25\navg_time_ns:     28.40\nmin_time_ns:     28.40\nmax_time_ns:     28.40\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     180 bytes\n"}
+"rt.bmk":"experiment_name: rt_export\nprecision:       f32\nelapsed_ms:      0\niterations:      25\navg_time_ns:     20.40\nmin_time_ns:     20.40\nmax_time_ns:     20.40\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     228 bytes\n"}
 };
 var D={
-"rt":{tags:{},p:"f32",it:25,avg:28.40,mn:28.40,mx:28.40,sd:0.0000,ips:0.00}
+"rt":{tags:{},p:"f32",it:25,avg:20.40,mn:20.40,mx:20.40,sd:0.0000,ips:0.00}
 };
 function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
 function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}

@@ -6,11 +6,11 @@ config = "[Rn] 5f¹⁴ 7s² 7p¹"
 mass = "266.12"
 experiment_name = "Lr_Lawrencium_benchmark"
 precision = "f32"
-elapsed_ms = 7
+elapsed_ms = 8
 iterations = 1000
-avg_time_ns = 7958.24
-min_time_ns = 7958.24
-max_time_ns = 7958.24
+avg_time_ns = 8910.24
+min_time_ns = 8910.24
+max_time_ns = 8910.24
 time_stddev = 0.0000
-iterations_per_sec = 142857.14
+iterations_per_sec = 125000.00
 result = "Z=103 | Lr (Lawrencium) | 266.12 u | actinide | [Rn] 5f¹⁴ 7s² 7p¹"

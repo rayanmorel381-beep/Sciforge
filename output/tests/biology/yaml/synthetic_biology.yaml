@@ -6,22 +6,22 @@ entries:
     name: And gate
     domain: biology
     test: "synthetic_biology::and_gate"
-    avg_time_ns: 1884149.00
+    avg_time_ns: 1979540.00
   - label: synthetic_biology_crispr_on_target_score
     symbol: COT
     name: Crispr on target score
     domain: biology
     test: "synthetic_biology::crispr_on_target_score"
-    avg_time_ns: 2236349.00
+    avg_time_ns: 1991941.00
   - label: synthetic_biology_hill_activation
     symbol: HA
     name: Hill activation
     domain: biology
     test: "synthetic_biology::hill_activation"
-    avg_time_ns: 2132950.00
+    avg_time_ns: 2005900.00
   - label: synthetic_biology_hill_repression
     symbol: HR
     name: Hill repression
     domain: biology
     test: "synthetic_biology::hill_repression"
-    avg_time_ns: 1895859.00
+    avg_time_ns: 2056720.00

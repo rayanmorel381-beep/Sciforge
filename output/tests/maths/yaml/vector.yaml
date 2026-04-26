@@ -6,16 +6,16 @@ entries:
     name: Vec distance
     domain: maths
     test: "vector::vec_distance"
-    avg_time_ns: 1730279.00
+    avg_time_ns: 2458681.00
   - label: vector_vec_lerp
     symbol: VL
     name: Vec lerp
     domain: maths
     test: "vector::vec_lerp"
-    avg_time_ns: 1788729.00
+    avg_time_ns: 2324770.00
   - label: vector_vec_project
     symbol: VP
     name: Vec project
     domain: maths
     test: "vector::vec_project"
-    avg_time_ns: 1988819.00
+    avg_time_ns: 2059010.00

@@ -16,9 +16,9 @@ experiment_name = "Reykjavik_weather"
 precision = "f64"
 elapsed_ms = 28
 iterations = 5000
-avg_time_ns = 5642.68
-min_time_ns = 5642.68
-max_time_ns = 5642.68
+avg_time_ns = 5605.35
+min_time_ns = 5605.35
+max_time_ns = 5605.35
 time_stddev = 0.0000
-iterations_per_sec = 178571.42
+iterations_per_sec = 178571.43
 result = "Reykjavik | 61m | 4.6 °C | RH=82% | Td=1.8 °C | DA=-1172 m | θ=278.4 K"

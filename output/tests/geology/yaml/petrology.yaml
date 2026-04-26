@@ -6,40 +6,40 @@ entries:
     name: Cipw quartz norm
     domain: geology
     test: "petrology::cipw_quartz_norm"
-    avg_time_ns: 1794329.00
+    avg_time_ns: 2267000.00
   - label: petrology_crystal_settling_velocity
     symbol: CSV
     name: Crystal settling velocity
     domain: geology
     test: "petrology::crystal_settling_velocity"
-    avg_time_ns: 1765559.00
+    avg_time_ns: 1938511.00
   - label: petrology_differentiation_index
     symbol: DI
     name: Differentiation index
     domain: geology
     test: "petrology::differentiation_index"
-    avg_time_ns: 1679760.00
+    avg_time_ns: 1799500.00
   - label: petrology_liquidus_temperature
     symbol: LT
     name: Liquidus temperature
     domain: geology
     test: "petrology::liquidus_temperature"
-    avg_time_ns: 1673029.00
+    avg_time_ns: 1705510.00
   - label: petrology_mg_number
     symbol: MN
     name: Mg number
     domain: geology
     test: "petrology::mg_number"
-    avg_time_ns: 1691019.00
+    avg_time_ns: 1709191.00
   - label: petrology_total_alkali_silica
     symbol: TAS
     name: Total alkali silica
     domain: geology
     test: "petrology::total_alkali_silica"
-    avg_time_ns: 1693619.00
+    avg_time_ns: 1786690.00
   - label: petrology_viscosity_arrhenius
     symbol: VA
     name: Viscosity arrhenius
     domain: geology
     test: "petrology::viscosity_arrhenius"
-    avg_time_ns: 1682640.00
+    avg_time_ns: 1731330.00

@@ -2,6 +2,24 @@
 
 ---
 
+## v0.0.4
+
+### Expansion
+
+| Metric | v0.0.3 | v0.0.4 | Delta |
+|---|---|---|---|
+| Total tests | 814 | 823 | +9 |
+
+### Changes
+
+| Change | Detail |
+|---|---|
+| New tests | Bayesian inference, PCA, k-means, DBSCAN, silhouette, `error_propagation`, `monte_carlo_uncertainty`, `rayleigh_phase`, new astronomy submodules |
+| Stress test | `tests/stress/main.rs` — `metric()` signature migrated `f32` → `f64` |
+| Engine test | `tests/benchmark/engine.rs` — assertions updated: `BENCHMARK_VERSION = 5`, `BENCHMARK_HEADER_SIZE = 216` |
+
+---
+
 ## v0.0.3
 
 ### Expansion

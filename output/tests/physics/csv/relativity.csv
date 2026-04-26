@@ -1,9 +1,9 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-relativity::compton_wavelength_shift,f64,1,1,1908979,1908979,1908979,0,1000,pass,relativity,CWS,Compton wavelength shift,physics,relativity::compton_wavelength_shift
-relativity::energy_momentum_relation,f64,1,1,1932979,1932979,1932979,0,1000,pass,relativity,EMR,Energy momentum relation,physics,relativity::energy_momentum_relation
-relativity::gamma_factor_at_rest,f64,1,1,1903439,1903439,1903439,0,1000,pass,relativity,GFA,Gamma factor at rest,physics,relativity::gamma_factor_at_rest
-relativity::gamma_factor_increases_with_velocity,f64,1,1,1931599,1931599,1931599,0,1000,pass,relativity,GFI,Gamma factor increases with velocity,physics,relativity::gamma_factor_increases_with_velocity
-relativity::length_contraction,f64,2,1,2056500,2056500,2056500,0,500,pass,relativity,LC,Length contraction,physics,relativity::length_contraction
-relativity::planck_radiation_positive,f64,1,1,1946729,1946729,1946729,0,1000,pass,relativity,PRP,Planck radiation positive,physics,relativity::planck_radiation_positive
-relativity::time_dilation,f64,1,1,1764859,1764859,1764859,0,1000,pass,relativity,TD,Time dilation,physics,relativity::time_dilation
-relativity::time_dilation_high_v,f64,1,1,1842129,1842129,1842129,0,1000,pass,relativity,TDH,Time dilation high v,physics,relativity::time_dilation_high_v
+relativity::compton_wavelength_shift,f64,2,1,2281141,2281141,2281141,0,500,pass,relativity,CWS,Compton wavelength shift,physics,relativity::compton_wavelength_shift
+relativity::energy_momentum_relation,f64,2,1,2205860,2205860,2205860,0,500,pass,relativity,EMR,Energy momentum relation,physics,relativity::energy_momentum_relation
+relativity::gamma_factor_at_rest,f64,2,1,2215920,2215920,2215920,0,500,pass,relativity,GFA,Gamma factor at rest,physics,relativity::gamma_factor_at_rest
+relativity::gamma_factor_increases_with_velocity,f64,2,1,2194831,2194831,2194831,0,500,pass,relativity,GFI,Gamma factor increases with velocity,physics,relativity::gamma_factor_increases_with_velocity
+relativity::length_contraction,f64,2,1,2264370,2264370,2264370,0,500,pass,relativity,LC,Length contraction,physics,relativity::length_contraction
+relativity::planck_radiation_positive,f64,1,1,1949210,1949210,1949210,0,1000,pass,relativity,PRP,Planck radiation positive,physics,relativity::planck_radiation_positive
+relativity::time_dilation,f64,2,1,2002591,2002591,2002591,0,500,pass,relativity,TD,Time dilation,physics,relativity::time_dilation
+relativity::time_dilation_high_v,f64,1,1,1883140,1883140,1883140,0,1000,pass,relativity,TDH,Time dilation high v,physics,relativity::time_dilation_high_v

@@ -6,16 +6,16 @@ entries:
     name: Metabolic control coefficient
     domain: biology
     test: "systems_biology::metabolic_control_coefficient"
-    avg_time_ns: 1841209.00
+    avg_time_ns: 1978441.00
   - label: systems_biology_oscillation_period
     symbol: OP
     name: Oscillation period
     domain: biology
     test: "systems_biology::oscillation_period"
-    avg_time_ns: 2125069.00
+    avg_time_ns: 2983160.00
   - label: systems_biology_ultrasensitivity_index
     symbol: UI
     name: Ultrasensitivity index
     domain: biology
     test: "systems_biology::ultrasensitivity_index"
-    avg_time_ns: 1995669.00
+    avg_time_ns: 2347041.00

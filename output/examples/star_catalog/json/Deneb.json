@@ -13,12 +13,12 @@
   "wien_peak": "340 nm",
   "experiment_name": "Deneb_stellar",
   "precision": "f64",
-  "elapsed_ms": 8,
+  "elapsed_ms": 9,
   "iterations": 5000,
-  "avg_time_ns": 1713.84,
-  "min_time_ns": 1713.84,
-  "max_time_ns": 1713.84,
+  "avg_time_ns": 1838.03,
+  "min_time_ns": 1838.03,
+  "max_time_ns": 1838.03,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 625000.00,
+  "iterations_per_sec": 555555.56,
   "result": "Deneb (A2Ia) | L=7.506e31 W | M_abs=-8.27 | R_s=56131.23 m | MS lifetime=0.0 Myr | Wien λ_max=340 nm"
 }

@@ -13,7 +13,7 @@ entries:
     schwarzschild: 48745.54 m
     ms_lifetime: 0.0 Myr
     wien_peak: 805 nm
-    avg_time_ns: 1696.30
+    avg_time_ns: 1751.97
   - label: Rigel
     symbol: B
     name: Rigel
@@ -26,7 +26,7 @@ entries:
     schwarzschild: 62039.78 m
     ms_lifetime: 0.0 Myr
     wien_peak: 239 nm
-    avg_time_ns: 1671.57
+    avg_time_ns: 1738.15
   - label: Polaris
     symbol: F
     name: Polaris
@@ -39,7 +39,7 @@ entries:
     schwarzschild: 15953.09 m
     ms_lifetime: 0.0 Myr
     wien_peak: 482 nm
-    avg_time_ns: 1646.64
+    avg_time_ns: 1788.72
   - label: Deneb
     symbol: A
     name: Deneb
@@ -52,4 +52,4 @@ entries:
     schwarzschild: 56131.23 m
     ms_lifetime: 0.0 Myr
     wien_peak: 340 nm
-    avg_time_ns: 1713.84
+    avg_time_ns: 1838.03

@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-stem_cell::niche_occupancy,f64,1,1,1925019,1925019,1925019,0,1000,pass,stem_cell,NO,Niche occupancy,biology,stem_cell::niche_occupancy
-stem_cell::reprogramming_efficiency,f64,1,1,1896170,1896170,1896170,0,1000,pass,stem_cell,RE,Reprogramming efficiency,biology,stem_cell::reprogramming_efficiency
-stem_cell::self_renewal_probability,f64,1,1,1880849,1880849,1880849,0,1000,pass,stem_cell,SRP,Self renewal probability,biology,stem_cell::self_renewal_probability
+stem_cell::niche_occupancy,f64,1,1,1893220,1893220,1893220,0,1000,pass,stem_cell,NO,Niche occupancy,biology,stem_cell::niche_occupancy
+stem_cell::reprogramming_efficiency,f64,2,1,2192840,2192840,2192840,0,500,pass,stem_cell,RE,Reprogramming efficiency,biology,stem_cell::reprogramming_efficiency
+stem_cell::self_renewal_probability,f64,2,1,2207231,2207231,2207231,0,500,pass,stem_cell,SRP,Self renewal probability,biology,stem_cell::self_renewal_probability

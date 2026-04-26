@@ -13,12 +13,12 @@
   "binding_energy": "7.570 MeV/nucleon",
   "experiment_name": "Thorium_232_decay",
   "precision": "f64",
-  "elapsed_ms": 12,
+  "elapsed_ms": 11,
   "iterations": 5000,
-  "avg_time_ns": 2421.41,
-  "min_time_ns": 2421.41,
-  "max_time_ns": 2421.41,
+  "avg_time_ns": 2288.26,
+  "min_time_ns": 2288.26,
+  "max_time_ns": 2288.26,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 416666.66,
+  "iterations_per_sec": 454545.45,
   "result": "²³²Th (Thorium) | t½=1.405e10 years | λ=1.5632e-18 s⁻¹ | alpha | A_sp=4.058e3 Bq/g"
 }

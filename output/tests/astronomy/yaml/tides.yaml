@@ -6,16 +6,16 @@ entries:
     name: Spring tide amplitude
     domain: astronomy
     test: "tides::spring_tide_amplitude"
-    avg_time_ns: 2296899.00
+    avg_time_ns: 1989851.00
   - label: tides_tidal_locking_timescale
     symbol: TLT
     name: Tidal locking timescale
     domain: astronomy
     test: "tides::tidal_locking_timescale"
-    avg_time_ns: 2618138.00
+    avg_time_ns: 1971680.00
   - label: tides_tidal_potential
     symbol: TP
     name: Tidal potential
     domain: astronomy
     test: "tides::tidal_potential"
-    avg_time_ns: 2471599.00
+    avg_time_ns: 2007850.00

@@ -7,12 +7,12 @@
   "conversion": "1100 atm → 1.114575e8 Pa",
   "experiment_name": "Deep ocean_convert",
   "precision": "f64",
-  "elapsed_ms": 34,
+  "elapsed_ms": 41,
   "iterations": 10000,
-  "avg_time_ns": 3402.82,
-  "min_time_ns": 3402.82,
-  "max_time_ns": 3402.82,
+  "avg_time_ns": 4173.55,
+  "min_time_ns": 4173.55,
+  "max_time_ns": 4173.55,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 294117.66,
+  "iterations_per_sec": 243902.44,
   "result": "Deep ocean | 1100 atm → 1.114575e8 Pa"
 }

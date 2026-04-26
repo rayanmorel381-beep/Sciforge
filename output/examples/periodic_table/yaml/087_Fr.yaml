@@ -7,9 +7,9 @@ experiment_name: Fr_Francium_benchmark
 precision: f32
 elapsed_ms: 67
 iterations: 10000
-avg_time_ns: 6769.47
-min_time_ns: 6769.47
-max_time_ns: 6769.47
+avg_time_ns: 6706.94
+min_time_ns: 6706.94
+max_time_ns: 6706.94
 time_stddev: 0.0000
 iterations_per_sec: 149253.73
 result: Z=87 | Fr (Francium) | 223 u | alkali metal | [Rn] 7s¹

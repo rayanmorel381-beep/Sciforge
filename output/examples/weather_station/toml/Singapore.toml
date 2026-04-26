@@ -14,11 +14,11 @@ mixing_ratio = "19.59 g/kg"
 lcl = "301 m AGL"
 experiment_name = "Singapore_weather"
 precision = "f64"
-elapsed_ms = 28
+elapsed_ms = 27
 iterations = 5000
-avg_time_ns = 5640.50
-min_time_ns = 5640.50
-max_time_ns = 5640.50
+avg_time_ns = 5538.39
+min_time_ns = 5538.39
+max_time_ns = 5538.39
 time_stddev = 0.0000
-iterations_per_sec = 178571.42
+iterations_per_sec = 185185.19
 result = "Singapore | 16m | 27.5 °C | RH=84% | Td=24.6 °C | DA=1520 m | θ=300.9 K"

@@ -1,9 +1,9 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,config,mass
-Mt_Meitnerium_benchmark,f32,8,1000,8830.896,8830.896,8830.896,0,125000,Z=109 | Mt (Meitnerium) | 278.156 u | unknown | [Rn] 5f¹⁴ 6d⁷ 7s²,unknown,Mt,Meitnerium,[Rn] 5f¹⁴ 6d⁷ 7s²,278.156
-Ds_Darmstadtium_benchmark,f64,44,5000,8897.69,8897.69,8897.69,0,113636.37,Z=110 | Ds (Darmstadtium) | 281.165 u | unknown | [Rn] 5f¹⁴ 6d⁸ 7s²,unknown,Ds,Darmstadtium,[Rn] 5f¹⁴ 6d⁸ 7s²,281.165
-Rg_Roentgenium_benchmark,f32,87,10000,8706.144,8706.144,8706.144,0,114942.53,Z=111 | Rg (Roentgenium) | 282.169 u | unknown | [Rn] 5f¹⁴ 6d⁹ 7s²,unknown,Rg,Roentgenium,[Rn] 5f¹⁴ 6d⁹ 7s²,282.169
-Cn_Copernicium_benchmark,f64,10,1000,10072.356,10072.356,10072.356,0,100000,Z=112 | Cn (Copernicium) | 285.177 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s²,unknown,Cn,Copernicium,[Rn] 5f¹⁴ 6d¹⁰ 7s²,285.177
-Nh_Nihonium_benchmark,f32,47,5000,9439.476,9439.476,9439.476,0,106382.98,Z=113 | Nh (Nihonium) | 286.182 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹,unknown,Nh,Nihonium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹,286.182
-Fl_Flerovium_benchmark,f64,101,10000,10116.051,10116.051,10116.051,0,99009.9,Z=114 | Fl (Flerovium) | 289.19 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²,unknown,Fl,Flerovium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²,289.19
-Mc_Moscovium_benchmark,f32,8,1000,8778.976,8778.976,8778.976,0,125000,Z=115 | Mc (Moscovium) | 290.196 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³,unknown,Mc,Moscovium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³,290.196
-Lv_Livermorium_benchmark,f64,48,5000,9629.901,9629.901,9629.901,0,104166.664,Z=116 | Lv (Livermorium) | 293.205 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴,unknown,Lv,Livermorium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴,293.205
+Mt_Meitnerium_benchmark,f32,8,1000,8466.372,8466.372,8466.372,0,125000,Z=109 | Mt (Meitnerium) | 278.156 u | unknown | [Rn] 5f¹⁴ 6d⁷ 7s²,unknown,Mt,Meitnerium,[Rn] 5f¹⁴ 6d⁷ 7s²,278.156
+Ds_Darmstadtium_benchmark,f64,42,5000,8539.7394,8539.7394,8539.7394,0,119047.61904761905,Z=110 | Ds (Darmstadtium) | 281.165 u | unknown | [Rn] 5f¹⁴ 6d⁸ 7s²,unknown,Ds,Darmstadtium,[Rn] 5f¹⁴ 6d⁸ 7s²,281.165
+Rg_Roentgenium_benchmark,f32,85,10000,8503.5095,8503.5095,8503.5095,0,117647.05882352941,Z=111 | Rg (Roentgenium) | 282.169 u | unknown | [Rn] 5f¹⁴ 6d⁹ 7s²,unknown,Rg,Roentgenium,[Rn] 5f¹⁴ 6d⁹ 7s²,282.169
+Cn_Copernicium_benchmark,f64,10,1000,10129.102,10129.102,10129.102,0,100000,Z=112 | Cn (Copernicium) | 285.177 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s²,unknown,Cn,Copernicium,[Rn] 5f¹⁴ 6d¹⁰ 7s²,285.177
+Nh_Nihonium_benchmark,f32,43,5000,8676.4114,8676.4114,8676.4114,0,116279.06976744186,Z=113 | Nh (Nihonium) | 286.182 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹,unknown,Nh,Nihonium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹,286.182
+Fl_Flerovium_benchmark,f64,89,10000,8943.0796,8943.0796,8943.0796,0,112359.55056179775,Z=114 | Fl (Flerovium) | 289.19 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²,unknown,Fl,Flerovium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²,289.19
+Mc_Moscovium_benchmark,f32,8,1000,8776.392,8776.392,8776.392,0,125000,Z=115 | Mc (Moscovium) | 290.196 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³,unknown,Mc,Moscovium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³,290.196
+Lv_Livermorium_benchmark,f64,44,5000,8886.0776,8886.0776,8886.0776,0,113636.36363636363,Z=116 | Lv (Livermorium) | 293.205 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴,unknown,Lv,Livermorium,[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴,293.205

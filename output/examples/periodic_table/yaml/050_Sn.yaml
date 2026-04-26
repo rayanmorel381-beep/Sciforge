@@ -7,9 +7,9 @@ experiment_name: Sn_Tin_benchmark
 precision: f64
 elapsed_ms: 19
 iterations: 5000
-avg_time_ns: 3820.33
-min_time_ns: 3820.33
-max_time_ns: 3820.33
+avg_time_ns: 3923.69
+min_time_ns: 3923.69
+max_time_ns: 3923.69
 time_stddev: 0.0000
-iterations_per_sec: 263157.91
+iterations_per_sec: 263157.89
 result: Z=50 | Sn (Tin) | 118.71 u | post-transition metal | [Kr] 4d¹⁰ 5s² 5p²

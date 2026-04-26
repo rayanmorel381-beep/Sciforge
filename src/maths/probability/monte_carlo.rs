@@ -208,6 +208,47 @@ pub fn quasi_monte_carlo_integrate(f: fn(f64) -> f64, a: f64, b: f64, n: usize) 
     (b - a) * sum / n as f64
 }
 
+pub fn error_propagation(partials: &[f64], uncertainties: &[f64]) -> f64 {
+    partials
+        .iter()
+        .zip(uncertainties.iter())
+        .map(|(&df, &sigma)| (df * sigma).powi(2))
+        .sum::<f64>()
+        .sqrt()
+}
+
+pub fn monte_carlo_uncertainty(
+    f: fn(&[f64]) -> f64,
+    means: &[f64],
+    sigmas: &[f64],
+    n: usize,
+    seed: u64,
+) -> f64 {
+    let mut rng = seed;
+    let mut results = Vec::with_capacity(n);
+    for _ in 0..n {
+        let sample: Vec<f64> = means
+            .iter()
+            .zip(sigmas.iter())
+            .map(|(&mu, &sigma)| {
+                rng = rng
+                    .wrapping_mul(6_364_136_223_846_793_005)
+                    .wrapping_add(1_442_695_040_888_963_407);
+                let u1 = (rng >> 33) as f64 / u32::MAX as f64 + 1e-15;
+                rng = rng
+                    .wrapping_mul(6_364_136_223_846_793_005)
+                    .wrapping_add(1_442_695_040_888_963_407);
+                let u2 = (rng >> 33) as f64 / u32::MAX as f64;
+                let z = (-2.0 * u1.ln()).sqrt() * (2.0 * std::f64::consts::PI * u2).cos();
+                mu + sigma * z
+            })
+            .collect();
+        results.push(f(&sample));
+    }
+    let mean = results.iter().sum::<f64>() / n as f64;
+    (results.iter().map(|x| (x - mean).powi(2)).sum::<f64>() / (n - 1) as f64).sqrt()
+}
+
 pub fn gibbs_sampler_2d(
     sample_x_given_y: fn(f64, &mut McRng) -> f64,
     sample_y_given_x: fn(f64, &mut McRng) -> f64,

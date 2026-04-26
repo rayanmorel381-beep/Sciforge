@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-polymers::carothers_equation,f64,1,1,1703179,1703179,1703179,0,1000,pass,polymers,CE,Carothers equation,chemistry,polymers::carothers_equation
-polymers::flory_huggins_free_energy,f64,1,1,1682250,1682250,1682250,0,1000,pass,polymers,FHF,Flory huggins free energy,chemistry,polymers::flory_huggins_free_energy
-polymers::polydispersity_index,f64,1,1,1903169,1903169,1903169,0,1000,pass,polymers,PI,Polydispersity index,chemistry,polymers::polydispersity_index
+polymers::carothers_equation,f64,1,1,1770110,1770110,1770110,0,1000,pass,polymers,CE,Carothers equation,chemistry,polymers::carothers_equation
+polymers::flory_huggins_free_energy,f64,1,1,1787820,1787820,1787820,0,1000,pass,polymers,FHF,Flory huggins free energy,chemistry,polymers::flory_huggins_free_energy
+polymers::polydispersity_index,f64,2,1,2000371,2000371,2000371,0,500,pass,polymers,PI,Polydispersity index,chemistry,polymers::polydispersity_index

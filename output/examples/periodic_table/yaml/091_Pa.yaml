@@ -7,9 +7,9 @@ experiment_name: Pa_Protactinium_benchmark
 precision: f32
 elapsed_ms: 7
 iterations: 1000
-avg_time_ns: 7072.09
-min_time_ns: 7072.09
-max_time_ns: 7072.09
+avg_time_ns: 7288.52
+min_time_ns: 7288.52
+max_time_ns: 7288.52
 time_stddev: 0.0000
 iterations_per_sec: 142857.14
 result: Z=91 | Pa (Protactinium) | 231.03588 u | actinide | [Rn] 5f² 6d¹ 7s²

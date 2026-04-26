@@ -8,9 +8,9 @@
   "precision": "f64",
   "elapsed_ms": 0,
   "iterations": 1000,
-  "avg_time_ns": 775.56,
-  "min_time_ns": 775.56,
-  "max_time_ns": 775.56,
+  "avg_time_ns": 785.88,
+  "min_time_ns": 785.88,
+  "max_time_ns": 785.88,
   "time_stddev": 0.0000,
   "iterations_per_sec": 0.00,
   "result": "Z=10 | Ne (Neon) | 20.1797 u | noble gas | 1s² 2s² 2p⁶"

@@ -6,16 +6,16 @@ entries:
     name: Hooke stress
     domain: physics
     test: "solid_mechanics::hooke_stress"
-    avg_time_ns: 1930389.00
+    avg_time_ns: 1801560.00
   - label: solid_mechanics_thermal_stress
     symbol: TS
     name: Thermal stress
     domain: physics
     test: "solid_mechanics::thermal_stress"
-    avg_time_ns: 2200219.00
+    avg_time_ns: 1771701.00
   - label: solid_mechanics_von_mises
     symbol: VM
     name: Von mises
     domain: physics
     test: "solid_mechanics::von_mises"
-    avg_time_ns: 1954739.00
+    avg_time_ns: 1818880.00

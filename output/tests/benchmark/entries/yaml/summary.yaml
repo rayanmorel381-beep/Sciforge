@@ -3,5 +3,5 @@ count: 1
 entries:
   - label: lbl
     k: v
-    avg_time_ns: 20.00
+    avg_time_ns: 13.80
     iterations_per_sec: 0.00

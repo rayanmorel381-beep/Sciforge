@@ -6,12 +6,12 @@
   "mass": "162.5",
   "experiment_name": "Dy_Dysprosium_benchmark",
   "precision": "f64",
-  "elapsed_ms": 51,
+  "elapsed_ms": 56,
   "iterations": 10000,
-  "avg_time_ns": 5111.67,
-  "min_time_ns": 5111.67,
-  "max_time_ns": 5111.67,
+  "avg_time_ns": 5624.03,
+  "min_time_ns": 5624.03,
+  "max_time_ns": 5624.03,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 196078.44,
+  "iterations_per_sec": 178571.43,
   "result": "Z=66 | Dy (Dysprosium) | 162.5 u | lanthanide | [Xe] 4f¹⁰ 6s²"
 }

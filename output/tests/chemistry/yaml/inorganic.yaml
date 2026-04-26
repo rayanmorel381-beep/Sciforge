@@ -6,16 +6,16 @@ entries:
     name: Lattice energy born lande
     domain: chemistry
     test: "inorganic::lattice_energy_born_lande"
-    avg_time_ns: 1807680.00
+    avg_time_ns: 2268800.00
   - label: inorganic_magnetic_moment_spin_only
     symbol: MMS
     name: Magnetic moment spin only
     domain: chemistry
     test: "inorganic::magnetic_moment_spin_only"
-    avg_time_ns: 1691509.00
+    avg_time_ns: 2307771.00
   - label: inorganic_pauling_electronegativity_difference
     symbol: PED
     name: Pauling electronegativity difference
     domain: chemistry
     test: "inorganic::pauling_electronegativity_difference"
-    avg_time_ns: 1691599.00
+    avg_time_ns: 2720600.00

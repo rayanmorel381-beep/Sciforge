@@ -6,22 +6,22 @@ entries:
     name: Pipeline chained stages
     domain: hub
     test: "pipeline::pipeline_chained_stages"
-    avg_time_ns: 2302369.00
+    avg_time_ns: 2420330.00
   - label: pipeline_pipeline_empty_input
     symbol: PEI
     name: Pipeline empty input
     domain: hub
     test: "pipeline::pipeline_empty_input"
-    avg_time_ns: 1826319.00
+    avg_time_ns: 2013711.00
   - label: pipeline_pipeline_normalize_and_filter
     symbol: PNA
     name: Pipeline normalize and filter
     domain: hub
     test: "pipeline::pipeline_normalize_and_filter"
-    avg_time_ns: 2458799.00
+    avg_time_ns: 2137040.00
   - label: pipeline_pipeline_scale
     symbol: PS
     name: Pipeline scale
     domain: hub
     test: "pipeline::pipeline_scale"
-    avg_time_ns: 2815099.00
+    avg_time_ns: 1967560.00

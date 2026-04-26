@@ -1,8 +1,8 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-dispatch::codon_frequency,f64,1,1,1860779,1860779,1860779,0,1000,pass,dispatch,CF,Codon frequency,biology,dispatch::codon_frequency
-dispatch::dispatch_missing_parameter_returns_error,f64,1,1,1907299,1907299,1907299,0,1000,pass,dispatch,DMP,Dispatch missing parameter returns error,biology,dispatch::dispatch_missing_parameter_returns_error
-dispatch::dispatch_unknown_function_returns_error,f64,1,1,1868900,1868900,1868900,0,1000,pass,dispatch,DUF,Dispatch unknown function returns error,biology,dispatch::dispatch_unknown_function_returns_error
-dispatch::gompertz_mortality_rate,f64,1,1,1763889,1763889,1763889,0,1000,pass,dispatch,GMR,Gompertz mortality rate,biology,dispatch::gompertz_mortality_rate
-dispatch::metabolic_rate_kleiber,f64,1,1,1806629,1806629,1806629,0,1000,pass,dispatch,MRK,Metabolic rate kleiber,biology,dispatch::metabolic_rate_kleiber
-dispatch::soil_respiration,f64,1,1,1778969,1778969,1778969,0,1000,pass,dispatch,SR,Soil respiration,biology,dispatch::soil_respiration
-dispatch::telomere_shortening,f64,1,1,1682540,1682540,1682540,0,1000,pass,dispatch,TS,Telomere shortening,biology,dispatch::telomere_shortening
+dispatch::codon_frequency,f64,2,1,2179311,2179311,2179311,0,500,pass,dispatch,CF,Codon frequency,biology,dispatch::codon_frequency
+dispatch::dispatch_missing_parameter_returns_error,f64,2,1,2071320,2071320,2071320,0,500,pass,dispatch,DMP,Dispatch missing parameter returns error,biology,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,1,1,1935931,1935931,1935931,0,1000,pass,dispatch,DUF,Dispatch unknown function returns error,biology,dispatch::dispatch_unknown_function_returns_error
+dispatch::gompertz_mortality_rate,f64,1,1,1780600,1780600,1780600,0,1000,pass,dispatch,GMR,Gompertz mortality rate,biology,dispatch::gompertz_mortality_rate
+dispatch::metabolic_rate_kleiber,f64,2,1,2082170,2082170,2082170,0,500,pass,dispatch,MRK,Metabolic rate kleiber,biology,dispatch::metabolic_rate_kleiber
+dispatch::soil_respiration,f64,1,1,1932960,1932960,1932960,0,1000,pass,dispatch,SR,Soil respiration,biology,dispatch::soil_respiration
+dispatch::telomere_shortening,f64,2,1,2042521,2042521,2042521,0,500,pass,dispatch,TS,Telomere shortening,biology,dispatch::telomere_shortening

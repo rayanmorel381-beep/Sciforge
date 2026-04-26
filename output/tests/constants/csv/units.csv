@@ -1,8 +1,8 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-units::angle_conversion_inverse_identity,f64,1,1,1573000,1573000,1573000,0,1000,pass,units,ACI,Angle conversion inverse identity,constants,units::angle_conversion_inverse_identity
-units::atm_to_pascal,f64,1,1,1264949,1264949,1264949,0,1000,pass,units,ATP,Atm to pascal,constants,units::atm_to_pascal
-units::calorie_to_joule,f64,1,1,1239630,1239630,1239630,0,1000,pass,units,CTJ,Calorie to joule,constants,units::calorie_to_joule
-units::degree_rad_roundtrip,f64,1,1,1187439,1187439,1187439,0,1000,pass,units,DRR,Degree rad roundtrip,constants,units::degree_rad_roundtrip
-units::ev_joule_roundtrip_multiple_values,f64,1,1,1198329,1198329,1198329,0,1000,pass,units,EJR,Ev joule roundtrip multiple values,constants,units::ev_joule_roundtrip_multiple_values
-units::ev_roundtrip,f64,1,1,1301330,1301330,1301330,0,1000,pass,units,ER,Ev roundtrip,constants,units::ev_roundtrip
-units::ev_to_joule,f64,1,1,1208949,1208949,1208949,0,1000,pass,units,ETJ,Ev to joule,constants,units::ev_to_joule
+units::angle_conversion_inverse_identity,f64,1,1,1161750,1161750,1161750,0,1000,pass,units,ACI,Angle conversion inverse identity,constants,units::angle_conversion_inverse_identity
+units::atm_to_pascal,f64,1,1,1198811,1198811,1198811,0,1000,pass,units,ATP,Atm to pascal,constants,units::atm_to_pascal
+units::calorie_to_joule,f64,1,1,1218290,1218290,1218290,0,1000,pass,units,CTJ,Calorie to joule,constants,units::calorie_to_joule
+units::degree_rad_roundtrip,f64,1,1,1149830,1149830,1149830,0,1000,pass,units,DRR,Degree rad roundtrip,constants,units::degree_rad_roundtrip
+units::ev_joule_roundtrip_multiple_values,f64,1,1,1199350,1199350,1199350,0,1000,pass,units,EJR,Ev joule roundtrip multiple values,constants,units::ev_joule_roundtrip_multiple_values
+units::ev_roundtrip,f64,1,1,1147751,1147751,1147751,0,1000,pass,units,ER,Ev roundtrip,constants,units::ev_roundtrip
+units::ev_to_joule,f64,1,1,1310130,1310130,1310130,0,1000,pass,units,ETJ,Ev to joule,constants,units::ev_to_joule

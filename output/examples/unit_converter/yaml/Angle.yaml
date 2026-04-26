@@ -7,4 +7,4 @@ entries:
     from: 90 deg
     to: 1.570796e0 rad
     conversion: 90 deg → 1.570796e0 rad
-    avg_time_ns: 5282.32
+    avg_time_ns: 5389.85

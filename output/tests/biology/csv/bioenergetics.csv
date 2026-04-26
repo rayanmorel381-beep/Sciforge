@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-bioenergetics::adenylate_energy_charge,f64,2,1,2351309,2351309,2351309,0,500,pass,bioenergetics,AEC,Adenylate energy charge,biology,bioenergetics::adenylate_energy_charge
-bioenergetics::glycolysis_net_atp,f64,2,1,2380898,2380898,2380898,0,500,pass,bioenergetics,GNA,Glycolysis net atp,biology,bioenergetics::glycolysis_net_atp
-bioenergetics::p_o_ratio,f64,2,1,2384720,2384720,2384720,0,500,pass,bioenergetics,POR,P o ratio,biology,bioenergetics::p_o_ratio
-bioenergetics::respiratory_control_index,f64,5,1,5900607,5900607,5900607,0,200,pass,bioenergetics,RCI,Respiratory control index,biology,bioenergetics::respiratory_control_index
+bioenergetics::adenylate_energy_charge,f64,2,1,2341121,2341121,2341121,0,500,pass,bioenergetics,AEC,Adenylate energy charge,biology,bioenergetics::adenylate_energy_charge
+bioenergetics::glycolysis_net_atp,f64,2,1,2435710,2435710,2435710,0,500,pass,bioenergetics,GNA,Glycolysis net atp,biology,bioenergetics::glycolysis_net_atp
+bioenergetics::p_o_ratio,f64,2,1,2501671,2501671,2501671,0,500,pass,bioenergetics,POR,P o ratio,biology,bioenergetics::p_o_ratio
+bioenergetics::respiratory_control_index,f64,2,1,2315860,2315860,2315860,0,500,pass,bioenergetics,RCI,Respiratory control index,biology,bioenergetics::respiratory_control_index

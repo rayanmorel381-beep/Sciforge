@@ -1,46 +1,46 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-atmosphere::barometric_decreases_with_altitude,f64,3,1,3677928,3677928,3677928,0,333.33334,pass,atmosphere,BDW,Barometric decreases with altitude,meteorology,atmosphere::barometric_decreases_with_altitude
-atmosphere::barometric_formula,f64,2,1,2525369,2525369,2525369,0,500,pass,atmosphere,BF,Barometric formula,meteorology,atmosphere::barometric_formula
-atmosphere::lapse_rate_dry,f64,2,1,2244209,2244209,2244209,0,500,pass,atmosphere,LRD,Lapse rate dry,meteorology,atmosphere::lapse_rate_dry
-atmosphere::potential_temperature,f64,2,1,2182669,2182669,2182669,0,500,pass,atmosphere,PT,Potential temperature,meteorology,atmosphere::potential_temperature
-atmosphere::saturation_vapor_increases_with_temp,f64,2,1,2014669,2014669,2014669,0,500,pass,atmosphere,SVI,Saturation vapor increases with temp,meteorology,atmosphere::saturation_vapor_increases_with_temp
-atmosphere::saturation_vapor_pressure,f64,1,1,1833849,1833849,1833849,0,1000,pass,atmosphere,SVP,Saturation vapor pressure,meteorology,atmosphere::saturation_vapor_pressure
-atmosphere::scale_height,f64,1,1,1894300,1894300,1894300,0,1000,pass,atmosphere,SH,Scale height,meteorology,atmosphere::scale_height
-dynamics::coriolis_changes_sign_between_hemispheres,f64,2,1,2115849,2115849,2115849,0,500,pass,dynamics,CCS,Coriolis changes sign between hemispheres,meteorology,dynamics::coriolis_changes_sign_between_hemispheres
-dynamics::coriolis_parameter,f64,2,1,2191819,2191819,2191819,0,500,pass,dynamics,CP,Coriolis parameter,meteorology,dynamics::coriolis_parameter
-dynamics::coriolis_zero_at_equator,f64,2,1,2197899,2197899,2197899,0,500,pass,dynamics,CZA,Coriolis zero at equator,meteorology,dynamics::coriolis_zero_at_equator
-dynamics::ekman_depth,f64,2,1,2367939,2367939,2367939,0,500,pass,dynamics,ED,Ekman depth,meteorology,dynamics::ekman_depth
-dynamics::geostrophic_wind,f64,1,1,1915119,1915119,1915119,0,1000,pass,dynamics,GW,Geostrophic wind,meteorology,dynamics::geostrophic_wind
-dynamics::rossby_number,f64,1,1,1728879,1728879,1728879,0,1000,pass,dynamics,RN,Rossby number,meteorology,dynamics::rossby_number
-dynamics::rossby_number_decreases_with_scale,f64,1,1,1810979,1810979,1810979,0,1000,pass,dynamics,RND,Rossby number decreases with scale,meteorology,dynamics::rossby_number_decreases_with_scale
-dynamics::rossby_wave_speed,f64,1,1,1987689,1987689,1987689,0,1000,pass,dynamics,RWS,Rossby wave speed,meteorology,dynamics::rossby_wave_speed
-ocean::henry_solubility,f64,1,1,1912980,1912980,1912980,0,1000,pass,ocean,HS,Henry solubility,meteorology,ocean::henry_solubility
-ocean::sea_level_rise_thermal,f64,1,1,1780869,1780869,1780869,0,1000,pass,ocean,SLR,Sea level rise thermal,meteorology,ocean::sea_level_rise_thermal
-ocean::seawater_density,f64,1,1,1763929,1763929,1763929,0,1000,pass,ocean,SD,Seawater density,meteorology,ocean::seawater_density
-ocean::seawater_density_increases_with_salinity,f64,1,1,1738789,1738789,1738789,0,1000,pass,ocean,SDI,Seawater density increases with salinity,meteorology,ocean::seawater_density_increases_with_salinity
-ocean::sound_speed,f64,2,1,2631619,2631619,2631619,0,500,pass,ocean,SS,Sound speed,meteorology,ocean::sound_speed
-precipitation::antecedent_precipitation_index,f64,2,1,2325699,2325699,2325699,0,500,pass,precipitation,API,Antecedent precipitation index,meteorology,precipitation::antecedent_precipitation_index
-precipitation::intensity_duration_frequency,f64,2,1,2240269,2240269,2240269,0,500,pass,precipitation,IDF,Intensity duration frequency,meteorology,precipitation::intensity_duration_frequency
-precipitation::penman_evaporation,f64,2,1,2141809,2141809,2141809,0,500,pass,precipitation,PE,Penman evaporation,meteorology,precipitation::penman_evaporation
-precipitation::radar_reflectivity,f64,2,1,2157309,2157309,2157309,0,500,pass,precipitation,RR,Radar reflectivity,meteorology,precipitation::radar_reflectivity
-precipitation::rain_rate_marshall_palmer,f64,2,1,2269049,2269049,2269049,0,500,pass,precipitation,RRM,Rain rate marshall palmer,meteorology,precipitation::rain_rate_marshall_palmer
-precipitation::scs_curve_number_runoff,f64,2,1,2091569,2091569,2091569,0,500,pass,precipitation,SCN,Scs curve number runoff,meteorology,precipitation::scs_curve_number_runoff
-precipitation::terminal_velocity_raindrop,f64,2,1,2565319,2565319,2565319,0,500,pass,precipitation,TVR,Terminal velocity raindrop,meteorology,precipitation::terminal_velocity_raindrop
-precipitation::thornthwaite_pet,f64,2,1,2028169,2028169,2028169,0,500,pass,precipitation,TP,Thornthwaite pet,meteorology,precipitation::thornthwaite_pet
-radiation::albedo_reflected,f64,1,1,1844089,1844089,1844089,0,1000,pass,radiation,AR,Albedo reflected,meteorology,radiation::albedo_reflected
-radiation::effective_temperature,f64,1,1,1704150,1704150,1704150,0,1000,pass,radiation,ET,Effective temperature,meteorology,radiation::effective_temperature
-radiation::planck_function,f64,2,1,2855108,2855108,2855108,0,500,pass,radiation,PF,Planck function,meteorology,radiation::planck_function
-radiation::radiative_forcing_co2,f64,2,1,2303089,2303089,2303089,0,500,pass,radiation,RFC,Radiative forcing co2,meteorology,radiation::radiative_forcing_co2
-radiation::radiative_forcing_co2_zero_when_equal_concentrations,f64,2,1,2190869,2190869,2190869,0,500,pass,radiation,RFC,Radiative forcing co2 zero when equal concentrations,meteorology,radiation::radiative_forcing_co2_zero_when_equal_concentrations
-radiation::stefan_boltzmann_flux,f64,2,1,2202229,2202229,2202229,0,500,pass,radiation,SBF,Stefan boltzmann flux,meteorology,radiation::stefan_boltzmann_flux
-radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep,f64,2,1,2281370,2281370,2281370,0,500,pass,radiation,SBF,Stefan boltzmann flux monotonic with temperature sweep,meteorology,radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep
-storms::cape_positive_buoyancy,f64,2,1,2169088,2169088,2169088,0,500,pass,storms,CPB,Cape positive buoyancy,meteorology,storms::cape_positive_buoyancy
-storms::cape_zero_for_equal_temps,f64,1,1,1882750,1882750,1882750,0,1000,pass,storms,CZF,Cape zero for equal temps,meteorology,storms::cape_zero_for_equal_temps
-storms::fujita_scale,f64,1,1,1791779,1791779,1791779,0,1000,pass,storms,FS,Fujita scale,meteorology,storms::fujita_scale
-storms::fujita_scale_increases_with_wind,f64,1,1,1902359,1902359,1902359,0,1000,pass,storms,FSI,Fujita scale increases with wind,meteorology,storms::fujita_scale_increases_with_wind
-storms::potential_intensity,f64,2,1,2269939,2269939,2269939,0,500,pass,storms,PI,Potential intensity,meteorology,storms::potential_intensity
-winds::beaufort_monotonic,f64,1,1,1908059,1908059,1908059,0,1000,pass,winds,BM,Beaufort monotonic,meteorology,winds::beaufort_monotonic
-winds::beaufort_to_m_s,f64,1,1,1879449,1879449,1879449,0,1000,pass,winds,BTM,Beaufort to m s,meteorology,winds::beaufort_to_m_s
-winds::beaufort_zero_is_calm,f64,1,1,1891119,1891119,1891119,0,1000,pass,winds,BZI,Beaufort zero is calm,meteorology,winds::beaufort_zero_is_calm
-winds::wind_chill,f64,1,1,1870990,1870990,1870990,0,1000,pass,winds,WC,Wind chill,meteorology,winds::wind_chill
-winds::wind_chill_decreases_with_wind,f64,1,1,1689829,1689829,1689829,0,1000,pass,winds,WCD,Wind chill decreases with wind,meteorology,winds::wind_chill_decreases_with_wind
+atmosphere::barometric_decreases_with_altitude,f64,2,1,2345790,2345790,2345790,0,500,pass,atmosphere,BDW,Barometric decreases with altitude,meteorology,atmosphere::barometric_decreases_with_altitude
+atmosphere::barometric_formula,f64,2,1,2493070,2493070,2493070,0,500,pass,atmosphere,BF,Barometric formula,meteorology,atmosphere::barometric_formula
+atmosphere::lapse_rate_dry,f64,2,1,2137751,2137751,2137751,0,500,pass,atmosphere,LRD,Lapse rate dry,meteorology,atmosphere::lapse_rate_dry
+atmosphere::potential_temperature,f64,2,1,2008090,2008090,2008090,0,500,pass,atmosphere,PT,Potential temperature,meteorology,atmosphere::potential_temperature
+atmosphere::saturation_vapor_increases_with_temp,f64,1,1,1877660,1877660,1877660,0,1000,pass,atmosphere,SVI,Saturation vapor increases with temp,meteorology,atmosphere::saturation_vapor_increases_with_temp
+atmosphere::saturation_vapor_pressure,f64,1,1,1948561,1948561,1948561,0,1000,pass,atmosphere,SVP,Saturation vapor pressure,meteorology,atmosphere::saturation_vapor_pressure
+atmosphere::scale_height,f64,1,1,1822450,1822450,1822450,0,1000,pass,atmosphere,SH,Scale height,meteorology,atmosphere::scale_height
+dynamics::coriolis_changes_sign_between_hemispheres,f64,1,1,1820500,1820500,1820500,0,1000,pass,dynamics,CCS,Coriolis changes sign between hemispheres,meteorology,dynamics::coriolis_changes_sign_between_hemispheres
+dynamics::coriolis_parameter,f64,1,1,1756301,1756301,1756301,0,1000,pass,dynamics,CP,Coriolis parameter,meteorology,dynamics::coriolis_parameter
+dynamics::coriolis_zero_at_equator,f64,1,1,1818780,1818780,1818780,0,1000,pass,dynamics,CZA,Coriolis zero at equator,meteorology,dynamics::coriolis_zero_at_equator
+dynamics::ekman_depth,f64,1,1,1926370,1926370,1926370,0,1000,pass,dynamics,ED,Ekman depth,meteorology,dynamics::ekman_depth
+dynamics::geostrophic_wind,f64,1,1,1964351,1964351,1964351,0,1000,pass,dynamics,GW,Geostrophic wind,meteorology,dynamics::geostrophic_wind
+dynamics::rossby_number,f64,1,1,1967600,1967600,1967600,0,1000,pass,dynamics,RN,Rossby number,meteorology,dynamics::rossby_number
+dynamics::rossby_number_decreases_with_scale,f64,1,1,1908620,1908620,1908620,0,1000,pass,dynamics,RND,Rossby number decreases with scale,meteorology,dynamics::rossby_number_decreases_with_scale
+dynamics::rossby_wave_speed,f64,2,1,2358321,2358321,2358321,0,500,pass,dynamics,RWS,Rossby wave speed,meteorology,dynamics::rossby_wave_speed
+ocean::henry_solubility,f64,2,1,2061620,2061620,2061620,0,500,pass,ocean,HS,Henry solubility,meteorology,ocean::henry_solubility
+ocean::sea_level_rise_thermal,f64,1,1,1772630,1772630,1772630,0,1000,pass,ocean,SLR,Sea level rise thermal,meteorology,ocean::sea_level_rise_thermal
+ocean::seawater_density,f64,1,1,1886241,1886241,1886241,0,1000,pass,ocean,SD,Seawater density,meteorology,ocean::seawater_density
+ocean::seawater_density_increases_with_salinity,f64,1,1,1752250,1752250,1752250,0,1000,pass,ocean,SDI,Seawater density increases with salinity,meteorology,ocean::seawater_density_increases_with_salinity
+ocean::sound_speed,f64,1,1,1720930,1720930,1720930,0,1000,pass,ocean,SS,Sound speed,meteorology,ocean::sound_speed
+precipitation::antecedent_precipitation_index,f64,1,1,1688380,1688380,1688380,0,1000,pass,precipitation,API,Antecedent precipitation index,meteorology,precipitation::antecedent_precipitation_index
+precipitation::intensity_duration_frequency,f64,2,1,2419871,2419871,2419871,0,500,pass,precipitation,IDF,Intensity duration frequency,meteorology,precipitation::intensity_duration_frequency
+precipitation::penman_evaporation,f64,2,1,2031560,2031560,2031560,0,500,pass,precipitation,PE,Penman evaporation,meteorology,precipitation::penman_evaporation
+precipitation::radar_reflectivity,f64,1,1,1779490,1779490,1779490,0,1000,pass,precipitation,RR,Radar reflectivity,meteorology,precipitation::radar_reflectivity
+precipitation::rain_rate_marshall_palmer,f64,1,1,1680801,1680801,1680801,0,1000,pass,precipitation,RRM,Rain rate marshall palmer,meteorology,precipitation::rain_rate_marshall_palmer
+precipitation::scs_curve_number_runoff,f64,1,1,1663020,1663020,1663020,0,1000,pass,precipitation,SCN,Scs curve number runoff,meteorology,precipitation::scs_curve_number_runoff
+precipitation::terminal_velocity_raindrop,f64,1,1,1748340,1748340,1748340,0,1000,pass,precipitation,TVR,Terminal velocity raindrop,meteorology,precipitation::terminal_velocity_raindrop
+precipitation::thornthwaite_pet,f64,1,1,1703940,1703940,1703940,0,1000,pass,precipitation,TP,Thornthwaite pet,meteorology,precipitation::thornthwaite_pet
+radiation::albedo_reflected,f64,1,1,1836231,1836231,1836231,0,1000,pass,radiation,AR,Albedo reflected,meteorology,radiation::albedo_reflected
+radiation::effective_temperature,f64,1,1,1684530,1684530,1684530,0,1000,pass,radiation,ET,Effective temperature,meteorology,radiation::effective_temperature
+radiation::planck_function,f64,1,1,1685180,1685180,1685180,0,1000,pass,radiation,PF,Planck function,meteorology,radiation::planck_function
+radiation::radiative_forcing_co2,f64,1,1,1758401,1758401,1758401,0,1000,pass,radiation,RFC,Radiative forcing co2,meteorology,radiation::radiative_forcing_co2
+radiation::radiative_forcing_co2_zero_when_equal_concentrations,f64,2,1,2209720,2209720,2209720,0,500,pass,radiation,RFC,Radiative forcing co2 zero when equal concentrations,meteorology,radiation::radiative_forcing_co2_zero_when_equal_concentrations
+radiation::stefan_boltzmann_flux,f64,1,1,1910490,1910490,1910490,0,1000,pass,radiation,SBF,Stefan boltzmann flux,meteorology,radiation::stefan_boltzmann_flux
+radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep,f64,1,1,1760091,1760091,1760091,0,1000,pass,radiation,SBF,Stefan boltzmann flux monotonic with temperature sweep,meteorology,radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep
+storms::cape_positive_buoyancy,f64,1,1,1745880,1745880,1745880,0,1000,pass,storms,CPB,Cape positive buoyancy,meteorology,storms::cape_positive_buoyancy
+storms::cape_zero_for_equal_temps,f64,1,1,1704330,1704330,1704330,0,1000,pass,storms,CZF,Cape zero for equal temps,meteorology,storms::cape_zero_for_equal_temps
+storms::fujita_scale,f64,1,1,1787041,1787041,1787041,0,1000,pass,storms,FS,Fujita scale,meteorology,storms::fujita_scale
+storms::fujita_scale_increases_with_wind,f64,1,1,1704940,1704940,1704940,0,1000,pass,storms,FSI,Fujita scale increases with wind,meteorology,storms::fujita_scale_increases_with_wind
+storms::potential_intensity,f64,1,1,1789840,1789840,1789840,0,1000,pass,storms,PI,Potential intensity,meteorology,storms::potential_intensity
+winds::beaufort_monotonic,f64,1,1,1908610,1908610,1908610,0,1000,pass,winds,BM,Beaufort monotonic,meteorology,winds::beaufort_monotonic
+winds::beaufort_to_m_s,f64,1,1,1761491,1761491,1761491,0,1000,pass,winds,BTM,Beaufort to m s,meteorology,winds::beaufort_to_m_s
+winds::beaufort_zero_is_calm,f64,1,1,1708480,1708480,1708480,0,1000,pass,winds,BZI,Beaufort zero is calm,meteorology,winds::beaufort_zero_is_calm
+winds::wind_chill,f64,1,1,1722210,1722210,1722210,0,1000,pass,winds,WC,Wind chill,meteorology,winds::wind_chill
+winds::wind_chill_decreases_with_wind,f64,1,1,1703271,1703271,1703271,0,1000,pass,winds,WCD,Wind chill decreases with wind,meteorology,winds::wind_chill_decreases_with_wind

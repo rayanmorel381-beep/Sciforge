@@ -1,3 +1,3 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-pde::heat_equation_1d_explicit,f64,1,1,1753250,1753250,1753250,0,1000,pass,pde,HE1,Heat equation 1d explicit,maths,pde::heat_equation_1d_explicit
-pde::wave_equation_1d,f64,1,1,1734079,1734079,1734079,0,1000,pass,pde,WE1,Wave equation 1d,maths,pde::wave_equation_1d
+pde::heat_equation_1d_explicit,f64,1,1,1848590,1848590,1848590,0,1000,pass,pde,HE1,Heat equation 1d explicit,maths,pde::heat_equation_1d_explicit
+pde::wave_equation_1d,f64,1,1,1797220,1797220,1797220,0,1000,pass,pde,WE1,Wave equation 1d,maths,pde::wave_equation_1d

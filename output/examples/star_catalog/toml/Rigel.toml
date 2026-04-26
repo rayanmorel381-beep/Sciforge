@@ -15,9 +15,9 @@ experiment_name = "Rigel_stellar"
 precision = "f64"
 elapsed_ms = 8
 iterations = 5000
-avg_time_ns = 1671.57
-min_time_ns = 1671.57
-max_time_ns = 1671.57
+avg_time_ns = 1738.15
+min_time_ns = 1738.15
+max_time_ns = 1738.15
 time_stddev = 0.0000
 iterations_per_sec = 625000.00
 result = "Rigel (B8Ia) | L=4.602e31 W | M_abs=-6.98 | R_s=62039.78 m | MS lifetime=0.0 Myr | Wien λ_max=239 nm"

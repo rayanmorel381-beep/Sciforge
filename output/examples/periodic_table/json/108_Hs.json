@@ -6,12 +6,12 @@
   "mass": "269.134",
   "experiment_name": "Hs_Hassium_benchmark",
   "precision": "f64",
-  "elapsed_ms": 93,
+  "elapsed_ms": 85,
   "iterations": 10000,
-  "avg_time_ns": 9304.38,
-  "min_time_ns": 9304.38,
-  "max_time_ns": 9304.38,
+  "avg_time_ns": 8561.10,
+  "min_time_ns": 8561.10,
+  "max_time_ns": 8561.10,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 107526.88,
+  "iterations_per_sec": 117647.06,
   "result": "Z=108 | Hs (Hassium) | 269.134 u | transition_metal | [Rn] 5f¹⁴ 6d⁶ 7s²"
 }

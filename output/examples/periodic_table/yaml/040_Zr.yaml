@@ -7,9 +7,9 @@ experiment_name: Zr_Zirconium_benchmark
 precision: f64
 elapsed_ms: 3
 iterations: 1000
-avg_time_ns: 3129.57
-min_time_ns: 3129.57
-max_time_ns: 3129.57
+avg_time_ns: 3056.81
+min_time_ns: 3056.81
+max_time_ns: 3056.81
 time_stddev: 0.0000
-iterations_per_sec: 333333.34
+iterations_per_sec: 333333.33
 result: Z=40 | Zr (Zirconium) | 91.224 u | transition metal | [Kr] 4d² 5s²

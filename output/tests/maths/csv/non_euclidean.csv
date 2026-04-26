@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-non_euclidean::hawking_temperature,f64,1,1,1857649,1857649,1857649,0,1000,pass,non_euclidean,HT,Hawking temperature,maths,non_euclidean::hawking_temperature
-non_euclidean::poincare_disk_distance,f64,1,1,1762299,1762299,1762299,0,1000,pass,non_euclidean,PDD,Poincare disk distance,maths,non_euclidean::poincare_disk_distance
-non_euclidean::schwarzschild_radius,f64,1,1,1723750,1723750,1723750,0,1000,pass,non_euclidean,SR,Schwarzschild radius,maths,non_euclidean::schwarzschild_radius
-non_euclidean::spherical_distance,f64,1,1,1794409,1794409,1794409,0,1000,pass,non_euclidean,SD,Spherical distance,maths,non_euclidean::spherical_distance
+non_euclidean::hawking_temperature,f64,1,1,1924360,1924360,1924360,0,1000,pass,non_euclidean,HT,Hawking temperature,maths,non_euclidean::hawking_temperature
+non_euclidean::poincare_disk_distance,f64,1,1,1804441,1804441,1804441,0,1000,pass,non_euclidean,PDD,Poincare disk distance,maths,non_euclidean::poincare_disk_distance
+non_euclidean::schwarzschild_radius,f64,1,1,1946810,1946810,1946810,0,1000,pass,non_euclidean,SR,Schwarzschild radius,maths,non_euclidean::schwarzschild_radius
+non_euclidean::spherical_distance,f64,2,1,2413530,2413530,2413530,0,500,pass,non_euclidean,SD,Spherical distance,maths,non_euclidean::spherical_distance

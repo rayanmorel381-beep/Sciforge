@@ -6,16 +6,16 @@ entries:
     name: Complex exp
     domain: maths
     test: "complex::complex_exp"
-    avg_time_ns: 1705199.00
+    avg_time_ns: 2920860.00
   - label: complex_complex_sqrt
     symbol: CS
     name: Complex sqrt
     domain: maths
     test: "complex::complex_sqrt"
-    avg_time_ns: 1787240.00
+    avg_time_ns: 2484111.00
   - label: complex_mandelbrot_iterate
     symbol: MI
     name: Mandelbrot iterate
     domain: maths
     test: "complex::mandelbrot_iterate"
-    avg_time_ns: 2351108.00
+    avg_time_ns: 2574690.00

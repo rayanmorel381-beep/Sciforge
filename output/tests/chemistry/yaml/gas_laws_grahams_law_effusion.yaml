@@ -5,11 +5,11 @@ domain: chemistry
 test: "gas_laws::grahams_law_effusion"
 experiment_name: "gas_laws::grahams_law_effusion"
 precision: f64
-elapsed_ms: 1
+elapsed_ms: 2
 iterations: 1
-avg_time_ns: 1790609.00
-min_time_ns: 1790609.00
-max_time_ns: 1790609.00
+avg_time_ns: 2497130.00
+min_time_ns: 2497130.00
+max_time_ns: 2497130.00
 time_stddev: 0.0000
-iterations_per_sec: 1000.00
+iterations_per_sec: 500.00
 result: pass

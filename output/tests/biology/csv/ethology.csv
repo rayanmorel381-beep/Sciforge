@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-ethology::hamilton_relatedness_benefit,f64,1,1,1914779,1914779,1914779,0,1000,pass,ethology,HRB,Hamilton relatedness benefit,biology,ethology::hamilton_relatedness_benefit
-ethology::hawk_dove_payoff,f64,1,1,1912059,1912059,1912059,0,1000,pass,ethology,HDP,Hawk dove payoff,biology,ethology::hawk_dove_payoff
-ethology::ideal_free_distribution,f64,1,1,1985480,1985480,1985480,0,1000,pass,ethology,IFD,Ideal free distribution,biology,ethology::ideal_free_distribution
-ethology::territory_size,f64,3,1,3792648,3792648,3792648,0,333.33334,pass,ethology,TS,Territory size,biology,ethology::territory_size
+ethology::hamilton_relatedness_benefit,f64,2,1,2565010,2565010,2565010,0,500,pass,ethology,HRB,Hamilton relatedness benefit,biology,ethology::hamilton_relatedness_benefit
+ethology::hawk_dove_payoff,f64,2,1,2460970,2460970,2460970,0,500,pass,ethology,HDP,Hawk dove payoff,biology,ethology::hawk_dove_payoff
+ethology::ideal_free_distribution,f64,2,1,2952431,2952431,2952431,0,500,pass,ethology,IFD,Ideal free distribution,biology,ethology::ideal_free_distribution
+ethology::territory_size,f64,2,1,2962290,2962290,2962290,0,500,pass,ethology,TS,Territory size,biology,ethology::territory_size

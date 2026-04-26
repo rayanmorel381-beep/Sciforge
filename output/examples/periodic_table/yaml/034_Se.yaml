@@ -7,9 +7,9 @@ experiment_name: Se_Selenium_benchmark
 precision: f64
 elapsed_ms: 2
 iterations: 1000
-avg_time_ns: 2592.98
-min_time_ns: 2592.98
-max_time_ns: 2592.98
+avg_time_ns: 2641.96
+min_time_ns: 2641.96
+max_time_ns: 2641.96
 time_stddev: 0.0000
 iterations_per_sec: 500000.00
 result: Z=34 | Se (Selenium) | 78.971 u | nonmetal | [Ar] 3d¹⁰ 4s² 4p⁴

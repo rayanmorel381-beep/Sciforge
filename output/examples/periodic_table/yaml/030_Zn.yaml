@@ -7,9 +7,9 @@ experiment_name: Zn_Zinc_benchmark
 precision: f64
 elapsed_ms: 23
 iterations: 10000
-avg_time_ns: 2326.91
-min_time_ns: 2326.91
-max_time_ns: 2326.91
+avg_time_ns: 2340.08
+min_time_ns: 2340.08
+max_time_ns: 2340.08
 time_stddev: 0.0000
-iterations_per_sec: 434782.59
+iterations_per_sec: 434782.61
 result: Z=30 | Zn (Zinc) | 65.38 u | transition metal | [Ar] 3d¹⁰ 4s²

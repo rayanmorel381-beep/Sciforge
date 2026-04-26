@@ -8,9 +8,9 @@
   "precision": "f64",
   "elapsed_ms": 1,
   "iterations": 1000,
-  "avg_time_ns": 1249.86,
-  "min_time_ns": 1249.86,
-  "max_time_ns": 1249.86,
+  "avg_time_ns": 1291.49,
+  "min_time_ns": 1291.49,
+  "max_time_ns": 1291.49,
   "time_stddev": 0.0000,
   "iterations_per_sec": 1000000.00,
   "result": "Z=16 | S (Sulfur) | 32.06 u | nonmetal | [Ne] 3s² 3p⁴"

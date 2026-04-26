@@ -6,28 +6,28 @@ entries:
     name: Rutherfordium
     config: [Rn] 5f¹⁴ 6d² 7s²
     mass: 267.122
-    avg_time_ns: 8047.03
+    avg_time_ns: 8290.02
   - label: 105_Db
     symbol: Db
     name: Dubnium
     config: [Rn] 5f¹⁴ 6d³ 7s²
     mass: 268.126
-    avg_time_ns: 8232.80
+    avg_time_ns: 8299.34
   - label: 106_Sg
     symbol: Sg
     name: Seaborgium
     config: [Rn] 5f¹⁴ 6d⁴ 7s²
     mass: 269.129
-    avg_time_ns: 8401.15
+    avg_time_ns: 8248.20
   - label: 107_Bh
     symbol: Bh
     name: Bohrium
     config: [Rn] 5f¹⁴ 6d⁵ 7s²
     mass: 270.134
-    avg_time_ns: 8499.11
+    avg_time_ns: 8444.88
   - label: 108_Hs
     symbol: Hs
     name: Hassium
     config: [Rn] 5f¹⁴ 6d⁶ 7s²
     mass: 269.134
-    avg_time_ns: 9304.38
+    avg_time_ns: 8561.10

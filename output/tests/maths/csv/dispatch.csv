@@ -1,7 +1,7 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-dispatch::dispatch_complex_sqrt,f64,2,1,2057909,2057909,2057909,0,500,pass,dispatch,DCS,Dispatch complex sqrt,maths,dispatch::dispatch_complex_sqrt
-dispatch::dispatch_gaussian_kernel_smooth,f64,2,1,2152220,2152220,2152220,0,500,pass,dispatch,DGK,Dispatch gaussian kernel smooth,maths,dispatch::dispatch_gaussian_kernel_smooth
-dispatch::dispatch_missing_parameter_returns_error,f64,1,1,1859399,1859399,1859399,0,1000,pass,dispatch,DMP,Dispatch missing parameter returns error,maths,dispatch::dispatch_missing_parameter_returns_error
-dispatch::dispatch_unknown_function_returns_error,f64,1,1,1785359,1785359,1785359,0,1000,pass,dispatch,DUF,Dispatch unknown function returns error,maths,dispatch::dispatch_unknown_function_returns_error
-dispatch::dispatch_vec_midpoint,f64,1,1,1789629,1789629,1789629,0,1000,pass,dispatch,DVM,Dispatch vec midpoint,maths,dispatch::dispatch_vec_midpoint
-dispatch::dispatch_wave_packet_gaussian,f64,1,1,1752669,1752669,1752669,0,1000,pass,dispatch,DWP,Dispatch wave packet gaussian,maths,dispatch::dispatch_wave_packet_gaussian
+dispatch::dispatch_complex_sqrt,f64,2,1,2284841,2284841,2284841,0,500,pass,dispatch,DCS,Dispatch complex sqrt,maths,dispatch::dispatch_complex_sqrt
+dispatch::dispatch_gaussian_kernel_smooth,f64,2,1,2393200,2393200,2393200,0,500,pass,dispatch,DGK,Dispatch gaussian kernel smooth,maths,dispatch::dispatch_gaussian_kernel_smooth
+dispatch::dispatch_missing_parameter_returns_error,f64,2,1,2029660,2029660,2029660,0,500,pass,dispatch,DMP,Dispatch missing parameter returns error,maths,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,1,1,1959641,1959641,1959641,0,1000,pass,dispatch,DUF,Dispatch unknown function returns error,maths,dispatch::dispatch_unknown_function_returns_error
+dispatch::dispatch_vec_midpoint,f64,1,1,1864300,1864300,1864300,0,1000,pass,dispatch,DVM,Dispatch vec midpoint,maths,dispatch::dispatch_vec_midpoint
+dispatch::dispatch_wave_packet_gaussian,f64,1,1,1816500,1816500,1816500,0,1000,pass,dispatch,DWP,Dispatch wave packet gaussian,maths,dispatch::dispatch_wave_packet_gaussian

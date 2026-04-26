@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-particle::compton_time,f64,1,1,1861519,1861519,1861519,0,1000,pass,particle,CT,Compton time,physics,particle::compton_time
-particle::fine_structure_constant,f64,1,1,1784589,1784589,1784589,0,1000,pass,particle,FSC,Fine structure constant,physics,particle::fine_structure_constant
-particle::photon_energy,f64,1,1,1733939,1733939,1733939,0,1000,pass,particle,PE,Photon energy,physics,particle::photon_energy
-particle::planck_energy,f64,2,1,2185169,2185169,2185169,0,500,pass,particle,PE,Planck energy,physics,particle::planck_energy
+particle::compton_time,f64,1,1,1757910,1757910,1757910,0,1000,pass,particle,CT,Compton time,physics,particle::compton_time
+particle::fine_structure_constant,f64,1,1,1790600,1790600,1790600,0,1000,pass,particle,FSC,Fine structure constant,physics,particle::fine_structure_constant
+particle::photon_energy,f64,2,1,2135011,2135011,2135011,0,500,pass,particle,PE,Photon energy,physics,particle::photon_energy
+particle::planck_energy,f64,1,1,1803910,1803910,1803910,0,1000,pass,particle,PE,Planck energy,physics,particle::planck_energy

@@ -6,22 +6,22 @@ entries:
     name: Antibody titer
     domain: biology
     test: "immunology::antibody_titer"
-    avg_time_ns: 2071250.00
+    avg_time_ns: 2323271.00
   - label: immunology_clonal_expansion
     symbol: CE
     name: Clonal expansion
     domain: biology
     test: "immunology::clonal_expansion"
-    avg_time_ns: 1935659.00
+    avg_time_ns: 2341550.00
   - label: immunology_herd_immunity_fraction
     symbol: HIF
     name: Herd immunity fraction
     domain: biology
     test: "immunology::herd_immunity_fraction"
-    avg_time_ns: 2346389.00
+    avg_time_ns: 2272891.00
   - label: immunology_vaccine_efficacy
     symbol: VE
     name: Vaccine efficacy
     domain: biology
     test: "immunology::vaccine_efficacy"
-    avg_time_ns: 2118319.00
+    avg_time_ns: 2728580.00

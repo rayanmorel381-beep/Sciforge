@@ -6,11 +6,11 @@ to: 2.621876e1 mi
 conversion: 42.195 km → 2.621876e1 mi
 experiment_name: Marathon distance_convert
 precision: f64
-elapsed_ms: 24
+elapsed_ms: 26
 iterations: 10000
-avg_time_ns: 2419.22
-min_time_ns: 2419.22
-max_time_ns: 2419.22
+avg_time_ns: 2648.79
+min_time_ns: 2648.79
+max_time_ns: 2648.79
 time_stddev: 0.0000
-iterations_per_sec: 416666.66
+iterations_per_sec: 384615.38
 result: Marathon distance | 42.195 km → 2.621876e1 mi

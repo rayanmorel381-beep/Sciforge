@@ -26,20 +26,20 @@ benchmark.md
 ## Results
 | Label | Precision | Iterations | Avg (ns) | Iters/s |
 |---|---|---|---|---|
-| rt | f32 | 25 | 28.40 | 0.00 |
+| rt | f32 | 25 | 20.40 | 0.00 |
 ## Analytics
 ### Group Distribution
 | Group | Count | Avg (ns) | Min (ns) | Max (ns) |
 |---|---|---|---|---|
-| other | 1 | 28.40 | 28.40 | 28.40 |
+| other | 1 | 20.40 | 20.40 | 20.40 |
 
 ### Top 10 Fastest Entries
 | # | Entry | Avg (ns) |
 |---|---|---|
-| 1 | rt | 28.40 |
+| 1 | rt | 20.40 |
 
 ### Top 10 Slowest Entries
 | # | Entry | Avg (ns) |
 |---|---|---|
-| 1 | rt | 28.40 |
+| 1 | rt | 20.40 |
 

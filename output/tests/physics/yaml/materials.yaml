@@ -6,16 +6,16 @@ entries:
     name: Diffusion coefficient
     domain: physics
     test: "materials::diffusion_coefficient"
-    avg_time_ns: 2138239.00
+    avg_time_ns: 1753820.00
   - label: materials_fick_first_law
     symbol: FFL
     name: Fick first law
     domain: physics
     test: "materials::fick_first_law"
-    avg_time_ns: 1970789.00
+    avg_time_ns: 2249021.00
   - label: materials_vacancy_concentration
     symbol: VC
     name: Vacancy concentration
     domain: physics
     test: "materials::vacancy_concentration"
-    avg_time_ns: 1876959.00
+    avg_time_ns: 1938600.00

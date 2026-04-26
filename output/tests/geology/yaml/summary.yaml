@@ -7,7 +7,7 @@ entries:
     name: Age from ratio
     domain: geology
     test: "dating::age_from_ratio"
-    avg_time_ns: 2463039.00
+    avg_time_ns: 2345040.00
     iterations_per_sec: 500.00
   - label: dating_carbon14_age
     category: dating
@@ -15,23 +15,23 @@ entries:
     name: Carbon14 age
     domain: geology
     test: "dating::carbon14_age"
-    avg_time_ns: 2086439.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1887980.00
+    iterations_per_sec: 1000.00
   - label: dating_decay_constant
     category: dating
     symbol: DC
     name: Decay constant
     domain: geology
     test: "dating::decay_constant"
-    avg_time_ns: 2111509.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1800390.00
+    iterations_per_sec: 1000.00
   - label: dating_half_life_positive_for_positive_lambda
     category: dating
     symbol: HLP
     name: Half life positive for positive lambda
     domain: geology
     test: "dating::half_life_positive_for_positive_lambda"
-    avg_time_ns: 1828439.00
+    avg_time_ns: 1754751.00
     iterations_per_sec: 1000.00
   - label: dating_radioactive_decay
     category: dating
@@ -39,15 +39,15 @@ entries:
     name: Radioactive decay
     domain: geology
     test: "dating::radioactive_decay"
-    avg_time_ns: 2154569.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1728440.00
+    iterations_per_sec: 1000.00
   - label: dating_radioactive_decay_halflife
     category: dating
     symbol: RDH
     name: Radioactive decay halflife
     domain: geology
     test: "dating::radioactive_decay_halflife"
-    avg_time_ns: 1737109.00
+    avg_time_ns: 1733370.00
     iterations_per_sec: 1000.00
   - label: dating_radioactive_decay_large_time_stability
     category: dating
@@ -55,7 +55,7 @@ entries:
     name: Radioactive decay large time stability
     domain: geology
     test: "dating::radioactive_decay_large_time_stability"
-    avg_time_ns: 1812260.00
+    avg_time_ns: 1787941.00
     iterations_per_sec: 1000.00
   - label: erosion_chemical_weathering_rate
     category: erosion
@@ -63,7 +63,7 @@ entries:
     name: Chemical weathering rate
     domain: geology
     test: "erosion::chemical_weathering_rate"
-    avg_time_ns: 1695009.00
+    avg_time_ns: 1882400.00
     iterations_per_sec: 1000.00
   - label: erosion_fluvial_erosion_rate
     category: erosion
@@ -71,15 +71,15 @@ entries:
     name: Fluvial erosion rate
     domain: geology
     test: "erosion::fluvial_erosion_rate"
-    avg_time_ns: 1749459.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2511600.00
+    iterations_per_sec: 500.00
   - label: erosion_frost_weathering_rate
     category: erosion
     symbol: FWR
     name: Frost weathering rate
     domain: geology
     test: "erosion::frost_weathering_rate"
-    avg_time_ns: 1697289.00
+    avg_time_ns: 1810831.00
     iterations_per_sec: 1000.00
   - label: erosion_volcanic_explosivity_index
     category: erosion
@@ -87,7 +87,7 @@ entries:
     name: Volcanic explosivity index
     domain: geology
     test: "erosion::volcanic_explosivity_index"
-    avg_time_ns: 1902340.00
+    avg_time_ns: 1739600.00
     iterations_per_sec: 1000.00
   - label: erosion_wind_erosion_threshold
     category: erosion
@@ -95,71 +95,71 @@ entries:
     name: Wind erosion threshold
     domain: geology
     test: "erosion::wind_erosion_threshold"
-    avg_time_ns: 2304438.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1769440.00
+    iterations_per_sec: 1000.00
   - label: glaciology_glacial_bed_erosion
     category: glaciology
     symbol: GBE
     name: Glacial bed erosion
     domain: geology
     test: "glaciology::glacial_bed_erosion"
-    avg_time_ns: 2156729.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1756320.00
+    iterations_per_sec: 1000.00
   - label: glaciology_glen_strain_increases_with_stress
     category: glaciology
     symbol: GSI
     name: Glen strain increases with stress
     domain: geology
     test: "glaciology::glen_strain_increases_with_stress"
-    avg_time_ns: 2050680.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1900971.00
+    iterations_per_sec: 1000.00
   - label: glaciology_glen_strain_rate
     category: glaciology
     symbol: GSR
     name: Glen strain rate
     domain: geology
     test: "glaciology::glen_strain_rate"
-    avg_time_ns: 1764559.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2354760.00
+    iterations_per_sec: 500.00
   - label: glaciology_ice_viscosity
     category: glaciology
     symbol: IV
     name: Ice viscosity
     domain: geology
     test: "glaciology::ice_viscosity"
-    avg_time_ns: 1694559.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2614761.00
+    iterations_per_sec: 500.00
   - label: glaciology_shallow_ice_velocity
     category: glaciology
     symbol: SIV
     name: Shallow ice velocity
     domain: geology
     test: "glaciology::shallow_ice_velocity"
-    avg_time_ns: 1719449.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2273110.00
+    iterations_per_sec: 500.00
   - label: hydrology_chezy_velocity
     category: hydrology
     symbol: CV
     name: Chezy velocity
     domain: geology
     test: "hydrology::chezy_velocity"
-    avg_time_ns: 1775680.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2124550.00
+    iterations_per_sec: 500.00
   - label: hydrology_froude_number
     category: hydrology
     symbol: FN
     name: Froude number
     domain: geology
     test: "hydrology::froude_number"
-    avg_time_ns: 2316238.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1898791.00
+    iterations_per_sec: 1000.00
   - label: hydrology_hjulstrom_erosion_threshold
     category: hydrology
     symbol: HET
     name: Hjulstrom erosion threshold
     domain: geology
     test: "hydrology::hjulstrom_erosion_threshold"
-    avg_time_ns: 1943800.00
+    avg_time_ns: 1963620.00
     iterations_per_sec: 1000.00
   - label: hydrology_manning_velocity
     category: hydrology
@@ -167,39 +167,39 @@ entries:
     name: Manning velocity
     domain: geology
     test: "hydrology::manning_velocity"
-    avg_time_ns: 2200399.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1906670.00
+    iterations_per_sec: 1000.00
   - label: hydrology_reynolds_number
     category: hydrology
     symbol: RN
     name: Reynolds number
     domain: geology
     test: "hydrology::reynolds_number"
-    avg_time_ns: 1900639.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2168321.00
+    iterations_per_sec: 500.00
   - label: hydrology_stream_power
     category: hydrology
     symbol: SP
     name: Stream power
     domain: geology
     test: "hydrology::stream_power"
-    avg_time_ns: 1702869.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2073870.00
+    iterations_per_sec: 500.00
   - label: petrology_cipw_quartz_norm
     category: petrology
     symbol: CQN
     name: Cipw quartz norm
     domain: geology
     test: "petrology::cipw_quartz_norm"
-    avg_time_ns: 1794329.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2267000.00
+    iterations_per_sec: 500.00
   - label: petrology_crystal_settling_velocity
     category: petrology
     symbol: CSV
     name: Crystal settling velocity
     domain: geology
     test: "petrology::crystal_settling_velocity"
-    avg_time_ns: 1765559.00
+    avg_time_ns: 1938511.00
     iterations_per_sec: 1000.00
   - label: petrology_differentiation_index
     category: petrology
@@ -207,7 +207,7 @@ entries:
     name: Differentiation index
     domain: geology
     test: "petrology::differentiation_index"
-    avg_time_ns: 1679760.00
+    avg_time_ns: 1799500.00
     iterations_per_sec: 1000.00
   - label: petrology_liquidus_temperature
     category: petrology
@@ -215,7 +215,7 @@ entries:
     name: Liquidus temperature
     domain: geology
     test: "petrology::liquidus_temperature"
-    avg_time_ns: 1673029.00
+    avg_time_ns: 1705510.00
     iterations_per_sec: 1000.00
   - label: petrology_mg_number
     category: petrology
@@ -223,7 +223,7 @@ entries:
     name: Mg number
     domain: geology
     test: "petrology::mg_number"
-    avg_time_ns: 1691019.00
+    avg_time_ns: 1709191.00
     iterations_per_sec: 1000.00
   - label: petrology_total_alkali_silica
     category: petrology
@@ -231,7 +231,7 @@ entries:
     name: Total alkali silica
     domain: geology
     test: "petrology::total_alkali_silica"
-    avg_time_ns: 1693619.00
+    avg_time_ns: 1786690.00
     iterations_per_sec: 1000.00
   - label: petrology_viscosity_arrhenius
     category: petrology
@@ -239,7 +239,7 @@ entries:
     name: Viscosity arrhenius
     domain: geology
     test: "petrology::viscosity_arrhenius"
-    avg_time_ns: 1682640.00
+    avg_time_ns: 1731330.00
     iterations_per_sec: 1000.00
   - label: seismology_gutenberg_richter
     category: seismology
@@ -247,7 +247,7 @@ entries:
     name: Gutenberg richter
     domain: geology
     test: "seismology::gutenberg_richter"
-    avg_time_ns: 1704649.00
+    avg_time_ns: 1956001.00
     iterations_per_sec: 1000.00
   - label: seismology_gutenberg_richter_decreases_with_magnitude
     category: seismology
@@ -255,15 +255,15 @@ entries:
     name: Gutenberg richter decreases with magnitude
     domain: geology
     test: "seismology::gutenberg_richter_decreases_with_magnitude"
-    avg_time_ns: 1694049.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2529250.00
+    iterations_per_sec: 500.00
   - label: seismology_p_wave_faster_than_s_wave
     category: seismology
     symbol: PWF
     name: P wave faster than s wave
     domain: geology
     test: "seismology::p_wave_faster_than_s_wave"
-    avg_time_ns: 1672330.00
+    avg_time_ns: 1862510.00
     iterations_per_sec: 1000.00
   - label: seismology_p_wave_velocity
     category: seismology
@@ -271,15 +271,15 @@ entries:
     name: P wave velocity
     domain: geology
     test: "seismology::p_wave_velocity"
-    avg_time_ns: 2398169.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1804261.00
+    iterations_per_sec: 1000.00
   - label: seismology_richter_amplitude_ratio_adds_one_magnitude
     category: seismology
     symbol: RAR
     name: Richter amplitude ratio adds one magnitude
     domain: geology
     test: "seismology::richter_amplitude_ratio_adds_one_magnitude"
-    avg_time_ns: 1918229.00
+    avg_time_ns: 1762060.00
     iterations_per_sec: 1000.00
   - label: seismology_richter_magnitude
     category: seismology
@@ -287,7 +287,7 @@ entries:
     name: Richter magnitude
     domain: geology
     test: "seismology::richter_magnitude"
-    avg_time_ns: 1805979.00
+    avg_time_ns: 1722690.00
     iterations_per_sec: 1000.00
   - label: seismology_s_wave_velocity
     category: seismology
@@ -295,7 +295,7 @@ entries:
     name: S wave velocity
     domain: geology
     test: "seismology::s_wave_velocity"
-    avg_time_ns: 1771049.00
+    avg_time_ns: 1848020.00
     iterations_per_sec: 1000.00
   - label: seismology_seismic_energy
     category: seismology
@@ -303,15 +303,15 @@ entries:
     name: Seismic energy
     domain: geology
     test: "seismology::seismic_energy"
-    avg_time_ns: 1721629.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2339891.00
+    iterations_per_sec: 500.00
   - label: tectonics_geothermal_gradient
     category: tectonics
     symbol: GG
     name: Geothermal gradient
     domain: geology
     test: "tectonics::geothermal_gradient"
-    avg_time_ns: 1749840.00
+    avg_time_ns: 1956800.00
     iterations_per_sec: 1000.00
   - label: tectonics_heat_flow
     category: tectonics
@@ -319,7 +319,7 @@ entries:
     name: Heat flow
     domain: geology
     test: "tectonics::heat_flow"
-    avg_time_ns: 1757359.00
+    avg_time_ns: 1980480.00
     iterations_per_sec: 1000.00
   - label: tectonics_isostatic_equilibrium
     category: tectonics
@@ -327,23 +327,23 @@ entries:
     name: Isostatic equilibrium
     domain: geology
     test: "tectonics::isostatic_equilibrium"
-    avg_time_ns: 2578839.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1977931.00
+    iterations_per_sec: 1000.00
   - label: tectonics_mg_number
     category: tectonics
     symbol: MN
     name: Mg number
     domain: geology
     test: "tectonics::mg_number"
-    avg_time_ns: 2736879.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1907140.00
+    iterations_per_sec: 1000.00
   - label: tectonics_plate_velocity
     category: tectonics
     symbol: PV
     name: Plate velocity
     domain: geology
     test: "tectonics::plate_velocity"
-    avg_time_ns: 2190369.00
+    avg_time_ns: 2192391.00
     iterations_per_sec: 500.00
   - label: tectonics_viscosity_arrhenius
     category: tectonics
@@ -351,5 +351,5 @@ entries:
     name: Viscosity arrhenius
     domain: geology
     test: "tectonics::viscosity_arrhenius"
-    avg_time_ns: 2167569.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1932310.00
+    iterations_per_sec: 1000.00

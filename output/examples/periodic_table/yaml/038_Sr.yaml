@@ -7,9 +7,9 @@ experiment_name: Sr_Strontium_benchmark
 precision: f64
 elapsed_ms: 14
 iterations: 5000
-avg_time_ns: 2917.53
-min_time_ns: 2917.53
-max_time_ns: 2917.53
+avg_time_ns: 2973.56
+min_time_ns: 2973.56
+max_time_ns: 2973.56
 time_stddev: 0.0000
-iterations_per_sec: 357142.84
+iterations_per_sec: 357142.86
 result: Z=38 | Sr (Strontium) | 87.62 u | alkaline earth metal | [Kr] 5s²

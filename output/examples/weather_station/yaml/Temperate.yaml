@@ -14,7 +14,7 @@ entries:
     potential_temp: 285.5 K
     mixing_ratio: 6.97 g/kg
     lcl: 381 m AGL
-    avg_time_ns: 5629.84
+    avg_time_ns: 5650.99
   - label: Tokyo Narita
     symbol: T
     name: Tokyo Narita
@@ -28,4 +28,4 @@ entries:
     potential_temp: 289.3 K
     mixing_ratio: 8.16 g/kg
     lcl: 539 m AGL
-    avg_time_ns: 5656.88
+    avg_time_ns: 5584.68

@@ -7,9 +7,9 @@ experiment_name: Lu_Lutetium_benchmark
 precision: f32
 elapsed_ms: 27
 iterations: 5000
-avg_time_ns: 5450.91
-min_time_ns: 5450.91
-max_time_ns: 5450.91
+avg_time_ns: 5551.34
+min_time_ns: 5551.34
+max_time_ns: 5551.34
 time_stddev: 0.0000
 iterations_per_sec: 185185.19
 result: Z=71 | Lu (Lutetium) | 174.9668 u | lanthanide | [Xe] 4f¹⁴ 5d¹ 6s²

@@ -11,11 +11,11 @@ computed_age: 1294.7 Myr
 expected_age: 3500 Myr
 experiment_name: Pilbara Craton_dating
 precision: f64
-elapsed_ms: 23
+elapsed_ms: 26
 iterations: 5000
-avg_time_ns: 4734.31
-min_time_ns: 4734.31
-max_time_ns: 4734.31
+avg_time_ns: 5376.54
+min_time_ns: 5376.54
+max_time_ns: 5376.54
 time_stddev: 0.0000
-iterations_per_sec: 217391.30
+iterations_per_sec: 192307.69
 result: "Pilbara Craton | K-Ar | D/P=0.1100 | t½=1.2480e9 years | Computed: 1294.7 Myr | Expected: 3500 Myr"

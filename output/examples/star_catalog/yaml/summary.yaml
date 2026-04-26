@@ -14,8 +14,8 @@ entries:
     schwarzschild: 2954.28 m
     ms_lifetime: 0.0 Myr
     wien_peak: 502 nm
-    avg_time_ns: 1744.29
-    iterations_per_sec: 625000.00
+    avg_time_ns: 1815.82
+    iterations_per_sec: 555555.56
   - label: Sirius A
     category: Main Sequence
     symbol: A
@@ -29,8 +29,8 @@ entries:
     schwarzschild: 6094.67 m
     ms_lifetime: 0.0 Myr
     wien_peak: 292 nm
-    avg_time_ns: 1677.32
-    iterations_per_sec: 625000.00
+    avg_time_ns: 1876.73
+    iterations_per_sec: 555555.56
   - label: Betelgeuse
     category: Supergiant
     symbol: M
@@ -44,7 +44,7 @@ entries:
     schwarzschild: 48745.54 m
     ms_lifetime: 0.0 Myr
     wien_peak: 805 nm
-    avg_time_ns: 1696.30
+    avg_time_ns: 1751.97
     iterations_per_sec: 625000.00
   - label: Rigel
     category: Supergiant
@@ -59,7 +59,7 @@ entries:
     schwarzschild: 62039.78 m
     ms_lifetime: 0.0 Myr
     wien_peak: 239 nm
-    avg_time_ns: 1671.57
+    avg_time_ns: 1738.15
     iterations_per_sec: 625000.00
   - label: Vega
     category: Main Sequence
@@ -74,7 +74,7 @@ entries:
     schwarzschild: 6307.38 m
     ms_lifetime: 0.0 Myr
     wien_peak: 302 nm
-    avg_time_ns: 1681.65
+    avg_time_ns: 1792.81
     iterations_per_sec: 625000.00
   - label: Proxima Centauri
     category: Red Dwarf
@@ -89,7 +89,7 @@ entries:
     schwarzschild: 360.42 m
     ms_lifetime: 0.0 Myr
     wien_peak: 953 nm
-    avg_time_ns: 1704.27
+    avg_time_ns: 1794.42
     iterations_per_sec: 625000.00
   - label: Polaris
     category: Supergiant
@@ -104,7 +104,7 @@ entries:
     schwarzschild: 15953.09 m
     ms_lifetime: 0.0 Myr
     wien_peak: 482 nm
-    avg_time_ns: 1646.64
+    avg_time_ns: 1788.72
     iterations_per_sec: 625000.00
   - label: Aldebaran
     category: Giant
@@ -119,8 +119,8 @@ entries:
     schwarzschild: 3426.96 m
     ms_lifetime: 0.0 Myr
     wien_peak: 741 nm
-    avg_time_ns: 1723.64
-    iterations_per_sec: 625000.00
+    avg_time_ns: 1846.47
+    iterations_per_sec: 555555.56
   - label: Deneb
     category: Supergiant
     symbol: A
@@ -134,8 +134,8 @@ entries:
     schwarzschild: 56131.23 m
     ms_lifetime: 0.0 Myr
     wien_peak: 340 nm
-    avg_time_ns: 1713.84
-    iterations_per_sec: 625000.00
+    avg_time_ns: 1838.03
+    iterations_per_sec: 555555.56
   - label: Barnard's Star
     category: Red Dwarf
     symbol: M
@@ -149,5 +149,5 @@ entries:
     schwarzschild: 425.42 m
     ms_lifetime: 0.0 Myr
     wien_peak: 925 nm
-    avg_time_ns: 1759.21
+    avg_time_ns: 1756.05
     iterations_per_sec: 625000.00

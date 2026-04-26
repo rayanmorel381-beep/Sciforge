@@ -6,22 +6,22 @@ entries:
     name: Contact angle
     domain: chemistry
     test: "surface::contact_angle"
-    avg_time_ns: 3160308.00
+    avg_time_ns: 1957831.00
   - label: surface_freundlich_isotherm
     symbol: FI
     name: Freundlich isotherm
     domain: chemistry
     test: "surface::freundlich_isotherm"
-    avg_time_ns: 3029159.00
+    avg_time_ns: 2492390.00
   - label: surface_langmuir_isotherm
     symbol: LI
     name: Langmuir isotherm
     domain: chemistry
     test: "surface::langmuir_isotherm"
-    avg_time_ns: 2892998.00
+    avg_time_ns: 1850660.00
   - label: surface_laplace_pressure
     symbol: LP
     name: Laplace pressure
     domain: chemistry
     test: "surface::laplace_pressure"
-    avg_time_ns: 2567289.00
+    avg_time_ns: 1786651.00

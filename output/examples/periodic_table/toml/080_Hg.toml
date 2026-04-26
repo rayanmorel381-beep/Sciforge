@@ -8,9 +8,9 @@ experiment_name = "Hg_Mercury_benchmark"
 precision = "f64"
 elapsed_ms = 31
 iterations = 5000
-avg_time_ns = 6227.39
-min_time_ns = 6227.39
-max_time_ns = 6227.39
+avg_time_ns = 6237.34
+min_time_ns = 6237.34
+max_time_ns = 6237.34
 time_stddev = 0.0000
-iterations_per_sec = 161290.33
+iterations_per_sec = 161290.32
 result = "Z=80 | Hg (Mercury) | 200.592 u | transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s²"

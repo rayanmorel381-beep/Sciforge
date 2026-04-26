@@ -7,18 +7,18 @@ entries:
     from: 42.195 km
     to: 2.621876e1 mi
     conversion: 42.195 km → 2.621876e1 mi
-    avg_time_ns: 2419.22
+    avg_time_ns: 2648.79
   - label: Everest height
     symbol: m
     name: Everest height
     from: 8848.86 m
     to: 2.903169e4 ft
     conversion: 8848.86 m → 2.903169e4 ft
-    avg_time_ns: 2472.56
+    avg_time_ns: 3121.24
   - label: Light-year
     symbol: ly
     name: Light-year
     from: 1 ly
     to: 9.460730e12 km
     conversion: 1 ly → 9.460730e12 km
-    avg_time_ns: 2447.65
+    avg_time_ns: 3035.24

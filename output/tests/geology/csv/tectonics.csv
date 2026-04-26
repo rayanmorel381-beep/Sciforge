@@ -1,7 +1,7 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-tectonics::geothermal_gradient,f64,1,1,1749840,1749840,1749840,0,1000,pass,tectonics,GG,Geothermal gradient,geology,tectonics::geothermal_gradient
-tectonics::heat_flow,f64,1,1,1757359,1757359,1757359,0,1000,pass,tectonics,HF,Heat flow,geology,tectonics::heat_flow
-tectonics::isostatic_equilibrium,f64,2,1,2578839,2578839,2578839,0,500,pass,tectonics,IE,Isostatic equilibrium,geology,tectonics::isostatic_equilibrium
-tectonics::mg_number,f64,2,1,2736879,2736879,2736879,0,500,pass,tectonics,MN,Mg number,geology,tectonics::mg_number
-tectonics::plate_velocity,f64,2,1,2190369,2190369,2190369,0,500,pass,tectonics,PV,Plate velocity,geology,tectonics::plate_velocity
-tectonics::viscosity_arrhenius,f64,2,1,2167569,2167569,2167569,0,500,pass,tectonics,VA,Viscosity arrhenius,geology,tectonics::viscosity_arrhenius
+tectonics::geothermal_gradient,f64,1,1,1956800,1956800,1956800,0,1000,pass,tectonics,GG,Geothermal gradient,geology,tectonics::geothermal_gradient
+tectonics::heat_flow,f64,1,1,1980480,1980480,1980480,0,1000,pass,tectonics,HF,Heat flow,geology,tectonics::heat_flow
+tectonics::isostatic_equilibrium,f64,1,1,1977931,1977931,1977931,0,1000,pass,tectonics,IE,Isostatic equilibrium,geology,tectonics::isostatic_equilibrium
+tectonics::mg_number,f64,1,1,1907140,1907140,1907140,0,1000,pass,tectonics,MN,Mg number,geology,tectonics::mg_number
+tectonics::plate_velocity,f64,2,1,2192391,2192391,2192391,0,500,pass,tectonics,PV,Plate velocity,geology,tectonics::plate_velocity
+tectonics::viscosity_arrhenius,f64,1,1,1932310,1932310,1932310,0,1000,pass,tectonics,VA,Viscosity arrhenius,geology,tectonics::viscosity_arrhenius

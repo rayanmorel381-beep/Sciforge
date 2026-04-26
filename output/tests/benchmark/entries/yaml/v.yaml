@@ -2,4 +2,4 @@ k: v
 count: 1
 entries:
   - label: lbl
-    avg_time_ns: 20.00
+    avg_time_ns: 13.80

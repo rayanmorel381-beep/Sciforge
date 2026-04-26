@@ -6,11 +6,11 @@ to: 2.903169e4 ft
 conversion: 8848.86 m → 2.903169e4 ft
 experiment_name: Everest height_convert
 precision: f64
-elapsed_ms: 24
+elapsed_ms: 31
 iterations: 10000
-avg_time_ns: 2472.56
-min_time_ns: 2472.56
-max_time_ns: 2472.56
+avg_time_ns: 3121.24
+min_time_ns: 3121.24
+max_time_ns: 3121.24
 time_stddev: 0.0000
-iterations_per_sec: 416666.66
+iterations_per_sec: 322580.65
 result: Everest height | 8848.86 m → 2.903169e4 ft

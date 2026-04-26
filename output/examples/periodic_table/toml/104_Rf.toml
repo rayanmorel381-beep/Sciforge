@@ -6,11 +6,11 @@ config = "[Rn] 5f¹⁴ 6d² 7s²"
 mass = "267.122"
 experiment_name = "Rf_Rutherfordium_benchmark"
 precision = "f64"
-elapsed_ms = 40
+elapsed_ms = 41
 iterations = 5000
-avg_time_ns = 8047.03
-min_time_ns = 8047.03
-max_time_ns = 8047.03
+avg_time_ns = 8290.02
+min_time_ns = 8290.02
+max_time_ns = 8290.02
 time_stddev = 0.0000
-iterations_per_sec = 125000.00
+iterations_per_sec = 121951.22
 result = "Z=104 | Rf (Rutherfordium) | 267.122 u | transition_metal | [Rn] 5f¹⁴ 6d² 7s²"

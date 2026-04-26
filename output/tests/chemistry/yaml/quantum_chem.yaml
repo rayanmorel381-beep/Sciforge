@@ -6,16 +6,16 @@ entries:
     name: Huckel total pi energy
     domain: chemistry
     test: "quantum_chem::huckel_total_pi_energy"
-    avg_time_ns: 1971249.00
+    avg_time_ns: 2337830.00
   - label: quantum_chem_lcao_bonding_energy
     symbol: LBE
     name: Lcao bonding energy
     domain: chemistry
     test: "quantum_chem::lcao_bonding_energy"
-    avg_time_ns: 1794769.00
+    avg_time_ns: 2096410.00
   - label: quantum_chem_mulliken_population
     symbol: MP
     name: Mulliken population
     domain: chemistry
     test: "quantum_chem::mulliken_population"
-    avg_time_ns: 1785049.00
+    avg_time_ns: 1988691.00

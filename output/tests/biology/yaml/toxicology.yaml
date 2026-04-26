@@ -6,22 +6,22 @@ entries:
     name: Bcf ratio
     domain: biology
     test: "toxicology::bcf_ratio"
-    avg_time_ns: 2049629.00
+    avg_time_ns: 2163320.00
   - label: toxicology_ld50_probit
     symbol: LP
     name: Ld50 probit
     domain: biology
     test: "toxicology::ld50_probit"
-    avg_time_ns: 1986869.00
+    avg_time_ns: 1977881.00
   - label: toxicology_risk_quotient
     symbol: RQ
     name: Risk quotient
     domain: biology
     test: "toxicology::risk_quotient"
-    avg_time_ns: 1919359.00
+    avg_time_ns: 1907330.00
   - label: toxicology_therapeutic_window
     symbol: TW
     name: Therapeutic window
     domain: biology
     test: "toxicology::therapeutic_window"
-    avg_time_ns: 2086099.00
+    avg_time_ns: 2199140.00

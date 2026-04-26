@@ -6,12 +6,12 @@
   "mass": "294",
   "experiment_name": "Ts_Tennessine_benchmark",
   "precision": "f32",
-  "elapsed_ms": 94,
+  "elapsed_ms": 90,
   "iterations": 10000,
-  "avg_time_ns": 9498.33,
-  "min_time_ns": 9498.33,
-  "max_time_ns": 9498.33,
+  "avg_time_ns": 9014.73,
+  "min_time_ns": 9014.73,
+  "max_time_ns": 9014.73,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 106382.98,
+  "iterations_per_sec": 111111.11,
   "result": "Z=117 | Ts (Tennessine) | 294 u | halogen | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted)"
 }

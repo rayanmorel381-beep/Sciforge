@@ -6,16 +6,16 @@ entries:
     name: Conjugate gradient
     domain: maths
     test: "sparse::conjugate_gradient"
-    avg_time_ns: 1964579.00
+    avg_time_ns: 2125160.00
   - label: sparse_jacobi_iterate
     symbol: JI
     name: Jacobi iterate
     domain: maths
     test: "sparse::jacobi_iterate"
-    avg_time_ns: 1769559.00
+    avg_time_ns: 2233721.00
   - label: sparse_sparse_add
     symbol: SA
     name: Sparse add
     domain: maths
     test: "sparse::sparse_add"
-    avg_time_ns: 1799959.00
+    avg_time_ns: 2027670.00

@@ -7,12 +7,12 @@
   "conversion": "90 deg → 1.570796e0 rad",
   "experiment_name": "Right angle_convert",
   "precision": "f64",
-  "elapsed_ms": 52,
+  "elapsed_ms": 53,
   "iterations": 10000,
-  "avg_time_ns": 5282.32,
-  "min_time_ns": 5282.32,
-  "max_time_ns": 5282.32,
+  "avg_time_ns": 5389.85,
+  "min_time_ns": 5389.85,
+  "max_time_ns": 5389.85,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 192307.69,
+  "iterations_per_sec": 188679.25,
   "result": "Right angle | 90 deg → 1.570796e0 rad"
 }

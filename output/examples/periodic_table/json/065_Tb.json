@@ -8,9 +8,9 @@
   "precision": "f32",
   "elapsed_ms": 25,
   "iterations": 5000,
-  "avg_time_ns": 5021.52,
-  "min_time_ns": 5021.52,
-  "max_time_ns": 5021.52,
+  "avg_time_ns": 5044.69,
+  "min_time_ns": 5044.69,
+  "max_time_ns": 5044.69,
   "time_stddev": 0.0000,
   "iterations_per_sec": 200000.00,
   "result": "Z=65 | Tb (Terbium) | 158.92535 u | lanthanide | [Xe] 4f⁹ 6s²"

@@ -1,6 +1,6 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-winds::beaufort_monotonic,f64,1,1,1908059,1908059,1908059,0,1000,pass,winds,BM,Beaufort monotonic,meteorology,winds::beaufort_monotonic
-winds::beaufort_to_m_s,f64,1,1,1879449,1879449,1879449,0,1000,pass,winds,BTM,Beaufort to m s,meteorology,winds::beaufort_to_m_s
-winds::beaufort_zero_is_calm,f64,1,1,1891119,1891119,1891119,0,1000,pass,winds,BZI,Beaufort zero is calm,meteorology,winds::beaufort_zero_is_calm
-winds::wind_chill,f64,1,1,1870990,1870990,1870990,0,1000,pass,winds,WC,Wind chill,meteorology,winds::wind_chill
-winds::wind_chill_decreases_with_wind,f64,1,1,1689829,1689829,1689829,0,1000,pass,winds,WCD,Wind chill decreases with wind,meteorology,winds::wind_chill_decreases_with_wind
+winds::beaufort_monotonic,f64,1,1,1908610,1908610,1908610,0,1000,pass,winds,BM,Beaufort monotonic,meteorology,winds::beaufort_monotonic
+winds::beaufort_to_m_s,f64,1,1,1761491,1761491,1761491,0,1000,pass,winds,BTM,Beaufort to m s,meteorology,winds::beaufort_to_m_s
+winds::beaufort_zero_is_calm,f64,1,1,1708480,1708480,1708480,0,1000,pass,winds,BZI,Beaufort zero is calm,meteorology,winds::beaufort_zero_is_calm
+winds::wind_chill,f64,1,1,1722210,1722210,1722210,0,1000,pass,winds,WC,Wind chill,meteorology,winds::wind_chill
+winds::wind_chill_decreases_with_wind,f64,1,1,1703271,1703271,1703271,0,1000,pass,winds,WCD,Wind chill decreases with wind,meteorology,winds::wind_chill_decreases_with_wind

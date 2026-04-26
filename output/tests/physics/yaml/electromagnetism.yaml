@@ -6,58 +6,58 @@ entries:
     name: Capacitance parallel plate
     domain: physics
     test: "electromagnetism::capacitance_parallel_plate"
-    avg_time_ns: 1701549.00
+    avg_time_ns: 1701020.00
   - label: electromagnetism_electric_field_point_charge
     symbol: EFP
     name: Electric field point charge
     domain: physics
     test: "electromagnetism::electric_field_point_charge"
-    avg_time_ns: 1746880.00
+    avg_time_ns: 1749461.00
   - label: electromagnetism_inductance_solenoid
     symbol: IS
     name: Inductance solenoid
     domain: physics
     test: "electromagnetism::inductance_solenoid"
-    avg_time_ns: 2022399.00
+    avg_time_ns: 1699410.00
   - label: electromagnetism_magnetic_field_wire
     symbol: MFW
     name: Magnetic field wire
     domain: physics
     test: "electromagnetism::magnetic_field_wire"
-    avg_time_ns: 2174609.00
+    avg_time_ns: 1715740.00
   - label: electromagnetism_malus_law
     symbol: ML
     name: Malus law
     domain: physics
     test: "electromagnetism::malus_law"
-    avg_time_ns: 2228739.00
+    avg_time_ns: 1742861.00
   - label: electromagnetism_malus_law_quarter_turn_extinction
     symbol: MLQ
     name: Malus law quarter turn extinction
     domain: physics
     test: "electromagnetism::malus_law_quarter_turn_extinction"
-    avg_time_ns: 2221529.00
+    avg_time_ns: 1785610.00
   - label: electromagnetism_ohm_current
     symbol: OC
     name: Ohm current
     domain: physics
     test: "electromagnetism::ohm_current"
-    avg_time_ns: 2390439.00
+    avg_time_ns: 1710930.00
   - label: electromagnetism_ohm_law_roundtrip_consistency
     symbol: OLR
     name: Ohm law roundtrip consistency
     domain: physics
     test: "electromagnetism::ohm_law_roundtrip_consistency"
-    avg_time_ns: 1970989.00
+    avg_time_ns: 1696681.00
   - label: electromagnetism_ohm_resistance
     symbol: OR
     name: Ohm resistance
     domain: physics
     test: "electromagnetism::ohm_resistance"
-    avg_time_ns: 1864079.00
+    avg_time_ns: 1837770.00
   - label: electromagnetism_ohm_voltage
     symbol: OV
     name: Ohm voltage
     domain: physics
     test: "electromagnetism::ohm_voltage"
-    avg_time_ns: 1730559.00
+    avg_time_ns: 1826690.00

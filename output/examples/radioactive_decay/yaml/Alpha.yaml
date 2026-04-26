@@ -13,7 +13,7 @@ entries:
     specific_activity: 1.244e4 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.571 MeV/nucleon
-    avg_time_ns: 2226.82
+    avg_time_ns: 2211.11
   - label: ²³⁵U
     symbol: ²³⁵U
     name: Uranium
@@ -26,7 +26,7 @@ entries:
     specific_activity: 7.995e4 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.565 MeV/nucleon
-    avg_time_ns: 2250.62
+    avg_time_ns: 2212.51
   - label: ²³²Th
     symbol: ²³²Th
     name: Thorium
@@ -39,7 +39,7 @@ entries:
     specific_activity: 4.058e3 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.570 MeV/nucleon
-    avg_time_ns: 2421.41
+    avg_time_ns: 2288.26
   - label: ²³⁹Pu
     symbol: ²³⁹Pu
     name: Plutonium
@@ -52,7 +52,7 @@ entries:
     specific_activity: 2.295e9 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.563 MeV/nucleon
-    avg_time_ns: 2407.81
+    avg_time_ns: 2226.71
   - label: ²⁴¹Am
     symbol: ²⁴¹Am
     name: Americium
@@ -65,4 +65,4 @@ entries:
     specific_activity: 1.270e11 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.561 MeV/nucleon
-    avg_time_ns: 2720.78
+    avg_time_ns: 2238.90

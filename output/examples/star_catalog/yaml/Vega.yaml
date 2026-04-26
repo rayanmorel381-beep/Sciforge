@@ -14,9 +14,9 @@ experiment_name: Vega_stellar
 precision: f64
 elapsed_ms: 8
 iterations: 5000
-avg_time_ns: 1681.65
-min_time_ns: 1681.65
-max_time_ns: 1681.65
+avg_time_ns: 1792.81
+min_time_ns: 1792.81
+max_time_ns: 1792.81
 time_stddev: 0.0000
 iterations_per_sec: 625000.00
 result: Vega (A0V) | L=1.636e28 W | M_abs=0.60 | R_s=6307.38 m | MS lifetime=0.0 Myr | Wien λ_max=302 nm

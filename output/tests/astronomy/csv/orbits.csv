@@ -1,11 +1,11 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-orbits::circular_velocity,f64,1,1,1827569,1827569,1827569,0,1000,pass,orbits,CV,Circular velocity,astronomy,orbits::circular_velocity
-orbits::escape_velocity,f64,2,1,2249449,2249449,2249449,0,500,pass,orbits,EV,Escape velocity,astronomy,orbits::escape_velocity
-orbits::escape_vs_circular_velocity_ratio,f64,1,1,1980699,1980699,1980699,0,1000,pass,orbits,EVC,Escape vs circular velocity ratio,astronomy,orbits::escape_vs_circular_velocity_ratio
-orbits::hohmann_delta_v_positive_and_zero_identity,f64,2,1,2555539,2555539,2555539,0,500,pass,orbits,HDV,Hohmann delta v positive and zero identity,astronomy,orbits::hohmann_delta_v_positive_and_zero_identity
-orbits::kepler_period_earth,f64,2,1,2288119,2288119,2288119,0,500,pass,orbits,KPE,Kepler period earth,astronomy,orbits::kepler_period_earth
-orbits::periapsis_apoapsis_consistency,f64,2,1,2193379,2193379,2193379,0,500,pass,orbits,PAC,Periapsis apoapsis consistency,astronomy,orbits::periapsis_apoapsis_consistency
-orbits::roche_limit,f64,2,1,2279879,2279879,2279879,0,500,pass,orbits,RL,Roche limit,astronomy,orbits::roche_limit
-orbits::sphere_of_influence_earth,f64,2,1,2176399,2176399,2176399,0,500,pass,orbits,SOI,Sphere of influence earth,astronomy,orbits::sphere_of_influence_earth
-orbits::true_anomaly_radius_matches_extrema,f64,2,1,2493759,2493759,2493759,0,500,pass,orbits,TAR,True anomaly radius matches extrema,astronomy,orbits::true_anomaly_radius_matches_extrema
-orbits::vis_viva_circular,f64,2,1,2235179,2235179,2235179,0,500,pass,orbits,VVC,Vis viva circular,astronomy,orbits::vis_viva_circular
+orbits::circular_velocity,f64,1,1,1964850,1964850,1964850,0,1000,pass,orbits,CV,Circular velocity,astronomy,orbits::circular_velocity
+orbits::escape_velocity,f64,1,1,1773520,1773520,1773520,0,1000,pass,orbits,EV,Escape velocity,astronomy,orbits::escape_velocity
+orbits::escape_vs_circular_velocity_ratio,f64,1,1,1773721,1773721,1773721,0,1000,pass,orbits,EVC,Escape vs circular velocity ratio,astronomy,orbits::escape_vs_circular_velocity_ratio
+orbits::hohmann_delta_v_positive_and_zero_identity,f64,1,1,1977900,1977900,1977900,0,1000,pass,orbits,HDV,Hohmann delta v positive and zero identity,astronomy,orbits::hohmann_delta_v_positive_and_zero_identity
+orbits::kepler_period_earth,f64,1,1,1785530,1785530,1785530,0,1000,pass,orbits,KPE,Kepler period earth,astronomy,orbits::kepler_period_earth
+orbits::periapsis_apoapsis_consistency,f64,1,1,1774631,1774631,1774631,0,1000,pass,orbits,PAC,Periapsis apoapsis consistency,astronomy,orbits::periapsis_apoapsis_consistency
+orbits::roche_limit,f64,1,1,1893530,1893530,1893530,0,1000,pass,orbits,RL,Roche limit,astronomy,orbits::roche_limit
+orbits::sphere_of_influence_earth,f64,1,1,1948590,1948590,1948590,0,1000,pass,orbits,SOI,Sphere of influence earth,astronomy,orbits::sphere_of_influence_earth
+orbits::true_anomaly_radius_matches_extrema,f64,1,1,1913171,1913171,1913171,0,1000,pass,orbits,TAR,True anomaly radius matches extrema,astronomy,orbits::true_anomaly_radius_matches_extrema
+orbits::vis_viva_circular,f64,1,1,1839940,1839940,1839940,0,1000,pass,orbits,VVC,Vis viva circular,astronomy,orbits::vis_viva_circular

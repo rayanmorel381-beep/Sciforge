@@ -6,22 +6,22 @@ entries:
     name: Fret efficiency
     domain: biology
     test: "biophysics::fret_efficiency"
-    avg_time_ns: 2613499.00
+    avg_time_ns: 2983951.00
   - label: biophysics_harmonic_bond
     symbol: HB
     name: Harmonic bond
     domain: biology
     test: "biophysics::harmonic_bond"
-    avg_time_ns: 3845128.00
+    avg_time_ns: 2245980.00
   - label: biophysics_lennard_jones
     symbol: LJ
     name: Lennard jones
     domain: biology
     test: "biophysics::lennard_jones"
-    avg_time_ns: 3076909.00
+    avg_time_ns: 2532751.00
   - label: biophysics_membrane_tension
     symbol: MT
     name: Membrane tension
     domain: biology
     test: "biophysics::membrane_tension"
-    avg_time_ns: 2739149.00
+    avg_time_ns: 2522360.00

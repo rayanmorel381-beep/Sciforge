@@ -13,7 +13,7 @@ entries:
     schwarzschild: 360.42 m
     ms_lifetime: 0.0 Myr
     wien_peak: 953 nm
-    avg_time_ns: 1704.27
+    avg_time_ns: 1794.42
   - label: Barnard's Star
     symbol: M
     name: Barnard's Star
@@ -26,4 +26,4 @@ entries:
     schwarzschild: 425.42 m
     ms_lifetime: 0.0 Myr
     wien_peak: 925 nm
-    avg_time_ns: 1759.21
+    avg_time_ns: 1756.05

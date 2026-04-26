@@ -6,28 +6,28 @@ entries:
     name: F1 score
     domain: biology
     test: "biostatistics::f1_score"
-    avg_time_ns: 2407649.00
+    avg_time_ns: 1997400.00
   - label: biostatistics_number_needed_to_treat
     symbol: NNT
     name: Number needed to treat
     domain: biology
     test: "biostatistics::number_needed_to_treat"
-    avg_time_ns: 1936359.00
+    avg_time_ns: 1856231.00
   - label: biostatistics_odds_ratio
     symbol: OR
     name: Odds ratio
     domain: biology
     test: "biostatistics::odds_ratio"
-    avg_time_ns: 1923639.00
+    avg_time_ns: 1935590.00
   - label: biostatistics_sensitivity
     symbol: Se
     name: Sensitivity
     domain: biology
     test: "biostatistics::sensitivity"
-    avg_time_ns: 2504969.00
+    avg_time_ns: 1787060.00
   - label: biostatistics_specificity
     symbol: Sp
     name: Specificity
     domain: biology
     test: "biostatistics::specificity"
-    avg_time_ns: 2157639.00
+    avg_time_ns: 1740531.00

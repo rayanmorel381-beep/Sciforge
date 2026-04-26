@@ -14,7 +14,7 @@ entries:
     potential_temp: 310.9 K
     mixing_ratio: 11.09 g/kg
     lcl: 688 m AGL
-    avg_time_ns: 5534.76
+    avg_time_ns: 6022.63
   - label: Singapore
     symbol: S
     name: Singapore
@@ -28,4 +28,4 @@ entries:
     potential_temp: 300.9 K
     mixing_ratio: 19.59 g/kg
     lcl: 301 m AGL
-    avg_time_ns: 5640.50
+    avg_time_ns: 5538.39

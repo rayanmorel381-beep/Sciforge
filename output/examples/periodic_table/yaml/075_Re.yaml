@@ -5,11 +5,11 @@ config: [Xe] 4f¹⁴ 5d⁵ 6s²
 mass: 186.207
 experiment_name: Re_Rhenium_benchmark
 precision: f32
-elapsed_ms: 58
+elapsed_ms: 59
 iterations: 10000
-avg_time_ns: 5804.09
-min_time_ns: 5804.09
-max_time_ns: 5804.09
+avg_time_ns: 5931.54
+min_time_ns: 5931.54
+max_time_ns: 5931.54
 time_stddev: 0.0000
-iterations_per_sec: 172413.80
+iterations_per_sec: 169491.53
 result: Z=75 | Re (Rhenium) | 186.207 u | transition metal | [Xe] 4f¹⁴ 5d⁵ 6s²

@@ -6,46 +6,46 @@ entries:
     name: Aluminium
     config: [Ne] 3s² 3p¹
     mass: 26.9815385
-    avg_time_ns: 1010.41
+    avg_time_ns: 1041.63
   - label: 031_Ga
     symbol: Ga
     name: Gallium
     config: [Ar] 3d¹⁰ 4s² 4p¹
     mass: 69.723
-    avg_time_ns: 2456.66
+    avg_time_ns: 2465.75
   - label: 049_In
     symbol: In
     name: Indium
     config: [Kr] 4d¹⁰ 5s² 5p¹
     mass: 114.818
-    avg_time_ns: 4352.59
+    avg_time_ns: 3738.75
   - label: 050_Sn
     symbol: Sn
     name: Tin
     config: [Kr] 4d¹⁰ 5s² 5p²
     mass: 118.71
-    avg_time_ns: 3820.33
+    avg_time_ns: 3923.69
   - label: 081_Tl
     symbol: Tl
     name: Thallium
     config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹
     mass: 204.38
-    avg_time_ns: 6350.10
+    avg_time_ns: 6636.80
   - label: 082_Pb
     symbol: Pb
     name: Lead
     config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²
     mass: 207.2
-    avg_time_ns: 6397.04
+    avg_time_ns: 6287.12
   - label: 083_Bi
     symbol: Bi
     name: Bismuth
     config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³
     mass: 208.9804
-    avg_time_ns: 6530.20
+    avg_time_ns: 6630.27
   - label: 084_Po
     symbol: Po
     name: Polonium
     config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴
     mass: 208.98243
-    avg_time_ns: 6547.83
+    avg_time_ns: 6550.27

@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-environmental::biochemical_oxygen_demand,f64,1,1,1902919,1902919,1902919,0,1000,pass,environmental,BOD,Biochemical oxygen demand,chemistry,environmental::biochemical_oxygen_demand
-environmental::dissolved_oxygen_saturation,f64,1,1,1753249,1753249,1753249,0,1000,pass,environmental,DOS,Dissolved oxygen saturation,chemistry,environmental::dissolved_oxygen_saturation
-environmental::henry_law_solubility,f64,1,1,1720379,1720379,1720379,0,1000,pass,environmental,HLS,Henry law solubility,chemistry,environmental::henry_law_solubility
+environmental::biochemical_oxygen_demand,f64,3,1,3172921,3172921,3172921,0,333.3333333333333,pass,environmental,BOD,Biochemical oxygen demand,chemistry,environmental::biochemical_oxygen_demand
+environmental::dissolved_oxygen_saturation,f64,3,1,3142561,3142561,3142561,0,333.3333333333333,pass,environmental,DOS,Dissolved oxygen saturation,chemistry,environmental::dissolved_oxygen_saturation
+environmental::henry_law_solubility,f64,2,1,2536110,2536110,2536110,0,500,pass,environmental,HLS,Henry law solubility,chemistry,environmental::henry_law_solubility

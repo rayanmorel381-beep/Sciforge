@@ -12,7 +12,7 @@ entries:
     decay_constant: 4.9156e-18 s⁻¹
     computed_age: 1789.7 Myr
     expected_age: 2055 Myr
-    avg_time_ns: 3766.45
+    avg_time_ns: 3987.71
   - label: Sudbury Impact
     symbol: U
     name: Sudbury Impact
@@ -24,4 +24,4 @@ entries:
     decay_constant: 4.9156e-18 s⁻¹
     computed_age: 1591.4 Myr
     expected_age: 1849 Myr
-    avg_time_ns: 3745.87
+    avg_time_ns: 3884.42

@@ -6,22 +6,22 @@ entries:
     name: Bioavailability
     domain: biology
     test: "pharmacology::bioavailability"
-    avg_time_ns: 1904209.00
+    avg_time_ns: 2260800.00
   - label: pharmacology_dose_response_hill
     symbol: DRH
     name: Dose response hill
     domain: biology
     test: "pharmacology::dose_response_hill"
-    avg_time_ns: 1935179.00
+    avg_time_ns: 2117040.00
   - label: pharmacology_half_life
     symbol: HL
     name: Half life
     domain: biology
     test: "pharmacology::half_life"
-    avg_time_ns: 2048649.00
+    avg_time_ns: 2412581.00
   - label: pharmacology_therapeutic_index
     symbol: TI
     name: Therapeutic index
     domain: biology
     test: "pharmacology::therapeutic_index"
-    avg_time_ns: 1950580.00
+    avg_time_ns: 2967400.00

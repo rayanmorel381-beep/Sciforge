@@ -6,22 +6,22 @@ entries:
     name: Harmonic oscillator energy
     domain: physics
     test: "quantum::harmonic_oscillator_energy"
-    avg_time_ns: 1914149.00
+    avg_time_ns: 1747010.00
   - label: quantum_hydrogen_energy
     symbol: HE
     name: Hydrogen energy
     domain: physics
     test: "quantum::hydrogen_energy"
-    avg_time_ns: 2102140.00
+    avg_time_ns: 1762821.00
   - label: quantum_infinite_well_energy
     symbol: IWE
     name: Infinite well energy
     domain: physics
     test: "quantum::infinite_well_energy"
-    avg_time_ns: 1897629.00
+    avg_time_ns: 2011990.00
   - label: quantum_tunneling_coefficient
     symbol: TC
     name: Tunneling coefficient
     domain: physics
     test: "quantum::tunneling_coefficient"
-    avg_time_ns: 1929499.00
+    avg_time_ns: 2256030.00

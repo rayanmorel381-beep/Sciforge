@@ -8,7 +8,7 @@ symbol = "AU"
 name = "Astronomical unit"
 domain = "constants"
 test = "astro::astronomical_unit"
-avg_time_ns = 1118100.00
+avg_time_ns = 1146710.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -18,7 +18,7 @@ symbol = "CT"
 name = "Cmb temperature"
 domain = "constants"
 test = "astro::cmb_temperature"
-avg_time_ns = 1145599.00
+avg_time_ns = 1246740.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -28,7 +28,7 @@ symbol = "EM"
 name = "Earth mass"
 domain = "constants"
 test = "astro::earth_mass"
-avg_time_ns = 1456760.00
+avg_time_ns = 1515101.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -38,7 +38,7 @@ symbol = "HC"
 name = "Hubble constant"
 domain = "constants"
 test = "astro::hubble_constant"
-avg_time_ns = 1305599.00
+avg_time_ns = 1216360.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -48,7 +48,7 @@ symbol = "LY"
 name = "Light year"
 domain = "constants"
 test = "astro::light_year"
-avg_time_ns = 1170949.00
+avg_time_ns = 1353870.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -58,7 +58,7 @@ symbol = "Pa"
 name = "Parsec"
 domain = "constants"
 test = "astro::parsec"
-avg_time_ns = 1158460.00
+avg_time_ns = 1209980.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -68,7 +68,7 @@ symbol = "PGT"
 name = "Parsec greater than ly"
 domain = "constants"
 test = "astro::parsec_greater_than_ly"
-avg_time_ns = 1131859.00
+avg_time_ns = 1107100.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -78,7 +78,7 @@ symbol = "SM"
 name = "Solar mass"
 domain = "constants"
 test = "astro::solar_mass"
-avg_time_ns = 1182260.00
+avg_time_ns = 1160531.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -88,7 +88,7 @@ symbol = "ATK"
 name = "Amu to kg"
 domain = "constants"
 test = "atomic::amu_to_kg"
-avg_time_ns = 1236939.00
+avg_time_ns = 1076210.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -98,7 +98,7 @@ symbol = "BR"
 name = "Bohr radius"
 domain = "constants"
 test = "atomic::bohr_radius"
-avg_time_ns = 1182540.00
+avg_time_ns = 1159610.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -108,7 +108,7 @@ symbol = "CW"
 name = "Compton wavelength"
 domain = "constants"
 test = "atomic::compton_wavelength"
-avg_time_ns = 1145809.00
+avg_time_ns = 1394240.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -118,7 +118,7 @@ symbol = "EM"
 name = "Electron mass"
 domain = "constants"
 test = "atomic::electron_mass"
-avg_time_ns = 1307390.00
+avg_time_ns = 1432570.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -128,7 +128,7 @@ symbol = "NM"
 name = "Neutron mass"
 domain = "constants"
 test = "atomic::neutron_mass"
-avg_time_ns = 1267209.00
+avg_time_ns = 1603471.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -138,7 +138,7 @@ symbol = "PHT"
 name = "Proton heavier than electron"
 domain = "constants"
 test = "atomic::proton_heavier_than_electron"
-avg_time_ns = 1152830.00
+avg_time_ns = 1438830.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -148,7 +148,7 @@ symbol = "PM"
 name = "Proton mass"
 domain = "constants"
 test = "atomic::proton_mass"
-avg_time_ns = 1179549.00
+avg_time_ns = 1443590.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -158,7 +158,7 @@ symbol = "AN"
 name = "Avogadro number"
 domain = "constants"
 test = "fundamental::avogadro_number"
-avg_time_ns = 1168180.00
+avg_time_ns = 1448910.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -168,7 +168,7 @@ symbol = "BC"
 name = "Boltzmann constant"
 domain = "constants"
 test = "fundamental::boltzmann_constant"
-avg_time_ns = 1465449.00
+avg_time_ns = 1434001.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -178,7 +178,7 @@ symbol = "CC"
 name = "Coulomb constant"
 domain = "constants"
 test = "fundamental::coulomb_constant"
-avg_time_ns = 1946559.00
+avg_time_ns = 1166330.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -188,7 +188,7 @@ symbol = "EC"
 name = "Elementary charge"
 domain = "constants"
 test = "fundamental::elementary_charge"
-avg_time_ns = 1517480.00
+avg_time_ns = 1172310.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -198,7 +198,7 @@ symbol = "GC"
 name = "Gas constant"
 domain = "constants"
 test = "fundamental::gas_constant"
-avg_time_ns = 1279009.00
+avg_time_ns = 1214380.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -208,7 +208,7 @@ symbol = "GC"
 name = "Gravitational constant"
 domain = "constants"
 test = "fundamental::gravitational_constant"
-avg_time_ns = 1238629.00
+avg_time_ns = 1213580.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -218,7 +218,7 @@ symbol = "PC"
 name = "Planck constant"
 domain = "constants"
 test = "fundamental::planck_constant"
-avg_time_ns = 1089840.00
+avg_time_ns = 1129171.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -228,7 +228,7 @@ symbol = "RP"
 name = "Reduced planck"
 domain = "constants"
 test = "fundamental::reduced_planck"
-avg_time_ns = 1104560.00
+avg_time_ns = 1144010.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -238,7 +238,7 @@ symbol = "SOL"
 name = "Speed of light"
 domain = "constants"
 test = "fundamental::speed_of_light"
-avg_time_ns = 1138969.00
+avg_time_ns = 1440350.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -248,7 +248,7 @@ symbol = "SB"
 name = "Stefan boltzmann"
 domain = "constants"
 test = "fundamental::stefan_boltzmann"
-avg_time_ns = 1350439.00
+avg_time_ns = 1228190.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -258,7 +258,7 @@ symbol = "ACI"
 name = "Angle conversion inverse identity"
 domain = "constants"
 test = "units::angle_conversion_inverse_identity"
-avg_time_ns = 1573000.00
+avg_time_ns = 1161750.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -268,7 +268,7 @@ symbol = "ATP"
 name = "Atm to pascal"
 domain = "constants"
 test = "units::atm_to_pascal"
-avg_time_ns = 1264949.00
+avg_time_ns = 1198811.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -278,7 +278,7 @@ symbol = "CTJ"
 name = "Calorie to joule"
 domain = "constants"
 test = "units::calorie_to_joule"
-avg_time_ns = 1239630.00
+avg_time_ns = 1218290.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -288,7 +288,7 @@ symbol = "DRR"
 name = "Degree rad roundtrip"
 domain = "constants"
 test = "units::degree_rad_roundtrip"
-avg_time_ns = 1187439.00
+avg_time_ns = 1149830.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -298,7 +298,7 @@ symbol = "EJR"
 name = "Ev joule roundtrip multiple values"
 domain = "constants"
 test = "units::ev_joule_roundtrip_multiple_values"
-avg_time_ns = 1198329.00
+avg_time_ns = 1199350.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -308,7 +308,7 @@ symbol = "ER"
 name = "Ev roundtrip"
 domain = "constants"
 test = "units::ev_roundtrip"
-avg_time_ns = 1301330.00
+avg_time_ns = 1147751.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -318,6 +318,6 @@ symbol = "ETJ"
 name = "Ev to joule"
 domain = "constants"
 test = "units::ev_to_joule"
-avg_time_ns = 1208949.00
+avg_time_ns = 1310130.00
 iterations_per_sec = 1000.00
 

@@ -49,7 +49,7 @@ This page documents the source implementation behind `sciforge::benchmark`, incl
 
 | Struct | Fields |
 |---|---|
-| `BenchmarkMetrics<'a>` | `experiment_name: &'a str`, `precision: &'a str`, `elapsed_ms: u64`, `iterations: u64`, `input_samples: u64`, `avg_time_ns: f32`, `last_time_ns: f32`, `output_bytes: usize`, `total_flops: u64`, `step_count: u32`, `input_dim: u32`, `output_dim: u32`, `benchmark_flags: u64`, `input_bytes: u64`, `result_bytes: u64`, `min_time_ns: f32`, `max_time_ns: f32`, `time_stddev: f32`, `iterations_per_sec: f32`, `samples_per_sec: f32`, `eval_error: f32`, `eval_accuracy: f32`, `eval_r_squared: f32`, `eval_mae: f32`, `eval_samples: u64`, `eval_dataset_hash: u64`, `logical_cores: u32`, `avg_frequency_mhz: u32`, `max_frequency_mhz: u32`, `max_workers: u32`, `target_cpu_utilization: f32` |
+| `BenchmarkMetrics<'a>` | `experiment_name: &'a str`, `precision: &'a str`, `elapsed_ms: u64`, `iterations: u64`, `input_samples: u64`, `avg_time_ns: f64`, `last_time_ns: f64`, `output_bytes: usize`, `total_flops: u64`, `step_count: u32`, `input_dim: u32`, `output_dim: u32`, `benchmark_flags: u64`, `input_bytes: u64`, `result_bytes: u64`, `min_time_ns: f64`, `max_time_ns: f64`, `time_stddev: f64`, `iterations_per_sec: f64`, `samples_per_sec: f64`, `eval_error: f64`, `eval_accuracy: f64`, `eval_r_squared: f64`, `eval_mae: f64`, `eval_samples: u64`, `eval_dataset_hash: u64`, `logical_cores: u32`, `avg_frequency_mhz: u32`, `max_frequency_mhz: u32`, `max_workers: u32`, `target_cpu_utilization: f64` |
 
 ### Enums
 
@@ -63,8 +63,8 @@ This page documents the source implementation behind `sciforge::benchmark`, incl
 |---|---|---|
 | `CSV_HEADER` | `&str` | `"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result"` |
 | `BENCHMARK_MAGIC` | `[u8; 4]` | `[b'B', b'M', b'K', 0x01]` |
-| `BENCHMARK_VERSION` | `u16` | `4` |
-| `BENCHMARK_HEADER_SIZE` | `usize` | `168` |
+| `BENCHMARK_VERSION` | `u16` | `5` |
+| `BENCHMARK_HEADER_SIZE` | `usize` | `216` |
 
 ### Functions
 

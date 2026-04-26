@@ -6,16 +6,16 @@ entries:
     name: Carothers equation
     domain: chemistry
     test: "polymers::carothers_equation"
-    avg_time_ns: 1703179.00
+    avg_time_ns: 1770110.00
   - label: polymers_flory_huggins_free_energy
     symbol: FHF
     name: Flory huggins free energy
     domain: chemistry
     test: "polymers::flory_huggins_free_energy"
-    avg_time_ns: 1682250.00
+    avg_time_ns: 1787820.00
   - label: polymers_polydispersity_index
     symbol: PI
     name: Polydispersity index
     domain: chemistry
     test: "polymers::polydispersity_index"
-    avg_time_ns: 1903169.00
+    avg_time_ns: 2000371.00

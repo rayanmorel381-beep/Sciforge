@@ -6,34 +6,34 @@ entries:
     name: Absorbance transmittance roundtrip
     domain: chemistry
     test: "analytical::absorbance_transmittance_roundtrip"
-    avg_time_ns: 2003619.00
+    avg_time_ns: 2146030.00
   - label: analytical_beer_lambert
     symbol: BL
     name: Beer lambert
     domain: chemistry
     test: "analytical::beer_lambert"
-    avg_time_ns: 2218109.00
+    avg_time_ns: 1863600.00
   - label: analytical_dilution
     symbol: Di
     name: Dilution
     domain: chemistry
     test: "analytical::dilution"
-    avg_time_ns: 2064179.00
+    avg_time_ns: 1887311.00
   - label: analytical_percent_recovery
     symbol: PR
     name: Percent recovery
     domain: chemistry
     test: "analytical::percent_recovery"
-    avg_time_ns: 2240749.00
+    avg_time_ns: 1826290.00
   - label: analytical_retention_factor
     symbol: RF
     name: Retention factor
     domain: chemistry
     test: "analytical::retention_factor"
-    avg_time_ns: 2247389.00
+    avg_time_ns: 1824800.00
   - label: analytical_signal_to_noise
     symbol: STN
     name: Signal to noise
     domain: chemistry
     test: "analytical::signal_to_noise"
-    avg_time_ns: 2168159.00
+    avg_time_ns: 1888341.00

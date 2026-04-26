@@ -8,9 +8,9 @@
   "precision": "f64",
   "elapsed_ms": 4,
   "iterations": 1000,
-  "avg_time_ns": 4872.53,
-  "min_time_ns": 4872.53,
-  "max_time_ns": 4872.53,
+  "avg_time_ns": 4909.90,
+  "min_time_ns": 4909.90,
+  "max_time_ns": 4909.90,
   "time_stddev": 0.0000,
   "iterations_per_sec": 250000.00,
   "result": "Z=64 | Gd (Gadolinium) | 157.25 u | lanthanide | [Xe] 4f⁷ 5d¹ 6s²"

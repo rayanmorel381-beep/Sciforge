@@ -13,11 +13,11 @@ remaining_3hl = "125000 / 1M after 3 half-lives"
 binding_energy = "7.563 MeV/nucleon"
 experiment_name = "Plutonium_239_decay"
 precision = "f64"
-elapsed_ms = 12
+elapsed_ms = 11
 iterations = 5000
-avg_time_ns = 2407.81
-min_time_ns = 2407.81
-max_time_ns = 2407.81
+avg_time_ns = 2226.71
+min_time_ns = 2226.71
+max_time_ns = 2226.71
 time_stddev = 0.0000
-iterations_per_sec = 416666.66
+iterations_per_sec = 454545.45
 result = "²³⁹Pu (Plutonium) | t½=24110.00 years | λ=9.1094e-13 s⁻¹ | alpha | A_sp=2.295e9 Bq/g"

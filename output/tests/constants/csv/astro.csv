@@ -1,9 +1,9 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-astro::astronomical_unit,f64,1,1,1118100,1118100,1118100,0,1000,pass,astro,AU,Astronomical unit,constants,astro::astronomical_unit
-astro::cmb_temperature,f64,1,1,1145599,1145599,1145599,0,1000,pass,astro,CT,Cmb temperature,constants,astro::cmb_temperature
-astro::earth_mass,f64,1,1,1456760,1456760,1456760,0,1000,pass,astro,EM,Earth mass,constants,astro::earth_mass
-astro::hubble_constant,f64,1,1,1305599,1305599,1305599,0,1000,pass,astro,HC,Hubble constant,constants,astro::hubble_constant
-astro::light_year,f64,1,1,1170949,1170949,1170949,0,1000,pass,astro,LY,Light year,constants,astro::light_year
-astro::parsec,f64,1,1,1158460,1158460,1158460,0,1000,pass,astro,Pa,Parsec,constants,astro::parsec
-astro::parsec_greater_than_ly,f64,1,1,1131859,1131859,1131859,0,1000,pass,astro,PGT,Parsec greater than ly,constants,astro::parsec_greater_than_ly
-astro::solar_mass,f64,1,1,1182260,1182260,1182260,0,1000,pass,astro,SM,Solar mass,constants,astro::solar_mass
+astro::astronomical_unit,f64,1,1,1146710,1146710,1146710,0,1000,pass,astro,AU,Astronomical unit,constants,astro::astronomical_unit
+astro::cmb_temperature,f64,1,1,1246740,1246740,1246740,0,1000,pass,astro,CT,Cmb temperature,constants,astro::cmb_temperature
+astro::earth_mass,f64,1,1,1515101,1515101,1515101,0,1000,pass,astro,EM,Earth mass,constants,astro::earth_mass
+astro::hubble_constant,f64,1,1,1216360,1216360,1216360,0,1000,pass,astro,HC,Hubble constant,constants,astro::hubble_constant
+astro::light_year,f64,1,1,1353870,1353870,1353870,0,1000,pass,astro,LY,Light year,constants,astro::light_year
+astro::parsec,f64,1,1,1209980,1209980,1209980,0,1000,pass,astro,Pa,Parsec,constants,astro::parsec
+astro::parsec_greater_than_ly,f64,1,1,1107100,1107100,1107100,0,1000,pass,astro,PGT,Parsec greater than ly,constants,astro::parsec_greater_than_ly
+astro::solar_mass,f64,1,1,1160531,1160531,1160531,0,1000,pass,astro,SM,Solar mass,constants,astro::solar_mass

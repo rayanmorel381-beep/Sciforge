@@ -8,9 +8,9 @@ experiment_name = "Ge_Germanium_benchmark"
 precision = "f64"
 elapsed_ms = 12
 iterations = 5000
-avg_time_ns = 2461.49
-min_time_ns = 2461.49
-max_time_ns = 2461.49
+avg_time_ns = 2456.93
+min_time_ns = 2456.93
+max_time_ns = 2456.93
 time_stddev = 0.0000
-iterations_per_sec = 416666.66
+iterations_per_sec = 416666.67
 result = "Z=32 | Ge (Germanium) | 72.63 u | metalloid | [Ar] 3d¹⁰ 4s² 4p²"

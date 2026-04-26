@@ -8,9 +8,9 @@ experiment_name: Earth mass_convert
 precision: f64
 elapsed_ms: 38
 iterations: 10000
-avg_time_ns: 3899.77
-min_time_ns: 3899.77
-max_time_ns: 3899.77
+avg_time_ns: 3833.50
+min_time_ns: 3833.50
+max_time_ns: 3833.50
 time_stddev: 0.0000
-iterations_per_sec: 263157.91
+iterations_per_sec: 263157.89
 result: Earth mass | 5972000000000000000000000 kg → 1.316601e25 lb

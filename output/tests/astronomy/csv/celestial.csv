@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-celestial::gravitational_force,f64,5,1,5499748,5499748,5499748,0,200,pass,celestial,GF,Gravitational force,astronomy,celestial::gravitational_force
-celestial::hill_sphere,f64,2,1,2836138,2836138,2836138,0,500,pass,celestial,HS,Hill sphere,astronomy,celestial::hill_sphere
-celestial::julian_date_to_j2000_century,f64,2,1,2219679,2219679,2219679,0,500,pass,celestial,JDT,Julian date to j2000 century,astronomy,celestial::julian_date_to_j2000_century
-celestial::synodic_period,f64,2,1,2186719,2186719,2186719,0,500,pass,celestial,SP,Synodic period,astronomy,celestial::synodic_period
+celestial::gravitational_force,f64,2,1,2418580,2418580,2418580,0,500,pass,celestial,GF,Gravitational force,astronomy,celestial::gravitational_force
+celestial::hill_sphere,f64,2,1,2585930,2585930,2585930,0,500,pass,celestial,HS,Hill sphere,astronomy,celestial::hill_sphere
+celestial::julian_date_to_j2000_century,f64,2,1,2344891,2344891,2344891,0,500,pass,celestial,JDT,Julian date to j2000 century,astronomy,celestial::julian_date_to_j2000_century
+celestial::synodic_period,f64,1,1,1923450,1923450,1923450,0,1000,pass,celestial,SP,Synodic period,astronomy,celestial::synodic_period

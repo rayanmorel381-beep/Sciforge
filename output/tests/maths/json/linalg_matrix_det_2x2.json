@@ -6,12 +6,12 @@
   "test": "linalg::matrix_det_2x2",
   "experiment_name": "linalg::matrix_det_2x2",
   "precision": "f64",
-  "elapsed_ms": 1,
+  "elapsed_ms": 2,
   "iterations": 1,
-  "avg_time_ns": 1764019.00,
-  "min_time_ns": 1764019.00,
-  "max_time_ns": 1764019.00,
+  "avg_time_ns": 2276590.00,
+  "min_time_ns": 2276590.00,
+  "max_time_ns": 2276590.00,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 1000.00,
+  "iterations_per_sec": 500.00,
   "result": "pass"
 }

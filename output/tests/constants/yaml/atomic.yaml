@@ -6,40 +6,40 @@ entries:
     name: Amu to kg
     domain: constants
     test: "atomic::amu_to_kg"
-    avg_time_ns: 1236939.00
+    avg_time_ns: 1076210.00
   - label: atomic_bohr_radius
     symbol: BR
     name: Bohr radius
     domain: constants
     test: "atomic::bohr_radius"
-    avg_time_ns: 1182540.00
+    avg_time_ns: 1159610.00
   - label: atomic_compton_wavelength
     symbol: CW
     name: Compton wavelength
     domain: constants
     test: "atomic::compton_wavelength"
-    avg_time_ns: 1145809.00
+    avg_time_ns: 1394240.00
   - label: atomic_electron_mass
     symbol: EM
     name: Electron mass
     domain: constants
     test: "atomic::electron_mass"
-    avg_time_ns: 1307390.00
+    avg_time_ns: 1432570.00
   - label: atomic_neutron_mass
     symbol: NM
     name: Neutron mass
     domain: constants
     test: "atomic::neutron_mass"
-    avg_time_ns: 1267209.00
+    avg_time_ns: 1603471.00
   - label: atomic_proton_heavier_than_electron
     symbol: PHT
     name: Proton heavier than electron
     domain: constants
     test: "atomic::proton_heavier_than_electron"
-    avg_time_ns: 1152830.00
+    avg_time_ns: 1438830.00
   - label: atomic_proton_mass
     symbol: PM
     name: Proton mass
     domain: constants
     test: "atomic::proton_mass"
-    avg_time_ns: 1179549.00
+    avg_time_ns: 1443590.00

@@ -8,9 +8,9 @@
   "precision": "f32",
   "elapsed_ms": 2,
   "iterations": 1000,
-  "avg_time_ns": 2456.66,
-  "min_time_ns": 2456.66,
-  "max_time_ns": 2456.66,
+  "avg_time_ns": 2465.75,
+  "min_time_ns": 2465.75,
+  "max_time_ns": 2465.75,
   "time_stddev": 0.0000,
   "iterations_per_sec": 500000.00,
   "result": "Z=31 | Ga (Gallium) | 69.723 u | post-transition metal | [Ar] 3d¹⁰ 4s² 4p¹"

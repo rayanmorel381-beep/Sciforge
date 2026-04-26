@@ -34,7 +34,7 @@ fn reset_stress_output_dir() -> PathBuf {
     dir
 }
 
-fn metric<'a>(name: &'a str, elapsed_ms: u64, avg_time_ns: f32, ips: f32) -> BenchmarkMetrics<'a> {
+fn metric<'a>(name: &'a str, elapsed_ms: u64, avg_time_ns: f64, ips: f64) -> BenchmarkMetrics<'a> {
     BenchmarkMetrics {
         experiment_name: name,
         precision: "f64",
@@ -331,11 +331,11 @@ fn stress_noise() {
         "noise",
         elapsed_ms,
         if elapsed_ms > 0 {
-            (elapsed_ms as f32 * 1_000_000.0) / total_rounds as f32
+            (elapsed_ms as f64 * 1_000_000.0) / total_rounds as f64
         } else {
             0.0
         },
-        rounds_per_sec as f32,
+        rounds_per_sec as f64,
     );
 
     let noise_pipeline_metric = metric(
@@ -516,9 +516,9 @@ fn stress_global() {
         saturation_factor
     ));
     elapsed_ms_vals.push(total_elapsed_ms as u64);
-    avg_ns_vals.push(avg_job_elapsed_ms as f32 * 1_000_000.0);
+    avg_ns_vals.push(avg_job_elapsed_ms as f64 * 1_000_000.0);
     ips_vals.push(if total_elapsed_ms > 0 {
-        1000.0 / total_elapsed_ms as f32
+        1000.0 / total_elapsed_ms as f64
     } else {
         0.0
     });
@@ -546,7 +546,7 @@ fn stress_global() {
         let target_failures = target_count.saturating_sub(target_success);
         let target_sum_ms: u128 = target_results.iter().map(|(_, r)| r.elapsed_ms).sum();
         let target_avg_ms = if target_count > 0 {
-            target_sum_ms as f32 / target_count as f32
+            target_sum_ms as f64 / target_count as f64
         } else {
             0.0
         };
@@ -587,7 +587,7 @@ fn stress_global() {
         elapsed_ms_vals.push(target_sum_ms as u64);
         avg_ns_vals.push(target_avg_ms * 1_000_000.0);
         ips_vals.push(if target_sum_ms > 0 {
-            1000.0 / target_sum_ms as f32
+            1000.0 / target_sum_ms as f64
         } else {
             0.0
         });
@@ -617,9 +617,9 @@ fn stress_global() {
                 result.stderr.len()
             ));
             elapsed_ms_vals.push(result.elapsed_ms as u64);
-            avg_ns_vals.push(result.elapsed_ms as f32 * 1_000_000.0);
+            avg_ns_vals.push(result.elapsed_ms as f64 * 1_000_000.0);
             ips_vals.push(if result.elapsed_ms > 0 {
-                1000.0 / result.elapsed_ms as f32
+                1000.0 / result.elapsed_ms as f64
             } else {
                 0.0
             });

@@ -6,40 +6,40 @@ entries:
     name: Angle conversion inverse identity
     domain: constants
     test: "units::angle_conversion_inverse_identity"
-    avg_time_ns: 1573000.00
+    avg_time_ns: 1161750.00
   - label: units_atm_to_pascal
     symbol: ATP
     name: Atm to pascal
     domain: constants
     test: "units::atm_to_pascal"
-    avg_time_ns: 1264949.00
+    avg_time_ns: 1198811.00
   - label: units_calorie_to_joule
     symbol: CTJ
     name: Calorie to joule
     domain: constants
     test: "units::calorie_to_joule"
-    avg_time_ns: 1239630.00
+    avg_time_ns: 1218290.00
   - label: units_degree_rad_roundtrip
     symbol: DRR
     name: Degree rad roundtrip
     domain: constants
     test: "units::degree_rad_roundtrip"
-    avg_time_ns: 1187439.00
+    avg_time_ns: 1149830.00
   - label: units_ev_joule_roundtrip_multiple_values
     symbol: EJR
     name: Ev joule roundtrip multiple values
     domain: constants
     test: "units::ev_joule_roundtrip_multiple_values"
-    avg_time_ns: 1198329.00
+    avg_time_ns: 1199350.00
   - label: units_ev_roundtrip
     symbol: ER
     name: Ev roundtrip
     domain: constants
     test: "units::ev_roundtrip"
-    avg_time_ns: 1301330.00
+    avg_time_ns: 1147751.00
   - label: units_ev_to_joule
     symbol: ETJ
     name: Ev to joule
     domain: constants
     test: "units::ev_to_joule"
-    avg_time_ns: 1208949.00
+    avg_time_ns: 1310130.00

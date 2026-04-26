@@ -8,9 +8,9 @@
   "precision": "f64",
   "elapsed_ms": 5,
   "iterations": 5000,
-  "avg_time_ns": 1140.37,
-  "min_time_ns": 1140.37,
-  "max_time_ns": 1140.37,
+  "avg_time_ns": 1108.43,
+  "min_time_ns": 1108.43,
+  "max_time_ns": 1108.43,
   "time_stddev": 0.0000,
   "iterations_per_sec": 1000000.00,
   "result": "Z=14 | Si (Silicon) | 28.085 u | metalloid | [Ne] 3s² 3p²"

@@ -6,12 +6,12 @@
   "test": "surface::contact_angle",
   "experiment_name": "surface::contact_angle",
   "precision": "f64",
-  "elapsed_ms": 3,
+  "elapsed_ms": 1,
   "iterations": 1,
-  "avg_time_ns": 3160308.00,
-  "min_time_ns": 3160308.00,
-  "max_time_ns": 3160308.00,
+  "avg_time_ns": 1957831.00,
+  "min_time_ns": 1957831.00,
+  "max_time_ns": 1957831.00,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 333.33,
+  "iterations_per_sec": 1000.00,
   "result": "pass"
 }

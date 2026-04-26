@@ -6,10 +6,10 @@ entries:
     name: Rotational kinetic energy
     domain: astronomy
     test: "rotation::rotational_kinetic_energy"
-    avg_time_ns: 2208579.00
+    avg_time_ns: 2141540.00
   - label: rotation_surface_velocity_at_latitude
     symbol: SVA
     name: Surface velocity at latitude
     domain: astronomy
     test: "rotation::surface_velocity_at_latitude"
-    avg_time_ns: 2213009.00
+    avg_time_ns: 1926761.00

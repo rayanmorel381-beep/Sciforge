@@ -6,40 +6,40 @@ entries:
     name: Barometric decreases with altitude
     domain: meteorology
     test: "atmosphere::barometric_decreases_with_altitude"
-    avg_time_ns: 3677928.00
+    avg_time_ns: 2345790.00
   - label: atmosphere_barometric_formula
     symbol: BF
     name: Barometric formula
     domain: meteorology
     test: "atmosphere::barometric_formula"
-    avg_time_ns: 2525369.00
+    avg_time_ns: 2493070.00
   - label: atmosphere_lapse_rate_dry
     symbol: LRD
     name: Lapse rate dry
     domain: meteorology
     test: "atmosphere::lapse_rate_dry"
-    avg_time_ns: 2244209.00
+    avg_time_ns: 2137751.00
   - label: atmosphere_potential_temperature
     symbol: PT
     name: Potential temperature
     domain: meteorology
     test: "atmosphere::potential_temperature"
-    avg_time_ns: 2182669.00
+    avg_time_ns: 2008090.00
   - label: atmosphere_saturation_vapor_increases_with_temp
     symbol: SVI
     name: Saturation vapor increases with temp
     domain: meteorology
     test: "atmosphere::saturation_vapor_increases_with_temp"
-    avg_time_ns: 2014669.00
+    avg_time_ns: 1877660.00
   - label: atmosphere_saturation_vapor_pressure
     symbol: SVP
     name: Saturation vapor pressure
     domain: meteorology
     test: "atmosphere::saturation_vapor_pressure"
-    avg_time_ns: 1833849.00
+    avg_time_ns: 1948561.00
   - label: atmosphere_scale_height
     symbol: SH
     name: Scale height
     domain: meteorology
     test: "atmosphere::scale_height"
-    avg_time_ns: 1894300.00
+    avg_time_ns: 1822450.00

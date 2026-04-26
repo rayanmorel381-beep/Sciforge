@@ -5,11 +5,11 @@ config: [Xe] 4f¹⁴ 5d⁴ 6s²
 mass: 183.84
 experiment_name: W_Tungsten_benchmark
 precision: f64
-elapsed_ms: 28
+elapsed_ms: 29
 iterations: 5000
-avg_time_ns: 5673.61
-min_time_ns: 5673.61
-max_time_ns: 5673.61
+avg_time_ns: 5828.79
+min_time_ns: 5828.79
+max_time_ns: 5828.79
 time_stddev: 0.0000
-iterations_per_sec: 178571.42
+iterations_per_sec: 172413.79
 result: Z=74 | W (Tungsten) | 183.84 u | transition metal | [Xe] 4f¹⁴ 5d⁴ 6s²

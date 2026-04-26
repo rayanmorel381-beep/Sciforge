@@ -15,9 +15,9 @@ experiment_name = "Barnard's Star_stellar"
 precision = "f64"
 elapsed_ms = 8
 iterations = 5000
-avg_time_ns = 1759.21
-min_time_ns = 1759.21
-max_time_ns = 1759.21
+avg_time_ns = 1756.05
+min_time_ns = 1756.05
+max_time_ns = 1756.05
 time_stddev = 0.0000
 iterations_per_sec = 625000.00
 result = "Barnard's Star (M4Ve) | L=1.278e24 W | M_abs=13.19 | R_s=425.42 m | MS lifetime=0.0 Myr | Wien λ_max=925 nm"

@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-synthetic_biology::and_gate,f64,1,1,1884149,1884149,1884149,0,1000,pass,synthetic_biology,AG,And gate,biology,synthetic_biology::and_gate
-synthetic_biology::crispr_on_target_score,f64,2,1,2236349,2236349,2236349,0,500,pass,synthetic_biology,COT,Crispr on target score,biology,synthetic_biology::crispr_on_target_score
-synthetic_biology::hill_activation,f64,2,1,2132950,2132950,2132950,0,500,pass,synthetic_biology,HA,Hill activation,biology,synthetic_biology::hill_activation
-synthetic_biology::hill_repression,f64,1,1,1895859,1895859,1895859,0,1000,pass,synthetic_biology,HR,Hill repression,biology,synthetic_biology::hill_repression
+synthetic_biology::and_gate,f64,1,1,1979540,1979540,1979540,0,1000,pass,synthetic_biology,AG,And gate,biology,synthetic_biology::and_gate
+synthetic_biology::crispr_on_target_score,f64,1,1,1991941,1991941,1991941,0,1000,pass,synthetic_biology,COT,Crispr on target score,biology,synthetic_biology::crispr_on_target_score
+synthetic_biology::hill_activation,f64,2,1,2005900,2005900,2005900,0,500,pass,synthetic_biology,HA,Hill activation,biology,synthetic_biology::hill_activation
+synthetic_biology::hill_repression,f64,2,1,2056720,2056720,2056720,0,500,pass,synthetic_biology,HR,Hill repression,biology,synthetic_biology::hill_repression

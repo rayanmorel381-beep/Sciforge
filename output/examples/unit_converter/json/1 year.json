@@ -7,12 +7,12 @@
   "conversion": "1 year → 8.766000e3 h",
   "experiment_name": "1 year_convert",
   "precision": "f64",
-  "elapsed_ms": 54,
+  "elapsed_ms": 53,
   "iterations": 10000,
-  "avg_time_ns": 5427.91,
-  "min_time_ns": 5427.91,
-  "max_time_ns": 5427.91,
+  "avg_time_ns": 5337.81,
+  "min_time_ns": 5337.81,
+  "max_time_ns": 5337.81,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 185185.19,
+  "iterations_per_sec": 188679.25,
   "result": "1 year | 1 year → 8.766000e3 h"
 }

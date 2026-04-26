@@ -8,9 +8,9 @@ experiment_name = "Na_Sodium_benchmark"
 precision = "f32"
 elapsed_ms = 4
 iterations = 5000
-avg_time_ns = 846.23
-min_time_ns = 846.23
-max_time_ns = 846.23
+avg_time_ns = 901.85
+min_time_ns = 901.85
+max_time_ns = 901.85
 time_stddev = 0.0000
 iterations_per_sec = 1250000.00
 result = "Z=11 | Na (Sodium) | 22.98976928 u | alkali metal | [Ne] 3s¹"

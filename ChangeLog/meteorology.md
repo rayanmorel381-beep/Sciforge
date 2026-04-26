@@ -1,5 +1,51 @@
 # Meteorology ChangeLog
 
+## v0.0.4
+
+### 1️⃣ New Submodule — `winds.rs` — Atmospheric Wind Dynamics (21 pub fn)
+
+| Function | Signature | Formula / Description | Module |
+|---|---|---|---|
+| `hadley_cell_extent` | `fn hadley_cell_extent(planet_radius: f64, rotation_rate: f64, delta_t: f64) → f64` | Hadley cell poleward extent | `meteorology::winds` |
+| `thermal_wind_shear` | `fn thermal_wind_shear(g_local: f64, coriolis: f64, temperature: f64, dt_dy: f64) → f64` | $\partial u/\partial z = -g\,\partial T/\partial y\,/(f T)$ | `meteorology::winds` |
+| `jet_stream_velocity` | `fn jet_stream_velocity(g_local: f64, delta_t: f64, meridional_distance: f64, coriolis: f64, scale_height: f64) → f64` | Thermal wind jet estimate | `meteorology::winds` |
+| `surface_wind_speed` | `fn surface_wind_speed(pressure_gradient: f64, density: f64, drag_coefficient: f64) → f64` | $u = \sqrt{(\nabla P)/(\rho C_d)}$ | `meteorology::winds` |
+| `wind_stress` | `fn wind_stress(air_density: f64, drag_coefficient: f64, wind_speed: f64) → f64` | $\tau = \rho C_d u^2$ | `meteorology::winds` |
+| `planetary_vorticity` | `fn planetary_vorticity(rotation_rate: f64, latitude: f64) → f64` | $f = 2\Omega\sin\phi$ | `meteorology::winds` |
+| `rossby_wave_phase_speed` | `fn rossby_wave_phase_speed(beta: f64, zonal_wavenumber: f64, deformation_radius: f64) → f64` | $c_R = -\beta/(k^2 + L_d^{-2})$ | `meteorology::winds` |
+| `beta_parameter` | `fn beta_parameter(rotation_rate: f64, planet_radius: f64, latitude: f64) → f64` | $\beta = 2\Omega\cos\phi/a$ | `meteorology::winds` |
+| `baroclinic_instability_wavelength` | `fn baroclinic_instability_wavelength(deformation_radius: f64) → f64` | $\lambda_{bc} = 2\pi\sqrt{2}\,L_d$ | `meteorology::winds` |
+| `sea_breeze_speed` | `fn sea_breeze_speed(g_local: f64, delta_t: f64, boundary_layer_height: f64, mean_temperature: f64) → f64` | $u = \sqrt{g\,\Delta T\,h/T}$ | `meteorology::winds` |
+| `katabatic_wind_speed` | `fn katabatic_wind_speed(g_local: f64, delta_t: f64, mean_temperature: f64, slope_angle: f64, slope_length: f64, drag_coefficient: f64) → f64` | Buoyancy-driven slope flow | `meteorology::winds` |
+| `mountain_wave_vertical_velocity` | `fn mountain_wave_vertical_velocity(wind_speed: f64, mountain_height: f64, brunt_vaisala: f64, horizontal_wavelength: f64) → f64` | Orographic wave vertical velocity | `meteorology::winds` |
+| `ekman_pumping_velocity` | `fn ekman_pumping_velocity(wind_stress_curl: f64, density: f64, coriolis: f64) → f64` | $w_E = \nabla\times\boldsymbol{\tau}/(\rho f)$ | `meteorology::winds` |
+| `monin_obukhov_length` | `fn monin_obukhov_length(friction_velocity: f64, surface_temp: f64, sensible_heat_flux: f64, air_density: f64, specific_heat: f64) → f64` | $L = -\rho c_p T u_*^3/(k g H)$ | `meteorology::winds` |
+| `log_wind_profile` | `fn log_wind_profile(friction_velocity: f64, z: f64, roughness_length: f64) → f64` | $u(z) = (u_*/k)\ln(z/z_0)$ | `meteorology::winds` |
+| `cyclostrophic_wind` | `fn cyclostrophic_wind(pressure_gradient: f64, density: f64, radius: f64) → f64` | $u_c = \sqrt{(\nabla P)\,r/\rho}$ | `meteorology::winds` |
+| `gradient_wind` | `fn gradient_wind(coriolis: f64, pressure_gradient: f64, density: f64, radius: f64) → f64` | Gradient wind balance solution | `meteorology::winds` |
+| `superrotation_index` | `fn superrotation_index(zonal_wind: f64, planet_radius: f64, rotation_rate: f64, latitude: f64) → f64` | $S = u/(\Omega a\cos\phi) - 1$ | `meteorology::winds` |
+| `foehn_warming` | `fn foehn_warming(lapse_dry: f64, lapse_moist: f64, mountain_height: f64, condensation_level: f64) → f64` | Net temperature gain from foehn descent | `meteorology::winds` |
+| `beaufort_to_m_s` | `fn beaufort_to_m_s(b: f64) → f64` | $u = C_B\, b^{e_B}$ | `meteorology::winds` |
+| `wind_chill` | `fn wind_chill(t: f64, v: f64) → f64` | Environment Canada wind chill index | `meteorology::winds` |
+
+### 2️⃣ New Submodule — `storms.rs` — Severe Weather & Cyclone Dynamics (5 pub fn)
+
+| Function | Signature | Formula / Description | Module |
+|---|---|---|---|
+| `potential_intensity` | `fn potential_intensity(ck: f64, cd: f64, eta: f64, delta_k: f64) → f64` | $V_{max} = \sqrt{(C_k/C_d)\,\eta\,\Delta k}$ | `meteorology::storms` |
+| `accumulated_cyclone_energy` | `fn accumulated_cyclone_energy(v_kt_series: &[f64]) → f64` | $ACE = \sum v_{kt}^2 / 10^4$ | `meteorology::storms` |
+| `cape` | `fn cape(t_parcel: f64, t_env: f64, g: f64, dz: f64) → f64` | $CAPE = g(T_p - T_e)/T_e \cdot\Delta z$ | `meteorology::storms` |
+| `rossby_deformation_radius` | `fn rossby_deformation_radius(n: f64, h: f64, f: f64) → f64` | $L_d = NH/f$ | `meteorology::storms` |
+| `fujita_scale` | `fn fujita_scale(v: f64) → u8` | F-scale category from wind speed (m/s) | `meteorology::storms` |
+
+### 3️⃣ New Function — `atmosphere.rs`
+
+| Function | Signature | Formula / Description | Module |
+|---|---|---|---|
+| `rayleigh_phase` | `fn rayleigh_phase(cos_theta: f64) → f64` | $P(\cos\theta) = \frac{3}{4}(1 + \cos^2\theta)$ | `meteorology::atmosphere` |
+
+---
+
 ## v0.0.3
 
 ### 1️⃣ New Submodules

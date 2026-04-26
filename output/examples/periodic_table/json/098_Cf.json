@@ -6,12 +6,12 @@
   "mass": "251.079587",
   "experiment_name": "Cf_Californium_benchmark",
   "precision": "f64",
-  "elapsed_ms": 38,
+  "elapsed_ms": 39,
   "iterations": 5000,
-  "avg_time_ns": 7762.57,
-  "min_time_ns": 7762.57,
-  "max_time_ns": 7762.57,
+  "avg_time_ns": 7892.61,
+  "min_time_ns": 7892.61,
+  "max_time_ns": 7892.61,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 131578.95,
+  "iterations_per_sec": 128205.13,
   "result": "Z=98 | Cf (Californium) | 251.079587 u | actinide | [Rn] 5f¹⁰ 7s²"
 }

@@ -6,11 +6,11 @@ to: 1.000000e9 cal
 conversion: 4184000000 J → 1.000000e9 cal
 experiment_name: TNT equivalent_convert
 precision: f64
-elapsed_ms: 47
+elapsed_ms: 51
 iterations: 10000
-avg_time_ns: 4737.55
-min_time_ns: 4737.55
-max_time_ns: 4737.55
+avg_time_ns: 5189.91
+min_time_ns: 5189.91
+max_time_ns: 5189.91
 time_stddev: 0.0000
-iterations_per_sec: 212765.95
+iterations_per_sec: 196078.43
 result: TNT equivalent | 4184000000 J → 1.000000e9 cal

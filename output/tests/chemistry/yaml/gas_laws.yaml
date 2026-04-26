@@ -6,46 +6,46 @@ entries:
     name: Boyles law
     domain: chemistry
     test: "gas_laws::boyles_law"
-    avg_time_ns: 1708059.00
+    avg_time_ns: 3138031.00
   - label: gas_laws_boyles_law_pressure_halves_when_volume_doubles
     symbol: BLP
     name: Boyles law pressure halves when volume doubles
     domain: chemistry
     test: "gas_laws::boyles_law_pressure_halves_when_volume_doubles"
-    avg_time_ns: 1769869.00
+    avg_time_ns: 2872550.00
   - label: gas_laws_charles_law
     symbol: CL
     name: Charles law
     domain: chemistry
     test: "gas_laws::charles_law"
-    avg_time_ns: 1704450.00
+    avg_time_ns: 2523761.00
   - label: gas_laws_dalton_partial_pressure
     symbol: DPP
     name: Dalton partial pressure
     domain: chemistry
     test: "gas_laws::dalton_partial_pressure"
-    avg_time_ns: 1768959.00
+    avg_time_ns: 2745790.00
   - label: gas_laws_grahams_law_effusion
     symbol: GLE
     name: Grahams law effusion
     domain: chemistry
     test: "gas_laws::grahams_law_effusion"
-    avg_time_ns: 1790609.00
+    avg_time_ns: 2497130.00
   - label: gas_laws_ideal_gas_inverse_temperature_roundtrip
     symbol: IGI
     name: Ideal gas inverse temperature roundtrip
     domain: chemistry
     test: "gas_laws::ideal_gas_inverse_temperature_roundtrip"
-    avg_time_ns: 1730139.00
+    avg_time_ns: 2423911.00
   - label: gas_laws_ideal_gas_pressure_chem
     symbol: IGP
     name: Ideal gas pressure chem
     domain: chemistry
     test: "gas_laws::ideal_gas_pressure_chem"
-    avg_time_ns: 1725939.00
+    avg_time_ns: 2633350.00
   - label: gas_laws_van_der_waals_pressure
     symbol: VDW
     name: Van der waals pressure
     domain: chemistry
     test: "gas_laws::van_der_waals_pressure"
-    avg_time_ns: 1751040.00
+    avg_time_ns: 2234081.00

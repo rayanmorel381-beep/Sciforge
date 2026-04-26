@@ -6,16 +6,16 @@ entries:
     name: Habitable zone inner
     domain: astronomy
     test: "planetary::habitable_zone_inner"
-    avg_time_ns: 1880889.00
+    avg_time_ns: 1823610.00
   - label: planetary_habitable_zone_outer
     symbol: HZO
     name: Habitable zone outer
     domain: astronomy
     test: "planetary::habitable_zone_outer"
-    avg_time_ns: 1899979.00
+    avg_time_ns: 2405651.00
   - label: planetary_surface_gravity
     symbol: SG
     name: Surface gravity
     domain: astronomy
     test: "planetary::surface_gravity"
-    avg_time_ns: 2285609.00
+    avg_time_ns: 1969520.00

@@ -8,9 +8,9 @@ experiment_name = "Mt_Meitnerium_benchmark"
 precision = "f32"
 elapsed_ms = 8
 iterations = 1000
-avg_time_ns = 8830.90
-min_time_ns = 8830.90
-max_time_ns = 8830.90
+avg_time_ns = 8466.37
+min_time_ns = 8466.37
+max_time_ns = 8466.37
 time_stddev = 0.0000
 iterations_per_sec = 125000.00
 result = "Z=109 | Mt (Meitnerium) | 278.156 u | unknown | [Rn] 5f¹⁴ 6d⁷ 7s²"

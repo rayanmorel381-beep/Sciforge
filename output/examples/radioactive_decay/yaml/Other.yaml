@@ -13,7 +13,7 @@ entries:
     specific_activity: 2.650e5 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.457 MeV/nucleon
-    avg_time_ns: 2266.50
+    avg_time_ns: 2253.55
   - label: ¹⁴C
     symbol: ¹⁴C
     name: Carbon
@@ -26,7 +26,7 @@ entries:
     specific_activity: 1.649e11 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.517 MeV/nucleon
-    avg_time_ns: 2285.18
+    avg_time_ns: 2288.72
   - label: ²²⁶Ra
     symbol: ²²⁶Ra
     name: Radium
@@ -39,7 +39,7 @@ entries:
     specific_activity: 3.658e10 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.568 MeV/nucleon
-    avg_time_ns: 2268.76
+    avg_time_ns: 2248.75
   - label: ⁹⁰Sr
     symbol: ⁹⁰Sr
     name: Strontium
@@ -52,7 +52,7 @@ entries:
     specific_activity: 5.105e12 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.525 MeV/nucleon
-    avg_time_ns: 2214.38
+    avg_time_ns: 2289.75
   - label: ¹³⁷Cs
     symbol: ¹³⁷Cs
     name: Cesium
@@ -65,7 +65,7 @@ entries:
     specific_activity: 3.200e12 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.552 MeV/nucleon
-    avg_time_ns: 2254.30
+    avg_time_ns: 2306.20
   - label: ¹³¹I
     symbol: ¹³¹I
     name: Iodine
@@ -78,4 +78,4 @@ entries:
     specific_activity: 4.596e15 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.548 MeV/nucleon
-    avg_time_ns: 2220.21
+    avg_time_ns: 2275.49

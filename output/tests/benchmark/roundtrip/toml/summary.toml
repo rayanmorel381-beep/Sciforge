@@ -3,6 +3,6 @@ count = 1
 
 [[entries]]
 label = "rt"
-avg_time_ns = 28.40
+avg_time_ns = 20.40
 iterations_per_sec = 0.00
 

@@ -14,7 +14,7 @@ entries:
     potential_temp: 257.3 K
     mixing_ratio: 0.57 g/kg
     lcl: 602 m AGL
-    avg_time_ns: 5812.67
+    avg_time_ns: 6746.35
   - label: Reykjavik
     symbol: R
     name: Reykjavik
@@ -28,4 +28,4 @@ entries:
     potential_temp: 278.4 K
     mixing_ratio: 4.33 g/kg
     lcl: 287 m AGL
-    avg_time_ns: 5642.68
+    avg_time_ns: 5605.35

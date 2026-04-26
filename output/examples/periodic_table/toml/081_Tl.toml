@@ -6,11 +6,11 @@ config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹"
 mass = "204.38"
 experiment_name = "Tl_Thallium_benchmark"
 precision = "f32"
-elapsed_ms = 63
+elapsed_ms = 66
 iterations = 10000
-avg_time_ns = 6350.10
-min_time_ns = 6350.10
-max_time_ns = 6350.10
+avg_time_ns = 6636.80
+min_time_ns = 6636.80
+max_time_ns = 6636.80
 time_stddev = 0.0000
-iterations_per_sec = 158730.16
+iterations_per_sec = 151515.15
 result = "Z=81 | Tl (Thallium) | 204.38 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹"

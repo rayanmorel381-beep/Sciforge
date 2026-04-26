@@ -6,16 +6,16 @@ entries:
     name: Crater diameter
     domain: astronomy
     test: "impacts::crater_diameter"
-    avg_time_ns: 2436449.00
+    avg_time_ns: 2181410.00
   - label: impacts_fireball_radius
     symbol: FR
     name: Fireball radius
     domain: astronomy
     test: "impacts::fireball_radius"
-    avg_time_ns: 2142609.00
+    avg_time_ns: 2344410.00
   - label: impacts_impact_velocity
     symbol: IV
     name: Impact velocity
     domain: astronomy
     test: "impacts::impact_velocity"
-    avg_time_ns: 2264409.00
+    avg_time_ns: 2185011.00

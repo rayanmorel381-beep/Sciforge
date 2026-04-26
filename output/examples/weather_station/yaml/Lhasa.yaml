@@ -13,11 +13,11 @@ mixing_ratio: 3.73 g/kg
 lcl: 1494 m AGL
 experiment_name: Lhasa_weather
 precision: f64
-elapsed_ms: 27
+elapsed_ms: 29
 iterations: 5000
-avg_time_ns: 5548.93
-min_time_ns: 5548.93
-max_time_ns: 5548.93
+avg_time_ns: 5979.66
+min_time_ns: 5979.66
+max_time_ns: 5979.66
 time_stddev: 0.0000
-iterations_per_sec: 185185.19
+iterations_per_sec: 172413.79
 result: Lhasa | 3650m | 8.5 °C | RH=35% | Td=-6.1 °C | DA=3746 m | θ=319.5 K

@@ -6,4 +6,4 @@ entries:
     name: Ode euler
     domain: maths
     test: "ode::ode_euler"
-    avg_time_ns: 1969669.00
+    avg_time_ns: 2024311.00

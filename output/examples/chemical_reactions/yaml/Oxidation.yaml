@@ -7,11 +7,11 @@ entries:
     reactant_mass: 319.3740 g/mol
     product_mass: 319.3740 g/mol
     atom_economy: 100.0%
-    avg_time_ns: 33188.98
+    avg_time_ns: 31202.24
   - label: Thermite reaction
     name: Thermite reaction
     formula: 2Al + Fe₂O₃ → Al₂O₃ + 2Fe
     reactant_mass: 213.6501 g/mol
     product_mass: 213.6501 g/mol
     atom_economy: 100.0%
-    avg_time_ns: 44191.38
+    avg_time_ns: 44899.57

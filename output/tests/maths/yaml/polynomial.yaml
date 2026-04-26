@@ -6,16 +6,16 @@ entries:
     name: Chebyshev t
     domain: maths
     test: "polynomial::chebyshev_t"
-    avg_time_ns: 1755359.00
+    avg_time_ns: 1804861.00
   - label: polynomial_legendre
     symbol: Le
     name: Legendre
     domain: maths
     test: "polynomial::legendre"
-    avg_time_ns: 1748909.00
+    avg_time_ns: 2455470.00
   - label: polynomial_polynomial_roots_real
     symbol: PRR
     name: Polynomial roots real
     domain: maths
     test: "polynomial::polynomial_roots_real"
-    avg_time_ns: 1926249.00
+    avg_time_ns: 2537660.00

@@ -1,60 +1,60 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-celestial::gravitational_force,f64,5,1,5499748,5499748,5499748,0,200,pass,celestial,GF,Gravitational force,astronomy,celestial::gravitational_force
-celestial::hill_sphere,f64,2,1,2836138,2836138,2836138,0,500,pass,celestial,HS,Hill sphere,astronomy,celestial::hill_sphere
-celestial::julian_date_to_j2000_century,f64,2,1,2219679,2219679,2219679,0,500,pass,celestial,JDT,Julian date to j2000 century,astronomy,celestial::julian_date_to_j2000_century
-celestial::synodic_period,f64,2,1,2186719,2186719,2186719,0,500,pass,celestial,SP,Synodic period,astronomy,celestial::synodic_period
-cosmology::age_decreases_with_redshift,f64,2,1,2154409,2154409,2154409,0,500,pass,cosmology,ADW,Age decreases with redshift,astronomy,cosmology::age_decreases_with_redshift
-cosmology::age_of_universe,f64,2,1,2286299,2286299,2286299,0,500,pass,cosmology,AOU,Age of universe,astronomy,cosmology::age_of_universe
-cosmology::astronomy_missing_required_parameter_returns_error,f64,2,1,2139599,2139599,2139599,0,500,pass,cosmology,AMR,Astronomy missing required parameter returns error,astronomy,cosmology::astronomy_missing_required_parameter_returns_error
-cosmology::astronomy_unknown_function_returns_error,f64,1,1,1981020,1981020,1981020,0,1000,pass,cosmology,AUF,Astronomy unknown function returns error,astronomy,cosmology::astronomy_unknown_function_returns_error
-cosmology::cmb_temperature_at_z,f64,1,1,1790849,1790849,1790849,0,1000,pass,cosmology,CTA,Cmb temperature at z,astronomy,cosmology::cmb_temperature_at_z
-cosmology::cmb_temperature_scales_with_z,f64,1,1,1742679,1742679,1742679,0,1000,pass,cosmology,CTS,Cmb temperature scales with z,astronomy,cosmology::cmb_temperature_scales_with_z
-cosmology::comoving_distance_increases_with_redshift,f64,1,1,1832989,1832989,1832989,0,1000,pass,cosmology,CDI,Comoving distance increases with redshift,astronomy,cosmology::comoving_distance_increases_with_redshift
-cosmology::comoving_distance_zero_at_zero_redshift,f64,1,1,1811669,1811669,1811669,0,1000,pass,cosmology,CDZ,Comoving distance zero at zero redshift,astronomy,cosmology::comoving_distance_zero_at_zero_redshift
-cosmology::critical_density,f64,1,1,1853390,1853390,1853390,0,1000,pass,cosmology,CD,Critical density,astronomy,cosmology::critical_density
-cosmology::distance_duality_table_driven,f64,2,1,2259109,2259109,2259109,0,500,pass,cosmology,DDT,Distance duality table driven,astronomy,cosmology::distance_duality_table_driven
-cosmology::e_z_lcdm_sweep_monotonic_for_positive_z,f64,1,1,1906639,1906639,1906639,0,1000,pass,cosmology,EZL,E z lcdm sweep monotonic for positive z,astronomy,cosmology::e_z_lcdm_sweep_monotonic_for_positive_z
-cosmology::e_z_lcdm_today,f64,1,1,1790449,1790449,1790449,0,1000,pass,cosmology,EZL,E z lcdm today,astronomy,cosmology::e_z_lcdm_today
-cosmology::hubble_at_z_matches_h0_times_ez_lcdm,f64,1,1,1780059,1780059,1780059,0,1000,pass,cosmology,HAZ,Hubble at z matches h0 times ez lcdm,astronomy,cosmology::hubble_at_z_matches_h0_times_ez_lcdm
-cosmology::hubble_ez_identity_table_driven,f64,1,1,1791079,1791079,1791079,0,1000,pass,cosmology,HEI,Hubble ez identity table driven,astronomy,cosmology::hubble_ez_identity_table_driven
-cosmology::hubble_velocity,f64,1,1,1783230,1783230,1783230,0,1000,pass,cosmology,HV,Hubble velocity,astronomy,cosmology::hubble_velocity
-cosmology::lookback_time_increases_with_redshift,f64,1,1,1932119,1932119,1932119,0,1000,pass,cosmology,LTI,Lookback time increases with redshift,astronomy,cosmology::lookback_time_increases_with_redshift
-cosmology::luminosity_angular_distance_duality_from_z,f64,2,1,2219909,2219909,2219909,0,500,pass,cosmology,LAD,Luminosity angular distance duality from z,astronomy,cosmology::luminosity_angular_distance_duality_from_z
-cosmology::relativistic_redshift_velocity_roundtrip,f64,2,1,2215559,2215559,2215559,0,500,pass,cosmology,RRV,Relativistic redshift velocity roundtrip,astronomy,cosmology::relativistic_redshift_velocity_roundtrip
-cosmology::scale_factor,f64,2,1,2184019,2184019,2184019,0,500,pass,cosmology,SF,Scale factor,astronomy,cosmology::scale_factor
-cosmology::scale_factor_high_z,f64,2,1,2186509,2186509,2186509,0,500,pass,cosmology,SFH,Scale factor high z,astronomy,cosmology::scale_factor_high_z
-galactic::galactic_escape_velocity,f64,2,1,2224499,2224499,2224499,0,500,pass,galactic,GEV,Galactic escape velocity,astronomy,galactic::galactic_escape_velocity
-galactic::galactic_rotation_velocity,f64,2,1,2625109,2625109,2625109,0,500,pass,galactic,GRV,Galactic rotation velocity,astronomy,galactic::galactic_rotation_velocity
-galactic::tidal_radius,f64,2,1,2416869,2416869,2416869,0,500,pass,galactic,TR,Tidal radius,astronomy,galactic::tidal_radius
-impacts::crater_diameter,f64,2,1,2436449,2436449,2436449,0,500,pass,impacts,CD,Crater diameter,astronomy,impacts::crater_diameter
-impacts::fireball_radius,f64,2,1,2142609,2142609,2142609,0,500,pass,impacts,FR,Fireball radius,astronomy,impacts::fireball_radius
-impacts::impact_velocity,f64,2,1,2264409,2264409,2264409,0,500,pass,impacts,IV,Impact velocity,astronomy,impacts::impact_velocity
-orbits::circular_velocity,f64,1,1,1827569,1827569,1827569,0,1000,pass,orbits,CV,Circular velocity,astronomy,orbits::circular_velocity
-orbits::escape_velocity,f64,2,1,2249449,2249449,2249449,0,500,pass,orbits,EV,Escape velocity,astronomy,orbits::escape_velocity
-orbits::escape_vs_circular_velocity_ratio,f64,1,1,1980699,1980699,1980699,0,1000,pass,orbits,EVC,Escape vs circular velocity ratio,astronomy,orbits::escape_vs_circular_velocity_ratio
-orbits::hohmann_delta_v_positive_and_zero_identity,f64,2,1,2555539,2555539,2555539,0,500,pass,orbits,HDV,Hohmann delta v positive and zero identity,astronomy,orbits::hohmann_delta_v_positive_and_zero_identity
-orbits::kepler_period_earth,f64,2,1,2288119,2288119,2288119,0,500,pass,orbits,KPE,Kepler period earth,astronomy,orbits::kepler_period_earth
-orbits::periapsis_apoapsis_consistency,f64,2,1,2193379,2193379,2193379,0,500,pass,orbits,PAC,Periapsis apoapsis consistency,astronomy,orbits::periapsis_apoapsis_consistency
-orbits::roche_limit,f64,2,1,2279879,2279879,2279879,0,500,pass,orbits,RL,Roche limit,astronomy,orbits::roche_limit
-orbits::sphere_of_influence_earth,f64,2,1,2176399,2176399,2176399,0,500,pass,orbits,SOI,Sphere of influence earth,astronomy,orbits::sphere_of_influence_earth
-orbits::true_anomaly_radius_matches_extrema,f64,2,1,2493759,2493759,2493759,0,500,pass,orbits,TAR,True anomaly radius matches extrema,astronomy,orbits::true_anomaly_radius_matches_extrema
-orbits::vis_viva_circular,f64,2,1,2235179,2235179,2235179,0,500,pass,orbits,VVC,Vis viva circular,astronomy,orbits::vis_viva_circular
-planetary::habitable_zone_inner,f64,1,1,1880889,1880889,1880889,0,1000,pass,planetary,HZI,Habitable zone inner,astronomy,planetary::habitable_zone_inner
-planetary::habitable_zone_outer,f64,1,1,1899979,1899979,1899979,0,1000,pass,planetary,HZO,Habitable zone outer,astronomy,planetary::habitable_zone_outer
-planetary::surface_gravity,f64,2,1,2285609,2285609,2285609,0,500,pass,planetary,SG,Surface gravity,astronomy,planetary::surface_gravity
-rotation::rotational_kinetic_energy,f64,2,1,2208579,2208579,2208579,0,500,pass,rotation,RKE,Rotational kinetic energy,astronomy,rotation::rotational_kinetic_energy
-rotation::surface_velocity_at_latitude,f64,2,1,2213009,2213009,2213009,0,500,pass,rotation,SVA,Surface velocity at latitude,astronomy,rotation::surface_velocity_at_latitude
-stellar::absolute_magnitude_and_distance_modulus_roundtrip,f64,2,1,2343329,2343329,2343329,0,500,pass,stellar,AMA,Absolute magnitude and distance modulus roundtrip,astronomy,stellar::absolute_magnitude_and_distance_modulus_roundtrip
-stellar::chandrasekhar_limit,f64,2,1,2510739,2510739,2510739,0,500,pass,stellar,CL,Chandrasekhar limit,astronomy,stellar::chandrasekhar_limit
-stellar::distance_modulus,f64,2,1,2460459,2460459,2460459,0,500,pass,stellar,DM,Distance modulus,astronomy,stellar::distance_modulus
-stellar::eddington_luminosity_scales_linearly_with_mass,f64,2,1,2349879,2349879,2349879,0,500,pass,stellar,ELS,Eddington luminosity scales linearly with mass,astronomy,stellar::eddington_luminosity_scales_linearly_with_mass
-stellar::luminosity_from_radius_temp,f64,2,1,2222319,2222319,2222319,0,500,pass,stellar,LFR,Luminosity from radius temp,astronomy,stellar::luminosity_from_radius_temp
-stellar::main_sequence_lifetime,f64,2,1,2103799,2103799,2103799,0,500,pass,stellar,MSL,Main sequence lifetime,astronomy,stellar::main_sequence_lifetime
-stellar::mass_luminosity_monotonic_in_solar_range,f64,1,1,1933069,1933069,1933069,0,1000,pass,stellar,MLM,Mass luminosity monotonic in solar range,astronomy,stellar::mass_luminosity_monotonic_in_solar_range
-stellar::schwarzschild_radius,f64,1,1,1887099,1887099,1887099,0,1000,pass,stellar,SR,Schwarzschild radius,astronomy,stellar::schwarzschild_radius
-stellar::stefan_boltzmann_blackbody,f64,1,1,1837400,1837400,1837400,0,1000,pass,stellar,SBB,Stefan boltzmann blackbody,astronomy,stellar::stefan_boltzmann_blackbody
-stellar::stellar_flux_inverse_square_distance,f64,2,1,2429828,2429828,2429828,0,500,pass,stellar,SFI,Stellar flux inverse square distance,astronomy,stellar::stellar_flux_inverse_square_distance
-stellar::wien_peak_wavelength,f64,2,1,2136050,2136050,2136050,0,500,pass,stellar,WPW,Wien peak wavelength,astronomy,stellar::wien_peak_wavelength
-tides::spring_tide_amplitude,f64,2,1,2296899,2296899,2296899,0,500,pass,tides,STA,Spring tide amplitude,astronomy,tides::spring_tide_amplitude
-tides::tidal_locking_timescale,f64,2,1,2618138,2618138,2618138,0,500,pass,tides,TLT,Tidal locking timescale,astronomy,tides::tidal_locking_timescale
-tides::tidal_potential,f64,2,1,2471599,2471599,2471599,0,500,pass,tides,TP,Tidal potential,astronomy,tides::tidal_potential
+celestial::gravitational_force,f64,2,1,2418580,2418580,2418580,0,500,pass,celestial,GF,Gravitational force,astronomy,celestial::gravitational_force
+celestial::hill_sphere,f64,2,1,2585930,2585930,2585930,0,500,pass,celestial,HS,Hill sphere,astronomy,celestial::hill_sphere
+celestial::julian_date_to_j2000_century,f64,2,1,2344891,2344891,2344891,0,500,pass,celestial,JDT,Julian date to j2000 century,astronomy,celestial::julian_date_to_j2000_century
+celestial::synodic_period,f64,1,1,1923450,1923450,1923450,0,1000,pass,celestial,SP,Synodic period,astronomy,celestial::synodic_period
+cosmology::age_decreases_with_redshift,f64,1,1,1902250,1902250,1902250,0,1000,pass,cosmology,ADW,Age decreases with redshift,astronomy,cosmology::age_decreases_with_redshift
+cosmology::age_of_universe,f64,1,1,1758651,1758651,1758651,0,1000,pass,cosmology,AOU,Age of universe,astronomy,cosmology::age_of_universe
+cosmology::astronomy_missing_required_parameter_returns_error,f64,1,1,1860870,1860870,1860870,0,1000,pass,cosmology,AMR,Astronomy missing required parameter returns error,astronomy,cosmology::astronomy_missing_required_parameter_returns_error
+cosmology::astronomy_unknown_function_returns_error,f64,1,1,1854240,1854240,1854240,0,1000,pass,cosmology,AUF,Astronomy unknown function returns error,astronomy,cosmology::astronomy_unknown_function_returns_error
+cosmology::cmb_temperature_at_z,f64,1,1,1897491,1897491,1897491,0,1000,pass,cosmology,CTA,Cmb temperature at z,astronomy,cosmology::cmb_temperature_at_z
+cosmology::cmb_temperature_scales_with_z,f64,1,1,1810390,1810390,1810390,0,1000,pass,cosmology,CTS,Cmb temperature scales with z,astronomy,cosmology::cmb_temperature_scales_with_z
+cosmology::comoving_distance_increases_with_redshift,f64,1,1,1996610,1996610,1996610,0,1000,pass,cosmology,CDI,Comoving distance increases with redshift,astronomy,cosmology::comoving_distance_increases_with_redshift
+cosmology::comoving_distance_zero_at_zero_redshift,f64,1,1,1815201,1815201,1815201,0,1000,pass,cosmology,CDZ,Comoving distance zero at zero redshift,astronomy,cosmology::comoving_distance_zero_at_zero_redshift
+cosmology::critical_density,f64,1,1,1790740,1790740,1790740,0,1000,pass,cosmology,CD,Critical density,astronomy,cosmology::critical_density
+cosmology::distance_duality_table_driven,f64,2,1,2098650,2098650,2098650,0,500,pass,cosmology,DDT,Distance duality table driven,astronomy,cosmology::distance_duality_table_driven
+cosmology::e_z_lcdm_sweep_monotonic_for_positive_z,f64,1,1,1766911,1766911,1766911,0,1000,pass,cosmology,EZL,E z lcdm sweep monotonic for positive z,astronomy,cosmology::e_z_lcdm_sweep_monotonic_for_positive_z
+cosmology::e_z_lcdm_today,f64,1,1,1723810,1723810,1723810,0,1000,pass,cosmology,EZL,E z lcdm today,astronomy,cosmology::e_z_lcdm_today
+cosmology::hubble_at_z_matches_h0_times_ez_lcdm,f64,1,1,1824760,1824760,1824760,0,1000,pass,cosmology,HAZ,Hubble at z matches h0 times ez lcdm,astronomy,cosmology::hubble_at_z_matches_h0_times_ez_lcdm
+cosmology::hubble_ez_identity_table_driven,f64,2,1,2020440,2020440,2020440,0,500,pass,cosmology,HEI,Hubble ez identity table driven,astronomy,cosmology::hubble_ez_identity_table_driven
+cosmology::hubble_velocity,f64,1,1,1970611,1970611,1970611,0,1000,pass,cosmology,HV,Hubble velocity,astronomy,cosmology::hubble_velocity
+cosmology::lookback_time_increases_with_redshift,f64,1,1,1852290,1852290,1852290,0,1000,pass,cosmology,LTI,Lookback time increases with redshift,astronomy,cosmology::lookback_time_increases_with_redshift
+cosmology::luminosity_angular_distance_duality_from_z,f64,1,1,1835050,1835050,1835050,0,1000,pass,cosmology,LAD,Luminosity angular distance duality from z,astronomy,cosmology::luminosity_angular_distance_duality_from_z
+cosmology::relativistic_redshift_velocity_roundtrip,f64,1,1,1756931,1756931,1756931,0,1000,pass,cosmology,RRV,Relativistic redshift velocity roundtrip,astronomy,cosmology::relativistic_redshift_velocity_roundtrip
+cosmology::scale_factor,f64,1,1,1996360,1996360,1996360,0,1000,pass,cosmology,SF,Scale factor,astronomy,cosmology::scale_factor
+cosmology::scale_factor_high_z,f64,3,1,3054211,3054211,3054211,0,333.3333333333333,pass,cosmology,SFH,Scale factor high z,astronomy,cosmology::scale_factor_high_z
+galactic::galactic_escape_velocity,f64,2,1,2340760,2340760,2340760,0,500,pass,galactic,GEV,Galactic escape velocity,astronomy,galactic::galactic_escape_velocity
+galactic::galactic_rotation_velocity,f64,2,1,2293720,2293720,2293720,0,500,pass,galactic,GRV,Galactic rotation velocity,astronomy,galactic::galactic_rotation_velocity
+galactic::tidal_radius,f64,2,1,2301521,2301521,2301521,0,500,pass,galactic,TR,Tidal radius,astronomy,galactic::tidal_radius
+impacts::crater_diameter,f64,2,1,2181410,2181410,2181410,0,500,pass,impacts,CD,Crater diameter,astronomy,impacts::crater_diameter
+impacts::fireball_radius,f64,2,1,2344410,2344410,2344410,0,500,pass,impacts,FR,Fireball radius,astronomy,impacts::fireball_radius
+impacts::impact_velocity,f64,2,1,2185011,2185011,2185011,0,500,pass,impacts,IV,Impact velocity,astronomy,impacts::impact_velocity
+orbits::circular_velocity,f64,1,1,1964850,1964850,1964850,0,1000,pass,orbits,CV,Circular velocity,astronomy,orbits::circular_velocity
+orbits::escape_velocity,f64,1,1,1773520,1773520,1773520,0,1000,pass,orbits,EV,Escape velocity,astronomy,orbits::escape_velocity
+orbits::escape_vs_circular_velocity_ratio,f64,1,1,1773721,1773721,1773721,0,1000,pass,orbits,EVC,Escape vs circular velocity ratio,astronomy,orbits::escape_vs_circular_velocity_ratio
+orbits::hohmann_delta_v_positive_and_zero_identity,f64,1,1,1977900,1977900,1977900,0,1000,pass,orbits,HDV,Hohmann delta v positive and zero identity,astronomy,orbits::hohmann_delta_v_positive_and_zero_identity
+orbits::kepler_period_earth,f64,1,1,1785530,1785530,1785530,0,1000,pass,orbits,KPE,Kepler period earth,astronomy,orbits::kepler_period_earth
+orbits::periapsis_apoapsis_consistency,f64,1,1,1774631,1774631,1774631,0,1000,pass,orbits,PAC,Periapsis apoapsis consistency,astronomy,orbits::periapsis_apoapsis_consistency
+orbits::roche_limit,f64,1,1,1893530,1893530,1893530,0,1000,pass,orbits,RL,Roche limit,astronomy,orbits::roche_limit
+orbits::sphere_of_influence_earth,f64,1,1,1948590,1948590,1948590,0,1000,pass,orbits,SOI,Sphere of influence earth,astronomy,orbits::sphere_of_influence_earth
+orbits::true_anomaly_radius_matches_extrema,f64,1,1,1913171,1913171,1913171,0,1000,pass,orbits,TAR,True anomaly radius matches extrema,astronomy,orbits::true_anomaly_radius_matches_extrema
+orbits::vis_viva_circular,f64,1,1,1839940,1839940,1839940,0,1000,pass,orbits,VVC,Vis viva circular,astronomy,orbits::vis_viva_circular
+planetary::habitable_zone_inner,f64,1,1,1823610,1823610,1823610,0,1000,pass,planetary,HZI,Habitable zone inner,astronomy,planetary::habitable_zone_inner
+planetary::habitable_zone_outer,f64,2,1,2405651,2405651,2405651,0,500,pass,planetary,HZO,Habitable zone outer,astronomy,planetary::habitable_zone_outer
+planetary::surface_gravity,f64,1,1,1969520,1969520,1969520,0,1000,pass,planetary,SG,Surface gravity,astronomy,planetary::surface_gravity
+rotation::rotational_kinetic_energy,f64,2,1,2141540,2141540,2141540,0,500,pass,rotation,RKE,Rotational kinetic energy,astronomy,rotation::rotational_kinetic_energy
+rotation::surface_velocity_at_latitude,f64,1,1,1926761,1926761,1926761,0,1000,pass,rotation,SVA,Surface velocity at latitude,astronomy,rotation::surface_velocity_at_latitude
+stellar::absolute_magnitude_and_distance_modulus_roundtrip,f64,2,1,2031540,2031540,2031540,0,500,pass,stellar,AMA,Absolute magnitude and distance modulus roundtrip,astronomy,stellar::absolute_magnitude_and_distance_modulus_roundtrip
+stellar::chandrasekhar_limit,f64,1,1,1978980,1978980,1978980,0,1000,pass,stellar,CL,Chandrasekhar limit,astronomy,stellar::chandrasekhar_limit
+stellar::distance_modulus,f64,1,1,1940471,1940471,1940471,0,1000,pass,stellar,DM,Distance modulus,astronomy,stellar::distance_modulus
+stellar::eddington_luminosity_scales_linearly_with_mass,f64,2,1,2020000,2020000,2020000,0,500,pass,stellar,ELS,Eddington luminosity scales linearly with mass,astronomy,stellar::eddington_luminosity_scales_linearly_with_mass
+stellar::luminosity_from_radius_temp,f64,2,1,2040770,2040770,2040770,0,500,pass,stellar,LFR,Luminosity from radius temp,astronomy,stellar::luminosity_from_radius_temp
+stellar::main_sequence_lifetime,f64,1,1,1872621,1872621,1872621,0,1000,pass,stellar,MSL,Main sequence lifetime,astronomy,stellar::main_sequence_lifetime
+stellar::mass_luminosity_monotonic_in_solar_range,f64,2,1,2109080,2109080,2109080,0,500,pass,stellar,MLM,Mass luminosity monotonic in solar range,astronomy,stellar::mass_luminosity_monotonic_in_solar_range
+stellar::schwarzschild_radius,f64,1,1,1874520,1874520,1874520,0,1000,pass,stellar,SR,Schwarzschild radius,astronomy,stellar::schwarzschild_radius
+stellar::stefan_boltzmann_blackbody,f64,1,1,1898931,1898931,1898931,0,1000,pass,stellar,SBB,Stefan boltzmann blackbody,astronomy,stellar::stefan_boltzmann_blackbody
+stellar::stellar_flux_inverse_square_distance,f64,1,1,1939220,1939220,1939220,0,1000,pass,stellar,SFI,Stellar flux inverse square distance,astronomy,stellar::stellar_flux_inverse_square_distance
+stellar::wien_peak_wavelength,f64,1,1,1884390,1884390,1884390,0,1000,pass,stellar,WPW,Wien peak wavelength,astronomy,stellar::wien_peak_wavelength
+tides::spring_tide_amplitude,f64,1,1,1989851,1989851,1989851,0,1000,pass,tides,STA,Spring tide amplitude,astronomy,tides::spring_tide_amplitude
+tides::tidal_locking_timescale,f64,1,1,1971680,1971680,1971680,0,1000,pass,tides,TLT,Tidal locking timescale,astronomy,tides::tidal_locking_timescale
+tides::tidal_potential,f64,2,1,2007850,2007850,2007850,0,500,pass,tides,TP,Tidal potential,astronomy,tides::tidal_potential

@@ -2,6 +2,25 @@
 
 ---
 
+## v0.0.4
+
+### New — Particle Physics Constants — `constants::physics` — 6 pub const
+
+| Constant | Declaration | Value / Description | Module |
+|---|---|---|---|
+| Fermi coupling constant | `pub const G_F: f64` | $G_F / (\hbar c)^3 \approx 1.1664 \times 10^{-5}\,\text{GeV}^{-2}$ (SI: J·m³) | `constants::physics::fundamental` |
+| Strong coupling constant | `pub const ALPHA_S: f64` | $\alpha_s(M_Z) \approx 0.1179$ | `constants::physics::fundamental` |
+| Muon mass | `pub const MUON_MASS: f64` | $m_\mu \approx 1.8836 \times 10^{-28}\,\text{kg}$ | `constants::physics::atomic` |
+| Tau mass | `pub const TAU_MASS: f64` | $m_\tau \approx 3.1675 \times 10^{-27}\,\text{kg}$ | `constants::physics::atomic` |
+| Neutrino mass upper bound | `pub const NEUTRINO_MASS_UPPER: f64` | $m_{\nu,\text{max}} \approx 1.1 \times 10^{-36}\,\text{kg}$ | `constants::physics::atomic` |
+| Rydberg constant | `pub const R_INF: f64` | $R_\infty \approx 1.097_373 \times 10^7\,\text{m}^{-1}$ | `constants::physics::atomic` |
+
+### New — Planetary Constants — `constants::astronomy` — Mercury through Neptune
+
+Full per-planet constant sets added for all 7 planets (Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune), each providing mass, radius, mean density, surface gravity, orbital velocity, and geometric albedo.
+
+---
+
 ## v0.0.3
 
 ### Restructuring

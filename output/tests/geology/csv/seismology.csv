@@ -1,9 +1,9 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-seismology::gutenberg_richter,f64,1,1,1704649,1704649,1704649,0,1000,pass,seismology,GR,Gutenberg richter,geology,seismology::gutenberg_richter
-seismology::gutenberg_richter_decreases_with_magnitude,f64,1,1,1694049,1694049,1694049,0,1000,pass,seismology,GRD,Gutenberg richter decreases with magnitude,geology,seismology::gutenberg_richter_decreases_with_magnitude
-seismology::p_wave_faster_than_s_wave,f64,1,1,1672330,1672330,1672330,0,1000,pass,seismology,PWF,P wave faster than s wave,geology,seismology::p_wave_faster_than_s_wave
-seismology::p_wave_velocity,f64,2,1,2398169,2398169,2398169,0,500,pass,seismology,PWV,P wave velocity,geology,seismology::p_wave_velocity
-seismology::richter_amplitude_ratio_adds_one_magnitude,f64,1,1,1918229,1918229,1918229,0,1000,pass,seismology,RAR,Richter amplitude ratio adds one magnitude,geology,seismology::richter_amplitude_ratio_adds_one_magnitude
-seismology::richter_magnitude,f64,1,1,1805979,1805979,1805979,0,1000,pass,seismology,RM,Richter magnitude,geology,seismology::richter_magnitude
-seismology::s_wave_velocity,f64,1,1,1771049,1771049,1771049,0,1000,pass,seismology,SWV,S wave velocity,geology,seismology::s_wave_velocity
-seismology::seismic_energy,f64,1,1,1721629,1721629,1721629,0,1000,pass,seismology,SE,Seismic energy,geology,seismology::seismic_energy
+seismology::gutenberg_richter,f64,1,1,1956001,1956001,1956001,0,1000,pass,seismology,GR,Gutenberg richter,geology,seismology::gutenberg_richter
+seismology::gutenberg_richter_decreases_with_magnitude,f64,2,1,2529250,2529250,2529250,0,500,pass,seismology,GRD,Gutenberg richter decreases with magnitude,geology,seismology::gutenberg_richter_decreases_with_magnitude
+seismology::p_wave_faster_than_s_wave,f64,1,1,1862510,1862510,1862510,0,1000,pass,seismology,PWF,P wave faster than s wave,geology,seismology::p_wave_faster_than_s_wave
+seismology::p_wave_velocity,f64,1,1,1804261,1804261,1804261,0,1000,pass,seismology,PWV,P wave velocity,geology,seismology::p_wave_velocity
+seismology::richter_amplitude_ratio_adds_one_magnitude,f64,1,1,1762060,1762060,1762060,0,1000,pass,seismology,RAR,Richter amplitude ratio adds one magnitude,geology,seismology::richter_amplitude_ratio_adds_one_magnitude
+seismology::richter_magnitude,f64,1,1,1722690,1722690,1722690,0,1000,pass,seismology,RM,Richter magnitude,geology,seismology::richter_magnitude
+seismology::s_wave_velocity,f64,1,1,1848020,1848020,1848020,0,1000,pass,seismology,SWV,S wave velocity,geology,seismology::s_wave_velocity
+seismology::seismic_energy,f64,2,1,2339891,2339891,2339891,0,500,pass,seismology,SE,Seismic energy,geology,seismology::seismic_energy

@@ -8,9 +8,9 @@
   "precision": "f64",
   "elapsed_ms": 7,
   "iterations": 1000,
-  "avg_time_ns": 7277.76,
-  "min_time_ns": 7277.76,
-  "max_time_ns": 7277.76,
+  "avg_time_ns": 7347.30,
+  "min_time_ns": 7347.30,
+  "max_time_ns": 7347.30,
   "time_stddev": 0.0000,
   "iterations_per_sec": 142857.14,
   "result": "Z=94 | Pu (Plutonium) | 244.064204 u | actinide | [Rn] 5f⁶ 7s²"

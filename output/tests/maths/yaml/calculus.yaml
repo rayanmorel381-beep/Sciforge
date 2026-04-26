@@ -6,28 +6,28 @@ entries:
     name: Falling factorial
     domain: maths
     test: "calculus::falling_factorial"
-    avg_time_ns: 2097549.00
+    avg_time_ns: 1990031.00
   - label: calculus_first_derivative_x_squared
     symbol: FDX
     name: First derivative x squared
     domain: maths
     test: "calculus::first_derivative_x_squared"
-    avg_time_ns: 1928369.00
+    avg_time_ns: 1957200.00
   - label: calculus_rising_factorial
     symbol: RF
     name: Rising factorial
     domain: maths
     test: "calculus::rising_factorial"
-    avg_time_ns: 1884860.00
+    avg_time_ns: 1983070.00
   - label: calculus_second_derivative_x_squared
     symbol: SDX
     name: Second derivative x squared
     domain: maths
     test: "calculus::second_derivative_x_squared"
-    avg_time_ns: 1798479.00
+    avg_time_ns: 1908211.00
   - label: calculus_stat_binomial_pmf
     symbol: SBP
     name: Stat binomial pmf
     domain: maths
     test: "calculus::stat_binomial_pmf"
-    avg_time_ns: 1840889.00
+    avg_time_ns: 1882920.00

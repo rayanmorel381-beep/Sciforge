@@ -5,11 +5,11 @@ config: [Rn] 5f¹⁴ 6d⁹ 7s²
 mass: 282.169
 experiment_name: Rg_Roentgenium_benchmark
 precision: f32
-elapsed_ms: 87
+elapsed_ms: 85
 iterations: 10000
-avg_time_ns: 8706.14
-min_time_ns: 8706.14
-max_time_ns: 8706.14
+avg_time_ns: 8503.51
+min_time_ns: 8503.51
+max_time_ns: 8503.51
 time_stddev: 0.0000
-iterations_per_sec: 114942.53
+iterations_per_sec: 117647.06
 result: Z=111 | Rg (Roentgenium) | 282.169 u | unknown | [Rn] 5f¹⁴ 6d⁹ 7s²

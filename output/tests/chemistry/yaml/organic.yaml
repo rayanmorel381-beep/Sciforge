@@ -6,16 +6,16 @@ entries:
     name: Degree of unsaturation
     domain: chemistry
     test: "organic::degree_of_unsaturation"
-    avg_time_ns: 1646609.00
+    avg_time_ns: 1844170.00
   - label: organic_hammett_equation
     symbol: HE
     name: Hammett equation
     domain: chemistry
     test: "organic::hammett_equation"
-    avg_time_ns: 1823799.00
+    avg_time_ns: 1764800.00
   - label: organic_partition_coefficient_log_p
     symbol: PCL
     name: Partition coefficient log p
     domain: chemistry
     test: "organic::partition_coefficient_log_p"
-    avg_time_ns: 1731699.00
+    avg_time_ns: 1781280.00

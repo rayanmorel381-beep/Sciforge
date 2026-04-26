@@ -7,18 +7,18 @@ entries:
     reactant_mass: 36.0300 g/mol
     product_mass: 36.0300 g/mol
     atom_economy: 100.0%
-    avg_time_ns: 18921.46
+    avg_time_ns: 19382.79
   - label: Ammonia synthesis (Haber)
     name: Ammonia synthesis (Haber)
     formula: N₂ + 3H₂ → 2NH₃
     reactant_mass: 34.0620 g/mol
     product_mass: 34.0620 g/mol
     atom_economy: 100.0%
-    avg_time_ns: 17668.62
+    avg_time_ns: 16018.27
   - label: Sodium chloride
     name: Sodium chloride
     formula: 2Na + Cl₂ → 2NaCl
     reactant_mass: 116.8795 g/mol
     product_mass: 116.8795 g/mol
     atom_economy: 100.0%
-    avg_time_ns: 31005.74
+    avg_time_ns: 29278.17

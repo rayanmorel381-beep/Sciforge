@@ -1,8 +1,8 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-petrology::cipw_quartz_norm,f64,1,1,1794329,1794329,1794329,0,1000,pass,petrology,CQN,Cipw quartz norm,geology,petrology::cipw_quartz_norm
-petrology::crystal_settling_velocity,f64,1,1,1765559,1765559,1765559,0,1000,pass,petrology,CSV,Crystal settling velocity,geology,petrology::crystal_settling_velocity
-petrology::differentiation_index,f64,1,1,1679760,1679760,1679760,0,1000,pass,petrology,DI,Differentiation index,geology,petrology::differentiation_index
-petrology::liquidus_temperature,f64,1,1,1673029,1673029,1673029,0,1000,pass,petrology,LT,Liquidus temperature,geology,petrology::liquidus_temperature
-petrology::mg_number,f64,1,1,1691019,1691019,1691019,0,1000,pass,petrology,MN,Mg number,geology,petrology::mg_number
-petrology::total_alkali_silica,f64,1,1,1693619,1693619,1693619,0,1000,pass,petrology,TAS,Total alkali silica,geology,petrology::total_alkali_silica
-petrology::viscosity_arrhenius,f64,1,1,1682640,1682640,1682640,0,1000,pass,petrology,VA,Viscosity arrhenius,geology,petrology::viscosity_arrhenius
+petrology::cipw_quartz_norm,f64,2,1,2267000,2267000,2267000,0,500,pass,petrology,CQN,Cipw quartz norm,geology,petrology::cipw_quartz_norm
+petrology::crystal_settling_velocity,f64,1,1,1938511,1938511,1938511,0,1000,pass,petrology,CSV,Crystal settling velocity,geology,petrology::crystal_settling_velocity
+petrology::differentiation_index,f64,1,1,1799500,1799500,1799500,0,1000,pass,petrology,DI,Differentiation index,geology,petrology::differentiation_index
+petrology::liquidus_temperature,f64,1,1,1705510,1705510,1705510,0,1000,pass,petrology,LT,Liquidus temperature,geology,petrology::liquidus_temperature
+petrology::mg_number,f64,1,1,1709191,1709191,1709191,0,1000,pass,petrology,MN,Mg number,geology,petrology::mg_number
+petrology::total_alkali_silica,f64,1,1,1786690,1786690,1786690,0,1000,pass,petrology,TAS,Total alkali silica,geology,petrology::total_alkali_silica
+petrology::viscosity_arrhenius,f64,1,1,1731330,1731330,1731330,0,1000,pass,petrology,VA,Viscosity arrhenius,geology,petrology::viscosity_arrhenius

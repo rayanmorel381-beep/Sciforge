@@ -6,22 +6,22 @@ entries:
     name: Hamilton relatedness benefit
     domain: biology
     test: "ethology::hamilton_relatedness_benefit"
-    avg_time_ns: 1914779.00
+    avg_time_ns: 2565010.00
   - label: ethology_hawk_dove_payoff
     symbol: HDP
     name: Hawk dove payoff
     domain: biology
     test: "ethology::hawk_dove_payoff"
-    avg_time_ns: 1912059.00
+    avg_time_ns: 2460970.00
   - label: ethology_ideal_free_distribution
     symbol: IFD
     name: Ideal free distribution
     domain: biology
     test: "ethology::ideal_free_distribution"
-    avg_time_ns: 1985480.00
+    avg_time_ns: 2952431.00
   - label: ethology_territory_size
     symbol: TS
     name: Territory size
     domain: biology
     test: "ethology::territory_size"
-    avg_time_ns: 3792648.00
+    avg_time_ns: 2962290.00

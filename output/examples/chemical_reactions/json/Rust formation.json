@@ -7,12 +7,12 @@
   "atom_economy": "100.0%",
   "experiment_name": "Rust formation_calc",
   "precision": "f64",
-  "elapsed_ms": 165,
+  "elapsed_ms": 156,
   "iterations": 5000,
-  "avg_time_ns": 33188.98,
-  "min_time_ns": 33188.98,
-  "max_time_ns": 33188.98,
+  "avg_time_ns": 31202.24,
+  "min_time_ns": 31202.24,
+  "max_time_ns": 31202.24,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 30303.03,
+  "iterations_per_sec": 32051.28,
   "result": "Rust formation | 4Fe + 3O₂ → 2Fe₂O₃ | M(react)=319.3740 g/mol | M(prod)=319.3740 g/mol | Atom economy=100.0%"
 }

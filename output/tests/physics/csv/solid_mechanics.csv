@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-solid_mechanics::hooke_stress,f64,1,1,1930389,1930389,1930389,0,1000,pass,solid_mechanics,HS,Hooke stress,physics,solid_mechanics::hooke_stress
-solid_mechanics::thermal_stress,f64,2,1,2200219,2200219,2200219,0,500,pass,solid_mechanics,TS,Thermal stress,physics,solid_mechanics::thermal_stress
-solid_mechanics::von_mises,f64,1,1,1954739,1954739,1954739,0,1000,pass,solid_mechanics,VM,Von mises,physics,solid_mechanics::von_mises
+solid_mechanics::hooke_stress,f64,1,1,1801560,1801560,1801560,0,1000,pass,solid_mechanics,HS,Hooke stress,physics,solid_mechanics::hooke_stress
+solid_mechanics::thermal_stress,f64,1,1,1771701,1771701,1771701,0,1000,pass,solid_mechanics,TS,Thermal stress,physics,solid_mechanics::thermal_stress
+solid_mechanics::von_mises,f64,1,1,1818880,1818880,1818880,0,1000,pass,solid_mechanics,VM,Von mises,physics,solid_mechanics::von_mises

@@ -34,143 +34,143 @@ fn decode_full<'a>(bytes: &'a [u8]) -> Result<BenchmarkMetrics<'a>, BenchmarkEnc
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let avg_time_ns = f32::from_le_bytes(
-        bytes[32..36]
+    let avg_time_ns = f64::from_le_bytes(
+        bytes[32..40]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let last_time_ns = f32::from_le_bytes(
-        bytes[36..40]
+    let last_time_ns = f64::from_le_bytes(
+        bytes[40..48]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let output_bytes = u64::from_le_bytes(
-        bytes[40..48]
+        bytes[48..56]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     ) as usize;
     let total_flops = u64::from_le_bytes(
-        bytes[48..56]
+        bytes[56..64]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let step_count = u32::from_le_bytes(
-        bytes[56..60]
-            .try_into()
-            .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
-    );
-    let input_dim = u32::from_le_bytes(
-        bytes[60..64]
-            .try_into()
-            .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
-    );
-    let output_dim = u32::from_le_bytes(
         bytes[64..68]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let benchmark_flags = u64::from_le_bytes(
-        bytes[68..76]
+    let input_dim = u32::from_le_bytes(
+        bytes[68..72]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let input_bytes = u64::from_le_bytes(
+    let output_dim = u32::from_le_bytes(
+        bytes[72..76]
+            .try_into()
+            .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
+    );
+    let benchmark_flags = u64::from_le_bytes(
         bytes[76..84]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let result_bytes = u64::from_le_bytes(
+    let input_bytes = u64::from_le_bytes(
         bytes[84..92]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let min_time_ns = f32::from_le_bytes(
-        bytes[92..96]
+    let result_bytes = u64::from_le_bytes(
+        bytes[92..100]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let max_time_ns = f32::from_le_bytes(
-        bytes[96..100]
+    let min_time_ns = f64::from_le_bytes(
+        bytes[100..108]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let time_stddev = f32::from_le_bytes(
-        bytes[100..104]
+    let max_time_ns = f64::from_le_bytes(
+        bytes[108..116]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let iterations_per_sec = f32::from_le_bytes(
-        bytes[104..108]
+    let time_stddev = f64::from_le_bytes(
+        bytes[116..124]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let samples_per_sec = f32::from_le_bytes(
-        bytes[108..112]
+    let iterations_per_sec = f64::from_le_bytes(
+        bytes[124..132]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let eval_error = f32::from_le_bytes(
-        bytes[112..116]
+    let samples_per_sec = f64::from_le_bytes(
+        bytes[132..140]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let eval_accuracy = f32::from_le_bytes(
-        bytes[116..120]
+    let eval_error = f64::from_le_bytes(
+        bytes[140..148]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let eval_r_squared = f32::from_le_bytes(
-        bytes[120..124]
+    let eval_accuracy = f64::from_le_bytes(
+        bytes[148..156]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let eval_mae = f32::from_le_bytes(
-        bytes[124..128]
+    let eval_r_squared = f64::from_le_bytes(
+        bytes[156..164]
+            .try_into()
+            .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
+    );
+    let eval_mae = f64::from_le_bytes(
+        bytes[164..172]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let eval_samples = u64::from_le_bytes(
-        bytes[128..136]
+        bytes[172..180]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let eval_dataset_hash = u64::from_le_bytes(
-        bytes[136..144]
+        bytes[180..188]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let logical_cores = u32::from_le_bytes(
-        bytes[144..148]
+        bytes[188..192]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let avg_frequency_mhz = u32::from_le_bytes(
-        bytes[148..152]
+        bytes[192..196]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let max_frequency_mhz = u32::from_le_bytes(
-        bytes[152..156]
+        bytes[196..200]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let max_workers = u32::from_le_bytes(
-        bytes[156..160]
+        bytes[200..204]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
-    let target_cpu_utilization = f32::from_le_bytes(
-        bytes[160..164]
+    let target_cpu_utilization = f64::from_le_bytes(
+        bytes[204..212]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let name_len = u16::from_le_bytes(
-        bytes[164..166]
+        bytes[212..214]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     ) as usize;
     let prec_len = u16::from_le_bytes(
-        bytes[166..168]
+        bytes[214..216]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     ) as usize;
@@ -252,13 +252,13 @@ fn decode_compact(bytes: &[u8]) -> Result<BenchmarkMetrics<'_>, BenchmarkEncodeE
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     ) as u64;
-    let last_time_ns = f32::from_le_bytes(
-        bytes[24..28]
+    let last_time_ns = f64::from_le_bytes(
+        bytes[24..32]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     );
     let iterations = u32::from_le_bytes(
-        bytes[28..32]
+        bytes[32..36]
             .try_into()
             .map_err(|_| BenchmarkEncodeError::InvalidFormat)?,
     ) as u64;

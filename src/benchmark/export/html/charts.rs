@@ -58,7 +58,7 @@ pub(super) fn build_charts(h: &mut String, entries: &[Entry<'_>]) {
     }
     h.push_str("</svg>\n</div>\n\n");
 
-    let max_avg: f32 = stats
+    let max_avg: f64 = stats
         .groups
         .iter()
         .filter_map(|g| {
@@ -66,9 +66,9 @@ pub(super) fn build_charts(h: &mut String, entries: &[Entry<'_>]) {
             if cnt == 0 {
                 return None;
             }
-            Some(stats.sums.get(g).copied().unwrap_or(0.0) / cnt as f32)
+            Some(stats.sums.get(g).copied().unwrap_or(0.0) / cnt as f64)
         })
-        .fold(0.0f32, f32::max);
+        .fold(0.0f64, f64::max);
 
     h.push_str(&format!(
         "<div class=\"chart-box\">\n<h3>Average Time per {cap_key} (ns)</h3>\n"
@@ -79,13 +79,13 @@ pub(super) fn build_charts(h: &mut String, entries: &[Entry<'_>]) {
     for (i, &grp) in stats.groups.iter().enumerate() {
         let count = stats.counts.get(grp).copied().unwrap_or(0);
         let avg = if count > 0 {
-            stats.sums.get(grp).copied().unwrap_or(0.0) / count as f32
+            stats.sums.get(grp).copied().unwrap_or(0.0) / count as f64
         } else {
             0.0
         };
         let y = i as u32 * bar_h + 4;
         let w = if max_avg > 0.0 {
-            (avg / max_avg * bar_area as f32) as u32
+            (avg / max_avg * bar_area as f64) as u32
         } else {
             0
         };
@@ -109,7 +109,7 @@ pub(super) fn build_charts(h: &mut String, entries: &[Entry<'_>]) {
     }
     h.push_str("</svg>\n</div>\n\n");
 
-    let mut sorted: Vec<(&str, usize, f32)> = entries
+    let mut sorted: Vec<(&str, usize, f64)> = entries
         .iter()
         .enumerate()
         .map(|(idx, e)| (e.label, idx, e.metrics.avg_time_ns))
@@ -127,7 +127,7 @@ pub(super) fn build_charts(h: &mut String, entries: &[Entry<'_>]) {
     for (i, &(lbl, ei, ns)) in sorted.iter().take(top_n).enumerate() {
         let y = i as u32 * bar_h + 4;
         let w = if top_max > 0.0 {
-            (ns / top_max * bar_area as f32) as u32
+            (ns / top_max * bar_area as f64) as u32
         } else {
             0
         };
@@ -165,7 +165,7 @@ pub(super) fn build_charts(h: &mut String, entries: &[Entry<'_>]) {
     for (i, &(lbl, ei, ns)) in sorted.iter().rev().take(top_n).enumerate() {
         let y = i as u32 * bar_h + 4;
         let w = if top_max > 0.0 {
-            (ns / top_max * bar_area as f32) as u32
+            (ns / top_max * bar_area as f64) as u32
         } else {
             0
         };
@@ -208,7 +208,7 @@ pub(super) fn build_charts(h: &mut String, entries: &[Entry<'_>]) {
         let y = i as u32 * cat_cards_h + 4;
         let count = stats.counts.get(grp).copied().unwrap_or(0);
         let avg = if count > 0 {
-            stats.sums.get(grp).copied().unwrap_or(0.0) / count as f32
+            stats.sums.get(grp).copied().unwrap_or(0.0) / count as f64
         } else {
             0.0
         };

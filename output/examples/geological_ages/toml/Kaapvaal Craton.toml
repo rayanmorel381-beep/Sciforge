@@ -12,11 +12,11 @@ computed_age = "3228.2 Myr"
 expected_age = "3100 Myr"
 experiment_name = "Kaapvaal Craton_dating"
 precision = "f64"
-elapsed_ms = 18
+elapsed_ms = 19
 iterations = 5000
-avg_time_ns = 3742.12
-min_time_ns = 3742.12
-max_time_ns = 3742.12
+avg_time_ns = 3999.39
+min_time_ns = 3999.39
+max_time_ns = 3999.39
 time_stddev = 0.0000
-iterations_per_sec = 277777.78
+iterations_per_sec = 263157.89
 result = "Kaapvaal Craton | U-Pb (238) | D/P=0.6500 | t½=4.4680e9 years | Computed: 3228.2 Myr | Expected: 3100 Myr"

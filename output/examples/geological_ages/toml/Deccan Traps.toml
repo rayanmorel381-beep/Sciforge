@@ -12,11 +12,11 @@ computed_age = "84.1 Myr"
 expected_age = "66 Myr"
 experiment_name = "Deccan Traps_dating"
 precision = "f64"
-elapsed_ms = 22
+elapsed_ms = 24
 iterations = 5000
-avg_time_ns = 4590.98
-min_time_ns = 4590.98
-max_time_ns = 4590.98
+avg_time_ns = 4827.58
+min_time_ns = 4827.58
+max_time_ns = 4827.58
 time_stddev = 0.0000
-iterations_per_sec = 227272.73
+iterations_per_sec = 208333.33
 result = "Deccan Traps | K-Ar | D/P=0.0050 | t½=1.2480e9 years | Computed: 84.1 Myr | Expected: 66 Myr"

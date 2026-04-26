@@ -6,12 +6,12 @@
   "mass": "131.293",
   "experiment_name": "Xe_Xenon_benchmark",
   "precision": "f64",
-  "elapsed_ms": 41,
+  "elapsed_ms": 42,
   "iterations": 10000,
-  "avg_time_ns": 4163.17,
-  "min_time_ns": 4163.17,
-  "max_time_ns": 4163.17,
+  "avg_time_ns": 4253.64,
+  "min_time_ns": 4253.64,
+  "max_time_ns": 4253.64,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 243902.44,
+  "iterations_per_sec": 238095.24,
   "result": "Z=54 | Xe (Xenon) | 131.293 u | noble gas | [Kr] 4d¹⁰ 5s² 5p⁶"
 }

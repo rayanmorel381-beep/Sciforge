@@ -6,16 +6,16 @@ entries:
     name: Capacitance parallel plate
     domain: physics
     test: "electrodynamics::capacitance_parallel_plate"
-    avg_time_ns: 1770110.00
+    avg_time_ns: 1817081.00
   - label: electrodynamics_electric_field_point_charge
     symbol: EFP
     name: Electric field point charge
     domain: physics
     test: "electrodynamics::electric_field_point_charge"
-    avg_time_ns: 1710169.00
+    avg_time_ns: 1786170.00
   - label: electrodynamics_skin_depth
     symbol: SD
     name: Skin depth
     domain: physics
     test: "electrodynamics::skin_depth"
-    avg_time_ns: 1732869.00
+    avg_time_ns: 1693370.00

@@ -6,4 +6,4 @@ entries:
     name: Halton sequence integration
     domain: maths
     test: "integration::halton_sequence_integration"
-    avg_time_ns: 1689589.00
+    avg_time_ns: 2444481.00

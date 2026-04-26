@@ -1,9 +1,9 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-gas_laws::boyles_law,f64,1,1,1708059,1708059,1708059,0,1000,pass,gas_laws,BL,Boyles law,chemistry,gas_laws::boyles_law
-gas_laws::boyles_law_pressure_halves_when_volume_doubles,f64,1,1,1769869,1769869,1769869,0,1000,pass,gas_laws,BLP,Boyles law pressure halves when volume doubles,chemistry,gas_laws::boyles_law_pressure_halves_when_volume_doubles
-gas_laws::charles_law,f64,1,1,1704450,1704450,1704450,0,1000,pass,gas_laws,CL,Charles law,chemistry,gas_laws::charles_law
-gas_laws::dalton_partial_pressure,f64,1,1,1768959,1768959,1768959,0,1000,pass,gas_laws,DPP,Dalton partial pressure,chemistry,gas_laws::dalton_partial_pressure
-gas_laws::grahams_law_effusion,f64,1,1,1790609,1790609,1790609,0,1000,pass,gas_laws,GLE,Grahams law effusion,chemistry,gas_laws::grahams_law_effusion
-gas_laws::ideal_gas_inverse_temperature_roundtrip,f64,1,1,1730139,1730139,1730139,0,1000,pass,gas_laws,IGI,Ideal gas inverse temperature roundtrip,chemistry,gas_laws::ideal_gas_inverse_temperature_roundtrip
-gas_laws::ideal_gas_pressure_chem,f64,1,1,1725939,1725939,1725939,0,1000,pass,gas_laws,IGP,Ideal gas pressure chem,chemistry,gas_laws::ideal_gas_pressure_chem
-gas_laws::van_der_waals_pressure,f64,1,1,1751040,1751040,1751040,0,1000,pass,gas_laws,VDW,Van der waals pressure,chemistry,gas_laws::van_der_waals_pressure
+gas_laws::boyles_law,f64,3,1,3138031,3138031,3138031,0,333.3333333333333,pass,gas_laws,BL,Boyles law,chemistry,gas_laws::boyles_law
+gas_laws::boyles_law_pressure_halves_when_volume_doubles,f64,2,1,2872550,2872550,2872550,0,500,pass,gas_laws,BLP,Boyles law pressure halves when volume doubles,chemistry,gas_laws::boyles_law_pressure_halves_when_volume_doubles
+gas_laws::charles_law,f64,2,1,2523761,2523761,2523761,0,500,pass,gas_laws,CL,Charles law,chemistry,gas_laws::charles_law
+gas_laws::dalton_partial_pressure,f64,2,1,2745790,2745790,2745790,0,500,pass,gas_laws,DPP,Dalton partial pressure,chemistry,gas_laws::dalton_partial_pressure
+gas_laws::grahams_law_effusion,f64,2,1,2497130,2497130,2497130,0,500,pass,gas_laws,GLE,Grahams law effusion,chemistry,gas_laws::grahams_law_effusion
+gas_laws::ideal_gas_inverse_temperature_roundtrip,f64,2,1,2423911,2423911,2423911,0,500,pass,gas_laws,IGI,Ideal gas inverse temperature roundtrip,chemistry,gas_laws::ideal_gas_inverse_temperature_roundtrip
+gas_laws::ideal_gas_pressure_chem,f64,2,1,2633350,2633350,2633350,0,500,pass,gas_laws,IGP,Ideal gas pressure chem,chemistry,gas_laws::ideal_gas_pressure_chem
+gas_laws::van_der_waals_pressure,f64,2,1,2234081,2234081,2234081,0,500,pass,gas_laws,VDW,Van der waals pressure,chemistry,gas_laws::van_der_waals_pressure

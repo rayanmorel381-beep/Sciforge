@@ -8,7 +8,7 @@ symbol = "H"
 name = "Hydrogen"
 config = "1s¹"
 mass = "1.008"
-avg_time_ns = 90.48
+avg_time_ns = 95.70
 iterations_per_sec = 0.00
 
 [[entries]]
@@ -18,7 +18,7 @@ symbol = "He"
 name = "Helium"
 config = "1s²"
 mass = "4.002602"
-avg_time_ns = 169.05
+avg_time_ns = 194.93
 iterations_per_sec = 0.00
 
 [[entries]]
@@ -28,7 +28,7 @@ symbol = "Li"
 name = "Lithium"
 config = "1s² 2s¹"
 mass = "6.941"
-avg_time_ns = 249.70
+avg_time_ns = 265.72
 iterations_per_sec = 5000000.00
 
 [[entries]]
@@ -38,7 +38,7 @@ symbol = "Be"
 name = "Beryllium"
 config = "1s² 2s²"
 mass = "9.0121831"
-avg_time_ns = 318.35
+avg_time_ns = 346.21
 iterations_per_sec = 0.00
 
 [[entries]]
@@ -48,7 +48,7 @@ symbol = "B"
 name = "Boron"
 config = "1s² 2s² 2p¹"
 mass = "10.81"
-avg_time_ns = 402.31
+avg_time_ns = 463.13
 iterations_per_sec = 2500000.00
 
 [[entries]]
@@ -58,8 +58,8 @@ symbol = "C"
 name = "Carbon"
 config = "1s² 2s² 2p²"
 mass = "12.011"
-avg_time_ns = 471.10
-iterations_per_sec = 2500000.00
+avg_time_ns = 514.79
+iterations_per_sec = 2000000.00
 
 [[entries]]
 label = "007_N"
@@ -68,7 +68,7 @@ symbol = "N"
 name = "Nitrogen"
 config = "1s² 2s² 2p³"
 mass = "14.007"
-avg_time_ns = 551.92
+avg_time_ns = 557.65
 iterations_per_sec = 0.00
 
 [[entries]]
@@ -78,8 +78,8 @@ symbol = "O"
 name = "Oxygen"
 config = "1s² 2s² 2p⁴"
 mass = "15.999"
-avg_time_ns = 620.61
-iterations_per_sec = 1666666.62
+avg_time_ns = 639.57
+iterations_per_sec = 1666666.67
 
 [[entries]]
 label = "009_F"
@@ -88,8 +88,8 @@ symbol = "F"
 name = "Fluorine"
 config = "1s² 2s² 2p⁵"
 mass = "18.998403"
-avg_time_ns = 697.91
-iterations_per_sec = 1666666.62
+avg_time_ns = 804.65
+iterations_per_sec = 1250000.00
 
 [[entries]]
 label = "010_Ne"
@@ -98,7 +98,7 @@ symbol = "Ne"
 name = "Neon"
 config = "1s² 2s² 2p⁶"
 mass = "20.1797"
-avg_time_ns = 775.56
+avg_time_ns = 785.88
 iterations_per_sec = 0.00
 
 [[entries]]
@@ -108,7 +108,7 @@ symbol = "Na"
 name = "Sodium"
 config = "[Ne] 3s¹"
 mass = "22.98976928"
-avg_time_ns = 846.23
+avg_time_ns = 901.85
 iterations_per_sec = 1250000.00
 
 [[entries]]
@@ -118,8 +118,8 @@ symbol = "Mg"
 name = "Magnesium"
 config = "[Ne] 3s²"
 mass = "24.305"
-avg_time_ns = 926.44
-iterations_per_sec = 1111111.12
+avg_time_ns = 991.70
+iterations_per_sec = 1111111.11
 
 [[entries]]
 label = "013_Al"
@@ -128,7 +128,7 @@ symbol = "Al"
 name = "Aluminium"
 config = "[Ne] 3s² 3p¹"
 mass = "26.9815385"
-avg_time_ns = 1010.41
+avg_time_ns = 1041.63
 iterations_per_sec = 1000000.00
 
 [[entries]]
@@ -138,7 +138,7 @@ symbol = "Si"
 name = "Silicon"
 config = "[Ne] 3s² 3p²"
 mass = "28.085"
-avg_time_ns = 1140.37
+avg_time_ns = 1108.43
 iterations_per_sec = 1000000.00
 
 [[entries]]
@@ -148,8 +148,8 @@ symbol = "P"
 name = "Phosphorus"
 config = "[Ne] 3s² 3p³"
 mass = "30.973762"
-avg_time_ns = 1160.05
-iterations_per_sec = 909090.94
+avg_time_ns = 1193.05
+iterations_per_sec = 909090.91
 
 [[entries]]
 label = "016_S"
@@ -158,7 +158,7 @@ symbol = "S"
 name = "Sulfur"
 config = "[Ne] 3s² 3p⁴"
 mass = "32.06"
-avg_time_ns = 1249.86
+avg_time_ns = 1291.49
 iterations_per_sec = 1000000.00
 
 [[entries]]
@@ -168,8 +168,8 @@ symbol = "Cl"
 name = "Chlorine"
 config = "[Ne] 3s² 3p⁵"
 mass = "35.45"
-avg_time_ns = 1319.70
-iterations_per_sec = 833333.31
+avg_time_ns = 1321.72
+iterations_per_sec = 833333.33
 
 [[entries]]
 label = "018_Ar"
@@ -178,8 +178,8 @@ symbol = "Ar"
 name = "Argon"
 config = "[Ne] 3s² 3p⁶"
 mass = "39.948"
-avg_time_ns = 1392.33
-iterations_per_sec = 769230.75
+avg_time_ns = 1447.26
+iterations_per_sec = 714285.71
 
 [[entries]]
 label = "019_K"
@@ -188,7 +188,7 @@ symbol = "K"
 name = "Potassium"
 config = "[Ar] 4s¹"
 mass = "39.0983"
-avg_time_ns = 1526.03
+avg_time_ns = 1459.22
 iterations_per_sec = 1000000.00
 
 [[entries]]
@@ -198,7 +198,7 @@ symbol = "Ca"
 name = "Calcium"
 config = "[Ar] 4s²"
 mass = "40.078"
-avg_time_ns = 1662.09
+avg_time_ns = 1625.94
 iterations_per_sec = 625000.00
 
 [[entries]]
@@ -208,7 +208,7 @@ symbol = "Sc"
 name = "Scandium"
 config = "[Ar] 3d¹ 4s²"
 mass = "44.955908"
-avg_time_ns = 1636.08
+avg_time_ns = 1643.54
 iterations_per_sec = 625000.00
 
 [[entries]]
@@ -218,7 +218,7 @@ symbol = "Ti"
 name = "Titanium"
 config = "[Ar] 3d² 4s²"
 mass = "47.867"
-avg_time_ns = 1694.40
+avg_time_ns = 1805.70
 iterations_per_sec = 1000000.00
 
 [[entries]]
@@ -228,8 +228,8 @@ symbol = "V"
 name = "Vanadium"
 config = "[Ar] 3d³ 4s²"
 mass = "50.9415"
-avg_time_ns = 1794.18
-iterations_per_sec = 625000.00
+avg_time_ns = 1804.14
+iterations_per_sec = 555555.56
 
 [[entries]]
 label = "024_Cr"
@@ -238,8 +238,8 @@ symbol = "Cr"
 name = "Chromium"
 config = "[Ar] 3d⁵ 4s¹"
 mass = "51.9961"
-avg_time_ns = 1952.34
-iterations_per_sec = 526315.81
+avg_time_ns = 1871.85
+iterations_per_sec = 555555.56
 
 [[entries]]
 label = "025_Mn"
@@ -248,7 +248,7 @@ symbol = "Mn"
 name = "Manganese"
 config = "[Ar] 3d⁵ 4s²"
 mass = "54.938044"
-avg_time_ns = 1907.84
+avg_time_ns = 1950.00
 iterations_per_sec = 1000000.00
 
 [[entries]]
@@ -258,7 +258,7 @@ symbol = "Fe"
 name = "Iron"
 config = "[Ar] 3d⁶ 4s²"
 mass = "55.845"
-avg_time_ns = 2015.35
+avg_time_ns = 2007.70
 iterations_per_sec = 500000.00
 
 [[entries]]
@@ -268,8 +268,8 @@ symbol = "Co"
 name = "Cobalt"
 config = "[Ar] 3d⁷ 4s²"
 mass = "58.933194"
-avg_time_ns = 2080.07
-iterations_per_sec = 500000.00
+avg_time_ns = 2112.24
+iterations_per_sec = 476190.48
 
 [[entries]]
 label = "028_Ni"
@@ -278,7 +278,7 @@ symbol = "Ni"
 name = "Nickel"
 config = "[Ar] 3d⁸ 4s²"
 mass = "58.6934"
-avg_time_ns = 2148.77
+avg_time_ns = 2195.53
 iterations_per_sec = 500000.00
 
 [[entries]]
@@ -288,8 +288,8 @@ symbol = "Cu"
 name = "Copper"
 config = "[Ar] 3d¹⁰ 4s¹"
 mass = "63.546"
-avg_time_ns = 2224.89
-iterations_per_sec = 454545.47
+avg_time_ns = 2287.10
+iterations_per_sec = 454545.45
 
 [[entries]]
 label = "030_Zn"
@@ -298,8 +298,8 @@ symbol = "Zn"
 name = "Zinc"
 config = "[Ar] 3d¹⁰ 4s²"
 mass = "65.38"
-avg_time_ns = 2326.91
-iterations_per_sec = 434782.59
+avg_time_ns = 2340.08
+iterations_per_sec = 434782.61
 
 [[entries]]
 label = "031_Ga"
@@ -308,7 +308,7 @@ symbol = "Ga"
 name = "Gallium"
 config = "[Ar] 3d¹⁰ 4s² 4p¹"
 mass = "69.723"
-avg_time_ns = 2456.66
+avg_time_ns = 2465.75
 iterations_per_sec = 500000.00
 
 [[entries]]
@@ -318,8 +318,8 @@ symbol = "Ge"
 name = "Germanium"
 config = "[Ar] 3d¹⁰ 4s² 4p²"
 mass = "72.63"
-avg_time_ns = 2461.49
-iterations_per_sec = 416666.66
+avg_time_ns = 2456.93
+iterations_per_sec = 416666.67
 
 [[entries]]
 label = "033_As"
@@ -328,7 +328,7 @@ symbol = "As"
 name = "Arsenic"
 config = "[Ar] 3d¹⁰ 4s² 4p³"
 mass = "74.921595"
-avg_time_ns = 2543.32
+avg_time_ns = 2569.77
 iterations_per_sec = 400000.00
 
 [[entries]]
@@ -338,7 +338,7 @@ symbol = "Se"
 name = "Selenium"
 config = "[Ar] 3d¹⁰ 4s² 4p⁴"
 mass = "78.971"
-avg_time_ns = 2592.98
+avg_time_ns = 2641.96
 iterations_per_sec = 500000.00
 
 [[entries]]
@@ -348,7 +348,7 @@ symbol = "Br"
 name = "Bromine"
 config = "[Ar] 3d¹⁰ 4s² 4p⁵"
 mass = "79.904"
-avg_time_ns = 2714.75
+avg_time_ns = 2709.80
 iterations_per_sec = 384615.38
 
 [[entries]]
@@ -358,8 +358,8 @@ symbol = "Kr"
 name = "Krypton"
 config = "[Ar] 3d¹⁰ 4s² 4p⁶"
 mass = "83.798"
-avg_time_ns = 2785.39
-iterations_per_sec = 370370.38
+avg_time_ns = 2877.84
+iterations_per_sec = 357142.86
 
 [[entries]]
 label = "037_Rb"
@@ -368,7 +368,7 @@ symbol = "Rb"
 name = "Rubidium"
 config = "[Kr] 5s¹"
 mass = "85.4678"
-avg_time_ns = 2895.13
+avg_time_ns = 2849.42
 iterations_per_sec = 500000.00
 
 [[entries]]
@@ -378,8 +378,8 @@ symbol = "Sr"
 name = "Strontium"
 config = "[Kr] 5s²"
 mass = "87.62"
-avg_time_ns = 2917.53
-iterations_per_sec = 357142.84
+avg_time_ns = 2973.56
+iterations_per_sec = 357142.86
 
 [[entries]]
 label = "039_Y"
@@ -388,8 +388,8 @@ symbol = "Y"
 name = "Yttrium"
 config = "[Kr] 4d¹ 5s²"
 mass = "88.90584"
-avg_time_ns = 3073.45
-iterations_per_sec = 333333.34
+avg_time_ns = 3136.35
+iterations_per_sec = 322580.65
 
 [[entries]]
 label = "040_Zr"
@@ -398,8 +398,8 @@ symbol = "Zr"
 name = "Zirconium"
 config = "[Kr] 4d² 5s²"
 mass = "91.224"
-avg_time_ns = 3129.57
-iterations_per_sec = 333333.34
+avg_time_ns = 3056.81
+iterations_per_sec = 333333.33
 
 [[entries]]
 label = "041_Nb"
@@ -408,8 +408,8 @@ symbol = "Nb"
 name = "Niobium"
 config = "[Kr] 4d⁴ 5s¹"
 mass = "92.90637"
-avg_time_ns = 3122.35
-iterations_per_sec = 333333.34
+avg_time_ns = 3230.24
+iterations_per_sec = 312500.00
 
 [[entries]]
 label = "042_Mo"
@@ -418,8 +418,8 @@ symbol = "Mo"
 name = "Molybdenum"
 config = "[Kr] 4d⁵ 5s¹"
 mass = "95.95"
-avg_time_ns = 3299.01
-iterations_per_sec = 312500.00
+avg_time_ns = 3338.47
+iterations_per_sec = 303030.30
 
 [[entries]]
 label = "043_Tc"
@@ -428,8 +428,8 @@ symbol = "Tc"
 name = "Technetium"
 config = "[Kr] 4d⁵ 5s²"
 mass = "97.907216"
-avg_time_ns = 3284.76
-iterations_per_sec = 333333.34
+avg_time_ns = 3412.72
+iterations_per_sec = 333333.33
 
 [[entries]]
 label = "044_Ru"
@@ -438,8 +438,8 @@ symbol = "Ru"
 name = "Ruthenium"
 config = "[Kr] 4d⁷ 5s¹"
 mass = "101.07"
-avg_time_ns = 3692.70
-iterations_per_sec = 277777.78
+avg_time_ns = 3504.29
+iterations_per_sec = 294117.65
 
 [[entries]]
 label = "045_Rh"
@@ -448,8 +448,8 @@ symbol = "Rh"
 name = "Rhodium"
 config = "[Kr] 4d⁸ 5s¹"
 mass = "102.9055"
-avg_time_ns = 3461.99
-iterations_per_sec = 294117.66
+avg_time_ns = 3583.89
+iterations_per_sec = 285714.29
 
 [[entries]]
 label = "046_Pd"
@@ -458,8 +458,8 @@ symbol = "Pd"
 name = "Palladium"
 config = "[Kr] 4d¹⁰"
 mass = "106.42"
-avg_time_ns = 3541.52
-iterations_per_sec = 333333.34
+avg_time_ns = 3616.91
+iterations_per_sec = 333333.33
 
 [[entries]]
 label = "047_Ag"
@@ -468,7 +468,7 @@ symbol = "Ag"
 name = "Silver"
 config = "[Kr] 4d¹⁰ 5s¹"
 mass = "107.8682"
-avg_time_ns = 3631.66
+avg_time_ns = 3690.34
 iterations_per_sec = 277777.78
 
 [[entries]]
@@ -478,8 +478,8 @@ symbol = "Cd"
 name = "Cadmium"
 config = "[Kr] 4d¹⁰ 5s²"
 mass = "112.414"
-avg_time_ns = 3665.32
-iterations_per_sec = 277777.78
+avg_time_ns = 3763.21
+iterations_per_sec = 270270.27
 
 [[entries]]
 label = "049_In"
@@ -488,8 +488,8 @@ symbol = "In"
 name = "Indium"
 config = "[Kr] 4d¹⁰ 5s² 5p¹"
 mass = "114.818"
-avg_time_ns = 4352.59
-iterations_per_sec = 250000.00
+avg_time_ns = 3738.75
+iterations_per_sec = 333333.33
 
 [[entries]]
 label = "050_Sn"
@@ -498,8 +498,8 @@ symbol = "Sn"
 name = "Tin"
 config = "[Kr] 4d¹⁰ 5s² 5p²"
 mass = "118.71"
-avg_time_ns = 3820.33
-iterations_per_sec = 263157.91
+avg_time_ns = 3923.69
+iterations_per_sec = 263157.89
 
 [[entries]]
 label = "051_Sb"
@@ -508,8 +508,8 @@ symbol = "Sb"
 name = "Antimony"
 config = "[Kr] 4d¹⁰ 5s² 5p³"
 mass = "121.76"
-avg_time_ns = 3933.09
-iterations_per_sec = 256410.25
+avg_time_ns = 3969.11
+iterations_per_sec = 256410.26
 
 [[entries]]
 label = "052_Te"
@@ -518,8 +518,8 @@ symbol = "Te"
 name = "Tellurium"
 config = "[Kr] 4d¹⁰ 5s² 5p⁴"
 mass = "127.6"
-avg_time_ns = 3963.67
-iterations_per_sec = 333333.34
+avg_time_ns = 4146.63
+iterations_per_sec = 250000.00
 
 [[entries]]
 label = "053_I"
@@ -528,8 +528,8 @@ symbol = "I"
 name = "Iodine"
 config = "[Kr] 4d¹⁰ 5s² 5p⁵"
 mass = "126.90447"
-avg_time_ns = 4075.38
-iterations_per_sec = 250000.00
+avg_time_ns = 4227.59
+iterations_per_sec = 238095.24
 
 [[entries]]
 label = "054_Xe"
@@ -538,8 +538,8 @@ symbol = "Xe"
 name = "Xenon"
 config = "[Kr] 4d¹⁰ 5s² 5p⁶"
 mass = "131.293"
-avg_time_ns = 4163.17
-iterations_per_sec = 243902.44
+avg_time_ns = 4253.64
+iterations_per_sec = 238095.24
 
 [[entries]]
 label = "055_Cs"
@@ -548,7 +548,7 @@ symbol = "Cs"
 name = "Cesium"
 config = "[Xe] 6s¹"
 mass = "132.90545196"
-avg_time_ns = 4324.45
+avg_time_ns = 4203.19
 iterations_per_sec = 250000.00
 
 [[entries]]
@@ -558,8 +558,8 @@ symbol = "Ba"
 name = "Barium"
 config = "[Xe] 6s²"
 mass = "137.327"
-avg_time_ns = 4288.23
-iterations_per_sec = 238095.23
+avg_time_ns = 4674.12
+iterations_per_sec = 217391.30
 
 [[entries]]
 label = "057_La"
@@ -568,8 +568,8 @@ symbol = "La"
 name = "Lanthanum"
 config = "[Xe] 5d¹ 6s²"
 mass = "138.90547"
-avg_time_ns = 4438.56
-iterations_per_sec = 227272.73
+avg_time_ns = 4510.37
+iterations_per_sec = 222222.22
 
 [[entries]]
 label = "058_Ce"
@@ -578,7 +578,7 @@ symbol = "Ce"
 name = "Cerium"
 config = "[Xe] 4f¹ 5d¹ 6s²"
 mass = "140.116"
-avg_time_ns = 4410.13
+avg_time_ns = 4563.78
 iterations_per_sec = 250000.00
 
 [[entries]]
@@ -588,8 +588,8 @@ symbol = "Pr"
 name = "Praseodymium"
 config = "[Xe] 4f³ 6s²"
 mass = "140.90766"
-avg_time_ns = 4559.97
-iterations_per_sec = 227272.73
+avg_time_ns = 4661.17
+iterations_per_sec = 217391.30
 
 [[entries]]
 label = "060_Nd"
@@ -598,8 +598,8 @@ symbol = "Nd"
 name = "Neodymium"
 config = "[Xe] 4f⁴ 6s²"
 mass = "144.242"
-avg_time_ns = 4696.36
-iterations_per_sec = 217391.30
+avg_time_ns = 4894.73
+iterations_per_sec = 208333.33
 
 [[entries]]
 label = "061_Pm"
@@ -608,7 +608,7 @@ symbol = "Pm"
 name = "Promethium"
 config = "[Xe] 4f⁵ 6s²"
 mass = "144.912749"
-avg_time_ns = 4666.57
+avg_time_ns = 4768.08
 iterations_per_sec = 250000.00
 
 [[entries]]
@@ -618,8 +618,8 @@ symbol = "Sm"
 name = "Samarium"
 config = "[Xe] 4f⁶ 6s²"
 mass = "150.36"
-avg_time_ns = 4767.45
-iterations_per_sec = 217391.30
+avg_time_ns = 5493.32
+iterations_per_sec = 185185.19
 
 [[entries]]
 label = "063_Eu"
@@ -628,8 +628,8 @@ symbol = "Eu"
 name = "Europium"
 config = "[Xe] 4f⁷ 6s²"
 mass = "151.964"
-avg_time_ns = 4832.15
-iterations_per_sec = 208333.33
+avg_time_ns = 5127.62
+iterations_per_sec = 196078.43
 
 [[entries]]
 label = "064_Gd"
@@ -638,7 +638,7 @@ symbol = "Gd"
 name = "Gadolinium"
 config = "[Xe] 4f⁷ 5d¹ 6s²"
 mass = "157.25"
-avg_time_ns = 4872.53
+avg_time_ns = 4909.90
 iterations_per_sec = 250000.00
 
 [[entries]]
@@ -648,7 +648,7 @@ symbol = "Tb"
 name = "Terbium"
 config = "[Xe] 4f⁹ 6s²"
 mass = "158.92535"
-avg_time_ns = 5021.52
+avg_time_ns = 5044.69
 iterations_per_sec = 200000.00
 
 [[entries]]
@@ -658,8 +658,8 @@ symbol = "Dy"
 name = "Dysprosium"
 config = "[Xe] 4f¹⁰ 6s²"
 mass = "162.5"
-avg_time_ns = 5111.67
-iterations_per_sec = 196078.44
+avg_time_ns = 5624.03
+iterations_per_sec = 178571.43
 
 [[entries]]
 label = "067_Ho"
@@ -668,7 +668,7 @@ symbol = "Ho"
 name = "Holmium"
 config = "[Xe] 4f¹¹ 6s²"
 mass = "164.93033"
-avg_time_ns = 5231.69
+avg_time_ns = 5394.09
 iterations_per_sec = 200000.00
 
 [[entries]]
@@ -678,8 +678,8 @@ symbol = "Er"
 name = "Erbium"
 config = "[Xe] 4f¹² 6s²"
 mass = "167.259"
-avg_time_ns = 5226.24
-iterations_per_sec = 192307.69
+avg_time_ns = 5426.33
+iterations_per_sec = 185185.19
 
 [[entries]]
 label = "069_Tm"
@@ -688,7 +688,7 @@ symbol = "Tm"
 name = "Thulium"
 config = "[Xe] 4f¹³ 6s²"
 mass = "168.93422"
-avg_time_ns = 5317.33
+avg_time_ns = 5381.33
 iterations_per_sec = 188679.25
 
 [[entries]]
@@ -698,7 +698,7 @@ symbol = "Yb"
 name = "Ytterbium"
 config = "[Xe] 4f¹⁴ 6s²"
 mass = "173.045"
-avg_time_ns = 5331.37
+avg_time_ns = 5344.40
 iterations_per_sec = 200000.00
 
 [[entries]]
@@ -708,7 +708,7 @@ symbol = "Lu"
 name = "Lutetium"
 config = "[Xe] 4f¹⁴ 5d¹ 6s²"
 mass = "174.9668"
-avg_time_ns = 5450.91
+avg_time_ns = 5551.34
 iterations_per_sec = 185185.19
 
 [[entries]]
@@ -718,8 +718,8 @@ symbol = "Hf"
 name = "Hafnium"
 config = "[Xe] 4f¹⁴ 5d² 6s²"
 mass = "178.49"
-avg_time_ns = 5537.44
-iterations_per_sec = 181818.19
+avg_time_ns = 5876.18
+iterations_per_sec = 172413.79
 
 [[entries]]
 label = "073_Ta"
@@ -728,7 +728,7 @@ symbol = "Ta"
 name = "Tantalum"
 config = "[Xe] 4f¹⁴ 5d³ 6s²"
 mass = "180.94788"
-avg_time_ns = 5554.75
+avg_time_ns = 5761.57
 iterations_per_sec = 200000.00
 
 [[entries]]
@@ -738,8 +738,8 @@ symbol = "W"
 name = "Tungsten"
 config = "[Xe] 4f¹⁴ 5d⁴ 6s²"
 mass = "183.84"
-avg_time_ns = 5673.61
-iterations_per_sec = 178571.42
+avg_time_ns = 5828.79
+iterations_per_sec = 172413.79
 
 [[entries]]
 label = "075_Re"
@@ -748,8 +748,8 @@ symbol = "Re"
 name = "Rhenium"
 config = "[Xe] 4f¹⁴ 5d⁵ 6s²"
 mass = "186.207"
-avg_time_ns = 5804.09
-iterations_per_sec = 172413.80
+avg_time_ns = 5931.54
+iterations_per_sec = 169491.53
 
 [[entries]]
 label = "076_Os"
@@ -758,8 +758,8 @@ symbol = "Os"
 name = "Osmium"
 config = "[Xe] 4f¹⁴ 5d⁶ 6s²"
 mass = "190.23"
-avg_time_ns = 5805.46
-iterations_per_sec = 200000.00
+avg_time_ns = 6005.12
+iterations_per_sec = 166666.67
 
 [[entries]]
 label = "077_Ir"
@@ -768,8 +768,8 @@ symbol = "Ir"
 name = "Iridium"
 config = "[Xe] 4f¹⁴ 5d⁷ 6s²"
 mass = "192.217"
-avg_time_ns = 6319.36
-iterations_per_sec = 161290.33
+avg_time_ns = 6176.86
+iterations_per_sec = 166666.67
 
 [[entries]]
 label = "078_Pt"
@@ -778,8 +778,8 @@ symbol = "Pt"
 name = "Platinum"
 config = "[Xe] 4f¹⁴ 5d⁹ 6s¹"
 mass = "195.084"
-avg_time_ns = 6245.62
-iterations_per_sec = 161290.33
+avg_time_ns = 6110.85
+iterations_per_sec = 163934.43
 
 [[entries]]
 label = "079_Au"
@@ -788,7 +788,7 @@ symbol = "Au"
 name = "Gold"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s¹"
 mass = "196.966569"
-avg_time_ns = 6239.05
+avg_time_ns = 6071.55
 iterations_per_sec = 166666.67
 
 [[entries]]
@@ -798,8 +798,8 @@ symbol = "Hg"
 name = "Mercury"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s²"
 mass = "200.592"
-avg_time_ns = 6227.39
-iterations_per_sec = 161290.33
+avg_time_ns = 6237.34
+iterations_per_sec = 161290.32
 
 [[entries]]
 label = "081_Tl"
@@ -808,8 +808,8 @@ symbol = "Tl"
 name = "Thallium"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹"
 mass = "204.38"
-avg_time_ns = 6350.10
-iterations_per_sec = 158730.16
+avg_time_ns = 6636.80
+iterations_per_sec = 151515.15
 
 [[entries]]
 label = "082_Pb"
@@ -818,7 +818,7 @@ symbol = "Pb"
 name = "Lead"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²"
 mass = "207.2"
-avg_time_ns = 6397.04
+avg_time_ns = 6287.12
 iterations_per_sec = 166666.67
 
 [[entries]]
@@ -828,8 +828,8 @@ symbol = "Bi"
 name = "Bismuth"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³"
 mass = "208.9804"
-avg_time_ns = 6530.20
-iterations_per_sec = 156250.00
+avg_time_ns = 6630.27
+iterations_per_sec = 151515.15
 
 [[entries]]
 label = "084_Po"
@@ -838,8 +838,8 @@ symbol = "Po"
 name = "Polonium"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴"
 mass = "208.98243"
-avg_time_ns = 6547.83
-iterations_per_sec = 153846.16
+avg_time_ns = 6550.27
+iterations_per_sec = 153846.15
 
 [[entries]]
 label = "085_At"
@@ -848,7 +848,7 @@ symbol = "At"
 name = "Astatine"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵"
 mass = "210"
-avg_time_ns = 6571.25
+avg_time_ns = 6666.44
 iterations_per_sec = 166666.67
 
 [[entries]]
@@ -858,8 +858,8 @@ symbol = "Rn"
 name = "Radon"
 config = "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶"
 mass = "222"
-avg_time_ns = 6705.93
-iterations_per_sec = 151515.16
+avg_time_ns = 6607.90
+iterations_per_sec = 151515.15
 
 [[entries]]
 label = "087_Fr"
@@ -868,7 +868,7 @@ symbol = "Fr"
 name = "Francium"
 config = "[Rn] 7s¹"
 mass = "223"
-avg_time_ns = 6769.47
+avg_time_ns = 6706.94
 iterations_per_sec = 149253.73
 
 [[entries]]
@@ -878,7 +878,7 @@ symbol = "Ra"
 name = "Radium"
 config = "[Rn] 7s²"
 mass = "226"
-avg_time_ns = 6927.16
+avg_time_ns = 6715.18
 iterations_per_sec = 166666.67
 
 [[entries]]
@@ -888,8 +888,8 @@ symbol = "Ac"
 name = "Actinium"
 config = "[Rn] 6d¹ 7s²"
 mass = "227.027752"
-avg_time_ns = 6975.24
-iterations_per_sec = 147058.83
+avg_time_ns = 6847.07
+iterations_per_sec = 147058.82
 
 [[entries]]
 label = "090_Th"
@@ -898,8 +898,8 @@ symbol = "Th"
 name = "Thorium"
 config = "[Rn] 6d² 7s²"
 mass = "232.0377"
-avg_time_ns = 7089.71
-iterations_per_sec = 142857.14
+avg_time_ns = 7229.11
+iterations_per_sec = 138888.89
 
 [[entries]]
 label = "091_Pa"
@@ -908,7 +908,7 @@ symbol = "Pa"
 name = "Protactinium"
 config = "[Rn] 5f² 6d¹ 7s²"
 mass = "231.03588"
-avg_time_ns = 7072.09
+avg_time_ns = 7288.52
 iterations_per_sec = 142857.14
 
 [[entries]]
@@ -918,8 +918,8 @@ symbol = "U"
 name = "Uranium"
 config = "[Rn] 5f³ 6d¹ 7s²"
 mass = "238.02891"
-avg_time_ns = 7316.16
-iterations_per_sec = 138888.89
+avg_time_ns = 7130.27
+iterations_per_sec = 142857.14
 
 [[entries]]
 label = "093_Np"
@@ -928,8 +928,8 @@ symbol = "Np"
 name = "Neptunium"
 config = "[Rn] 5f⁴ 6d¹ 7s²"
 mass = "237.048174"
-avg_time_ns = 7245.58
-iterations_per_sec = 138888.89
+avg_time_ns = 7185.77
+iterations_per_sec = 140845.07
 
 [[entries]]
 label = "094_Pu"
@@ -938,7 +938,7 @@ symbol = "Pu"
 name = "Plutonium"
 config = "[Rn] 5f⁶ 7s²"
 mass = "244.064204"
-avg_time_ns = 7277.76
+avg_time_ns = 7347.30
 iterations_per_sec = 142857.14
 
 [[entries]]
@@ -948,7 +948,7 @@ symbol = "Am"
 name = "Americium"
 config = "[Rn] 5f⁷ 7s²"
 mass = "243.061381"
-avg_time_ns = 7388.27
+avg_time_ns = 7340.23
 iterations_per_sec = 138888.89
 
 [[entries]]
@@ -958,8 +958,8 @@ symbol = "Cm"
 name = "Curium"
 config = "[Rn] 5f⁷ 6d¹ 7s²"
 mass = "247.070354"
-avg_time_ns = 7501.51
-iterations_per_sec = 133333.33
+avg_time_ns = 7677.89
+iterations_per_sec = 131578.95
 
 [[entries]]
 label = "097_Bk"
@@ -968,7 +968,7 @@ symbol = "Bk"
 name = "Berkelium"
 config = "[Rn] 5f⁹ 7s²"
 mass = "247.070307"
-avg_time_ns = 7534.16
+avg_time_ns = 7817.07
 iterations_per_sec = 142857.14
 
 [[entries]]
@@ -978,8 +978,8 @@ symbol = "Cf"
 name = "Californium"
 config = "[Rn] 5f¹⁰ 7s²"
 mass = "251.079587"
-avg_time_ns = 7762.57
-iterations_per_sec = 131578.95
+avg_time_ns = 7892.61
+iterations_per_sec = 128205.13
 
 [[entries]]
 label = "099_Es"
@@ -988,8 +988,8 @@ symbol = "Es"
 name = "Einsteinium"
 config = "[Rn] 5f¹¹ 7s²"
 mass = "252.08298"
-avg_time_ns = 7814.70
-iterations_per_sec = 128205.12
+avg_time_ns = 7817.05
+iterations_per_sec = 128205.13
 
 [[entries]]
 label = "100_Fm"
@@ -998,7 +998,7 @@ symbol = "Fm"
 name = "Fermium"
 config = "[Rn] 5f¹² 7s²"
 mass = "257.095105"
-avg_time_ns = 8014.43
+avg_time_ns = 8230.76
 iterations_per_sec = 125000.00
 
 [[entries]]
@@ -1008,8 +1008,8 @@ symbol = "Md"
 name = "Mendelevium"
 config = "[Rn] 5f¹³ 7s²"
 mass = "258.098431"
-avg_time_ns = 7986.83
-iterations_per_sec = 128205.12
+avg_time_ns = 8117.14
+iterations_per_sec = 125000.00
 
 [[entries]]
 label = "102_No"
@@ -1018,8 +1018,8 @@ symbol = "No"
 name = "Nobelium"
 config = "[Rn] 5f¹⁴ 7s²"
 mass = "259.10103"
-avg_time_ns = 8098.21
-iterations_per_sec = 125000.00
+avg_time_ns = 8344.92
+iterations_per_sec = 120481.93
 
 [[entries]]
 label = "103_Lr"
@@ -1028,8 +1028,8 @@ symbol = "Lr"
 name = "Lawrencium"
 config = "[Rn] 5f¹⁴ 7s² 7p¹"
 mass = "266.12"
-avg_time_ns = 7958.24
-iterations_per_sec = 142857.14
+avg_time_ns = 8910.24
+iterations_per_sec = 125000.00
 
 [[entries]]
 label = "104_Rf"
@@ -1038,8 +1038,8 @@ symbol = "Rf"
 name = "Rutherfordium"
 config = "[Rn] 5f¹⁴ 6d² 7s²"
 mass = "267.122"
-avg_time_ns = 8047.03
-iterations_per_sec = 125000.00
+avg_time_ns = 8290.02
+iterations_per_sec = 121951.22
 
 [[entries]]
 label = "105_Db"
@@ -1048,7 +1048,7 @@ symbol = "Db"
 name = "Dubnium"
 config = "[Rn] 5f¹⁴ 6d³ 7s²"
 mass = "268.126"
-avg_time_ns = 8232.80
+avg_time_ns = 8299.34
 iterations_per_sec = 121951.22
 
 [[entries]]
@@ -1058,7 +1058,7 @@ symbol = "Sg"
 name = "Seaborgium"
 config = "[Rn] 5f¹⁴ 6d⁴ 7s²"
 mass = "269.129"
-avg_time_ns = 8401.15
+avg_time_ns = 8248.20
 iterations_per_sec = 125000.00
 
 [[entries]]
@@ -1068,7 +1068,7 @@ symbol = "Bh"
 name = "Bohrium"
 config = "[Rn] 5f¹⁴ 6d⁵ 7s²"
 mass = "270.134"
-avg_time_ns = 8499.11
+avg_time_ns = 8444.88
 iterations_per_sec = 119047.62
 
 [[entries]]
@@ -1078,8 +1078,8 @@ symbol = "Hs"
 name = "Hassium"
 config = "[Rn] 5f¹⁴ 6d⁶ 7s²"
 mass = "269.134"
-avg_time_ns = 9304.38
-iterations_per_sec = 107526.88
+avg_time_ns = 8561.10
+iterations_per_sec = 117647.06
 
 [[entries]]
 label = "109_Mt"
@@ -1088,7 +1088,7 @@ symbol = "Mt"
 name = "Meitnerium"
 config = "[Rn] 5f¹⁴ 6d⁷ 7s²"
 mass = "278.156"
-avg_time_ns = 8830.90
+avg_time_ns = 8466.37
 iterations_per_sec = 125000.00
 
 [[entries]]
@@ -1098,8 +1098,8 @@ symbol = "Ds"
 name = "Darmstadtium"
 config = "[Rn] 5f¹⁴ 6d⁸ 7s²"
 mass = "281.165"
-avg_time_ns = 8897.69
-iterations_per_sec = 113636.37
+avg_time_ns = 8539.74
+iterations_per_sec = 119047.62
 
 [[entries]]
 label = "111_Rg"
@@ -1108,8 +1108,8 @@ symbol = "Rg"
 name = "Roentgenium"
 config = "[Rn] 5f¹⁴ 6d⁹ 7s²"
 mass = "282.169"
-avg_time_ns = 8706.14
-iterations_per_sec = 114942.53
+avg_time_ns = 8503.51
+iterations_per_sec = 117647.06
 
 [[entries]]
 label = "112_Cn"
@@ -1118,7 +1118,7 @@ symbol = "Cn"
 name = "Copernicium"
 config = "[Rn] 5f¹⁴ 6d¹⁰ 7s²"
 mass = "285.177"
-avg_time_ns = 10072.36
+avg_time_ns = 10129.10
 iterations_per_sec = 100000.00
 
 [[entries]]
@@ -1128,8 +1128,8 @@ symbol = "Nh"
 name = "Nihonium"
 config = "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹"
 mass = "286.182"
-avg_time_ns = 9439.48
-iterations_per_sec = 106382.98
+avg_time_ns = 8676.41
+iterations_per_sec = 116279.07
 
 [[entries]]
 label = "114_Fl"
@@ -1138,8 +1138,8 @@ symbol = "Fl"
 name = "Flerovium"
 config = "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²"
 mass = "289.19"
-avg_time_ns = 10116.05
-iterations_per_sec = 99009.90
+avg_time_ns = 8943.08
+iterations_per_sec = 112359.55
 
 [[entries]]
 label = "115_Mc"
@@ -1148,7 +1148,7 @@ symbol = "Mc"
 name = "Moscovium"
 config = "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³"
 mass = "290.196"
-avg_time_ns = 8778.98
+avg_time_ns = 8776.39
 iterations_per_sec = 125000.00
 
 [[entries]]
@@ -1158,8 +1158,8 @@ symbol = "Lv"
 name = "Livermorium"
 config = "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴"
 mass = "293.205"
-avg_time_ns = 9629.90
-iterations_per_sec = 104166.66
+avg_time_ns = 8886.08
+iterations_per_sec = 113636.36
 
 [[entries]]
 label = "117_Ts"
@@ -1168,8 +1168,8 @@ symbol = "Ts"
 name = "Tennessine"
 config = "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted)"
 mass = "294"
-avg_time_ns = 9498.33
-iterations_per_sec = 106382.98
+avg_time_ns = 9014.73
+iterations_per_sec = 111111.11
 
 [[entries]]
 label = "118_Og"
@@ -1178,6 +1178,6 @@ symbol = "Og"
 name = "Oganesson"
 config = "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)"
 mass = "294"
-avg_time_ns = 9873.80
+avg_time_ns = 9093.12
 iterations_per_sec = 111111.11
 

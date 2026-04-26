@@ -6,22 +6,22 @@ entries:
     name: Compton time
     domain: physics
     test: "particle::compton_time"
-    avg_time_ns: 1861519.00
+    avg_time_ns: 1757910.00
   - label: particle_fine_structure_constant
     symbol: FSC
     name: Fine structure constant
     domain: physics
     test: "particle::fine_structure_constant"
-    avg_time_ns: 1784589.00
+    avg_time_ns: 1790600.00
   - label: particle_photon_energy
     symbol: PE
     name: Photon energy
     domain: physics
     test: "particle::photon_energy"
-    avg_time_ns: 1733939.00
+    avg_time_ns: 2135011.00
   - label: particle_planck_energy
     symbol: PE
     name: Planck energy
     domain: physics
     test: "particle::planck_energy"
-    avg_time_ns: 2185169.00
+    avg_time_ns: 1803910.00

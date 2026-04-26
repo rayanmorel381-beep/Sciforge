@@ -6,16 +6,16 @@ entries:
     name: Jukes cantor distance
     domain: biology
     test: "phylogenetics::jukes_cantor_distance"
-    avg_time_ns: 2288709.00
+    avg_time_ns: 2535911.00
   - label: phylogenetics_parsimony_score
     symbol: PS
     name: Parsimony score
     domain: biology
     test: "phylogenetics::parsimony_score"
-    avg_time_ns: 2182899.00
+    avg_time_ns: 2993510.00
   - label: phylogenetics_sackin_index
     symbol: SI
     name: Sackin index
     domain: biology
     test: "phylogenetics::sackin_index"
-    avg_time_ns: 1973689.00
+    avg_time_ns: 2590951.00

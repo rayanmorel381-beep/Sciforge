@@ -8,9 +8,9 @@
   "precision": "f32",
   "elapsed_ms": 4,
   "iterations": 1000,
-  "avg_time_ns": 4324.45,
-  "min_time_ns": 4324.45,
-  "max_time_ns": 4324.45,
+  "avg_time_ns": 4203.19,
+  "min_time_ns": 4203.19,
+  "max_time_ns": 4203.19,
   "time_stddev": 0.0000,
   "iterations_per_sec": 250000.00,
   "result": "Z=55 | Cs (Cesium) | 132.90545196 u | alkali metal | [Xe] 6s¹"

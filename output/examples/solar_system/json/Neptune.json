@@ -11,12 +11,12 @@
   "hohmann_dv": "15.71 km/s",
   "experiment_name": "Neptune_orbit",
   "precision": "f64",
-  "elapsed_ms": 9,
+  "elapsed_ms": 8,
   "iterations": 5000,
-  "avg_time_ns": 1813.08,
-  "min_time_ns": 1813.08,
-  "max_time_ns": 1813.08,
+  "avg_time_ns": 1726.02,
+  "min_time_ns": 1726.02,
+  "max_time_ns": 1726.02,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 555555.56,
+  "iterations_per_sec": 625000.00,
   "result": "Neptune | T=60151.16 days | v_circ=5.43 km/s | v_esc=23.56 km/s | Hohmann Δv=15.71 km/s"
 }

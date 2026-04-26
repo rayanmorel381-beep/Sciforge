@@ -11,11 +11,11 @@ computed_age: 464.5 Myr
 expected_age: 3800 Myr
 experiment_name: Isua Greenstone_dating
 precision: f64
-elapsed_ms: 22
+elapsed_ms: 24
 iterations: 5000
-avg_time_ns: 4527.30
-min_time_ns: 4527.30
-max_time_ns: 4527.30
+avg_time_ns: 4803.45
+min_time_ns: 4803.45
+max_time_ns: 4803.45
 time_stddev: 0.0000
-iterations_per_sec: 227272.73
+iterations_per_sec: 208333.33
 result: "Isua Greenstone | U-Pb (235) | D/P=0.5800 | t½=7.0400e8 years | Computed: 464.5 Myr | Expected: 3800 Myr"

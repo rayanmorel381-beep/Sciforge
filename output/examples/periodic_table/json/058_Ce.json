@@ -8,9 +8,9 @@
   "precision": "f64",
   "elapsed_ms": 4,
   "iterations": 1000,
-  "avg_time_ns": 4410.13,
-  "min_time_ns": 4410.13,
-  "max_time_ns": 4410.13,
+  "avg_time_ns": 4563.78,
+  "min_time_ns": 4563.78,
+  "max_time_ns": 4563.78,
   "time_stddev": 0.0000,
   "iterations_per_sec": 250000.00,
   "result": "Z=58 | Ce (Cerium) | 140.116 u | lanthanide | [Xe] 4f¹ 5d¹ 6s²"

@@ -6,34 +6,34 @@ entries:
     name: Boron
     config: 1s² 2s² 2p¹
     mass: 10.81
-    avg_time_ns: 402.31
+    avg_time_ns: 463.13
   - label: 014_Si
     symbol: Si
     name: Silicon
     config: [Ne] 3s² 3p²
     mass: 28.085
-    avg_time_ns: 1140.37
+    avg_time_ns: 1108.43
   - label: 032_Ge
     symbol: Ge
     name: Germanium
     config: [Ar] 3d¹⁰ 4s² 4p²
     mass: 72.63
-    avg_time_ns: 2461.49
+    avg_time_ns: 2456.93
   - label: 033_As
     symbol: As
     name: Arsenic
     config: [Ar] 3d¹⁰ 4s² 4p³
     mass: 74.921595
-    avg_time_ns: 2543.32
+    avg_time_ns: 2569.77
   - label: 051_Sb
     symbol: Sb
     name: Antimony
     config: [Kr] 4d¹⁰ 5s² 5p³
     mass: 121.76
-    avg_time_ns: 3933.09
+    avg_time_ns: 3969.11
   - label: 052_Te
     symbol: Te
     name: Tellurium
     config: [Kr] 4d¹⁰ 5s² 5p⁴
     mass: 127.6
-    avg_time_ns: 3963.67
+    avg_time_ns: 4146.63

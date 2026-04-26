@@ -6,22 +6,22 @@ entries:
     name: Poly one
     domain: maths
     test: "misc::poly_one"
-    avg_time_ns: 1701799.00
+    avg_time_ns: 2082020.00
   - label: misc_poly_zero
     symbol: PZ
     name: Poly zero
     domain: maths
     test: "misc::poly_zero"
-    avg_time_ns: 2202689.00
+    avg_time_ns: 1918300.00
   - label: misc_quaternion_pure
     symbol: QP
     name: Quaternion pure
     domain: maths
     test: "misc::quaternion_pure"
-    avg_time_ns: 1961720.00
+    avg_time_ns: 1839071.00
   - label: misc_tensor_zeros
     symbol: TZ
     name: Tensor zeros
     domain: maths
     test: "misc::tensor_zeros"
-    avg_time_ns: 1889299.00
+    avg_time_ns: 1972660.00

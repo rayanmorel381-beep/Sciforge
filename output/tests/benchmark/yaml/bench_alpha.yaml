@@ -3,9 +3,9 @@ experiment_name: bench_alpha
 precision: f64
 elapsed_ms: 0
 iterations: 100
-avg_time_ns: 16.50
-min_time_ns: 16.50
-max_time_ns: 16.50
+avg_time_ns: 9.70
+min_time_ns: 9.70
+max_time_ns: 9.70
 time_stddev: 0.0000
 iterations_per_sec: 0.00
 result: alpha completed

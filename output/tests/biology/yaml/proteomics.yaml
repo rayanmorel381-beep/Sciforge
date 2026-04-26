@@ -6,22 +6,22 @@ entries:
     name: Gravy index
     domain: biology
     test: "proteomics::gravy_index"
-    avg_time_ns: 2137160.00
+    avg_time_ns: 2481320.00
   - label: proteomics_mass_accuracy_ppm
     symbol: MAP
     name: Mass accuracy ppm
     domain: biology
     test: "proteomics::mass_accuracy_ppm"
-    avg_time_ns: 2516799.00
+    avg_time_ns: 2032090.00
   - label: proteomics_mz_ratio
     symbol: MR
     name: Mz ratio
     domain: biology
     test: "proteomics::mz_ratio"
-    avg_time_ns: 2079879.00
+    avg_time_ns: 2423591.00
   - label: proteomics_protein_coverage
     symbol: PC
     name: Protein coverage
     domain: biology
     test: "proteomics::protein_coverage"
-    avg_time_ns: 2017939.00
+    avg_time_ns: 2107940.00

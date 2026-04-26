@@ -7,9 +7,9 @@ experiment_name: Ta_Tantalum_benchmark
 precision: f32
 elapsed_ms: 5
 iterations: 1000
-avg_time_ns: 5554.75
-min_time_ns: 5554.75
-max_time_ns: 5554.75
+avg_time_ns: 5761.57
+min_time_ns: 5761.57
+max_time_ns: 5761.57
 time_stddev: 0.0000
 iterations_per_sec: 200000.00
 result: Z=73 | Ta (Tantalum) | 180.94788 u | transition metal | [Xe] 4f¹⁴ 5d³ 6s²

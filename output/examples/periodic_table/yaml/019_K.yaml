@@ -7,9 +7,9 @@ experiment_name: K_Potassium_benchmark
 precision: f32
 elapsed_ms: 1
 iterations: 1000
-avg_time_ns: 1526.03
-min_time_ns: 1526.03
-max_time_ns: 1526.03
+avg_time_ns: 1459.22
+min_time_ns: 1459.22
+max_time_ns: 1459.22
 time_stddev: 0.0000
 iterations_per_sec: 1000000.00
 result: Z=19 | K (Potassium) | 39.0983 u | alkali metal | [Ar] 4s¹

@@ -11,7 +11,7 @@ entries:
     circular_vel: 13.06 km/s
     escape_vel: 60.20 km/s
     hohmann_dv: 14.44 km/s
-    avg_time_ns: 1797.72
+    avg_time_ns: 1762.57
   - label: Saturn
     symbol: ♄
     name: Saturn
@@ -22,4 +22,4 @@ entries:
     circular_vel: 9.62 km/s
     escape_vel: 36.09 km/s
     hohmann_dv: 15.74 km/s
-    avg_time_ns: 1849.66
+    avg_time_ns: 1761.93

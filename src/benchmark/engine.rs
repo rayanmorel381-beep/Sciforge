@@ -8,8 +8,8 @@ pub struct BenchmarkMetrics<'a> {
     pub elapsed_ms: u64,
     pub iterations: u64,
     pub input_samples: u64,
-    pub avg_time_ns: f32,
-    pub last_time_ns: f32,
+    pub avg_time_ns: f64,
+    pub last_time_ns: f64,
     pub output_bytes: usize,
     pub total_flops: u64,
     pub step_count: u32,
@@ -18,22 +18,22 @@ pub struct BenchmarkMetrics<'a> {
     pub benchmark_flags: u64,
     pub input_bytes: u64,
     pub result_bytes: u64,
-    pub min_time_ns: f32,
-    pub max_time_ns: f32,
-    pub time_stddev: f32,
-    pub iterations_per_sec: f32,
-    pub samples_per_sec: f32,
-    pub eval_error: f32,
-    pub eval_accuracy: f32,
-    pub eval_r_squared: f32,
-    pub eval_mae: f32,
+    pub min_time_ns: f64,
+    pub max_time_ns: f64,
+    pub time_stddev: f64,
+    pub iterations_per_sec: f64,
+    pub samples_per_sec: f64,
+    pub eval_error: f64,
+    pub eval_accuracy: f64,
+    pub eval_r_squared: f64,
+    pub eval_mae: f64,
     pub eval_samples: u64,
     pub eval_dataset_hash: u64,
     pub logical_cores: u32,
     pub avg_frequency_mhz: u32,
     pub max_frequency_mhz: u32,
     pub max_workers: u32,
-    pub target_cpu_utilization: f32,
+    pub target_cpu_utilization: f64,
 }
 
 pub const CSV_HEADER: &str = "experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result";
@@ -62,39 +62,39 @@ pub enum BenchmarkEncodeError {
 }
 
 pub const BENCHMARK_MAGIC: [u8; 4] = [b'B', b'M', b'K', 0x01];
-pub const BENCHMARK_VERSION: u16 = 4;
+pub const BENCHMARK_VERSION: u16 = 5;
 pub const BENCHMARK_HEADER_SIZE: usize = 4
     + 2
     + 2
     + 8
     + 8
     + 8
-    + 4
-    + 4
     + 8
-    + 8
-    + 4
-    + 4
-    + 4
     + 8
     + 8
     + 8
     + 4
     + 4
     + 4
-    + 4
-    + 4
-    + 4
-    + 4
-    + 4
-    + 4
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
+    + 8
     + 8
     + 8
     + 4
     + 4
     + 4
     + 4
-    + 4
+    + 8
     + 2
     + 2;
 
@@ -110,9 +110,9 @@ pub fn bench<'a, T, F: Fn() -> T>(
     }
     let elapsed = start.elapsed();
     let elapsed_ms = elapsed.as_millis() as u64;
-    let avg_ns = elapsed.as_nanos() as f32 / iterations as f32;
+    let avg_ns = elapsed.as_nanos() as f64 / iterations as f64;
     let ips = if elapsed_ms > 0 {
-        iterations as f32 * 1000.0 / elapsed_ms as f32
+        iterations as f64 * 1000.0 / elapsed_ms as f64
     } else {
         0.0
     };

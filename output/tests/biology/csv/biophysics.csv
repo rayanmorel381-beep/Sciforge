@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-biophysics::fret_efficiency,f64,2,1,2613499,2613499,2613499,0,500,pass,biophysics,FE,Fret efficiency,biology,biophysics::fret_efficiency
-biophysics::harmonic_bond,f64,3,1,3845128,3845128,3845128,0,333.33334,pass,biophysics,HB,Harmonic bond,biology,biophysics::harmonic_bond
-biophysics::lennard_jones,f64,3,1,3076909,3076909,3076909,0,333.33334,pass,biophysics,LJ,Lennard jones,biology,biophysics::lennard_jones
-biophysics::membrane_tension,f64,2,1,2739149,2739149,2739149,0,500,pass,biophysics,MT,Membrane tension,biology,biophysics::membrane_tension
+biophysics::fret_efficiency,f64,2,1,2983951,2983951,2983951,0,500,pass,biophysics,FE,Fret efficiency,biology,biophysics::fret_efficiency
+biophysics::harmonic_bond,f64,2,1,2245980,2245980,2245980,0,500,pass,biophysics,HB,Harmonic bond,biology,biophysics::harmonic_bond
+biophysics::lennard_jones,f64,2,1,2532751,2532751,2532751,0,500,pass,biophysics,LJ,Lennard jones,biology,biophysics::lennard_jones
+biophysics::membrane_tension,f64,2,1,2522360,2522360,2522360,0,500,pass,biophysics,MT,Membrane tension,biology,biophysics::membrane_tension

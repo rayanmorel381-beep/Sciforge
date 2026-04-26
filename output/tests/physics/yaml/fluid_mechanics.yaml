@@ -6,16 +6,16 @@ entries:
     name: Bernoulli pressure
     domain: physics
     test: "fluid_mechanics::bernoulli_pressure"
-    avg_time_ns: 2060829.00
+    avg_time_ns: 1895681.00
   - label: fluid_mechanics_drag_force
     symbol: DF
     name: Drag force
     domain: physics
     test: "fluid_mechanics::drag_force"
-    avg_time_ns: 1987399.00
+    avg_time_ns: 1882550.00
   - label: fluid_mechanics_reynolds_number
     symbol: RN
     name: Reynolds number
     domain: physics
     test: "fluid_mechanics::reynolds_number"
-    avg_time_ns: 1919159.00
+    avg_time_ns: 1740270.00

@@ -6,88 +6,88 @@ entries:
     name: Actinium
     config: [Rn] 6d¹ 7s²
     mass: 227.027752
-    avg_time_ns: 6975.24
+    avg_time_ns: 6847.07
   - label: 090_Th
     symbol: Th
     name: Thorium
     config: [Rn] 6d² 7s²
     mass: 232.0377
-    avg_time_ns: 7089.71
+    avg_time_ns: 7229.11
   - label: 091_Pa
     symbol: Pa
     name: Protactinium
     config: [Rn] 5f² 6d¹ 7s²
     mass: 231.03588
-    avg_time_ns: 7072.09
+    avg_time_ns: 7288.52
   - label: 092_U
     symbol: U
     name: Uranium
     config: [Rn] 5f³ 6d¹ 7s²
     mass: 238.02891
-    avg_time_ns: 7316.16
+    avg_time_ns: 7130.27
   - label: 093_Np
     symbol: Np
     name: Neptunium
     config: [Rn] 5f⁴ 6d¹ 7s²
     mass: 237.048174
-    avg_time_ns: 7245.58
+    avg_time_ns: 7185.77
   - label: 094_Pu
     symbol: Pu
     name: Plutonium
     config: [Rn] 5f⁶ 7s²
     mass: 244.064204
-    avg_time_ns: 7277.76
+    avg_time_ns: 7347.30
   - label: 095_Am
     symbol: Am
     name: Americium
     config: [Rn] 5f⁷ 7s²
     mass: 243.061381
-    avg_time_ns: 7388.27
+    avg_time_ns: 7340.23
   - label: 096_Cm
     symbol: Cm
     name: Curium
     config: [Rn] 5f⁷ 6d¹ 7s²
     mass: 247.070354
-    avg_time_ns: 7501.51
+    avg_time_ns: 7677.89
   - label: 097_Bk
     symbol: Bk
     name: Berkelium
     config: [Rn] 5f⁹ 7s²
     mass: 247.070307
-    avg_time_ns: 7534.16
+    avg_time_ns: 7817.07
   - label: 098_Cf
     symbol: Cf
     name: Californium
     config: [Rn] 5f¹⁰ 7s²
     mass: 251.079587
-    avg_time_ns: 7762.57
+    avg_time_ns: 7892.61
   - label: 099_Es
     symbol: Es
     name: Einsteinium
     config: [Rn] 5f¹¹ 7s²
     mass: 252.08298
-    avg_time_ns: 7814.70
+    avg_time_ns: 7817.05
   - label: 100_Fm
     symbol: Fm
     name: Fermium
     config: [Rn] 5f¹² 7s²
     mass: 257.095105
-    avg_time_ns: 8014.43
+    avg_time_ns: 8230.76
   - label: 101_Md
     symbol: Md
     name: Mendelevium
     config: [Rn] 5f¹³ 7s²
     mass: 258.098431
-    avg_time_ns: 7986.83
+    avg_time_ns: 8117.14
   - label: 102_No
     symbol: No
     name: Nobelium
     config: [Rn] 5f¹⁴ 7s²
     mass: 259.10103
-    avg_time_ns: 8098.21
+    avg_time_ns: 8344.92
   - label: 103_Lr
     symbol: Lr
     name: Lawrencium
     config: [Rn] 5f¹⁴ 7s² 7p¹
     mass: 266.12
-    avg_time_ns: 7958.24
+    avg_time_ns: 8910.24

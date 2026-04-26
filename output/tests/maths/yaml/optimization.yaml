@@ -6,16 +6,16 @@ entries:
     name: Lagrangian
     domain: maths
     test: "optimization::lagrangian"
-    avg_time_ns: 1821789.00
+    avg_time_ns: 1847660.00
   - label: optimization_project_box
     symbol: PB
     name: Project box
     domain: maths
     test: "optimization::project_box"
-    avg_time_ns: 1922459.00
+    avg_time_ns: 1844210.00
   - label: optimization_quadratic_objective
     symbol: QO
     name: Quadratic objective
     domain: maths
     test: "optimization::quadratic_objective"
-    avg_time_ns: 1774419.00
+    avg_time_ns: 1778321.00

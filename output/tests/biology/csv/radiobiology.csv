@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-radiobiology::oxygen_enhancement_ratio,f64,1,1,1931849,1931849,1931849,0,1000,pass,radiobiology,OER,Oxygen enhancement ratio,biology,radiobiology::oxygen_enhancement_ratio
-radiobiology::radio_biologically_effective_dose,f64,2,1,2311359,2311359,2311359,0,500,pass,radiobiology,RBE,Radio biologically effective dose,biology,radiobiology::radio_biologically_effective_dose
-radiobiology::radio_linear_quadratic_survival,f64,2,1,2226039,2226039,2226039,0,500,pass,radiobiology,RLQ,Radio linear quadratic survival,biology,radiobiology::radio_linear_quadratic_survival
-radiobiology::tcp,f64,2,1,2067209,2067209,2067209,0,500,pass,radiobiology,Tc,Tcp,biology,radiobiology::tcp
+radiobiology::oxygen_enhancement_ratio,f64,2,1,2108510,2108510,2108510,0,500,pass,radiobiology,OER,Oxygen enhancement ratio,biology,radiobiology::oxygen_enhancement_ratio
+radiobiology::radio_biologically_effective_dose,f64,2,1,2046081,2046081,2046081,0,500,pass,radiobiology,RBE,Radio biologically effective dose,biology,radiobiology::radio_biologically_effective_dose
+radiobiology::radio_linear_quadratic_survival,f64,1,1,1949090,1949090,1949090,0,1000,pass,radiobiology,RLQ,Radio linear quadratic survival,biology,radiobiology::radio_linear_quadratic_survival
+radiobiology::tcp,f64,1,1,1997450,1997450,1997450,0,1000,pass,radiobiology,Tc,Tcp,biology,radiobiology::tcp

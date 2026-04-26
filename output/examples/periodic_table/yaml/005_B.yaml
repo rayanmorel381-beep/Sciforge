@@ -7,9 +7,9 @@ experiment_name: B_Boron_benchmark
 precision: f32
 elapsed_ms: 2
 iterations: 5000
-avg_time_ns: 402.31
-min_time_ns: 402.31
-max_time_ns: 402.31
+avg_time_ns: 463.13
+min_time_ns: 463.13
+max_time_ns: 463.13
 time_stddev: 0.0000
 iterations_per_sec: 2500000.00
 result: Z=5 | B (Boron) | 10.81 u | metalloid | 1s² 2s² 2p¹

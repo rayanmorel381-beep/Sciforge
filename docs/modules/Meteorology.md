@@ -1,6 +1,6 @@
 # Meteorology Module
 
-The **Meteorology** module spans **8 submodules** covering atmospheric science: thermodynamics and composition, radiative transfer, atmospheric dynamics, and precipitation hydrology. It provides computational tools for weather analysis, climate modeling, and hydrological engineering.
+The **Meteorology** module spans **10 submodules** covering atmospheric science: thermodynamics and composition, radiative transfer, atmospheric dynamics, cloud microphysics, severe weather, wind dynamics, and precipitation hydrology. It provides computational tools for weather analysis, climate modeling, and hydrological engineering.
 
 ---
 

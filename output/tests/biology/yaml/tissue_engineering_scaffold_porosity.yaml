@@ -7,9 +7,9 @@ experiment_name: "tissue_engineering::scaffold_porosity"
 precision: f64
 elapsed_ms: 2
 iterations: 1
-avg_time_ns: 2120669.00
-min_time_ns: 2120669.00
-max_time_ns: 2120669.00
+avg_time_ns: 2020220.00
+min_time_ns: 2020220.00
+max_time_ns: 2020220.00
 time_stddev: 0.0000
 iterations_per_sec: 500.00
 result: pass

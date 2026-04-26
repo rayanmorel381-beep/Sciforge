@@ -7,12 +7,12 @@
   "conversion": "101325 Pa → 1.000000e0 atm",
   "experiment_name": "Atmospheric_convert",
   "precision": "f64",
-  "elapsed_ms": 33,
+  "elapsed_ms": 45,
   "iterations": 10000,
-  "avg_time_ns": 3394.73,
-  "min_time_ns": 3394.73,
-  "max_time_ns": 3394.73,
+  "avg_time_ns": 4529.37,
+  "min_time_ns": 4529.37,
+  "max_time_ns": 4529.37,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 303030.31,
+  "iterations_per_sec": 222222.22,
   "result": "Atmospheric | 101325 Pa → 1.000000e0 atm"
 }

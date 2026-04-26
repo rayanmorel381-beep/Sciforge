@@ -14,8 +14,8 @@ half_life = "4.4680e9 years"
 decay_constant = "4.9156e-18 s⁻¹"
 computed_age = "4532.5 Myr"
 expected_age = "4400 Myr"
-avg_time_ns = 3817.20
-iterations_per_sec = 263157.91
+avg_time_ns = 3713.78
+iterations_per_sec = 277777.78
 
 [[entries]]
 label = "Acasta Gneiss"
@@ -30,7 +30,7 @@ half_life = "4.4680e9 years"
 decay_constant = "4.9156e-18 s⁻¹"
 computed_age = "3965.7 Myr"
 expected_age = "4030 Myr"
-avg_time_ns = 3712.41
+avg_time_ns = 3755.43
 iterations_per_sec = 277777.78
 
 [[entries]]
@@ -46,8 +46,8 @@ half_life = "7.0400e8 years"
 decay_constant = "3.1197e-17 s⁻¹"
 computed_age = "464.5 Myr"
 expected_age = "3800 Myr"
-avg_time_ns = 4527.30
-iterations_per_sec = 227272.73
+avg_time_ns = 4803.45
+iterations_per_sec = 208333.33
 
 [[entries]]
 label = "Pilbara Craton"
@@ -62,8 +62,8 @@ half_life = "1.2480e9 years"
 decay_constant = "1.7598e-17 s⁻¹"
 computed_age = "1294.7 Myr"
 expected_age = "3500 Myr"
-avg_time_ns = 4734.31
-iterations_per_sec = 217391.30
+avg_time_ns = 5376.54
+iterations_per_sec = 192307.69
 
 [[entries]]
 label = "Kaapvaal Craton"
@@ -78,8 +78,8 @@ half_life = "4.4680e9 years"
 decay_constant = "4.9156e-18 s⁻¹"
 computed_age = "3228.2 Myr"
 expected_age = "3100 Myr"
-avg_time_ns = 3742.12
-iterations_per_sec = 277777.78
+avg_time_ns = 3999.39
+iterations_per_sec = 263157.89
 
 [[entries]]
 label = "Bushveld Complex"
@@ -94,8 +94,8 @@ half_life = "4.4680e9 years"
 decay_constant = "4.9156e-18 s⁻¹"
 computed_age = "1789.7 Myr"
 expected_age = "2055 Myr"
-avg_time_ns = 3766.45
-iterations_per_sec = 277777.78
+avg_time_ns = 3987.71
+iterations_per_sec = 263157.89
 
 [[entries]]
 label = "Sudbury Impact"
@@ -110,8 +110,8 @@ half_life = "4.4680e9 years"
 decay_constant = "4.9156e-18 s⁻¹"
 computed_age = "1591.4 Myr"
 expected_age = "1849 Myr"
-avg_time_ns = 3745.87
-iterations_per_sec = 277777.78
+avg_time_ns = 3884.42
+iterations_per_sec = 263157.89
 
 [[entries]]
 label = "Deccan Traps"
@@ -126,8 +126,8 @@ half_life = "1.2480e9 years"
 decay_constant = "1.7598e-17 s⁻¹"
 computed_age = "84.1 Myr"
 expected_age = "66 Myr"
-avg_time_ns = 4590.98
-iterations_per_sec = 227272.73
+avg_time_ns = 4827.58
+iterations_per_sec = 208333.33
 
 [[entries]]
 label = "KT Boundary clay"
@@ -142,8 +142,8 @@ half_life = "5.7300e3 years"
 decay_constant = "3.8330e-12 s⁻¹"
 computed_age = "beyond range"
 expected_age = "65.0 kyr"
-avg_time_ns = 4595.33
-iterations_per_sec = 227272.73
+avg_time_ns = 4837.50
+iterations_per_sec = 208333.33
 
 [[entries]]
 label = "Lascaux paintings"
@@ -158,6 +158,6 @@ half_life = "5.7300e3 years"
 decay_constant = "3.8330e-12 s⁻¹"
 computed_age = "1641 yr"
 expected_age = "17.0 kyr"
-avg_time_ns = 4756.22
+avg_time_ns = 4742.27
 iterations_per_sec = 217391.30
 

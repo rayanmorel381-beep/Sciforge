@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-systems_biology::metabolic_control_coefficient,f64,1,1,1841209,1841209,1841209,0,1000,pass,systems_biology,MCC,Metabolic control coefficient,biology,systems_biology::metabolic_control_coefficient
-systems_biology::oscillation_period,f64,2,1,2125069,2125069,2125069,0,500,pass,systems_biology,OP,Oscillation period,biology,systems_biology::oscillation_period
-systems_biology::ultrasensitivity_index,f64,1,1,1995669,1995669,1995669,0,1000,pass,systems_biology,UI,Ultrasensitivity index,biology,systems_biology::ultrasensitivity_index
+systems_biology::metabolic_control_coefficient,f64,1,1,1978441,1978441,1978441,0,1000,pass,systems_biology,MCC,Metabolic control coefficient,biology,systems_biology::metabolic_control_coefficient
+systems_biology::oscillation_period,f64,2,1,2983160,2983160,2983160,0,500,pass,systems_biology,OP,Oscillation period,biology,systems_biology::oscillation_period
+systems_biology::ultrasensitivity_index,f64,2,1,2347041,2347041,2347041,0,500,pass,systems_biology,UI,Ultrasensitivity index,biology,systems_biology::ultrasensitivity_index

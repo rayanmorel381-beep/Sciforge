@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-toxicology::bcf_ratio,f64,2,1,2049629,2049629,2049629,0,500,pass,toxicology,BR,Bcf ratio,biology,toxicology::bcf_ratio
-toxicology::ld50_probit,f64,1,1,1986869,1986869,1986869,0,1000,pass,toxicology,LP,Ld50 probit,biology,toxicology::ld50_probit
-toxicology::risk_quotient,f64,1,1,1919359,1919359,1919359,0,1000,pass,toxicology,RQ,Risk quotient,biology,toxicology::risk_quotient
-toxicology::therapeutic_window,f64,2,1,2086099,2086099,2086099,0,500,pass,toxicology,TW,Therapeutic window,biology,toxicology::therapeutic_window
+toxicology::bcf_ratio,f64,2,1,2163320,2163320,2163320,0,500,pass,toxicology,BR,Bcf ratio,biology,toxicology::bcf_ratio
+toxicology::ld50_probit,f64,1,1,1977881,1977881,1977881,0,1000,pass,toxicology,LP,Ld50 probit,biology,toxicology::ld50_probit
+toxicology::risk_quotient,f64,1,1,1907330,1907330,1907330,0,1000,pass,toxicology,RQ,Risk quotient,biology,toxicology::risk_quotient
+toxicology::therapeutic_window,f64,2,1,2199140,2199140,2199140,0,500,pass,toxicology,TW,Therapeutic window,biology,toxicology::therapeutic_window

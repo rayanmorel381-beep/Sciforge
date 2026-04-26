@@ -15,9 +15,9 @@
   "precision": "f64",
   "elapsed_ms": 8,
   "iterations": 5000,
-  "avg_time_ns": 1704.27,
-  "min_time_ns": 1704.27,
-  "max_time_ns": 1704.27,
+  "avg_time_ns": 1794.42,
+  "min_time_ns": 1794.42,
+  "max_time_ns": 1794.42,
   "time_stddev": 0.0000,
   "iterations_per_sec": 625000.00,
   "result": "Proxima Centauri (M5.5Ve) | L=7.022e23 W | M_abs=15.56 | R_s=360.42 m | MS lifetime=0.0 Myr | Wien λ_max=953 nm"

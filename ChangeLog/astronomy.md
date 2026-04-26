@@ -2,6 +2,43 @@
 
 ---
 
+## v0.0.4
+
+### 1️⃣ New — Tidal Mechanics — `astronomy::tides` — 6 pub fn
+
+| Function | Signature | Formula / Description | Module |
+|---|---|---|---|
+| Tidal potential | `tidal_potential(m: f64, r: f64, d: f64, k2: f64, theta: f64) → f64` | $\Phi = -\frac{GM r^2}{d^3}(1+k_2)P_2(\cos\theta)$ | `astronomy::tides` |
+| Tidal bulge height | `tidal_bulge_height(a_tidal: f64, r: f64, g: f64, h2: f64) → f64` | $h = h_2 a_t r / g$ | `astronomy::tides` |
+| Spring tide amplitude | `spring_tide_amplitude(h_moon: f64, h_sun: f64) → f64` | $H_{spring} = H_{moon} + H_{sun}$ | `astronomy::tides` |
+| Neap tide amplitude | `neap_tide_amplitude(h_moon: f64, h_sun: f64) → f64` | $H_{neap} = \|H_{moon} - H_{sun}\|$ | `astronomy::tides` |
+| Tidal dissipation rate | `tidal_dissipation_rate(k2: f64, n: f64, m: f64, r: f64, q: f64, d: f64) → f64` | $\dot{E} = C\, k_2 n G M^2 R^5 / (Q d^6)$ | `astronomy::tides` |
+| Tidal locking timescale | `tidal_locking_timescale(omega: f64, a: f64, mu: f64, q: f64, m: f64, r: f64) → f64` | $\tau_{lock} = \omega a^6 \mu Q / (6 G M^2 R^5)$ | `astronomy::tides` |
+
+### 2️⃣ New — Planetary Rotation — `astronomy::rotation` — 7 pub fn
+
+| Function | Signature | Formula / Description | Module |
+|---|---|---|---|
+| Surface velocity at latitude | `surface_velocity_at_latitude(omega: f64, r: f64, phi: f64) → f64` | $v = \omega R \cos\phi$ | `astronomy::rotation` |
+| Centripetal acceleration | `centripetal_acceleration(omega: f64, r: f64, phi: f64) → f64` | $a_c = \omega^2 R \cos\phi$ | `astronomy::rotation` |
+| Coriolis parameter | `coriolis_parameter(omega: f64, phi: f64) → f64` | $f = 2\omega\sin\phi$ | `astronomy::rotation` |
+| Moment of inertia | `moment_of_inertia(c_factor: f64, m: f64, r: f64) → f64` | $I = C\, m R^2$ | `astronomy::rotation` |
+| Rotational kinetic energy | `rotational_kinetic_energy(inertia: f64, omega: f64) → f64` | $E_k = \frac{1}{2} I \omega^2$ | `astronomy::rotation` |
+| Nutation obliquity (rad) | `nutation_obliquity_rad(omega_node: f64) → f64` | $\Delta\varepsilon = A_{nut}\cos(\Omega)$ | `astronomy::rotation` |
+| Day length variation | `day_length_variation(doy: f64, latitude: f64, tilt: f64) → f64` | Photoperiod from declination and latitude | `astronomy::rotation` |
+
+### 3️⃣ New — Impact Physics — `astronomy::impacts` — 5 pub fn
+
+| Function | Signature | Formula / Description | Module |
+|---|---|---|---|
+| Crater diameter | `crater_diameter(rho_i: f64, d_p: f64, v: f64, g: f64, rho_t: f64) → f64` | $D = C_s (\rho_i/\rho_t)^{k_\rho} d_p^{k_d} v^{k_v} g^{k_g}$ | `astronomy::impacts` |
+| Fireball radius | `fireball_radius(e_kt: f64) → f64` | $R_{fb} = C_{fb}\, E^{k_E}$ | `astronomy::impacts` |
+| Ejecta volume | `ejecta_volume(d: f64, depth: f64) → f64` | $V = \frac{\pi}{6} D^2 \cdot depth$ | `astronomy::impacts` |
+| Impact velocity | `impact_velocity(v_inf: f64, v_esc: f64) → f64` | $v_i = \sqrt{v_\infty^2 + v_{esc}^2}$ | `astronomy::impacts` |
+| Ejecta escape fraction | `ejecta_escape_fraction(v_esc: f64, v_ejecta: f64) → f64` | Fraction of ejecta exceeding $v_{esc}$ | `astronomy::impacts` |
+
+---
+
 ## v0.0.3
 
 ### 1️⃣ New — Galactic Dynamics — `astronomy::galactic` — 21 pub fn

@@ -6,22 +6,22 @@ entries:
     name: Evolutionary rate darwin
     domain: biology
     test: "paleobiology::evolutionary_rate_darwin"
-    avg_time_ns: 1842559.00
+    avg_time_ns: 2158710.00
   - label: paleobiology_extinction_rate
     symbol: ER
     name: Extinction rate
     domain: biology
     test: "paleobiology::extinction_rate"
-    avg_time_ns: 1863559.00
+    avg_time_ns: 2106601.00
   - label: paleobiology_net_diversification_rate
     symbol: NDR
     name: Net diversification rate
     domain: biology
     test: "paleobiology::net_diversification_rate"
-    avg_time_ns: 1971260.00
+    avg_time_ns: 2391700.00
   - label: paleobiology_radiometric_age
     symbol: RA
     name: Radiometric age
     domain: biology
     test: "paleobiology::radiometric_age"
-    avg_time_ns: 1869729.00
+    avg_time_ns: 2270890.00

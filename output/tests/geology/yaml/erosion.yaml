@@ -6,28 +6,28 @@ entries:
     name: Chemical weathering rate
     domain: geology
     test: "erosion::chemical_weathering_rate"
-    avg_time_ns: 1695009.00
+    avg_time_ns: 1882400.00
   - label: erosion_fluvial_erosion_rate
     symbol: FER
     name: Fluvial erosion rate
     domain: geology
     test: "erosion::fluvial_erosion_rate"
-    avg_time_ns: 1749459.00
+    avg_time_ns: 2511600.00
   - label: erosion_frost_weathering_rate
     symbol: FWR
     name: Frost weathering rate
     domain: geology
     test: "erosion::frost_weathering_rate"
-    avg_time_ns: 1697289.00
+    avg_time_ns: 1810831.00
   - label: erosion_volcanic_explosivity_index
     symbol: VEI
     name: Volcanic explosivity index
     domain: geology
     test: "erosion::volcanic_explosivity_index"
-    avg_time_ns: 1902340.00
+    avg_time_ns: 1739600.00
   - label: erosion_wind_erosion_threshold
     symbol: WET
     name: Wind erosion threshold
     domain: geology
     test: "erosion::wind_erosion_threshold"
-    avg_time_ns: 2304438.00
+    avg_time_ns: 1769440.00

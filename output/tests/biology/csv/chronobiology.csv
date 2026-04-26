@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-chronobiology::circadian_amplitude_damping,f64,2,1,2000019,2000019,2000019,0,500,pass,chronobiology,CAD,Circadian amplitude damping,biology,chronobiology::circadian_amplitude_damping
-chronobiology::jet_lag_recovery,f64,1,1,1860429,1860429,1860429,0,1000,pass,chronobiology,JLR,Jet lag recovery,biology,chronobiology::jet_lag_recovery
-chronobiology::photoperiod,f64,2,1,2133809,2133809,2133809,0,500,pass,chronobiology,Ph,Photoperiod,biology,chronobiology::photoperiod
-chronobiology::zeitgeber_strength,f64,1,1,1878409,1878409,1878409,0,1000,pass,chronobiology,ZS,Zeitgeber strength,biology,chronobiology::zeitgeber_strength
+chronobiology::circadian_amplitude_damping,f64,2,1,2473550,2473550,2473550,0,500,pass,chronobiology,CAD,Circadian amplitude damping,biology,chronobiology::circadian_amplitude_damping
+chronobiology::jet_lag_recovery,f64,2,1,2473550,2473550,2473550,0,500,pass,chronobiology,JLR,Jet lag recovery,biology,chronobiology::jet_lag_recovery
+chronobiology::photoperiod,f64,2,1,2263801,2263801,2263801,0,500,pass,chronobiology,Ph,Photoperiod,biology,chronobiology::photoperiod
+chronobiology::zeitgeber_strength,f64,1,1,1978570,1978570,1978570,0,1000,pass,chronobiology,ZS,Zeitgeber strength,biology,chronobiology::zeitgeber_strength

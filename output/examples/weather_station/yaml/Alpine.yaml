@@ -14,7 +14,7 @@ entries:
     potential_temp: 299.4 K
     mixing_ratio: 4.17 g/kg
     lcl: 1166 m AGL
-    avg_time_ns: 5595.95
+    avg_time_ns: 5547.55
   - label: Mexico City
     symbol: M
     name: Mexico City
@@ -28,7 +28,7 @@ entries:
     potential_temp: 312.4 K
     mixing_ratio: 7.70 g/kg
     lcl: 1008 m AGL
-    avg_time_ns: 5636.10
+    avg_time_ns: 5568.53
   - label: Lhasa
     symbol: L
     name: Lhasa
@@ -42,4 +42,4 @@ entries:
     potential_temp: 319.5 K
     mixing_ratio: 3.73 g/kg
     lcl: 1494 m AGL
-    avg_time_ns: 5548.93
+    avg_time_ns: 5979.66

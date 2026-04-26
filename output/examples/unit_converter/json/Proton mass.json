@@ -7,12 +7,12 @@
   "conversion": "0.000000000000000000000000001672 kg → 1.006902e0 amu",
   "experiment_name": "Proton mass_convert",
   "precision": "f64",
-  "elapsed_ms": 39,
+  "elapsed_ms": 38,
   "iterations": 10000,
-  "avg_time_ns": 3953.62,
-  "min_time_ns": 3953.62,
-  "max_time_ns": 3953.62,
+  "avg_time_ns": 3802.66,
+  "min_time_ns": 3802.66,
+  "max_time_ns": 3802.66,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 256410.25,
+  "iterations_per_sec": 263157.89,
   "result": "Proton mass | 0.000000000000000000000000001672 kg → 1.006902e0 amu"
 }

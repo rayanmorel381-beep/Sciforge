@@ -6,11 +6,11 @@ config = "[Xe] 4f¹⁴ 5d² 6s²"
 mass = "178.49"
 experiment_name = "Hf_Hafnium_benchmark"
 precision = "f64"
-elapsed_ms = 55
+elapsed_ms = 58
 iterations = 10000
-avg_time_ns = 5537.44
-min_time_ns = 5537.44
-max_time_ns = 5537.44
+avg_time_ns = 5876.18
+min_time_ns = 5876.18
+max_time_ns = 5876.18
 time_stddev = 0.0000
-iterations_per_sec = 181818.19
+iterations_per_sec = 172413.79
 result = "Z=72 | Hf (Hafnium) | 178.49 u | transition metal | [Xe] 4f¹⁴ 5d² 6s²"

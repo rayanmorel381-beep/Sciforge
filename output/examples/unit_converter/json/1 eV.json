@@ -7,12 +7,12 @@
   "conversion": "1 eV → 1.602177e-19 J",
   "experiment_name": "1 eV_convert",
   "precision": "f64",
-  "elapsed_ms": 47,
+  "elapsed_ms": 58,
   "iterations": 10000,
-  "avg_time_ns": 4721.06,
-  "min_time_ns": 4721.06,
-  "max_time_ns": 4721.06,
+  "avg_time_ns": 5882.23,
+  "min_time_ns": 5882.23,
+  "max_time_ns": 5882.23,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 212765.95,
+  "iterations_per_sec": 172413.79,
   "result": "1 eV | 1 eV → 1.602177e-19 J"
 }

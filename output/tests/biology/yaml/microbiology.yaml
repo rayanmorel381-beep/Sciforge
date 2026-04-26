@@ -6,22 +6,22 @@ entries:
     name: Biofilm formation
     domain: biology
     test: "microbiology::biofilm_formation"
-    avg_time_ns: 3084289.00
+    avg_time_ns: 2306190.00
   - label: microbiology_chemostat_steady_state_biomass
     symbol: CSS
     name: Chemostat steady state biomass
     domain: biology
     test: "microbiology::chemostat_steady_state_biomass"
-    avg_time_ns: 2725198.00
+    avg_time_ns: 2471660.00
   - label: microbiology_generation_time_bacteria
     symbol: GTB
     name: Generation time bacteria
     domain: biology
     test: "microbiology::generation_time_bacteria"
-    avg_time_ns: 2246459.00
+    avg_time_ns: 2360381.00
   - label: microbiology_monod_growth
     symbol: MG
     name: Monod growth
     domain: biology
     test: "microbiology::monod_growth"
-    avg_time_ns: 1968609.00
+    avg_time_ns: 2351260.00

@@ -1,2 +1,2 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,altitude,temperature,pressure,relative_humidity,saturation_vp,dew_point,density_altitude,potential_temp,mixing_ratio,lcl
-Death Valley_weather,f64,27,5000,5569.0957,5569.0957,5569.0957,0,185185.19,Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K,Arid,DV,Death Valley,-86 m,38.5 °C,1025.0 hPa,12%,68.21 hPa,4.1 °C,2713 m,310.6 K,5.01 g/kg,3521 m AGL
+Death Valley_weather,f64,28,5000,5659.509,5659.509,5659.509,0,178571.42857142858,Death Valley | -86m | 38.5 °C | RH=12% | Td=4.1 °C | DA=2713 m | θ=310.6 K,Arid,DV,Death Valley,-86 m,38.5 °C,1025.0 hPa,12%,68.21 hPa,4.1 °C,2713 m,310.6 K,5.01 g/kg,3521 m AGL

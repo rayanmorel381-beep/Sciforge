@@ -12,7 +12,7 @@ entries:
     decay_constant: 3.1197e-17 s⁻¹
     computed_age: 464.5 Myr
     expected_age: 3800 Myr
-    avg_time_ns: 4527.30
+    avg_time_ns: 4803.45
   - label: Pilbara Craton
     symbol: K
     name: Pilbara Craton
@@ -24,7 +24,7 @@ entries:
     decay_constant: 1.7598e-17 s⁻¹
     computed_age: 1294.7 Myr
     expected_age: 3500 Myr
-    avg_time_ns: 4734.31
+    avg_time_ns: 5376.54
   - label: Kaapvaal Craton
     symbol: U
     name: Kaapvaal Craton
@@ -36,4 +36,4 @@ entries:
     decay_constant: 4.9156e-18 s⁻¹
     computed_age: 3228.2 Myr
     expected_age: 3100 Myr
-    avg_time_ns: 3742.12
+    avg_time_ns: 3999.39

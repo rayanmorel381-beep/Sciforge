@@ -6,22 +6,22 @@ entries:
     name: Carbon use efficiency
     domain: biology
     test: "mycology::carbon_use_efficiency"
-    avg_time_ns: 2549219.00
+    avg_time_ns: 2212720.00
   - label: mycology_decomposition_rate
     symbol: DR
     name: Decomposition rate
     domain: biology
     test: "mycology::decomposition_rate"
-    avg_time_ns: 2068769.00
+    avg_time_ns: 2511921.00
   - label: mycology_hyphal_growth_rate
     symbol: HGR
     name: Hyphal growth rate
     domain: biology
     test: "mycology::hyphal_growth_rate"
-    avg_time_ns: 1888570.00
+    avg_time_ns: 2618460.00
   - label: mycology_spore_germination_probability
     symbol: SGP
     name: Spore germination probability
     domain: biology
     test: "mycology::spore_germination_probability"
-    avg_time_ns: 1850959.00
+    avg_time_ns: 2243581.00

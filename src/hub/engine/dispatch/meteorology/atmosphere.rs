@@ -64,6 +64,10 @@ pub(super) fn dispatch(func: &str, p: &Params) -> HubResult<RunOutput> {
             get_f(p, "cos_theta")?,
             get_f(p, "g")?,
         ))),
+        "rayleigh_phase" => Ok(RunOutput::Scalar(meteo::atmosphere::rayleigh_phase(get_f(
+            p,
+            "cos_theta",
+        )?))),
         "lifted_condensation_level" => Ok(RunOutput::Scalar(
             meteo::atmosphere::lifted_condensation_level(
                 get_f(p, "t_surface")?,

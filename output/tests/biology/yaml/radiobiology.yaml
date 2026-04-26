@@ -6,22 +6,22 @@ entries:
     name: Oxygen enhancement ratio
     domain: biology
     test: "radiobiology::oxygen_enhancement_ratio"
-    avg_time_ns: 1931849.00
+    avg_time_ns: 2108510.00
   - label: radiobiology_radio_biologically_effective_dose
     symbol: RBE
     name: Radio biologically effective dose
     domain: biology
     test: "radiobiology::radio_biologically_effective_dose"
-    avg_time_ns: 2311359.00
+    avg_time_ns: 2046081.00
   - label: radiobiology_radio_linear_quadratic_survival
     symbol: RLQ
     name: Radio linear quadratic survival
     domain: biology
     test: "radiobiology::radio_linear_quadratic_survival"
-    avg_time_ns: 2226039.00
+    avg_time_ns: 1949090.00
   - label: radiobiology_tcp
     symbol: Tc
     name: Tcp
     domain: biology
     test: "radiobiology::tcp"
-    avg_time_ns: 2067209.00
+    avg_time_ns: 1997450.00

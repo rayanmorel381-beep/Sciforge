@@ -1,3 +1,3 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-rotation::rotational_kinetic_energy,f64,2,1,2208579,2208579,2208579,0,500,pass,rotation,RKE,Rotational kinetic energy,astronomy,rotation::rotational_kinetic_energy
-rotation::surface_velocity_at_latitude,f64,2,1,2213009,2213009,2213009,0,500,pass,rotation,SVA,Surface velocity at latitude,astronomy,rotation::surface_velocity_at_latitude
+rotation::rotational_kinetic_energy,f64,2,1,2141540,2141540,2141540,0,500,pass,rotation,RKE,Rotational kinetic energy,astronomy,rotation::rotational_kinetic_energy
+rotation::surface_velocity_at_latitude,f64,1,1,1926761,1926761,1926761,0,1000,pass,rotation,SVA,Surface velocity at latitude,astronomy,rotation::surface_velocity_at_latitude

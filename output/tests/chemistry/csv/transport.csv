@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-transport::diffusion_coefficient_stokes_einstein,f64,1,1,1845280,1845280,1845280,0,1000,pass,transport,DCS,Diffusion coefficient stokes einstein,chemistry,transport::diffusion_coefficient_stokes_einstein
-transport::fick_first_law,f64,1,1,1939049,1939049,1939049,0,1000,pass,transport,FFL,Fick first law,chemistry,transport::fick_first_law
-transport::sherwood_number,f64,3,1,3494328,3494328,3494328,0,333.33334,pass,transport,SN,Sherwood number,chemistry,transport::sherwood_number
+transport::diffusion_coefficient_stokes_einstein,f64,2,1,2152840,2152840,2152840,0,500,pass,transport,DCS,Diffusion coefficient stokes einstein,chemistry,transport::diffusion_coefficient_stokes_einstein
+transport::fick_first_law,f64,2,1,2071531,2071531,2071531,0,500,pass,transport,FFL,Fick first law,chemistry,transport::fick_first_law
+transport::sherwood_number,f64,2,1,2086250,2086250,2086250,0,500,pass,transport,SN,Sherwood number,chemistry,transport::sherwood_number

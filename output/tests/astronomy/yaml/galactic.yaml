@@ -6,16 +6,16 @@ entries:
     name: Galactic escape velocity
     domain: astronomy
     test: "galactic::galactic_escape_velocity"
-    avg_time_ns: 2224499.00
+    avg_time_ns: 2340760.00
   - label: galactic_galactic_rotation_velocity
     symbol: GRV
     name: Galactic rotation velocity
     domain: astronomy
     test: "galactic::galactic_rotation_velocity"
-    avg_time_ns: 2625109.00
+    avg_time_ns: 2293720.00
   - label: galactic_tidal_radius
     symbol: TR
     name: Tidal radius
     domain: astronomy
     test: "galactic::tidal_radius"
-    avg_time_ns: 2416869.00
+    avg_time_ns: 2301521.00

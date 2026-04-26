@@ -13,12 +13,12 @@
   "wien_peak": "292 nm",
   "experiment_name": "Sirius A_stellar",
   "precision": "f64",
-  "elapsed_ms": 8,
+  "elapsed_ms": 9,
   "iterations": 5000,
-  "avg_time_ns": 1677.32,
-  "min_time_ns": 1677.32,
-  "max_time_ns": 1677.32,
+  "avg_time_ns": 1876.73,
+  "min_time_ns": 1876.73,
+  "max_time_ns": 1876.73,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 625000.00,
+  "iterations_per_sec": 555555.56,
   "result": "Sirius A (A1V) | L=9.856e27 W | M_abs=1.43 | R_s=6094.67 m | MS lifetime=0.0 Myr | Wien λ_max=292 nm"
 }

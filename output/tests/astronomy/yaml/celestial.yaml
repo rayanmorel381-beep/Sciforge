@@ -6,22 +6,22 @@ entries:
     name: Gravitational force
     domain: astronomy
     test: "celestial::gravitational_force"
-    avg_time_ns: 5499748.00
+    avg_time_ns: 2418580.00
   - label: celestial_hill_sphere
     symbol: HS
     name: Hill sphere
     domain: astronomy
     test: "celestial::hill_sphere"
-    avg_time_ns: 2836138.00
+    avg_time_ns: 2585930.00
   - label: celestial_julian_date_to_j2000_century
     symbol: JDT
     name: Julian date to j2000 century
     domain: astronomy
     test: "celestial::julian_date_to_j2000_century"
-    avg_time_ns: 2219679.00
+    avg_time_ns: 2344891.00
   - label: celestial_synodic_period
     symbol: SP
     name: Synodic period
     domain: astronomy
     test: "celestial::synodic_period"
-    avg_time_ns: 2186719.00
+    avg_time_ns: 1923450.00

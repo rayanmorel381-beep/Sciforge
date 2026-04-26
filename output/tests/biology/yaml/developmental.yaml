@@ -6,16 +6,16 @@ entries:
     name: French flag model
     domain: biology
     test: "developmental::french_flag_model"
-    avg_time_ns: 1895879.00
+    avg_time_ns: 2021221.00
   - label: developmental_lateral_inhibition
     symbol: LI
     name: Lateral inhibition
     domain: biology
     test: "developmental::lateral_inhibition"
-    avg_time_ns: 1866539.00
+    avg_time_ns: 2074770.00
   - label: developmental_morphogen_gradient_steady
     symbol: MGS
     name: Morphogen gradient steady
     domain: biology
     test: "developmental::morphogen_gradient_steady"
-    avg_time_ns: 1886909.00
+    avg_time_ns: 2551710.00

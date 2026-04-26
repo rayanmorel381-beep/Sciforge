@@ -6,10 +6,10 @@ entries:
     name: Heat equation 1d explicit
     domain: maths
     test: "pde::heat_equation_1d_explicit"
-    avg_time_ns: 1753250.00
+    avg_time_ns: 1848590.00
   - label: pde_wave_equation_1d
     symbol: WE1
     name: Wave equation 1d
     domain: maths
     test: "pde::wave_equation_1d"
-    avg_time_ns: 1734079.00
+    avg_time_ns: 1797220.00

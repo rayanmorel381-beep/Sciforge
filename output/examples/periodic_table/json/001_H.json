@@ -8,9 +8,9 @@
   "precision": "f32",
   "elapsed_ms": 0,
   "iterations": 1000,
-  "avg_time_ns": 90.48,
-  "min_time_ns": 90.48,
-  "max_time_ns": 90.48,
+  "avg_time_ns": 95.70,
+  "min_time_ns": 95.70,
+  "max_time_ns": 95.70,
   "time_stddev": 0.0000,
   "iterations_per_sec": 0.00,
   "result": "Z=1 | H (Hydrogen) | 1.008 u | nonmetal | 1s¹"

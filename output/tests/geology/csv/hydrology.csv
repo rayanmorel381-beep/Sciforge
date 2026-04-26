@@ -1,7 +1,7 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-hydrology::chezy_velocity,f64,1,1,1775680,1775680,1775680,0,1000,pass,hydrology,CV,Chezy velocity,geology,hydrology::chezy_velocity
-hydrology::froude_number,f64,2,1,2316238,2316238,2316238,0,500,pass,hydrology,FN,Froude number,geology,hydrology::froude_number
-hydrology::hjulstrom_erosion_threshold,f64,1,1,1943800,1943800,1943800,0,1000,pass,hydrology,HET,Hjulstrom erosion threshold,geology,hydrology::hjulstrom_erosion_threshold
-hydrology::manning_velocity,f64,2,1,2200399,2200399,2200399,0,500,pass,hydrology,MV,Manning velocity,geology,hydrology::manning_velocity
-hydrology::reynolds_number,f64,1,1,1900639,1900639,1900639,0,1000,pass,hydrology,RN,Reynolds number,geology,hydrology::reynolds_number
-hydrology::stream_power,f64,1,1,1702869,1702869,1702869,0,1000,pass,hydrology,SP,Stream power,geology,hydrology::stream_power
+hydrology::chezy_velocity,f64,2,1,2124550,2124550,2124550,0,500,pass,hydrology,CV,Chezy velocity,geology,hydrology::chezy_velocity
+hydrology::froude_number,f64,1,1,1898791,1898791,1898791,0,1000,pass,hydrology,FN,Froude number,geology,hydrology::froude_number
+hydrology::hjulstrom_erosion_threshold,f64,1,1,1963620,1963620,1963620,0,1000,pass,hydrology,HET,Hjulstrom erosion threshold,geology,hydrology::hjulstrom_erosion_threshold
+hydrology::manning_velocity,f64,1,1,1906670,1906670,1906670,0,1000,pass,hydrology,MV,Manning velocity,geology,hydrology::manning_velocity
+hydrology::reynolds_number,f64,2,1,2168321,2168321,2168321,0,500,pass,hydrology,RN,Reynolds number,geology,hydrology::reynolds_number
+hydrology::stream_power,f64,2,1,2073870,2073870,2073870,0,500,pass,hydrology,SP,Stream power,geology,hydrology::stream_power

@@ -13,9 +13,9 @@ experiment_name = "Mars_orbit"
 precision = "f64"
 elapsed_ms = 8
 iterations = 5000
-avg_time_ns = 1792.81
-min_time_ns = 1792.81
-max_time_ns = 1792.81
+avg_time_ns = 1752.94
+min_time_ns = 1752.94
+max_time_ns = 1752.94
 time_stddev = 0.0000
 iterations_per_sec = 625000.00
 result = "Mars | T=686.86 days | v_circ=24.13 km/s | v_esc=5.03 km/s | Hohmann Δv=5.59 km/s"

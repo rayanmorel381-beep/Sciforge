@@ -5,11 +5,11 @@ config: [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³
 mass: 208.9804
 experiment_name: Bi_Bismuth_benchmark
 precision: f32
-elapsed_ms: 32
+elapsed_ms: 33
 iterations: 5000
-avg_time_ns: 6530.20
-min_time_ns: 6530.20
-max_time_ns: 6530.20
+avg_time_ns: 6630.27
+min_time_ns: 6630.27
+max_time_ns: 6630.27
 time_stddev: 0.0000
-iterations_per_sec: 156250.00
+iterations_per_sec: 151515.15
 result: Z=83 | Bi (Bismuth) | 208.9804 u | post-transition metal | [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³

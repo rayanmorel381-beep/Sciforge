@@ -23,8 +23,8 @@ pub fn run_timed(experiment: &Experiment) -> HubResult<(RunOutput, String)> {
         elapsed_ms: elapsed.as_millis() as u64,
         iterations: 1,
         input_samples: 0,
-        avg_time_ns: elapsed.as_nanos() as f32,
-        last_time_ns: elapsed.as_nanos() as f32,
+        avg_time_ns: elapsed.as_nanos() as f64,
+        last_time_ns: elapsed.as_nanos() as f64,
         output_bytes: 0,
         total_flops: 0,
         step_count: 0,
@@ -33,11 +33,11 @@ pub fn run_timed(experiment: &Experiment) -> HubResult<(RunOutput, String)> {
         benchmark_flags: 0,
         input_bytes: 0,
         result_bytes: 0,
-        min_time_ns: elapsed.as_nanos() as f32,
-        max_time_ns: elapsed.as_nanos() as f32,
+        min_time_ns: elapsed.as_nanos() as f64,
+        max_time_ns: elapsed.as_nanos() as f64,
         time_stddev: 0.0,
         iterations_per_sec: if elapsed.as_millis() > 0 {
-            1000.0 / elapsed.as_millis() as f32
+            1000.0 / elapsed.as_millis() as f64
         } else {
             0.0
         },

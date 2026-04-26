@@ -9,8 +9,8 @@ name = "Marathon distance"
 from = "42.195 km"
 to = "2.621876e1 mi"
 conversion = "42.195 km → 2.621876e1 mi"
-avg_time_ns = 2419.22
-iterations_per_sec = 416666.66
+avg_time_ns = 2648.79
+iterations_per_sec = 384615.38
 
 [[entries]]
 label = "Everest height"
@@ -20,8 +20,8 @@ name = "Everest height"
 from = "8848.86 m"
 to = "2.903169e4 ft"
 conversion = "8848.86 m → 2.903169e4 ft"
-avg_time_ns = 2472.56
-iterations_per_sec = 416666.66
+avg_time_ns = 3121.24
+iterations_per_sec = 322580.65
 
 [[entries]]
 label = "Light-year"
@@ -31,8 +31,8 @@ name = "Light-year"
 from = "1 ly"
 to = "9.460730e12 km"
 conversion = "1 ly → 9.460730e12 km"
-avg_time_ns = 2447.65
-iterations_per_sec = 416666.66
+avg_time_ns = 3035.24
+iterations_per_sec = 333333.33
 
 [[entries]]
 label = "Human body temp"
@@ -42,8 +42,8 @@ name = "Human body temp"
 from = "37 °C"
 to = "3.101500e2 K"
 conversion = "37 °C → 3.101500e2 K"
-avg_time_ns = 3439.03
-iterations_per_sec = 294117.66
+avg_time_ns = 3572.52
+iterations_per_sec = 285714.29
 
 [[entries]]
 label = "Liquid nitrogen"
@@ -53,8 +53,8 @@ name = "Liquid nitrogen"
 from = "77.36 K"
 to = "-1.957900e2 °C"
 conversion = "77.36 K → -1.957900e2 °C"
-avg_time_ns = 3463.80
-iterations_per_sec = 294117.66
+avg_time_ns = 4050.60
+iterations_per_sec = 250000.00
 
 [[entries]]
 label = "Sun surface"
@@ -64,8 +64,8 @@ name = "Sun surface"
 from = "5778 K"
 to = "9.940730e3 °F"
 conversion = "5778 K → 9.940730e3 °F"
-avg_time_ns = 3407.44
-iterations_per_sec = 294117.66
+avg_time_ns = 4939.82
+iterations_per_sec = 204081.63
 
 [[entries]]
 label = "Atmospheric"
@@ -75,8 +75,8 @@ name = "Atmospheric"
 from = "101325 Pa"
 to = "1.000000e0 atm"
 conversion = "101325 Pa → 1.000000e0 atm"
-avg_time_ns = 3394.73
-iterations_per_sec = 303030.31
+avg_time_ns = 4529.37
+iterations_per_sec = 222222.22
 
 [[entries]]
 label = "Deep ocean"
@@ -86,8 +86,8 @@ name = "Deep ocean"
 from = "1100 atm"
 to = "1.114575e8 Pa"
 conversion = "1100 atm → 1.114575e8 Pa"
-avg_time_ns = 3402.82
-iterations_per_sec = 294117.66
+avg_time_ns = 4173.55
+iterations_per_sec = 243902.44
 
 [[entries]]
 label = "Earth mass"
@@ -97,8 +97,8 @@ name = "Earth mass"
 from = "5972000000000000000000000 kg"
 to = "1.316601e25 lb"
 conversion = "5972000000000000000000000 kg → 1.316601e25 lb"
-avg_time_ns = 3899.77
-iterations_per_sec = 263157.91
+avg_time_ns = 3833.50
+iterations_per_sec = 263157.89
 
 [[entries]]
 label = "Proton mass"
@@ -108,8 +108,8 @@ name = "Proton mass"
 from = "0.000000000000000000000000001672 kg"
 to = "1.006902e0 amu"
 conversion = "0.000000000000000000000000001672 kg → 1.006902e0 amu"
-avg_time_ns = 3953.62
-iterations_per_sec = 256410.25
+avg_time_ns = 3802.66
+iterations_per_sec = 263157.89
 
 [[entries]]
 label = "1 eV"
@@ -119,8 +119,8 @@ name = "1 eV"
 from = "1 eV"
 to = "1.602177e-19 J"
 conversion = "1 eV → 1.602177e-19 J"
-avg_time_ns = 4721.06
-iterations_per_sec = 212765.95
+avg_time_ns = 5882.23
+iterations_per_sec = 172413.79
 
 [[entries]]
 label = "TNT equivalent"
@@ -130,8 +130,8 @@ name = "TNT equivalent"
 from = "4184000000 J"
 to = "1.000000e9 cal"
 conversion = "4184000000 J → 1.000000e9 cal"
-avg_time_ns = 4737.55
-iterations_per_sec = 212765.95
+avg_time_ns = 5189.91
+iterations_per_sec = 196078.43
 
 [[entries]]
 label = "1 day"
@@ -141,8 +141,8 @@ name = "1 day"
 from = "1 day"
 to = "8.640000e4 s"
 conversion = "1 day → 8.640000e4 s"
-avg_time_ns = 4989.79
-iterations_per_sec = 204081.62
+avg_time_ns = 5201.60
+iterations_per_sec = 192307.69
 
 [[entries]]
 label = "1 year"
@@ -152,8 +152,8 @@ name = "1 year"
 from = "1 year"
 to = "8.766000e3 h"
 conversion = "1 year → 8.766000e3 h"
-avg_time_ns = 5427.91
-iterations_per_sec = 185185.19
+avg_time_ns = 5337.81
+iterations_per_sec = 188679.25
 
 [[entries]]
 label = "Right angle"
@@ -163,6 +163,6 @@ name = "Right angle"
 from = "90 deg"
 to = "1.570796e0 rad"
 conversion = "90 deg → 1.570796e0 rad"
-avg_time_ns = 5282.32
-iterations_per_sec = 192307.69
+avg_time_ns = 5389.85
+iterations_per_sec = 188679.25
 

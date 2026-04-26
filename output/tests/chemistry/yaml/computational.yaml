@@ -6,16 +6,16 @@ entries:
     name: Dft hartree energy
     domain: chemistry
     test: "computational::dft_hartree_energy"
-    avg_time_ns: 1938939.00
+    avg_time_ns: 2306270.00
   - label: computational_gaussian_primitive
     symbol: GP
     name: Gaussian primitive
     domain: chemistry
     test: "computational::gaussian_primitive"
-    avg_time_ns: 1809959.00
+    avg_time_ns: 2332441.00
   - label: computational_thomas_fermi_kinetic_energy
     symbol: TFK
     name: Thomas fermi kinetic energy
     domain: chemistry
     test: "computational::thomas_fermi_kinetic_energy"
-    avg_time_ns: 2034499.00
+    avg_time_ns: 2591490.00

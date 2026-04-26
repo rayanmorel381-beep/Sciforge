@@ -6,34 +6,34 @@ entries:
     name: Diffraction grating maxima
     domain: physics
     test: "dispatch::diffraction_grating_maxima"
-    avg_time_ns: 1789319.00
+    avg_time_ns: 1901551.00
   - label: dispatch_dispatch_missing_parameter_returns_error
     symbol: DMP
     name: Dispatch missing parameter returns error
     domain: physics
     test: "dispatch::dispatch_missing_parameter_returns_error"
-    avg_time_ns: 1931919.00
+    avg_time_ns: 1774510.00
   - label: dispatch_dispatch_unknown_function_returns_error
     symbol: DUF
     name: Dispatch unknown function returns error
     domain: physics
     test: "dispatch::dispatch_unknown_function_returns_error"
-    avg_time_ns: 1862279.00
+    avg_time_ns: 1897760.00
   - label: dispatch_drift_velocity
     symbol: DV
     name: Drift velocity
     domain: physics
     test: "dispatch::drift_velocity"
-    avg_time_ns: 2513349.00
+    avg_time_ns: 1761821.00
   - label: dispatch_hall_coefficient
     symbol: HC
     name: Hall coefficient
     domain: physics
     test: "dispatch::hall_coefficient"
-    avg_time_ns: 2171289.00
+    avg_time_ns: 2039000.00
   - label: dispatch_maxwell_speed_distribution_peak
     symbol: MSD
     name: Maxwell speed distribution peak
     domain: physics
     test: "dispatch::maxwell_speed_distribution_peak"
-    avg_time_ns: 2002669.00
+    avg_time_ns: 1889210.00

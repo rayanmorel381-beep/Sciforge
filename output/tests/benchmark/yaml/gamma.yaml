@@ -2,4 +2,4 @@ group: gamma
 count: 1
 entries:
   - label: bench_gamma
-    avg_time_ns: 13.20
+    avg_time_ns: 8.70

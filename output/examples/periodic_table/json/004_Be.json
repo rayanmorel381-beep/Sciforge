@@ -8,9 +8,9 @@
   "precision": "f64",
   "elapsed_ms": 0,
   "iterations": 1000,
-  "avg_time_ns": 318.35,
-  "min_time_ns": 318.35,
-  "max_time_ns": 318.35,
+  "avg_time_ns": 346.21,
+  "min_time_ns": 346.21,
+  "max_time_ns": 346.21,
   "time_stddev": 0.0000,
   "iterations_per_sec": 0.00,
   "result": "Z=4 | Be (Beryllium) | 9.0121831 u | alkaline earth metal | 1s² 2s²"

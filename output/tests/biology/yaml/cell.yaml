@@ -6,22 +6,22 @@ entries:
     name: Cell doubling time
     domain: biology
     test: "cell::cell_doubling_time"
-    avg_time_ns: 1920959.00
+    avg_time_ns: 2470260.00
   - label: cell_fick_first_law
     symbol: FFL
     name: Fick first law
     domain: biology
     test: "cell::fick_first_law"
-    avg_time_ns: 1816119.00
+    avg_time_ns: 2343071.00
   - label: cell_ligand_receptor_binding
     symbol: LRB
     name: Ligand receptor binding
     domain: biology
     test: "cell::ligand_receptor_binding"
-    avg_time_ns: 1868889.00
+    avg_time_ns: 2340020.00
   - label: cell_osmotic_pressure
     symbol: OP
     name: Osmotic pressure
     domain: biology
     test: "cell::osmotic_pressure"
-    avg_time_ns: 2372089.00
+    avg_time_ns: 2569101.00

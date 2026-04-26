@@ -12,7 +12,7 @@ entries:
     decay_constant: 3.8330e-12 s⁻¹
     computed_age: beyond range
     expected_age: 65.0 kyr
-    avg_time_ns: 4595.33
+    avg_time_ns: 4837.50
   - label: Lascaux paintings
     symbol: C
     name: Lascaux paintings
@@ -24,4 +24,4 @@ entries:
     decay_constant: 3.8330e-12 s⁻¹
     computed_age: 1641 yr
     expected_age: 17.0 kyr
-    avg_time_ns: 4756.22
+    avg_time_ns: 4742.27

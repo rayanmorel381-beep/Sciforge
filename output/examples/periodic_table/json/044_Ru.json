@@ -6,12 +6,12 @@
   "mass": "101.07",
   "experiment_name": "Ru_Ruthenium_benchmark",
   "precision": "f64",
-  "elapsed_ms": 18,
+  "elapsed_ms": 17,
   "iterations": 5000,
-  "avg_time_ns": 3692.70,
-  "min_time_ns": 3692.70,
-  "max_time_ns": 3692.70,
+  "avg_time_ns": 3504.29,
+  "min_time_ns": 3504.29,
+  "max_time_ns": 3504.29,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 277777.78,
+  "iterations_per_sec": 294117.65,
   "result": "Z=44 | Ru (Ruthenium) | 101.07 u | transition metal | [Kr] 4d⁷ 5s¹"
 }

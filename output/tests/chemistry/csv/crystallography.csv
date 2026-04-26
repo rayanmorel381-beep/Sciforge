@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-crystallography::bragg_law,f64,1,1,1782409,1782409,1782409,0,1000,pass,crystallography,BL,Bragg law,chemistry,crystallography::bragg_law
-crystallography::interplanar_spacing_cubic,f64,1,1,1877910,1877910,1877910,0,1000,pass,crystallography,ISC,Interplanar spacing cubic,chemistry,crystallography::interplanar_spacing_cubic
-crystallography::scherrer_crystal_size,f64,1,1,1949829,1949829,1949829,0,1000,pass,crystallography,SCS,Scherrer crystal size,chemistry,crystallography::scherrer_crystal_size
+crystallography::bragg_law,f64,2,1,2726460,2726460,2726460,0,500,pass,crystallography,BL,Bragg law,chemistry,crystallography::bragg_law
+crystallography::interplanar_spacing_cubic,f64,2,1,2526641,2526641,2526641,0,500,pass,crystallography,ISC,Interplanar spacing cubic,chemistry,crystallography::interplanar_spacing_cubic
+crystallography::scherrer_crystal_size,f64,2,1,2446600,2446600,2446600,0,500,pass,crystallography,SCS,Scherrer crystal size,chemistry,crystallography::scherrer_crystal_size

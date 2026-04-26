@@ -8,9 +8,9 @@ experiment_name = "He_Helium_benchmark"
 precision = "f64"
 elapsed_ms = 0
 iterations = 5000
-avg_time_ns = 169.05
-min_time_ns = 169.05
-max_time_ns = 169.05
+avg_time_ns = 194.93
+min_time_ns = 194.93
+max_time_ns = 194.93
 time_stddev = 0.0000
 iterations_per_sec = 0.00
 result = "Z=2 | He (Helium) | 4.002602 u | noble gas | 1s²"

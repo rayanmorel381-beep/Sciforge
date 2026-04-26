@@ -14,12 +14,12 @@
   "lcl": "602 m AGL",
   "experiment_name": "McMurdo Base_weather",
   "precision": "f64",
-  "elapsed_ms": 29,
+  "elapsed_ms": 33,
   "iterations": 5000,
-  "avg_time_ns": 5812.67,
-  "min_time_ns": 5812.67,
-  "max_time_ns": 5812.67,
+  "avg_time_ns": 6746.35,
+  "min_time_ns": 6746.35,
+  "max_time_ns": 6746.35,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 172413.80,
+  "iterations_per_sec": 151515.15,
   "result": "McMurdo Base | 10m | -18.0 °C | RH=60% | Td=-23.9 °C | DA=-3948 m | θ=257.3 K"
 }

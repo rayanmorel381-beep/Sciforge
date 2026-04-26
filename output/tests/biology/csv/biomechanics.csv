@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-biomechanics::biomech_cardiac_output,f64,1,1,1778790,1778790,1778790,0,1000,pass,biomechanics,BCO,Biomech cardiac output,biology,biomechanics::biomech_cardiac_output
-biomechanics::gait_stride_length,f64,1,1,1790669,1790669,1790669,0,1000,pass,biomechanics,GSL,Gait stride length,biology,biomechanics::gait_stride_length
-biomechanics::ground_reaction_force,f64,1,1,1807159,1807159,1807159,0,1000,pass,biomechanics,GRF,Ground reaction force,biology,biomechanics::ground_reaction_force
-biomechanics::joint_moment,f64,2,1,2017939,2017939,2017939,0,500,pass,biomechanics,JM,Joint moment,biology,biomechanics::joint_moment
+biomechanics::biomech_cardiac_output,f64,2,1,2296730,2296730,2296730,0,500,pass,biomechanics,BCO,Biomech cardiac output,biology,biomechanics::biomech_cardiac_output
+biomechanics::gait_stride_length,f64,2,1,2314860,2314860,2314860,0,500,pass,biomechanics,GSL,Gait stride length,biology,biomechanics::gait_stride_length
+biomechanics::ground_reaction_force,f64,2,1,2390231,2390231,2390231,0,500,pass,biomechanics,GRF,Ground reaction force,biology,biomechanics::ground_reaction_force
+biomechanics::joint_moment,f64,2,1,2523590,2523590,2523590,0,500,pass,biomechanics,JM,Joint moment,biology,biomechanics::joint_moment

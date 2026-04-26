@@ -5,11 +5,11 @@ config: [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴
 mass: 293.205
 experiment_name: Lv_Livermorium_benchmark
 precision: f64
-elapsed_ms: 48
+elapsed_ms: 44
 iterations: 5000
-avg_time_ns: 9629.90
-min_time_ns: 9629.90
-max_time_ns: 9629.90
+avg_time_ns: 8886.08
+min_time_ns: 8886.08
+max_time_ns: 8886.08
 time_stddev: 0.0000
-iterations_per_sec: 104166.66
+iterations_per_sec: 113636.36
 result: Z=116 | Lv (Livermorium) | 293.205 u | unknown | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴

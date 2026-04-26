@@ -6,22 +6,22 @@ entries:
     name: Alveolar gas equation
     domain: biology
     test: "physiology::alveolar_gas_equation"
-    avg_time_ns: 1923229.00
+    avg_time_ns: 2041750.00
   - label: physiology_frank_starling_mechanism
     symbol: FSM
     name: Frank starling mechanism
     domain: biology
     test: "physiology::frank_starling_mechanism"
-    avg_time_ns: 1882189.00
+    avg_time_ns: 1901510.00
   - label: physiology_glomerular_filtration_rate
     symbol: GFR
     name: Glomerular filtration rate
     domain: biology
     test: "physiology::glomerular_filtration_rate"
-    avg_time_ns: 1904839.00
+    avg_time_ns: 2265441.00
   - label: physiology_oxygen_delivery
     symbol: OD
     name: Oxygen delivery
     domain: biology
     test: "physiology::oxygen_delivery"
-    avg_time_ns: 1975999.00
+    avg_time_ns: 2594850.00

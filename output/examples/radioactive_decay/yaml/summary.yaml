@@ -14,8 +14,8 @@ entries:
     specific_activity: 1.244e4 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.571 MeV/nucleon
-    avg_time_ns: 2226.82
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2211.11
+    iterations_per_sec: 454545.45
   - label: ²³⁵U
     category: Alpha
     symbol: ²³⁵U
@@ -29,8 +29,8 @@ entries:
     specific_activity: 7.995e4 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.565 MeV/nucleon
-    avg_time_ns: 2250.62
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2212.51
+    iterations_per_sec: 454545.45
   - label: ²³²Th
     category: Alpha
     symbol: ²³²Th
@@ -44,8 +44,8 @@ entries:
     specific_activity: 4.058e3 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.570 MeV/nucleon
-    avg_time_ns: 2421.41
-    iterations_per_sec: 416666.66
+    avg_time_ns: 2288.26
+    iterations_per_sec: 454545.45
   - label: ⁴⁰K
     category: Other
     symbol: ⁴⁰K
@@ -59,8 +59,8 @@ entries:
     specific_activity: 2.650e5 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.457 MeV/nucleon
-    avg_time_ns: 2266.50
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2253.55
+    iterations_per_sec: 454545.45
   - label: ¹⁴C
     category: Other
     symbol: ¹⁴C
@@ -74,8 +74,8 @@ entries:
     specific_activity: 1.649e11 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.517 MeV/nucleon
-    avg_time_ns: 2285.18
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2288.72
+    iterations_per_sec: 454545.45
   - label: ²²⁶Ra
     category: Other
     symbol: ²²⁶Ra
@@ -89,8 +89,8 @@ entries:
     specific_activity: 3.658e10 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.568 MeV/nucleon
-    avg_time_ns: 2268.76
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2248.75
+    iterations_per_sec: 454545.45
   - label: ⁹⁰Sr
     category: Other
     symbol: ⁹⁰Sr
@@ -104,8 +104,8 @@ entries:
     specific_activity: 5.105e12 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.525 MeV/nucleon
-    avg_time_ns: 2214.38
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2289.75
+    iterations_per_sec: 454545.45
   - label: ¹³⁷Cs
     category: Other
     symbol: ¹³⁷Cs
@@ -119,8 +119,8 @@ entries:
     specific_activity: 3.200e12 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.552 MeV/nucleon
-    avg_time_ns: 2254.30
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2306.20
+    iterations_per_sec: 454545.45
   - label: ¹³¹I
     category: Other
     symbol: ¹³¹I
@@ -134,8 +134,8 @@ entries:
     specific_activity: 4.596e15 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.548 MeV/nucleon
-    avg_time_ns: 2220.21
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2275.49
+    iterations_per_sec: 454545.45
   - label: ⁶⁰Co
     category: Beta
     symbol: ⁶⁰Co
@@ -149,8 +149,8 @@ entries:
     specific_activity: 4.182e13 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.489 MeV/nucleon
-    avg_time_ns: 2333.16
-    iterations_per_sec: 454545.47
+    avg_time_ns: 2287.79
+    iterations_per_sec: 454545.45
   - label: ²³⁹Pu
     category: Alpha
     symbol: ²³⁹Pu
@@ -164,8 +164,8 @@ entries:
     specific_activity: 2.295e9 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.563 MeV/nucleon
-    avg_time_ns: 2407.81
-    iterations_per_sec: 416666.66
+    avg_time_ns: 2226.71
+    iterations_per_sec: 454545.45
   - label: ²⁴¹Am
     category: Alpha
     symbol: ²⁴¹Am
@@ -179,5 +179,5 @@ entries:
     specific_activity: 1.270e11 Bq/g
     remaining_3hl: 125000 / 1M after 3 half-lives
     binding_energy: 7.561 MeV/nucleon
-    avg_time_ns: 2720.78
-    iterations_per_sec: 384615.38
+    avg_time_ns: 2238.90
+    iterations_per_sec: 454545.45

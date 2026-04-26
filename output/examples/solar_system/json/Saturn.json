@@ -11,12 +11,12 @@
   "hohmann_dv": "15.74 km/s",
   "experiment_name": "Saturn_orbit",
   "precision": "f64",
-  "elapsed_ms": 9,
+  "elapsed_ms": 8,
   "iterations": 5000,
-  "avg_time_ns": 1849.66,
-  "min_time_ns": 1849.66,
-  "max_time_ns": 1849.66,
+  "avg_time_ns": 1761.93,
+  "min_time_ns": 1761.93,
+  "max_time_ns": 1761.93,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 555555.56,
+  "iterations_per_sec": 625000.00,
   "result": "Saturn | T=10832.57 days | v_circ=9.62 km/s | v_esc=36.09 km/s | Hohmann Δv=15.74 km/s"
 }

@@ -16,8 +16,8 @@ density_altitude = "-164 m"
 potential_temp = "285.5 K"
 mixing_ratio = "6.97 g/kg"
 lcl = "381 m AGL"
-avg_time_ns = 5629.84
-iterations_per_sec = 178571.42
+avg_time_ns = 5650.99
+iterations_per_sec = 178571.43
 
 [[entries]]
 label = "Tokyo Narita"
@@ -34,8 +34,8 @@ density_altitude = "211 m"
 potential_temp = "289.3 K"
 mixing_ratio = "8.16 g/kg"
 lcl = "539 m AGL"
-avg_time_ns = 5656.88
-iterations_per_sec = 178571.42
+avg_time_ns = 5584.68
+iterations_per_sec = 185185.19
 
 [[entries]]
 label = "Denver Intl"
@@ -52,7 +52,7 @@ density_altitude = "1464 m"
 potential_temp = "299.4 K"
 mixing_ratio = "4.17 g/kg"
 lcl = "1166 m AGL"
-avg_time_ns = 5595.95
+avg_time_ns = 5547.55
 iterations_per_sec = 185185.19
 
 [[entries]]
@@ -70,8 +70,8 @@ density_altitude = "2910 m"
 potential_temp = "312.4 K"
 mixing_ratio = "7.70 g/kg"
 lcl = "1008 m AGL"
-avg_time_ns = 5636.10
-iterations_per_sec = 178571.42
+avg_time_ns = 5568.53
+iterations_per_sec = 185185.19
 
 [[entries]]
 label = "McMurdo Base"
@@ -88,8 +88,8 @@ density_altitude = "-3948 m"
 potential_temp = "257.3 K"
 mixing_ratio = "0.57 g/kg"
 lcl = "602 m AGL"
-avg_time_ns = 5812.67
-iterations_per_sec = 172413.80
+avg_time_ns = 6746.35
+iterations_per_sec = 151515.15
 
 [[entries]]
 label = "Nairobi"
@@ -106,8 +106,8 @@ density_altitude = "2706 m"
 potential_temp = "310.9 K"
 mixing_ratio = "11.09 g/kg"
 lcl = "688 m AGL"
-avg_time_ns = 5534.76
-iterations_per_sec = 185185.19
+avg_time_ns = 6022.63
+iterations_per_sec = 166666.67
 
 [[entries]]
 label = "Lhasa"
@@ -124,8 +124,8 @@ density_altitude = "3746 m"
 potential_temp = "319.5 K"
 mixing_ratio = "3.73 g/kg"
 lcl = "1494 m AGL"
-avg_time_ns = 5548.93
-iterations_per_sec = 185185.19
+avg_time_ns = 5979.66
+iterations_per_sec = 172413.79
 
 [[entries]]
 label = "Death Valley"
@@ -142,8 +142,8 @@ density_altitude = "2713 m"
 potential_temp = "310.6 K"
 mixing_ratio = "5.01 g/kg"
 lcl = "3521 m AGL"
-avg_time_ns = 5569.10
-iterations_per_sec = 185185.19
+avg_time_ns = 5659.51
+iterations_per_sec = 178571.43
 
 [[entries]]
 label = "Reykjavik"
@@ -160,8 +160,8 @@ density_altitude = "-1172 m"
 potential_temp = "278.4 K"
 mixing_ratio = "4.33 g/kg"
 lcl = "287 m AGL"
-avg_time_ns = 5642.68
-iterations_per_sec = 178571.42
+avg_time_ns = 5605.35
+iterations_per_sec = 178571.43
 
 [[entries]]
 label = "Singapore"
@@ -178,6 +178,6 @@ density_altitude = "1520 m"
 potential_temp = "300.9 K"
 mixing_ratio = "19.59 g/kg"
 lcl = "301 m AGL"
-avg_time_ns = 5640.50
-iterations_per_sec = 178571.42
+avg_time_ns = 5538.39
+iterations_per_sec = 185185.19
 

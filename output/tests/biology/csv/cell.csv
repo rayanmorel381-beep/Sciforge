@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-cell::cell_doubling_time,f64,1,1,1920959,1920959,1920959,0,1000,pass,cell,CDT,Cell doubling time,biology,cell::cell_doubling_time
-cell::fick_first_law,f64,1,1,1816119,1816119,1816119,0,1000,pass,cell,FFL,Fick first law,biology,cell::fick_first_law
-cell::ligand_receptor_binding,f64,1,1,1868889,1868889,1868889,0,1000,pass,cell,LRB,Ligand receptor binding,biology,cell::ligand_receptor_binding
-cell::osmotic_pressure,f64,2,1,2372089,2372089,2372089,0,500,pass,cell,OP,Osmotic pressure,biology,cell::osmotic_pressure
+cell::cell_doubling_time,f64,2,1,2470260,2470260,2470260,0,500,pass,cell,CDT,Cell doubling time,biology,cell::cell_doubling_time
+cell::fick_first_law,f64,2,1,2343071,2343071,2343071,0,500,pass,cell,FFL,Fick first law,biology,cell::fick_first_law
+cell::ligand_receptor_binding,f64,2,1,2340020,2340020,2340020,0,500,pass,cell,LRB,Ligand receptor binding,biology,cell::ligand_receptor_binding
+cell::osmotic_pressure,f64,2,1,2569101,2569101,2569101,0,500,pass,cell,OP,Osmotic pressure,biology,cell::osmotic_pressure

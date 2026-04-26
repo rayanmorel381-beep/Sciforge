@@ -6,16 +6,16 @@ entries:
     name: Butterworth gain
     domain: maths
     test: "signal::butterworth_gain"
-    avg_time_ns: 1839189.00
+    avg_time_ns: 2258720.00
   - label: signal_kalman_filter_1d
     symbol: KF1
     name: Kalman filter 1d
     domain: maths
     test: "signal::kalman_filter_1d"
-    avg_time_ns: 2155400.00
+    avg_time_ns: 2035640.00
   - label: signal_low_pass_rc
     symbol: LPR
     name: Low pass rc
     domain: maths
     test: "signal::low_pass_rc"
-    avg_time_ns: 2035739.00
+    avg_time_ns: 2351241.00

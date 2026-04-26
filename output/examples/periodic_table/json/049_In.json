@@ -6,12 +6,12 @@
   "mass": "114.818",
   "experiment_name": "In_Indium_benchmark",
   "precision": "f32",
-  "elapsed_ms": 4,
+  "elapsed_ms": 3,
   "iterations": 1000,
-  "avg_time_ns": 4352.59,
-  "min_time_ns": 4352.59,
-  "max_time_ns": 4352.59,
+  "avg_time_ns": 3738.75,
+  "min_time_ns": 3738.75,
+  "max_time_ns": 3738.75,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 250000.00,
+  "iterations_per_sec": 333333.33,
   "result": "Z=49 | In (Indium) | 114.818 u | post-transition metal | [Kr] 4d¹⁰ 5s² 5p¹"
 }

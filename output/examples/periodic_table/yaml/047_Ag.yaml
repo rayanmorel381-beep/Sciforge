@@ -7,9 +7,9 @@ experiment_name: Ag_Silver_benchmark
 precision: f32
 elapsed_ms: 18
 iterations: 5000
-avg_time_ns: 3631.66
-min_time_ns: 3631.66
-max_time_ns: 3631.66
+avg_time_ns: 3690.34
+min_time_ns: 3690.34
+max_time_ns: 3690.34
 time_stddev: 0.0000
 iterations_per_sec: 277777.78
 result: Z=47 | Ag (Silver) | 107.8682 u | transition metal | [Kr] 4d¹⁰ 5s¹

@@ -6,88 +6,88 @@ entries:
     name: Lanthanum
     config: [Xe] 5d¹ 6s²
     mass: 138.90547
-    avg_time_ns: 4438.56
+    avg_time_ns: 4510.37
   - label: 058_Ce
     symbol: Ce
     name: Cerium
     config: [Xe] 4f¹ 5d¹ 6s²
     mass: 140.116
-    avg_time_ns: 4410.13
+    avg_time_ns: 4563.78
   - label: 059_Pr
     symbol: Pr
     name: Praseodymium
     config: [Xe] 4f³ 6s²
     mass: 140.90766
-    avg_time_ns: 4559.97
+    avg_time_ns: 4661.17
   - label: 060_Nd
     symbol: Nd
     name: Neodymium
     config: [Xe] 4f⁴ 6s²
     mass: 144.242
-    avg_time_ns: 4696.36
+    avg_time_ns: 4894.73
   - label: 061_Pm
     symbol: Pm
     name: Promethium
     config: [Xe] 4f⁵ 6s²
     mass: 144.912749
-    avg_time_ns: 4666.57
+    avg_time_ns: 4768.08
   - label: 062_Sm
     symbol: Sm
     name: Samarium
     config: [Xe] 4f⁶ 6s²
     mass: 150.36
-    avg_time_ns: 4767.45
+    avg_time_ns: 5493.32
   - label: 063_Eu
     symbol: Eu
     name: Europium
     config: [Xe] 4f⁷ 6s²
     mass: 151.964
-    avg_time_ns: 4832.15
+    avg_time_ns: 5127.62
   - label: 064_Gd
     symbol: Gd
     name: Gadolinium
     config: [Xe] 4f⁷ 5d¹ 6s²
     mass: 157.25
-    avg_time_ns: 4872.53
+    avg_time_ns: 4909.90
   - label: 065_Tb
     symbol: Tb
     name: Terbium
     config: [Xe] 4f⁹ 6s²
     mass: 158.92535
-    avg_time_ns: 5021.52
+    avg_time_ns: 5044.69
   - label: 066_Dy
     symbol: Dy
     name: Dysprosium
     config: [Xe] 4f¹⁰ 6s²
     mass: 162.5
-    avg_time_ns: 5111.67
+    avg_time_ns: 5624.03
   - label: 067_Ho
     symbol: Ho
     name: Holmium
     config: [Xe] 4f¹¹ 6s²
     mass: 164.93033
-    avg_time_ns: 5231.69
+    avg_time_ns: 5394.09
   - label: 068_Er
     symbol: Er
     name: Erbium
     config: [Xe] 4f¹² 6s²
     mass: 167.259
-    avg_time_ns: 5226.24
+    avg_time_ns: 5426.33
   - label: 069_Tm
     symbol: Tm
     name: Thulium
     config: [Xe] 4f¹³ 6s²
     mass: 168.93422
-    avg_time_ns: 5317.33
+    avg_time_ns: 5381.33
   - label: 070_Yb
     symbol: Yb
     name: Ytterbium
     config: [Xe] 4f¹⁴ 6s²
     mass: 173.045
-    avg_time_ns: 5331.37
+    avg_time_ns: 5344.40
   - label: 071_Lu
     symbol: Lu
     name: Lutetium
     config: [Xe] 4f¹⁴ 5d¹ 6s²
     mass: 174.9668
-    avg_time_ns: 5450.91
+    avg_time_ns: 5551.34

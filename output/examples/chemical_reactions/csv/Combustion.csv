@@ -1,2 +1,2 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,name,formula,reactant_mass,product_mass,atom_economy
-Combustion of methane_calc,f64,115,5000,23088.086,23088.086,23088.086,0,43478.26,Combustion of methane | CH₄ + 2O₂ → CO₂ + 2H₂O | M(react)=80.0390 g/mol | M(prod)=80.0390 g/mol | Atom economy=100.0%,Combustion,Combustion of methane,CH₄ + 2O₂ → CO₂ + 2H₂O,80.0390 g/mol,80.0390 g/mol,100.0%
+Combustion of methane_calc,f64,116,5000,23231.81,23231.81,23231.81,0,43103.44827586207,Combustion of methane | CH₄ + 2O₂ → CO₂ + 2H₂O | M(react)=80.0390 g/mol | M(prod)=80.0390 g/mol | Atom economy=100.0%,Combustion,Combustion of methane,CH₄ + 2O₂ → CO₂ + 2H₂O,80.0390 g/mol,80.0390 g/mol,100.0%

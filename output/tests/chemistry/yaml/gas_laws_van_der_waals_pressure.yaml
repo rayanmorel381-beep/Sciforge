@@ -5,11 +5,11 @@ domain: chemistry
 test: "gas_laws::van_der_waals_pressure"
 experiment_name: "gas_laws::van_der_waals_pressure"
 precision: f64
-elapsed_ms: 1
+elapsed_ms: 2
 iterations: 1
-avg_time_ns: 1751040.00
-min_time_ns: 1751040.00
-max_time_ns: 1751040.00
+avg_time_ns: 2234081.00
+min_time_ns: 2234081.00
+max_time_ns: 2234081.00
 time_stddev: 0.0000
-iterations_per_sec: 1000.00
+iterations_per_sec: 500.00
 result: pass

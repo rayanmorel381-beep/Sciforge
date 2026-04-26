@@ -157,7 +157,7 @@ pub(super) fn build_md(title: &str, entries: &[Entry<'_>], tag_keys: &[&str]) ->
         for &grp in &stats.groups {
             let count = stats.counts.get(grp).copied().unwrap_or(0);
             let avg = if count > 0 {
-                stats.sums.get(grp).copied().unwrap_or(0.0) / count as f32
+                stats.sums.get(grp).copied().unwrap_or(0.0) / count as f64
             } else {
                 0.0
             };
@@ -174,7 +174,7 @@ pub(super) fn build_md(title: &str, entries: &[Entry<'_>], tag_keys: &[&str]) ->
         md.push_str(&write_md_table(&dist_headers, &dist_rows));
         md.push('\n');
 
-        let mut sorted: Vec<(&str, f32)> = entries
+        let mut sorted: Vec<(&str, f64)> = entries
             .iter()
             .map(|e| (e.label, e.metrics.avg_time_ns))
             .collect();

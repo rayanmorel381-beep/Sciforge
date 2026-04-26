@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-galactic::galactic_escape_velocity,f64,2,1,2224499,2224499,2224499,0,500,pass,galactic,GEV,Galactic escape velocity,astronomy,galactic::galactic_escape_velocity
-galactic::galactic_rotation_velocity,f64,2,1,2625109,2625109,2625109,0,500,pass,galactic,GRV,Galactic rotation velocity,astronomy,galactic::galactic_rotation_velocity
-galactic::tidal_radius,f64,2,1,2416869,2416869,2416869,0,500,pass,galactic,TR,Tidal radius,astronomy,galactic::tidal_radius
+galactic::galactic_escape_velocity,f64,2,1,2340760,2340760,2340760,0,500,pass,galactic,GEV,Galactic escape velocity,astronomy,galactic::galactic_escape_velocity
+galactic::galactic_rotation_velocity,f64,2,1,2293720,2293720,2293720,0,500,pass,galactic,GRV,Galactic rotation velocity,astronomy,galactic::galactic_rotation_velocity
+galactic::tidal_radius,f64,2,1,2301521,2301521,2301521,0,500,pass,galactic,TR,Tidal radius,astronomy,galactic::tidal_radius

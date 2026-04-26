@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-vector::vec_distance,f64,1,1,1730279,1730279,1730279,0,1000,pass,vector,VD,Vec distance,maths,vector::vec_distance
-vector::vec_lerp,f64,1,1,1788729,1788729,1788729,0,1000,pass,vector,VL,Vec lerp,maths,vector::vec_lerp
-vector::vec_project,f64,1,1,1988819,1988819,1988819,0,1000,pass,vector,VP,Vec project,maths,vector::vec_project
+vector::vec_distance,f64,2,1,2458681,2458681,2458681,0,500,pass,vector,VD,Vec distance,maths,vector::vec_distance
+vector::vec_lerp,f64,2,1,2324770,2324770,2324770,0,500,pass,vector,VL,Vec lerp,maths,vector::vec_lerp
+vector::vec_project,f64,2,1,2059010,2059010,2059010,0,500,pass,vector,VP,Vec project,maths,vector::vec_project

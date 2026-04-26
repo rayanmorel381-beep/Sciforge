@@ -6,12 +6,12 @@
   "mass": "151.964",
   "experiment_name": "Eu_Europium_benchmark",
   "precision": "f32",
-  "elapsed_ms": 48,
+  "elapsed_ms": 51,
   "iterations": 10000,
-  "avg_time_ns": 4832.15,
-  "min_time_ns": 4832.15,
-  "max_time_ns": 4832.15,
+  "avg_time_ns": 5127.62,
+  "min_time_ns": 5127.62,
+  "max_time_ns": 5127.62,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 208333.33,
+  "iterations_per_sec": 196078.43,
   "result": "Z=63 | Eu (Europium) | 151.964 u | lanthanide | [Xe] 4f⁷ 6s²"
 }

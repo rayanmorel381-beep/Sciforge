@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Sciforge.png" alt="SciForge" width="200"/>
+</p>
+
 # SciForge
 
 A comprehensive scientific computing library written in pure Rust with zero external dependencies.
@@ -5,7 +9,7 @@ A comprehensive scientific computing library written in pure Rust with zero exte
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Rust Edition](https://img.shields.io/badge/Rust-2024-orange.svg)]()
 [![Dependencies](https://img.shields.io/badge/Dependencies-0-brightgreen.svg)]()
-[![Tests](https://img.shields.io/badge/Tests-814-green.svg)]()
+[![Tests](https://img.shields.io/badge/Tests-823-green.svg)]()
 [![Clippy](https://img.shields.io/badge/Clippy-0%20warnings-brightgreen.svg)]()
 
 [Homepage](https://rayanmorel381-beep.github.io/Sciforge/) · [Repository](https://github.com/rayanmorel381-beep/Sciforge) · [Documentation](https://docs.rs/crate/sciforge/latest)

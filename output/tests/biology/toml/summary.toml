@@ -8,7 +8,7 @@ symbol = "CRL"
 name = "Caloric restriction lifespan"
 domain = "biology"
 test = "aging::caloric_restriction_lifespan"
-avg_time_ns = 2388739.00
+avg_time_ns = 2396630.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -18,7 +18,7 @@ symbol = "GMR"
 name = "Gompertz mortality rate"
 domain = "biology"
 test = "aging::gompertz_mortality_rate"
-avg_time_ns = 2356569.00
+avg_time_ns = 2120531.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -28,8 +28,8 @@ symbol = "MD"
 name = "Mitochondrial damage"
 domain = "biology"
 test = "aging::mitochondrial_damage"
-avg_time_ns = 2735439.00
-iterations_per_sec = 500.00
+avg_time_ns = 1773520.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "aging_ros_steady_state"
@@ -38,8 +38,8 @@ symbol = "RSS"
 name = "Ros steady state"
 domain = "biology"
 test = "aging::ros_steady_state"
-avg_time_ns = 6062787.00
-iterations_per_sec = 166.67
+avg_time_ns = 1796051.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "aging_telomere_shortening"
@@ -48,8 +48,8 @@ symbol = "TS"
 name = "Telomere shortening"
 domain = "biology"
 test = "aging::telomere_shortening"
-avg_time_ns = 4275508.00
-iterations_per_sec = 250.00
+avg_time_ns = 1941570.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "bioelectricity_cable_equation_steady"
@@ -58,8 +58,8 @@ symbol = "CES"
 name = "Cable equation steady"
 domain = "biology"
 test = "bioelectricity::cable_equation_steady"
-avg_time_ns = 4533278.00
-iterations_per_sec = 250.00
+avg_time_ns = 1911030.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "bioelectricity_electrotonic_length"
@@ -68,8 +68,8 @@ symbol = "EL"
 name = "Electrotonic length"
 domain = "biology"
 test = "bioelectricity::electrotonic_length"
-avg_time_ns = 10498526.00
-iterations_per_sec = 100.00
+avg_time_ns = 2308451.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "bioelectricity_impedance_tissue"
@@ -78,8 +78,8 @@ symbol = "IT"
 name = "Impedance tissue"
 domain = "biology"
 test = "bioelectricity::impedance_tissue"
-avg_time_ns = 6269367.00
-iterations_per_sec = 166.67
+avg_time_ns = 2528110.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "bioelectricity_strength_duration_weiss"
@@ -88,7 +88,7 @@ symbol = "SDW"
 name = "Strength duration weiss"
 domain = "biology"
 test = "bioelectricity::strength_duration_weiss"
-avg_time_ns = 2738959.00
+avg_time_ns = 2411410.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -98,7 +98,7 @@ symbol = "AEC"
 name = "Adenylate energy charge"
 domain = "biology"
 test = "bioenergetics::adenylate_energy_charge"
-avg_time_ns = 2351309.00
+avg_time_ns = 2341121.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -108,7 +108,7 @@ symbol = "GNA"
 name = "Glycolysis net atp"
 domain = "biology"
 test = "bioenergetics::glycolysis_net_atp"
-avg_time_ns = 2380898.00
+avg_time_ns = 2435710.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -118,7 +118,7 @@ symbol = "POR"
 name = "P o ratio"
 domain = "biology"
 test = "bioenergetics::p_o_ratio"
-avg_time_ns = 2384720.00
+avg_time_ns = 2501671.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -128,8 +128,8 @@ symbol = "RCI"
 name = "Respiratory control index"
 domain = "biology"
 test = "bioenergetics::respiratory_control_index"
-avg_time_ns = 5900607.00
-iterations_per_sec = 200.00
+avg_time_ns = 2315860.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biogeography_latitudinal_diversity_gradient"
@@ -138,8 +138,8 @@ symbol = "LDG"
 name = "Latitudinal diversity gradient"
 domain = "biology"
 test = "biogeography::latitudinal_diversity_gradient"
-avg_time_ns = 3486678.00
-iterations_per_sec = 333.33
+avg_time_ns = 2183170.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biogeography_range_shift_velocity"
@@ -148,7 +148,7 @@ symbol = "RSV"
 name = "Range shift velocity"
 domain = "biology"
 test = "biogeography::range_shift_velocity"
-avg_time_ns = 2481589.00
+avg_time_ns = 2122701.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -158,8 +158,8 @@ symbol = "RSL"
 name = "Range size latitude"
 domain = "biology"
 test = "biogeography::range_size_latitude"
-avg_time_ns = 2274999.00
-iterations_per_sec = 500.00
+avg_time_ns = 1841400.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "biogeography_wallace_line_effect"
@@ -168,8 +168,8 @@ symbol = "WLE"
 name = "Wallace line effect"
 domain = "biology"
 test = "biogeography::wallace_line_effect"
-avg_time_ns = 4666338.00
-iterations_per_sec = 250.00
+avg_time_ns = 2192360.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "bioinformatics_alignment_gc_content"
@@ -178,7 +178,7 @@ symbol = "AGC"
 name = "Alignment gc content"
 domain = "biology"
 test = "bioinformatics::alignment_gc_content"
-avg_time_ns = 2438749.00
+avg_time_ns = 2170491.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -188,8 +188,8 @@ symbol = "EDI"
 name = "Edit distance identical"
 domain = "biology"
 test = "bioinformatics::edit_distance_identical"
-avg_time_ns = 2452219.00
-iterations_per_sec = 500.00
+avg_time_ns = 1919790.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "bioinformatics_sequence_identity"
@@ -198,8 +198,8 @@ symbol = "SI"
 name = "Sequence identity"
 domain = "biology"
 test = "bioinformatics::sequence_identity"
-avg_time_ns = 2011779.00
-iterations_per_sec = 500.00
+avg_time_ns = 1916170.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "bioinformatics_smith_waterman_score"
@@ -208,8 +208,8 @@ symbol = "SWS"
 name = "Smith waterman score"
 domain = "biology"
 test = "bioinformatics::smith_waterman_score"
-avg_time_ns = 1977209.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2269051.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biomechanics_biomech_cardiac_output"
@@ -218,8 +218,8 @@ symbol = "BCO"
 name = "Biomech cardiac output"
 domain = "biology"
 test = "biomechanics::biomech_cardiac_output"
-avg_time_ns = 1778790.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2296730.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biomechanics_gait_stride_length"
@@ -228,8 +228,8 @@ symbol = "GSL"
 name = "Gait stride length"
 domain = "biology"
 test = "biomechanics::gait_stride_length"
-avg_time_ns = 1790669.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2314860.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biomechanics_ground_reaction_force"
@@ -238,8 +238,8 @@ symbol = "GRF"
 name = "Ground reaction force"
 domain = "biology"
 test = "biomechanics::ground_reaction_force"
-avg_time_ns = 1807159.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2390231.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biomechanics_joint_moment"
@@ -248,7 +248,7 @@ symbol = "JM"
 name = "Joint moment"
 domain = "biology"
 test = "biomechanics::joint_moment"
-avg_time_ns = 2017939.00
+avg_time_ns = 2523590.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -258,7 +258,7 @@ symbol = "FE"
 name = "Fret efficiency"
 domain = "biology"
 test = "biophysics::fret_efficiency"
-avg_time_ns = 2613499.00
+avg_time_ns = 2983951.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -268,8 +268,8 @@ symbol = "HB"
 name = "Harmonic bond"
 domain = "biology"
 test = "biophysics::harmonic_bond"
-avg_time_ns = 3845128.00
-iterations_per_sec = 333.33
+avg_time_ns = 2245980.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biophysics_lennard_jones"
@@ -278,8 +278,8 @@ symbol = "LJ"
 name = "Lennard jones"
 domain = "biology"
 test = "biophysics::lennard_jones"
-avg_time_ns = 3076909.00
-iterations_per_sec = 333.33
+avg_time_ns = 2532751.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "biophysics_membrane_tension"
@@ -288,7 +288,7 @@ symbol = "MT"
 name = "Membrane tension"
 domain = "biology"
 test = "biophysics::membrane_tension"
-avg_time_ns = 2739149.00
+avg_time_ns = 2522360.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -298,8 +298,8 @@ symbol = "FS"
 name = "F1 score"
 domain = "biology"
 test = "biostatistics::f1_score"
-avg_time_ns = 2407649.00
-iterations_per_sec = 500.00
+avg_time_ns = 1997400.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "biostatistics_number_needed_to_treat"
@@ -308,7 +308,7 @@ symbol = "NNT"
 name = "Number needed to treat"
 domain = "biology"
 test = "biostatistics::number_needed_to_treat"
-avg_time_ns = 1936359.00
+avg_time_ns = 1856231.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -318,7 +318,7 @@ symbol = "OR"
 name = "Odds ratio"
 domain = "biology"
 test = "biostatistics::odds_ratio"
-avg_time_ns = 1923639.00
+avg_time_ns = 1935590.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -328,8 +328,8 @@ symbol = "Se"
 name = "Sensitivity"
 domain = "biology"
 test = "biostatistics::sensitivity"
-avg_time_ns = 2504969.00
-iterations_per_sec = 500.00
+avg_time_ns = 1787060.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "biostatistics_specificity"
@@ -338,8 +338,8 @@ symbol = "Sp"
 name = "Specificity"
 domain = "biology"
 test = "biostatistics::specificity"
-avg_time_ns = 2157639.00
-iterations_per_sec = 500.00
+avg_time_ns = 1740531.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "cancer_biology_cancer_linear_quadratic_survival"
@@ -348,7 +348,7 @@ symbol = "CLQ"
 name = "Cancer linear quadratic survival"
 domain = "biology"
 test = "cancer_biology::cancer_linear_quadratic_survival"
-avg_time_ns = 1898459.00
+avg_time_ns = 1778240.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -358,7 +358,7 @@ symbol = "CKL"
 name = "Cell kill log"
 domain = "biology"
 test = "cancer_biology::cell_kill_log"
-avg_time_ns = 1829739.00
+avg_time_ns = 1731590.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -368,8 +368,8 @@ symbol = "TDT"
 name = "Tumor doubling time"
 domain = "biology"
 test = "cancer_biology::tumor_doubling_time"
-avg_time_ns = 1934869.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2137070.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "cancer_biology_tumor_growth_exponential"
@@ -378,8 +378,8 @@ symbol = "TGE"
 name = "Tumor growth exponential"
 domain = "biology"
 test = "cancer_biology::tumor_growth_exponential"
-avg_time_ns = 1873090.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2540071.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "cell_cell_doubling_time"
@@ -388,8 +388,8 @@ symbol = "CDT"
 name = "Cell doubling time"
 domain = "biology"
 test = "cell::cell_doubling_time"
-avg_time_ns = 1920959.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2470260.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "cell_fick_first_law"
@@ -398,8 +398,8 @@ symbol = "FFL"
 name = "Fick first law"
 domain = "biology"
 test = "cell::fick_first_law"
-avg_time_ns = 1816119.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2343071.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "cell_ligand_receptor_binding"
@@ -408,8 +408,8 @@ symbol = "LRB"
 name = "Ligand receptor binding"
 domain = "biology"
 test = "cell::ligand_receptor_binding"
-avg_time_ns = 1868889.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2340020.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "cell_osmotic_pressure"
@@ -418,7 +418,7 @@ symbol = "OP"
 name = "Osmotic pressure"
 domain = "biology"
 test = "cell::osmotic_pressure"
-avg_time_ns = 2372089.00
+avg_time_ns = 2569101.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -428,7 +428,7 @@ symbol = "CAD"
 name = "Circadian amplitude damping"
 domain = "biology"
 test = "chronobiology::circadian_amplitude_damping"
-avg_time_ns = 2000019.00
+avg_time_ns = 2473550.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -438,8 +438,8 @@ symbol = "JLR"
 name = "Jet lag recovery"
 domain = "biology"
 test = "chronobiology::jet_lag_recovery"
-avg_time_ns = 1860429.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2473550.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "chronobiology_photoperiod"
@@ -448,7 +448,7 @@ symbol = "Ph"
 name = "Photoperiod"
 domain = "biology"
 test = "chronobiology::photoperiod"
-avg_time_ns = 2133809.00
+avg_time_ns = 2263801.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -458,7 +458,7 @@ symbol = "ZS"
 name = "Zeitgeber strength"
 domain = "biology"
 test = "chronobiology::zeitgeber_strength"
-avg_time_ns = 1878409.00
+avg_time_ns = 1978570.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -468,8 +468,8 @@ symbol = "CCR"
 name = "Critical cooling rate"
 domain = "biology"
 test = "cryobiology::critical_cooling_rate"
-avg_time_ns = 2121980.00
-iterations_per_sec = 500.00
+avg_time_ns = 1964320.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "cryobiology_freezing_point_depression"
@@ -478,7 +478,7 @@ symbol = "FPD"
 name = "Freezing point depression"
 domain = "biology"
 test = "cryobiology::freezing_point_depression"
-avg_time_ns = 1963989.00
+avg_time_ns = 1903521.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -488,8 +488,8 @@ symbol = "SDA"
 name = "Storage decay arrhenius"
 domain = "biology"
 test = "cryobiology::storage_decay_arrhenius"
-avg_time_ns = 2451709.00
-iterations_per_sec = 500.00
+avg_time_ns = 1958450.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "cryobiology_vitrification_probability"
@@ -498,7 +498,7 @@ symbol = "VP"
 name = "Vitrification probability"
 domain = "biology"
 test = "cryobiology::vitrification_probability"
-avg_time_ns = 2126599.00
+avg_time_ns = 2174830.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -508,8 +508,8 @@ symbol = "FFM"
 name = "French flag model"
 domain = "biology"
 test = "developmental::french_flag_model"
-avg_time_ns = 1895879.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2021221.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "developmental_lateral_inhibition"
@@ -518,8 +518,8 @@ symbol = "LI"
 name = "Lateral inhibition"
 domain = "biology"
 test = "developmental::lateral_inhibition"
-avg_time_ns = 1866539.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2074770.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "developmental_morphogen_gradient_steady"
@@ -528,8 +528,8 @@ symbol = "MGS"
 name = "Morphogen gradient steady"
 domain = "biology"
 test = "developmental::morphogen_gradient_steady"
-avg_time_ns = 1886909.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2551710.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "dispatch_codon_frequency"
@@ -538,8 +538,8 @@ symbol = "CF"
 name = "Codon frequency"
 domain = "biology"
 test = "dispatch::codon_frequency"
-avg_time_ns = 1860779.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2179311.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "dispatch_dispatch_missing_parameter_returns_error"
@@ -548,8 +548,8 @@ symbol = "DMP"
 name = "Dispatch missing parameter returns error"
 domain = "biology"
 test = "dispatch::dispatch_missing_parameter_returns_error"
-avg_time_ns = 1907299.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2071320.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "dispatch_dispatch_unknown_function_returns_error"
@@ -558,7 +558,7 @@ symbol = "DUF"
 name = "Dispatch unknown function returns error"
 domain = "biology"
 test = "dispatch::dispatch_unknown_function_returns_error"
-avg_time_ns = 1868900.00
+avg_time_ns = 1935931.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -568,7 +568,7 @@ symbol = "GMR"
 name = "Gompertz mortality rate"
 domain = "biology"
 test = "dispatch::gompertz_mortality_rate"
-avg_time_ns = 1763889.00
+avg_time_ns = 1780600.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -578,8 +578,8 @@ symbol = "MRK"
 name = "Metabolic rate kleiber"
 domain = "biology"
 test = "dispatch::metabolic_rate_kleiber"
-avg_time_ns = 1806629.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2082170.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "dispatch_soil_respiration"
@@ -588,7 +588,7 @@ symbol = "SR"
 name = "Soil respiration"
 domain = "biology"
 test = "dispatch::soil_respiration"
-avg_time_ns = 1778969.00
+avg_time_ns = 1932960.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -598,8 +598,8 @@ symbol = "TS"
 name = "Telomere shortening"
 domain = "biology"
 test = "dispatch::telomere_shortening"
-avg_time_ns = 1682540.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2042521.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "ecology_inverse_simpson"
@@ -608,8 +608,8 @@ symbol = "IS"
 name = "Inverse simpson"
 domain = "biology"
 test = "ecology::inverse_simpson"
-avg_time_ns = 1800289.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2091620.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "ecology_shannon_diversity"
@@ -618,7 +618,7 @@ symbol = "SD"
 name = "Shannon diversity"
 domain = "biology"
 test = "ecology::shannon_diversity"
-avg_time_ns = 1807199.00
+avg_time_ns = 1881120.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -628,7 +628,7 @@ symbol = "SD"
 name = "Simpson diversity"
 domain = "biology"
 test = "ecology::simpson_diversity"
-avg_time_ns = 1871009.00
+avg_time_ns = 1894331.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -638,7 +638,7 @@ symbol = "SR"
 name = "Species richness"
 domain = "biology"
 test = "ecology::species_richness"
-avg_time_ns = 1806889.00
+avg_time_ns = 1888260.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -648,7 +648,7 @@ symbol = "HI"
 name = "Homa ir"
 domain = "biology"
 test = "endocrinology::homa_ir"
-avg_time_ns = 1825890.00
+avg_time_ns = 1851330.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -658,7 +658,7 @@ symbol = "HHL"
 name = "Hormone half life clearance"
 domain = "biology"
 test = "endocrinology::hormone_half_life_clearance"
-avg_time_ns = 1803669.00
+avg_time_ns = 1901291.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -668,7 +668,7 @@ symbol = "ISI"
 name = "Insulin sensitivity index"
 domain = "biology"
 test = "endocrinology::insulin_sensitivity_index"
-avg_time_ns = 1869779.00
+avg_time_ns = 1948430.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -678,7 +678,7 @@ symbol = "RS"
 name = "Receptor saturation"
 domain = "biology"
 test = "endocrinology::receptor_saturation"
-avg_time_ns = 1801319.00
+avg_time_ns = 1943860.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -688,8 +688,8 @@ symbol = "CII"
 name = "Competitive inhibition increases apparent km"
 domain = "biology"
 test = "enzyme::competitive_inhibition_increases_apparent_km"
-avg_time_ns = 1819649.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2394191.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "enzyme_hill_equation"
@@ -698,8 +698,8 @@ symbol = "HE"
 name = "Hill equation"
 domain = "biology"
 test = "enzyme::hill_equation"
-avg_time_ns = 1988950.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2331590.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "enzyme_hill_higher_cooperativity_reduces_rate_below_k"
@@ -708,8 +708,8 @@ symbol = "HHC"
 name = "Hill higher cooperativity reduces rate below k"
 domain = "biology"
 test = "enzyme::hill_higher_cooperativity_reduces_rate_below_k"
-avg_time_ns = 1838419.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2206871.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "enzyme_lineweaver_burk"
@@ -718,8 +718,8 @@ symbol = "LB"
 name = "Lineweaver burk"
 domain = "biology"
 test = "enzyme::lineweaver_burk"
-avg_time_ns = 1836799.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2030930.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "enzyme_michaelis_menten_half_vmax"
@@ -728,8 +728,8 @@ symbol = "MMH"
 name = "Michaelis menten half vmax"
 domain = "biology"
 test = "enzyme::michaelis_menten_half_vmax"
-avg_time_ns = 1787419.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2146840.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "enzyme_michaelis_menten_monotonic_with_substrate"
@@ -738,8 +738,8 @@ symbol = "MMM"
 name = "Michaelis menten monotonic with substrate"
 domain = "biology"
 test = "enzyme::michaelis_menten_monotonic_with_substrate"
-avg_time_ns = 1969159.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2020571.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "enzyme_michaelis_menten_saturation"
@@ -748,7 +748,7 @@ symbol = "MMS"
 name = "Michaelis menten saturation"
 domain = "biology"
 test = "enzyme::michaelis_menten_saturation"
-avg_time_ns = 1820739.00
+avg_time_ns = 1947230.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -758,8 +758,8 @@ symbol = "CML"
 name = "Cpg methylation level"
 domain = "biology"
 test = "epigenetics::cpg_methylation_level"
-avg_time_ns = 1843710.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2740930.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "epigenetics_epigenetic_inheritance_probability"
@@ -768,8 +768,8 @@ symbol = "EIP"
 name = "Epigenetic inheritance probability"
 domain = "biology"
 test = "epigenetics::epigenetic_inheritance_probability"
-avg_time_ns = 1963089.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2712881.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "epigenetics_nucleosome_occupancy"
@@ -778,8 +778,8 @@ symbol = "NO"
 name = "Nucleosome occupancy"
 domain = "biology"
 test = "epigenetics::nucleosome_occupancy"
-avg_time_ns = 1942579.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2332110.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "epigenetics_rnai_knockdown_efficiency"
@@ -788,8 +788,8 @@ symbol = "RKE"
 name = "Rnai knockdown efficiency"
 domain = "biology"
 test = "epigenetics::rnai_knockdown_efficiency"
-avg_time_ns = 1803699.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2116861.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "ethology_hamilton_relatedness_benefit"
@@ -798,8 +798,8 @@ symbol = "HRB"
 name = "Hamilton relatedness benefit"
 domain = "biology"
 test = "ethology::hamilton_relatedness_benefit"
-avg_time_ns = 1914779.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2565010.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "ethology_hawk_dove_payoff"
@@ -808,8 +808,8 @@ symbol = "HDP"
 name = "Hawk dove payoff"
 domain = "biology"
 test = "ethology::hawk_dove_payoff"
-avg_time_ns = 1912059.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2460970.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "ethology_ideal_free_distribution"
@@ -818,8 +818,8 @@ symbol = "IFD"
 name = "Ideal free distribution"
 domain = "biology"
 test = "ethology::ideal_free_distribution"
-avg_time_ns = 1985480.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2952431.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "ethology_territory_size"
@@ -828,8 +828,8 @@ symbol = "TS"
 name = "Territory size"
 domain = "biology"
 test = "ethology::territory_size"
-avg_time_ns = 3792648.00
-iterations_per_sec = 333.33
+avg_time_ns = 2962290.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "evolution_adaptation_rate"
@@ -838,7 +838,7 @@ symbol = "AR"
 name = "Adaptation rate"
 domain = "biology"
 test = "evolution::adaptation_rate"
-avg_time_ns = 2163739.00
+avg_time_ns = 2699161.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -848,7 +848,7 @@ symbol = "FPN"
 name = "Fixation probability neutral"
 domain = "biology"
 test = "evolution::fixation_probability_neutral"
-avg_time_ns = 2308969.00
+avg_time_ns = 2459400.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -858,7 +858,7 @@ symbol = "SRB"
 name = "Speciation rate bdi"
 domain = "biology"
 test = "evolution::speciation_rate_bdi"
-avg_time_ns = 2089979.00
+avg_time_ns = 2456811.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -868,8 +868,8 @@ symbol = "SR"
 name = "Substitution rate"
 domain = "biology"
 test = "evolution::substitution_rate"
-avg_time_ns = 1925159.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2514650.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "genetics_broad_sense_heritability"
@@ -878,7 +878,7 @@ symbol = "BSH"
 name = "Broad sense heritability"
 domain = "biology"
 test = "genetics::broad_sense_heritability"
-avg_time_ns = 2833199.00
+avg_time_ns = 2426830.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -888,7 +888,7 @@ symbol = "EPS"
 name = "Effective population size"
 domain = "biology"
 test = "genetics::effective_population_size"
-avg_time_ns = 2696249.00
+avg_time_ns = 2504571.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -898,7 +898,7 @@ symbol = "HW"
 name = "Hardy weinberg"
 domain = "biology"
 test = "genetics::hardy_weinberg"
-avg_time_ns = 2315369.00
+avg_time_ns = 2340090.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -908,7 +908,7 @@ symbol = "MSB"
 name = "Mutation selection balance"
 domain = "biology"
 test = "genetics::mutation_selection_balance"
-avg_time_ns = 2644719.00
+avg_time_ns = 2557661.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -918,7 +918,7 @@ symbol = "CAI"
 name = "Codon adaptation index"
 domain = "biology"
 test = "genomics::codon_adaptation_index"
-avg_time_ns = 2450358.00
+avg_time_ns = 2338820.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -928,8 +928,8 @@ symbol = "GC"
 name = "Gc content"
 domain = "biology"
 test = "genomics::gc_content"
-avg_time_ns = 1887440.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2979830.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "genomics_gene_density"
@@ -938,7 +938,7 @@ symbol = "GD"
 name = "Gene density"
 domain = "biology"
 test = "genomics::gene_density"
-avg_time_ns = 2362429.00
+avg_time_ns = 2610051.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -948,7 +948,7 @@ symbol = "SAF"
 name = "Snp allele frequency"
 domain = "biology"
 test = "genomics::snp_allele_frequency"
-avg_time_ns = 2466358.00
+avg_time_ns = 2450610.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -958,7 +958,7 @@ symbol = "AT"
 name = "Antibody titer"
 domain = "biology"
 test = "immunology::antibody_titer"
-avg_time_ns = 2071250.00
+avg_time_ns = 2323271.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -968,8 +968,8 @@ symbol = "CE"
 name = "Clonal expansion"
 domain = "biology"
 test = "immunology::clonal_expansion"
-avg_time_ns = 1935659.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2341550.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "immunology_herd_immunity_fraction"
@@ -978,7 +978,7 @@ symbol = "HIF"
 name = "Herd immunity fraction"
 domain = "biology"
 test = "immunology::herd_immunity_fraction"
-avg_time_ns = 2346389.00
+avg_time_ns = 2272891.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -988,7 +988,7 @@ symbol = "VE"
 name = "Vaccine efficacy"
 domain = "biology"
 test = "immunology::vaccine_efficacy"
-avg_time_ns = 2118319.00
+avg_time_ns = 2728580.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -998,7 +998,7 @@ symbol = "BTT"
 name = "Bleaching thermal threshold"
 domain = "biology"
 test = "marine_biology::bleaching_thermal_threshold"
-avg_time_ns = 2267799.00
+avg_time_ns = 2422970.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1008,7 +1008,7 @@ symbol = "FGV"
 name = "Fish growth von bertalanffy"
 domain = "biology"
 test = "marine_biology::fish_growth_von_bertalanffy"
-avg_time_ns = 2000309.00
+avg_time_ns = 2312081.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1018,7 +1018,7 @@ symbol = "MSY"
 name = "Maximum sustainable yield"
 domain = "biology"
 test = "marine_biology::maximum_sustainable_yield"
-avg_time_ns = 2086209.00
+avg_time_ns = 2673660.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1028,7 +1028,7 @@ symbol = "OAP"
 name = "Ocean acidification ph"
 domain = "biology"
 test = "marine_biology::ocean_acidification_ph"
-avg_time_ns = 2526989.00
+avg_time_ns = 2481751.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1038,8 +1038,8 @@ symbol = "BF"
 name = "Biofilm formation"
 domain = "biology"
 test = "microbiology::biofilm_formation"
-avg_time_ns = 3084289.00
-iterations_per_sec = 333.33
+avg_time_ns = 2306190.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "microbiology_chemostat_steady_state_biomass"
@@ -1048,7 +1048,7 @@ symbol = "CSS"
 name = "Chemostat steady state biomass"
 domain = "biology"
 test = "microbiology::chemostat_steady_state_biomass"
-avg_time_ns = 2725198.00
+avg_time_ns = 2471660.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1058,7 +1058,7 @@ symbol = "GTB"
 name = "Generation time bacteria"
 domain = "biology"
 test = "microbiology::generation_time_bacteria"
-avg_time_ns = 2246459.00
+avg_time_ns = 2360381.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1068,8 +1068,8 @@ symbol = "MG"
 name = "Monod growth"
 domain = "biology"
 test = "microbiology::monod_growth"
-avg_time_ns = 1968609.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2351260.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "mycology_carbon_use_efficiency"
@@ -1078,7 +1078,7 @@ symbol = "CUE"
 name = "Carbon use efficiency"
 domain = "biology"
 test = "mycology::carbon_use_efficiency"
-avg_time_ns = 2549219.00
+avg_time_ns = 2212720.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1088,7 +1088,7 @@ symbol = "DR"
 name = "Decomposition rate"
 domain = "biology"
 test = "mycology::decomposition_rate"
-avg_time_ns = 2068769.00
+avg_time_ns = 2511921.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1098,8 +1098,8 @@ symbol = "HGR"
 name = "Hyphal growth rate"
 domain = "biology"
 test = "mycology::hyphal_growth_rate"
-avg_time_ns = 1888570.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2618460.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "mycology_spore_germination_probability"
@@ -1108,8 +1108,8 @@ symbol = "SGP"
 name = "Spore germination probability"
 domain = "biology"
 test = "mycology::spore_germination_probability"
-avg_time_ns = 1850959.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2243581.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "neuroscience_fano_factor"
@@ -1118,8 +1118,8 @@ symbol = "FF"
 name = "Fano factor"
 domain = "biology"
 test = "neuroscience::fano_factor"
-avg_time_ns = 1910339.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2247280.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "neuroscience_firing_rate"
@@ -1128,8 +1128,8 @@ symbol = "FR"
 name = "Firing rate"
 domain = "biology"
 test = "neuroscience::firing_rate"
-avg_time_ns = 1881669.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2609161.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "neuroscience_rescorla_wagner_update"
@@ -1138,8 +1138,8 @@ symbol = "RWU"
 name = "Rescorla wagner update"
 domain = "biology"
 test = "neuroscience::rescorla_wagner_update"
-avg_time_ns = 1852379.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2473070.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "neuroscience_stdp_weight_change"
@@ -1148,8 +1148,8 @@ symbol = "SWC"
 name = "Stdp weight change"
 domain = "biology"
 test = "neuroscience::stdp_weight_change"
-avg_time_ns = 1871889.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2540100.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "nutrition_basal_metabolic_rate_mifflin"
@@ -1158,8 +1158,8 @@ symbol = "BMR"
 name = "Basal metabolic rate mifflin"
 domain = "biology"
 test = "nutrition::basal_metabolic_rate_mifflin"
-avg_time_ns = 1904810.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2700771.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "nutrition_body_mass_index"
@@ -1168,8 +1168,8 @@ symbol = "BMI"
 name = "Body mass index"
 domain = "biology"
 test = "nutrition::body_mass_index"
-avg_time_ns = 1865179.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2448380.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "nutrition_nitrogen_balance"
@@ -1178,7 +1178,7 @@ symbol = "NB"
 name = "Nitrogen balance"
 domain = "biology"
 test = "nutrition::nitrogen_balance"
-avg_time_ns = 2030039.00
+avg_time_ns = 2194611.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1188,8 +1188,8 @@ symbol = "RER"
 name = "Respiratory exchange ratio"
 domain = "biology"
 test = "nutrition::respiratory_exchange_ratio"
-avg_time_ns = 1894079.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2086800.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "paleobiology_evolutionary_rate_darwin"
@@ -1198,8 +1198,8 @@ symbol = "ERD"
 name = "Evolutionary rate darwin"
 domain = "biology"
 test = "paleobiology::evolutionary_rate_darwin"
-avg_time_ns = 1842559.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2158710.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "paleobiology_extinction_rate"
@@ -1208,8 +1208,8 @@ symbol = "ER"
 name = "Extinction rate"
 domain = "biology"
 test = "paleobiology::extinction_rate"
-avg_time_ns = 1863559.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2106601.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "paleobiology_net_diversification_rate"
@@ -1218,8 +1218,8 @@ symbol = "NDR"
 name = "Net diversification rate"
 domain = "biology"
 test = "paleobiology::net_diversification_rate"
-avg_time_ns = 1971260.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2391700.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "paleobiology_radiometric_age"
@@ -1228,8 +1228,8 @@ symbol = "RA"
 name = "Radiometric age"
 domain = "biology"
 test = "paleobiology::radiometric_age"
-avg_time_ns = 1869729.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2270890.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "parasitology_force_of_infection"
@@ -1238,7 +1238,7 @@ symbol = "FOI"
 name = "Force of infection"
 domain = "biology"
 test = "parasitology::force_of_infection"
-avg_time_ns = 2076819.00
+avg_time_ns = 2471481.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1248,7 +1248,7 @@ symbol = "PR"
 name = "Parasite r0"
 domain = "biology"
 test = "parasitology::parasite_r0"
-avg_time_ns = 2180789.00
+avg_time_ns = 2340080.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1258,8 +1258,8 @@ symbol = "VBR"
 name = "Vector borne r0"
 domain = "biology"
 test = "parasitology::vector_borne_r0"
-avg_time_ns = 1930639.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2353551.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "pharmacology_bioavailability"
@@ -1268,8 +1268,8 @@ symbol = "Bi"
 name = "Bioavailability"
 domain = "biology"
 test = "pharmacology::bioavailability"
-avg_time_ns = 1904209.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2260800.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "pharmacology_dose_response_hill"
@@ -1278,8 +1278,8 @@ symbol = "DRH"
 name = "Dose response hill"
 domain = "biology"
 test = "pharmacology::dose_response_hill"
-avg_time_ns = 1935179.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2117040.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "pharmacology_half_life"
@@ -1288,7 +1288,7 @@ symbol = "HL"
 name = "Half life"
 domain = "biology"
 test = "pharmacology::half_life"
-avg_time_ns = 2048649.00
+avg_time_ns = 2412581.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1298,8 +1298,8 @@ symbol = "TI"
 name = "Therapeutic index"
 domain = "biology"
 test = "pharmacology::therapeutic_index"
-avg_time_ns = 1950580.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2967400.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "phylogenetics_jukes_cantor_distance"
@@ -1308,7 +1308,7 @@ symbol = "JCD"
 name = "Jukes cantor distance"
 domain = "biology"
 test = "phylogenetics::jukes_cantor_distance"
-avg_time_ns = 2288709.00
+avg_time_ns = 2535911.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1318,7 +1318,7 @@ symbol = "PS"
 name = "Parsimony score"
 domain = "biology"
 test = "phylogenetics::parsimony_score"
-avg_time_ns = 2182899.00
+avg_time_ns = 2993510.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1328,8 +1328,8 @@ symbol = "SI"
 name = "Sackin index"
 domain = "biology"
 test = "phylogenetics::sackin_index"
-avg_time_ns = 1973689.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2590951.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "physiology_alveolar_gas_equation"
@@ -1338,8 +1338,8 @@ symbol = "AGE"
 name = "Alveolar gas equation"
 domain = "biology"
 test = "physiology::alveolar_gas_equation"
-avg_time_ns = 1923229.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2041750.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "physiology_frank_starling_mechanism"
@@ -1348,7 +1348,7 @@ symbol = "FSM"
 name = "Frank starling mechanism"
 domain = "biology"
 test = "physiology::frank_starling_mechanism"
-avg_time_ns = 1882189.00
+avg_time_ns = 1901510.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1358,8 +1358,8 @@ symbol = "GFR"
 name = "Glomerular filtration rate"
 domain = "biology"
 test = "physiology::glomerular_filtration_rate"
-avg_time_ns = 1904839.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2265441.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "physiology_oxygen_delivery"
@@ -1368,8 +1368,8 @@ symbol = "OD"
 name = "Oxygen delivery"
 domain = "biology"
 test = "physiology::oxygen_delivery"
-avg_time_ns = 1975999.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2594850.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "plant_biology_beer_lambert_canopy"
@@ -1378,8 +1378,8 @@ symbol = "BLC"
 name = "Beer lambert canopy"
 domain = "biology"
 test = "plant_biology::beer_lambert_canopy"
-avg_time_ns = 1915580.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2798811.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "plant_biology_photosynthesis_light_response"
@@ -1388,7 +1388,7 @@ symbol = "PLR"
 name = "Photosynthesis light response"
 domain = "biology"
 test = "plant_biology::photosynthesis_light_response"
-avg_time_ns = 2052199.00
+avg_time_ns = 2659730.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1398,8 +1398,8 @@ symbol = "TR"
 name = "Transpiration rate"
 domain = "biology"
 test = "plant_biology::transpiration_rate"
-avg_time_ns = 1957179.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2500710.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "plant_biology_water_potential"
@@ -1408,8 +1408,8 @@ symbol = "WP"
 name = "Water potential"
 domain = "biology"
 test = "plant_biology::water_potential"
-avg_time_ns = 1887439.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2600171.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "population_carrying_capacity_from_resources"
@@ -1418,8 +1418,8 @@ symbol = "CCF"
 name = "Carrying capacity from resources"
 domain = "biology"
 test = "population::carrying_capacity_from_resources"
-avg_time_ns = 1833369.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2503810.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "population_cell_growth_logistic"
@@ -1428,8 +1428,8 @@ symbol = "CGL"
 name = "Cell growth logistic"
 domain = "biology"
 test = "population::cell_growth_logistic"
-avg_time_ns = 1889609.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2344941.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "population_lotka_volterra_competition"
@@ -1438,8 +1438,8 @@ symbol = "LVC"
 name = "Lotka volterra competition"
 domain = "biology"
 test = "population::lotka_volterra_competition"
-avg_time_ns = 1850320.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2632460.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "population_lotka_volterra_predator_prey"
@@ -1448,7 +1448,7 @@ symbol = "LVP"
 name = "Lotka volterra predator prey"
 domain = "biology"
 test = "population::lotka_volterra_predator_prey"
-avg_time_ns = 2126848.00
+avg_time_ns = 2593361.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1458,7 +1458,7 @@ symbol = "GI"
 name = "Gravy index"
 domain = "biology"
 test = "proteomics::gravy_index"
-avg_time_ns = 2137160.00
+avg_time_ns = 2481320.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1468,7 +1468,7 @@ symbol = "MAP"
 name = "Mass accuracy ppm"
 domain = "biology"
 test = "proteomics::mass_accuracy_ppm"
-avg_time_ns = 2516799.00
+avg_time_ns = 2032090.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1478,7 +1478,7 @@ symbol = "MR"
 name = "Mz ratio"
 domain = "biology"
 test = "proteomics::mz_ratio"
-avg_time_ns = 2079879.00
+avg_time_ns = 2423591.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1488,7 +1488,7 @@ symbol = "PC"
 name = "Protein coverage"
 domain = "biology"
 test = "proteomics::protein_coverage"
-avg_time_ns = 2017939.00
+avg_time_ns = 2107940.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1498,8 +1498,8 @@ symbol = "OER"
 name = "Oxygen enhancement ratio"
 domain = "biology"
 test = "radiobiology::oxygen_enhancement_ratio"
-avg_time_ns = 1931849.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2108510.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "radiobiology_radio_biologically_effective_dose"
@@ -1508,7 +1508,7 @@ symbol = "RBE"
 name = "Radio biologically effective dose"
 domain = "biology"
 test = "radiobiology::radio_biologically_effective_dose"
-avg_time_ns = 2311359.00
+avg_time_ns = 2046081.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1518,8 +1518,8 @@ symbol = "RLQ"
 name = "Radio linear quadratic survival"
 domain = "biology"
 test = "radiobiology::radio_linear_quadratic_survival"
-avg_time_ns = 2226039.00
-iterations_per_sec = 500.00
+avg_time_ns = 1949090.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "radiobiology_tcp"
@@ -1528,8 +1528,8 @@ symbol = "Tc"
 name = "Tcp"
 domain = "biology"
 test = "radiobiology::tcp"
-avg_time_ns = 2067209.00
-iterations_per_sec = 500.00
+avg_time_ns = 1997450.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "reproduction_fertilization_probability"
@@ -1538,8 +1538,8 @@ symbol = "FP"
 name = "Fertilization probability"
 domain = "biology"
 test = "reproduction::fertilization_probability"
-avg_time_ns = 2159619.00
-iterations_per_sec = 500.00
+avg_time_ns = 1952491.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "reproduction_hcg_doubling"
@@ -1548,8 +1548,8 @@ symbol = "HD"
 name = "Hcg doubling"
 domain = "biology"
 test = "reproduction::hcg_doubling"
-avg_time_ns = 2158919.00
-iterations_per_sec = 500.00
+avg_time_ns = 1919540.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "reproduction_ivf_success_rate"
@@ -1558,8 +1558,8 @@ symbol = "ISR"
 name = "Ivf success rate"
 domain = "biology"
 test = "reproduction::ivf_success_rate"
-avg_time_ns = 2084539.00
-iterations_per_sec = 500.00
+avg_time_ns = 1898220.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "reproduction_sperm_motility_score"
@@ -1568,7 +1568,7 @@ symbol = "SMS"
 name = "Sperm motility score"
 domain = "biology"
 test = "reproduction::sperm_motility_score"
-avg_time_ns = 1892929.00
+avg_time_ns = 1957301.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1578,7 +1578,7 @@ symbol = "NO"
 name = "Niche occupancy"
 domain = "biology"
 test = "stem_cell::niche_occupancy"
-avg_time_ns = 1925019.00
+avg_time_ns = 1893220.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1588,8 +1588,8 @@ symbol = "RE"
 name = "Reprogramming efficiency"
 domain = "biology"
 test = "stem_cell::reprogramming_efficiency"
-avg_time_ns = 1896170.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2192840.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "stem_cell_self_renewal_probability"
@@ -1598,8 +1598,8 @@ symbol = "SRP"
 name = "Self renewal probability"
 domain = "biology"
 test = "stem_cell::self_renewal_probability"
-avg_time_ns = 1880849.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2207231.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "structural_alpha_helix_propensity"
@@ -1608,8 +1608,8 @@ symbol = "AHP"
 name = "Alpha helix propensity"
 domain = "biology"
 test = "structural::alpha_helix_propensity"
-avg_time_ns = 1891369.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2037840.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "structural_binding_free_energy"
@@ -1618,7 +1618,7 @@ symbol = "BFE"
 name = "Binding free energy"
 domain = "biology"
 test = "structural::binding_free_energy"
-avg_time_ns = 1896969.00
+avg_time_ns = 1905720.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1628,8 +1628,8 @@ symbol = "ROG"
 name = "Radius of gyration"
 domain = "biology"
 test = "structural::radius_of_gyration"
-avg_time_ns = 2033779.00
-iterations_per_sec = 500.00
+avg_time_ns = 1969751.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "structural_rmsd"
@@ -1638,8 +1638,8 @@ symbol = "Rm"
 name = "Rmsd"
 domain = "biology"
 test = "structural::rmsd"
-avg_time_ns = 1977709.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2034190.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "synthetic_biology_and_gate"
@@ -1648,7 +1648,7 @@ symbol = "AG"
 name = "And gate"
 domain = "biology"
 test = "synthetic_biology::and_gate"
-avg_time_ns = 1884149.00
+avg_time_ns = 1979540.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1658,8 +1658,8 @@ symbol = "COT"
 name = "Crispr on target score"
 domain = "biology"
 test = "synthetic_biology::crispr_on_target_score"
-avg_time_ns = 2236349.00
-iterations_per_sec = 500.00
+avg_time_ns = 1991941.00
+iterations_per_sec = 1000.00
 
 [[entries]]
 label = "synthetic_biology_hill_activation"
@@ -1668,7 +1668,7 @@ symbol = "HA"
 name = "Hill activation"
 domain = "biology"
 test = "synthetic_biology::hill_activation"
-avg_time_ns = 2132950.00
+avg_time_ns = 2005900.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1678,8 +1678,8 @@ symbol = "HR"
 name = "Hill repression"
 domain = "biology"
 test = "synthetic_biology::hill_repression"
-avg_time_ns = 1895859.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2056720.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "systems_biology_metabolic_control_coefficient"
@@ -1688,7 +1688,7 @@ symbol = "MCC"
 name = "Metabolic control coefficient"
 domain = "biology"
 test = "systems_biology::metabolic_control_coefficient"
-avg_time_ns = 1841209.00
+avg_time_ns = 1978441.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1698,7 +1698,7 @@ symbol = "OP"
 name = "Oscillation period"
 domain = "biology"
 test = "systems_biology::oscillation_period"
-avg_time_ns = 2125069.00
+avg_time_ns = 2983160.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1708,8 +1708,8 @@ symbol = "UI"
 name = "Ultrasensitivity index"
 domain = "biology"
 test = "systems_biology::ultrasensitivity_index"
-avg_time_ns = 1995669.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2347041.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "tissue_engineering_cell_proliferation_on_scaffold"
@@ -1718,7 +1718,7 @@ symbol = "CPO"
 name = "Cell proliferation on scaffold"
 domain = "biology"
 test = "tissue_engineering::cell_proliferation_on_scaffold"
-avg_time_ns = 2974159.00
+avg_time_ns = 2022420.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1728,7 +1728,7 @@ symbol = "DRF"
 name = "Degradation rate first order"
 domain = "biology"
 test = "tissue_engineering::degradation_rate_first_order"
-avg_time_ns = 2174659.00
+avg_time_ns = 2068850.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1738,7 +1738,7 @@ symbol = "OTR"
 name = "Oxygen transfer rate"
 domain = "biology"
 test = "tissue_engineering::oxygen_transfer_rate"
-avg_time_ns = 2201789.00
+avg_time_ns = 2086801.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1748,7 +1748,7 @@ symbol = "SP"
 name = "Scaffold porosity"
 domain = "biology"
 test = "tissue_engineering::scaffold_porosity"
-avg_time_ns = 2120669.00
+avg_time_ns = 2020220.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1758,7 +1758,7 @@ symbol = "BR"
 name = "Bcf ratio"
 domain = "biology"
 test = "toxicology::bcf_ratio"
-avg_time_ns = 2049629.00
+avg_time_ns = 2163320.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1768,7 +1768,7 @@ symbol = "LP"
 name = "Ld50 probit"
 domain = "biology"
 test = "toxicology::ld50_probit"
-avg_time_ns = 1986869.00
+avg_time_ns = 1977881.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1778,7 +1778,7 @@ symbol = "RQ"
 name = "Risk quotient"
 domain = "biology"
 test = "toxicology::risk_quotient"
-avg_time_ns = 1919359.00
+avg_time_ns = 1907330.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1788,7 +1788,7 @@ symbol = "TW"
 name = "Therapeutic window"
 domain = "biology"
 test = "toxicology::therapeutic_window"
-avg_time_ns = 2086099.00
+avg_time_ns = 2199140.00
 iterations_per_sec = 500.00
 
 [[entries]]
@@ -1798,8 +1798,8 @@ symbol = "BRN"
 name = "Basic reproduction number viral"
 domain = "biology"
 test = "virology::basic_reproduction_number_viral"
-avg_time_ns = 1903999.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2004341.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "virology_burst_size"
@@ -1808,7 +1808,7 @@ symbol = "BS"
 name = "Burst size"
 domain = "biology"
 test = "virology::burst_size"
-avg_time_ns = 1872230.00
+avg_time_ns = 1921170.00
 iterations_per_sec = 1000.00
 
 [[entries]]
@@ -1818,8 +1818,8 @@ symbol = "HIT"
 name = "Herd immunity threshold"
 domain = "biology"
 test = "virology::herd_immunity_threshold"
-avg_time_ns = 1835129.00
-iterations_per_sec = 1000.00
+avg_time_ns = 2007090.00
+iterations_per_sec = 500.00
 
 [[entries]]
 label = "virology_viral_load_decay"
@@ -1828,6 +1828,6 @@ symbol = "VLD"
 name = "Viral load decay"
 domain = "biology"
 test = "virology::viral_load_decay"
-avg_time_ns = 1944849.00
+avg_time_ns = 1939751.00
 iterations_per_sec = 1000.00
 

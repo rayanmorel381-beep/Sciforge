@@ -1,5 +1,48 @@
 # Mathematics — ChangeLog
 
+## v0.0.4
+
+| Category | Detail |
+|---|---|
+| Files created | 2 (`probability/bayesian.rs`, `statistics/clustering.rs`) |
+| Files modified | 1 (`probability/monte_carlo.rs`) |
+| New functions | 16 (bayesian +8, clustering +6, monte_carlo +2) |
+
+### New functions — `probability::bayesian` (8 fn)
+
+| Function | Signature | Description | Module |
+|---|---|---|---|
+| `bayes_update` | `fn bayes_update(prior: &[f64], likelihood: &[f64]) → Vec<f64>` | Discrete Bayes update — normalised posterior | `probability::bayesian` |
+| `log_posterior` | `fn log_posterior(log_prior: f64, log_likelihood: f64) → f64` | $\ln P(\theta\|x) = \ln P(\theta) + \ln P(x\|\theta)$ | `probability::bayesian` |
+| `maximum_a_posteriori` | `fn maximum_a_posteriori(log_priors: &[f64], log_likelihoods: &[f64]) → usize` | Index of MAP estimate | `probability::bayesian` |
+| `credible_interval` | `fn credible_interval(samples: &[f64], alpha: f64) → (f64, f64)` | Equal-tailed $(1-\alpha)$ credible interval | `probability::bayesian` |
+| `metropolis_hastings` | `fn metropolis_hastings(log_target: fn(f64) → f64, init: f64, n: usize, step: f64, seed: u64) → Vec<f64>` | Random-walk Metropolis–Hastings MCMC | `probability::bayesian` |
+| `normal_log_likelihood` | `fn normal_log_likelihood(data: &[f64], mu: f64, sigma: f64) → f64` | Log-likelihood of data under $\mathcal{N}(\mu,\sigma^2)$ | `probability::bayesian` |
+| `posterior_mean` | `fn posterior_mean(samples: &[f64]) → f64` | Sample mean of posterior draws | `probability::bayesian` |
+| `posterior_variance` | `fn posterior_variance(samples: &[f64]) → f64` | Unbiased sample variance of posterior draws | `probability::bayesian` |
+
+### New functions — `statistics::clustering` (6 fn)
+
+| Function | Signature | Description | Module |
+|---|---|---|---|
+| `covariance_matrix` | `fn covariance_matrix(data: &[Vec<f64>]) → Vec<Vec<f64>>` | Unbiased sample covariance matrix | `statistics::clustering` |
+| `pca` | `fn pca(data: &[Vec<f64>], n_components: usize, max_iter: usize, tol: f64) → Vec<Vec<f64>>` | Power-iteration PCA — returns top principal components | `statistics::clustering` |
+| `project_pca` | `fn project_pca(data: &[Vec<f64>], components: &[Vec<f64>]) → Vec<Vec<f64>>` | Project data onto PCA components | `statistics::clustering` |
+| `kmeans` | `fn kmeans(data: &[Vec<f64>], k: usize, max_iter: usize, seed: u64) → Vec<usize>` | Lloyd's k-means clustering | `statistics::clustering` |
+| `silhouette_score` | `fn silhouette_score(data: &[Vec<f64>], labels: &[usize]) → f64` | Mean silhouette coefficient $\in [-1, 1]$ | `statistics::clustering` |
+| `dbscan` | `fn dbscan(data: &[Vec<f64>], eps: f64, min_pts: usize) → Vec<i64>` | DBSCAN density clustering (-1 = noise) | `statistics::clustering` |
+
+### New functions — `probability::monte_carlo` (+2 fn)
+
+| Function | Signature | Description | Module |
+|---|---|---|---|
+| `error_propagation` | `fn error_propagation(partials: &[f64], uncertainties: &[f64]) → f64` | Linear error propagation $\sigma_f = \sqrt{\sum_i (\partial f/\partial x_i)^2 \sigma_i^2}$ | `probability::monte_carlo` |
+| `monte_carlo_uncertainty` | `fn monte_carlo_uncertainty(f: fn(&[f64]) → f64, means: &[f64], sigmas: &[f64], n: usize, seed: u64) → f64` | MC uncertainty via Gaussian sampling over $n$ trials | `probability::monte_carlo` |
+
+No new functions in other submodules — see `testing.md` for test details.
+
+---
+
 ## v0.0.3
 
 | Category | Detail |

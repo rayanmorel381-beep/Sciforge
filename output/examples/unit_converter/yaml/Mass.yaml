@@ -7,11 +7,11 @@ entries:
     from: 5972000000000000000000000 kg
     to: 1.316601e25 lb
     conversion: 5972000000000000000000000 kg → 1.316601e25 lb
-    avg_time_ns: 3899.77
+    avg_time_ns: 3833.50
   - label: Proton mass
     symbol: kg
     name: Proton mass
     from: 0.000000000000000000000000001672 kg
     to: 1.006902e0 amu
     conversion: 0.000000000000000000000000001672 kg → 1.006902e0 amu
-    avg_time_ns: 3953.62
+    avg_time_ns: 3802.66

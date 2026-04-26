@@ -7,9 +7,9 @@ experiment_name: Mg_Magnesium_benchmark
 precision: f64
 elapsed_ms: 9
 iterations: 10000
-avg_time_ns: 926.44
-min_time_ns: 926.44
-max_time_ns: 926.44
+avg_time_ns: 991.70
+min_time_ns: 991.70
+max_time_ns: 991.70
 time_stddev: 0.0000
-iterations_per_sec: 1111111.12
+iterations_per_sec: 1111111.11
 result: Z=12 | Mg (Magnesium) | 24.305 u | alkaline earth metal | [Ne] 3s²

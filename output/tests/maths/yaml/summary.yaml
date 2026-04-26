@@ -7,15 +7,15 @@ entries:
     name: Falling factorial
     domain: maths
     test: "calculus::falling_factorial"
-    avg_time_ns: 2097549.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1990031.00
+    iterations_per_sec: 1000.00
   - label: calculus_first_derivative_x_squared
     category: calculus
     symbol: FDX
     name: First derivative x squared
     domain: maths
     test: "calculus::first_derivative_x_squared"
-    avg_time_ns: 1928369.00
+    avg_time_ns: 1957200.00
     iterations_per_sec: 1000.00
   - label: calculus_rising_factorial
     category: calculus
@@ -23,7 +23,7 @@ entries:
     name: Rising factorial
     domain: maths
     test: "calculus::rising_factorial"
-    avg_time_ns: 1884860.00
+    avg_time_ns: 1983070.00
     iterations_per_sec: 1000.00
   - label: calculus_second_derivative_x_squared
     category: calculus
@@ -31,7 +31,7 @@ entries:
     name: Second derivative x squared
     domain: maths
     test: "calculus::second_derivative_x_squared"
-    avg_time_ns: 1798479.00
+    avg_time_ns: 1908211.00
     iterations_per_sec: 1000.00
   - label: calculus_stat_binomial_pmf
     category: calculus
@@ -39,7 +39,7 @@ entries:
     name: Stat binomial pmf
     domain: maths
     test: "calculus::stat_binomial_pmf"
-    avg_time_ns: 1840889.00
+    avg_time_ns: 1882920.00
     iterations_per_sec: 1000.00
   - label: complex_complex_exp
     category: complex
@@ -47,23 +47,23 @@ entries:
     name: Complex exp
     domain: maths
     test: "complex::complex_exp"
-    avg_time_ns: 1705199.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2920860.00
+    iterations_per_sec: 500.00
   - label: complex_complex_sqrt
     category: complex
     symbol: CS
     name: Complex sqrt
     domain: maths
     test: "complex::complex_sqrt"
-    avg_time_ns: 1787240.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2484111.00
+    iterations_per_sec: 500.00
   - label: complex_mandelbrot_iterate
     category: complex
     symbol: MI
     name: Mandelbrot iterate
     domain: maths
     test: "complex::mandelbrot_iterate"
-    avg_time_ns: 2351108.00
+    avg_time_ns: 2574690.00
     iterations_per_sec: 500.00
   - label: dispatch_dispatch_complex_sqrt
     category: dispatch
@@ -71,7 +71,7 @@ entries:
     name: Dispatch complex sqrt
     domain: maths
     test: "dispatch::dispatch_complex_sqrt"
-    avg_time_ns: 2057909.00
+    avg_time_ns: 2284841.00
     iterations_per_sec: 500.00
   - label: dispatch_dispatch_gaussian_kernel_smooth
     category: dispatch
@@ -79,7 +79,7 @@ entries:
     name: Dispatch gaussian kernel smooth
     domain: maths
     test: "dispatch::dispatch_gaussian_kernel_smooth"
-    avg_time_ns: 2152220.00
+    avg_time_ns: 2393200.00
     iterations_per_sec: 500.00
   - label: dispatch_dispatch_missing_parameter_returns_error
     category: dispatch
@@ -87,15 +87,15 @@ entries:
     name: Dispatch missing parameter returns error
     domain: maths
     test: "dispatch::dispatch_missing_parameter_returns_error"
-    avg_time_ns: 1859399.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2029660.00
+    iterations_per_sec: 500.00
   - label: dispatch_dispatch_unknown_function_returns_error
     category: dispatch
     symbol: DUF
     name: Dispatch unknown function returns error
     domain: maths
     test: "dispatch::dispatch_unknown_function_returns_error"
-    avg_time_ns: 1785359.00
+    avg_time_ns: 1959641.00
     iterations_per_sec: 1000.00
   - label: dispatch_dispatch_vec_midpoint
     category: dispatch
@@ -103,7 +103,7 @@ entries:
     name: Dispatch vec midpoint
     domain: maths
     test: "dispatch::dispatch_vec_midpoint"
-    avg_time_ns: 1789629.00
+    avg_time_ns: 1864300.00
     iterations_per_sec: 1000.00
   - label: dispatch_dispatch_wave_packet_gaussian
     category: dispatch
@@ -111,7 +111,7 @@ entries:
     name: Dispatch wave packet gaussian
     domain: maths
     test: "dispatch::dispatch_wave_packet_gaussian"
-    avg_time_ns: 1752669.00
+    avg_time_ns: 1816500.00
     iterations_per_sec: 1000.00
   - label: fft_fft_basic
     category: fft
@@ -119,7 +119,7 @@ entries:
     name: Fft basic
     domain: maths
     test: "fft::fft_basic"
-    avg_time_ns: 1799410.00
+    avg_time_ns: 1828561.00
     iterations_per_sec: 1000.00
   - label: fft_hann_window
     category: fft
@@ -127,7 +127,7 @@ entries:
     name: Hann window
     domain: maths
     test: "fft::hann_window"
-    avg_time_ns: 1721869.00
+    avg_time_ns: 1853800.00
     iterations_per_sec: 1000.00
   - label: fft_power_spectrum
     category: fft
@@ -135,7 +135,7 @@ entries:
     name: Power spectrum
     domain: maths
     test: "fft::power_spectrum"
-    avg_time_ns: 1760199.00
+    avg_time_ns: 1813960.00
     iterations_per_sec: 1000.00
   - label: graph_bfs
     category: graph
@@ -143,7 +143,7 @@ entries:
     name: Bfs
     domain: maths
     test: "graph::bfs"
-    avg_time_ns: 1824929.00
+    avg_time_ns: 1982491.00
     iterations_per_sec: 1000.00
   - label: graph_connected_components
     category: graph
@@ -151,55 +151,55 @@ entries:
     name: Connected components
     domain: maths
     test: "graph::connected_components"
-    avg_time_ns: 1751820.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2281410.00
+    iterations_per_sec: 500.00
   - label: graph_dijkstra
     category: graph
     symbol: Di
     name: Dijkstra
     domain: maths
     test: "graph::dijkstra"
-    avg_time_ns: 1701189.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2460870.00
+    iterations_per_sec: 500.00
   - label: integration_halton_sequence_integration
     category: integration
     symbol: HSI
     name: Halton sequence integration
     domain: maths
     test: "integration::halton_sequence_integration"
-    avg_time_ns: 1689589.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2444481.00
+    iterations_per_sec: 500.00
   - label: interpolation_hermite_interpolate
     category: interpolation
     symbol: HI
     name: Hermite interpolate
     domain: maths
     test: "interpolation::hermite_interpolate"
-    avg_time_ns: 1660459.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2562340.00
+    iterations_per_sec: 500.00
   - label: interpolation_lagrange_interpolate
     category: interpolation
     symbol: LI
     name: Lagrange interpolate
     domain: maths
     test: "interpolation::lagrange_interpolate"
-    avg_time_ns: 1660540.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2872781.00
+    iterations_per_sec: 500.00
   - label: interpolation_linear_interpolate
     category: interpolation
     symbol: LI
     name: Linear interpolate
     domain: maths
     test: "interpolation::linear_interpolate"
-    avg_time_ns: 1987209.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2073270.00
+    iterations_per_sec: 500.00
   - label: linalg_complex_exp_i_pi
     category: linalg
     symbol: CEI
     name: Complex exp i pi
     domain: maths
     test: "linalg::complex_exp_i_pi"
-    avg_time_ns: 2444709.00
+    avg_time_ns: 2250840.00
     iterations_per_sec: 500.00
   - label: linalg_complex_exp_zero
     category: linalg
@@ -207,55 +207,55 @@ entries:
     name: Complex exp zero
     domain: maths
     test: "linalg::complex_exp_zero"
-    avg_time_ns: 2179469.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1949281.00
+    iterations_per_sec: 1000.00
   - label: linalg_levi_civita_antisymmetry
     category: linalg
     symbol: LCA
     name: Levi civita antisymmetry
     domain: maths
     test: "linalg::levi_civita_antisymmetry"
-    avg_time_ns: 2012899.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1968600.00
+    iterations_per_sec: 1000.00
   - label: linalg_matrix_det_2x2
     category: linalg
     symbol: MD2
     name: Matrix det 2x2
     domain: maths
     test: "linalg::matrix_det_2x2"
-    avg_time_ns: 1764019.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2276590.00
+    iterations_per_sec: 500.00
   - label: linalg_tensor_trace_identity
     category: linalg
     symbol: TTI
     name: Tensor trace identity
     domain: maths
     test: "linalg::tensor_trace_identity"
-    avg_time_ns: 1772459.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2053151.00
+    iterations_per_sec: 500.00
   - label: misc_poly_one
     category: misc
     symbol: PO
     name: Poly one
     domain: maths
     test: "misc::poly_one"
-    avg_time_ns: 1701799.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2082020.00
+    iterations_per_sec: 500.00
   - label: misc_poly_zero
     category: misc
     symbol: PZ
     name: Poly zero
     domain: maths
     test: "misc::poly_zero"
-    avg_time_ns: 2202689.00
-    iterations_per_sec: 500.00
+    avg_time_ns: 1918300.00
+    iterations_per_sec: 1000.00
   - label: misc_quaternion_pure
     category: misc
     symbol: QP
     name: Quaternion pure
     domain: maths
     test: "misc::quaternion_pure"
-    avg_time_ns: 1961720.00
+    avg_time_ns: 1839071.00
     iterations_per_sec: 1000.00
   - label: misc_tensor_zeros
     category: misc
@@ -263,7 +263,7 @@ entries:
     name: Tensor zeros
     domain: maths
     test: "misc::tensor_zeros"
-    avg_time_ns: 1889299.00
+    avg_time_ns: 1972660.00
     iterations_per_sec: 1000.00
   - label: non_euclidean_hawking_temperature
     category: non_euclidean
@@ -271,7 +271,7 @@ entries:
     name: Hawking temperature
     domain: maths
     test: "non_euclidean::hawking_temperature"
-    avg_time_ns: 1857649.00
+    avg_time_ns: 1924360.00
     iterations_per_sec: 1000.00
   - label: non_euclidean_poincare_disk_distance
     category: non_euclidean
@@ -279,7 +279,7 @@ entries:
     name: Poincare disk distance
     domain: maths
     test: "non_euclidean::poincare_disk_distance"
-    avg_time_ns: 1762299.00
+    avg_time_ns: 1804441.00
     iterations_per_sec: 1000.00
   - label: non_euclidean_schwarzschild_radius
     category: non_euclidean
@@ -287,7 +287,7 @@ entries:
     name: Schwarzschild radius
     domain: maths
     test: "non_euclidean::schwarzschild_radius"
-    avg_time_ns: 1723750.00
+    avg_time_ns: 1946810.00
     iterations_per_sec: 1000.00
   - label: non_euclidean_spherical_distance
     category: non_euclidean
@@ -295,23 +295,23 @@ entries:
     name: Spherical distance
     domain: maths
     test: "non_euclidean::spherical_distance"
-    avg_time_ns: 1794409.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2413530.00
+    iterations_per_sec: 500.00
   - label: ode_ode_euler
     category: ode
     symbol: OE
     name: Ode euler
     domain: maths
     test: "ode::ode_euler"
-    avg_time_ns: 1969669.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2024311.00
+    iterations_per_sec: 500.00
   - label: optimization_lagrangian
     category: optimization
     symbol: La
     name: Lagrangian
     domain: maths
     test: "optimization::lagrangian"
-    avg_time_ns: 1821789.00
+    avg_time_ns: 1847660.00
     iterations_per_sec: 1000.00
   - label: optimization_project_box
     category: optimization
@@ -319,7 +319,7 @@ entries:
     name: Project box
     domain: maths
     test: "optimization::project_box"
-    avg_time_ns: 1922459.00
+    avg_time_ns: 1844210.00
     iterations_per_sec: 1000.00
   - label: optimization_quadratic_objective
     category: optimization
@@ -327,7 +327,7 @@ entries:
     name: Quadratic objective
     domain: maths
     test: "optimization::quadratic_objective"
-    avg_time_ns: 1774419.00
+    avg_time_ns: 1778321.00
     iterations_per_sec: 1000.00
   - label: pde_heat_equation_1d_explicit
     category: pde
@@ -335,7 +335,7 @@ entries:
     name: Heat equation 1d explicit
     domain: maths
     test: "pde::heat_equation_1d_explicit"
-    avg_time_ns: 1753250.00
+    avg_time_ns: 1848590.00
     iterations_per_sec: 1000.00
   - label: pde_wave_equation_1d
     category: pde
@@ -343,7 +343,7 @@ entries:
     name: Wave equation 1d
     domain: maths
     test: "pde::wave_equation_1d"
-    avg_time_ns: 1734079.00
+    avg_time_ns: 1797220.00
     iterations_per_sec: 1000.00
   - label: polynomial_chebyshev_t
     category: polynomial
@@ -351,7 +351,7 @@ entries:
     name: Chebyshev t
     domain: maths
     test: "polynomial::chebyshev_t"
-    avg_time_ns: 1755359.00
+    avg_time_ns: 1804861.00
     iterations_per_sec: 1000.00
   - label: polynomial_legendre
     category: polynomial
@@ -359,23 +359,23 @@ entries:
     name: Legendre
     domain: maths
     test: "polynomial::legendre"
-    avg_time_ns: 1748909.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2455470.00
+    iterations_per_sec: 500.00
   - label: polynomial_polynomial_roots_real
     category: polynomial
     symbol: PRR
     name: Polynomial roots real
     domain: maths
     test: "polynomial::polynomial_roots_real"
-    avg_time_ns: 1926249.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2537660.00
+    iterations_per_sec: 500.00
   - label: probability_monte_carlo_pi
     category: probability
     symbol: MCP
     name: Monte carlo pi
     domain: maths
     test: "probability::monte_carlo_pi"
-    avg_time_ns: 3363089.00
+    avg_time_ns: 3738621.00
     iterations_per_sec: 333.33
   - label: probability_prob_exponential_cdf
     category: probability
@@ -383,31 +383,31 @@ entries:
     name: Prob exponential cdf
     domain: maths
     test: "probability::prob_exponential_cdf"
-    avg_time_ns: 1985959.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2172550.00
+    iterations_per_sec: 500.00
   - label: probability_prob_normal_pdf
     category: probability
     symbol: PNP
     name: Prob normal pdf
     domain: maths
     test: "probability::prob_normal_pdf"
-    avg_time_ns: 1760199.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2133941.00
+    iterations_per_sec: 500.00
   - label: signal_butterworth_gain
     category: signal
     symbol: BG
     name: Butterworth gain
     domain: maths
     test: "signal::butterworth_gain"
-    avg_time_ns: 1839189.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2258720.00
+    iterations_per_sec: 500.00
   - label: signal_kalman_filter_1d
     category: signal
     symbol: KF1
     name: Kalman filter 1d
     domain: maths
     test: "signal::kalman_filter_1d"
-    avg_time_ns: 2155400.00
+    avg_time_ns: 2035640.00
     iterations_per_sec: 500.00
   - label: signal_low_pass_rc
     category: signal
@@ -415,7 +415,7 @@ entries:
     name: Low pass rc
     domain: maths
     test: "signal::low_pass_rc"
-    avg_time_ns: 2035739.00
+    avg_time_ns: 2351241.00
     iterations_per_sec: 500.00
   - label: sparse_conjugate_gradient
     category: sparse
@@ -423,63 +423,63 @@ entries:
     name: Conjugate gradient
     domain: maths
     test: "sparse::conjugate_gradient"
-    avg_time_ns: 1964579.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2125160.00
+    iterations_per_sec: 500.00
   - label: sparse_jacobi_iterate
     category: sparse
     symbol: JI
     name: Jacobi iterate
     domain: maths
     test: "sparse::jacobi_iterate"
-    avg_time_ns: 1769559.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2233721.00
+    iterations_per_sec: 500.00
   - label: sparse_sparse_add
     category: sparse
     symbol: SA
     name: Sparse add
     domain: maths
     test: "sparse::sparse_add"
-    avg_time_ns: 1799959.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2027670.00
+    iterations_per_sec: 500.00
   - label: statistics_erf_zero
     category: statistics
     symbol: EZ
     name: Erf zero
     domain: maths
     test: "statistics::erf_zero"
-    avg_time_ns: 1779029.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2030930.00
+    iterations_per_sec: 500.00
   - label: statistics_geometric_mean
     category: statistics
     symbol: GM
     name: Geometric mean
     domain: maths
     test: "statistics::geometric_mean"
-    avg_time_ns: 1788200.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2027001.00
+    iterations_per_sec: 500.00
   - label: statistics_harmonic_mean
     category: statistics
     symbol: HM
     name: Harmonic mean
     domain: maths
     test: "statistics::harmonic_mean"
-    avg_time_ns: 1748879.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2340340.00
+    iterations_per_sec: 500.00
   - label: statistics_linear_regression_perfect
     category: statistics
     symbol: LRP
     name: Linear regression perfect
     domain: maths
     test: "statistics::linear_regression_perfect"
-    avg_time_ns: 1733909.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2280320.00
+    iterations_per_sec: 500.00
   - label: statistics_mean_basic
     category: statistics
     symbol: MB
     name: Mean basic
     domain: maths
     test: "statistics::mean_basic"
-    avg_time_ns: 1722679.00
+    avg_time_ns: 1934541.00
     iterations_per_sec: 1000.00
   - label: statistics_mean_permutation_invariant
     category: statistics
@@ -487,7 +487,7 @@ entries:
     name: Mean permutation invariant
     domain: maths
     test: "statistics::mean_permutation_invariant"
-    avg_time_ns: 1768160.00
+    avg_time_ns: 1906830.00
     iterations_per_sec: 1000.00
   - label: statistics_std_dev_basic
     category: statistics
@@ -495,69 +495,69 @@ entries:
     name: Std dev basic
     domain: maths
     test: "statistics::std_dev_basic"
-    avg_time_ns: 1723279.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2184880.00
+    iterations_per_sec: 500.00
   - label: statistics_weighted_mean
     category: statistics
     symbol: WM
     name: Weighted mean
     domain: maths
     test: "statistics::weighted_mean"
-    avg_time_ns: 1765579.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2107701.00
+    iterations_per_sec: 500.00
   - label: statistics_weighted_mean_scale_invariant_on_weights
     category: statistics
     symbol: WMS
     name: Weighted mean scale invariant on weights
     domain: maths
     test: "statistics::weighted_mean_scale_invariant_on_weights"
-    avg_time_ns: 1824729.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2120880.00
+    iterations_per_sec: 500.00
   - label: tensor_tensor_contract
     category: tensor
     symbol: TC
     name: Tensor contract
     domain: maths
     test: "tensor::tensor_contract"
-    avg_time_ns: 1872079.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2281260.00
+    iterations_per_sec: 500.00
   - label: tensor_tensor_determinant
     category: tensor
     symbol: TD
     name: Tensor determinant
     domain: maths
     test: "tensor::tensor_determinant"
-    avg_time_ns: 1737300.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2509311.00
+    iterations_per_sec: 500.00
   - label: tensor_tensor_reshape
     category: tensor
     symbol: TR
     name: Tensor reshape
     domain: maths
     test: "tensor::tensor_reshape"
-    avg_time_ns: 1689109.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2353490.00
+    iterations_per_sec: 500.00
   - label: vector_vec_distance
     category: vector
     symbol: VD
     name: Vec distance
     domain: maths
     test: "vector::vec_distance"
-    avg_time_ns: 1730279.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2458681.00
+    iterations_per_sec: 500.00
   - label: vector_vec_lerp
     category: vector
     symbol: VL
     name: Vec lerp
     domain: maths
     test: "vector::vec_lerp"
-    avg_time_ns: 1788729.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2324770.00
+    iterations_per_sec: 500.00
   - label: vector_vec_project
     category: vector
     symbol: VP
     name: Vec project
     domain: maths
     test: "vector::vec_project"
-    avg_time_ns: 1988819.00
-    iterations_per_sec: 1000.00
+    avg_time_ns: 2059010.00
+    iterations_per_sec: 500.00

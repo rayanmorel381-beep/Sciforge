@@ -6,12 +6,12 @@
   "mass": "281.165",
   "experiment_name": "Ds_Darmstadtium_benchmark",
   "precision": "f64",
-  "elapsed_ms": 44,
+  "elapsed_ms": 42,
   "iterations": 5000,
-  "avg_time_ns": 8897.69,
-  "min_time_ns": 8897.69,
-  "max_time_ns": 8897.69,
+  "avg_time_ns": 8539.74,
+  "min_time_ns": 8539.74,
+  "max_time_ns": 8539.74,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 113636.37,
+  "iterations_per_sec": 119047.62,
   "result": "Z=110 | Ds (Darmstadtium) | 281.165 u | unknown | [Rn] 5f¹⁴ 6d⁸ 7s²"
 }

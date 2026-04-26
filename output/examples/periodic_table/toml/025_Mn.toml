@@ -8,9 +8,9 @@ experiment_name = "Mn_Manganese_benchmark"
 precision = "f32"
 elapsed_ms = 1
 iterations = 1000
-avg_time_ns = 1907.84
-min_time_ns = 1907.84
-max_time_ns = 1907.84
+avg_time_ns = 1950.00
+min_time_ns = 1950.00
+max_time_ns = 1950.00
 time_stddev = 0.0000
 iterations_per_sec = 1000000.00
 result = "Z=25 | Mn (Manganese) | 54.938044 u | transition metal | [Ar] 3d⁵ 4s²"

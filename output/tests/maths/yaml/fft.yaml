@@ -6,16 +6,16 @@ entries:
     name: Fft basic
     domain: maths
     test: "fft::fft_basic"
-    avg_time_ns: 1799410.00
+    avg_time_ns: 1828561.00
   - label: fft_hann_window
     symbol: HW
     name: Hann window
     domain: maths
     test: "fft::hann_window"
-    avg_time_ns: 1721869.00
+    avg_time_ns: 1853800.00
   - label: fft_power_spectrum
     symbol: PS
     name: Power spectrum
     domain: maths
     test: "fft::power_spectrum"
-    avg_time_ns: 1760199.00
+    avg_time_ns: 1813960.00

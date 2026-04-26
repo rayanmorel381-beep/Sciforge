@@ -6,52 +6,52 @@ entries:
     name: Erf zero
     domain: maths
     test: "statistics::erf_zero"
-    avg_time_ns: 1779029.00
+    avg_time_ns: 2030930.00
   - label: statistics_geometric_mean
     symbol: GM
     name: Geometric mean
     domain: maths
     test: "statistics::geometric_mean"
-    avg_time_ns: 1788200.00
+    avg_time_ns: 2027001.00
   - label: statistics_harmonic_mean
     symbol: HM
     name: Harmonic mean
     domain: maths
     test: "statistics::harmonic_mean"
-    avg_time_ns: 1748879.00
+    avg_time_ns: 2340340.00
   - label: statistics_linear_regression_perfect
     symbol: LRP
     name: Linear regression perfect
     domain: maths
     test: "statistics::linear_regression_perfect"
-    avg_time_ns: 1733909.00
+    avg_time_ns: 2280320.00
   - label: statistics_mean_basic
     symbol: MB
     name: Mean basic
     domain: maths
     test: "statistics::mean_basic"
-    avg_time_ns: 1722679.00
+    avg_time_ns: 1934541.00
   - label: statistics_mean_permutation_invariant
     symbol: MPI
     name: Mean permutation invariant
     domain: maths
     test: "statistics::mean_permutation_invariant"
-    avg_time_ns: 1768160.00
+    avg_time_ns: 1906830.00
   - label: statistics_std_dev_basic
     symbol: SDB
     name: Std dev basic
     domain: maths
     test: "statistics::std_dev_basic"
-    avg_time_ns: 1723279.00
+    avg_time_ns: 2184880.00
   - label: statistics_weighted_mean
     symbol: WM
     name: Weighted mean
     domain: maths
     test: "statistics::weighted_mean"
-    avg_time_ns: 1765579.00
+    avg_time_ns: 2107701.00
   - label: statistics_weighted_mean_scale_invariant_on_weights
     symbol: WMS
     name: Weighted mean scale invariant on weights
     domain: maths
     test: "statistics::weighted_mean_scale_invariant_on_weights"
-    avg_time_ns: 1824729.00
+    avg_time_ns: 2120880.00

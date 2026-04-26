@@ -1,3 +1,3 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,from,to,conversion
-Atmospheric_convert,f64,33,10000,3394.7344,3394.7344,3394.7344,0,303030.3,Atmospheric | 101325 Pa → 1.000000e0 atm,Pressure,Pa,Atmospheric,101325 Pa,1.000000e0 atm,101325 Pa → 1.000000e0 atm
-Deep ocean_convert,f64,34,10000,3402.8184,3402.8184,3402.8184,0,294117.66,Deep ocean | 1100 atm → 1.114575e8 Pa,Pressure,atm,Deep ocean,1100 atm,1.114575e8 Pa,1100 atm → 1.114575e8 Pa
+Atmospheric_convert,f64,45,10000,4529.3718,4529.3718,4529.3718,0,222222.22222222222,Atmospheric | 101325 Pa → 1.000000e0 atm,Pressure,Pa,Atmospheric,101325 Pa,1.000000e0 atm,101325 Pa → 1.000000e0 atm
+Deep ocean_convert,f64,41,10000,4173.5547,4173.5547,4173.5547,0,243902.43902439025,Deep ocean | 1100 atm → 1.114575e8 Pa,Pressure,atm,Deep ocean,1100 atm,1.114575e8 Pa,1100 atm → 1.114575e8 Pa

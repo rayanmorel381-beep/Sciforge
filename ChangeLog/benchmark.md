@@ -2,6 +2,23 @@
 
 ---
 
+## v0.0.4
+
+### Precision Upgrade — `BenchmarkMetrics` — f32 → f64 (12 fields)
+
+All timing and performance fields in `BenchmarkMetrics` migrated from `f32` to `f64` for full double-precision accuracy.
+
+| Change | Detail |
+|---|---|
+| `BENCHMARK_VERSION` | 4 → 5 (binary format version bump) |
+| `BENCHMARK_HEADER_SIZE` | 168 → 216 bytes (12 × 4 extra bytes from f32 → f64) |
+| Fields migrated | `avg_time_ns`, `last_time_ns`, `min_time_ns`, `max_time_ns`, `time_stddev`, `iterations_per_sec`, `samples_per_sec`, `eval_error`, `eval_accuracy`, `eval_r_squared`, `eval_mae`, `target_cpu_utilization` |
+| Files modified | `engine.rs`, `encode.rs`, `decode.rs`, `export/mod.rs`, `export/md.rs`, `export/html/charts.rs` |
+| Tests updated | `tests/benchmark/engine.rs` — assertions for version 5 and header size 216 |
+| Stress test updated | `tests/stress/main.rs` — `metric()` signature and calculations `f32` → `f64` |
+
+---
+
 ## v0.0.3
 
 ### Refactoring — `benchmark` — export.rs → export/ (8 files)

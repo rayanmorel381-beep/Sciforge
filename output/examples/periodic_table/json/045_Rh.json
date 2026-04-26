@@ -6,12 +6,12 @@
   "mass": "102.9055",
   "experiment_name": "Rh_Rhodium_benchmark",
   "precision": "f32",
-  "elapsed_ms": 34,
+  "elapsed_ms": 35,
   "iterations": 10000,
-  "avg_time_ns": 3461.99,
-  "min_time_ns": 3461.99,
-  "max_time_ns": 3461.99,
+  "avg_time_ns": 3583.89,
+  "min_time_ns": 3583.89,
+  "max_time_ns": 3583.89,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 294117.66,
+  "iterations_per_sec": 285714.29,
   "result": "Z=45 | Rh (Rhodium) | 102.9055 u | transition metal | [Kr] 4d⁸ 5s¹"
 }

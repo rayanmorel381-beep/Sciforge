@@ -11,7 +11,7 @@ entries:
     circular_vel: 6.80 km/s
     escape_vel: 21.38 km/s
     hohmann_dv: 15.94 km/s
-    avg_time_ns: 1818.38
+    avg_time_ns: 1820.37
   - label: Neptune
     symbol: ♆
     name: Neptune
@@ -22,4 +22,4 @@ entries:
     circular_vel: 5.43 km/s
     escape_vel: 23.56 km/s
     hohmann_dv: 15.71 km/s
-    avg_time_ns: 1813.08
+    avg_time_ns: 1726.02

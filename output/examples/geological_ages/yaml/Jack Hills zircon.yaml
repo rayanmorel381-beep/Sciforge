@@ -11,11 +11,11 @@ computed_age: 4532.5 Myr
 expected_age: 4400 Myr
 experiment_name: Jack Hills zircon_dating
 precision: f64
-elapsed_ms: 19
+elapsed_ms: 18
 iterations: 5000
-avg_time_ns: 3817.20
-min_time_ns: 3817.20
-max_time_ns: 3817.20
+avg_time_ns: 3713.78
+min_time_ns: 3713.78
+max_time_ns: 3713.78
 time_stddev: 0.0000
-iterations_per_sec: 263157.91
+iterations_per_sec: 277777.78
 result: "Jack Hills zircon | U-Pb (238) | D/P=1.0200 | t½=4.4680e9 years | Computed: 4532.5 Myr | Expected: 4400 Myr"

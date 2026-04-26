@@ -8,10 +8,10 @@
   "precision": "f32",
   "elapsed_ms": 11,
   "iterations": 10000,
-  "avg_time_ns": 1160.05,
-  "min_time_ns": 1160.05,
-  "max_time_ns": 1160.05,
+  "avg_time_ns": 1193.05,
+  "min_time_ns": 1193.05,
+  "max_time_ns": 1193.05,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 909090.94,
+  "iterations_per_sec": 909090.91,
   "result": "Z=15 | P (Phosphorus) | 30.973762 u | nonmetal | [Ne] 3s² 3p³"
 }

@@ -14,12 +14,12 @@
   "lcl": "539 m AGL",
   "experiment_name": "Tokyo Narita_weather",
   "precision": "f64",
-  "elapsed_ms": 28,
+  "elapsed_ms": 27,
   "iterations": 5000,
-  "avg_time_ns": 5656.88,
-  "min_time_ns": 5656.88,
-  "max_time_ns": 5656.88,
+  "avg_time_ns": 5584.68,
+  "min_time_ns": 5584.68,
+  "max_time_ns": 5584.68,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 178571.42,
+  "iterations_per_sec": 185185.19,
   "result": "Tokyo Narita | 44m | 16.3 °C | RH=71% | Td=11.0 °C | DA=211 m | θ=289.3 K"
 }

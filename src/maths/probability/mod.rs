@@ -1,3 +1,4 @@
+pub mod bayesian;
 pub mod distributions;
 pub mod markov;
 pub mod monte_carlo;

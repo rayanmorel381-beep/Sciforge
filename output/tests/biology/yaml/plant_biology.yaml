@@ -6,22 +6,22 @@ entries:
     name: Beer lambert canopy
     domain: biology
     test: "plant_biology::beer_lambert_canopy"
-    avg_time_ns: 1915580.00
+    avg_time_ns: 2798811.00
   - label: plant_biology_photosynthesis_light_response
     symbol: PLR
     name: Photosynthesis light response
     domain: biology
     test: "plant_biology::photosynthesis_light_response"
-    avg_time_ns: 2052199.00
+    avg_time_ns: 2659730.00
   - label: plant_biology_transpiration_rate
     symbol: TR
     name: Transpiration rate
     domain: biology
     test: "plant_biology::transpiration_rate"
-    avg_time_ns: 1957179.00
+    avg_time_ns: 2500710.00
   - label: plant_biology_water_potential
     symbol: WP
     name: Water potential
     domain: biology
     test: "plant_biology::water_potential"
-    avg_time_ns: 1887439.00
+    avg_time_ns: 2600171.00

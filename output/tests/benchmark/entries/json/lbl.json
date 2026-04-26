@@ -4,9 +4,9 @@
   "precision": "f64",
   "elapsed_ms": 0,
   "iterations": 50,
-  "avg_time_ns": 20.00,
-  "min_time_ns": 20.00,
-  "max_time_ns": 20.00,
+  "avg_time_ns": 13.80,
+  "min_time_ns": 13.80,
+  "max_time_ns": 13.80,
   "time_stddev": 0.0000,
   "iterations_per_sec": 0.00,
   "result": "test_result"

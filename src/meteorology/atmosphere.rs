@@ -58,6 +58,10 @@ pub fn brunt_vaisala_frequency(g: f64, theta: f64, dtheta_dz: f64) -> f64 {
     (g / theta * dtheta_dz).sqrt()
 }
 
+pub fn rayleigh_phase(cos_theta: f64) -> f64 {
+    3.0 / (16.0 * std::f64::consts::PI) * (1.0 + cos_theta.powi(2))
+}
+
 pub fn mie_phase(cos_theta: f64, g: f64) -> f64 {
     let g2 = g * g;
     let denom = (1.0 + g2 - 2.0 * g * cos_theta).powf(1.5);

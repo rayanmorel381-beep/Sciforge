@@ -6,22 +6,22 @@ entries:
     name: Hawking temperature
     domain: maths
     test: "non_euclidean::hawking_temperature"
-    avg_time_ns: 1857649.00
+    avg_time_ns: 1924360.00
   - label: non_euclidean_poincare_disk_distance
     symbol: PDD
     name: Poincare disk distance
     domain: maths
     test: "non_euclidean::poincare_disk_distance"
-    avg_time_ns: 1762299.00
+    avg_time_ns: 1804441.00
   - label: non_euclidean_schwarzschild_radius
     symbol: SR
     name: Schwarzschild radius
     domain: maths
     test: "non_euclidean::schwarzschild_radius"
-    avg_time_ns: 1723750.00
+    avg_time_ns: 1946810.00
   - label: non_euclidean_spherical_distance
     symbol: SD
     name: Spherical distance
     domain: maths
     test: "non_euclidean::spherical_distance"
-    avg_time_ns: 1794409.00
+    avg_time_ns: 2413530.00

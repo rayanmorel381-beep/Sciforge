@@ -6,22 +6,22 @@ entries:
     name: Butler volmer
     domain: chemistry
     test: "electrochemistry::butler_volmer"
-    avg_time_ns: 1795849.00
+    avg_time_ns: 2446410.00
   - label: electrochemistry_cell_potential
     symbol: CP
     name: Cell potential
     domain: chemistry
     test: "electrochemistry::cell_potential"
-    avg_time_ns: 1731119.00
+    avg_time_ns: 2223470.00
   - label: electrochemistry_faraday_mass
     symbol: FM
     name: Faraday mass
     domain: chemistry
     test: "electrochemistry::faraday_mass"
-    avg_time_ns: 1732559.00
+    avg_time_ns: 2986871.00
   - label: electrochemistry_nernst_potential
     symbol: NP
     name: Nernst potential
     domain: chemistry
     test: "electrochemistry::nernst_potential"
-    avg_time_ns: 1873560.00
+    avg_time_ns: 2688540.00

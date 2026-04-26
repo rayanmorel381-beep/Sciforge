@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-electronics::diode_shockley,f64,1,1,1889239,1889239,1889239,0,1000,pass,electronics,DS,Diode shockley,physics,electronics::diode_shockley
-electronics::ohm_current,f64,1,1,1945099,1945099,1945099,0,1000,pass,electronics,OC,Ohm current,physics,electronics::ohm_current
-electronics::rlc_resonant_frequency,f64,2,1,2261499,2261499,2261499,0,500,pass,electronics,RRF,Rlc resonant frequency,physics,electronics::rlc_resonant_frequency
-electronics::voltage_divider,f64,2,1,2060860,2060860,2060860,0,500,pass,electronics,VD,Voltage divider,physics,electronics::voltage_divider
+electronics::diode_shockley,f64,1,1,1819320,1819320,1819320,0,1000,pass,electronics,DS,Diode shockley,physics,electronics::diode_shockley
+electronics::ohm_current,f64,1,1,1748601,1748601,1748601,0,1000,pass,electronics,OC,Ohm current,physics,electronics::ohm_current
+electronics::rlc_resonant_frequency,f64,1,1,1771730,1771730,1771730,0,1000,pass,electronics,RRF,Rlc resonant frequency,physics,electronics::rlc_resonant_frequency
+electronics::voltage_divider,f64,1,1,1843020,1843020,1843020,0,1000,pass,electronics,VD,Voltage divider,physics,electronics::voltage_divider

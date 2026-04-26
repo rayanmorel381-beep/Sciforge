@@ -6,22 +6,22 @@ entries:
     name: Fertilization probability
     domain: biology
     test: "reproduction::fertilization_probability"
-    avg_time_ns: 2159619.00
+    avg_time_ns: 1952491.00
   - label: reproduction_hcg_doubling
     symbol: HD
     name: Hcg doubling
     domain: biology
     test: "reproduction::hcg_doubling"
-    avg_time_ns: 2158919.00
+    avg_time_ns: 1919540.00
   - label: reproduction_ivf_success_rate
     symbol: ISR
     name: Ivf success rate
     domain: biology
     test: "reproduction::ivf_success_rate"
-    avg_time_ns: 2084539.00
+    avg_time_ns: 1898220.00
   - label: reproduction_sperm_motility_score
     symbol: SMS
     name: Sperm motility score
     domain: biology
     test: "reproduction::sperm_motility_score"
-    avg_time_ns: 1892929.00
+    avg_time_ns: 1957301.00

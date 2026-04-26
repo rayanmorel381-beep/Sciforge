@@ -6,358 +6,358 @@ entries:
     name: Drake equation
     domain: hub
     test: "cross_domain::astrobiology::drake_equation"
-    avg_time_ns: 2206008.00
+    avg_time_ns: 1983080.00
   - label: cross_domain_astrobiology_habitable_zone_inner
     symbol: HZI
     name: Habitable zone inner
     domain: hub
     test: "cross_domain::astrobiology::habitable_zone_inner"
-    avg_time_ns: 1884250.00
+    avg_time_ns: 1997880.00
   - label: cross_domain_astrobiology_habitable_zone_outer
     symbol: HZO
     name: Habitable zone outer
     domain: hub
     test: "cross_domain::astrobiology::habitable_zone_outer"
-    avg_time_ns: 1817039.00
+    avg_time_ns: 1852981.00
   - label: cross_domain_astrobiology_surface_gravity
     symbol: SG
     name: Surface gravity
     domain: hub
     test: "cross_domain::astrobiology::surface_gravity"
-    avg_time_ns: 1794769.00
+    avg_time_ns: 1727810.00
   - label: cross_domain_astrobiology_uv_surface_flux
     symbol: USF
     name: Uv surface flux
     domain: hub
     test: "cross_domain::astrobiology::uv_surface_flux"
-    avg_time_ns: 1759109.00
+    avg_time_ns: 1783160.00
   - label: cross_domain_astrochemistry_dust_equilibrium_temperature
     symbol: DET
     name: Dust equilibrium temperature
     domain: hub
     test: "cross_domain::astrochemistry::dust_equilibrium_temperature"
-    avg_time_ns: 1678590.00
+    avg_time_ns: 1769671.00
   - label: cross_domain_astrochemistry_freefall_time
     symbol: FT
     name: Freefall time
     domain: hub
     test: "cross_domain::astrochemistry::freefall_time"
-    avg_time_ns: 1648329.00
+    avg_time_ns: 1758850.00
   - label: cross_domain_astrochemistry_jeans_mass
     symbol: JM
     name: Jeans mass
     domain: hub
     test: "cross_domain::astrochemistry::jeans_mass"
-    avg_time_ns: 1676549.00
+    avg_time_ns: 2513420.00
   - label: cross_domain_astrochemistry_stroemgren_radius
     symbol: SR
     name: Stroemgren radius
     domain: hub
     test: "cross_domain::astrochemistry::stroemgren_radius"
-    avg_time_ns: 1644349.00
+    avg_time_ns: 2502561.00
   - label: cross_domain_astrophysics_compton_wavelength
     symbol: CW
     name: Compton wavelength
     domain: hub
     test: "cross_domain::astrophysics::compton_wavelength"
-    avg_time_ns: 1714900.00
+    avg_time_ns: 2242390.00
   - label: cross_domain_astrophysics_eddington_luminosity
     symbol: EL
     name: Eddington luminosity
     domain: hub
     test: "cross_domain::astrophysics::eddington_luminosity"
-    avg_time_ns: 1675299.00
+    avg_time_ns: 2078380.00
   - label: cross_domain_astrophysics_hawking_temperature
     symbol: HT
     name: Hawking temperature
     domain: hub
     test: "cross_domain::astrophysics::hawking_temperature"
-    avg_time_ns: 1659639.00
+    avg_time_ns: 2040441.00
   - label: cross_domain_astrophysics_schwarzschild_radius
     symbol: SR
     name: Schwarzschild radius
     domain: hub
     test: "cross_domain::astrophysics::schwarzschild_radius"
-    avg_time_ns: 1674220.00
+    avg_time_ns: 2242080.00
   - label: cross_domain_atmospheric_chemistry_aerosol_optical_depth
     symbol: AOD
     name: Aerosol optical depth
     domain: hub
     test: "cross_domain::atmospheric_chemistry::aerosol_optical_depth"
-    avg_time_ns: 1802549.00
+    avg_time_ns: 2178070.00
   - label: cross_domain_atmospheric_chemistry_column_density
     symbol: CD
     name: Column density
     domain: hub
     test: "cross_domain::atmospheric_chemistry::column_density"
-    avg_time_ns: 1727619.00
+    avg_time_ns: 2266931.00
   - label: cross_domain_atmospheric_chemistry_henry_law_concentration
     symbol: HLC
     name: Henry law concentration
     domain: hub
     test: "cross_domain::atmospheric_chemistry::henry_law_concentration"
-    avg_time_ns: 1829959.00
+    avg_time_ns: 2206710.00
   - label: cross_domain_atmospheric_chemistry_photolysis_rate
     symbol: PR
     name: Photolysis rate
     domain: hub
     test: "cross_domain::atmospheric_chemistry::photolysis_rate"
-    avg_time_ns: 1800089.00
+    avg_time_ns: 1817451.00
   - label: cross_domain_atmospheric_physics_dry_adiabatic_lapse_rate
     symbol: DAL
     name: Dry adiabatic lapse rate
     domain: hub
     test: "cross_domain::atmospheric_physics::dry_adiabatic_lapse_rate"
-    avg_time_ns: 1647640.00
+    avg_time_ns: 1783020.00
   - label: cross_domain_atmospheric_physics_pressure_at_altitude
     symbol: PAA
     name: Pressure at altitude
     domain: hub
     test: "cross_domain::atmospheric_physics::pressure_at_altitude"
-    avg_time_ns: 1644369.00
+    avg_time_ns: 2480350.00
   - label: cross_domain_atmospheric_physics_stefan_boltzmann_flux
     symbol: SBF
     name: Stefan boltzmann flux
     domain: hub
     test: "cross_domain::atmospheric_physics::stefan_boltzmann_flux"
-    avg_time_ns: 1647989.00
+    avg_time_ns: 1982791.00
   - label: cross_domain_atmospheric_physics_wien_peak_wavelength
     symbol: WPW
     name: Wien peak wavelength
     domain: hub
     test: "cross_domain::atmospheric_physics::wien_peak_wavelength"
-    avg_time_ns: 1808119.00
+    avg_time_ns: 1787630.00
   - label: cross_domain_biochemistry_enzyme_turnover_number
     symbol: ETN
     name: Enzyme turnover number
     domain: hub
     test: "cross_domain::biochemistry::enzyme_turnover_number"
-    avg_time_ns: 1842520.00
+    avg_time_ns: 1777500.00
   - label: cross_domain_biochemistry_gibbs_free_energy
     symbol: GFE
     name: Gibbs free energy
     domain: hub
     test: "cross_domain::biochemistry::gibbs_free_energy"
-    avg_time_ns: 2899588.00
+    avg_time_ns: 1706670.00
   - label: cross_domain_biochemistry_henderson_hasselbalch
     symbol: HH
     name: Henderson hasselbalch
     domain: hub
     test: "cross_domain::biochemistry::henderson_hasselbalch"
-    avg_time_ns: 2427579.00
+    avg_time_ns: 1861711.00
   - label: cross_domain_biochemistry_michaelis_menten_rate
     symbol: MMR
     name: Michaelis menten rate
     domain: hub
     test: "cross_domain::biochemistry::michaelis_menten_rate"
-    avg_time_ns: 2194549.00
+    avg_time_ns: 1744330.00
   - label: cross_domain_biochemistry_ph_from_concentration
     symbol: PFC
     name: Ph from concentration
     domain: hub
     test: "cross_domain::biochemistry::ph_from_concentration"
-    avg_time_ns: 2377109.00
+    avg_time_ns: 1755960.00
   - label: cross_domain_biomathematics_basic_reproduction_number
     symbol: BRN
     name: Basic reproduction number
     domain: hub
     test: "cross_domain::biomathematics::basic_reproduction_number"
-    avg_time_ns: 2343159.00
+    avg_time_ns: 2054001.00
   - label: cross_domain_biomathematics_logistic_growth_rate
     symbol: LGR
     name: Logistic growth rate
     domain: hub
     test: "cross_domain::biomathematics::logistic_growth_rate"
-    avg_time_ns: 2084899.00
+    avg_time_ns: 1972870.00
   - label: cross_domain_biomathematics_molecular_clock_distance
     symbol: MCD
     name: Molecular clock distance
     domain: hub
     test: "cross_domain::biomathematics::molecular_clock_distance"
-    avg_time_ns: 1843679.00
+    avg_time_ns: 2289740.00
   - label: cross_domain_biomathematics_shannon_diversity_index
     symbol: SDI
     name: Shannon diversity index
     domain: hub
     test: "cross_domain::biomathematics::shannon_diversity_index"
-    avg_time_ns: 1906340.00
+    avg_time_ns: 1976551.00
   - label: cross_domain_biophysics_electrophoretic_mobility
     symbol: EM
     name: Electrophoretic mobility
     domain: hub
     test: "cross_domain::biophysics::electrophoretic_mobility"
-    avg_time_ns: 1652439.00
+    avg_time_ns: 1760720.00
   - label: cross_domain_biophysics_fick_diffusion_flux
     symbol: FDF
     name: Fick diffusion flux
     domain: hub
     test: "cross_domain::biophysics::fick_diffusion_flux"
-    avg_time_ns: 1641399.00
+    avg_time_ns: 1834770.00
   - label: cross_domain_biophysics_reynolds_number
     symbol: RN
     name: Reynolds number
     domain: hub
     test: "cross_domain::biophysics::reynolds_number"
-    avg_time_ns: 1641519.00
+    avg_time_ns: 1938151.00
   - label: cross_domain_biophysics_stokes_drag_force
     symbol: SDF
     name: Stokes drag force
     domain: hub
     test: "cross_domain::biophysics::stokes_drag_force"
-    avg_time_ns: 1713970.00
+    avg_time_ns: 2088430.00
   - label: cross_domain_campaign_astronomy_and_physics
     symbol: CAA
     name: Campaign astronomy and physics
     domain: hub
     test: "cross_domain::campaign_astronomy_and_physics"
-    avg_time_ns: 1799749.00
+    avg_time_ns: 2483761.00
   - label: cross_domain_campaign_empty
     symbol: CE
     name: Campaign empty
     domain: hub
     test: "cross_domain::campaign_empty"
-    avg_time_ns: 1667329.00
+    avg_time_ns: 2513650.00
   - label: cross_domain_campaign_physics_and_chemistry
     symbol: CPA
     name: Campaign physics and chemistry
     domain: hub
     test: "cross_domain::campaign_physics_and_chemistry"
-    avg_time_ns: 1794899.00
+    avg_time_ns: 2375040.00
   - label: cross_domain_campaign_result_scalars
     symbol: CRS
     name: Campaign result scalars
     domain: hub
     test: "cross_domain::campaign_result_scalars"
-    avg_time_ns: 1794080.00
+    avg_time_ns: 2270331.00
   - label: cross_domain_cross_domain_biology_and_chemistry
     symbol: CDB
     name: Cross domain biology and chemistry
     domain: hub
     test: "cross_domain::cross_domain_biology_and_chemistry"
-    avg_time_ns: 1794179.00
+    avg_time_ns: 2342460.00
   - label: cross_domain_cross_domain_earth_escape_velocity
     symbol: CDE
     name: Cross domain earth escape velocity
     domain: hub
     test: "cross_domain::cross_domain_earth_escape_velocity"
-    avg_time_ns: 1799949.00
+    avg_time_ns: 2357230.00
   - label: cross_domain_geochemistry_delta_notation
     symbol: DN
     name: Delta notation
     domain: hub
     test: "cross_domain::geochemistry::delta_notation"
-    avg_time_ns: 1811949.00
+    avg_time_ns: 2962231.00
   - label: cross_domain_geochemistry_distribution_coefficient
     symbol: DC
     name: Distribution coefficient
     domain: hub
     test: "cross_domain::geochemistry::distribution_coefficient"
-    avg_time_ns: 1830239.00
+    avg_time_ns: 3236970.00
   - label: cross_domain_geochemistry_mixing_two_component
     symbol: MTC
     name: Mixing two component
     domain: hub
     test: "cross_domain::geochemistry::mixing_two_component"
-    avg_time_ns: 1656700.00
+    avg_time_ns: 2343681.00
   - label: cross_domain_geochemistry_partition_coefficient
     symbol: PC
     name: Partition coefficient
     domain: hub
     test: "cross_domain::geochemistry::partition_coefficient"
-    avg_time_ns: 1704049.00
+    avg_time_ns: 2129410.00
   - label: cross_domain_geophysics_bouguer_anomaly
     symbol: BA
     name: Bouguer anomaly
     domain: hub
     test: "cross_domain::geophysics::bouguer_anomaly"
-    avg_time_ns: 1657019.00
+    avg_time_ns: 2051471.00
   - label: cross_domain_geophysics_electromagnetic_skin_depth
     symbol: ESD
     name: Electromagnetic skin depth
     domain: hub
     test: "cross_domain::geophysics::electromagnetic_skin_depth"
-    avg_time_ns: 1741239.00
+    avg_time_ns: 2150880.00
   - label: cross_domain_geophysics_seismic_impedance_reflection
     symbol: SIR
     name: Seismic impedance reflection
     domain: hub
     test: "cross_domain::geophysics::seismic_impedance_reflection"
-    avg_time_ns: 1794130.00
+    avg_time_ns: 2201050.00
   - label: cross_domain_geophysics_seismic_wave_attenuation
     symbol: SWA
     name: Seismic wave attenuation
     domain: hub
     test: "cross_domain::geophysics::seismic_wave_attenuation"
-    avg_time_ns: 1764319.00
+    avg_time_ns: 2173761.00
   - label: cross_domain_invalid_function_returns_error
     symbol: IFR
     name: Invalid function returns error
     domain: hub
     test: "cross_domain::invalid_function_returns_error"
-    avg_time_ns: 1833349.00
+    avg_time_ns: 3150490.00
   - label: cross_domain_mathematical_physics_de_broglie_wavelength
     symbol: DBW
     name: De broglie wavelength
     domain: hub
     test: "cross_domain::mathematical_physics::de_broglie_wavelength"
-    avg_time_ns: 1773679.00
+    avg_time_ns: 3115501.00
   - label: cross_domain_mathematical_physics_fermi_dirac_distribution
     symbol: FDD
     name: Fermi dirac distribution
     domain: hub
     test: "cross_domain::mathematical_physics::fermi_dirac_distribution"
-    avg_time_ns: 1696440.00
+    avg_time_ns: 3057090.00
   - label: cross_domain_mathematical_physics_heisenberg_uncertainty_position
     symbol: HUP
     name: Heisenberg uncertainty position
     domain: hub
     test: "cross_domain::mathematical_physics::heisenberg_uncertainty_position"
-    avg_time_ns: 1690269.00
+    avg_time_ns: 2898791.00
   - label: cross_domain_mathematical_physics_relativistic_energy
     symbol: RE
     name: Relativistic energy
     domain: hub
     test: "cross_domain::mathematical_physics::relativistic_energy"
-    avg_time_ns: 2060959.00
+    avg_time_ns: 2930200.00
   - label: cross_domain_planetary_geology_crater_counting_surface_age
     symbol: CCS
     name: Crater counting surface age
     domain: hub
     test: "cross_domain::planetary_geology::crater_counting_surface_age"
-    avg_time_ns: 3634938.00
+    avg_time_ns: 2955731.00
   - label: cross_domain_planetary_geology_impact_energy
     symbol: IE
     name: Impact energy
     domain: hub
     test: "cross_domain::planetary_geology::impact_energy"
-    avg_time_ns: 2266969.00
+    avg_time_ns: 3158110.00
   - label: cross_domain_planetary_geology_surface_temperature_equilibrium
     symbol: STE
     name: Surface temperature equilibrium
     domain: hub
     test: "cross_domain::planetary_geology::surface_temperature_equilibrium"
-    avg_time_ns: 2158419.00
+    avg_time_ns: 2974211.00
   - label: cross_domain_planetary_geology_volcanic_effusion_rate
     symbol: VER
     name: Volcanic effusion rate
     domain: hub
     test: "cross_domain::planetary_geology::volcanic_effusion_rate"
-    avg_time_ns: 2355909.00
+    avg_time_ns: 2962660.00
   - label: cross_domain_validation_detects_bad_expected_value
     symbol: VDB
     name: Validation detects bad expected value
     domain: hub
     test: "cross_domain::validation_detects_bad_expected_value"
-    avg_time_ns: 2362449.00
+    avg_time_ns: 3336461.00
   - label: cross_domain_validation_markdown_output
     symbol: VMO
     name: Validation markdown output
     domain: hub
     test: "cross_domain::validation_markdown_output"
-    avg_time_ns: 2283819.00
+    avg_time_ns: 4061670.00
   - label: cross_domain_validation_single_case
     symbol: VSC
     name: Validation single case
     domain: hub
     test: "cross_domain::validation_single_case"
-    avg_time_ns: 2575979.00
+    avg_time_ns: 3049381.00

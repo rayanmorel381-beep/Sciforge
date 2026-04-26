@@ -13,9 +13,9 @@ experiment_name = "Venus_orbit"
 precision = "f64"
 elapsed_ms = 8
 iterations = 5000
-avg_time_ns = 1741.47
-min_time_ns = 1741.47
-max_time_ns = 1741.47
+avg_time_ns = 1768.45
+min_time_ns = 1768.45
+max_time_ns = 1768.45
 time_stddev = 0.0000
 iterations_per_sec = 625000.00
 result = "Venus | T=224.67 days | v_circ=35.03 km/s | v_esc=10.36 km/s | Hohmann Δv=5.20 km/s"

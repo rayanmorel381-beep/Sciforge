@@ -7,9 +7,9 @@ experiment_name: "aging::caloric_restriction_lifespan"
 precision: f64
 elapsed_ms: 2
 iterations: 1
-avg_time_ns: 2388739.00
-min_time_ns: 2388739.00
-max_time_ns: 2388739.00
+avg_time_ns: 2396630.00
+min_time_ns: 2396630.00
+max_time_ns: 2396630.00
 time_stddev: 0.0000
 iterations_per_sec: 500.00
 result: pass

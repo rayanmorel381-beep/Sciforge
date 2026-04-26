@@ -71,9 +71,9 @@ code{font-family:ui-monospace,monospace}
 <div class="legend">
 </div>
 <div class="ptable">
-<div id="el-bench_alpha" class="el cat-0" style="grid-row:1;grid-column:1" title="Alpha - 16.5ns" onclick="go('bench_alpha')"><div class="sym">A</div><div class="nm">Alpha</div><div class="ns">16ns</div></div>
-<div id="el-bench_beta" class="el cat-0" style="grid-row:2;grid-column:1" title="Beta - 14.1ns" onclick="go('bench_beta')"><div class="sym">B</div><div class="nm">Beta</div><div class="ns">14ns</div></div>
-<div id="el-bench_gamma" class="el cat-0" style="grid-row:3;grid-column:1" title="Gamma - 13.2ns" onclick="go('bench_gamma')"><div class="sym">G</div><div class="nm">Gamma</div><div class="ns">13ns</div></div>
+<div id="el-bench_alpha" class="el cat-0" style="grid-row:1;grid-column:1" title="Alpha - 9.7ns" onclick="go('bench_alpha')"><div class="sym">A</div><div class="nm">Alpha</div><div class="ns">10ns</div></div>
+<div id="el-bench_beta" class="el cat-0" style="grid-row:2;grid-column:1" title="Beta - 9.0ns" onclick="go('bench_beta')"><div class="sym">B</div><div class="nm">Beta</div><div class="ns">9ns</div></div>
+<div id="el-bench_gamma" class="el cat-0" style="grid-row:3;grid-column:1" title="Gamma - 8.7ns" onclick="go('bench_gamma')"><div class="sym">G</div><div class="nm">Gamma</div><div class="ns">9ns</div></div>
 </div>
 
 <div id="detail" class="detail">
@@ -176,9 +176,9 @@ benchmark.md
 <thead>
 <tr><th>Label</th><th>group</th><th>Precision</th><th>Iterations</th><th>Avg (ns)</th><th>Iters/s</th></tr>
 </thead><tbody>
-<tr><td>bench_alpha</td><td>alpha</td><td>f64</td><td>100</td><td>16.50</td><td>0.00</td></tr>
-<tr><td>bench_beta</td><td>beta</td><td>f32</td><td>100</td><td>14.10</td><td>0.00</td></tr>
-<tr><td>bench_gamma</td><td>gamma</td><td>f64</td><td>100</td><td>13.20</td><td>0.00</td></tr>
+<tr><td>bench_alpha</td><td>alpha</td><td>f64</td><td>100</td><td>9.70</td><td>0.00</td></tr>
+<tr><td>bench_beta</td><td>beta</td><td>f32</td><td>100</td><td>9.00</td><td>0.00</td></tr>
+<tr><td>bench_gamma</td><td>gamma</td><td>f64</td><td>100</td><td>8.70</td><td>0.00</td></tr>
 </tbody></table>
 <h3 style="color:#79c0ff;margin:1em 0 .4em">Analytics</h3>
 <p style="line-height:1.6;margin:.4em 0">### Group Distribution</p>
@@ -186,27 +186,27 @@ benchmark.md
 <thead>
 <tr><th>Group</th><th>Count</th><th>Avg (ns)</th><th>Min (ns)</th><th>Max (ns)</th></tr>
 </thead><tbody>
-<tr><td>alpha</td><td>1</td><td>16.50</td><td>16.50</td><td>16.50</td></tr>
-<tr><td>beta</td><td>1</td><td>14.10</td><td>14.10</td><td>14.10</td></tr>
-<tr><td>gamma</td><td>1</td><td>13.20</td><td>13.20</td><td>13.20</td></tr>
+<tr><td>alpha</td><td>1</td><td>9.70</td><td>9.70</td><td>9.70</td></tr>
+<tr><td>beta</td><td>1</td><td>9.00</td><td>9.00</td><td>9.00</td></tr>
+<tr><td>gamma</td><td>1</td><td>8.70</td><td>8.70</td><td>8.70</td></tr>
 </tbody></table>
 <p style="line-height:1.6;margin:.4em 0">### Top 10 Fastest Entries</p>
 <table>
 <thead>
 <tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
 </thead><tbody>
-<tr><td>1</td><td>bench_gamma</td><td>13.20</td></tr>
-<tr><td>2</td><td>bench_beta</td><td>14.10</td></tr>
-<tr><td>3</td><td>bench_alpha</td><td>16.50</td></tr>
+<tr><td>1</td><td>bench_gamma</td><td>8.70</td></tr>
+<tr><td>2</td><td>bench_beta</td><td>9.00</td></tr>
+<tr><td>3</td><td>bench_alpha</td><td>9.70</td></tr>
 </tbody></table>
 <p style="line-height:1.6;margin:.4em 0">### Top 10 Slowest Entries</p>
 <table>
 <thead>
 <tr><th>#</th><th>Entry</th><th>Avg (ns)</th></tr>
 </thead><tbody>
-<tr><td>1</td><td>bench_alpha</td><td>16.50</td></tr>
-<tr><td>2</td><td>bench_beta</td><td>14.10</td></tr>
-<tr><td>3</td><td>bench_gamma</td><td>13.20</td></tr>
+<tr><td>1</td><td>bench_alpha</td><td>9.70</td></tr>
+<tr><td>2</td><td>bench_beta</td><td>9.00</td></tr>
+<tr><td>3</td><td>bench_gamma</td><td>8.70</td></tr>
 </tbody></table>
 </div>
 
@@ -236,15 +236,15 @@ benchmark.md
 <text x="160" y="18" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">alpha</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#1a3a1a"/>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">16.5</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">9.7</text>
 <text x="160" y="46" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">beta</text>
 <rect x="168" y="32" width="430" height="22" rx="4" fill="#0a2a3a"/>
-<rect x="168" y="32" width="367" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
-<text x="541" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">14.1</text>
+<rect x="168" y="32" width="398" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="572" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">9.0</text>
 <text x="160" y="74" fill="#8b949e" font-size="12" text-anchor="end" dominant-baseline="middle">gamma</text>
 <rect x="168" y="60" width="430" height="22" rx="4" fill="#3a2a0a"/>
-<rect x="168" y="60" width="344" height="22" rx="4" fill="#ffa657" opacity=".8"/>
-<text x="518" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">13.2</text>
+<rect x="168" y="60" width="385" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="559" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">8.7</text>
 </svg>
 </div>
 
@@ -252,14 +252,14 @@ benchmark.md
 <h3>Top 10 Fastest Entries</h3>
 <svg viewBox="0 0 650 94" style="width:100%;max-width:650px">
 <text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">bench_gamma</text>
-<rect x="168" y="4" width="344" height="22" rx="4" fill="#ffa657" opacity=".8"/>
-<text x="518" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">13.2 ns</text>
+<rect x="168" y="4" width="385" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="559" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">8.7 ns</text>
 <text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">bench_beta</text>
-<rect x="168" y="32" width="367" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
-<text x="541" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">14.1 ns</text>
+<rect x="168" y="32" width="398" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="572" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">9.0 ns</text>
 <text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">bench_alpha</text>
 <rect x="168" y="60" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">16.5 ns</text>
+<text x="604" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">9.7 ns</text>
 </svg>
 </div>
 
@@ -268,13 +268,13 @@ benchmark.md
 <svg viewBox="0 0 650 94" style="width:100%;max-width:650px">
 <text x="160" y="18" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">bench_alpha</text>
 <rect x="168" y="4" width="430" height="22" rx="4" fill="#7ee787" opacity=".8"/>
-<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">16.5 ns</text>
+<text x="604" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">9.7 ns</text>
 <text x="160" y="46" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">bench_beta</text>
-<rect x="168" y="32" width="367" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
-<text x="541" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">14.1 ns</text>
+<rect x="168" y="32" width="398" height="22" rx="4" fill="#79c0ff" opacity=".8"/>
+<text x="572" y="46" fill="#c9d1d9" font-size="11" dominant-baseline="middle">9.0 ns</text>
 <text x="160" y="74" fill="#8b949e" font-size="11" text-anchor="end" dominant-baseline="middle">bench_gamma</text>
-<rect x="168" y="60" width="344" height="22" rx="4" fill="#ffa657" opacity=".8"/>
-<text x="518" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">13.2 ns</text>
+<rect x="168" y="60" width="385" height="22" rx="4" fill="#ffa657" opacity=".8"/>
+<text x="559" y="74" fill="#c9d1d9" font-size="11" dominant-baseline="middle">8.7 ns</text>
 </svg>
 </div>
 
@@ -285,23 +285,23 @@ benchmark.md
 <rect x="0" y="4" width="4" height="28" rx="2" fill="#7ee787"/>
 <text x="14" y="18" fill="#7ee787" font-size="12" font-weight="bold" dominant-baseline="middle">alpha</text>
 <text x="250" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
-<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 16.5 ns</text>
-<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 16.5 ns</text>
-<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 16.5 ns</text>
+<text x="350" y="18" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 9.7 ns</text>
+<text x="520" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">min 9.7 ns</text>
+<text x="680" y="18" fill="#8b949e" font-size="11" dominant-baseline="middle">max 9.7 ns</text>
 <rect x="0" y="38" width="900" height="28" rx="4" fill="#161b22"/>
 <rect x="0" y="38" width="4" height="28" rx="2" fill="#79c0ff"/>
 <text x="14" y="52" fill="#79c0ff" font-size="12" font-weight="bold" dominant-baseline="middle">beta</text>
 <text x="250" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
-<text x="350" y="52" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 14.1 ns</text>
-<text x="520" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">min 14.1 ns</text>
-<text x="680" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">max 14.1 ns</text>
+<text x="350" y="52" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 9.0 ns</text>
+<text x="520" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">min 9.0 ns</text>
+<text x="680" y="52" fill="#8b949e" font-size="11" dominant-baseline="middle">max 9.0 ns</text>
 <rect x="0" y="72" width="900" height="28" rx="4" fill="#161b22"/>
 <rect x="0" y="72" width="4" height="28" rx="2" fill="#ffa657"/>
 <text x="14" y="86" fill="#ffa657" font-size="12" font-weight="bold" dominant-baseline="middle">gamma</text>
 <text x="250" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">n=1</text>
-<text x="350" y="86" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 13.2 ns</text>
-<text x="520" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">min 13.2 ns</text>
-<text x="680" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">max 13.2 ns</text>
+<text x="350" y="86" fill="#c9d1d9" font-size="11" dominant-baseline="middle">avg 8.7 ns</text>
+<text x="520" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">min 8.7 ns</text>
+<text x="680" y="86" fill="#8b949e" font-size="11" dominant-baseline="middle">max 8.7 ns</text>
 </svg>
 </div>
 
@@ -310,37 +310,37 @@ benchmark.md
 <script>
 var F={
 csv:{
-"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_alpha,f64,0,100,16.5,16.5,16.5,0,0,alpha completed,alpha\nbench_beta,f32,0,100,14.1,14.1,14.1,0,0,beta completed,beta\nbench_gamma,f64,0,100,13.2,13.2,13.2,0,0,gamma completed,gamma\n",
-"alpha.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_alpha,f64,0,100,16.5,16.5,16.5,0,0,alpha completed,alpha\n",
-"beta.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_beta,f32,0,100,14.1,14.1,14.1,0,0,beta completed,beta\n",
-"gamma.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_gamma,f64,0,100,13.2,13.2,13.2,0,0,gamma completed,gamma\n"},
+"all.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_alpha,f64,0,100,9.7,9.7,9.7,0,0,alpha completed,alpha\nbench_beta,f32,0,100,9,9,9,0,0,beta completed,beta\nbench_gamma,f64,0,100,8.7,8.7,8.7,0,0,gamma completed,gamma\n",
+"alpha.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_alpha,f64,0,100,9.7,9.7,9.7,0,0,alpha completed,alpha\n",
+"beta.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_beta,f32,0,100,9,9,9,0,0,beta completed,beta\n",
+"gamma.csv":"experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,group\nbench_gamma,f64,0,100,8.7,8.7,8.7,0,0,gamma completed,gamma\n"},
 json:{
-"bench_alpha.json":"{\n  \"group\": \"alpha\",\n  \"experiment_name\": \"bench_alpha\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 16.50,\n  \"min_time_ns\": 16.50,\n  \"max_time_ns\": 16.50,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"alpha completed\"\n}",
-"bench_beta.json":"{\n  \"group\": \"beta\",\n  \"experiment_name\": \"bench_beta\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 14.10,\n  \"min_time_ns\": 14.10,\n  \"max_time_ns\": 14.10,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"beta completed\"\n}",
-"bench_gamma.json":"{\n  \"group\": \"gamma\",\n  \"experiment_name\": \"bench_gamma\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 13.20,\n  \"min_time_ns\": 13.20,\n  \"max_time_ns\": 13.20,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"gamma completed\"\n}",
-"summary.json":"[\n{\n  \"group\": \"alpha\",\n  \"experiment_name\": \"bench_alpha\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 16.50,\n  \"min_time_ns\": 16.50,\n  \"max_time_ns\": 16.50,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"alpha completed\"\n},\n{\n  \"group\": \"beta\",\n  \"experiment_name\": \"bench_beta\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 14.10,\n  \"min_time_ns\": 14.10,\n  \"max_time_ns\": 14.10,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"beta completed\"\n},\n{\n  \"group\": \"gamma\",\n  \"experiment_name\": \"bench_gamma\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 13.20,\n  \"min_time_ns\": 13.20,\n  \"max_time_ns\": 13.20,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"gamma completed\"\n}\n]"},
+"bench_alpha.json":"{\n  \"group\": \"alpha\",\n  \"experiment_name\": \"bench_alpha\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 9.70,\n  \"min_time_ns\": 9.70,\n  \"max_time_ns\": 9.70,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"alpha completed\"\n}",
+"bench_beta.json":"{\n  \"group\": \"beta\",\n  \"experiment_name\": \"bench_beta\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 9.00,\n  \"min_time_ns\": 9.00,\n  \"max_time_ns\": 9.00,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"beta completed\"\n}",
+"bench_gamma.json":"{\n  \"group\": \"gamma\",\n  \"experiment_name\": \"bench_gamma\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 8.70,\n  \"min_time_ns\": 8.70,\n  \"max_time_ns\": 8.70,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"gamma completed\"\n}",
+"summary.json":"[\n{\n  \"group\": \"alpha\",\n  \"experiment_name\": \"bench_alpha\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 9.70,\n  \"min_time_ns\": 9.70,\n  \"max_time_ns\": 9.70,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"alpha completed\"\n},\n{\n  \"group\": \"beta\",\n  \"experiment_name\": \"bench_beta\",\n  \"precision\": \"f32\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 9.00,\n  \"min_time_ns\": 9.00,\n  \"max_time_ns\": 9.00,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"beta completed\"\n},\n{\n  \"group\": \"gamma\",\n  \"experiment_name\": \"bench_gamma\",\n  \"precision\": \"f64\",\n  \"elapsed_ms\": 0,\n  \"iterations\": 100,\n  \"avg_time_ns\": 8.70,\n  \"min_time_ns\": 8.70,\n  \"max_time_ns\": 8.70,\n  \"time_stddev\": 0.0000,\n  \"iterations_per_sec\": 0.00,\n  \"result\": \"gamma completed\"\n}\n]"},
 yaml:{
-"alpha.yaml":"group: alpha\ncount: 1\nentries:\n  - label: bench_alpha\n    avg_time_ns: 16.50\n",
-"bench_alpha.yaml":"group: alpha\nexperiment_name: bench_alpha\nprecision: f64\nelapsed_ms: 0\niterations: 100\navg_time_ns: 16.50\nmin_time_ns: 16.50\nmax_time_ns: 16.50\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: alpha completed\n",
-"bench_beta.yaml":"group: beta\nexperiment_name: bench_beta\nprecision: f32\nelapsed_ms: 0\niterations: 100\navg_time_ns: 14.10\nmin_time_ns: 14.10\nmax_time_ns: 14.10\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: beta completed\n",
-"bench_gamma.yaml":"group: gamma\nexperiment_name: bench_gamma\nprecision: f64\nelapsed_ms: 0\niterations: 100\navg_time_ns: 13.20\nmin_time_ns: 13.20\nmax_time_ns: 13.20\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: gamma completed\n",
-"beta.yaml":"group: beta\ncount: 1\nentries:\n  - label: bench_beta\n    avg_time_ns: 14.10\n",
-"gamma.yaml":"group: gamma\ncount: 1\nentries:\n  - label: bench_gamma\n    avg_time_ns: 13.20\n",
-"summary.yaml":"title: Benchmark Integration Test\ncount: 3\nentries:\n  - label: bench_alpha\n    group: alpha\n    avg_time_ns: 16.50\n    iterations_per_sec: 0.00\n  - label: bench_beta\n    group: beta\n    avg_time_ns: 14.10\n    iterations_per_sec: 0.00\n  - label: bench_gamma\n    group: gamma\n    avg_time_ns: 13.20\n    iterations_per_sec: 0.00\n"},
+"alpha.yaml":"group: alpha\ncount: 1\nentries:\n  - label: bench_alpha\n    avg_time_ns: 9.70\n",
+"bench_alpha.yaml":"group: alpha\nexperiment_name: bench_alpha\nprecision: f64\nelapsed_ms: 0\niterations: 100\navg_time_ns: 9.70\nmin_time_ns: 9.70\nmax_time_ns: 9.70\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: alpha completed\n",
+"bench_beta.yaml":"group: beta\nexperiment_name: bench_beta\nprecision: f32\nelapsed_ms: 0\niterations: 100\navg_time_ns: 9.00\nmin_time_ns: 9.00\nmax_time_ns: 9.00\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: beta completed\n",
+"bench_gamma.yaml":"group: gamma\nexperiment_name: bench_gamma\nprecision: f64\nelapsed_ms: 0\niterations: 100\navg_time_ns: 8.70\nmin_time_ns: 8.70\nmax_time_ns: 8.70\ntime_stddev: 0.0000\niterations_per_sec: 0.00\nresult: gamma completed\n",
+"beta.yaml":"group: beta\ncount: 1\nentries:\n  - label: bench_beta\n    avg_time_ns: 9.00\n",
+"gamma.yaml":"group: gamma\ncount: 1\nentries:\n  - label: bench_gamma\n    avg_time_ns: 8.70\n",
+"summary.yaml":"title: Benchmark Integration Test\ncount: 3\nentries:\n  - label: bench_alpha\n    group: alpha\n    avg_time_ns: 9.70\n    iterations_per_sec: 0.00\n  - label: bench_beta\n    group: beta\n    avg_time_ns: 9.00\n    iterations_per_sec: 0.00\n  - label: bench_gamma\n    group: gamma\n    avg_time_ns: 8.70\n    iterations_per_sec: 0.00\n"},
 toml:{
-"bench_alpha.toml":"[benchmark]\ngroup = \"alpha\"\nexperiment_name = \"bench_alpha\"\nprecision = \"f64\"\nelapsed_ms = 0\niterations = 100\navg_time_ns = 16.50\nmin_time_ns = 16.50\nmax_time_ns = 16.50\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"alpha completed\"\n",
-"bench_beta.toml":"[benchmark]\ngroup = \"beta\"\nexperiment_name = \"bench_beta\"\nprecision = \"f32\"\nelapsed_ms = 0\niterations = 100\navg_time_ns = 14.10\nmin_time_ns = 14.10\nmax_time_ns = 14.10\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"beta completed\"\n",
-"bench_gamma.toml":"[benchmark]\ngroup = \"gamma\"\nexperiment_name = \"bench_gamma\"\nprecision = \"f64\"\nelapsed_ms = 0\niterations = 100\navg_time_ns = 13.20\nmin_time_ns = 13.20\nmax_time_ns = 13.20\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"gamma completed\"\n",
-"summary.toml":"title = \"Benchmark Integration Test\"\ncount = 3\n\n[[entries]]\nlabel = \"bench_alpha\"\ngroup = \"alpha\"\navg_time_ns = 16.50\niterations_per_sec = 0.00\n\n[[entries]]\nlabel = \"bench_beta\"\ngroup = \"beta\"\navg_time_ns = 14.10\niterations_per_sec = 0.00\n\n[[entries]]\nlabel = \"bench_gamma\"\ngroup = \"gamma\"\navg_time_ns = 13.20\niterations_per_sec = 0.00\n\n"},
+"bench_alpha.toml":"[benchmark]\ngroup = \"alpha\"\nexperiment_name = \"bench_alpha\"\nprecision = \"f64\"\nelapsed_ms = 0\niterations = 100\navg_time_ns = 9.70\nmin_time_ns = 9.70\nmax_time_ns = 9.70\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"alpha completed\"\n",
+"bench_beta.toml":"[benchmark]\ngroup = \"beta\"\nexperiment_name = \"bench_beta\"\nprecision = \"f32\"\nelapsed_ms = 0\niterations = 100\navg_time_ns = 9.00\nmin_time_ns = 9.00\nmax_time_ns = 9.00\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"beta completed\"\n",
+"bench_gamma.toml":"[benchmark]\ngroup = \"gamma\"\nexperiment_name = \"bench_gamma\"\nprecision = \"f64\"\nelapsed_ms = 0\niterations = 100\navg_time_ns = 8.70\nmin_time_ns = 8.70\nmax_time_ns = 8.70\ntime_stddev = 0.0000\niterations_per_sec = 0.00\nresult = \"gamma completed\"\n",
+"summary.toml":"title = \"Benchmark Integration Test\"\ncount = 3\n\n[[entries]]\nlabel = \"bench_alpha\"\ngroup = \"alpha\"\navg_time_ns = 9.70\niterations_per_sec = 0.00\n\n[[entries]]\nlabel = \"bench_beta\"\ngroup = \"beta\"\navg_time_ns = 9.00\niterations_per_sec = 0.00\n\n[[entries]]\nlabel = \"bench_gamma\"\ngroup = \"gamma\"\navg_time_ns = 8.70\niterations_per_sec = 0.00\n\n"},
 bmk:{
-"bench_alpha.bmk":"experiment_name: bench_alpha\nprecision:       f64\nelapsed_ms:      0\niterations:      100\navg_time_ns:     16.50\nmin_time_ns:     16.50\nmax_time_ns:     16.50\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     182 bytes\n",
-"bench_beta.bmk":"experiment_name: bench_beta\nprecision:       f32\nelapsed_ms:      0\niterations:      100\navg_time_ns:     14.10\nmin_time_ns:     14.10\nmax_time_ns:     14.10\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     181 bytes\n",
-"bench_gamma.bmk":"experiment_name: bench_gamma\nprecision:       f64\nelapsed_ms:      0\niterations:      100\navg_time_ns:     13.20\nmin_time_ns:     13.20\nmax_time_ns:     13.20\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     182 bytes\n"}
+"bench_alpha.bmk":"experiment_name: bench_alpha\nprecision:       f64\nelapsed_ms:      0\niterations:      100\navg_time_ns:     9.70\nmin_time_ns:     9.70\nmax_time_ns:     9.70\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     230 bytes\n",
+"bench_beta.bmk":"experiment_name: bench_beta\nprecision:       f32\nelapsed_ms:      0\niterations:      100\navg_time_ns:     9.00\nmin_time_ns:     9.00\nmax_time_ns:     9.00\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     229 bytes\n",
+"bench_gamma.bmk":"experiment_name: bench_gamma\nprecision:       f64\nelapsed_ms:      0\niterations:      100\navg_time_ns:     8.70\nmin_time_ns:     8.70\nmax_time_ns:     8.70\ntime_stddev:     0.0000\niterations/sec:  0.00\ninput_samples:   0\ntotal_flops:     0\nstep_count:      0\ninput_dim:       0\noutput_dim:      0\noutput_bytes:    0\ninput_bytes:     0\nresult_bytes:    0\neval_error:      0.000000\neval_accuracy:   0.000000\neval_r_squared:  0.000000\neval_mae:        0.000000\neval_samples:    0\nlogical_cores:   0\navg_freq_mhz:    0\nmax_freq_mhz:    0\nmax_workers:     0\ncpu_utilization:  0.00\nbinary_size:     230 bytes\n"}
 };
 var D={
-"bench_alpha":{tags:{"group":"alpha"},p:"f64",it:100,avg:16.50,mn:16.50,mx:16.50,sd:0.0000,ips:0.00},
-"bench_beta":{tags:{"group":"beta"},p:"f32",it:100,avg:14.10,mn:14.10,mx:14.10,sd:0.0000,ips:0.00},
-"bench_gamma":{tags:{"group":"gamma"},p:"f64",it:100,avg:13.20,mn:13.20,mx:13.20,sd:0.0000,ips:0.00}
+"bench_alpha":{tags:{"group":"alpha"},p:"f64",it:100,avg:9.70,mn:9.70,mx:9.70,sd:0.0000,ips:0.00},
+"bench_beta":{tags:{"group":"beta"},p:"f32",it:100,avg:9.00,mn:9.00,mx:9.00,sd:0.0000,ips:0.00},
+"bench_gamma":{tags:{"group":"gamma"},p:"f64",it:100,avg:8.70,mn:8.70,mx:8.70,sd:0.0000,ips:0.00}
 };
 function switchTab(e,id){document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});e.target.classList.add('active');document.getElementById(id).classList.add('active')}
 function showFile(fmt,name){var c=F[fmt];if(!c)return;if(fmt==='csv'){var el=document.getElementById('csv-code');if(!el)return;var raw=c[name]||'';var lines=raw.split('\n').filter(function(l){return l.length>0});if(lines.length===0){el.innerHTML='';return;}var t='<table>';var hdr=lines[0].split(',');t+='<thead><tr>';for(var i=0;i<hdr.length;i++)t+='<th>'+hdr[i].replace(/</g,'&lt;')+'</th>';t+='</tr></thead><tbody>';for(var r=1;r<lines.length;r++){var cols=lines[r].split(',');t+='<tr>';for(var j=0;j<cols.length;j++)t+='<td>'+cols[j].replace(/</g,'&lt;')+'</td>';t+='</tr>';}t+='</tbody></table>';el.innerHTML=t}else{var el=document.getElementById(fmt+'-code');if(el)el.textContent=c[name]||''}}

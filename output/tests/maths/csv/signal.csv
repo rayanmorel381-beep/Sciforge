@@ -1,4 +1,4 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-signal::butterworth_gain,f64,1,1,1839189,1839189,1839189,0,1000,pass,signal,BG,Butterworth gain,maths,signal::butterworth_gain
-signal::kalman_filter_1d,f64,2,1,2155400,2155400,2155400,0,500,pass,signal,KF1,Kalman filter 1d,maths,signal::kalman_filter_1d
-signal::low_pass_rc,f64,2,1,2035739,2035739,2035739,0,500,pass,signal,LPR,Low pass rc,maths,signal::low_pass_rc
+signal::butterworth_gain,f64,2,1,2258720,2258720,2258720,0,500,pass,signal,BG,Butterworth gain,maths,signal::butterworth_gain
+signal::kalman_filter_1d,f64,2,1,2035640,2035640,2035640,0,500,pass,signal,KF1,Kalman filter 1d,maths,signal::kalman_filter_1d
+signal::low_pass_rc,f64,2,1,2351241,2351241,2351241,0,500,pass,signal,LPR,Low pass rc,maths,signal::low_pass_rc

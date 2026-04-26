@@ -15,10 +15,10 @@
   "precision": "f64",
   "elapsed_ms": 11,
   "iterations": 5000,
-  "avg_time_ns": 2266.50,
-  "min_time_ns": 2266.50,
-  "max_time_ns": 2266.50,
+  "avg_time_ns": 2253.55,
+  "min_time_ns": 2253.55,
+  "max_time_ns": 2253.55,
   "time_stddev": 0.0000,
-  "iterations_per_sec": 454545.47,
+  "iterations_per_sec": 454545.45,
   "result": "⁴⁰K (Potassium) | t½=1.248e9 years | λ=1.7598e-17 s⁻¹ | beta- (electron emission) | A_sp=2.650e5 Bq/g"
 }

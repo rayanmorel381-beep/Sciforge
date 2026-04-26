@@ -5,11 +5,11 @@ config: [Xe] 5d¹ 6s²
 mass: 138.90547
 experiment_name: La_Lanthanum_benchmark
 precision: f32
-elapsed_ms: 44
+elapsed_ms: 45
 iterations: 10000
-avg_time_ns: 4438.56
-min_time_ns: 4438.56
-max_time_ns: 4438.56
+avg_time_ns: 4510.37
+min_time_ns: 4510.37
+max_time_ns: 4510.37
 time_stddev: 0.0000
-iterations_per_sec: 227272.73
+iterations_per_sec: 222222.22
 result: Z=57 | La (Lanthanum) | 138.90547 u | lanthanide | [Xe] 5d¹ 6s²

@@ -6,28 +6,28 @@ entries:
     name: Beaufort monotonic
     domain: meteorology
     test: "winds::beaufort_monotonic"
-    avg_time_ns: 1908059.00
+    avg_time_ns: 1908610.00
   - label: winds_beaufort_to_m_s
     symbol: BTM
     name: Beaufort to m s
     domain: meteorology
     test: "winds::beaufort_to_m_s"
-    avg_time_ns: 1879449.00
+    avg_time_ns: 1761491.00
   - label: winds_beaufort_zero_is_calm
     symbol: BZI
     name: Beaufort zero is calm
     domain: meteorology
     test: "winds::beaufort_zero_is_calm"
-    avg_time_ns: 1891119.00
+    avg_time_ns: 1708480.00
   - label: winds_wind_chill
     symbol: WC
     name: Wind chill
     domain: meteorology
     test: "winds::wind_chill"
-    avg_time_ns: 1870990.00
+    avg_time_ns: 1722210.00
   - label: winds_wind_chill_decreases_with_wind
     symbol: WCD
     name: Wind chill decreases with wind
     domain: meteorology
     test: "winds::wind_chill_decreases_with_wind"
-    avg_time_ns: 1689829.00
+    avg_time_ns: 1703271.00

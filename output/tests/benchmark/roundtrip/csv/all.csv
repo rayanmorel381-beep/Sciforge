@@ -1,2 +1,2 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result
-rt_export,f32,0,25,28.4,28.4,28.4,0,0,roundtrip
+rt_export,f32,0,25,20.4,20.4,20.4,0,0,roundtrip

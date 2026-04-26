@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-nutrition::basal_metabolic_rate_mifflin,f64,1,1,1904810,1904810,1904810,0,1000,pass,nutrition,BMR,Basal metabolic rate mifflin,biology,nutrition::basal_metabolic_rate_mifflin
-nutrition::body_mass_index,f64,1,1,1865179,1865179,1865179,0,1000,pass,nutrition,BMI,Body mass index,biology,nutrition::body_mass_index
-nutrition::nitrogen_balance,f64,2,1,2030039,2030039,2030039,0,500,pass,nutrition,NB,Nitrogen balance,biology,nutrition::nitrogen_balance
-nutrition::respiratory_exchange_ratio,f64,1,1,1894079,1894079,1894079,0,1000,pass,nutrition,RER,Respiratory exchange ratio,biology,nutrition::respiratory_exchange_ratio
+nutrition::basal_metabolic_rate_mifflin,f64,2,1,2700771,2700771,2700771,0,500,pass,nutrition,BMR,Basal metabolic rate mifflin,biology,nutrition::basal_metabolic_rate_mifflin
+nutrition::body_mass_index,f64,2,1,2448380,2448380,2448380,0,500,pass,nutrition,BMI,Body mass index,biology,nutrition::body_mass_index
+nutrition::nitrogen_balance,f64,2,1,2194611,2194611,2194611,0,500,pass,nutrition,NB,Nitrogen balance,biology,nutrition::nitrogen_balance
+nutrition::respiratory_exchange_ratio,f64,2,1,2086800,2086800,2086800,0,500,pass,nutrition,RER,Respiratory exchange ratio,biology,nutrition::respiratory_exchange_ratio

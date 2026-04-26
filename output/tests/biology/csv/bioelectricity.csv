@@ -1,5 +1,5 @@
 experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
-bioelectricity::cable_equation_steady,f64,4,1,4533278,4533278,4533278,0,250,pass,bioelectricity,CES,Cable equation steady,biology,bioelectricity::cable_equation_steady
-bioelectricity::electrotonic_length,f64,10,1,10498526,10498526,10498526,0,100,pass,bioelectricity,EL,Electrotonic length,biology,bioelectricity::electrotonic_length
-bioelectricity::impedance_tissue,f64,6,1,6269367,6269367,6269367,0,166.66667,pass,bioelectricity,IT,Impedance tissue,biology,bioelectricity::impedance_tissue
-bioelectricity::strength_duration_weiss,f64,2,1,2738959,2738959,2738959,0,500,pass,bioelectricity,SDW,Strength duration weiss,biology,bioelectricity::strength_duration_weiss
+bioelectricity::cable_equation_steady,f64,1,1,1911030,1911030,1911030,0,1000,pass,bioelectricity,CES,Cable equation steady,biology,bioelectricity::cable_equation_steady
+bioelectricity::electrotonic_length,f64,2,1,2308451,2308451,2308451,0,500,pass,bioelectricity,EL,Electrotonic length,biology,bioelectricity::electrotonic_length
+bioelectricity::impedance_tissue,f64,2,1,2528110,2528110,2528110,0,500,pass,bioelectricity,IT,Impedance tissue,biology,bioelectricity::impedance_tissue
+bioelectricity::strength_duration_weiss,f64,2,1,2411410,2411410,2411410,0,500,pass,bioelectricity,SDW,Strength duration weiss,biology,bioelectricity::strength_duration_weiss
