@@ -3,7 +3,10 @@ name = "sciforge-lib"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
-description = ""
+description = "Scientific computing library — mathematics, physics, chemistry, biology, astronomy, geology, meteorology."
+documentation.workspace = true
+homepage.workspace = true
+repository.workspace = true
 
 [features]
 default = ["full"]

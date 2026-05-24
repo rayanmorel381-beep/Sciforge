@@ -4,6 +4,9 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 description = "Central hub orchestrating Sciforge subsystems (api, engine, tools)."
+documentation.workspace = true
+homepage.workspace = true
+repository.workspace = true
 
 [lib]
 path = "src/lib.rs"

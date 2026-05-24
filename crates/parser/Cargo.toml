@@ -4,6 +4,9 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 description = "Hand-written parsers and writers for CSV, HTML, JSON, Markdown, TOML, YAML."
+documentation.workspace = true
+homepage.workspace = true
+repository.workspace = true
 
 [lib]
 path = "src/lib.rs"

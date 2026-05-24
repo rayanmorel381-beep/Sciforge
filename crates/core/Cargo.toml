@@ -4,6 +4,9 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 description = "Shared engineering primitives: materials, fasteners, fluids, propulsion taxonomies, std components."
+documentation.workspace = true
+homepage.workspace = true
+repository.workspace = true
 
 [dependencies]
 sciforge-hub = { workspace = true, features = ["full"] }

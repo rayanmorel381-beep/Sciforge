@@ -4,6 +4,9 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 description = "Vehicle component definitions: body, powertrain, brakes, suspension, sounds, etc."
+documentation.workspace = true
+homepage.workspace = true
+repository.workspace = true
 
 [dependencies]
 sciforge-hub.workspace = true
