@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+astronomy_001,f64,11999,1,11999000000,11999000000,11999000000,0,0.08334027835652971,success=true code=Some(0) stdout_bytes=156 stderr_bytes=371,as01,GF,as001,astronomy,celestial,ok,11999
+astronomy_002,f64,12706,1,12706000000,12706000000,12706000000,0,0.07870297497245396,success=true code=Some(0) stdout_bytes=148 stderr_bytes=371,as01,HS,as002,astronomy,celestial,ok,12706
+astronomy_003,f64,2894,1,2894000000,2894000000,2894000000,0,0.3455425017277125,success=true code=Some(0) stdout_bytes=165 stderr_bytes=266,as01,JDT,as003,astronomy,celestial,ok,2894
+astronomy_004,f64,1495,1,1495000000,1495000000,1495000000,0,0.6688963210702341,success=true code=Some(0) stdout_bytes=151 stderr_bytes=266,as01,SP,as004,astronomy,celestial,ok,1495
+astronomy_005,f64,3118,1,3118000000,3118000000,3118000000,0,0.3207184092366902,success=true code=Some(0) stdout_bytes=164 stderr_bytes=214,as01,ADW,as005,astronomy,cosmology,ok,3118
+astronomy_006,f64,13357,1,13357000000,13357000000,13357000000,0,0.07486711087819121,success=true code=Some(0) stdout_bytes=152 stderr_bytes=371,as01,AOU,as006,astronomy,cosmology,ok,13357
+astronomy_007,f64,3160,1,3160000000,3160000000,3160000000,0,0.31645569620253167,success=true code=Some(0) stdout_bytes=187 stderr_bytes=214,as01,AMR,as007,astronomy,cosmology,ok,3160
+astronomy_008,f64,5206,1,5206000000,5206000000,5206000000,0,0.1920860545524395,success=true code=Some(0) stdout_bytes=177 stderr_bytes=318,as01,AUF,as008,astronomy,cosmology,ok,5206
+astronomy_009,f64,11089,1,11089000000,11089000000,11089000000,0,0.09017945711966814,success=true code=Some(0) stdout_bytes=157 stderr_bytes=267,as01,CTA,as009,astronomy,cosmology,ok,11089
+astronomy_010,f64,11939,1,11939000000,11939000000,11939000000,0,0.08375910880308234,success=true code=Some(0) stdout_bytes=166 stderr_bytes=371,as01,CTS,as010,astronomy,cosmology,ok,11939

@@ -1,0 +1,83 @@
+category: bi16
+count: 10
+entries:
+  - label: biology_151
+    symbol: RBE
+    name: bi151
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 10648
+    avg_time_ns: 10648000000.00
+  - label: biology_152
+    symbol: RLQ
+    name: bi152
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 1138
+    avg_time_ns: 1138000000.00
+  - label: biology_153
+    symbol: Tc
+    name: bi153
+    target: biology
+    module: radiobiology
+    status: ok
+    elapsed_ms: 3044
+    avg_time_ns: 3044000000.00
+  - label: biology_154
+    symbol: FP
+    name: bi154
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 10340
+    avg_time_ns: 10340000000.00
+  - label: biology_155
+    symbol: HD
+    name: bi155
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 11301
+    avg_time_ns: 11301000000.00
+  - label: biology_156
+    symbol: ISR
+    name: bi156
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 3450
+    avg_time_ns: 3450000000.00
+  - label: biology_157
+    symbol: SMS
+    name: bi157
+    target: biology
+    module: reproduction
+    status: ok
+    elapsed_ms: 3409
+    avg_time_ns: 3409000000.00
+  - label: biology_158
+    symbol: NO
+    name: bi158
+    target: biology
+    module: stem_cell
+    status: ok
+    elapsed_ms: 7955
+    avg_time_ns: 7955000000.00
+  - label: biology_159
+    symbol: RE
+    name: bi159
+    target: biology
+    module: stem_cell
+    status: ok
+    elapsed_ms: 5664
+    avg_time_ns: 5664000000.00
+  - label: biology_160
+    symbol: SRP
+    name: bi160
+    target: biology
+    module: stem_cell
+    status: ok
+    elapsed_ms: 10478
+    avg_time_ns: 10478000000.00

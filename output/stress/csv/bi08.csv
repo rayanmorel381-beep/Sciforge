@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_071,f64,3672,1,3672000000,3672000000,3672000000,0,0.27233115468409586,success=true code=Some(0) stdout_bytes=181 stderr_bytes=262,bi08,HHC,bi071,biology,enzyme,ok,3672
+biology_072,f64,9946,1,9946000000,9946000000,9946000000,0,0.10054293183189222,success=true code=Some(0) stdout_bytes=150 stderr_bytes=262,bi08,LB,bi072,biology,enzyme,ok,9946
+biology_073,f64,10585,1,10585000000,10585000000,10585000000,0,0.0944733112895607,success=true code=Some(0) stdout_bytes=161 stderr_bytes=263,bi08,MMH,bi073,biology,enzyme,ok,10585
+biology_074,f64,5388,1,5388000000,5388000000,5388000000,0,0.1855976243504083,success=true code=Some(0) stdout_bytes=176 stderr_bytes=262,bi08,MMM,bi074,biology,enzyme,ok,5388
+biology_075,f64,12614,1,12614000000,12614000000,12614000000,0,0.07927699381639448,success=true code=Some(0) stdout_bytes=162 stderr_bytes=367,bi08,MMS,bi075,biology,enzyme,ok,12614
+biology_076,f64,10253,1,10253000000,10253000000,10253000000,0,0.09753242953281967,success=true code=Some(0) stdout_bytes=161 stderr_bytes=211,bi08,CML,bi076,biology,epigenetics,ok,10253
+biology_077,f64,12113,1,12113000000,12113000000,12113000000,0,0.0825559316436886,success=true code=Some(0) stdout_bytes=174 stderr_bytes=419,bi08,EIP,bi077,biology,epigenetics,ok,12113
+biology_078,f64,661,1,661000000,661000000,661000000,0,1.51285930408472,success=true code=Some(0) stdout_bytes=160 stderr_bytes=262,bi08,NO,bi078,biology,epigenetics,ok,661
+biology_079,f64,10254,1,10254000000,10254000000,10254000000,0,0.09752291788570314,success=true code=Some(0) stdout_bytes=165 stderr_bytes=263,bi08,RKE,bi079,biology,epigenetics,ok,10254
+biology_080,f64,10424,1,10424000000,10424000000,10424000000,0,0.09593246354566386,success=true code=Some(0) stdout_bytes=165 stderr_bytes=263,bi08,HRB,bi080,biology,ethology,ok,10424

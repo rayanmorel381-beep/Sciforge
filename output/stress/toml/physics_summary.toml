@@ -1,0 +1,18 @@
+[benchmark]
+category = "physics"
+symbol = "SUM"
+name = "PH Summary"
+target = "physics"
+module = "summary"
+status = "ok"
+elapsed_ms = "507411"
+experiment_name = "physics_summary"
+precision = "f64"
+elapsed_ms = 507411
+iterations = 1
+avg_time_ns = 6950835616.44
+min_time_ns = 6950835616.44
+max_time_ns = 6950835616.44
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "tests_total=73 tests_ok=73 tests_failed=0 elapsed_sum_ms=507411 min_ms=372 max_ms=10546 avg_ms=6950.84"

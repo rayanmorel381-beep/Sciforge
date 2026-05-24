@@ -1,0 +1,11 @@
+category: scientific_validation
+count: 1
+entries:
+  - label: scientific_validation_summary
+    symbol: SUM
+    name: SV Summary
+    target: scientific_validation
+    module: summary
+    status: ok
+    elapsed_ms: 23263
+    avg_time_ns: 11631500000.00

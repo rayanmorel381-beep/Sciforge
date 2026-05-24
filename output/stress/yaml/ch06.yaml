@@ -1,0 +1,83 @@
+category: ch06
+count: 10
+entries:
+  - label: chemistry_051
+    symbol: LEB
+    name: ch051
+    target: chemistry
+    module: inorganic
+    status: ok
+    elapsed_ms: 9588
+    avg_time_ns: 9588000000.00
+  - label: chemistry_052
+    symbol: MMS
+    name: ch052
+    target: chemistry
+    module: inorganic
+    status: ok
+    elapsed_ms: 7322
+    avg_time_ns: 7322000000.00
+  - label: chemistry_053
+    symbol: PED
+    name: ch053
+    target: chemistry
+    module: inorganic
+    status: ok
+    elapsed_ms: 6986
+    avg_time_ns: 6986000000.00
+  - label: chemistry_054
+    symbol: EE
+    name: ch054
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 6000
+    avg_time_ns: 6000000000.00
+  - label: chemistry_055
+    symbol: HLF
+    name: ch055
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 210
+    avg_time_ns: 210000000.00
+  - label: chemistry_056
+    symbol: MM
+    name: ch056
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 10877
+    avg_time_ns: 10877000000.00
+  - label: chemistry_057
+    symbol: RCA
+    name: ch057
+    target: chemistry
+    module: kinetics
+    status: ok
+    elapsed_ms: 1252
+    avg_time_ns: 1252000000.00
+  - label: chemistry_058
+    symbol: BO
+    name: ch058
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 3495
+    avg_time_ns: 3495000000.00
+  - label: chemistry_059
+    symbol: DM
+    name: ch059
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 6574
+    avg_time_ns: 6574000000.00
+  - label: chemistry_060
+    symbol: FC
+    name: ch060
+    target: chemistry
+    module: molecular
+    status: ok
+    elapsed_ms: 6744
+    avg_time_ns: 6744000000.00

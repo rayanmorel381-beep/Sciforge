@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+meteorology_001,f64,1435,1,1435000000,1435000000,1435000000,0,0.6968641114982579,success=true code=Some(0) stdout_bytes=172 stderr_bytes=270,me01,BDW,me001,meteorology,atmosphere,ok,1435
+meteorology_002,f64,11038,1,11038000000,11038000000,11038000000,0,0.0905961224859576,success=true code=Some(0) stdout_bytes=156 stderr_bytes=271,me01,BF,me002,meteorology,atmosphere,ok,11038
+meteorology_003,f64,2115,1,2115000000,2115000000,2115000000,0,0.4728132387706856,success=true code=Some(0) stdout_bytes=152 stderr_bytes=322,me01,LRD,me003,meteorology,atmosphere,ok,2115
+meteorology_004,f64,13184,1,13184000000,13184000000,13184000000,0,0.07584951456310679,success=true code=Some(0) stdout_bytes=159 stderr_bytes=427,me01,PT,me004,meteorology,atmosphere,ok,13184
+meteorology_005,f64,10796,1,10796000000,10796000000,10796000000,0,0.09262689885142646,success=true code=Some(0) stdout_bytes=174 stderr_bytes=323,me01,SVI,me005,meteorology,atmosphere,ok,10796
+meteorology_006,f64,12454,1,12454000000,12454000000,12454000000,0,0.08029548739360848,success=true code=Some(0) stdout_bytes=163 stderr_bytes=375,me01,SVP,me006,meteorology,atmosphere,ok,12454
+meteorology_007,f64,12321,1,12321000000,12321000000,12321000000,0,0.08116224332440548,success=true code=Some(0) stdout_bytes=150 stderr_bytes=427,me01,SH,me007,meteorology,atmosphere,ok,12321
+meteorology_008,f64,3053,1,3053000000,3053000000,3053000000,0,0.32754667540124466,success=true code=Some(0) stdout_bytes=177 stderr_bytes=270,me01,CCS,me008,meteorology,dynamics,ok,3053
+meteorology_009,f64,11251,1,11251000000,11251000000,11251000000,0,0.08888098835659053,success=true code=Some(0) stdout_bytes=154 stderr_bytes=375,me01,CP,me009,meteorology,dynamics,ok,11251
+meteorology_010,f64,2727,1,2727000000,2727000000,2727000000,0,0.3667033370003667,success=true code=Some(0) stdout_bytes=160 stderr_bytes=270,me01,CZA,me010,meteorology,dynamics,ok,2727

@@ -1,0 +1,18 @@
+[benchmark]
+category = "me04"
+symbol = "CPB"
+name = "me036"
+target = "meteorology"
+module = "storms"
+status = "ok"
+elapsed_ms = "2455"
+experiment_name = "meteorology_036"
+precision = "f64"
+elapsed_ms = 2455
+iterations = 1
+avg_time_ns = 2455000000.00
+min_time_ns = 2455000000.00
+max_time_ns = 2455000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.41
+result = "success=true code=Some(0) stdout_bytes=156 stderr_bytes=374"

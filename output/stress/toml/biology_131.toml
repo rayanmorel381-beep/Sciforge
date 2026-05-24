@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi14"
+symbol = "JCD"
+name = "bi131"
+target = "biology"
+module = "phylogenetics"
+status = "ok"
+elapsed_ms = "6677"
+experiment_name = "biology_131"
+precision = "f64"
+elapsed_ms = 6677
+iterations = 1
+avg_time_ns = 6677000000.00
+min_time_ns = 6677000000.00
+max_time_ns = 6677000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.15
+result = "success=true code=Some(0) stdout_bytes=163 stderr_bytes=210"

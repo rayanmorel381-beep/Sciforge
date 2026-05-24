@@ -1,0 +1,27 @@
+category: bi19
+count: 3
+entries:
+  - label: biology_181
+    symbol: BS
+    name: bi181
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 10755
+    avg_time_ns: 10755000000.00
+  - label: biology_182
+    symbol: HIT
+    name: bi182
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 10114
+    avg_time_ns: 10114000000.00
+  - label: biology_183
+    symbol: VLD
+    name: bi183
+    target: biology
+    module: virology
+    status: ok
+    elapsed_ms: 10786
+    avg_time_ns: 10786000000.00

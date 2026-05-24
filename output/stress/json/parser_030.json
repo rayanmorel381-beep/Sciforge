@@ -1,0 +1,19 @@
+{
+  "category": "pr03",
+  "symbol": "JI",
+  "name": "pr030",
+  "target": "parser",
+  "module": "json",
+  "status": "ok",
+  "elapsed_ms": "9408",
+  "experiment_name": "parser_030",
+  "precision": "f64",
+  "elapsed_ms": 9408,
+  "iterations": 1,
+  "avg_time_ns": 9408000000.00,
+  "min_time_ns": 9408000000.00,
+  "max_time_ns": 9408000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.11,
+  "result": "success=true code=Some(0) stdout_bytes=144 stderr_bytes=208"
+}

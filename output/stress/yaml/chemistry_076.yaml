@@ -1,0 +1,17 @@
+category: ch08
+symbol: LBE
+name: ch076
+target: chemistry
+module: quantum_chem
+status: ok
+elapsed_ms: 10028
+experiment_name: chemistry_076
+precision: f64
+elapsed_ms: 10028
+iterations: 1
+avg_time_ns: 10028000000.00
+min_time_ns: 10028000000.00
+max_time_ns: 10028000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.10
+result: success=true code=Some(0) stdout_bytes=160 stderr_bytes=266

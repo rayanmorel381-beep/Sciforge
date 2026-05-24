@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+geology_041,f64,1542,1,1542000000,1542000000,1542000000,0,0.648508430609598,success=true code=Some(0) stdout_bytes=158 stderr_bytes=262,ge05,IE,ge041,geology,tectonics,ok,1542
+geology_042,f64,1086,1,1086000000,1086000000,1086000000,0,0.9208103130755064,success=true code=Some(0) stdout_bytes=146 stderr_bytes=366,ge05,MN,ge042,geology,tectonics,ok,1086
+geology_043,f64,3201,1,3201000000,3201000000,3201000000,0,0.31240237425804435,success=true code=Some(0) stdout_bytes=151 stderr_bytes=262,ge05,PV,ge043,geology,tectonics,ok,3201
+geology_044,f64,11222,1,11222000000,11222000000,11222000000,0,0.08911067545891997,success=true code=Some(0) stdout_bytes=156 stderr_bytes=367,ge05,VA,ge044,geology,tectonics,ok,11222

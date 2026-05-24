@@ -1,0 +1,17 @@
+category: ph06
+symbol: IWE
+name: ph055
+target: physics
+module: quantum
+status: ok
+elapsed_ms: 9481
+experiment_name: physics_055
+precision: f64
+elapsed_ms: 9481
+iterations: 1
+avg_time_ns: 9481000000.00
+min_time_ns: 9481000000.00
+max_time_ns: 9481000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.11
+result: success=true code=Some(0) stdout_bytes=155 stderr_bytes=262

@@ -1,0 +1,17 @@
+category: ch06
+symbol: EE
+name: ch054
+target: chemistry
+module: kinetics
+status: ok
+elapsed_ms: 6000
+experiment_name: chemistry_054
+precision: f64
+elapsed_ms: 6000
+iterations: 1
+avg_time_ns: 6000000000.00
+min_time_ns: 6000000000.00
+max_time_ns: 6000000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.17
+result: success=true code=Some(0) stdout_bytes=152 stderr_bytes=318

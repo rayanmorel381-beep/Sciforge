@@ -1,0 +1,17 @@
+category: pr06
+symbol: TEI
+name: pr052
+target: parser
+module: toml
+status: ok
+elapsed_ms: 252
+experiment_name: parser_052
+precision: f64
+elapsed_ms: 252
+iterations: 1
+avg_time_ns: 252000000.00
+min_time_ns: 252000000.00
+max_time_ns: 252000000.00
+time_stddev: 0.0000
+iterations_per_sec: 3.97
+result: success=true code=Some(0) stdout_bytes=151 stderr_bytes=260

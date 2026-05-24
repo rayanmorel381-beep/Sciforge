@@ -1,0 +1,19 @@
+{
+  "category": "hb07",
+  "symbol": "ACL",
+  "name": "hb067",
+  "target": "hub",
+  "module": "tools",
+  "status": "ok",
+  "elapsed_ms": "11472",
+  "experiment_name": "hub_067",
+  "precision": "f64",
+  "elapsed_ms": 11472,
+  "iterations": 1,
+  "avg_time_ns": 11472000000.00,
+  "min_time_ns": 11472000000.00,
+  "max_time_ns": 11472000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.09,
+  "result": "success=true code=Some(0) stdout_bytes=153 stderr_bytes=411"
+}

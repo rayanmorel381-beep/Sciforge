@@ -1,0 +1,83 @@
+category: ch03
+count: 10
+entries:
+  - label: chemistry_021
+    symbol: SCS
+    name: ch021
+    target: chemistry
+    module: crystallography
+    status: ok
+    elapsed_ms: 7288
+    avg_time_ns: 7288000000.00
+  - label: chemistry_022
+    symbol: ATE
+    name: ch022
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 7221
+    avg_time_ns: 7221000000.00
+  - label: chemistry_023
+    symbol: CP
+    name: ch023
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 9916
+    avg_time_ns: 9916000000.00
+  - label: chemistry_024
+    symbol: DMP
+    name: ch024
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 599
+    avg_time_ns: 599000000.00
+  - label: chemistry_025
+    symbol: DUF
+    name: ch025
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 7308
+    avg_time_ns: 7308000000.00
+  - label: chemistry_026
+    symbol: GKR
+    name: ch026
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 6627
+    avg_time_ns: 6627000000.00
+  - label: chemistry_027
+    symbol: HLF
+    name: ch027
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 175
+    avg_time_ns: 175000000.00
+  - label: chemistry_028
+    symbol: NP
+    name: ch028
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 10849
+    avg_time_ns: 10849000000.00
+  - label: chemistry_029
+    symbol: RCA
+    name: ch029
+    target: chemistry
+    module: dispatch
+    status: ok
+    elapsed_ms: 1556
+    avg_time_ns: 1556000000.00
+  - label: chemistry_030
+    symbol: BV
+    name: ch030
+    target: chemistry
+    module: electrochemistry
+    status: ok
+    elapsed_ms: 9539
+    avg_time_ns: 9539000000.00

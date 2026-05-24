@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb01"
+symbol = "SG"
+name = "hb004"
+target = "hub"
+module = "cross_domain"
+status = "ok"
+elapsed_ms = "10635"
+experiment_name = "hub_004"
+precision = "f64"
+elapsed_ms = 10635
+iterations = 1
+avg_time_ns = 10635000000.00
+min_time_ns = 10635000000.00
+max_time_ns = 10635000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.09
+result = "success=true code=Some(0) stdout_bytes=169 stderr_bytes=255"

@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+constants_031,f64,9453,1,9453000000,9453000000,9453000000,0,0.10578652279699566,success=true code=Some(0) stdout_bytes=145 stderr_bytes=318,ct04,ER,ct031,constants,units,ok,9453
+constants_032,f64,6237,1,6237000000,6237000000,6237000000,0,0.160333493666827,success=true code=Some(0) stdout_bytes=144 stderr_bytes=370,ct04,ETJ,ct032,constants,units,ok,6237

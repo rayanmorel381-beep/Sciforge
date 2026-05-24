@@ -1,0 +1,19 @@
+{
+  "category": "bi02",
+  "symbol": "GNA",
+  "name": "bi011",
+  "target": "biology",
+  "module": "bioenergetics",
+  "status": "ok",
+  "elapsed_ms": "4795",
+  "experiment_name": "biology_011",
+  "precision": "f64",
+  "elapsed_ms": 4795,
+  "iterations": 1,
+  "avg_time_ns": 4795000000.00,
+  "min_time_ns": 4795000000.00,
+  "max_time_ns": 4795000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.21,
+  "result": "success=true code=Some(0) stdout_bytes=160 stderr_bytes=262"
+}

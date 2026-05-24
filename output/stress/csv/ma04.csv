@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+maths_031,f64,4902,1,4902000000,4902000000,4902000000,0,0.2039983680130559,success=true code=Some(0) stdout_bytes=141 stderr_bytes=258,ma04,PZ,ma031,maths,misc,ok,4902
+maths_032,f64,5032,1,5032000000,5032000000,5032000000,0,0.1987281399046105,success=true code=Some(0) stdout_bytes=147 stderr_bytes=362,ma04,QP,ma032,maths,misc,ok,5032
+maths_033,f64,4931,1,4931000000,4931000000,4931000000,0,0.2027986209693774,success=true code=Some(0) stdout_bytes=144 stderr_bytes=258,ma04,TZ,ma033,maths,misc,ok,4931
+maths_034,f64,6114,1,6114000000,6114000000,6114000000,0,0.16355904481517827,success=true code=Some(0) stdout_bytes=160 stderr_bytes=362,ma04,HT,ma034,maths,non_euclidean,ok,6114
+maths_035,f64,4481,1,4481000000,4481000000,4481000000,0,0.2231644722160232,success=true code=Some(0) stdout_bytes=163 stderr_bytes=258,ma04,PDD,ma035,maths,non_euclidean,ok,4481
+maths_036,f64,6184,1,6184000000,6184000000,6184000000,0,0.16170763260025872,success=true code=Some(0) stdout_bytes=161 stderr_bytes=414,ma04,SR,ma036,maths,non_euclidean,ok,6184
+maths_037,f64,6464,1,6464000000,6464000000,6464000000,0,0.1547029702970297,success=true code=Some(0) stdout_bytes=159 stderr_bytes=258,ma04,SD,ma037,maths,non_euclidean,ok,6464
+maths_038,f64,6089,1,6089000000,6089000000,6089000000,0,0.16423057973394647,success=true code=Some(0) stdout_bytes=140 stderr_bytes=362,ma04,OE,ma038,maths,ode,ok,6089
+maths_039,f64,5102,1,5102000000,5102000000,5102000000,0,0.1960015680125441,success=true code=Some(0) stdout_bytes=150 stderr_bytes=206,ma04,La,ma039,maths,optimization,ok,5102
+maths_040,f64,9202,1,9202000000,9202000000,9202000000,0,0.10867202782003912,success=true code=Some(0) stdout_bytes=151 stderr_bytes=258,ma04,PB,ma040,maths,optimization,ok,9202

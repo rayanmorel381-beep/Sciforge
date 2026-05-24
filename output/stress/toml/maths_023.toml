@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma03"
+symbol = "LI"
+name = "ma023"
+target = "maths"
+module = "interpolation"
+status = "ok"
+elapsed_ms = "5819"
+experiment_name = "maths_023"
+precision = "f64"
+elapsed_ms = 5819
+iterations = 1
+avg_time_ns = 5819000000.00
+min_time_ns = 5819000000.00
+max_time_ns = 5819000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.17
+result = "success=true code=Some(0) stdout_bytes=161 stderr_bytes=258"

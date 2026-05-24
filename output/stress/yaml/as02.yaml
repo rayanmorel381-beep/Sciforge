@@ -1,0 +1,83 @@
+category: as02
+count: 10
+entries:
+  - label: astronomy_011
+    symbol: CDI
+    name: as011
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 11891
+    avg_time_ns: 11891000000.00
+  - label: astronomy_012
+    symbol: CDZ
+    name: as012
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 11973
+    avg_time_ns: 11973000000.00
+  - label: astronomy_013
+    symbol: CD
+    name: as013
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 12973
+    avg_time_ns: 12973000000.00
+  - label: astronomy_014
+    symbol: DDT
+    name: as014
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 3274
+    avg_time_ns: 3274000000.00
+  - label: astronomy_015
+    symbol: EZL
+    name: as015
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 11186
+    avg_time_ns: 11186000000.00
+  - label: astronomy_016
+    symbol: EZL
+    name: as016
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 1377
+    avg_time_ns: 1377000000.00
+  - label: astronomy_017
+    symbol: HAZ
+    name: as017
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 13047
+    avg_time_ns: 13047000000.00
+  - label: astronomy_018
+    symbol: HEI
+    name: as018
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 1833
+    avg_time_ns: 1833000000.00
+  - label: astronomy_019
+    symbol: HV
+    name: as019
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 11805
+    avg_time_ns: 11805000000.00
+  - label: astronomy_020
+    symbol: LTI
+    name: as020
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 2685
+    avg_time_ns: 2685000000.00

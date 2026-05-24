@@ -1,0 +1,17 @@
+category: ph03
+symbol: DF
+name: ph029
+target: physics
+module: fluid_mechanics
+status: ok
+elapsed_ms: 6653
+experiment_name: physics_029
+precision: f64
+elapsed_ms: 6653
+iterations: 1
+avg_time_ns: 6653000000.00
+min_time_ns: 6653000000.00
+max_time_ns: 6653000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.15
+result: success=true code=Some(0) stdout_bytes=153 stderr_bytes=262

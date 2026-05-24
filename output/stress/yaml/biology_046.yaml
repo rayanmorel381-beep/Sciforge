@@ -1,0 +1,17 @@
+category: bi05
+symbol: ZS
+name: bi046
+target: biology
+module: chronobiology
+status: ok
+elapsed_ms: 12471
+experiment_name: biology_046
+precision: f64
+elapsed_ms: 12471
+iterations: 1
+avg_time_ns: 12471000000.00
+min_time_ns: 12471000000.00
+max_time_ns: 12471000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.08
+result: success=true code=Some(0) stdout_bytes=160 stderr_bytes=367

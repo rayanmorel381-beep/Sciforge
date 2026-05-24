@@ -1,0 +1,19 @@
+{
+  "category": "hb03",
+  "symbol": "MMR",
+  "name": "hb025",
+  "target": "hub",
+  "module": "cross_domain",
+  "status": "ok",
+  "elapsed_ms": "667",
+  "experiment_name": "hub_025",
+  "precision": "f64",
+  "elapsed_ms": 667,
+  "iterations": 1,
+  "avg_time_ns": 667000000.00,
+  "min_time_ns": 667000000.00,
+  "max_time_ns": 667000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1.50,
+  "result": "success=true code=Some(0) stdout_bytes=175 stderr_bytes=254"
+}

@@ -1,0 +1,17 @@
+category: ma07
+symbol: MPI
+name: ma061
+target: maths
+module: statistics
+status: ok
+elapsed_ms: 10035
+experiment_name: maths_061
+precision: f64
+elapsed_ms: 10035
+iterations: 1
+avg_time_ns: 10035000000.00
+min_time_ns: 10035000000.00
+max_time_ns: 10035000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.10
+result: success=true code=Some(0) stdout_bytes=164 stderr_bytes=258

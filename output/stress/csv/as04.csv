@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+astronomy_031,f64,1241,1,1241000000,1241000000,1241000000,0,0.8058017727639001,success=true code=Some(0) stdout_bytes=151 stderr_bytes=266,as04,CV,as031,astronomy,orbits,ok,1241
+astronomy_032,f64,12158,1,12158000000,12158000000,12158000000,0,0.08225037012666557,success=true code=Some(0) stdout_bytes=149 stderr_bytes=423,as04,EV,as032,astronomy,orbits,ok,12158
+astronomy_033,f64,11498,1,11498000000,11498000000,11498000000,0,0.08697164724299879,success=true code=Some(0) stdout_bytes=167 stderr_bytes=423,as04,EVC,as033,astronomy,orbits,ok,11498
+astronomy_034,f64,1154,1,1154000000,1154000000,1154000000,0,0.8665511265164645,success=true code=Some(0) stdout_bytes=176 stderr_bytes=266,as04,HDV,as034,astronomy,orbits,ok,1154
+astronomy_035,f64,12719,1,12719000000,12719000000,12719000000,0,0.07862253321802029,success=true code=Some(0) stdout_bytes=153 stderr_bytes=423,as04,KPE,as035,astronomy,orbits,ok,12719
+astronomy_036,f64,12672,1,12672000000,12672000000,12672000000,0,0.07891414141414141,success=true code=Some(0) stdout_bytes=164 stderr_bytes=423,as04,PAC,as036,astronomy,orbits,ok,12672
+astronomy_037,f64,5415,1,5415000000,5415000000,5415000000,0,0.18467220683287167,success=true code=Some(0) stdout_bytes=145 stderr_bytes=266,as04,RL,as037,astronomy,orbits,ok,5415
+astronomy_038,f64,12798,1,12798000000,12798000000,12798000000,0,0.0781372089388967,success=true code=Some(0) stdout_bytes=159 stderr_bytes=423,as04,SOI,as038,astronomy,orbits,ok,12798
+astronomy_039,f64,11134,1,11134000000,11134000000,11134000000,0,0.08981498113885396,success=true code=Some(0) stdout_bytes=169 stderr_bytes=371,as04,TAR,as039,astronomy,orbits,ok,11134
+astronomy_040,f64,13058,1,13058000000,13058000000,13058000000,0,0.0765814060346148,success=true code=Some(0) stdout_bytes=151 stderr_bytes=423,as04,VVC,as040,astronomy,orbits,ok,13058

@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb05"
+symbol = "SIR"
+name = "hb047"
+target = "hub"
+module = "cross_domain"
+status = "ok"
+elapsed_ms = "11532"
+experiment_name = "hub_047"
+precision = "f64"
+elapsed_ms = 11532
+iterations = 1
+avg_time_ns = 11532000000.00
+min_time_ns = 11532000000.00
+max_time_ns = 11532000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.09
+result = "success=true code=Some(0) stdout_bytes=180 stderr_bytes=359"

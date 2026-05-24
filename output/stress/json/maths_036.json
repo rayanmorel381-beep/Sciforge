@@ -1,0 +1,19 @@
+{
+  "category": "ma04",
+  "symbol": "SR",
+  "name": "ma036",
+  "target": "maths",
+  "module": "non_euclidean",
+  "status": "ok",
+  "elapsed_ms": "6184",
+  "experiment_name": "maths_036",
+  "precision": "f64",
+  "elapsed_ms": 6184,
+  "iterations": 1,
+  "avg_time_ns": 6184000000.00,
+  "min_time_ns": 6184000000.00,
+  "max_time_ns": 6184000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.16,
+  "result": "success=true code=Some(0) stdout_bytes=161 stderr_bytes=414"
+}

@@ -1,0 +1,83 @@
+category: bi02
+count: 10
+entries:
+  - label: biology_011
+    symbol: GNA
+    name: bi011
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 4795
+    avg_time_ns: 4795000000.00
+  - label: biology_012
+    symbol: POR
+    name: bi012
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 619
+    avg_time_ns: 619000000.00
+  - label: biology_013
+    symbol: RCI
+    name: bi013
+    target: biology
+    module: bioenergetics
+    status: ok
+    elapsed_ms: 2878
+    avg_time_ns: 2878000000.00
+  - label: biology_014
+    symbol: LDG
+    name: bi014
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 11842
+    avg_time_ns: 11842000000.00
+  - label: biology_015
+    symbol: RSV
+    name: bi015
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 4875
+    avg_time_ns: 4875000000.00
+  - label: biology_016
+    symbol: RSL
+    name: bi016
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 9235
+    avg_time_ns: 9235000000.00
+  - label: biology_017
+    symbol: WLE
+    name: bi017
+    target: biology
+    module: biogeography
+    status: ok
+    elapsed_ms: 2782
+    avg_time_ns: 2782000000.00
+  - label: biology_018
+    symbol: AGC
+    name: bi018
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 4889
+    avg_time_ns: 4889000000.00
+  - label: biology_019
+    symbol: EDI
+    name: bi019
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 3035
+    avg_time_ns: 3035000000.00
+  - label: biology_020
+    symbol: SI
+    name: bi020
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 1417
+    avg_time_ns: 1417000000.00

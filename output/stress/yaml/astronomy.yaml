@@ -1,0 +1,11 @@
+category: astronomy
+count: 1
+entries:
+  - label: astronomy_summary
+    symbol: SUM
+    name: AS Summary
+    target: astronomy
+    module: summary
+    status: ok
+    elapsed_ms: 502197
+    avg_time_ns: 8511813559.32

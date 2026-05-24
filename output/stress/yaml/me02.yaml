@@ -1,0 +1,83 @@
+category: me02
+count: 10
+entries:
+  - label: meteorology_011
+    symbol: ED
+    name: me011
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 2926
+    avg_time_ns: 2926000000.00
+  - label: meteorology_012
+    symbol: GW
+    name: me012
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 2681
+    avg_time_ns: 2681000000.00
+  - label: meteorology_013
+    symbol: RN
+    name: me013
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 7344
+    avg_time_ns: 7344000000.00
+  - label: meteorology_014
+    symbol: RND
+    name: me014
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 7153
+    avg_time_ns: 7153000000.00
+  - label: meteorology_015
+    symbol: RWS
+    name: me015
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 7217
+    avg_time_ns: 7217000000.00
+  - label: meteorology_016
+    symbol: HS
+    name: me016
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 7702
+    avg_time_ns: 7702000000.00
+  - label: meteorology_017
+    symbol: SLR
+    name: me017
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 2954
+    avg_time_ns: 2954000000.00
+  - label: meteorology_018
+    symbol: SD
+    name: me018
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 10676
+    avg_time_ns: 10676000000.00
+  - label: meteorology_019
+    symbol: SDI
+    name: me019
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 2939
+    avg_time_ns: 2939000000.00
+  - label: meteorology_020
+    symbol: SS
+    name: me020
+    target: meteorology
+    module: ocean
+    status: ok
+    elapsed_ms: 13218
+    avg_time_ns: 13218000000.00

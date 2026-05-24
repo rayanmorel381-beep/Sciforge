@@ -1,0 +1,17 @@
+category: ph02
+symbol: IS
+name: ph016
+target: physics
+module: electromagnetism
+status: ok
+elapsed_ms: 9585
+experiment_name: physics_016
+precision: f64
+elapsed_ms: 9585
+iterations: 1
+avg_time_ns: 9585000000.00
+min_time_ns: 9585000000.00
+max_time_ns: 9585000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.10
+result: success=true code=Some(0) stdout_bytes=163 stderr_bytes=262

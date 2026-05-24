@@ -1,0 +1,17 @@
+category: me02
+symbol: SDI
+name: me019
+target: meteorology
+module: ocean
+status: ok
+elapsed_ms: 2939
+experiment_name: meteorology_019
+precision: f64
+elapsed_ms: 2939
+iterations: 1
+avg_time_ns: 2939000000.00
+min_time_ns: 2939000000.00
+max_time_ns: 2939000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.34
+result: success=true code=Some(0) stdout_bytes=173 stderr_bytes=270

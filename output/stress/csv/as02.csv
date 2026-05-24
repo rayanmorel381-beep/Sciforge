@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+astronomy_011,f64,11891,1,11891000000,11891000000,11891000000,0,0.08409721638213775,success=true code=Some(0) stdout_bytes=178 stderr_bytes=371,as02,CDI,as011,astronomy,cosmology,ok,11891
+astronomy_012,f64,11973,1,11973000000,11973000000,11973000000,0,0.08352125615969264,success=true code=Some(0) stdout_bytes=176 stderr_bytes=371,as02,CDZ,as012,astronomy,cosmology,ok,11973
+astronomy_013,f64,12973,1,12973000000,12973000000,12973000000,0,0.07708317274339012,success=true code=Some(0) stdout_bytes=153 stderr_bytes=371,as02,CD,as013,astronomy,cosmology,ok,12973
+astronomy_014,f64,3274,1,3274000000,3274000000,3274000000,0,0.30543677458766033,success=true code=Some(0) stdout_bytes=166 stderr_bytes=214,as02,DDT,as014,astronomy,cosmology,ok,3274
+astronomy_015,f64,11186,1,11186000000,11186000000,11186000000,0,0.08939746111210442,success=true code=Some(0) stdout_bytes=176 stderr_bytes=319,as02,EZL,as015,astronomy,cosmology,ok,11186
+astronomy_016,f64,1377,1,1377000000,1377000000,1377000000,0,0.7262164124909223,success=true code=Some(0) stdout_bytes=151 stderr_bytes=266,as02,EZL,as016,astronomy,cosmology,ok,1377
+astronomy_017,f64,13047,1,13047000000,13047000000,13047000000,0,0.07664597225415805,success=true code=Some(0) stdout_bytes=173 stderr_bytes=423,as02,HAZ,as017,astronomy,cosmology,ok,13047
+astronomy_018,f64,1833,1,1833000000,1833000000,1833000000,0,0.5455537370430987,success=true code=Some(0) stdout_bytes=168 stderr_bytes=266,as02,HEI,as018,astronomy,cosmology,ok,1833
+astronomy_019,f64,11805,1,11805000000,11805000000,11805000000,0,0.08470986869970351,success=true code=Some(0) stdout_bytes=152 stderr_bytes=371,as02,HV,as019,astronomy,cosmology,ok,11805
+astronomy_020,f64,2685,1,2685000000,2685000000,2685000000,0,0.37243947858473,success=true code=Some(0) stdout_bytes=174 stderr_bytes=318,as02,LTI,as020,astronomy,cosmology,ok,2685

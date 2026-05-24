@@ -1,0 +1,83 @@
+category: bm01
+count: 10
+entries:
+  - label: benchmark_001
+    symbol: BSN
+    name: bm001
+    target: benchmark
+    module: bench_stddev_nonnegative
+    status: ok
+    elapsed_ms: 279
+    avg_time_ns: 279000000.00
+  - label: benchmark_002
+    symbol: BTC
+    name: bm002
+    target: benchmark
+    module: bench_timing_consistency
+    status: ok
+    elapsed_ms: 9275
+    avg_time_ns: 9275000000.00
+  - label: benchmark_003
+    symbol: DBM
+    name: bm003
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 577
+    avg_time_ns: 577000000.00
+  - label: benchmark_004
+    symbol: DE
+    name: bm004
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 225
+    avg_time_ns: 225000000.00
+  - label: benchmark_005
+    symbol: EBT
+    name: bm005
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 9068
+    avg_time_ns: 9068000000.00
+  - label: benchmark_006
+    symbol: EDR
+    name: bm006
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 9179
+    avg_time_ns: 9179000000.00
+  - label: benchmark_007
+    symbol: ESM
+    name: bm007
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 8296
+    avg_time_ns: 8296000000.00
+  - label: benchmark_008
+    symbol: RPF
+    name: bm008
+    target: benchmark
+    module: encode
+    status: ok
+    elapsed_ms: 9385
+    avg_time_ns: 9385000000.00
+  - label: benchmark_009
+    symbol: EDM
+    name: bm009
+    target: benchmark
+    module: encode_decode_multiple
+    status: ok
+    elapsed_ms: 66
+    avg_time_ns: 66000000.00
+  - label: benchmark_010
+    symbol: BRC
+    name: bm010
+    target: benchmark
+    module: engine
+    status: ok
+    elapsed_ms: 8471
+    avg_time_ns: 8471000000.00

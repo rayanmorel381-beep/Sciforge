@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_171,f64,6609,1,6609000000,6609000000,6609000000,0,0.15130882130428203,success=true code=Some(0) stdout_bytes=166 stderr_bytes=366,bi18,UI,bi171,biology,systems_biology,ok,6609
+biology_172,f64,3859,1,3859000000,3859000000,3859000000,0,0.2591344908007256,success=true code=Some(0) stdout_bytes=177 stderr_bytes=262,bi18,CPO,bi172,biology,tissue_engineering,ok,3859
+biology_173,f64,9735,1,9735000000,9735000000,9735000000,0,0.1027221366204417,success=true code=Some(0) stdout_bytes=175 stderr_bytes=262,bi18,DRF,bi173,biology,tissue_engineering,ok,9735
+biology_174,f64,10604,1,10604000000,10604000000,10604000000,0,0.09430403621274991,success=true code=Some(0) stdout_bytes=167 stderr_bytes=263,bi18,OTR,bi174,biology,tissue_engineering,ok,10604
+biology_175,f64,6239,1,6239000000,6239000000,6239000000,0,0.16028209648982208,success=true code=Some(0) stdout_bytes=164 stderr_bytes=210,bi18,SP,bi175,biology,tissue_engineering,ok,6239
+biology_176,f64,10434,1,10434000000,10434000000,10434000000,0,0.09584052137243626,success=true code=Some(0) stdout_bytes=148 stderr_bytes=315,bi18,BR,bi176,biology,toxicology,ok,10434
+biology_177,f64,5235,1,5235000000,5235000000,5235000000,0,0.19102196752626552,success=true code=Some(0) stdout_bytes=150 stderr_bytes=210,bi18,LP,bi177,biology,toxicology,ok,5235
+biology_178,f64,3675,1,3675000000,3675000000,3675000000,0,0.272108843537415,success=true code=Some(0) stdout_bytes=152 stderr_bytes=314,bi18,RQ,bi178,biology,toxicology,ok,3675
+biology_179,f64,10311,1,10311000000,10311000000,10311000000,0,0.0969838037047813,success=true code=Some(0) stdout_bytes=157 stderr_bytes=210,bi18,TW,bi179,biology,toxicology,ok,10311
+biology_180,f64,10448,1,10448000000,10448000000,10448000000,0,0.09571209800918837,success=true code=Some(0) stdout_bytes=168 stderr_bytes=315,bi18,BRN,bi180,biology,virology,ok,10448

@@ -1,0 +1,17 @@
+category: meteorology
+symbol: SUM
+name: ME Summary
+target: meteorology
+module: summary
+status: ok
+elapsed_ms: 287316
+experiment_name: meteorology_summary
+precision: f64
+elapsed_ms: 287316
+iterations: 1
+avg_time_ns: 6384800000.00
+min_time_ns: 6384800000.00
+max_time_ns: 6384800000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.00
+result: tests_total=45 tests_ok=45 tests_failed=0 elapsed_sum_ms=287316 min_ms=823 max_ms=13218 avg_ms=6384.80

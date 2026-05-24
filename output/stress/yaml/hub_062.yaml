@@ -1,0 +1,17 @@
+category: hb07
+symbol: PEI
+name: hb062
+target: hub
+module: pipeline
+status: ok
+elapsed_ms: 11142
+experiment_name: hub_062
+precision: f64
+elapsed_ms: 11142
+iterations: 1
+avg_time_ns: 11142000000.00
+min_time_ns: 11142000000.00
+max_time_ns: 11142000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.09
+result: success=true code=Some(0) stdout_bytes=156 stderr_bytes=411

@@ -1,0 +1,17 @@
+category: pr01
+symbol: CEP
+name: pr002
+target: parser
+module: csv
+status: ok
+elapsed_ms: 8650
+experiment_name: parser_002
+precision: f64
+elapsed_ms: 8650
+iterations: 1
+avg_time_ns: 8650000000.00
+min_time_ns: 8650000000.00
+max_time_ns: 8650000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.12
+result: success=true code=Some(0) stdout_bytes=149 stderr_bytes=364

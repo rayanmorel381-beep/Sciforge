@@ -1,0 +1,19 @@
+{
+  "category": "me04",
+  "symbol": "PF",
+  "name": "me031",
+  "target": "meteorology",
+  "module": "radiation",
+  "status": "ok",
+  "elapsed_ms": "5168",
+  "experiment_name": "meteorology_031",
+  "precision": "f64",
+  "elapsed_ms": 5168,
+  "iterations": 1,
+  "avg_time_ns": 5168000000.00,
+  "min_time_ns": 5168000000.00,
+  "max_time_ns": 5168000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.19,
+  "result": "success=true code=Some(0) stdout_bytes=152 stderr_bytes=426"
+}

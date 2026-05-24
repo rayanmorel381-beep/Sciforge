@@ -1,0 +1,19 @@
+{
+  "category": "bi09",
+  "symbol": "SRB",
+  "name": "bi086",
+  "target": "biology",
+  "module": "evolution",
+  "status": "ok",
+  "elapsed_ms": "1115",
+  "experiment_name": "biology_086",
+  "precision": "f64",
+  "elapsed_ms": 1115,
+  "iterations": 1,
+  "avg_time_ns": 1115000000.00,
+  "min_time_ns": 1115000000.00,
+  "max_time_ns": 1115000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.90,
+  "result": "success=true code=Some(0) stdout_bytes=157 stderr_bytes=210"
+}

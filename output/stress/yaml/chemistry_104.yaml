@@ -1,0 +1,17 @@
+category: ch11
+symbol: DCS
+name: ch104
+target: chemistry
+module: transport
+status: ok
+elapsed_ms: 2688
+experiment_name: chemistry_104
+precision: f64
+elapsed_ms: 2688
+iterations: 1
+avg_time_ns: 2688000000.00
+min_time_ns: 2688000000.00
+max_time_ns: 2688000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.37
+result: success=true code=Some(0) stdout_bytes=175 stderr_bytes=266

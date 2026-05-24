@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+astronomy_summary,f64,502197,1,8511813559.322034,8511813559.322034,8511813559.322034,0,0.001991250445542287,tests_total=59 tests_ok=59 tests_failed=0 elapsed_sum_ms=502197 min_ms=1113 max_ms=13357 avg_ms=8511.81,astronomy,SUM,AS Summary,astronomy,summary,ok,502197

@@ -1,0 +1,83 @@
+category: ge01
+count: 10
+entries:
+  - label: geology_001
+    symbol: AFR
+    name: ge001
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 10248
+    avg_time_ns: 10248000000.00
+  - label: geology_002
+    symbol: CA
+    name: ge002
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 10837
+    avg_time_ns: 10837000000.00
+  - label: geology_003
+    symbol: DC
+    name: ge003
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 1271
+    avg_time_ns: 1271000000.00
+  - label: geology_004
+    symbol: HLP
+    name: ge004
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 2895
+    avg_time_ns: 2895000000.00
+  - label: geology_005
+    symbol: RD
+    name: ge005
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 10832
+    avg_time_ns: 10832000000.00
+  - label: geology_006
+    symbol: RDH
+    name: ge006
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 2685
+    avg_time_ns: 2685000000.00
+  - label: geology_007
+    symbol: RDL
+    name: ge007
+    target: geology
+    module: dating
+    status: ok
+    elapsed_ms: 5365
+    avg_time_ns: 5365000000.00
+  - label: geology_008
+    symbol: CWR
+    name: ge008
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 11929
+    avg_time_ns: 11929000000.00
+  - label: geology_009
+    symbol: FER
+    name: ge009
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 2733
+    avg_time_ns: 2733000000.00
+  - label: geology_010
+    symbol: FWR
+    name: ge010
+    target: geology
+    module: erosion
+    status: ok
+    elapsed_ms: 12860
+    avg_time_ns: 12860000000.00

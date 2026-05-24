@@ -1,0 +1,18 @@
+[benchmark]
+category = "geology"
+symbol = "SUM"
+name = "GE Summary"
+target = "geology"
+module = "summary"
+status = "ok"
+elapsed_ms = "322419"
+experiment_name = "geology_summary"
+precision = "f64"
+elapsed_ms = 322419
+iterations = 1
+avg_time_ns = 7327704545.45
+min_time_ns = 7327704545.45
+max_time_ns = 7327704545.45
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "tests_total=44 tests_ok=44 tests_failed=0 elapsed_sum_ms=322419 min_ms=1032 max_ms=13237 avg_ms=7327.70"

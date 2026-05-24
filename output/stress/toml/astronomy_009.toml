@@ -1,0 +1,18 @@
+[benchmark]
+category = "as01"
+symbol = "CTA"
+name = "as009"
+target = "astronomy"
+module = "cosmology"
+status = "ok"
+elapsed_ms = "11089"
+experiment_name = "astronomy_009"
+precision = "f64"
+elapsed_ms = 11089
+iterations = 1
+avg_time_ns = 11089000000.00
+min_time_ns = 11089000000.00
+max_time_ns = 11089000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.09
+result = "success=true code=Some(0) stdout_bytes=157 stderr_bytes=267"

@@ -1,0 +1,18 @@
+[benchmark]
+category = "as03"
+symbol = "GRV"
+name = "as026"
+target = "astronomy"
+module = "galactic"
+status = "ok"
+elapsed_ms = "7735"
+experiment_name = "astronomy_026"
+precision = "f64"
+elapsed_ms = 7735
+iterations = 1
+avg_time_ns = 7735000000.00
+min_time_ns = 7735000000.00
+max_time_ns = 7735000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.13
+result = "success=true code=Some(0) stdout_bytes=162 stderr_bytes=266"

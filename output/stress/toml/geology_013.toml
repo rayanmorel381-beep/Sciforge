@@ -1,0 +1,18 @@
+[benchmark]
+category = "ge02"
+symbol = "GBE"
+name = "ge013"
+target = "geology"
+module = "glaciology"
+status = "ok"
+elapsed_ms = "13237"
+experiment_name = "geology_013"
+precision = "f64"
+elapsed_ms = 13237
+iterations = 1
+avg_time_ns = 13237000000.00
+min_time_ns = 13237000000.00
+max_time_ns = 13237000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.08
+result = "success=true code=Some(0) stdout_bytes=157 stderr_bytes=419"

@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+astronomy_021,f64,1279,1,1279000000,1279000000,1279000000,0,0.7818608287724785,success=true code=Some(0) stdout_bytes=179 stderr_bytes=266,as03,LAD,as021,astronomy,cosmology,ok,1279
+astronomy_022,f64,10858,1,10858000000,10858000000,10858000000,0,0.09209799226376865,success=true code=Some(0) stdout_bytes=177 stderr_bytes=371,as03,RRV,as022,astronomy,cosmology,ok,10858
+astronomy_023,f64,13120,1,13120000000,13120000000,13120000000,0,0.07621951219512195,success=true code=Some(0) stdout_bytes=149 stderr_bytes=423,as03,SF,as023,astronomy,cosmology,ok,13120
+astronomy_024,f64,11832,1,11832000000,11832000000,11832000000,0,0.08451656524678837,success=true code=Some(0) stdout_bytes=156 stderr_bytes=371,as03,SFH,as024,astronomy,cosmology,ok,11832
+astronomy_025,f64,11769,1,11769000000,11769000000,11769000000,0,0.08496898631999321,success=true code=Some(0) stdout_bytes=160 stderr_bytes=423,as03,GEV,as025,astronomy,galactic,ok,11769
+astronomy_026,f64,7735,1,7735000000,7735000000,7735000000,0,0.1292824822236587,success=true code=Some(0) stdout_bytes=162 stderr_bytes=266,as03,GRV,as026,astronomy,galactic,ok,7735
+astronomy_027,f64,8249,1,8249000000,8249000000,8249000000,0,0.12122681537156019,success=true code=Some(0) stdout_bytes=148 stderr_bytes=266,as03,TR,as027,astronomy,galactic,ok,8249
+astronomy_028,f64,11693,1,11693000000,11693000000,11693000000,0,0.08552125203112973,success=true code=Some(0) stdout_bytes=150 stderr_bytes=371,as03,CD,as028,astronomy,impacts,ok,11693
+astronomy_029,f64,10989,1,10989000000,10989000000,10989000000,0,0.091000091000091,success=true code=Some(0) stdout_bytes=150 stderr_bytes=319,as03,FR,as029,astronomy,impacts,ok,10989
+astronomy_030,f64,11364,1,11364000000,11364000000,11364000000,0,0.08799718409010912,success=true code=Some(0) stdout_bytes=150 stderr_bytes=319,as03,IV,as030,astronomy,impacts,ok,11364

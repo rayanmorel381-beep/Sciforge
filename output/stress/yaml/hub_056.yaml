@@ -1,0 +1,17 @@
+category: hb06
+symbol: STE
+name: hb056
+target: hub
+module: cross_domain
+status: ok
+elapsed_ms: 11396
+experiment_name: hub_056
+precision: f64
+elapsed_ms: 11396
+iterations: 1
+avg_time_ns: 11396000000.00
+min_time_ns: 11396000000.00
+max_time_ns: 11396000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.09
+result: success=true code=Some(0) stdout_bytes=190 stderr_bytes=359

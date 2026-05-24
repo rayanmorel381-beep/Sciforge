@@ -1,0 +1,83 @@
+category: bi08
+count: 10
+entries:
+  - label: biology_071
+    symbol: HHC
+    name: bi071
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 3672
+    avg_time_ns: 3672000000.00
+  - label: biology_072
+    symbol: LB
+    name: bi072
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 9946
+    avg_time_ns: 9946000000.00
+  - label: biology_073
+    symbol: MMH
+    name: bi073
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 10585
+    avg_time_ns: 10585000000.00
+  - label: biology_074
+    symbol: MMM
+    name: bi074
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 5388
+    avg_time_ns: 5388000000.00
+  - label: biology_075
+    symbol: MMS
+    name: bi075
+    target: biology
+    module: enzyme
+    status: ok
+    elapsed_ms: 12614
+    avg_time_ns: 12614000000.00
+  - label: biology_076
+    symbol: CML
+    name: bi076
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 10253
+    avg_time_ns: 10253000000.00
+  - label: biology_077
+    symbol: EIP
+    name: bi077
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 12113
+    avg_time_ns: 12113000000.00
+  - label: biology_078
+    symbol: NO
+    name: bi078
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 661
+    avg_time_ns: 661000000.00
+  - label: biology_079
+    symbol: RKE
+    name: bi079
+    target: biology
+    module: epigenetics
+    status: ok
+    elapsed_ms: 10254
+    avg_time_ns: 10254000000.00
+  - label: biology_080
+    symbol: HRB
+    name: bi080
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 10424
+    avg_time_ns: 10424000000.00

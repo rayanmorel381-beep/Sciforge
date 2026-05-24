@@ -1,0 +1,83 @@
+category: bm03
+count: 10
+entries:
+  - label: benchmark_021
+    symbol: RHT
+    name: bm021
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 9301
+    avg_time_ns: 9301000000.00
+  - label: benchmark_022
+    symbol: RMH
+    name: bm022
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 8159
+    avg_time_ns: 8159000000.00
+  - label: benchmark_023
+    symbol: RMT
+    name: bm023
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 9053
+    avg_time_ns: 9053000000.00
+  - label: benchmark_024
+    symbol: RTO
+    name: bm024
+    target: benchmark
+    module: report
+    status: ok
+    elapsed_ms: 612
+    avg_time_ns: 612000000.00
+  - label: benchmark_025
+    symbol: RAF
+    name: bm025
+    target: benchmark
+    module: report_all_formats
+    status: ok
+    elapsed_ms: 9189
+    avg_time_ns: 9189000000.00
+  - label: benchmark_026
+    symbol: RGA
+    name: bm026
+    target: benchmark
+    module: report_generate_all_fields
+    status: ok
+    elapsed_ms: 9347
+    avg_time_ns: 9347000000.00
+  - label: benchmark_027
+    symbol: HAP
+    name: bm027
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 9087
+    avg_time_ns: 9087000000.00
+  - label: benchmark_028
+    symbol: HRA
+    name: bm028
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 8600
+    avg_time_ns: 8600000000.00
+  - label: benchmark_029
+    symbol: RSR
+    name: bm029
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 412
+    avg_time_ns: 412000000.00
+  - label: benchmark_030
+    symbol: SSZ
+    name: bm030
+    target: benchmark
+    module: simulation
+    status: ok
+    elapsed_ms: 5170
+    avg_time_ns: 5170000000.00

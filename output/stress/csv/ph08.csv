@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+physics_071,f64,7937,1,7937000000,7937000000,7937000000,0,0.12599218848431398,success=true code=Some(0) stdout_bytes=163 stderr_bytes=210,ph08,IGT,ph071,physics,thermodynamics,ok,7937
+physics_072,f64,6425,1,6425000000,6425000000,6425000000,0,0.1556420233463035,success=true code=Some(0) stdout_bytes=164 stderr_bytes=210,ph08,SBP,ph072,physics,thermodynamics,ok,6425
+physics_073,f64,372,1,372000000,372000000,372000000,0,2.6881720430107525,success=true code=Some(0) stdout_bytes=159 stderr_bytes=205,ph08,WD,ph073,physics,thermodynamics,ok,372

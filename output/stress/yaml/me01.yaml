@@ -1,0 +1,83 @@
+category: me01
+count: 10
+entries:
+  - label: meteorology_001
+    symbol: BDW
+    name: me001
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 1435
+    avg_time_ns: 1435000000.00
+  - label: meteorology_002
+    symbol: BF
+    name: me002
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 11038
+    avg_time_ns: 11038000000.00
+  - label: meteorology_003
+    symbol: LRD
+    name: me003
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 2115
+    avg_time_ns: 2115000000.00
+  - label: meteorology_004
+    symbol: PT
+    name: me004
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 13184
+    avg_time_ns: 13184000000.00
+  - label: meteorology_005
+    symbol: SVI
+    name: me005
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 10796
+    avg_time_ns: 10796000000.00
+  - label: meteorology_006
+    symbol: SVP
+    name: me006
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 12454
+    avg_time_ns: 12454000000.00
+  - label: meteorology_007
+    symbol: SH
+    name: me007
+    target: meteorology
+    module: atmosphere
+    status: ok
+    elapsed_ms: 12321
+    avg_time_ns: 12321000000.00
+  - label: meteorology_008
+    symbol: CCS
+    name: me008
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 3053
+    avg_time_ns: 3053000000.00
+  - label: meteorology_009
+    symbol: CP
+    name: me009
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 11251
+    avg_time_ns: 11251000000.00
+  - label: meteorology_010
+    symbol: CZA
+    name: me010
+    target: meteorology
+    module: dynamics
+    status: ok
+    elapsed_ms: 2727
+    avg_time_ns: 2727000000.00

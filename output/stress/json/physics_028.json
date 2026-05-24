@@ -1,0 +1,19 @@
+{
+  "category": "ph03",
+  "symbol": "BP",
+  "name": "ph028",
+  "target": "physics",
+  "module": "fluid_mechanics",
+  "status": "ok",
+  "elapsed_ms": "9491",
+  "experiment_name": "physics_028",
+  "precision": "f64",
+  "elapsed_ms": 9491,
+  "iterations": 1,
+  "avg_time_ns": 9491000000.00,
+  "min_time_ns": 9491000000.00,
+  "max_time_ns": 9491000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.11,
+  "result": "success=true code=Some(0) stdout_bytes=161 stderr_bytes=210"
+}

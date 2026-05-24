@@ -1,0 +1,19 @@
+{
+  "category": "ph07",
+  "symbol": "TDH",
+  "name": "ph064",
+  "target": "physics",
+  "module": "relativity",
+  "status": "ok",
+  "elapsed_ms": "1904",
+  "experiment_name": "physics_064",
+  "precision": "f64",
+  "elapsed_ms": 1904,
+  "iterations": 1,
+  "avg_time_ns": 1904000000.00,
+  "min_time_ns": 1904000000.00,
+  "max_time_ns": 1904000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.53,
+  "result": "success=true code=Some(0) stdout_bytes=158 stderr_bytes=314"
+}

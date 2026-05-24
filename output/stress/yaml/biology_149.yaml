@@ -1,0 +1,17 @@
+category: bi15
+symbol: PC
+name: bi149
+target: biology
+module: proteomics
+status: ok
+elapsed_ms: 6296
+experiment_name: biology_149
+precision: f64
+elapsed_ms: 6296
+iterations: 1
+avg_time_ns: 6296000000.00
+min_time_ns: 6296000000.00
+max_time_ns: 6296000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.16
+result: success=true code=Some(0) stdout_bytes=155 stderr_bytes=262

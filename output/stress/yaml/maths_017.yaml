@@ -1,0 +1,17 @@
+category: ma02
+symbol: PS
+name: ma017
+target: maths
+module: fft
+status: ok
+elapsed_ms: 9835
+experiment_name: maths_017
+precision: f64
+elapsed_ms: 9835
+iterations: 1
+avg_time_ns: 9835000000.00
+min_time_ns: 9835000000.00
+max_time_ns: 9835000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.10
+result: success=true code=Some(0) stdout_bytes=145 stderr_bytes=258

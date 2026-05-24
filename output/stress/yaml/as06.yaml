@@ -1,0 +1,75 @@
+category: as06
+count: 9
+entries:
+  - label: astronomy_051
+    symbol: MSL
+    name: as051
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 11299
+    avg_time_ns: 11299000000.00
+  - label: astronomy_052
+    symbol: MLM
+    name: as052
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 1243
+    avg_time_ns: 1243000000.00
+  - label: astronomy_053
+    symbol: SR
+    name: as053
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 3071
+    avg_time_ns: 3071000000.00
+  - label: astronomy_054
+    symbol: SBB
+    name: as054
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 1113
+    avg_time_ns: 1113000000.00
+  - label: astronomy_055
+    symbol: SFI
+    name: as055
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 11780
+    avg_time_ns: 11780000000.00
+  - label: astronomy_056
+    symbol: WPW
+    name: as056
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 12889
+    avg_time_ns: 12889000000.00
+  - label: astronomy_057
+    symbol: STA
+    name: as057
+    target: astronomy
+    module: tides
+    status: ok
+    elapsed_ms: 2769
+    avg_time_ns: 2769000000.00
+  - label: astronomy_058
+    symbol: TLT
+    name: as058
+    target: astronomy
+    module: tides
+    status: ok
+    elapsed_ms: 11512
+    avg_time_ns: 11512000000.00
+  - label: astronomy_059
+    symbol: TP
+    name: as059
+    target: astronomy
+    module: tides
+    status: ok
+    elapsed_ms: 1482
+    avg_time_ns: 1482000000.00

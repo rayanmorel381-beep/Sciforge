@@ -1,0 +1,83 @@
+category: as05
+count: 10
+entries:
+  - label: astronomy_041
+    symbol: HZI
+    name: as041
+    target: astronomy
+    module: planetary
+    status: ok
+    elapsed_ms: 12488
+    avg_time_ns: 12488000000.00
+  - label: astronomy_042
+    symbol: HZO
+    name: as042
+    target: astronomy
+    module: planetary
+    status: ok
+    elapsed_ms: 3269
+    avg_time_ns: 3269000000.00
+  - label: astronomy_043
+    symbol: SG
+    name: as043
+    target: astronomy
+    module: planetary
+    status: ok
+    elapsed_ms: 7261
+    avg_time_ns: 7261000000.00
+  - label: astronomy_044
+    symbol: RKE
+    name: as044
+    target: astronomy
+    module: rotation
+    status: ok
+    elapsed_ms: 11391
+    avg_time_ns: 11391000000.00
+  - label: astronomy_045
+    symbol: SVA
+    name: as045
+    target: astronomy
+    module: rotation
+    status: ok
+    elapsed_ms: 10794
+    avg_time_ns: 10794000000.00
+  - label: astronomy_046
+    symbol: AMA
+    name: as046
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 11311
+    avg_time_ns: 11311000000.00
+  - label: astronomy_047
+    symbol: CL
+    name: as047
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 1451
+    avg_time_ns: 1451000000.00
+  - label: astronomy_048
+    symbol: DM
+    name: as048
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 11428
+    avg_time_ns: 11428000000.00
+  - label: astronomy_049
+    symbol: ELS
+    name: as049
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 11027
+    avg_time_ns: 11027000000.00
+  - label: astronomy_050
+    symbol: LFR
+    name: as050
+    target: astronomy
+    module: stellar
+    status: ok
+    elapsed_ms: 12877
+    avg_time_ns: 12877000000.00

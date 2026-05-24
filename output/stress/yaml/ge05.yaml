@@ -1,0 +1,35 @@
+category: ge05
+count: 4
+entries:
+  - label: geology_041
+    symbol: IE
+    name: ge041
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 1542
+    avg_time_ns: 1542000000.00
+  - label: geology_042
+    symbol: MN
+    name: ge042
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 1086
+    avg_time_ns: 1086000000.00
+  - label: geology_043
+    symbol: PV
+    name: ge043
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 3201
+    avg_time_ns: 3201000000.00
+  - label: geology_044
+    symbol: VA
+    name: ge044
+    target: geology
+    module: tectonics
+    status: ok
+    elapsed_ms: 11222
+    avg_time_ns: 11222000000.00

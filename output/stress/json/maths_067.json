@@ -1,0 +1,19 @@
+{
+  "category": "ma07",
+  "symbol": "TR",
+  "name": "ma067",
+  "target": "maths",
+  "module": "tensor",
+  "status": "ok",
+  "elapsed_ms": "4527",
+  "experiment_name": "maths_067",
+  "precision": "f64",
+  "elapsed_ms": 4527,
+  "iterations": 1,
+  "avg_time_ns": 4527000000.00,
+  "min_time_ns": 4527000000.00,
+  "max_time_ns": 4527000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.22,
+  "result": "success=true code=Some(0) stdout_bytes=148 stderr_bytes=258"
+}

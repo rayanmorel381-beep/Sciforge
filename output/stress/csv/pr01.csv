@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+parser_001,f64,5712,1,5712000000,5712000000,5712000000,0,0.17507002801120447,success=true code=Some(0) stdout_bytes=140 stderr_bytes=260,pr01,CE,pr001,parser,csv,ok,5712
+parser_002,f64,8650,1,8650000000,8650000000,8650000000,0,0.11560693641618497,success=true code=Some(0) stdout_bytes=149 stderr_bytes=364,pr01,CEP,pr002,parser,csv,ok,8650
+parser_003,f64,9471,1,9471000000,9471000000,9471000000,0,0.10558547143912998,success=true code=Some(0) stdout_bytes=148 stderr_bytes=260,pr01,CEQ,pr003,parser,csv,ok,9471
+parser_004,f64,10080,1,10080000000,10080000000,10080000000,0,0.0992063492063492,success=true code=Some(0) stdout_bytes=150 stderr_bytes=260,pr01,CLM,pr004,parser,csv,ok,10080
+parser_005,f64,9304,1,9304000000,9304000000,9304000000,0,0.10748065348237318,success=true code=Some(0) stdout_bytes=147 stderr_bytes=208,pr01,CPS,pr005,parser,csv,ok,9304
+parser_006,f64,4738,1,4738000000,4738000000,4738000000,0,0.21105951878429718,success=true code=Some(0) stdout_bytes=141 stderr_bytes=260,pr01,CQ,pr006,parser,csv,ok,4738
+parser_007,f64,5043,1,5043000000,5043000000,5043000000,0,0.198294665873488,success=true code=Some(0) stdout_bytes=153 stderr_bytes=260,pr01,CUQ,pr007,parser,csv,ok,5043
+parser_008,f64,5323,1,5323000000,5323000000,5323000000,0,0.187863986473793,success=true code=Some(0) stdout_bytes=143 stderr_bytes=312,pr01,CV,pr008,parser,csv,ok,5323
+parser_009,f64,251,1,251000000,251000000,251000000,0,3.9840637450199203,success=true code=Some(0) stdout_bytes=146 stderr_bytes=151,pr01,CVF,pr009,parser,csv,ok,251
+parser_010,f64,9196,1,9196000000,9196000000,9196000000,0,0.10874293170943888,success=true code=Some(0) stdout_bytes=146 stderr_bytes=260,pr01,CVT,pr010,parser,csv,ok,9196

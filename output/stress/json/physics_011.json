@@ -1,0 +1,19 @@
+{
+  "category": "ph02",
+  "symbol": "CPP",
+  "name": "ph011",
+  "target": "physics",
+  "module": "electrodynamics",
+  "status": "ok",
+  "elapsed_ms": "5679",
+  "experiment_name": "physics_011",
+  "precision": "f64",
+  "elapsed_ms": 5679,
+  "iterations": 1,
+  "avg_time_ns": 5679000000.00,
+  "min_time_ns": 5679000000.00,
+  "max_time_ns": 5679000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.18,
+  "result": "success=true code=Some(0) stdout_bytes=169 stderr_bytes=262"
+}

@@ -1,0 +1,19 @@
+{
+  "category": "bi18",
+  "symbol": "OTR",
+  "name": "bi174",
+  "target": "biology",
+  "module": "tissue_engineering",
+  "status": "ok",
+  "elapsed_ms": "10604",
+  "experiment_name": "biology_174",
+  "precision": "f64",
+  "elapsed_ms": 10604,
+  "iterations": 1,
+  "avg_time_ns": 10604000000.00,
+  "min_time_ns": 10604000000.00,
+  "max_time_ns": 10604000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.09,
+  "result": "success=true code=Some(0) stdout_bytes=167 stderr_bytes=263"
+}

@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr01"
+symbol = "CQ"
+name = "pr006"
+target = "parser"
+module = "csv"
+status = "ok"
+elapsed_ms = "4738"
+experiment_name = "parser_006"
+precision = "f64"
+elapsed_ms = 4738
+iterations = 1
+avg_time_ns = 4738000000.00
+min_time_ns = 4738000000.00
+max_time_ns = 4738000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=141 stderr_bytes=260"

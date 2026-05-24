@@ -1,0 +1,18 @@
+[benchmark]
+category = "hb08"
+symbol = "FD"
+name = "hb071"
+target = "hub"
+module = "tools"
+status = "ok"
+elapsed_ms = "11273"
+experiment_name = "hub_071"
+precision = "f64"
+elapsed_ms = 11273
+iterations = 1
+avg_time_ns = 11273000000.00
+min_time_ns = 11273000000.00
+max_time_ns = 11273000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.09
+result = "success=true code=Some(0) stdout_bytes=158 stderr_bytes=359"

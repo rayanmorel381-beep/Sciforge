@@ -1,0 +1,17 @@
+category: ch11
+symbol: SN
+name: ch106
+target: chemistry
+module: transport
+status: ok
+elapsed_ms: 1352
+experiment_name: chemistry_106
+precision: f64
+elapsed_ms: 1352
+iterations: 1
+avg_time_ns: 1352000000.00
+min_time_ns: 1352000000.00
+max_time_ns: 1352000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.74
+result: success=true code=Some(0) stdout_bytes=153 stderr_bytes=266

@@ -1,0 +1,19 @@
+{
+  "category": "ph04",
+  "symbol": "FFL",
+  "name": "ph032",
+  "target": "physics",
+  "module": "materials",
+  "status": "ok",
+  "elapsed_ms": "7811",
+  "experiment_name": "physics_032",
+  "precision": "f64",
+  "elapsed_ms": 7811,
+  "iterations": 1,
+  "avg_time_ns": 7811000000.00,
+  "min_time_ns": 7811000000.00,
+  "max_time_ns": 7811000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.13,
+  "result": "success=true code=Some(0) stdout_bytes=151 stderr_bytes=210"
+}

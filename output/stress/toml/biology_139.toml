@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi14"
+symbol = "PLR"
+name = "bi139"
+target = "biology"
+module = "plant_biology"
+status = "ok"
+elapsed_ms = "6358"
+experiment_name = "biology_139"
+precision = "f64"
+elapsed_ms = 6358
+iterations = 1
+avg_time_ns = 6358000000.00
+min_time_ns = 6358000000.00
+max_time_ns = 6358000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.16
+result = "success=true code=Some(0) stdout_bytes=171 stderr_bytes=262"

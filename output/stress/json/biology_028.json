@@ -1,0 +1,19 @@
+{
+  "category": "bi03",
+  "symbol": "LJ",
+  "name": "bi028",
+  "target": "biology",
+  "module": "biophysics",
+  "status": "ok",
+  "elapsed_ms": "429",
+  "experiment_name": "biology_028",
+  "precision": "f64",
+  "elapsed_ms": 429,
+  "iterations": 1,
+  "avg_time_ns": 429000000.00,
+  "min_time_ns": 429000000.00,
+  "max_time_ns": 429000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 2.33,
+  "result": "success=true code=Some(0) stdout_bytes=152 stderr_bytes=262"
+}

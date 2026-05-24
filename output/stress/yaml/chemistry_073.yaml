@@ -1,0 +1,17 @@
+category: ch08
+symbol: FHF
+name: ch073
+target: chemistry
+module: polymers
+status: ok
+elapsed_ms: 6300
+experiment_name: chemistry_073
+precision: f64
+elapsed_ms: 6300
+iterations: 1
+avg_time_ns: 6300000000.00
+min_time_ns: 6300000000.00
+max_time_ns: 6300000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.16
+result: success=true code=Some(0) stdout_bytes=162 stderr_bytes=266

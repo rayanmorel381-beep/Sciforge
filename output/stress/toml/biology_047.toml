@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi05"
+symbol = "CCR"
+name = "bi047"
+target = "biology"
+module = "cryobiology"
+status = "ok"
+elapsed_ms = "12572"
+experiment_name = "biology_047"
+precision = "f64"
+elapsed_ms = 12572
+iterations = 1
+avg_time_ns = 12572000000.00
+min_time_ns = 12572000000.00
+max_time_ns = 12572000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.08
+result = "success=true code=Some(0) stdout_bytes=161 stderr_bytes=419"

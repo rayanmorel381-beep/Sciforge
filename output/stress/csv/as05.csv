@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+astronomy_041,f64,12488,1,12488000000,12488000000,12488000000,0,0.0800768737988469,success=true code=Some(0) stdout_bytes=157 stderr_bytes=423,as05,HZI,as041,astronomy,planetary,ok,12488
+astronomy_042,f64,3269,1,3269000000,3269000000,3269000000,0,0.3059039461609055,success=true code=Some(0) stdout_bytes=157 stderr_bytes=214,as05,HZO,as042,astronomy,planetary,ok,3269
+astronomy_043,f64,7261,1,7261000000,7261000000,7261000000,0,0.13772207684891888,success=true code=Some(0) stdout_bytes=152 stderr_bytes=318,as05,SG,as043,astronomy,planetary,ok,7261
+astronomy_044,f64,11391,1,11391000000,11391000000,11391000000,0,0.08778860503906592,success=true code=Some(0) stdout_bytes=161 stderr_bytes=319,as05,RKE,as044,astronomy,rotation,ok,11391
+astronomy_045,f64,10794,1,10794000000,10794000000,10794000000,0,0.09264406151565685,success=true code=Some(0) stdout_bytes=164 stderr_bytes=267,as05,SVA,as045,astronomy,rotation,ok,10794
+astronomy_046,f64,11311,1,11311000000,11311000000,11311000000,0,0.08840951286358412,success=true code=Some(0) stdout_bytes=184 stderr_bytes=319,as05,AMA,as046,astronomy,stellar,ok,11311
+astronomy_047,f64,1451,1,1451000000,1451000000,1451000000,0,0.6891798759476223,success=true code=Some(0) stdout_bytes=154 stderr_bytes=318,as05,CL,as047,astronomy,stellar,ok,1451
+astronomy_048,f64,11428,1,11428000000,11428000000,11428000000,0,0.08750437521876094,success=true code=Some(0) stdout_bytes=151 stderr_bytes=371,as05,DM,as048,astronomy,stellar,ok,11428
+astronomy_049,f64,11027,1,11027000000,11027000000,11027000000,0,0.09068649678062936,success=true code=Some(0) stdout_bytes=181 stderr_bytes=319,as05,ELS,as049,astronomy,stellar,ok,11027
+astronomy_050,f64,12877,1,12877000000,12877000000,12877000000,0,0.07765783955890347,success=true code=Some(0) stdout_bytes=162 stderr_bytes=423,as05,LFR,as050,astronomy,stellar,ok,12877

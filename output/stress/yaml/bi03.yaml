@@ -1,0 +1,83 @@
+category: bi03
+count: 10
+entries:
+  - label: biology_021
+    symbol: SWS
+    name: bi021
+    target: biology
+    module: bioinformatics
+    status: ok
+    elapsed_ms: 4664
+    avg_time_ns: 4664000000.00
+  - label: biology_022
+    symbol: BCO
+    name: bi022
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 5013
+    avg_time_ns: 5013000000.00
+  - label: biology_023
+    symbol: GSL
+    name: bi023
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 10557
+    avg_time_ns: 10557000000.00
+  - label: biology_024
+    symbol: GRF
+    name: bi024
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 9324
+    avg_time_ns: 9324000000.00
+  - label: biology_025
+    symbol: JM
+    name: bi025
+    target: biology
+    module: biomechanics
+    status: ok
+    elapsed_ms: 2939
+    avg_time_ns: 2939000000.00
+  - label: biology_026
+    symbol: FE
+    name: bi026
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 9797
+    avg_time_ns: 9797000000.00
+  - label: biology_027
+    symbol: HB
+    name: bi027
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 11718
+    avg_time_ns: 11718000000.00
+  - label: biology_028
+    symbol: LJ
+    name: bi028
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 429
+    avg_time_ns: 429000000.00
+  - label: biology_029
+    symbol: MT
+    name: bi029
+    target: biology
+    module: biophysics
+    status: ok
+    elapsed_ms: 10855
+    avg_time_ns: 10855000000.00
+  - label: biology_030
+    symbol: FS
+    name: bi030
+    target: biology
+    module: biostatistics
+    status: ok
+    elapsed_ms: 6802
+    avg_time_ns: 6802000000.00

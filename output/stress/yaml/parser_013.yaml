@@ -1,0 +1,17 @@
+category: pr02
+symbol: HA
+name: pr013
+target: parser
+module: html
+status: ok
+elapsed_ms: 9358
+experiment_name: parser_013
+precision: f64
+elapsed_ms: 9358
+iterations: 1
+avg_time_ns: 9358000000.00
+min_time_ns: 9358000000.00
+max_time_ns: 9358000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.11
+result: success=true code=Some(0) stdout_bytes=147 stderr_bytes=260

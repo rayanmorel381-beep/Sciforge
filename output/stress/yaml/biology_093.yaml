@@ -1,0 +1,17 @@
+category: bi10
+symbol: GC
+name: bi093
+target: biology
+module: genomics
+status: ok
+elapsed_ms: 5246
+experiment_name: biology_093
+precision: f64
+elapsed_ms: 5246
+iterations: 1
+avg_time_ns: 5246000000.00
+min_time_ns: 5246000000.00
+max_time_ns: 5246000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.19
+result: success=true code=Some(0) stdout_bytes=147 stderr_bytes=210

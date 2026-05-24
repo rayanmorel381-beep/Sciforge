@@ -1,0 +1,83 @@
+category: ge03
+count: 10
+entries:
+  - label: geology_021
+    symbol: MV
+    name: ge021
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 11574
+    avg_time_ns: 11574000000.00
+  - label: geology_022
+    symbol: RN
+    name: ge022
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 3218
+    avg_time_ns: 3218000000.00
+  - label: geology_023
+    symbol: SP
+    name: ge023
+    target: geology
+    module: hydrology
+    status: ok
+    elapsed_ms: 10840
+    avg_time_ns: 10840000000.00
+  - label: geology_024
+    symbol: CQN
+    name: ge024
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 1118
+    avg_time_ns: 1118000000.00
+  - label: geology_025
+    symbol: CSV
+    name: ge025
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 9407
+    avg_time_ns: 9407000000.00
+  - label: geology_026
+    symbol: DI
+    name: ge026
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 10666
+    avg_time_ns: 10666000000.00
+  - label: geology_027
+    symbol: LT
+    name: ge027
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 1577
+    avg_time_ns: 1577000000.00
+  - label: geology_028
+    symbol: MN
+    name: ge028
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 11715
+    avg_time_ns: 11715000000.00
+  - label: geology_029
+    symbol: TAS
+    name: ge029
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 10582
+    avg_time_ns: 10582000000.00
+  - label: geology_030
+    symbol: VA
+    name: ge030
+    target: geology
+    module: petrology
+    status: ok
+    elapsed_ms: 2835
+    avg_time_ns: 2835000000.00

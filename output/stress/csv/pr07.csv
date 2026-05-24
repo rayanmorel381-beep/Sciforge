@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+parser_061,f64,5855,1,5855000000,5855000000,5855000000,0,0.1707941929974381,success=true code=Some(0) stdout_bytes=141 stderr_bytes=312,pr07,YB,pr061,parser,yaml,ok,5855
+parser_062,f64,4877,1,4877000000,4877000000,4877000000,0,0.2050440844781628,success=true code=Some(0) stdout_bytes=151 stderr_bytes=260,pr07,YEI,pr062,parser,yaml,ok,4877
+parser_063,f64,5573,1,5573000000,5573000000,5573000000,0,0.1794365691727974,success=true code=Some(0) stdout_bytes=144 stderr_bytes=260,pr07,YM,pr063,parser,yaml,ok,5573
+parser_064,f64,6103,1,6103000000,6103000000,6103000000,0,0.16385384237260364,success=true code=Some(0) stdout_bytes=146 stderr_bytes=260,pr07,YMD,pr064,parser,yaml,ok,6103
+parser_065,f64,6021,1,6021000000,6021000000,6021000000,0,0.16608536787908984,success=true code=Some(0) stdout_bytes=141 stderr_bytes=364,pr07,YN,pr065,parser,yaml,ok,6021
+parser_066,f64,342,1,342000000,342000000,342000000,0,2.9239766081871346,success=true code=Some(0) stdout_bytes=143 stderr_bytes=203,pr07,YN,pr066,parser,yaml,ok,342
+parser_067,f64,5011,1,5011000000,5011000000,5011000000,0,0.19956096587507482,success=true code=Some(0) stdout_bytes=150 stderr_bytes=260,pr07,YQS,pr067,parser,yaml,ok,5011
+parser_068,f64,5769,1,5769000000,5769000000,5769000000,0,0.17334026694401108,success=true code=Some(0) stdout_bytes=145 stderr_bytes=260,pr07,YS,pr068,parser,yaml,ok,5769
+parser_069,f64,9668,1,9668000000,9668000000,9668000000,0,0.1034340091021928,success=true code=Some(0) stdout_bytes=143 stderr_bytes=364,pr07,YS,pr069,parser,yaml,ok,9668
+parser_070,f64,5746,1,5746000000,5746000000,5746000000,0,0.1740341106856944,success=true code=Some(0) stdout_bytes=147 stderr_bytes=260,pr07,YTN,pr070,parser,yaml,ok,5746

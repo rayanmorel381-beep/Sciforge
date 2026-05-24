@@ -1,0 +1,19 @@
+{
+  "category": "hb04",
+  "symbol": "CDB",
+  "name": "hb039",
+  "target": "hub",
+  "module": "cross_domain",
+  "status": "ok",
+  "elapsed_ms": "12531",
+  "experiment_name": "hub_039",
+  "precision": "f64",
+  "elapsed_ms": 12531,
+  "iterations": 1,
+  "avg_time_ns": 12531000000.00,
+  "min_time_ns": 12531000000.00,
+  "max_time_ns": 12531000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.08,
+  "result": "success=true code=Some(0) stdout_bytes=174 stderr_bytes=359"
+}

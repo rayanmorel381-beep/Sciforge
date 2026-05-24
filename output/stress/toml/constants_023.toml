@@ -1,0 +1,18 @@
+[benchmark]
+category = "ct03"
+symbol = "RP"
+name = "ct023"
+target = "constants"
+module = "fundamental"
+status = "ok"
+elapsed_ms = "1793"
+experiment_name = "constants_023"
+precision = "f64"
+elapsed_ms = 1793
+iterations = 1
+avg_time_ns = 1793000000.00
+min_time_ns = 1793000000.00
+max_time_ns = 1793000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.56
+result = "success=true code=Some(0) stdout_bytes=153 stderr_bytes=266"

@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+physics_001,f64,4595,1,4595000000,4595000000,4595000000,0,0.2176278563656148,success=true code=Some(0) stdout_bytes=156 stderr_bytes=314,ph01,DA,ph001,physics,acoustics,ok,4595
+physics_002,f64,5631,1,5631000000,5631000000,5631000000,0,0.1775883502042266,success=true code=Some(0) stdout_bytes=155 stderr_bytes=262,ph01,ILD,ph002,physics,acoustics,ok,5631
+physics_003,f64,7722,1,7722000000,7722000000,7722000000,0,0.1295001295001295,success=true code=Some(0) stdout_bytes=162 stderr_bytes=210,ph01,RTS,ph003,physics,acoustics,ok,7722
+physics_004,f64,5818,1,5818000000,5818000000,5818000000,0,0.17188037126160194,success=true code=Some(0) stdout_bytes=155 stderr_bytes=366,ph01,SOS,ph004,physics,acoustics,ok,5818
+physics_005,f64,5876,1,5876000000,5876000000,5876000000,0,0.17018379850238258,success=true code=Some(0) stdout_bytes=162 stderr_bytes=262,ph01,DGM,ph005,physics,dispatch,ok,5876
+physics_006,f64,6418,1,6418000000,6418000000,6418000000,0,0.1558117793705204,success=true code=Some(0) stdout_bytes=176 stderr_bytes=314,ph01,DMP,ph006,physics,dispatch,ok,6418
+physics_007,f64,4661,1,4661000000,4661000000,4661000000,0,0.21454623471358078,success=true code=Some(0) stdout_bytes=175 stderr_bytes=210,ph01,DUF,ph007,physics,dispatch,ok,4661
+physics_008,f64,4848,1,4848000000,4848000000,4848000000,0,0.20627062706270627,success=true code=Some(0) stdout_bytes=150 stderr_bytes=210,ph01,DV,ph008,physics,dispatch,ok,4848
+physics_009,f64,9490,1,9490000000,9490000000,9490000000,0,0.1053740779768177,success=true code=Some(0) stdout_bytes=152 stderr_bytes=314,ph01,HC,ph009,physics,dispatch,ok,9490
+physics_010,f64,4629,1,4629000000,4629000000,4629000000,0,0.21602937999567942,success=true code=Some(0) stdout_bytes=167 stderr_bytes=262,ph01,MSD,ph010,physics,dispatch,ok,4629

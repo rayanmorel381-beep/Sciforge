@@ -1,0 +1,19 @@
+{
+  "category": "ph01",
+  "symbol": "HC",
+  "name": "ph009",
+  "target": "physics",
+  "module": "dispatch",
+  "status": "ok",
+  "elapsed_ms": "9490",
+  "experiment_name": "physics_009",
+  "precision": "f64",
+  "elapsed_ms": 9490,
+  "iterations": 1,
+  "avg_time_ns": 9490000000.00,
+  "min_time_ns": 9490000000.00,
+  "max_time_ns": 9490000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.11,
+  "result": "success=true code=Some(0) stdout_bytes=152 stderr_bytes=314"
+}

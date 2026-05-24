@@ -1,0 +1,19 @@
+{
+  "category": "ch07",
+  "symbol": "FE",
+  "name": "ch068",
+  "target": "chemistry",
+  "module": "photochemistry",
+  "status": "ok",
+  "elapsed_ms": "2847",
+  "experiment_name": "chemistry_068",
+  "precision": "f64",
+  "elapsed_ms": 2847,
+  "iterations": 1,
+  "avg_time_ns": 2847000000.00,
+  "min_time_ns": 2847000000.00,
+  "max_time_ns": 2847000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.35,
+  "result": "success=true code=Some(0) stdout_bytes=158 stderr_bytes=318"
+}

@@ -1,0 +1,19 @@
+{
+  "category": "ge05",
+  "symbol": "MN",
+  "name": "ge042",
+  "target": "geology",
+  "module": "tectonics",
+  "status": "ok",
+  "elapsed_ms": "1086",
+  "experiment_name": "geology_042",
+  "precision": "f64",
+  "elapsed_ms": 1086,
+  "iterations": 1,
+  "avg_time_ns": 1086000000.00,
+  "min_time_ns": 1086000000.00,
+  "max_time_ns": 1086000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.92,
+  "result": "success=true code=Some(0) stdout_bytes=146 stderr_bytes=366"
+}

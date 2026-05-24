@@ -1,0 +1,18 @@
+[benchmark]
+category = "as01"
+symbol = "CTS"
+name = "as010"
+target = "astronomy"
+module = "cosmology"
+status = "ok"
+elapsed_ms = "11939"
+experiment_name = "astronomy_010"
+precision = "f64"
+elapsed_ms = 11939
+iterations = 1
+avg_time_ns = 11939000000.00
+min_time_ns = 11939000000.00
+max_time_ns = 11939000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.08
+result = "success=true code=Some(0) stdout_bytes=166 stderr_bytes=371"

@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+physics_summary,f64,507411,1,6950835616.438355,6950835616.438355,6950835616.438355,0,0.0019707889659467373,tests_total=73 tests_ok=73 tests_failed=0 elapsed_sum_ms=507411 min_ms=372 max_ms=10546 avg_ms=6950.84,physics,SUM,PH Summary,physics,summary,ok,507411

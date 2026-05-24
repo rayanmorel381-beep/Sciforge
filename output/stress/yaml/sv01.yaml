@@ -1,0 +1,19 @@
+category: sv01
+count: 2
+entries:
+  - label: scientific_validation_001
+    symbol: CAC
+    name: sv001
+    target: scientific_validation
+    module: constants_are_consistent_with_public_domain_exports
+    status: ok
+    elapsed_ms: 11601
+    avg_time_ns: 11601000000.00
+  - label: scientific_validation_002
+    symbol: SEC
+    name: sv002
+    target: scientific_validation
+    module: systematic_edge_cases_remain_finite
+    status: ok
+    elapsed_ms: 11662
+    avg_time_ns: 11662000000.00

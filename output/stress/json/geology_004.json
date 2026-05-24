@@ -1,0 +1,19 @@
+{
+  "category": "ge01",
+  "symbol": "HLP",
+  "name": "ge004",
+  "target": "geology",
+  "module": "dating",
+  "status": "ok",
+  "elapsed_ms": "2895",
+  "experiment_name": "geology_004",
+  "precision": "f64",
+  "elapsed_ms": 2895,
+  "iterations": 1,
+  "avg_time_ns": 2895000000.00,
+  "min_time_ns": 2895000000.00,
+  "max_time_ns": 2895000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.35,
+  "result": "success=true code=Some(0) stdout_bytes=172 stderr_bytes=262"
+}

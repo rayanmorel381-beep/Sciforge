@@ -1,0 +1,19 @@
+{
+  "category": "ph05",
+  "symbol": "Sn",
+  "name": "ph047",
+  "target": "physics",
+  "module": "optics",
+  "status": "ok",
+  "elapsed_ms": "6122",
+  "experiment_name": "physics_047",
+  "precision": "f64",
+  "elapsed_ms": 6122,
+  "iterations": 1,
+  "avg_time_ns": 6122000000.00,
+  "min_time_ns": 6122000000.00,
+  "max_time_ns": 6122000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.16,
+  "result": "success=true code=Some(0) stdout_bytes=139 stderr_bytes=314"
+}

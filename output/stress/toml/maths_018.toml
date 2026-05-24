@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma02"
+symbol = "Bf"
+name = "ma018"
+target = "maths"
+module = "graph"
+status = "ok"
+elapsed_ms = "5497"
+experiment_name = "maths_018"
+precision = "f64"
+elapsed_ms = 5497
+iterations = 1
+avg_time_ns = 5497000000.00
+min_time_ns = 5497000000.00
+max_time_ns = 5497000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.18
+result = "success=true code=Some(0) stdout_bytes=136 stderr_bytes=310"

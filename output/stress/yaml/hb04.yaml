@@ -1,0 +1,83 @@
+category: hb04
+count: 10
+entries:
+  - label: hub_031
+    symbol: EM
+    name: hb031
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 6809
+    avg_time_ns: 6809000000.00
+  - label: hub_032
+    symbol: FDF
+    name: hb032
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 10043
+    avg_time_ns: 10043000000.00
+  - label: hub_033
+    symbol: RN
+    name: hb033
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 11210
+    avg_time_ns: 11210000000.00
+  - label: hub_034
+    symbol: SDF
+    name: hb034
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 11539
+    avg_time_ns: 11539000000.00
+  - label: hub_035
+    symbol: CAA
+    name: hb035
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 11427
+    avg_time_ns: 11427000000.00
+  - label: hub_036
+    symbol: CE
+    name: hb036
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1439
+    avg_time_ns: 1439000000.00
+  - label: hub_037
+    symbol: CPA
+    name: hb037
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 12352
+    avg_time_ns: 12352000000.00
+  - label: hub_038
+    symbol: CRS
+    name: hb038
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1280
+    avg_time_ns: 1280000000.00
+  - label: hub_039
+    symbol: CDB
+    name: hb039
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 12531
+    avg_time_ns: 12531000000.00
+  - label: hub_040
+    symbol: CDE
+    name: hb040
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 6404
+    avg_time_ns: 6404000000.00

@@ -1,0 +1,19 @@
+category: ct04
+count: 2
+entries:
+  - label: constants_031
+    symbol: ER
+    name: ct031
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 9453
+    avg_time_ns: 9453000000.00
+  - label: constants_032
+    symbol: ETJ
+    name: ct032
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 6237
+    avg_time_ns: 6237000000.00

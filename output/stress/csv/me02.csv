@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+meteorology_011,f64,2926,1,2926000000,2926000000,2926000000,0,0.3417634996582365,success=true code=Some(0) stdout_bytes=147 stderr_bytes=270,me02,ED,me011,meteorology,dynamics,ok,2926
+meteorology_012,f64,2681,1,2681000000,2681000000,2681000000,0,0.37299515106303616,success=true code=Some(0) stdout_bytes=152 stderr_bytes=322,me02,GW,me012,meteorology,dynamics,ok,2681
+meteorology_013,f64,7344,1,7344000000,7344000000,7344000000,0,0.13616557734204793,success=true code=Some(0) stdout_bytes=149 stderr_bytes=322,me02,RN,me013,meteorology,dynamics,ok,7344
+meteorology_014,f64,7153,1,7153000000,7153000000,7153000000,0,0.1398014818957081,success=true code=Some(0) stdout_bytes=170 stderr_bytes=322,me02,RND,me014,meteorology,dynamics,ok,7153
+meteorology_015,f64,7217,1,7217000000,7217000000,7217000000,0,0.13856172925038104,success=true code=Some(0) stdout_bytes=153 stderr_bytes=322,me02,RWS,me015,meteorology,dynamics,ok,7217
+meteorology_016,f64,7702,1,7702000000,7702000000,7702000000,0,0.12983640612827838,success=true code=Some(0) stdout_bytes=149 stderr_bytes=270,me02,HS,me016,meteorology,ocean,ok,7702
+meteorology_017,f64,2954,1,2954000000,2954000000,2954000000,0,0.33852403520649965,success=true code=Some(0) stdout_bytes=155 stderr_bytes=270,me02,SLR,me017,meteorology,ocean,ok,2954
+meteorology_018,f64,10676,1,10676000000,10676000000,10676000000,0,0.09366804046459348,success=true code=Some(0) stdout_bytes=149 stderr_bytes=271,me02,SD,me018,meteorology,ocean,ok,10676
+meteorology_019,f64,2939,1,2939000000,2939000000,2939000000,0,0.3402517863218782,success=true code=Some(0) stdout_bytes=173 stderr_bytes=270,me02,SDI,me019,meteorology,ocean,ok,2939
+meteorology_020,f64,13218,1,13218000000,13218000000,13218000000,0,0.07565441065214101,success=true code=Some(0) stdout_bytes=144 stderr_bytes=427,me02,SS,me020,meteorology,ocean,ok,13218

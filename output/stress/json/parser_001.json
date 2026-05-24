@@ -1,0 +1,19 @@
+{
+  "category": "pr01",
+  "symbol": "CE",
+  "name": "pr001",
+  "target": "parser",
+  "module": "csv",
+  "status": "ok",
+  "elapsed_ms": "5712",
+  "experiment_name": "parser_001",
+  "precision": "f64",
+  "elapsed_ms": 5712,
+  "iterations": 1,
+  "avg_time_ns": 5712000000.00,
+  "min_time_ns": 5712000000.00,
+  "max_time_ns": 5712000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.18,
+  "result": "success=true code=Some(0) stdout_bytes=140 stderr_bytes=260"
+}

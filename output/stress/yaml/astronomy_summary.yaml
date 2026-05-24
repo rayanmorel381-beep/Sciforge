@@ -1,0 +1,17 @@
+category: astronomy
+symbol: SUM
+name: AS Summary
+target: astronomy
+module: summary
+status: ok
+elapsed_ms: 502197
+experiment_name: astronomy_summary
+precision: f64
+elapsed_ms: 502197
+iterations: 1
+avg_time_ns: 8511813559.32
+min_time_ns: 8511813559.32
+max_time_ns: 8511813559.32
+time_stddev: 0.0000
+iterations_per_sec: 0.00
+result: tests_total=59 tests_ok=59 tests_failed=0 elapsed_sum_ms=502197 min_ms=1113 max_ms=13357 avg_ms=8511.81

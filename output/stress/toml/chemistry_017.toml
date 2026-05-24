@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch02"
+symbol = "GP"
+name = "ch017"
+target = "chemistry"
+module = "computational"
+status = "ok"
+elapsed_ms = "7716"
+experiment_name = "chemistry_017"
+precision = "f64"
+elapsed_ms = 7716
+iterations = 1
+avg_time_ns = 7716000000.00
+min_time_ns = 7716000000.00
+max_time_ns = 7716000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.13
+result = "success=true code=Some(0) stdout_bytes=160 stderr_bytes=214"

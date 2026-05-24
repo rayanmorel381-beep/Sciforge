@@ -1,0 +1,19 @@
+{
+  "category": "ch05",
+  "symbol": "BLP",
+  "name": "ch041",
+  "target": "chemistry",
+  "module": "gas_laws",
+  "status": "ok",
+  "elapsed_ms": "7429",
+  "experiment_name": "chemistry_041",
+  "precision": "f64",
+  "elapsed_ms": 7429,
+  "iterations": 1,
+  "avg_time_ns": 7429000000.00,
+  "min_time_ns": 7429000000.00,
+  "max_time_ns": 7429000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.13,
+  "result": "success=true code=Some(0) stdout_bytes=183 stderr_bytes=266"
+}

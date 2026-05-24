@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+maths_061,f64,10035,1,10035000000,10035000000,10035000000,0,0.09965122072745392,success=true code=Some(0) stdout_bytes=164 stderr_bytes=258,ma07,MPI,ma061,maths,statistics,ok,10035
+maths_062,f64,9264,1,9264000000,9264000000,9264000000,0,0.1079447322970639,success=true code=Some(0) stdout_bytes=151 stderr_bytes=258,ma07,SDB,ma062,maths,statistics,ok,9264
+maths_063,f64,9590,1,9590000000,9590000000,9590000000,0,0.10427528675703858,success=true code=Some(0) stdout_bytes=151 stderr_bytes=362,ma07,WM,ma063,maths,statistics,ok,9590
+maths_064,f64,6419,1,6419000000,6419000000,6419000000,0,0.15578750584203147,success=true code=Some(0) stdout_bytes=178 stderr_bytes=206,ma07,WMS,ma064,maths,statistics,ok,6419
+maths_065,f64,9890,1,9890000000,9890000000,9890000000,0,0.10111223458038422,success=true code=Some(0) stdout_bytes=149 stderr_bytes=258,ma07,TC,ma065,maths,tensor,ok,9890
+maths_066,f64,10043,1,10043000000,10043000000,10043000000,0,0.09957184108334163,success=true code=Some(0) stdout_bytes=152 stderr_bytes=258,ma07,TD,ma066,maths,tensor,ok,10043
+maths_067,f64,4527,1,4527000000,4527000000,4527000000,0,0.2208968411751712,success=true code=Some(0) stdout_bytes=148 stderr_bytes=258,ma07,TR,ma067,maths,tensor,ok,4527
+maths_068,f64,5748,1,5748000000,5748000000,5748000000,0,0.17397355601948503,success=true code=Some(0) stdout_bytes=146 stderr_bytes=258,ma07,VD,ma068,maths,vector,ok,5748
+maths_069,f64,218,1,218000000,218000000,218000000,0,4.587155963302752,success=true code=Some(0) stdout_bytes=142 stderr_bytes=206,ma07,VL,ma069,maths,vector,ok,218
+maths_070,f64,6118,1,6118000000,6118000000,6118000000,0,0.16345210853220007,success=true code=Some(0) stdout_bytes=145 stderr_bytes=310,ma07,VP,ma070,maths,vector,ok,6118

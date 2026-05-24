@@ -1,0 +1,17 @@
+category: bi11
+symbol: BF
+name: bi104
+target: biology
+module: microbiology
+status: ok
+elapsed_ms: 10329
+experiment_name: biology_104
+precision: f64
+elapsed_ms: 10329
+iterations: 1
+avg_time_ns: 10329000000.00
+min_time_ns: 10329000000.00
+max_time_ns: 10329000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.10
+result: success=true code=Some(0) stdout_bytes=158 stderr_bytes=263

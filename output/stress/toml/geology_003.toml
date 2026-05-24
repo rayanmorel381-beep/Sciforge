@@ -1,0 +1,18 @@
+[benchmark]
+category = "ge01"
+symbol = "DC"
+name = "ge003"
+target = "geology"
+module = "dating"
+status = "ok"
+elapsed_ms = "1271"
+experiment_name = "geology_003"
+precision = "f64"
+elapsed_ms = 1271
+iterations = 1
+avg_time_ns = 1271000000.00
+min_time_ns = 1271000000.00
+max_time_ns = 1271000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.79
+result = "success=true code=Some(0) stdout_bytes=148 stderr_bytes=262"

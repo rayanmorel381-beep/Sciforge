@@ -1,0 +1,17 @@
+category: me02
+symbol: SLR
+name: me017
+target: meteorology
+module: ocean
+status: ok
+elapsed_ms: 2954
+experiment_name: meteorology_017
+precision: f64
+elapsed_ms: 2954
+iterations: 1
+avg_time_ns: 2954000000.00
+min_time_ns: 2954000000.00
+max_time_ns: 2954000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.34
+result: success=true code=Some(0) stdout_bytes=155 stderr_bytes=270

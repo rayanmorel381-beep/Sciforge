@@ -1,0 +1,11 @@
+category: meteorology
+count: 1
+entries:
+  - label: meteorology_summary
+    symbol: SUM
+    name: ME Summary
+    target: meteorology
+    module: summary
+    status: ok
+    elapsed_ms: 287316
+    avg_time_ns: 6384800000.00

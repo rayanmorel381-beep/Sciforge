@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi03"
+symbol = "MT"
+name = "bi029"
+target = "biology"
+module = "biophysics"
+status = "ok"
+elapsed_ms = "10855"
+experiment_name = "biology_029"
+precision = "f64"
+elapsed_ms = 10855
+iterations = 1
+avg_time_ns = 10855000000.00
+min_time_ns = 10855000000.00
+max_time_ns = 10855000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.09
+result = "success=true code=Some(0) stdout_bytes=155 stderr_bytes=315"

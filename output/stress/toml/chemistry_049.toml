@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch05"
+symbol = "GAE"
+name = "ch049"
+target = "chemistry"
+module = "green_chemistry"
+status = "ok"
+elapsed_ms = "1566"
+experiment_name = "chemistry_049"
+precision = "f64"
+elapsed_ms = 1566
+iterations = 1
+avg_time_ns = 1566000000.00
+min_time_ns = 1566000000.00
+max_time_ns = 1566000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.64
+result = "success=true code=Some(0) stdout_bytes=159 stderr_bytes=318"

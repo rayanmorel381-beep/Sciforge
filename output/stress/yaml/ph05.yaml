@@ -1,0 +1,83 @@
+category: ph05
+count: 10
+entries:
+  - label: physics_041
+    symbol: BEP
+    name: ph041
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 6347
+    avg_time_ns: 6347000000.00
+  - label: physics_042
+    symbol: CB
+    name: ph042
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 5232
+    avg_time_ns: 5232000000.00
+  - label: physics_043
+    symbol: HLF
+    name: ph043
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 6455
+    avg_time_ns: 6455000000.00
+  - label: physics_044
+    symbol: NRF
+    name: ph044
+    target: physics
+    module: nucleosynthesis
+    status: ok
+    elapsed_ms: 6942
+    avg_time_ns: 6942000000.00
+  - label: physics_045
+    symbol: BA
+    name: ph045
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 7847
+    avg_time_ns: 7847000000.00
+  - label: physics_046
+    symbol: RC
+    name: ph046
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 10546
+    avg_time_ns: 10546000000.00
+  - label: physics_047
+    symbol: Sn
+    name: ph047
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 6122
+    avg_time_ns: 6122000000.00
+  - label: physics_048
+    symbol: TLE
+    name: ph048
+    target: physics
+    module: optics
+    status: ok
+    elapsed_ms: 6411
+    avg_time_ns: 6411000000.00
+  - label: physics_049
+    symbol: CT
+    name: ph049
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 4884
+    avg_time_ns: 4884000000.00
+  - label: physics_050
+    symbol: FSC
+    name: ph050
+    target: physics
+    module: particle
+    status: ok
+    elapsed_ms: 7680
+    avg_time_ns: 7680000000.00

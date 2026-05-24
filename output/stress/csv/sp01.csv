@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+scientific_properties_001,f64,11572,1,11572000000,11572000000,11572000000,0,0.08641548565502938,success=true code=Some(0) stdout_bytes=169 stderr_bytes=442,sp01,MPH,sp001,scientific_properties,monotonicity_properties_hold_for_core_models,ok,11572
+scientific_properties_002,f64,10875,1,10875000000,10875000000,10875000000,0,0.09195402298850575,success=true code=Some(0) stdout_bytes=172 stderr_bytes=442,sp01,NSH,sp002,scientific_properties,nan_safety_helpers_cover_all_scientific_domains,ok,10875
+scientific_properties_003,f64,6389,1,6389000000,6389000000,6389000000,0,0.15651901706057286,success=true code=Some(0) stdout_bytes=168 stderr_bytes=285,sp01,RPS,sp003,scientific_properties,randomized_property_smoke_tests_stay_finite,ok,6389

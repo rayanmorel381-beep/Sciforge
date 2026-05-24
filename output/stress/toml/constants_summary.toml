@@ -1,0 +1,18 @@
+[benchmark]
+category = "constants"
+symbol = "SUM"
+name = "CT Summary"
+target = "constants"
+module = "summary"
+status = "ok"
+elapsed_ms = "206474"
+experiment_name = "constants_summary"
+precision = "f64"
+elapsed_ms = 206474
+iterations = 1
+avg_time_ns = 6452312500.00
+min_time_ns = 6452312500.00
+max_time_ns = 6452312500.00
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "tests_total=32 tests_ok=32 tests_failed=0 elapsed_sum_ms=206474 min_ms=1793 max_ms=9625 avg_ms=6452.31"

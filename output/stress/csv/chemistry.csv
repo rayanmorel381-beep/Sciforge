@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+chemistry_summary,f64,677968,1,6395924528.3018875,6395924528.3018875,6395924528.3018875,0,0.0014749958700115639,tests_total=106 tests_ok=106 tests_failed=0 elapsed_sum_ms=677968 min_ms=175 max_ms=11122 avg_ms=6395.92,chemistry,SUM,CH Summary,chemistry,summary,ok,677968

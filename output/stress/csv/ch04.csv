@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+chemistry_031,f64,7345,1,7345000000,7345000000,7345000000,0,0.13614703880190607,success=true code=Some(0) stdout_bytes=159 stderr_bytes=214,ch04,CP,ch031,chemistry,electrochemistry,ok,7345
+chemistry_032,f64,6196,1,6196000000,6196000000,6196000000,0,0.16139444803098774,success=true code=Some(0) stdout_bytes=157 stderr_bytes=266,ch04,FM,ch032,chemistry,electrochemistry,ok,6196
+chemistry_033,f64,7020,1,7020000000,7020000000,7020000000,0,0.14245014245014245,success=true code=Some(0) stdout_bytes=161 stderr_bytes=214,ch04,NP,ch033,chemistry,electrochemistry,ok,7020
+chemistry_034,f64,6760,1,6760000000,6760000000,6760000000,0,0.14792899408284024,success=true code=Some(0) stdout_bytes=167 stderr_bytes=266,ch04,BOD,ch034,chemistry,environmental,ok,6760
+chemistry_035,f64,10008,1,10008000000,10008000000,10008000000,0,0.09992006394884093,success=true code=Some(0) stdout_bytes=169 stderr_bytes=214,ch04,DOS,ch035,chemistry,environmental,ok,10008
+chemistry_036,f64,7682,1,7682000000,7682000000,7682000000,0,0.13017443374121324,success=true code=Some(0) stdout_bytes=162 stderr_bytes=214,ch04,HLS,ch036,chemistry,environmental,ok,7682
+chemistry_037,f64,11122,1,11122000000,11122000000,11122000000,0,0.08991188635137565,success=true code=Some(0) stdout_bytes=171 stderr_bytes=267,ch04,ECF,ch037,chemistry,equilibrium,ok,11122
+chemistry_038,f64,2817,1,2817000000,2817000000,2817000000,0,0.35498757543485976,success=true code=Some(0) stdout_bytes=157 stderr_bytes=318,ch04,RQ,ch038,chemistry,equilibrium,ok,2817
+chemistry_039,f64,9839,1,9839000000,9839000000,9839000000,0,0.10163634515702816,success=true code=Some(0) stdout_bytes=149 stderr_bytes=266,ch04,VH,ch039,chemistry,equilibrium,ok,9839
+chemistry_040,f64,9879,1,9879000000,9879000000,9879000000,0,0.10122482032594392,success=true code=Some(0) stdout_bytes=147 stderr_bytes=266,ch04,BL,ch040,chemistry,gas_laws,ok,9879

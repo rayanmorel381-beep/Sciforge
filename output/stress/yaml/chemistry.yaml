@@ -1,0 +1,11 @@
+category: chemistry
+count: 1
+entries:
+  - label: chemistry_summary
+    symbol: SUM
+    name: CH Summary
+    target: chemistry
+    module: summary
+    status: ok
+    elapsed_ms: 677968
+    avg_time_ns: 6395924528.30

@@ -1,0 +1,83 @@
+category: ct03
+count: 10
+entries:
+  - label: constants_021
+    symbol: GC
+    name: ct021
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 5646
+    avg_time_ns: 5646000000.00
+  - label: constants_022
+    symbol: PC
+    name: ct022
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 6924
+    avg_time_ns: 6924000000.00
+  - label: constants_023
+    symbol: RP
+    name: ct023
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 1793
+    avg_time_ns: 1793000000.00
+  - label: constants_024
+    symbol: SOL
+    name: ct024
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 5744
+    avg_time_ns: 5744000000.00
+  - label: constants_025
+    symbol: SB
+    name: ct025
+    target: constants
+    module: fundamental
+    status: ok
+    elapsed_ms: 4993
+    avg_time_ns: 4993000000.00
+  - label: constants_026
+    symbol: ACI
+    name: ct026
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 4715
+    avg_time_ns: 4715000000.00
+  - label: constants_027
+    symbol: ATP
+    name: ct027
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 5453
+    avg_time_ns: 5453000000.00
+  - label: constants_028
+    symbol: CTJ
+    name: ct028
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 5847
+    avg_time_ns: 5847000000.00
+  - label: constants_029
+    symbol: DRR
+    name: ct029
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 5702
+    avg_time_ns: 5702000000.00
+  - label: constants_030
+    symbol: EJR
+    name: ct030
+    target: constants
+    module: units
+    status: ok
+    elapsed_ms: 5628
+    avg_time_ns: 5628000000.00

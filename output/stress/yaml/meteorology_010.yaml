@@ -1,0 +1,17 @@
+category: me01
+symbol: CZA
+name: me010
+target: meteorology
+module: dynamics
+status: ok
+elapsed_ms: 2727
+experiment_name: meteorology_010
+precision: f64
+elapsed_ms: 2727
+iterations: 1
+avg_time_ns: 2727000000.00
+min_time_ns: 2727000000.00
+max_time_ns: 2727000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.37
+result: success=true code=Some(0) stdout_bytes=160 stderr_bytes=270

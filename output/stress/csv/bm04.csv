@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+benchmark_031,f64,9068,1,9068000000,9068000000,9068000000,0,0.11027790030877813,success=true code=Some(0) stdout_bytes=151 stderr_bytes=266,bm04,TA,bm031,benchmark,simulation,ok,9068
+benchmark_032,f64,8943,1,8943000000,8943000000,8943000000,0,0.11181930001118193,success=true code=Some(0) stdout_bytes=148 stderr_bytes=266,bm04,ZS,bm032,benchmark,simulation,ok,8943

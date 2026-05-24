@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+geology_021,f64,11574,1,11574000000,11574000000,11574000000,0,0.08640055296353896,success=true code=Some(0) stdout_bytes=153 stderr_bytes=419,ge03,MV,ge021,geology,hydrology,ok,11574
+geology_022,f64,3218,1,3218000000,3218000000,3218000000,0,0.3107520198881293,success=true code=Some(0) stdout_bytes=152 stderr_bytes=210,ge03,RN,ge022,geology,hydrology,ok,3218
+geology_023,f64,10840,1,10840000000,10840000000,10840000000,0,0.09225092250922509,success=true code=Some(0) stdout_bytes=149 stderr_bytes=263,ge03,SP,ge023,geology,hydrology,ok,10840
+geology_024,f64,1118,1,1118000000,1118000000,1118000000,0,0.8944543828264758,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,ge03,CQN,ge024,geology,petrology,ok,1118
+geology_025,f64,9407,1,9407000000,9407000000,9407000000,0,0.10630381630700542,success=true code=Some(0) stdout_bytes=162 stderr_bytes=262,ge03,CSV,ge025,geology,petrology,ok,9407
+geology_026,f64,10666,1,10666000000,10666000000,10666000000,0,0.09375585974123382,success=true code=Some(0) stdout_bytes=158 stderr_bytes=211,ge03,DI,ge026,geology,petrology,ok,10666
+geology_027,f64,1577,1,1577000000,1577000000,1577000000,0,0.6341154090044389,success=true code=Some(0) stdout_bytes=157 stderr_bytes=366,ge03,LT,ge027,geology,petrology,ok,1577
+geology_028,f64,11715,1,11715000000,11715000000,11715000000,0,0.08536064874093043,success=true code=Some(0) stdout_bytes=146 stderr_bytes=367,ge03,MN,ge028,geology,petrology,ok,11715
+geology_029,f64,10582,1,10582000000,10582000000,10582000000,0,0.0945000945000945,success=true code=Some(0) stdout_bytes=156 stderr_bytes=263,ge03,TAS,ge029,geology,petrology,ok,10582
+geology_030,f64,2835,1,2835000000,2835000000,2835000000,0,0.3527336860670194,success=true code=Some(0) stdout_bytes=156 stderr_bytes=314,ge03,VA,ge030,geology,petrology,ok,2835

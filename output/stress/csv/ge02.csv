@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+geology_011,f64,12590,1,12590000000,12590000000,12590000000,0,0.07942811755361398,success=true code=Some(0) stdout_bytes=161 stderr_bytes=419,ge02,VEI,ge011,geology,erosion,ok,12590
+geology_012,f64,7296,1,7296000000,7296000000,7296000000,0,0.13706140350877194,success=true code=Some(0) stdout_bytes=157 stderr_bytes=262,ge02,WET,ge012,geology,erosion,ok,7296
+geology_013,f64,13237,1,13237000000,13237000000,13237000000,0,0.07554581853894388,success=true code=Some(0) stdout_bytes=157 stderr_bytes=419,ge02,GBE,ge013,geology,glaciology,ok,13237
+geology_014,f64,13141,1,13141000000,13141000000,13141000000,0,0.07609770945894528,success=true code=Some(0) stdout_bytes=171 stderr_bytes=419,ge02,GSI,ge014,geology,glaciology,ok,13141
+geology_015,f64,1334,1,1334000000,1334000000,1334000000,0,0.7496251874062968,success=true code=Some(0) stdout_bytes=154 stderr_bytes=262,ge02,GSR,ge015,geology,glaciology,ok,1334
+geology_016,f64,1032,1,1032000000,1032000000,1032000000,0,0.9689922480620154,success=true code=Some(0) stdout_bytes=151 stderr_bytes=262,ge02,IV,ge016,geology,glaciology,ok,1032
+geology_017,f64,10964,1,10964000000,10964000000,10964000000,0,0.09120758847136082,success=true code=Some(0) stdout_bytes=158 stderr_bytes=315,ge02,SIV,ge017,geology,glaciology,ok,10964
+geology_018,f64,1426,1,1426000000,1426000000,1426000000,0,0.7012622720897616,success=true code=Some(0) stdout_bytes=151 stderr_bytes=262,ge02,CV,ge018,geology,hydrology,ok,1426
+geology_019,f64,2962,1,2962000000,2962000000,2962000000,0,0.337609723160027,success=true code=Some(0) stdout_bytes=150 stderr_bytes=210,ge02,FN,ge019,geology,hydrology,ok,2962
+geology_020,f64,11561,1,11561000000,11561000000,11561000000,0,0.08649770781074302,success=true code=Some(0) stdout_bytes=164 stderr_bytes=419,ge02,HET,ge020,geology,hydrology,ok,11561

@@ -1,0 +1,18 @@
+[benchmark]
+category = "chemistry"
+symbol = "SUM"
+name = "CH Summary"
+target = "chemistry"
+module = "summary"
+status = "ok"
+elapsed_ms = "677968"
+experiment_name = "chemistry_summary"
+precision = "f64"
+elapsed_ms = 677968
+iterations = 1
+avg_time_ns = 6395924528.30
+min_time_ns = 6395924528.30
+max_time_ns = 6395924528.30
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "tests_total=106 tests_ok=106 tests_failed=0 elapsed_sum_ms=677968 min_ms=175 max_ms=11122 avg_ms=6395.92"

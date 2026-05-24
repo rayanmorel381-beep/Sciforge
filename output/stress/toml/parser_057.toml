@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr06"
+symbol = "TS"
+name = "pr057"
+target = "parser"
+module = "toml"
+status = "ok"
+elapsed_ms = "4684"
+experiment_name = "parser_057"
+precision = "f64"
+elapsed_ms = 4684
+iterations = 1
+avg_time_ns = 4684000000.00
+min_time_ns = 4684000000.00
+max_time_ns = 4684000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.21
+result = "success=true code=Some(0) stdout_bytes=143 stderr_bytes=312"

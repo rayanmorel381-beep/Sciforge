@@ -1,0 +1,19 @@
+{
+  "category": "as01",
+  "symbol": "JDT",
+  "name": "as003",
+  "target": "astronomy",
+  "module": "celestial",
+  "status": "ok",
+  "elapsed_ms": "2894",
+  "experiment_name": "astronomy_003",
+  "precision": "f64",
+  "elapsed_ms": 2894,
+  "iterations": 1,
+  "avg_time_ns": 2894000000.00,
+  "min_time_ns": 2894000000.00,
+  "max_time_ns": 2894000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.35,
+  "result": "success=true code=Some(0) stdout_bytes=165 stderr_bytes=266"
+}

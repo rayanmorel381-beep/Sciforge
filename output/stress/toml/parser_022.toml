@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr03"
+symbol = "HS"
+name = "pr022"
+target = "parser"
+module = "html"
+status = "ok"
+elapsed_ms = "9136"
+experiment_name = "parser_022"
+precision = "f64"
+elapsed_ms = 9136
+iterations = 1
+avg_time_ns = 9136000000.00
+min_time_ns = 9136000000.00
+max_time_ns = 9136000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.11
+result = "success=true code=Some(0) stdout_bytes=143 stderr_bytes=260"

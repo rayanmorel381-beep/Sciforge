@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch06"
+symbol = "MMS"
+name = "ch052"
+target = "chemistry"
+module = "inorganic"
+status = "ok"
+elapsed_ms = "7322"
+experiment_name = "chemistry_052"
+precision = "f64"
+elapsed_ms = 7322
+iterations = 1
+avg_time_ns = 7322000000.00
+min_time_ns = 7322000000.00
+max_time_ns = 7322000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.14
+result = "success=true code=Some(0) stdout_bytes=163 stderr_bytes=266"

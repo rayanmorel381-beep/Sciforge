@@ -1,0 +1,19 @@
+{
+  "category": "ch08",
+  "symbol": "SV",
+  "name": "ch071",
+  "target": "chemistry",
+  "module": "photochemistry",
+  "status": "ok",
+  "elapsed_ms": "6895",
+  "experiment_name": "chemistry_071",
+  "precision": "f64",
+  "elapsed_ms": 6895,
+  "iterations": 1,
+  "avg_time_ns": 6895000000.00,
+  "min_time_ns": 6895000000.00,
+  "max_time_ns": 6895000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.15,
+  "result": "success=true code=Some(0) stdout_bytes=155 stderr_bytes=318"
+}

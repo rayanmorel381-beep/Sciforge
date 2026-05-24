@@ -1,0 +1,17 @@
+category: bi05
+symbol: VP
+name: bi050
+target: biology
+module: cryobiology
+status: ok
+elapsed_ms: 1580
+experiment_name: biology_050
+precision: f64
+elapsed_ms: 1580
+iterations: 1
+avg_time_ns: 1580000000.00
+min_time_ns: 1580000000.00
+max_time_ns: 1580000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.63
+result: success=true code=Some(0) stdout_bytes=165 stderr_bytes=262

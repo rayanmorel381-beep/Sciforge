@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+chemistry_101,f64,2751,1,2751000000,2751000000,2751000000,0,0.3635041802980734,success=true code=Some(0) stdout_bytes=158 stderr_bytes=266,ch11,EC,ch101,chemistry,thermochemistry,ok,2751
+chemistry_102,f64,1927,1,1927000000,1927000000,1927000000,0,0.5189413596263622,success=true code=Some(0) stdout_bytes=161 stderr_bytes=266,ch11,GFE,ch102,chemistry,thermochemistry,ok,1927
+chemistry_103,f64,10179,1,10179000000,10179000000,10179000000,0,0.09824147755182237,success=true code=Some(0) stdout_bytes=152 stderr_bytes=215,ch11,HL,ch103,chemistry,thermochemistry,ok,10179
+chemistry_104,f64,2688,1,2688000000,2688000000,2688000000,0,0.37202380952380953,success=true code=Some(0) stdout_bytes=175 stderr_bytes=266,ch11,DCS,ch104,chemistry,transport,ok,2688
+chemistry_105,f64,3300,1,3300000000,3300000000,3300000000,0,0.30303030303030304,success=true code=Some(0) stdout_bytes=152 stderr_bytes=318,ch11,FFL,ch105,chemistry,transport,ok,3300
+chemistry_106,f64,1352,1,1352000000,1352000000,1352000000,0,0.7396449704142012,success=true code=Some(0) stdout_bytes=153 stderr_bytes=266,ch11,SN,ch106,chemistry,transport,ok,1352

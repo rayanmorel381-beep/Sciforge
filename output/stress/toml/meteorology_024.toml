@@ -1,0 +1,18 @@
+[benchmark]
+category = "me03"
+symbol = "RR"
+name = "me024"
+target = "meteorology"
+module = "precipitation"
+status = "ok"
+elapsed_ms = "1388"
+experiment_name = "meteorology_024"
+precision = "f64"
+elapsed_ms = 1388
+iterations = 1
+avg_time_ns = 1388000000.00
+min_time_ns = 1388000000.00
+max_time_ns = 1388000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.72
+result = "success=true code=Some(0) stdout_bytes=159 stderr_bytes=270"

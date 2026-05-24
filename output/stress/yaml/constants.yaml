@@ -1,0 +1,11 @@
+category: constants
+count: 1
+entries:
+  - label: constants_summary
+    symbol: SUM
+    name: CT Summary
+    target: constants
+    module: summary
+    status: ok
+    elapsed_ms: 206474
+    avg_time_ns: 6452312500.00

@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+constants_summary,f64,206474,1,6452312500,6452312500,6452312500,0,0.004843224812809361,tests_total=32 tests_ok=32 tests_failed=0 elapsed_sum_ms=206474 min_ms=1793 max_ms=9625 avg_ms=6452.31,constants,SUM,CT Summary,constants,summary,ok,206474

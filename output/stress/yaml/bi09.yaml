@@ -1,0 +1,83 @@
+category: bi09
+count: 10
+entries:
+  - label: biology_081
+    symbol: HDP
+    name: bi081
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 955
+    avg_time_ns: 955000000.00
+  - label: biology_082
+    symbol: IFD
+    name: bi082
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 11389
+    avg_time_ns: 11389000000.00
+  - label: biology_083
+    symbol: TS
+    name: bi083
+    target: biology
+    module: ethology
+    status: ok
+    elapsed_ms: 956
+    avg_time_ns: 956000000.00
+  - label: biology_084
+    symbol: AR
+    name: bi084
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 6277
+    avg_time_ns: 6277000000.00
+  - label: biology_085
+    symbol: FPN
+    name: bi085
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 9815
+    avg_time_ns: 9815000000.00
+  - label: biology_086
+    symbol: SRB
+    name: bi086
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 1115
+    avg_time_ns: 1115000000.00
+  - label: biology_087
+    symbol: SR
+    name: bi087
+    target: biology
+    module: evolution
+    status: ok
+    elapsed_ms: 6521
+    avg_time_ns: 6521000000.00
+  - label: biology_088
+    symbol: BSH
+    name: bi088
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 7196
+    avg_time_ns: 7196000000.00
+  - label: biology_089
+    symbol: EPS
+    name: bi089
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 11610
+    avg_time_ns: 11610000000.00
+  - label: biology_090
+    symbol: HW
+    name: bi090
+    target: biology
+    module: genetics
+    status: ok
+    elapsed_ms: 12426
+    avg_time_ns: 12426000000.00

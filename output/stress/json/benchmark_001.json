@@ -1,0 +1,19 @@
+{
+  "category": "bm01",
+  "symbol": "BSN",
+  "name": "bm001",
+  "target": "benchmark",
+  "module": "bench_stddev_nonnegative",
+  "status": "ok",
+  "elapsed_ms": "279",
+  "experiment_name": "benchmark_001",
+  "precision": "f64",
+  "elapsed_ms": 279,
+  "iterations": 1,
+  "avg_time_ns": 279000000.00,
+  "min_time_ns": 279000000.00,
+  "max_time_ns": 279000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 3.58,
+  "result": "success=true code=Some(0) stdout_bytes=150 stderr_bytes=266"
+}

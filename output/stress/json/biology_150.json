@@ -1,0 +1,19 @@
+{
+  "category": "bi15",
+  "symbol": "OER",
+  "name": "bi150",
+  "target": "biology",
+  "module": "radiobiology",
+  "status": "ok",
+  "elapsed_ms": "2522",
+  "experiment_name": "biology_150",
+  "precision": "f64",
+  "elapsed_ms": 2522,
+  "iterations": 1,
+  "avg_time_ns": 2522000000.00,
+  "min_time_ns": 2522000000.00,
+  "max_time_ns": 2522000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.40,
+  "result": "success=true code=Some(0) stdout_bytes=165 stderr_bytes=262"
+}

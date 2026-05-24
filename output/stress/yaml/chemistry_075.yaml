@@ -1,0 +1,17 @@
+category: ch08
+symbol: HTP
+name: ch075
+target: chemistry
+module: quantum_chem
+status: ok
+elapsed_ms: 10174
+experiment_name: chemistry_075
+precision: f64
+elapsed_ms: 10174
+iterations: 1
+avg_time_ns: 10174000000.00
+min_time_ns: 10174000000.00
+max_time_ns: 10174000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.10
+result: success=true code=Some(0) stdout_bytes=163 stderr_bytes=266

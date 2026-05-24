@@ -1,0 +1,19 @@
+{
+  "category": "bi12",
+  "symbol": "SWC",
+  "name": "bi115",
+  "target": "biology",
+  "module": "neuroscience",
+  "status": "ok",
+  "elapsed_ms": "10218",
+  "experiment_name": "biology_115",
+  "precision": "f64",
+  "elapsed_ms": 10218,
+  "iterations": 1,
+  "avg_time_ns": 10218000000.00,
+  "min_time_ns": 10218000000.00,
+  "max_time_ns": 10218000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.10,
+  "result": "success=true code=Some(0) stdout_bytes=159 stderr_bytes=263"
+}

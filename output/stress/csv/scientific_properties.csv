@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+scientific_properties_summary,f64,28836,1,9612000000,9612000000,9612000000,0,0.034678873630184494,tests_total=3 tests_ok=3 tests_failed=0 elapsed_sum_ms=28836 min_ms=6389 max_ms=11572 avg_ms=9612.00,scientific_properties,SUM,SP Summary,scientific_properties,summary,ok,28836

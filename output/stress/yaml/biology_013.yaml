@@ -1,0 +1,17 @@
+category: bi02
+symbol: RCI
+name: bi013
+target: biology
+module: bioenergetics
+status: ok
+elapsed_ms: 2878
+experiment_name: biology_013
+precision: f64
+elapsed_ms: 2878
+iterations: 1
+avg_time_ns: 2878000000.00
+min_time_ns: 2878000000.00
+max_time_ns: 2878000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.35
+result: success=true code=Some(0) stdout_bytes=167 stderr_bytes=314

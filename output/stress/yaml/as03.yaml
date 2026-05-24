@@ -1,0 +1,83 @@
+category: as03
+count: 10
+entries:
+  - label: astronomy_021
+    symbol: LAD
+    name: as021
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 1279
+    avg_time_ns: 1279000000.00
+  - label: astronomy_022
+    symbol: RRV
+    name: as022
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 10858
+    avg_time_ns: 10858000000.00
+  - label: astronomy_023
+    symbol: SF
+    name: as023
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 13120
+    avg_time_ns: 13120000000.00
+  - label: astronomy_024
+    symbol: SFH
+    name: as024
+    target: astronomy
+    module: cosmology
+    status: ok
+    elapsed_ms: 11832
+    avg_time_ns: 11832000000.00
+  - label: astronomy_025
+    symbol: GEV
+    name: as025
+    target: astronomy
+    module: galactic
+    status: ok
+    elapsed_ms: 11769
+    avg_time_ns: 11769000000.00
+  - label: astronomy_026
+    symbol: GRV
+    name: as026
+    target: astronomy
+    module: galactic
+    status: ok
+    elapsed_ms: 7735
+    avg_time_ns: 7735000000.00
+  - label: astronomy_027
+    symbol: TR
+    name: as027
+    target: astronomy
+    module: galactic
+    status: ok
+    elapsed_ms: 8249
+    avg_time_ns: 8249000000.00
+  - label: astronomy_028
+    symbol: CD
+    name: as028
+    target: astronomy
+    module: impacts
+    status: ok
+    elapsed_ms: 11693
+    avg_time_ns: 11693000000.00
+  - label: astronomy_029
+    symbol: FR
+    name: as029
+    target: astronomy
+    module: impacts
+    status: ok
+    elapsed_ms: 10989
+    avg_time_ns: 10989000000.00
+  - label: astronomy_030
+    symbol: IV
+    name: as030
+    target: astronomy
+    module: impacts
+    status: ok
+    elapsed_ms: 11364
+    avg_time_ns: 11364000000.00

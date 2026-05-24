@@ -1,0 +1,17 @@
+category: hub
+symbol: SUM
+name: HB Summary
+target: hub
+module: summary
+status: ok
+elapsed_ms: 638158
+experiment_name: hub_summary
+precision: f64
+elapsed_ms: 638158
+iterations: 1
+avg_time_ns: 7782414634.15
+min_time_ns: 7782414634.15
+max_time_ns: 7782414634.15
+time_stddev: 0.0000
+iterations_per_sec: 0.00
+result: tests_total=82 tests_ok=82 tests_failed=0 elapsed_sum_ms=638158 min_ms=172 max_ms=12665 avg_ms=7782.41

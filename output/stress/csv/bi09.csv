@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_081,f64,955,1,955000000,955000000,955000000,0,1.0471204188481675,success=true code=Some(0) stdout_bytes=153 stderr_bytes=314,bi09,HDP,bi081,biology,ethology,ok,955
+biology_082,f64,11389,1,11389000000,11389000000,11389000000,0,0.08780402142418123,success=true code=Some(0) stdout_bytes=160 stderr_bytes=367,bi09,IFD,bi082,biology,ethology,ok,11389
+biology_083,f64,956,1,956000000,956000000,956000000,0,1.0460251046025104,success=true code=Some(0) stdout_bytes=151 stderr_bytes=262,bi09,TS,bi083,biology,ethology,ok,956
+biology_084,f64,6277,1,6277000000,6277000000,6277000000,0,0.15931177314003506,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,bi09,AR,bi084,biology,evolution,ok,6277
+biology_085,f64,9815,1,9815000000,9815000000,9815000000,0,0.10188487009679063,success=true code=Some(0) stdout_bytes=166 stderr_bytes=262,bi09,FPN,bi085,biology,evolution,ok,9815
+biology_086,f64,1115,1,1115000000,1115000000,1115000000,0,0.8968609865470852,success=true code=Some(0) stdout_bytes=157 stderr_bytes=210,bi09,SRB,bi086,biology,evolution,ok,1115
+biology_087,f64,6521,1,6521000000,6521000000,6521000000,0,0.15335071308081583,success=true code=Some(0) stdout_bytes=155 stderr_bytes=210,bi09,SR,bi087,biology,evolution,ok,6521
+biology_088,f64,7196,1,7196000000,7196000000,7196000000,0,0.13896609227348528,success=true code=Some(0) stdout_bytes=161 stderr_bytes=262,bi09,BSH,bi088,biology,genetics,ok,7196
+biology_089,f64,11610,1,11610000000,11610000000,11610000000,0,0.08613264427217916,success=true code=Some(0) stdout_bytes=162 stderr_bytes=367,bi09,EPS,bi089,biology,genetics,ok,11610
+biology_090,f64,12426,1,12426000000,12426000000,12426000000,0,0.08047642040882022,success=true code=Some(0) stdout_bytes=151 stderr_bytes=419,bi09,HW,bi090,biology,genetics,ok,12426

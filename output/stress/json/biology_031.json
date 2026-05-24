@@ -1,0 +1,19 @@
+{
+  "category": "bi04",
+  "symbol": "NNT",
+  "name": "bi031",
+  "target": "biology",
+  "module": "biostatistics",
+  "status": "ok",
+  "elapsed_ms": "6518",
+  "experiment_name": "biology_031",
+  "precision": "f64",
+  "elapsed_ms": 6518,
+  "iterations": 1,
+  "avg_time_ns": 6518000000.00,
+  "min_time_ns": 6518000000.00,
+  "max_time_ns": 6518000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.15,
+  "result": "success=true code=Some(0) stdout_bytes=164 stderr_bytes=262"
+}

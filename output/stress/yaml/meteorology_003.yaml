@@ -1,0 +1,17 @@
+category: me01
+symbol: LRD
+name: me003
+target: meteorology
+module: atmosphere
+status: ok
+elapsed_ms: 2115
+experiment_name: meteorology_003
+precision: f64
+elapsed_ms: 2115
+iterations: 1
+avg_time_ns: 2115000000.00
+min_time_ns: 2115000000.00
+max_time_ns: 2115000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.47
+result: success=true code=Some(0) stdout_bytes=152 stderr_bytes=322

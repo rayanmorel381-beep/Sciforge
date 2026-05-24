@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch01"
+symbol = "PR"
+name = "ch006"
+target = "chemistry"
+module = "acid_base"
+status = "ok"
+elapsed_ms = "7194"
+experiment_name = "chemistry_006"
+precision = "f64"
+elapsed_ms = 7194
+iterations = 1
+avg_time_ns = 7194000000.00
+min_time_ns = 7194000000.00
+max_time_ns = 7194000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.14
+result = "success=true code=Some(0) stdout_bytes=151 stderr_bytes=214"

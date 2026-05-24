@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+chemistry_071,f64,6895,1,6895000000,6895000000,6895000000,0,0.145032632342277,success=true code=Some(0) stdout_bytes=155 stderr_bytes=318,ch08,SV,ch071,chemistry,photochemistry,ok,6895
+chemistry_072,f64,10987,1,10987000000,10987000000,10987000000,0,0.0910166560480568,success=true code=Some(0) stdout_bytes=155 stderr_bytes=319,ch08,CE,ch072,chemistry,polymers,ok,10987
+chemistry_073,f64,6300,1,6300000000,6300000000,6300000000,0,0.15873015873015872,success=true code=Some(0) stdout_bytes=162 stderr_bytes=266,ch08,FHF,ch073,chemistry,polymers,ok,6300
+chemistry_074,f64,6526,1,6526000000,6526000000,6526000000,0,0.15323322096230463,success=true code=Some(0) stdout_bytes=157 stderr_bytes=266,ch08,PI,ch074,chemistry,polymers,ok,6526
+chemistry_075,f64,10174,1,10174000000,10174000000,10174000000,0,0.09828975820719481,success=true code=Some(0) stdout_bytes=163 stderr_bytes=266,ch08,HTP,ch075,chemistry,quantum_chem,ok,10174
+chemistry_076,f64,10028,1,10028000000,10028000000,10028000000,0,0.0997207818109294,success=true code=Some(0) stdout_bytes=160 stderr_bytes=266,ch08,LBE,ch076,chemistry,quantum_chem,ok,10028
+chemistry_077,f64,7396,1,7396000000,7396000000,7396000000,0,0.1352082206598161,success=true code=Some(0) stdout_bytes=160 stderr_bytes=266,ch08,MP,ch077,chemistry,quantum_chem,ok,7396
+chemistry_078,f64,6497,1,6497000000,6497000000,6497000000,0,0.1539171925504079,success=true code=Some(0) stdout_bytes=160 stderr_bytes=318,ch08,CV,ch078,chemistry,reaction_engineering,ok,6497
+chemistry_079,f64,10596,1,10596000000,10596000000,10596000000,0,0.09437523593808984,success=true code=Some(0) stdout_bytes=165 stderr_bytes=319,ch08,DN,ch079,chemistry,reaction_engineering,ok,10596
+chemistry_080,f64,9554,1,9554000000,9554000000,9554000000,0,0.10466820180029307,success=true code=Some(0) stdout_bytes=175 stderr_bytes=214,ch08,PCF,ch080,chemistry,reaction_engineering,ok,9554

@@ -1,0 +1,19 @@
+{
+  "category": "bi13",
+  "symbol": "FOI",
+  "name": "bi124",
+  "target": "biology",
+  "module": "parasitology",
+  "status": "ok",
+  "elapsed_ms": "7742",
+  "experiment_name": "biology_124",
+  "precision": "f64",
+  "elapsed_ms": 7742,
+  "iterations": 1,
+  "avg_time_ns": 7742000000.00,
+  "min_time_ns": 7742000000.00,
+  "max_time_ns": 7742000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.13,
+  "result": "success=true code=Some(0) stdout_bytes=159 stderr_bytes=262"
+}

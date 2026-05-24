@@ -1,0 +1,17 @@
+category: as05
+symbol: HZI
+name: as041
+target: astronomy
+module: planetary
+status: ok
+elapsed_ms: 12488
+experiment_name: astronomy_041
+precision: f64
+elapsed_ms: 12488
+iterations: 1
+avg_time_ns: 12488000000.00
+min_time_ns: 12488000000.00
+max_time_ns: 12488000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.08
+result: success=true code=Some(0) stdout_bytes=157 stderr_bytes=423

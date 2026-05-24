@@ -1,0 +1,11 @@
+category: hub
+count: 1
+entries:
+  - label: hub_summary
+    symbol: SUM
+    name: HB Summary
+    target: hub
+    module: summary
+    status: ok
+    elapsed_ms: 638158
+    avg_time_ns: 7782414634.15

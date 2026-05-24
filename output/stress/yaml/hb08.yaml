@@ -1,0 +1,83 @@
+category: hb08
+count: 10
+entries:
+  - label: hub_071
+    symbol: FD
+    name: hb071
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 11273
+    avg_time_ns: 11273000000.00
+  - label: hub_072
+    symbol: FSO
+    name: hb072
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 11316
+    avg_time_ns: 11316000000.00
+  - label: hub_073
+    symbol: KDB
+    name: hb073
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 10797
+    avg_time_ns: 10797000000.00
+  - label: hub_074
+    symbol: KSP
+    name: hb074
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 3163
+    avg_time_ns: 3163000000.00
+  - label: hub_075
+    symbol: LB
+    name: hb075
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 762
+    avg_time_ns: 762000000.00
+  - label: hub_076
+    symbol: LB
+    name: hb076
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 11014
+    avg_time_ns: 11014000000.00
+  - label: hub_077
+    symbol: RCF
+    name: hb077
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 6518
+    avg_time_ns: 6518000000.00
+  - label: hub_078
+    symbol: RD
+    name: hb078
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 10612
+    avg_time_ns: 10612000000.00
+  - label: hub_079
+    symbol: RDS
+    name: hb079
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 5496
+    avg_time_ns: 5496000000.00
+  - label: hub_080
+    symbol: RND
+    name: hb080
+    target: hub
+    module: tools
+    status: ok
+    elapsed_ms: 11204
+    avg_time_ns: 11204000000.00

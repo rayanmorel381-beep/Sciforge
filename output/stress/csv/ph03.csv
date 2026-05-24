@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+physics_021,f64,7226,1,7226000000,7226000000,7226000000,0,0.1383891502906172,success=true code=Some(0) stdout_bytes=173 stderr_bytes=210,ph03,OLR,ph021,physics,electromagnetism,ok,7226
+physics_022,f64,4854,1,4854000000,4854000000,4854000000,0,0.20601565718994644,success=true code=Some(0) stdout_bytes=158 stderr_bytes=210,ph03,OR,ph022,physics,electromagnetism,ok,4854
+physics_023,f64,1552,1,1552000000,1552000000,1552000000,0,0.6443298969072165,success=true code=Some(0) stdout_bytes=155 stderr_bytes=262,ph03,OV,ph023,physics,electromagnetism,ok,1552
+physics_024,f64,6078,1,6078000000,6078000000,6078000000,0,0.16452780519907864,success=true code=Some(0) stdout_bytes=153 stderr_bytes=210,ph03,DS,ph024,physics,electronics,ok,6078
+physics_025,f64,4997,1,4997000000,4997000000,4997000000,0,0.20012007204322593,success=true code=Some(0) stdout_bytes=150 stderr_bytes=210,ph03,OC,ph025,physics,electronics,ok,4997
+physics_026,f64,476,1,476000000,476000000,476000000,0,2.100840336134454,success=true code=Some(0) stdout_bytes=161 stderr_bytes=210,ph03,RRF,ph026,physics,electronics,ok,476
+physics_027,f64,6996,1,6996000000,6996000000,6996000000,0,0.1429388221841052,success=true code=Some(0) stdout_bytes=154 stderr_bytes=262,ph03,VD,ph027,physics,electronics,ok,6996
+physics_028,f64,9491,1,9491000000,9491000000,9491000000,0,0.10536297545042672,success=true code=Some(0) stdout_bytes=161 stderr_bytes=210,ph03,BP,ph028,physics,fluid_mechanics,ok,9491
+physics_029,f64,6653,1,6653000000,6653000000,6653000000,0,0.15030813166992335,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,ph03,DF,ph029,physics,fluid_mechanics,ok,6653
+physics_030,f64,7398,1,7398000000,7398000000,7398000000,0,0.13517166801838335,success=true code=Some(0) stdout_bytes=158 stderr_bytes=262,ph03,RN,ph030,physics,fluid_mechanics,ok,7398

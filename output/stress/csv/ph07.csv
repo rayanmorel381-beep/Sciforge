@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+physics_061,f64,9953,1,9953000000,9953000000,9953000000,0,0.10047221943132724,success=true code=Some(0) stdout_bytes=156 stderr_bytes=262,ph07,LC,ph061,physics,relativity,ok,9953
+physics_062,f64,6498,1,6498000000,6498000000,6498000000,0,0.1538935056940597,success=true code=Some(0) stdout_bytes=163 stderr_bytes=262,ph07,PRP,ph062,physics,relativity,ok,6498
+physics_063,f64,2678,1,2678000000,2678000000,2678000000,0,0.37341299477221807,success=true code=Some(0) stdout_bytes=151 stderr_bytes=314,ph07,TD,ph063,physics,relativity,ok,2678
+physics_064,f64,1904,1,1904000000,1904000000,1904000000,0,0.5252100840336135,success=true code=Some(0) stdout_bytes=158 stderr_bytes=314,ph07,TDH,ph064,physics,relativity,ok,1904
+physics_065,f64,4912,1,4912000000,4912000000,4912000000,0,0.20358306188925082,success=true code=Some(0) stdout_bytes=155 stderr_bytes=262,ph07,HS,ph065,physics,solid_mechanics,ok,4912
+physics_066,f64,9613,1,9613000000,9613000000,9613000000,0,0.1040257983980027,success=true code=Some(0) stdout_bytes=157 stderr_bytes=262,ph07,TS,ph066,physics,solid_mechanics,ok,9613
+physics_067,f64,9547,1,9547000000,9547000000,9547000000,0,0.10474494605635278,success=true code=Some(0) stdout_bytes=152 stderr_bytes=262,ph07,VM,ph067,physics,solid_mechanics,ok,9547
+physics_068,f64,7622,1,7622000000,7622000000,7622000000,0,0.13119916032537393,success=true code=Some(0) stdout_bytes=164 stderr_bytes=210,ph07,BD,ph068,physics,thermodynamics,ok,7622
+physics_069,f64,7121,1,7121000000,7121000000,7121000000,0,0.1404297149276787,success=true code=Some(0) stdout_bytes=159 stderr_bytes=262,ph07,CE,ph069,physics,thermodynamics,ok,7121
+physics_070,f64,5870,1,5870000000,5870000000,5870000000,0,0.17035775127768313,success=true code=Some(0) stdout_bytes=160 stderr_bytes=210,ph07,IGP,ph070,physics,thermodynamics,ok,5870

@@ -1,0 +1,83 @@
+category: ma05
+count: 10
+entries:
+  - label: maths_041
+    symbol: QO
+    name: ma041
+    target: maths
+    module: optimization
+    status: ok
+    elapsed_ms: 7004
+    avg_time_ns: 7004000000.00
+  - label: maths_042
+    symbol: HE1
+    name: ma042
+    target: maths
+    module: pde
+    status: ok
+    elapsed_ms: 6815
+    avg_time_ns: 6815000000.00
+  - label: maths_043
+    symbol: WE1
+    name: ma043
+    target: maths
+    module: pde
+    status: ok
+    elapsed_ms: 4784
+    avg_time_ns: 4784000000.00
+  - label: maths_044
+    symbol: CT
+    name: ma044
+    target: maths
+    module: polynomial
+    status: ok
+    elapsed_ms: 9567
+    avg_time_ns: 9567000000.00
+  - label: maths_045
+    symbol: Le
+    name: ma045
+    target: maths
+    module: polynomial
+    status: ok
+    elapsed_ms: 6729
+    avg_time_ns: 6729000000.00
+  - label: maths_046
+    symbol: PRR
+    name: ma046
+    target: maths
+    module: polynomial
+    status: ok
+    elapsed_ms: 9877
+    avg_time_ns: 9877000000.00
+  - label: maths_047
+    symbol: MCP
+    name: ma047
+    target: maths
+    module: probability
+    status: ok
+    elapsed_ms: 4779
+    avg_time_ns: 4779000000.00
+  - label: maths_048
+    symbol: PEC
+    name: ma048
+    target: maths
+    module: probability
+    status: ok
+    elapsed_ms: 9276
+    avg_time_ns: 9276000000.00
+  - label: maths_049
+    symbol: PNP
+    name: ma049
+    target: maths
+    module: probability
+    status: ok
+    elapsed_ms: 6714
+    avg_time_ns: 6714000000.00
+  - label: maths_050
+    symbol: BG
+    name: ma050
+    target: maths
+    module: signal
+    status: ok
+    elapsed_ms: 9269
+    avg_time_ns: 9269000000.00

@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_011,f64,4795,1,4795000000,4795000000,4795000000,0,0.20855057351407716,success=true code=Some(0) stdout_bytes=160 stderr_bytes=262,bi02,GNA,bi011,biology,bioenergetics,ok,4795
+biology_012,f64,619,1,619000000,619000000,619000000,0,1.615508885298869,success=true code=Some(0) stdout_bytes=151 stderr_bytes=314,bi02,POR,bi012,biology,bioenergetics,ok,619
+biology_013,f64,2878,1,2878000000,2878000000,2878000000,0,0.34746351633078526,success=true code=Some(0) stdout_bytes=167 stderr_bytes=314,bi02,RCI,bi013,biology,bioenergetics,ok,2878
+biology_014,f64,11842,1,11842000000,11842000000,11842000000,0,0.0844451950684006,success=true code=Some(0) stdout_bytes=171 stderr_bytes=419,bi02,LDG,bi014,biology,biogeography,ok,11842
+biology_015,f64,4875,1,4875000000,4875000000,4875000000,0,0.20512820512820512,success=true code=Some(0) stdout_bytes=161 stderr_bytes=262,bi02,RSV,bi015,biology,biogeography,ok,4875
+biology_016,f64,9235,1,9235000000,9235000000,9235000000,0,0.10828370330265295,success=true code=Some(0) stdout_bytes=160 stderr_bytes=210,bi02,RSL,bi016,biology,biogeography,ok,9235
+biology_017,f64,2782,1,2782000000,2782000000,2782000000,0,0.35945363048166784,success=true code=Some(0) stdout_bytes=160 stderr_bytes=210,bi02,WLE,bi017,biology,biogeography,ok,2782
+biology_018,f64,4889,1,4889000000,4889000000,4889000000,0,0.2045408058907752,success=true code=Some(0) stdout_bytes=163 stderr_bytes=262,bi02,AGC,bi018,biology,bioinformatics,ok,4889
+biology_019,f64,3035,1,3035000000,3035000000,3035000000,0,0.32948929159802304,success=true code=Some(0) stdout_bytes=166 stderr_bytes=262,bi02,EDI,bi019,biology,bioinformatics,ok,3035
+biology_020,f64,1417,1,1417000000,1417000000,1417000000,0,0.7057163020465773,success=true code=Some(0) stdout_bytes=160 stderr_bytes=314,bi02,SI,bi020,biology,bioinformatics,ok,1417

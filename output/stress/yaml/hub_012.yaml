@@ -1,0 +1,17 @@
+category: hb02
+symbol: HT
+name: hb012
+target: hub
+module: cross_domain
+status: ok
+elapsed_ms: 1333
+experiment_name: hub_012
+precision: f64
+elapsed_ms: 1333
+iterations: 1
+avg_time_ns: 1333000000.00
+min_time_ns: 1333000000.00
+max_time_ns: 1333000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.75
+result: success=true code=Some(0) stdout_bytes=173 stderr_bytes=254

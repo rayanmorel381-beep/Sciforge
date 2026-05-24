@@ -1,0 +1,17 @@
+category: as05
+symbol: SG
+name: as043
+target: astronomy
+module: planetary
+status: ok
+elapsed_ms: 7261
+experiment_name: astronomy_043
+precision: f64
+elapsed_ms: 7261
+iterations: 1
+avg_time_ns: 7261000000.00
+min_time_ns: 7261000000.00
+max_time_ns: 7261000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.14
+result: success=true code=Some(0) stdout_bytes=152 stderr_bytes=318

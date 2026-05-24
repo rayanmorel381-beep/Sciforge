@@ -1,0 +1,19 @@
+{
+  "category": "bi09",
+  "symbol": "HW",
+  "name": "bi090",
+  "target": "biology",
+  "module": "genetics",
+  "status": "ok",
+  "elapsed_ms": "12426",
+  "experiment_name": "biology_090",
+  "precision": "f64",
+  "elapsed_ms": 12426,
+  "iterations": 1,
+  "avg_time_ns": 12426000000.00,
+  "min_time_ns": 12426000000.00,
+  "max_time_ns": 12426000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.08,
+  "result": "success=true code=Some(0) stdout_bytes=151 stderr_bytes=419"
+}

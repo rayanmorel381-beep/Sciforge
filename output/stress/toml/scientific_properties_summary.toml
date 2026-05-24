@@ -1,0 +1,18 @@
+[benchmark]
+category = "scientific_properties"
+symbol = "SUM"
+name = "SP Summary"
+target = "scientific_properties"
+module = "summary"
+status = "ok"
+elapsed_ms = "28836"
+experiment_name = "scientific_properties_summary"
+precision = "f64"
+elapsed_ms = 28836
+iterations = 1
+avg_time_ns = 9612000000.00
+min_time_ns = 9612000000.00
+max_time_ns = 9612000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.03
+result = "tests_total=3 tests_ok=3 tests_failed=0 elapsed_sum_ms=28836 min_ms=6389 max_ms=11572 avg_ms=9612.00"

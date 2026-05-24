@@ -1,0 +1,17 @@
+category: ct02
+symbol: EM
+name: ct012
+target: constants
+module: atomic
+status: ok
+elapsed_ms: 5666
+experiment_name: constants_012
+precision: f64
+elapsed_ms: 5666
+iterations: 1
+avg_time_ns: 5666000000.00
+min_time_ns: 5666000000.00
+max_time_ns: 5666000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.18
+result: success=true code=Some(0) stdout_bytes=147 stderr_bytes=266

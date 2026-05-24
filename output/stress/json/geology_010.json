@@ -1,0 +1,19 @@
+{
+  "category": "ge01",
+  "symbol": "FWR",
+  "name": "ge010",
+  "target": "geology",
+  "module": "erosion",
+  "status": "ok",
+  "elapsed_ms": "12860",
+  "experiment_name": "geology_010",
+  "precision": "f64",
+  "elapsed_ms": 12860,
+  "iterations": 1,
+  "avg_time_ns": 12860000000.00,
+  "min_time_ns": 12860000000.00,
+  "max_time_ns": 12860000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.08,
+  "result": "success=true code=Some(0) stdout_bytes=156 stderr_bytes=419"
+}

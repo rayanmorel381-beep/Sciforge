@@ -1,0 +1,19 @@
+{
+  "category": "bi05",
+  "symbol": "CAD",
+  "name": "bi043",
+  "target": "biology",
+  "module": "chronobiology",
+  "status": "ok",
+  "elapsed_ms": "535",
+  "experiment_name": "biology_043",
+  "precision": "f64",
+  "elapsed_ms": 535,
+  "iterations": 1,
+  "avg_time_ns": 535000000.00,
+  "min_time_ns": 535000000.00,
+  "max_time_ns": 535000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1.87,
+  "result": "success=true code=Some(0) stdout_bytes=169 stderr_bytes=210"
+}

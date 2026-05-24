@@ -1,0 +1,19 @@
+{
+  "category": "bi11",
+  "symbol": "DR",
+  "name": "bi109",
+  "target": "biology",
+  "module": "mycology",
+  "status": "ok",
+  "elapsed_ms": "1014",
+  "experiment_name": "biology_109",
+  "precision": "f64",
+  "elapsed_ms": 1014,
+  "iterations": 1,
+  "avg_time_ns": 1014000000.00,
+  "min_time_ns": 1014000000.00,
+  "max_time_ns": 1014000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.99,
+  "result": "success=true code=Some(0) stdout_bytes=155 stderr_bytes=314"
+}

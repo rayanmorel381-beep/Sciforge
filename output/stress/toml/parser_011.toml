@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr02"
+symbol = "CWE"
+name = "pr011"
+target = "parser"
+module = "csv"
+status = "ok"
+elapsed_ms = "5250"
+experiment_name = "parser_011"
+precision = "f64"
+elapsed_ms = 5250
+iterations = 1
+avg_time_ns = 5250000000.00
+min_time_ns = 5250000000.00
+max_time_ns = 5250000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=155 stderr_bytes=208"

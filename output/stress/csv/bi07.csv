@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_061,f64,6149,1,6149000000,6149000000,6149000000,0,0.1626280696048138,success=true code=Some(0) stdout_bytes=151 stderr_bytes=210,bi07,IS,bi061,biology,ecology,ok,6149
+biology_062,f64,3814,1,3814000000,3814000000,3814000000,0,0.26219192448872575,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,bi07,SD,bi062,biology,ecology,ok,3814
+biology_063,f64,9235,1,9235000000,9235000000,9235000000,0,0.10828370330265295,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,bi07,SD,bi063,biology,ecology,ok,9235
+biology_064,f64,10104,1,10104000000,10104000000,10104000000,0,0.09897070467141726,success=true code=Some(0) stdout_bytes=152 stderr_bytes=262,bi07,SR,bi064,biology,ecology,ok,10104
+biology_065,f64,10419,1,10419000000,10419000000,10419000000,0,0.09597850081581726,success=true code=Some(0) stdout_bytes=149 stderr_bytes=263,bi07,HI,bi065,biology,endocrinology,ok,10419
+biology_066,f64,10488,1,10488000000,10488000000,10488000000,0,0.09534706331045004,success=true code=Some(0) stdout_bytes=169 stderr_bytes=315,bi07,HHL,bi066,biology,endocrinology,ok,10488
+biology_067,f64,10308,1,10308000000,10308000000,10308000000,0,0.09701202949165696,success=true code=Some(0) stdout_bytes=167 stderr_bytes=262,bi07,ISI,bi067,biology,endocrinology,ok,10308
+biology_068,f64,3285,1,3285000000,3285000000,3285000000,0,0.30441400304414,success=true code=Some(0) stdout_bytes=161 stderr_bytes=314,bi07,RS,bi068,biology,endocrinology,ok,3285
+biology_069,f64,2363,1,2363000000,2363000000,2363000000,0,0.4231908590774439,success=true code=Some(0) stdout_bytes=179 stderr_bytes=262,bi07,CII,bi069,biology,enzyme,ok,2363
+biology_070,f64,10012,1,10012000000,10012000000,10012000000,0,0.0998801438274071,success=true code=Some(0) stdout_bytes=148 stderr_bytes=262,bi07,HE,bi070,biology,enzyme,ok,10012

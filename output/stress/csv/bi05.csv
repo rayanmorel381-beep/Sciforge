@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_041,f64,12432,1,12432000000,12432000000,12432000000,0,0.08043758043758044,success=true code=Some(0) stdout_bytes=156 stderr_bytes=419,bi05,LRB,bi041,biology,cell,ok,12432
+biology_042,f64,12311,1,12311000000,12311000000,12311000000,0,0.08122816992933149,success=true code=Some(0) stdout_bytes=149 stderr_bytes=419,bi05,OP,bi042,biology,cell,ok,12311
+biology_043,f64,535,1,535000000,535000000,535000000,0,1.8691588785046729,success=true code=Some(0) stdout_bytes=169 stderr_bytes=210,bi05,CAD,bi043,biology,chronobiology,ok,535
+biology_044,f64,10431,1,10431000000,10431000000,10431000000,0,0.09586808551433228,success=true code=Some(0) stdout_bytes=158 stderr_bytes=367,bi05,JLR,bi044,biology,chronobiology,ok,10431
+biology_045,f64,11989,1,11989000000,11989000000,11989000000,0,0.08340979230961715,success=true code=Some(0) stdout_bytes=153 stderr_bytes=419,bi05,Ph,bi045,biology,chronobiology,ok,11989
+biology_046,f64,12471,1,12471000000,12471000000,12471000000,0,0.08018603159329644,success=true code=Some(0) stdout_bytes=160 stderr_bytes=367,bi05,ZS,bi046,biology,chronobiology,ok,12471
+biology_047,f64,12572,1,12572000000,12572000000,12572000000,0,0.07954183900731784,success=true code=Some(0) stdout_bytes=161 stderr_bytes=419,bi05,CCR,bi047,biology,cryobiology,ok,12572
+biology_048,f64,12088,1,12088000000,12088000000,12088000000,0,0.0827266710787558,success=true code=Some(0) stdout_bytes=165 stderr_bytes=367,bi05,FPD,bi048,biology,cryobiology,ok,12088
+biology_049,f64,7845,1,7845000000,7845000000,7845000000,0,0.12746972594008923,success=true code=Some(0) stdout_bytes=163 stderr_bytes=262,bi05,SDA,bi049,biology,cryobiology,ok,7845
+biology_050,f64,1580,1,1580000000,1580000000,1580000000,0,0.6329113924050633,success=true code=Some(0) stdout_bytes=165 stderr_bytes=262,bi05,VP,bi050,biology,cryobiology,ok,1580

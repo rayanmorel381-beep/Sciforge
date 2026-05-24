@@ -1,0 +1,83 @@
+category: pr04
+count: 10
+entries:
+  - label: parser_031
+    symbol: JMD
+    name: pr031
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 5180
+    avg_time_ns: 5180000000.00
+  - label: parser_032
+    symbol: JNF
+    name: pr032
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 918
+    avg_time_ns: 918000000.00
+  - label: parser_033
+    symbol: JN
+    name: pr033
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 5964
+    avg_time_ns: 5964000000.00
+  - label: parser_034
+    symbol: JN
+    name: pr034
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 8504
+    avg_time_ns: 8504000000.00
+  - label: parser_035
+    symbol: JO
+    name: pr035
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 9375
+    avg_time_ns: 9375000000.00
+  - label: parser_036
+    symbol: JS
+    name: pr036
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 9303
+    avg_time_ns: 9303000000.00
+  - label: parser_037
+    symbol: JT
+    name: pr037
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 9338
+    avg_time_ns: 9338000000.00
+  - label: parser_038
+    symbol: JVN
+    name: pr038
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 1125
+    avg_time_ns: 1125000000.00
+  - label: parser_039
+    symbol: JVM
+    name: pr039
+    target: parser
+    module: json
+    status: ok
+    elapsed_ms: 8659
+    avg_time_ns: 8659000000.00
+  - label: parser_040
+    symbol: MB
+    name: pr040
+    target: parser
+    module: markdown
+    status: ok
+    elapsed_ms: 8610
+    avg_time_ns: 8610000000.00

@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr01"
+symbol = "CV"
+name = "pr008"
+target = "parser"
+module = "csv"
+status = "ok"
+elapsed_ms = "5323"
+experiment_name = "parser_008"
+precision = "f64"
+elapsed_ms = 5323
+iterations = 1
+avg_time_ns = 5323000000.00
+min_time_ns = 5323000000.00
+max_time_ns = 5323000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=143 stderr_bytes=312"

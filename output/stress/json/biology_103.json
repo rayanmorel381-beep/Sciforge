@@ -1,0 +1,19 @@
+{
+  "category": "bi11",
+  "symbol": "OAP",
+  "name": "bi103",
+  "target": "biology",
+  "module": "marine_biology",
+  "status": "ok",
+  "elapsed_ms": "9170",
+  "experiment_name": "biology_103",
+  "precision": "f64",
+  "elapsed_ms": 9170,
+  "iterations": 1,
+  "avg_time_ns": 9170000000.00,
+  "min_time_ns": 9170000000.00,
+  "max_time_ns": 9170000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.11,
+  "result": "success=true code=Some(0) stdout_bytes=165 stderr_bytes=262"
+}

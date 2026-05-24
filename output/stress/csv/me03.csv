@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+meteorology_021,f64,1551,1,1551000000,1551000000,1551000000,0,0.6447453255963894,success=true code=Some(0) stdout_bytes=171 stderr_bytes=322,me03,API,me021,meteorology,precipitation,ok,1551
+meteorology_022,f64,3096,1,3096000000,3096000000,3096000000,0,0.32299741602067183,success=true code=Some(0) stdout_bytes=169 stderr_bytes=270,me03,IDF,me022,meteorology,precipitation,ok,3096
+meteorology_023,f64,11063,1,11063000000,11063000000,11063000000,0,0.09039139473922082,success=true code=Some(0) stdout_bytes=159 stderr_bytes=323,me03,PE,me023,meteorology,precipitation,ok,11063
+meteorology_024,f64,1388,1,1388000000,1388000000,1388000000,0,0.7204610951008645,success=true code=Some(0) stdout_bytes=159 stderr_bytes=270,me03,RR,me024,meteorology,precipitation,ok,1388
+meteorology_025,f64,11591,1,11591000000,11591000000,11591000000,0,0.0862738331464067,success=true code=Some(0) stdout_bytes=166 stderr_bytes=323,me03,RRM,me025,meteorology,precipitation,ok,11591
+meteorology_026,f64,1580,1,1580000000,1580000000,1580000000,0,0.6329113924050633,success=true code=Some(0) stdout_bytes=164 stderr_bytes=322,me03,SCN,me026,meteorology,precipitation,ok,1580
+meteorology_027,f64,1112,1,1112000000,1112000000,1112000000,0,0.8992805755395683,success=true code=Some(0) stdout_bytes=167 stderr_bytes=270,me03,TVR,me027,meteorology,precipitation,ok,1112
+meteorology_028,f64,1009,1,1009000000,1009000000,1009000000,0,0.9910802775024777,success=true code=Some(0) stdout_bytes=157 stderr_bytes=374,me03,TP,me028,meteorology,precipitation,ok,1009
+meteorology_029,f64,3164,1,3164000000,3164000000,3164000000,0,0.31605562579013907,success=true code=Some(0) stdout_bytes=153 stderr_bytes=270,me03,AR,me029,meteorology,radiation,ok,3164
+meteorology_030,f64,9482,1,9482000000,9482000000,9482000000,0,0.10546298249314491,success=true code=Some(0) stdout_bytes=158 stderr_bytes=270,me03,ET,me030,meteorology,radiation,ok,9482

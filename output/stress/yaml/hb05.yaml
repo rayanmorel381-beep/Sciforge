@@ -1,0 +1,83 @@
+category: hb05
+count: 10
+entries:
+  - label: hub_041
+    symbol: DN
+    name: hb041
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 6372
+    avg_time_ns: 6372000000.00
+  - label: hub_042
+    symbol: DC
+    name: hb042
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 10217
+    avg_time_ns: 10217000000.00
+  - label: hub_043
+    symbol: MTC
+    name: hb043
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 361
+    avg_time_ns: 361000000.00
+  - label: hub_044
+    symbol: PC
+    name: hb044
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 10537
+    avg_time_ns: 10537000000.00
+  - label: hub_045
+    symbol: BA
+    name: hb045
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 11003
+    avg_time_ns: 11003000000.00
+  - label: hub_046
+    symbol: ESD
+    name: hb046
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1435
+    avg_time_ns: 1435000000.00
+  - label: hub_047
+    symbol: SIR
+    name: hb047
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 11532
+    avg_time_ns: 11532000000.00
+  - label: hub_048
+    symbol: SWA
+    name: hb048
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 8546
+    avg_time_ns: 8546000000.00
+  - label: hub_049
+    symbol: IFR
+    name: hb049
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 6675
+    avg_time_ns: 6675000000.00
+  - label: hub_050
+    symbol: DBW
+    name: hb050
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 10699
+    avg_time_ns: 10699000000.00

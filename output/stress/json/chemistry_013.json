@@ -1,0 +1,19 @@
+{
+  "category": "ch02",
+  "symbol": "BDC",
+  "name": "ch013",
+  "target": "chemistry",
+  "module": "colloids",
+  "status": "ok",
+  "elapsed_ms": "11111",
+  "experiment_name": "chemistry_013",
+  "precision": "f64",
+  "elapsed_ms": 11111,
+  "iterations": 1,
+  "avg_time_ns": 11111000000.00,
+  "min_time_ns": 11111000000.00,
+  "max_time_ns": 11111000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.09,
+  "result": "success=true code=Some(0) stdout_bytes=167 stderr_bytes=319"
+}

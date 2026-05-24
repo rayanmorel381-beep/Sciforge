@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+geology_summary,f64,322419,1,7327704545.454545,7327704545.454545,7327704545.454545,0,0.0031015541888040096,tests_total=44 tests_ok=44 tests_failed=0 elapsed_sum_ms=322419 min_ms=1032 max_ms=13237 avg_ms=7327.70,geology,SUM,GE Summary,geology,summary,ok,322419

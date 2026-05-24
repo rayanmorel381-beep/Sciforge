@@ -1,0 +1,19 @@
+{
+  "category": "ph05",
+  "symbol": "BEP",
+  "name": "ph041",
+  "target": "physics",
+  "module": "nucleosynthesis",
+  "status": "ok",
+  "elapsed_ms": "6347",
+  "experiment_name": "physics_041",
+  "precision": "f64",
+  "elapsed_ms": 6347,
+  "iterations": 1,
+  "avg_time_ns": 6347000000.00,
+  "min_time_ns": 6347000000.00,
+  "max_time_ns": 6347000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.16,
+  "result": "success=true code=Some(0) stdout_bytes=174 stderr_bytes=210"
+}

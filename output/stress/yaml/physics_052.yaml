@@ -1,0 +1,17 @@
+category: ph06
+symbol: PE
+name: ph052
+target: physics
+module: particle
+status: ok
+elapsed_ms: 4970
+experiment_name: physics_052
+precision: f64
+elapsed_ms: 4970
+iterations: 1
+avg_time_ns: 4970000000.00
+min_time_ns: 4970000000.00
+max_time_ns: 4970000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.20
+result: success=true code=Some(0) stdout_bytes=149 stderr_bytes=210

@@ -1,0 +1,17 @@
+category: bm03
+symbol: RMH
+name: bm022
+target: benchmark
+module: report
+status: ok
+elapsed_ms: 8159
+experiment_name: benchmark_022
+precision: f64
+elapsed_ms: 8159
+iterations: 1
+avg_time_ns: 8159000000.00
+min_time_ns: 8159000000.00
+max_time_ns: 8159000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.12
+result: success=true code=Some(0) stdout_bytes=157 stderr_bytes=214

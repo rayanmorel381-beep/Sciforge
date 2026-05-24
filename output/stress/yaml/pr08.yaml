@@ -1,0 +1,19 @@
+category: pr08
+count: 2
+entries:
+  - label: parser_071
+    symbol: YV
+    name: pr071
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 6766
+    avg_time_ns: 6766000000.00
+  - label: parser_072
+    symbol: YVM
+    name: pr072
+    target: parser
+    module: yaml
+    status: ok
+    elapsed_ms: 6581
+    avg_time_ns: 6581000000.00

@@ -1,0 +1,19 @@
+{
+  "category": "ch08",
+  "symbol": "MP",
+  "name": "ch077",
+  "target": "chemistry",
+  "module": "quantum_chem",
+  "status": "ok",
+  "elapsed_ms": "7396",
+  "experiment_name": "chemistry_077",
+  "precision": "f64",
+  "elapsed_ms": 7396,
+  "iterations": 1,
+  "avg_time_ns": 7396000000.00,
+  "min_time_ns": 7396000000.00,
+  "max_time_ns": 7396000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.14,
+  "result": "success=true code=Some(0) stdout_bytes=160 stderr_bytes=266"
+}

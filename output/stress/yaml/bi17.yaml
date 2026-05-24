@@ -1,0 +1,83 @@
+category: bi17
+count: 10
+entries:
+  - label: biology_161
+    symbol: AHP
+    name: bi161
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 3422
+    avg_time_ns: 3422000000.00
+  - label: biology_162
+    symbol: BFE
+    name: bi162
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 2788
+    avg_time_ns: 2788000000.00
+  - label: biology_163
+    symbol: ROG
+    name: bi163
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 3028
+    avg_time_ns: 3028000000.00
+  - label: biology_164
+    symbol: Rm
+    name: bi164
+    target: biology
+    module: structural
+    status: ok
+    elapsed_ms: 2853
+    avg_time_ns: 2853000000.00
+  - label: biology_165
+    symbol: AG
+    name: bi165
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 12137
+    avg_time_ns: 12137000000.00
+  - label: biology_166
+    symbol: COT
+    name: bi166
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 2547
+    avg_time_ns: 2547000000.00
+  - label: biology_167
+    symbol: HA
+    name: bi167
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 2107
+    avg_time_ns: 2107000000.00
+  - label: biology_168
+    symbol: HR
+    name: bi168
+    target: biology
+    module: synthetic_biology
+    status: ok
+    elapsed_ms: 7898
+    avg_time_ns: 7898000000.00
+  - label: biology_169
+    symbol: MCC
+    name: bi169
+    target: biology
+    module: systems_biology
+    status: ok
+    elapsed_ms: 6398
+    avg_time_ns: 6398000000.00
+  - label: biology_170
+    symbol: OP
+    name: bi170
+    target: biology
+    module: systems_biology
+    status: ok
+    elapsed_ms: 2381
+    avg_time_ns: 2381000000.00

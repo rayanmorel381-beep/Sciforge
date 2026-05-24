@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+meteorology_summary,f64,287316,1,6384800000,6384800000,6384800000,0,0.0034804883821297804,tests_total=45 tests_ok=45 tests_failed=0 elapsed_sum_ms=287316 min_ms=823 max_ms=13218 avg_ms=6384.80,meteorology,SUM,ME Summary,meteorology,summary,ok,287316

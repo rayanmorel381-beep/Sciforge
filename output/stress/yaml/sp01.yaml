@@ -1,0 +1,27 @@
+category: sp01
+count: 3
+entries:
+  - label: scientific_properties_001
+    symbol: MPH
+    name: sp001
+    target: scientific_properties
+    module: monotonicity_properties_hold_for_core_models
+    status: ok
+    elapsed_ms: 11572
+    avg_time_ns: 11572000000.00
+  - label: scientific_properties_002
+    symbol: NSH
+    name: sp002
+    target: scientific_properties
+    module: nan_safety_helpers_cover_all_scientific_domains
+    status: ok
+    elapsed_ms: 10875
+    avg_time_ns: 10875000000.00
+  - label: scientific_properties_003
+    symbol: RPS
+    name: sp003
+    target: scientific_properties
+    module: randomized_property_smoke_tests_stay_finite
+    status: ok
+    elapsed_ms: 6389
+    avg_time_ns: 6389000000.00

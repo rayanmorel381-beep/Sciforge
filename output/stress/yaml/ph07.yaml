@@ -1,0 +1,83 @@
+category: ph07
+count: 10
+entries:
+  - label: physics_061
+    symbol: LC
+    name: ph061
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 9953
+    avg_time_ns: 9953000000.00
+  - label: physics_062
+    symbol: PRP
+    name: ph062
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 6498
+    avg_time_ns: 6498000000.00
+  - label: physics_063
+    symbol: TD
+    name: ph063
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 2678
+    avg_time_ns: 2678000000.00
+  - label: physics_064
+    symbol: TDH
+    name: ph064
+    target: physics
+    module: relativity
+    status: ok
+    elapsed_ms: 1904
+    avg_time_ns: 1904000000.00
+  - label: physics_065
+    symbol: HS
+    name: ph065
+    target: physics
+    module: solid_mechanics
+    status: ok
+    elapsed_ms: 4912
+    avg_time_ns: 4912000000.00
+  - label: physics_066
+    symbol: TS
+    name: ph066
+    target: physics
+    module: solid_mechanics
+    status: ok
+    elapsed_ms: 9613
+    avg_time_ns: 9613000000.00
+  - label: physics_067
+    symbol: VM
+    name: ph067
+    target: physics
+    module: solid_mechanics
+    status: ok
+    elapsed_ms: 9547
+    avg_time_ns: 9547000000.00
+  - label: physics_068
+    symbol: BD
+    name: ph068
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 7622
+    avg_time_ns: 7622000000.00
+  - label: physics_069
+    symbol: CE
+    name: ph069
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 7121
+    avg_time_ns: 7121000000.00
+  - label: physics_070
+    symbol: IGP
+    name: ph070
+    target: physics
+    module: thermodynamics
+    status: ok
+    elapsed_ms: 5870
+    avg_time_ns: 5870000000.00

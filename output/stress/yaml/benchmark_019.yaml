@@ -1,0 +1,17 @@
+category: bm02
+symbol: RHD
+name: bm019
+target: benchmark
+module: report
+status: ok
+elapsed_ms: 8218
+experiment_name: benchmark_019
+precision: f64
+elapsed_ms: 8218
+iterations: 1
+avg_time_ns: 8218000000.00
+min_time_ns: 8218000000.00
+max_time_ns: 8218000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.12
+result: success=true code=Some(0) stdout_bytes=154 stderr_bytes=214

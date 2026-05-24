@@ -1,0 +1,83 @@
+category: pr06
+count: 10
+entries:
+  - label: parser_051
+    symbol: TB
+    name: pr051
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 5596
+    avg_time_ns: 5596000000.00
+  - label: parser_052
+    symbol: TEI
+    name: pr052
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 252
+    avg_time_ns: 252000000.00
+  - label: parser_053
+    symbol: TF
+    name: pr053
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4880
+    avg_time_ns: 4880000000.00
+  - label: parser_054
+    symbol: TI
+    name: pr054
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 218
+    avg_time_ns: 218000000.00
+  - label: parser_055
+    symbol: TMD
+    name: pr055
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4969
+    avg_time_ns: 4969000000.00
+  - label: parser_056
+    symbol: TMD
+    name: pr056
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 5102
+    avg_time_ns: 5102000000.00
+  - label: parser_057
+    symbol: TS
+    name: pr057
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 4684
+    avg_time_ns: 4684000000.00
+  - label: parser_058
+    symbol: TT
+    name: pr058
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 9424
+    avg_time_ns: 9424000000.00
+  - label: parser_059
+    symbol: TV
+    name: pr059
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 5677
+    avg_time_ns: 5677000000.00
+  - label: parser_060
+    symbol: TVM
+    name: pr060
+    target: parser
+    module: toml
+    status: ok
+    elapsed_ms: 9716
+    avg_time_ns: 9716000000.00

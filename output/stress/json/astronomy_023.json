@@ -1,0 +1,19 @@
+{
+  "category": "as03",
+  "symbol": "SF",
+  "name": "as023",
+  "target": "astronomy",
+  "module": "cosmology",
+  "status": "ok",
+  "elapsed_ms": "13120",
+  "experiment_name": "astronomy_023",
+  "precision": "f64",
+  "elapsed_ms": 13120,
+  "iterations": 1,
+  "avg_time_ns": 13120000000.00,
+  "min_time_ns": 13120000000.00,
+  "max_time_ns": 13120000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.08,
+  "result": "success=true code=Some(0) stdout_bytes=149 stderr_bytes=423"
+}

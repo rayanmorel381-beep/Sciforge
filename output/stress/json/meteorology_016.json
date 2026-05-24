@@ -1,0 +1,19 @@
+{
+  "category": "me02",
+  "symbol": "HS",
+  "name": "me016",
+  "target": "meteorology",
+  "module": "ocean",
+  "status": "ok",
+  "elapsed_ms": "7702",
+  "experiment_name": "meteorology_016",
+  "precision": "f64",
+  "elapsed_ms": 7702,
+  "iterations": 1,
+  "avg_time_ns": 7702000000.00,
+  "min_time_ns": 7702000000.00,
+  "max_time_ns": 7702000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.13,
+  "result": "success=true code=Some(0) stdout_bytes=149 stderr_bytes=270"
+}

@@ -1,0 +1,19 @@
+{
+  "category": "benchmark",
+  "symbol": "SUM",
+  "name": "BM Summary",
+  "target": "benchmark",
+  "module": "summary",
+  "status": "ok",
+  "elapsed_ms": "204214",
+  "experiment_name": "benchmark_summary",
+  "precision": "f64",
+  "elapsed_ms": 204214,
+  "iterations": 1,
+  "avg_time_ns": 6381687500.00,
+  "min_time_ns": 6381687500.00,
+  "max_time_ns": 6381687500.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "tests_total=32 tests_ok=32 tests_failed=0 elapsed_sum_ms=204214 min_ms=66 max_ms=9565 avg_ms=6381.69"
+}

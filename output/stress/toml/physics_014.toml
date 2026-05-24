@@ -1,0 +1,18 @@
+[benchmark]
+category = "ph02"
+symbol = "CPP"
+name = "ph014"
+target = "physics"
+module = "electromagnetism"
+status = "ok"
+elapsed_ms = "6870"
+experiment_name = "physics_014"
+precision = "f64"
+elapsed_ms = 6870
+iterations = 1
+avg_time_ns = 6870000000.00
+min_time_ns = 6870000000.00
+max_time_ns = 6870000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.15
+result = "success=true code=Some(0) stdout_bytes=170 stderr_bytes=262"

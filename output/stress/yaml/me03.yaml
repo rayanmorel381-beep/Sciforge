@@ -1,0 +1,83 @@
+category: me03
+count: 10
+entries:
+  - label: meteorology_021
+    symbol: API
+    name: me021
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 1551
+    avg_time_ns: 1551000000.00
+  - label: meteorology_022
+    symbol: IDF
+    name: me022
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 3096
+    avg_time_ns: 3096000000.00
+  - label: meteorology_023
+    symbol: PE
+    name: me023
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 11063
+    avg_time_ns: 11063000000.00
+  - label: meteorology_024
+    symbol: RR
+    name: me024
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 1388
+    avg_time_ns: 1388000000.00
+  - label: meteorology_025
+    symbol: RRM
+    name: me025
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 11591
+    avg_time_ns: 11591000000.00
+  - label: meteorology_026
+    symbol: SCN
+    name: me026
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 1580
+    avg_time_ns: 1580000000.00
+  - label: meteorology_027
+    symbol: TVR
+    name: me027
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 1112
+    avg_time_ns: 1112000000.00
+  - label: meteorology_028
+    symbol: TP
+    name: me028
+    target: meteorology
+    module: precipitation
+    status: ok
+    elapsed_ms: 1009
+    avg_time_ns: 1009000000.00
+  - label: meteorology_029
+    symbol: AR
+    name: me029
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 3164
+    avg_time_ns: 3164000000.00
+  - label: meteorology_030
+    symbol: ET
+    name: me030
+    target: meteorology
+    module: radiation
+    status: ok
+    elapsed_ms: 9482
+    avg_time_ns: 9482000000.00

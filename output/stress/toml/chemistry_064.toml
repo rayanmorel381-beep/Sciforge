@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch07"
+symbol = "QV"
+name = "ch064"
+target = "chemistry"
+module = "nuclear"
+status = "ok"
+elapsed_ms = "6635"
+experiment_name = "chemistry_064"
+precision = "f64"
+elapsed_ms = 6635
+iterations = 1
+avg_time_ns = 6635000000.00
+min_time_ns = 6635000000.00
+max_time_ns = 6635000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.15
+result = "success=true code=Some(0) stdout_bytes=143 stderr_bytes=318"

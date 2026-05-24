@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+parser_031,f64,5180,1,5180000000,5180000000,5180000000,0,0.19305019305019305,success=true code=Some(0) stdout_bytes=146 stderr_bytes=260,pr04,JMD,pr031,parser,json,ok,5180
+parser_032,f64,918,1,918000000,918000000,918000000,0,1.0893246187363834,success=true code=Some(0) stdout_bytes=151 stderr_bytes=208,pr04,JNF,pr032,parser,json,ok,918
+parser_033,f64,5964,1,5964000000,5964000000,5964000000,0,0.1676727028839705,success=true code=Some(0) stdout_bytes=141 stderr_bytes=208,pr04,JN,pr033,parser,json,ok,5964
+parser_034,f64,8504,1,8504000000,8504000000,8504000000,0,0.11759172154280338,success=true code=Some(0) stdout_bytes=143 stderr_bytes=260,pr04,JN,pr034,parser,json,ok,8504
+parser_035,f64,9375,1,9375000000,9375000000,9375000000,0,0.10666666666666667,success=true code=Some(0) stdout_bytes=143 stderr_bytes=260,pr04,JO,pr035,parser,json,ok,9375
+parser_036,f64,9303,1,9303000000,9303000000,9303000000,0,0.10749220681500592,success=true code=Some(0) stdout_bytes=143 stderr_bytes=208,pr04,JS,pr036,parser,json,ok,9303
+parser_037,f64,9338,1,9338000000,9338000000,9338000000,0,0.10708931248661384,success=true code=Some(0) stdout_bytes=145 stderr_bytes=260,pr04,JT,pr037,parser,json,ok,9338
+parser_038,f64,1125,1,1125000000,1125000000,1125000000,0,0.8888888888888888,success=true code=Some(0) stdout_bytes=152 stderr_bytes=260,pr04,JVN,pr038,parser,json,ok,1125
+parser_039,f64,8659,1,8659000000,8659000000,8659000000,0,0.11548677676406051,success=true code=Some(0) stdout_bytes=150 stderr_bytes=208,pr04,JVM,pr039,parser,json,ok,8659
+parser_040,f64,8610,1,8610000000,8610000000,8610000000,0,0.11614401858304298,success=true code=Some(0) stdout_bytes=149 stderr_bytes=208,pr04,MB,pr040,parser,markdown,ok,8610

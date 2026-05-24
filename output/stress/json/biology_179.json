@@ -1,0 +1,19 @@
+{
+  "category": "bi18",
+  "symbol": "TW",
+  "name": "bi179",
+  "target": "biology",
+  "module": "toxicology",
+  "status": "ok",
+  "elapsed_ms": "10311",
+  "experiment_name": "biology_179",
+  "precision": "f64",
+  "elapsed_ms": 10311,
+  "iterations": 1,
+  "avg_time_ns": 10311000000.00,
+  "min_time_ns": 10311000000.00,
+  "max_time_ns": 10311000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.10,
+  "result": "success=true code=Some(0) stdout_bytes=157 stderr_bytes=210"
+}

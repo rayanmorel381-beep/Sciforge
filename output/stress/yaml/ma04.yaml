@@ -1,0 +1,83 @@
+category: ma04
+count: 10
+entries:
+  - label: maths_031
+    symbol: PZ
+    name: ma031
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 4902
+    avg_time_ns: 4902000000.00
+  - label: maths_032
+    symbol: QP
+    name: ma032
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 5032
+    avg_time_ns: 5032000000.00
+  - label: maths_033
+    symbol: TZ
+    name: ma033
+    target: maths
+    module: misc
+    status: ok
+    elapsed_ms: 4931
+    avg_time_ns: 4931000000.00
+  - label: maths_034
+    symbol: HT
+    name: ma034
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 6114
+    avg_time_ns: 6114000000.00
+  - label: maths_035
+    symbol: PDD
+    name: ma035
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 4481
+    avg_time_ns: 4481000000.00
+  - label: maths_036
+    symbol: SR
+    name: ma036
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 6184
+    avg_time_ns: 6184000000.00
+  - label: maths_037
+    symbol: SD
+    name: ma037
+    target: maths
+    module: non_euclidean
+    status: ok
+    elapsed_ms: 6464
+    avg_time_ns: 6464000000.00
+  - label: maths_038
+    symbol: OE
+    name: ma038
+    target: maths
+    module: ode
+    status: ok
+    elapsed_ms: 6089
+    avg_time_ns: 6089000000.00
+  - label: maths_039
+    symbol: La
+    name: ma039
+    target: maths
+    module: optimization
+    status: ok
+    elapsed_ms: 5102
+    avg_time_ns: 5102000000.00
+  - label: maths_040
+    symbol: PB
+    name: ma040
+    target: maths
+    module: optimization
+    status: ok
+    elapsed_ms: 9202
+    avg_time_ns: 9202000000.00

@@ -1,0 +1,3 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+hub_081,f64,282,1,282000000,282000000,282000000,0,3.5460992907801416,success=true code=Some(0) stdout_bytes=150 stderr_bytes=254,hb09,RUR,hb081,hub,tools,ok,282
+hub_082,f64,11515,1,11515000000,11515000000,11515000000,0,0.08684324793747286,success=true code=Some(0) stdout_bytes=157 stderr_bytes=411,hb09,SPI,hb082,hub,tools,ok,11515

@@ -1,0 +1,17 @@
+category: bi06
+symbol: MRK
+name: bi058
+target: biology
+module: dispatch
+status: ok
+elapsed_ms: 2977
+experiment_name: biology_058
+precision: f64
+elapsed_ms: 2977
+iterations: 1
+avg_time_ns: 2977000000.00
+min_time_ns: 2977000000.00
+max_time_ns: 2977000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.34
+result: success=true code=Some(0) stdout_bytes=159 stderr_bytes=314

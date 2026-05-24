@@ -1,0 +1,19 @@
+{
+  "category": "bi02",
+  "symbol": "LDG",
+  "name": "bi014",
+  "target": "biology",
+  "module": "biogeography",
+  "status": "ok",
+  "elapsed_ms": "11842",
+  "experiment_name": "biology_014",
+  "precision": "f64",
+  "elapsed_ms": 11842,
+  "iterations": 1,
+  "avg_time_ns": 11842000000.00,
+  "min_time_ns": 11842000000.00,
+  "max_time_ns": 11842000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.08,
+  "result": "success=true code=Some(0) stdout_bytes=171 stderr_bytes=419"
+}

@@ -1,0 +1,83 @@
+category: hb02
+count: 10
+entries:
+  - label: hub_011
+    symbol: EL
+    name: hb011
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 236
+    avg_time_ns: 236000000.00
+  - label: hub_012
+    symbol: HT
+    name: hb012
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1333
+    avg_time_ns: 1333000000.00
+  - label: hub_013
+    symbol: SR
+    name: hb013
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 12419
+    avg_time_ns: 12419000000.00
+  - label: hub_014
+    symbol: AOD
+    name: hb014
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 12665
+    avg_time_ns: 12665000000.00
+  - label: hub_015
+    symbol: CD
+    name: hb015
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 12653
+    avg_time_ns: 12653000000.00
+  - label: hub_016
+    symbol: HLC
+    name: hb016
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1557
+    avg_time_ns: 1557000000.00
+  - label: hub_017
+    symbol: PR
+    name: hb017
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 738
+    avg_time_ns: 738000000.00
+  - label: hub_018
+    symbol: DAL
+    name: hb018
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 1234
+    avg_time_ns: 1234000000.00
+  - label: hub_019
+    symbol: PAA
+    name: hb019
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 9893
+    avg_time_ns: 9893000000.00
+  - label: hub_020
+    symbol: SBF
+    name: hb020
+    target: hub
+    module: cross_domain
+    status: ok
+    elapsed_ms: 6751
+    avg_time_ns: 6751000000.00

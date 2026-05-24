@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+chemistry_011,f64,7604,1,7604000000,7604000000,7604000000,0,0.1315097317201473,success=true code=Some(0) stdout_bytes=155 stderr_bytes=214,ch02,RF,ch011,chemistry,analytical,ok,7604
+chemistry_012,f64,6225,1,6225000000,6225000000,6225000000,0,0.1606425702811245,success=true code=Some(0) stdout_bytes=154 stderr_bytes=266,ch02,STN,ch012,chemistry,analytical,ok,6225
+chemistry_013,f64,11111,1,11111000000,11111000000,11111000000,0,0.09000090000900009,success=true code=Some(0) stdout_bytes=167 stderr_bytes=319,ch02,BDC,ch013,chemistry,colloids,ok,11111
+chemistry_014,f64,6053,1,6053000000,6053000000,6053000000,0,0.16520733520568312,success=true code=Some(0) stdout_bytes=157 stderr_bytes=266,ch02,SS,ch014,chemistry,colloids,ok,6053
+chemistry_015,f64,1370,1,1370000000,1370000000,1370000000,0,0.7299270072992701,success=true code=Some(0) stdout_bytes=164 stderr_bytes=318,ch02,ZPS,ch015,chemistry,colloids,ok,1370
+chemistry_016,f64,9848,1,9848000000,9848000000,9848000000,0,0.10154346060113728,success=true code=Some(0) stdout_bytes=160 stderr_bytes=214,ch02,DHE,ch016,chemistry,computational,ok,9848
+chemistry_017,f64,7716,1,7716000000,7716000000,7716000000,0,0.12960082944530846,success=true code=Some(0) stdout_bytes=160 stderr_bytes=214,ch02,GP,ch017,chemistry,computational,ok,7716
+chemistry_018,f64,558,1,558000000,558000000,558000000,0,1.7921146953405018,success=true code=Some(0) stdout_bytes=169 stderr_bytes=209,ch02,TFK,ch018,chemistry,computational,ok,558
+chemistry_019,f64,10473,1,10473000000,10473000000,10473000000,0,0.09548362455838824,success=true code=Some(0) stdout_bytes=153 stderr_bytes=267,ch02,BL,ch019,chemistry,crystallography,ok,10473
+chemistry_020,f64,7207,1,7207000000,7207000000,7207000000,0,0.13875398917718884,success=true code=Some(0) stdout_bytes=169 stderr_bytes=214,ch02,ISC,ch020,chemistry,crystallography,ok,7207

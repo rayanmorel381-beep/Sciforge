@@ -1,0 +1,18 @@
+[benchmark]
+category = "pr05"
+symbol = "MVE"
+name = "pr046"
+target = "parser"
+module = "markdown"
+status = "ok"
+elapsed_ms = "5139"
+experiment_name = "parser_046"
+precision = "f64"
+elapsed_ms = 5139
+iterations = 1
+avg_time_ns = 5139000000.00
+min_time_ns = 5139000000.00
+max_time_ns = 5139000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.19
+result = "success=true code=Some(0) stdout_bytes=153 stderr_bytes=312"

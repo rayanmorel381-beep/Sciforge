@@ -1,0 +1,19 @@
+{
+  "category": "pr07",
+  "symbol": "YTN",
+  "name": "pr070",
+  "target": "parser",
+  "module": "yaml",
+  "status": "ok",
+  "elapsed_ms": "5746",
+  "experiment_name": "parser_070",
+  "precision": "f64",
+  "elapsed_ms": 5746,
+  "iterations": 1,
+  "avg_time_ns": 5746000000.00,
+  "min_time_ns": 5746000000.00,
+  "max_time_ns": 5746000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.17,
+  "result": "success=true code=Some(0) stdout_bytes=147 stderr_bytes=260"
+}

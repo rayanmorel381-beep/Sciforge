@@ -1,0 +1,19 @@
+{
+  "category": "hb06",
+  "symbol": "HUP",
+  "name": "hb052",
+  "target": "hub",
+  "module": "cross_domain",
+  "status": "ok",
+  "elapsed_ms": "773",
+  "experiment_name": "hub_052",
+  "precision": "f64",
+  "elapsed_ms": 773,
+  "iterations": 1,
+  "avg_time_ns": 773000000.00,
+  "min_time_ns": 773000000.00,
+  "max_time_ns": 773000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1.29,
+  "result": "success=true code=Some(0) stdout_bytes=193 stderr_bytes=306"
+}

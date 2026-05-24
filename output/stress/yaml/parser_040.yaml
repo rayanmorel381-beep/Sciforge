@@ -1,0 +1,17 @@
+category: pr04
+symbol: MB
+name: pr040
+target: parser
+module: markdown
+status: ok
+elapsed_ms: 8610
+experiment_name: parser_040
+precision: f64
+elapsed_ms: 8610
+iterations: 1
+avg_time_ns: 8610000000.00
+min_time_ns: 8610000000.00
+max_time_ns: 8610000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.12
+result: success=true code=Some(0) stdout_bytes=149 stderr_bytes=208

@@ -1,0 +1,17 @@
+category: ma04
+symbol: PDD
+name: ma035
+target: maths
+module: non_euclidean
+status: ok
+elapsed_ms: 4481
+experiment_name: maths_035
+precision: f64
+elapsed_ms: 4481
+iterations: 1
+avg_time_ns: 4481000000.00
+min_time_ns: 4481000000.00
+max_time_ns: 4481000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.22
+result: success=true code=Some(0) stdout_bytes=163 stderr_bytes=258

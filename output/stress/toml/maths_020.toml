@@ -1,0 +1,18 @@
+[benchmark]
+category = "ma02"
+symbol = "Di"
+name = "ma020"
+target = "maths"
+module = "graph"
+status = "ok"
+elapsed_ms = "5761"
+experiment_name = "maths_020"
+precision = "f64"
+elapsed_ms = 5761
+iterations = 1
+avg_time_ns = 5761000000.00
+min_time_ns = 5761000000.00
+max_time_ns = 5761000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.17
+result = "success=true code=Some(0) stdout_bytes=141 stderr_bytes=258"

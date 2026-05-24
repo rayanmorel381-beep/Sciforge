@@ -1,0 +1,11 @@
+category: physics
+count: 1
+entries:
+  - label: physics_summary
+    symbol: SUM
+    name: PH Summary
+    target: physics
+    module: summary
+    status: ok
+    elapsed_ms: 507411
+    avg_time_ns: 6950835616.44

@@ -1,0 +1,19 @@
+{
+  "category": "bi09",
+  "symbol": "TS",
+  "name": "bi083",
+  "target": "biology",
+  "module": "ethology",
+  "status": "ok",
+  "elapsed_ms": "956",
+  "experiment_name": "biology_083",
+  "precision": "f64",
+  "elapsed_ms": 956,
+  "iterations": 1,
+  "avg_time_ns": 956000000.00,
+  "min_time_ns": 956000000.00,
+  "max_time_ns": 956000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1.05,
+  "result": "success=true code=Some(0) stdout_bytes=151 stderr_bytes=262"
+}

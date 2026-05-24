@@ -1,0 +1,19 @@
+{
+  "category": "as01",
+  "symbol": "AUF",
+  "name": "as008",
+  "target": "astronomy",
+  "module": "cosmology",
+  "status": "ok",
+  "elapsed_ms": "5206",
+  "experiment_name": "astronomy_008",
+  "precision": "f64",
+  "elapsed_ms": 5206,
+  "iterations": 1,
+  "avg_time_ns": 5206000000.00,
+  "min_time_ns": 5206000000.00,
+  "max_time_ns": 5206000000.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.19,
+  "result": "success=true code=Some(0) stdout_bytes=177 stderr_bytes=318"
+}

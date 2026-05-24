@@ -1,0 +1,17 @@
+category: ge03
+symbol: SP
+name: ge023
+target: geology
+module: hydrology
+status: ok
+elapsed_ms: 10840
+experiment_name: geology_023
+precision: f64
+elapsed_ms: 10840
+iterations: 1
+avg_time_ns: 10840000000.00
+min_time_ns: 10840000000.00
+max_time_ns: 10840000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.09
+result: success=true code=Some(0) stdout_bytes=149 stderr_bytes=263

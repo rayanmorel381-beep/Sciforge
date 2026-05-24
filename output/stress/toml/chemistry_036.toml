@@ -1,0 +1,18 @@
+[benchmark]
+category = "ch04"
+symbol = "HLS"
+name = "ch036"
+target = "chemistry"
+module = "environmental"
+status = "ok"
+elapsed_ms = "7682"
+experiment_name = "chemistry_036"
+precision = "f64"
+elapsed_ms = 7682
+iterations = 1
+avg_time_ns = 7682000000.00
+min_time_ns = 7682000000.00
+max_time_ns = 7682000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.13
+result = "success=true code=Some(0) stdout_bytes=162 stderr_bytes=214"

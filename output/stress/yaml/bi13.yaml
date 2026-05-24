@@ -1,0 +1,83 @@
+category: bi13
+count: 10
+entries:
+  - label: biology_121
+    symbol: ER
+    name: bi121
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 10336
+    avg_time_ns: 10336000000.00
+  - label: biology_122
+    symbol: NDR
+    name: bi122
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 813
+    avg_time_ns: 813000000.00
+  - label: biology_123
+    symbol: RA
+    name: bi123
+    target: biology
+    module: paleobiology
+    status: ok
+    elapsed_ms: 10398
+    avg_time_ns: 10398000000.00
+  - label: biology_124
+    symbol: FOI
+    name: bi124
+    target: biology
+    module: parasitology
+    status: ok
+    elapsed_ms: 7742
+    avg_time_ns: 7742000000.00
+  - label: biology_125
+    symbol: PR
+    name: bi125
+    target: biology
+    module: parasitology
+    status: ok
+    elapsed_ms: 3397
+    avg_time_ns: 3397000000.00
+  - label: biology_126
+    symbol: VBR
+    name: bi126
+    target: biology
+    module: parasitology
+    status: ok
+    elapsed_ms: 1900
+    avg_time_ns: 1900000000.00
+  - label: biology_127
+    symbol: Bi
+    name: bi127
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 11002
+    avg_time_ns: 11002000000.00
+  - label: biology_128
+    symbol: DRH
+    name: bi128
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 10107
+    avg_time_ns: 10107000000.00
+  - label: biology_129
+    symbol: HL
+    name: bi129
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 9922
+    avg_time_ns: 9922000000.00
+  - label: biology_130
+    symbol: TI
+    name: bi130
+    target: biology
+    module: pharmacology
+    status: ok
+    elapsed_ms: 11098
+    avg_time_ns: 11098000000.00

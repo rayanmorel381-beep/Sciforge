@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+biology_001,f64,5045,1,5045000000,5045000000,5045000000,0,0.19821605550049554,success=true code=Some(0) stdout_bytes=162 stderr_bytes=262,bi01,CRL,bi001,biology,aging,ok,5045
+biology_002,f64,12268,1,12268000000,12268000000,12268000000,0,0.0815128790348875,success=true code=Some(0) stdout_bytes=157 stderr_bytes=419,bi01,GMR,bi002,biology,aging,ok,12268
+biology_003,f64,12805,1,12805000000,12805000000,12805000000,0,0.07809449433814916,success=true code=Some(0) stdout_bytes=154 stderr_bytes=419,bi01,MD,bi003,biology,aging,ok,12805
+biology_004,f64,11434,1,11434000000,11434000000,11434000000,0,0.08745845723281441,success=true code=Some(0) stdout_bytes=150 stderr_bytes=367,bi01,RSS,bi004,biology,aging,ok,11434
+biology_005,f64,1904,1,1904000000,1904000000,1904000000,0,0.5252100840336135,success=true code=Some(0) stdout_bytes=153 stderr_bytes=262,bi01,TS,bi005,biology,aging,ok,1904
+biology_006,f64,12849,1,12849000000,12849000000,12849000000,0,0.07782706825433885,success=true code=Some(0) stdout_bytes=164 stderr_bytes=419,bi01,CES,bi006,biology,bioelectricity,ok,12849
+biology_007,f64,2548,1,2548000000,2548000000,2548000000,0,0.3924646781789639,success=true code=Some(0) stdout_bytes=162 stderr_bytes=314,bi01,EL,bi007,biology,bioelectricity,ok,2548
+biology_008,f64,11226,1,11226000000,11226000000,11226000000,0,0.08907892392659897,success=true code=Some(0) stdout_bytes=159 stderr_bytes=367,bi01,IT,bi008,biology,bioelectricity,ok,11226
+biology_009,f64,9574,1,9574000000,9574000000,9574000000,0,0.10444955086693128,success=true code=Some(0) stdout_bytes=166 stderr_bytes=262,bi01,SDW,bi009,biology,bioelectricity,ok,9574
+biology_010,f64,12208,1,12208000000,12208000000,12208000000,0,0.08191349934469201,success=true code=Some(0) stdout_bytes=165 stderr_bytes=419,bi01,AEC,bi010,biology,bioenergetics,ok,12208

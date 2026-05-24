@@ -1,0 +1,17 @@
+category: ge04
+symbol: SE
+name: ge038
+target: geology
+module: seismology
+status: ok
+elapsed_ms: 10923
+experiment_name: geology_038
+precision: f64
+elapsed_ms: 10923
+iterations: 1
+avg_time_ns: 10923000000.00
+min_time_ns: 10923000000.00
+max_time_ns: 10923000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.09
+result: success=true code=Some(0) stdout_bytes=152 stderr_bytes=315

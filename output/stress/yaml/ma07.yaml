@@ -1,0 +1,83 @@
+category: ma07
+count: 10
+entries:
+  - label: maths_061
+    symbol: MPI
+    name: ma061
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 10035
+    avg_time_ns: 10035000000.00
+  - label: maths_062
+    symbol: SDB
+    name: ma062
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 9264
+    avg_time_ns: 9264000000.00
+  - label: maths_063
+    symbol: WM
+    name: ma063
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 9590
+    avg_time_ns: 9590000000.00
+  - label: maths_064
+    symbol: WMS
+    name: ma064
+    target: maths
+    module: statistics
+    status: ok
+    elapsed_ms: 6419
+    avg_time_ns: 6419000000.00
+  - label: maths_065
+    symbol: TC
+    name: ma065
+    target: maths
+    module: tensor
+    status: ok
+    elapsed_ms: 9890
+    avg_time_ns: 9890000000.00
+  - label: maths_066
+    symbol: TD
+    name: ma066
+    target: maths
+    module: tensor
+    status: ok
+    elapsed_ms: 10043
+    avg_time_ns: 10043000000.00
+  - label: maths_067
+    symbol: TR
+    name: ma067
+    target: maths
+    module: tensor
+    status: ok
+    elapsed_ms: 4527
+    avg_time_ns: 4527000000.00
+  - label: maths_068
+    symbol: VD
+    name: ma068
+    target: maths
+    module: vector
+    status: ok
+    elapsed_ms: 5748
+    avg_time_ns: 5748000000.00
+  - label: maths_069
+    symbol: VL
+    name: ma069
+    target: maths
+    module: vector
+    status: ok
+    elapsed_ms: 218
+    avg_time_ns: 218000000.00
+  - label: maths_070
+    symbol: VP
+    name: ma070
+    target: maths
+    module: vector
+    status: ok
+    elapsed_ms: 6118
+    avg_time_ns: 6118000000.00

@@ -1,0 +1,17 @@
+category: ch02
+symbol: RF
+name: ch011
+target: chemistry
+module: analytical
+status: ok
+elapsed_ms: 7604
+experiment_name: chemistry_011
+precision: f64
+elapsed_ms: 7604
+iterations: 1
+avg_time_ns: 7604000000.00
+min_time_ns: 7604000000.00
+max_time_ns: 7604000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.13
+result: success=true code=Some(0) stdout_bytes=155 stderr_bytes=214

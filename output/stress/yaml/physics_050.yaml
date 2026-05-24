@@ -1,0 +1,17 @@
+category: ph05
+symbol: FSC
+name: ph050
+target: physics
+module: particle
+status: ok
+elapsed_ms: 7680
+experiment_name: physics_050
+precision: f64
+elapsed_ms: 7680
+iterations: 1
+avg_time_ns: 7680000000.00
+min_time_ns: 7680000000.00
+max_time_ns: 7680000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.13
+result: success=true code=Some(0) stdout_bytes=159 stderr_bytes=210

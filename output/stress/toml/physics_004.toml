@@ -1,0 +1,18 @@
+[benchmark]
+category = "ph01"
+symbol = "SOS"
+name = "ph004"
+target = "physics"
+module = "acoustics"
+status = "ok"
+elapsed_ms = "5818"
+experiment_name = "physics_004"
+precision = "f64"
+elapsed_ms = 5818
+iterations = 1
+avg_time_ns = 5818000000.00
+min_time_ns = 5818000000.00
+max_time_ns = 5818000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.17
+result = "success=true code=Some(0) stdout_bytes=155 stderr_bytes=366"

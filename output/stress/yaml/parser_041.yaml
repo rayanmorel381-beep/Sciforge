@@ -1,0 +1,17 @@
+category: pr05
+symbol: MCB
+name: pr041
+target: parser
+module: markdown
+status: ok
+elapsed_ms: 8620
+experiment_name: parser_041
+precision: f64
+elapsed_ms: 8620
+iterations: 1
+avg_time_ns: 8620000000.00
+min_time_ns: 8620000000.00
+max_time_ns: 8620000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.12
+result: success=true code=Some(0) stdout_bytes=149 stderr_bytes=260

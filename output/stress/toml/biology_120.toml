@@ -1,0 +1,18 @@
+[benchmark]
+category = "bi12"
+symbol = "ERD"
+name = "bi120"
+target = "biology"
+module = "paleobiology"
+status = "ok"
+elapsed_ms = "2740"
+experiment_name = "biology_120"
+precision = "f64"
+elapsed_ms = 2740
+iterations = 1
+avg_time_ns = 2740000000.00
+min_time_ns = 2740000000.00
+max_time_ns = 2740000000.00
+time_stddev = 0.0000
+iterations_per_sec = 0.36
+result = "success=true code=Some(0) stdout_bytes=165 stderr_bytes=262"

@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,target,module,status,elapsed_ms
+meteorology_031,f64,5168,1,5168000000,5168000000,5168000000,0,0.19349845201238391,success=true code=Some(0) stdout_bytes=152 stderr_bytes=426,me04,PF,me031,meteorology,radiation,ok,5168
+meteorology_032,f64,11019,1,11019000000,11019000000,11019000000,0,0.09075233687267448,success=true code=Some(0) stdout_bytes=158 stderr_bytes=375,me04,RFC,me032,meteorology,radiation,ok,11019
+meteorology_033,f64,12520,1,12520000000,12520000000,12520000000,0,0.07987220447284345,success=true code=Some(0) stdout_bytes=189 stderr_bytes=375,me04,RFC,me033,meteorology,radiation,ok,12520
+meteorology_034,f64,12679,1,12679000000,12679000000,12679000000,0,0.07887057338906854,success=true code=Some(0) stdout_bytes=158 stderr_bytes=375,me04,SBF,me034,meteorology,radiation,ok,12679
+meteorology_035,f64,11862,1,11862000000,11862000000,11862000000,0,0.08430281571404485,success=true code=Some(0) stdout_bytes=191 stderr_bytes=427,me04,SBF,me035,meteorology,radiation,ok,11862
+meteorology_036,f64,2455,1,2455000000,2455000000,2455000000,0,0.4073319755600815,success=true code=Some(0) stdout_bytes=156 stderr_bytes=374,me04,CPB,me036,meteorology,storms,ok,2455
+meteorology_037,f64,3011,1,3011000000,3011000000,3011000000,0,0.33211557622052473,success=true code=Some(0) stdout_bytes=159 stderr_bytes=270,me04,CZF,me037,meteorology,storms,ok,3011
+meteorology_038,f64,5313,1,5313000000,5313000000,5313000000,0,0.18821757952192736,success=true code=Some(0) stdout_bytes=146 stderr_bytes=270,me04,FS,me038,meteorology,storms,ok,5313
+meteorology_039,f64,2130,1,2130000000,2130000000,2130000000,0,0.4694835680751174,success=true code=Some(0) stdout_bytes=166 stderr_bytes=322,me04,FSI,me039,meteorology,storms,ok,2130
+meteorology_040,f64,2652,1,2652000000,2652000000,2652000000,0,0.3770739064856712,success=true code=Some(0) stdout_bytes=153 stderr_bytes=270,me04,PI,me040,meteorology,storms,ok,2652

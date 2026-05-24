@@ -1,0 +1,17 @@
+category: bi10
+symbol: HIF
+name: bi098
+target: biology
+module: immunology
+status: ok
+elapsed_ms: 1195
+experiment_name: biology_098
+precision: f64
+elapsed_ms: 1195
+iterations: 1
+avg_time_ns: 1195000000.00
+min_time_ns: 1195000000.00
+max_time_ns: 1195000000.00
+time_stddev: 0.0000
+iterations_per_sec: 0.84
+result: success=true code=Some(0) stdout_bytes=161 stderr_bytes=314
