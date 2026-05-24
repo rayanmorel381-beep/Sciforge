@@ -1,0 +1,10 @@
+[package]
+name = "sciforge-heavy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Heavy / industrial machinery: construction, mining, agriculture, port equipment."
+
+[dependencies]
+sciforge-hub.workspace = true
+sciforge-core.workspace = true

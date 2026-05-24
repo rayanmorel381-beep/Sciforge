@@ -1,0 +1,15 @@
+category: precipitation
+symbol: RRM
+name: Rain rate marshall palmer
+domain: meteorology
+test: "precipitation::rain_rate_marshall_palmer"
+experiment_name: "precipitation::rain_rate_marshall_palmer"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1713723.00
+min_time_ns: 1713723.00
+max_time_ns: 1713723.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

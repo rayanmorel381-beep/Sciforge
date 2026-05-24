@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+probability::monte_carlo_pi,f64,3,1,3564017,3564017,3564017,0,333.3333333333333,pass,probability,MCP,Monte carlo pi,maths,probability::monte_carlo_pi
+probability::prob_exponential_cdf,f64,1,1,1865943,1865943,1865943,0,1000,pass,probability,PEC,Prob exponential cdf,maths,probability::prob_exponential_cdf
+probability::prob_normal_pdf,f64,2,1,2083054,2083054,2083054,0,500,pass,probability,PNP,Prob normal pdf,maths,probability::prob_normal_pdf

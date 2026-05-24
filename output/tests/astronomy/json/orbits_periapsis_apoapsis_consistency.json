@@ -1,0 +1,17 @@
+{
+  "category": "orbits",
+  "symbol": "PAC",
+  "name": "Periapsis apoapsis consistency",
+  "domain": "astronomy",
+  "test": "orbits::periapsis_apoapsis_consistency",
+  "experiment_name": "orbits::periapsis_apoapsis_consistency",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1864543.00,
+  "min_time_ns": 1864543.00,
+  "max_time_ns": 1864543.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

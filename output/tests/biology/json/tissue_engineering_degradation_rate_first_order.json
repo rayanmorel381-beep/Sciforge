@@ -1,0 +1,17 @@
+{
+  "category": "tissue_engineering",
+  "symbol": "DRF",
+  "name": "Degradation rate first order",
+  "domain": "biology",
+  "test": "tissue_engineering::degradation_rate_first_order",
+  "experiment_name": "tissue_engineering::degradation_rate_first_order",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2529315.00,
+  "min_time_ns": 2529315.00,
+  "max_time_ns": 2529315.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

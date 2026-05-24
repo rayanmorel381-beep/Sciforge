@@ -1,0 +1,17 @@
+{
+  "category": "cryobiology",
+  "symbol": "FPD",
+  "name": "Freezing point depression",
+  "domain": "biology",
+  "test": "cryobiology::freezing_point_depression",
+  "experiment_name": "cryobiology::freezing_point_depression",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2068044.00,
+  "min_time_ns": 2068044.00,
+  "max_time_ns": 2068044.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

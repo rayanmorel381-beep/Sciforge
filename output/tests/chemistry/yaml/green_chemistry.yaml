@@ -1,0 +1,21 @@
+category: green_chemistry
+count: 3
+entries:
+  - label: green_chemistry_e_factor
+    symbol: EF
+    name: E factor
+    domain: chemistry
+    test: "green_chemistry::e_factor"
+    avg_time_ns: 1989264.00
+  - label: green_chemistry_gc_atom_economy
+    symbol: GAE
+    name: Gc atom economy
+    domain: chemistry
+    test: "green_chemistry::gc_atom_economy"
+    avg_time_ns: 2443184.00
+  - label: green_chemistry_reaction_mass_efficiency
+    symbol: RME
+    name: Reaction mass efficiency
+    domain: chemistry
+    test: "green_chemistry::reaction_mass_efficiency"
+    avg_time_ns: 2343375.00

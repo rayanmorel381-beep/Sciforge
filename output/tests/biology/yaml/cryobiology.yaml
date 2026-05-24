@@ -1,0 +1,27 @@
+category: cryobiology
+count: 4
+entries:
+  - label: cryobiology_critical_cooling_rate
+    symbol: CCR
+    name: Critical cooling rate
+    domain: biology
+    test: "cryobiology::critical_cooling_rate"
+    avg_time_ns: 2153914.00
+  - label: cryobiology_freezing_point_depression
+    symbol: FPD
+    name: Freezing point depression
+    domain: biology
+    test: "cryobiology::freezing_point_depression"
+    avg_time_ns: 2068044.00
+  - label: cryobiology_storage_decay_arrhenius
+    symbol: SDA
+    name: Storage decay arrhenius
+    domain: biology
+    test: "cryobiology::storage_decay_arrhenius"
+    avg_time_ns: 2089743.00
+  - label: cryobiology_vitrification_probability
+    symbol: VP
+    name: Vitrification probability
+    domain: biology
+    test: "cryobiology::vitrification_probability"
+    avg_time_ns: 2123324.00

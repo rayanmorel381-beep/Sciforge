@@ -1,0 +1,17 @@
+{
+  "category": "acid_base",
+  "symbol": "PSB",
+  "name": "Ph strong base",
+  "domain": "chemistry",
+  "test": "acid_base::ph_strong_base",
+  "experiment_name": "acid_base::ph_strong_base",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2761065.00,
+  "min_time_ns": 2761065.00,
+  "max_time_ns": 2761065.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

@@ -1,0 +1,15 @@
+[
+{
+  "k": "v",
+  "experiment_name": "entry_test",
+  "precision": "f64",
+  "elapsed_ms": 0,
+  "iterations": 50,
+  "avg_time_ns": 16.40,
+  "min_time_ns": 16.40,
+  "max_time_ns": 16.40,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 0.00,
+  "result": "test_result"
+}
+]

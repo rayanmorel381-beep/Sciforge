@@ -1,0 +1,16 @@
+[benchmark]
+category = "spectroscopy"
+symbol = "WTW"
+name = "Wavenumber to wavelength"
+domain = "chemistry"
+test = "spectroscopy::wavenumber_to_wavelength"
+experiment_name = "spectroscopy::wavenumber_to_wavelength"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2003593.00
+min_time_ns = 2003593.00
+max_time_ns = 2003593.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

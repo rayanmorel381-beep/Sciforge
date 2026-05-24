@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+chronobiology::circadian_amplitude_damping,f64,2,1,2063624,2063624,2063624,0,500,pass,chronobiology,CAD,Circadian amplitude damping,biology,chronobiology::circadian_amplitude_damping
+chronobiology::jet_lag_recovery,f64,2,1,2635505,2635505,2635505,0,500,pass,chronobiology,JLR,Jet lag recovery,biology,chronobiology::jet_lag_recovery
+chronobiology::photoperiod,f64,2,1,2279324,2279324,2279324,0,500,pass,chronobiology,Ph,Photoperiod,biology,chronobiology::photoperiod
+chronobiology::zeitgeber_strength,f64,2,1,2527365,2527365,2527365,0,500,pass,chronobiology,ZS,Zeitgeber strength,biology,chronobiology::zeitgeber_strength

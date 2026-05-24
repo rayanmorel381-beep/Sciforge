@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+impacts::crater_diameter,f64,2,1,2238675,2238675,2238675,0,500,pass,impacts,CD,Crater diameter,astronomy,impacts::crater_diameter
+impacts::fireball_radius,f64,2,1,2216474,2216474,2216474,0,500,pass,impacts,FR,Fireball radius,astronomy,impacts::fireball_radius
+impacts::impact_velocity,f64,2,1,2103864,2103864,2103864,0,500,pass,impacts,IV,Impact velocity,astronomy,impacts::impact_velocity

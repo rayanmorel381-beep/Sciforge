@@ -1,0 +1,16 @@
+[benchmark]
+category = "units"
+symbol = "CTJ"
+name = "Calorie to joule"
+domain = "constants"
+test = "units::calorie_to_joule"
+experiment_name = "units::calorie_to_joule"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1357812.00
+min_time_ns = 1357812.00
+max_time_ns = 1357812.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

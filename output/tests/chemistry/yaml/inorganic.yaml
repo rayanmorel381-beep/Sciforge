@@ -1,0 +1,21 @@
+category: inorganic
+count: 3
+entries:
+  - label: inorganic_lattice_energy_born_lande
+    symbol: LEB
+    name: Lattice energy born lande
+    domain: chemistry
+    test: "inorganic::lattice_energy_born_lande"
+    avg_time_ns: 2021043.00
+  - label: inorganic_magnetic_moment_spin_only
+    symbol: MMS
+    name: Magnetic moment spin only
+    domain: chemistry
+    test: "inorganic::magnetic_moment_spin_only"
+    avg_time_ns: 2247195.00
+  - label: inorganic_pauling_electronegativity_difference
+    symbol: PED
+    name: Pauling electronegativity difference
+    domain: chemistry
+    test: "inorganic::pauling_electronegativity_difference"
+    avg_time_ns: 1965833.00

@@ -1,0 +1,27 @@
+category: virology
+count: 4
+entries:
+  - label: virology_basic_reproduction_number_viral
+    symbol: BRN
+    name: Basic reproduction number viral
+    domain: biology
+    test: "virology::basic_reproduction_number_viral"
+    avg_time_ns: 2478425.00
+  - label: virology_burst_size
+    symbol: BS
+    name: Burst size
+    domain: biology
+    test: "virology::burst_size"
+    avg_time_ns: 2157634.00
+  - label: virology_herd_immunity_threshold
+    symbol: HIT
+    name: Herd immunity threshold
+    domain: biology
+    test: "virology::herd_immunity_threshold"
+    avg_time_ns: 1912023.00
+  - label: virology_viral_load_decay
+    symbol: VLD
+    name: Viral load decay
+    domain: biology
+    test: "virology::viral_load_decay"
+    avg_time_ns: 1936354.00

@@ -1,0 +1,111 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Au",
+        name: "Gold",
+        atomic_number: 79,
+        atomic_mass: 196.966569_f64,
+        electronegativity: Some(2.54_f64),
+        group: Some(11),
+        period: 6,
+        category: "transition metal",
+        electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s¹",
+        isotopes: vec![
+        Isotope {
+            name: "Gold-195",
+            symbol: "¹⁹⁵Au",
+            mass_number: 195,
+            neutrons: 116,
+            atomic_mass: 194.965035_f64,
+            half_life: Some(186.1_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Platinum-195"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Gold-196",
+            symbol: "¹⁹⁶Au",
+            mass_number: 196,
+            neutrons: 117,
+            atomic_mass: 195.96657_f64,
+            half_life: Some(6.1669_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.93_f64,
+                daughter: Some("Platinum-196"),
+            },
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.07_f64,
+                daughter: Some("Mercury-196"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Gold-197",
+            symbol: "¹⁹⁷Au",
+            mass_number: 197,
+            neutrons: 118,
+            atomic_mass: 196.966569_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("3/2+"),
+        },
+        Isotope {
+            name: "Gold-198",
+            symbol: "¹⁹⁸Au",
+            mass_number: 198,
+            neutrons: 119,
+            atomic_mass: 197.968244_f64,
+            half_life: Some(2.6941_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Mercury-198"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Gold-199",
+            symbol: "¹⁹⁹Au",
+            mass_number: 199,
+            neutrons: 120,
+            atomic_mass: 198.968765_f64,
+            half_life: Some(3.139_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Mercury-199"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

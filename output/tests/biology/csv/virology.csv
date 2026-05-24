@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+virology::basic_reproduction_number_viral,f64,2,1,2478425,2478425,2478425,0,500,pass,virology,BRN,Basic reproduction number viral,biology,virology::basic_reproduction_number_viral
+virology::burst_size,f64,2,1,2157634,2157634,2157634,0,500,pass,virology,BS,Burst size,biology,virology::burst_size
+virology::herd_immunity_threshold,f64,1,1,1912023,1912023,1912023,0,1000,pass,virology,HIT,Herd immunity threshold,biology,virology::herd_immunity_threshold
+virology::viral_load_decay,f64,1,1,1936354,1936354,1936354,0,1000,pass,virology,VLD,Viral load decay,biology,virology::viral_load_decay

@@ -1,0 +1,27 @@
+category: surface
+count: 4
+entries:
+  - label: surface_contact_angle
+    symbol: CA
+    name: Contact angle
+    domain: chemistry
+    test: "surface::contact_angle"
+    avg_time_ns: 2284804.00
+  - label: surface_freundlich_isotherm
+    symbol: FI
+    name: Freundlich isotherm
+    domain: chemistry
+    test: "surface::freundlich_isotherm"
+    avg_time_ns: 2360315.00
+  - label: surface_langmuir_isotherm
+    symbol: LI
+    name: Langmuir isotherm
+    domain: chemistry
+    test: "surface::langmuir_isotherm"
+    avg_time_ns: 2021224.00
+  - label: surface_laplace_pressure
+    symbol: LP
+    name: Laplace pressure
+    domain: chemistry
+    test: "surface::laplace_pressure"
+    avg_time_ns: 2015033.00

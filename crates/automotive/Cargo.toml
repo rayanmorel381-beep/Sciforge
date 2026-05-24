@@ -1,0 +1,11 @@
+[package]
+name = "sciforge-automotive"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Land vehicles: cars, motorcycles, trucks, buses, construction, military ground."
+
+[dependencies]
+sciforge-hub.workspace = true
+sciforge-core.workspace = true
+sciforge-components.workspace = true

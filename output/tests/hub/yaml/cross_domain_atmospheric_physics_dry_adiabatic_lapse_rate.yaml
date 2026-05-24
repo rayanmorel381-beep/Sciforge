@@ -1,0 +1,15 @@
+category: cross_domain
+symbol: DAL
+name: Dry adiabatic lapse rate
+domain: hub
+test: "cross_domain::atmospheric_physics::dry_adiabatic_lapse_rate"
+experiment_name: "cross_domain::atmospheric_physics::dry_adiabatic_lapse_rate"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1736443.00
+min_time_ns: 1736443.00
+max_time_ns: 1736443.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

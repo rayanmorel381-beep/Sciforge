@@ -1,0 +1,16 @@
+[package]
+name = "identity"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+axum.workspace = true
+core-domain = { path = "../../crates/core-domain" }
+jsonwebtoken.workspace = true
+redis.workspace = true
+serde.workspace = true
+sqlx.workspace = true
+tokio.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true

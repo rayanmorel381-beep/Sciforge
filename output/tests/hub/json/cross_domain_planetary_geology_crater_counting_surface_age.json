@@ -1,0 +1,17 @@
+{
+  "category": "cross_domain",
+  "symbol": "CCS",
+  "name": "Crater counting surface age",
+  "domain": "hub",
+  "test": "cross_domain::planetary_geology::crater_counting_surface_age",
+  "experiment_name": "cross_domain::planetary_geology::crater_counting_surface_age",
+  "precision": "f64",
+  "elapsed_ms": 3,
+  "iterations": 1,
+  "avg_time_ns": 3435196.00,
+  "min_time_ns": 3435196.00,
+  "max_time_ns": 3435196.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 333.33,
+  "result": "pass"
+}

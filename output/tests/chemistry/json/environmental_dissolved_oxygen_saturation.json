@@ -1,0 +1,17 @@
+{
+  "category": "environmental",
+  "symbol": "DOS",
+  "name": "Dissolved oxygen saturation",
+  "domain": "chemistry",
+  "test": "environmental::dissolved_oxygen_saturation",
+  "experiment_name": "environmental::dissolved_oxygen_saturation",
+  "precision": "f64",
+  "elapsed_ms": 3,
+  "iterations": 1,
+  "avg_time_ns": 3071855.00,
+  "min_time_ns": 3071855.00,
+  "max_time_ns": 3071855.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 333.33,
+  "result": "pass"
+}

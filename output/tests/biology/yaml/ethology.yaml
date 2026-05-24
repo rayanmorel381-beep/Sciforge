@@ -1,0 +1,27 @@
+category: ethology
+count: 4
+entries:
+  - label: ethology_hamilton_relatedness_benefit
+    symbol: HRB
+    name: Hamilton relatedness benefit
+    domain: biology
+    test: "ethology::hamilton_relatedness_benefit"
+    avg_time_ns: 1834684.00
+  - label: ethology_hawk_dove_payoff
+    symbol: HDP
+    name: Hawk dove payoff
+    domain: biology
+    test: "ethology::hawk_dove_payoff"
+    avg_time_ns: 2008813.00
+  - label: ethology_ideal_free_distribution
+    symbol: IFD
+    name: Ideal free distribution
+    domain: biology
+    test: "ethology::ideal_free_distribution"
+    avg_time_ns: 2772116.00
+  - label: ethology_territory_size
+    symbol: TS
+    name: Territory size
+    domain: biology
+    test: "ethology::territory_size"
+    avg_time_ns: 2536554.00

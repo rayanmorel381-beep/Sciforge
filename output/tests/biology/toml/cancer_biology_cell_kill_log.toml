@@ -1,0 +1,16 @@
+[benchmark]
+category = "cancer_biology"
+symbol = "CKL"
+name = "Cell kill log"
+domain = "biology"
+test = "cancer_biology::cell_kill_log"
+experiment_name = "cancer_biology::cell_kill_log"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2530134.00
+min_time_ns = 2530134.00
+max_time_ns = 2530134.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

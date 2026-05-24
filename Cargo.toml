@@ -1,0 +1,87 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/core",
+    "crates/components",
+    "crates/automotive",
+    "crates/aeronaval",
+    "crates/lib",
+    "crates/rail",
+    "crates/heavy",
+    "crates/hub",
+    "crates/parser",
+    "crates/benchmark",
+]
+
+[workspace.package]
+version = "0.0.4"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+keywords = ["science", "mathematics", "physics", "chemistry", "computing"]
+categories = ["science", "mathematics"]
+documentation = "https://docs.rs/crate/sciforge/latest"
+homepage = "https://rayanmorel381-beep.github.io/Sciforge/"
+repository = "https://github.com/rayanmorel381-beep/Sciforge"
+
+[workspace.dependencies]
+sciforge-lib = { path = "crates/lib", default-features = false }
+sciforge-core = { path = "crates/core" }
+sciforge-components = { path = "crates/components" }
+sciforge-automotive = { path = "crates/automotive" }
+sciforge-aeronaval = { path = "crates/aeronaval" }
+sciforge-rail = { path = "crates/rail" }
+sciforge-heavy = { path = "crates/heavy" }
+sciforge-hub = { path = "crates/hub" }
+sciforge-parser = { path = "crates/parser" }
+sciforge-benchmark = { path = "crates/benchmark" }
+
+[package]
+name = "sciforge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Scientific computing toolkit — mathematics, physics, chemistry, biology, astronomy, geology, meteorology."
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+documentation.workspace = true
+homepage.workspace = true
+repository.workspace = true
+include = [
+    "src/**/*",
+    "tests/**/*",
+    "docs/**/*",
+    "examples/**/*",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE",
+    "ChangeLog.md",
+    "ComingSoon.md",
+    "Contributing.md",
+]
+
+[features]
+default = ["lib", "hub"]
+lib = ["dep:sciforge-lib"]
+hub = ["dep:sciforge-hub"]
+aeronaval = ["dep:sciforge-aeronaval"]
+automotive = ["dep:sciforge-automotive"]
+core = ["dep:sciforge-core"]
+components = ["dep:sciforge-components"]
+heavy = ["dep:sciforge-heavy"]
+full = ["lib", "hub", "aeronaval", "automotive", "core", "components", "heavy"]
+
+[dependencies]
+sciforge-lib = { workspace = true, optional = true }
+sciforge-hub = { workspace = true, optional = true }
+sciforge-aeronaval = { workspace = true, optional = true }
+sciforge-automotive = { workspace = true, optional = true }
+sciforge-core = { workspace = true, optional = true }
+sciforge-components = { workspace = true, optional = true }
+sciforge-heavy = { workspace = true, optional = true }
+
+[dev-dependencies]
+sciforge-lib = { workspace = true, features = ["full"] }
+sciforge-hub = { workspace = true, features = ["full"] }
+sciforge-benchmark = { workspace = true }
+sciforge-parser = { workspace = true }

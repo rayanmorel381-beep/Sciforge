@@ -1,0 +1,27 @@
+category: nutrition
+count: 4
+entries:
+  - label: nutrition_basal_metabolic_rate_mifflin
+    symbol: BMR
+    name: Basal metabolic rate mifflin
+    domain: biology
+    test: "nutrition::basal_metabolic_rate_mifflin"
+    avg_time_ns: 1913343.00
+  - label: nutrition_body_mass_index
+    symbol: BMI
+    name: Body mass index
+    domain: biology
+    test: "nutrition::body_mass_index"
+    avg_time_ns: 2057524.00
+  - label: nutrition_nitrogen_balance
+    symbol: NB
+    name: Nitrogen balance
+    domain: biology
+    test: "nutrition::nitrogen_balance"
+    avg_time_ns: 2591555.00
+  - label: nutrition_respiratory_exchange_ratio
+    symbol: RER
+    name: Respiratory exchange ratio
+    domain: biology
+    test: "nutrition::respiratory_exchange_ratio"
+    avg_time_ns: 2721835.00

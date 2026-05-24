@@ -1,0 +1,131 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Th",
+        name: "Thorium",
+        atomic_number: 90,
+        atomic_mass: 232.0377_f64,
+        electronegativity: Some(1.3_f64),
+        group: None,
+        period: 7,
+        category: "actinide",
+        electron_configuration: "[Rn] 6d² 7s²",
+        isotopes: vec![
+        Isotope {
+            name: "Thorium-227",
+            symbol: "²²⁷Th",
+            mass_number: 227,
+            neutrons: 137,
+            atomic_mass: 227.027704_f64,
+            half_life: Some(18.68_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Radium-223"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Thorium-228",
+            symbol: "²²⁸Th",
+            mass_number: 228,
+            neutrons: 138,
+            atomic_mass: 228.028741_f64,
+            half_life: Some(1.9116_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Radium-224"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Thorium-229",
+            symbol: "²²⁹Th",
+            mass_number: 229,
+            neutrons: 139,
+            atomic_mass: 229.031762_f64,
+            half_life: Some(7932.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Radium-225"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Thorium-230",
+            symbol: "²³⁰Th",
+            mass_number: 230,
+            neutrons: 140,
+            atomic_mass: 230.033134_f64,
+            half_life: Some(75380.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Radium-226"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Thorium-232",
+            symbol: "²³²Th",
+            mass_number: 232,
+            neutrons: 142,
+            atomic_mass: 232.038055_f64,
+            half_life: Some(14050000000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Radium-228"),
+            },
+            ],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("0+"),
+        },
+        Isotope {
+            name: "Thorium-234",
+            symbol: "²³⁴Th",
+            mass_number: 234,
+            neutrons: 144,
+            atomic_mass: 234.043601_f64,
+            half_life: Some(24.1_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Protactinium-234"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

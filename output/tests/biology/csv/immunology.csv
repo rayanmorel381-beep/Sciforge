@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+immunology::antibody_titer,f64,2,1,2751185,2751185,2751185,0,500,pass,immunology,AT,Antibody titer,biology,immunology::antibody_titer
+immunology::clonal_expansion,f64,2,1,2531125,2531125,2531125,0,500,pass,immunology,CE,Clonal expansion,biology,immunology::clonal_expansion
+immunology::herd_immunity_fraction,f64,2,1,2261644,2261644,2261644,0,500,pass,immunology,HIF,Herd immunity fraction,biology,immunology::herd_immunity_fraction
+immunology::vaccine_efficacy,f64,2,1,2078334,2078334,2078334,0,500,pass,immunology,VE,Vaccine efficacy,biology,immunology::vaccine_efficacy

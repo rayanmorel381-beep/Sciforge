@@ -1,0 +1,21 @@
+category: galactic
+count: 3
+entries:
+  - label: galactic_galactic_escape_velocity
+    symbol: GEV
+    name: Galactic escape velocity
+    domain: astronomy
+    test: "galactic::galactic_escape_velocity"
+    avg_time_ns: 1871543.00
+  - label: galactic_galactic_rotation_velocity
+    symbol: GRV
+    name: Galactic rotation velocity
+    domain: astronomy
+    test: "galactic::galactic_rotation_velocity"
+    avg_time_ns: 1964534.00
+  - label: galactic_tidal_radius
+    symbol: TR
+    name: Tidal radius
+    domain: astronomy
+    test: "galactic::tidal_radius"
+    avg_time_ns: 1862643.00

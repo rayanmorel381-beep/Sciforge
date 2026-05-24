@@ -1,0 +1,17 @@
+{
+  "category": "aging",
+  "symbol": "CRL",
+  "name": "Caloric restriction lifespan",
+  "domain": "biology",
+  "test": "aging::caloric_restriction_lifespan",
+  "experiment_name": "aging::caloric_restriction_lifespan",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2432814.00,
+  "min_time_ns": 2432814.00,
+  "max_time_ns": 2432814.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

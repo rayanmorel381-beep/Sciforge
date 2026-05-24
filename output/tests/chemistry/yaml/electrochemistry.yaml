@@ -1,0 +1,27 @@
+category: electrochemistry
+count: 4
+entries:
+  - label: electrochemistry_butler_volmer
+    symbol: BV
+    name: Butler volmer
+    domain: chemistry
+    test: "electrochemistry::butler_volmer"
+    avg_time_ns: 2048023.00
+  - label: electrochemistry_cell_potential
+    symbol: CP
+    name: Cell potential
+    domain: chemistry
+    test: "electrochemistry::cell_potential"
+    avg_time_ns: 1912744.00
+  - label: electrochemistry_faraday_mass
+    symbol: FM
+    name: Faraday mass
+    domain: chemistry
+    test: "electrochemistry::faraday_mass"
+    avg_time_ns: 2073684.00
+  - label: electrochemistry_nernst_potential
+    symbol: NP
+    name: Nernst potential
+    domain: chemistry
+    test: "electrochemistry::nernst_potential"
+    avg_time_ns: 2908495.00

@@ -1,0 +1,45 @@
+category: dating
+count: 7
+entries:
+  - label: dating_age_from_ratio
+    symbol: AFR
+    name: Age from ratio
+    domain: geology
+    test: "dating::age_from_ratio"
+    avg_time_ns: 1957684.00
+  - label: dating_carbon14_age
+    symbol: CA
+    name: Carbon14 age
+    domain: geology
+    test: "dating::carbon14_age"
+    avg_time_ns: 1862614.00
+  - label: dating_decay_constant
+    symbol: DC
+    name: Decay constant
+    domain: geology
+    test: "dating::decay_constant"
+    avg_time_ns: 1760943.00
+  - label: dating_half_life_positive_for_positive_lambda
+    symbol: HLP
+    name: Half life positive for positive lambda
+    domain: geology
+    test: "dating::half_life_positive_for_positive_lambda"
+    avg_time_ns: 2194624.00
+  - label: dating_radioactive_decay
+    symbol: RD
+    name: Radioactive decay
+    domain: geology
+    test: "dating::radioactive_decay"
+    avg_time_ns: 2253024.00
+  - label: dating_radioactive_decay_halflife
+    symbol: RDH
+    name: Radioactive decay halflife
+    domain: geology
+    test: "dating::radioactive_decay_halflife"
+    avg_time_ns: 2446995.00
+  - label: dating_radioactive_decay_large_time_stability
+    symbol: RDL
+    name: Radioactive decay large time stability
+    domain: geology
+    test: "dating::radioactive_decay_large_time_stability"
+    avg_time_ns: 2119463.00

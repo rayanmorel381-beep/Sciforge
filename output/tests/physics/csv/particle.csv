@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+particle::compton_time,f64,1,1,1830173,1830173,1830173,0,1000,pass,particle,CT,Compton time,physics,particle::compton_time
+particle::fine_structure_constant,f64,2,1,2239534,2239534,2239534,0,500,pass,particle,FSC,Fine structure constant,physics,particle::fine_structure_constant
+particle::photon_energy,f64,2,1,2331164,2331164,2331164,0,500,pass,particle,PE,Photon energy,physics,particle::photon_energy
+particle::planck_energy,f64,2,1,2100374,2100374,2100374,0,500,pass,particle,PE,Planck energy,physics,particle::planck_energy

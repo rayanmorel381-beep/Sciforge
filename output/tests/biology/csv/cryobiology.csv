@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+cryobiology::critical_cooling_rate,f64,2,1,2153914,2153914,2153914,0,500,pass,cryobiology,CCR,Critical cooling rate,biology,cryobiology::critical_cooling_rate
+cryobiology::freezing_point_depression,f64,2,1,2068044,2068044,2068044,0,500,pass,cryobiology,FPD,Freezing point depression,biology,cryobiology::freezing_point_depression
+cryobiology::storage_decay_arrhenius,f64,2,1,2089743,2089743,2089743,0,500,pass,cryobiology,SDA,Storage decay arrhenius,biology,cryobiology::storage_decay_arrhenius
+cryobiology::vitrification_probability,f64,2,1,2123324,2123324,2123324,0,500,pass,cryobiology,VP,Vitrification probability,biology,cryobiology::vitrification_probability

@@ -1,0 +1,21 @@
+category: environmental
+count: 3
+entries:
+  - label: environmental_biochemical_oxygen_demand
+    symbol: BOD
+    name: Biochemical oxygen demand
+    domain: chemistry
+    test: "environmental::biochemical_oxygen_demand"
+    avg_time_ns: 3525997.00
+  - label: environmental_dissolved_oxygen_saturation
+    symbol: DOS
+    name: Dissolved oxygen saturation
+    domain: chemistry
+    test: "environmental::dissolved_oxygen_saturation"
+    avg_time_ns: 3071855.00
+  - label: environmental_henry_law_solubility
+    symbol: HLS
+    name: Henry law solubility
+    domain: chemistry
+    test: "environmental::henry_law_solubility"
+    avg_time_ns: 2462535.00

@@ -1,0 +1,19 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+tools::approx_equal_works,f64,2,1,2784225,2784225,2784225,0,500,pass,tools,AEW,Approx equal works,hub,tools::approx_equal_works
+tools::arena_alloc_and_read,f64,3,1,3432797,3432797,3432797,0,333.3333333333333,pass,tools,AAA,Arena alloc and read,hub,tools::arena_alloc_and_read
+tools::arena_capacity_limit,f64,2,1,2898835,2898835,2898835,0,500,pass,tools,ACL,Arena capacity limit,hub,tools::arena_capacity_limit
+tools::arena_matrix,f64,2,1,2957966,2957966,2957966,0,500,pass,tools,AM,Arena matrix,hub,tools::arena_matrix
+tools::arena_reset,f64,4,1,4232458,4232458,4232458,0,250,pass,tools,AR,Arena reset,hub,tools::arena_reset
+tools::fingerprint_changes_with_data,f64,2,1,2941615,2941615,2941615,0,500,pass,tools,FCW,Fingerprint changes with data,hub,tools::fingerprint_changes_with_data
+tools::fingerprint_deterministic,f64,2,1,2808475,2808475,2808475,0,500,pass,tools,FD,Fingerprint deterministic,hub,tools::fingerprint_deterministic
+tools::format_scientific_output,f64,3,1,3228966,3228966,3228966,0,333.3333333333333,pass,tools,FSO,Format scientific output,hub,tools::format_scientific_output
+tools::kahan_dot_basic,f64,2,1,2482265,2482265,2482265,0,500,pass,tools,KDB,Kahan dot basic,hub,tools::kahan_dot_basic
+tools::kahan_sum_precision,f64,4,1,4952179,4952179,4952179,0,250,pass,tools,KSP,Kahan sum precision,hub,tools::kahan_sum_precision
+tools::linspace_basic,f64,1,1,1969284,1969284,1969284,0,1000,pass,tools,LB,Linspace basic,hub,tools::linspace_basic
+tools::logspace_basic,f64,1,1,1916273,1916273,1916273,0,1000,pass,tools,LB,Logspace basic,hub,tools::logspace_basic
+tools::reproducible_context_fork,f64,2,1,2663155,2663155,2663155,0,500,pass,tools,RCF,Reproducible context fork,hub,tools::reproducible_context_fork
+tools::rng_deterministic,f64,2,1,2283154,2283154,2283154,0,500,pass,tools,RD,Rng deterministic,hub,tools::rng_deterministic
+tools::rng_different_seeds_differ,f64,1,1,1837204,1837204,1837204,0,1000,pass,tools,RDS,Rng different seeds differ,hub,tools::rng_different_seeds_differ
+tools::rng_normal_distribution,f64,2,1,2580564,2580564,2580564,0,500,pass,tools,RND,Rng normal distribution,hub,tools::rng_normal_distribution
+tools::rng_uniform_range,f64,1,1,1816684,1816684,1816684,0,1000,pass,tools,RUR,Rng uniform range,hub,tools::rng_uniform_range
+tools::scratch_pool_independent,f64,2,1,2156334,2156334,2156334,0,500,pass,tools,SPI,Scratch pool independent,hub,tools::scratch_pool_independent

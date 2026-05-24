@@ -1,0 +1,16 @@
+[benchmark]
+category = "tectonics"
+symbol = "VA"
+name = "Viscosity arrhenius"
+domain = "geology"
+test = "tectonics::viscosity_arrhenius"
+experiment_name = "tectonics::viscosity_arrhenius"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1853304.00
+min_time_ns = 1853304.00
+max_time_ns = 1853304.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

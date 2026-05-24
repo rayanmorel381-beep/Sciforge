@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+dispatch::dispatch_complex_sqrt,f64,1,1,1966204,1966204,1966204,0,1000,pass,dispatch,DCS,Dispatch complex sqrt,maths,dispatch::dispatch_complex_sqrt
+dispatch::dispatch_gaussian_kernel_smooth,f64,2,1,2425794,2425794,2425794,0,500,pass,dispatch,DGK,Dispatch gaussian kernel smooth,maths,dispatch::dispatch_gaussian_kernel_smooth
+dispatch::dispatch_missing_parameter_returns_error,f64,2,1,2037054,2037054,2037054,0,500,pass,dispatch,DMP,Dispatch missing parameter returns error,maths,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,1,1,1882223,1882223,1882223,0,1000,pass,dispatch,DUF,Dispatch unknown function returns error,maths,dispatch::dispatch_unknown_function_returns_error
+dispatch::dispatch_vec_midpoint,f64,2,1,2012304,2012304,2012304,0,500,pass,dispatch,DVM,Dispatch vec midpoint,maths,dispatch::dispatch_vec_midpoint
+dispatch::dispatch_wave_packet_gaussian,f64,2,1,2438955,2438955,2438955,0,500,pass,dispatch,DWP,Dispatch wave packet gaussian,maths,dispatch::dispatch_wave_packet_gaussian

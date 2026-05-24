@@ -1,0 +1,21 @@
+category: planetary
+count: 3
+entries:
+  - label: planetary_habitable_zone_inner
+    symbol: HZI
+    name: Habitable zone inner
+    domain: astronomy
+    test: "planetary::habitable_zone_inner"
+    avg_time_ns: 1922033.00
+  - label: planetary_habitable_zone_outer
+    symbol: HZO
+    name: Habitable zone outer
+    domain: astronomy
+    test: "planetary::habitable_zone_outer"
+    avg_time_ns: 1940724.00
+  - label: planetary_surface_gravity
+    symbol: SG
+    name: Surface gravity
+    domain: astronomy
+    test: "planetary::surface_gravity"
+    avg_time_ns: 1833463.00

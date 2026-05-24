@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+paleobiology::evolutionary_rate_darwin,f64,2,1,2481525,2481525,2481525,0,500,pass,paleobiology,ERD,Evolutionary rate darwin,biology,paleobiology::evolutionary_rate_darwin
+paleobiology::extinction_rate,f64,2,1,2358174,2358174,2358174,0,500,pass,paleobiology,ER,Extinction rate,biology,paleobiology::extinction_rate
+paleobiology::net_diversification_rate,f64,2,1,2126244,2126244,2126244,0,500,pass,paleobiology,NDR,Net diversification rate,biology,paleobiology::net_diversification_rate
+paleobiology::radiometric_age,f64,2,1,2195514,2195514,2195514,0,500,pass,paleobiology,RA,Radiometric age,biology,paleobiology::radiometric_age

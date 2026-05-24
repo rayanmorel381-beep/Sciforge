@@ -1,0 +1,33 @@
+category: ocean
+count: 5
+entries:
+  - label: ocean_henry_solubility
+    symbol: HS
+    name: Henry solubility
+    domain: meteorology
+    test: "ocean::henry_solubility"
+    avg_time_ns: 2025884.00
+  - label: ocean_sea_level_rise_thermal
+    symbol: SLR
+    name: Sea level rise thermal
+    domain: meteorology
+    test: "ocean::sea_level_rise_thermal"
+    avg_time_ns: 2005704.00
+  - label: ocean_seawater_density
+    symbol: SD
+    name: Seawater density
+    domain: meteorology
+    test: "ocean::seawater_density"
+    avg_time_ns: 2409994.00
+  - label: ocean_seawater_density_increases_with_salinity
+    symbol: SDI
+    name: Seawater density increases with salinity
+    domain: meteorology
+    test: "ocean::seawater_density_increases_with_salinity"
+    avg_time_ns: 2207454.00
+  - label: ocean_sound_speed
+    symbol: SS
+    name: Sound speed
+    domain: meteorology
+    test: "ocean::sound_speed"
+    avg_time_ns: 2152194.00

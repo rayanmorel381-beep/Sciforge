@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+ocean::henry_solubility,f64,2,1,2025884,2025884,2025884,0,500,pass,ocean,HS,Henry solubility,meteorology,ocean::henry_solubility
+ocean::sea_level_rise_thermal,f64,2,1,2005704,2005704,2005704,0,500,pass,ocean,SLR,Sea level rise thermal,meteorology,ocean::sea_level_rise_thermal
+ocean::seawater_density,f64,2,1,2409994,2409994,2409994,0,500,pass,ocean,SD,Seawater density,meteorology,ocean::seawater_density
+ocean::seawater_density_increases_with_salinity,f64,2,1,2207454,2207454,2207454,0,500,pass,ocean,SDI,Seawater density increases with salinity,meteorology,ocean::seawater_density_increases_with_salinity
+ocean::sound_speed,f64,2,1,2152194,2152194,2152194,0,500,pass,ocean,SS,Sound speed,meteorology,ocean::sound_speed

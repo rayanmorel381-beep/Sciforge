@@ -1,0 +1,27 @@
+category: physiology
+count: 4
+entries:
+  - label: physiology_alveolar_gas_equation
+    symbol: AGE
+    name: Alveolar gas equation
+    domain: biology
+    test: "physiology::alveolar_gas_equation"
+    avg_time_ns: 2493215.00
+  - label: physiology_frank_starling_mechanism
+    symbol: FSM
+    name: Frank starling mechanism
+    domain: biology
+    test: "physiology::frank_starling_mechanism"
+    avg_time_ns: 2308384.00
+  - label: physiology_glomerular_filtration_rate
+    symbol: GFR
+    name: Glomerular filtration rate
+    domain: biology
+    test: "physiology::glomerular_filtration_rate"
+    avg_time_ns: 2161084.00
+  - label: physiology_oxygen_delivery
+    symbol: OD
+    name: Oxygen delivery
+    domain: biology
+    test: "physiology::oxygen_delivery"
+    avg_time_ns: 2192874.00

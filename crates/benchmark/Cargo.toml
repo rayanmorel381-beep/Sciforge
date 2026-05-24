@@ -1,0 +1,12 @@
+[package]
+name = "sciforge-benchmark"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Benchmarking engine, binary metrics codec, multi-format reports and exports."
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+sciforge-parser.workspace = true

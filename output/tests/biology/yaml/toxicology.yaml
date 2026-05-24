@@ -1,0 +1,27 @@
+category: toxicology
+count: 4
+entries:
+  - label: toxicology_bcf_ratio
+    symbol: BR
+    name: Bcf ratio
+    domain: biology
+    test: "toxicology::bcf_ratio"
+    avg_time_ns: 2148064.00
+  - label: toxicology_ld50_probit
+    symbol: LP
+    name: Ld50 probit
+    domain: biology
+    test: "toxicology::ld50_probit"
+    avg_time_ns: 2827316.00
+  - label: toxicology_risk_quotient
+    symbol: RQ
+    name: Risk quotient
+    domain: biology
+    test: "toxicology::risk_quotient"
+    avg_time_ns: 3024405.00
+  - label: toxicology_therapeutic_window
+    symbol: TW
+    name: Therapeutic window
+    domain: biology
+    test: "toxicology::therapeutic_window"
+    avg_time_ns: 2323434.00

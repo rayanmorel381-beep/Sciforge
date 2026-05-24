@@ -1,0 +1,11 @@
+[package]
+name = "sciforge-parser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Hand-written parsers and writers for CSV, HTML, JSON, Markdown, TOML, YAML."
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]

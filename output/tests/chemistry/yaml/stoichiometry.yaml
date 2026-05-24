@@ -1,0 +1,27 @@
+category: stoichiometry
+count: 4
+entries:
+  - label: stoichiometry_atom_economy
+    symbol: AE
+    name: Atom economy
+    domain: chemistry
+    test: "stoichiometry::atom_economy"
+    avg_time_ns: 1834744.00
+  - label: stoichiometry_limiting_reagent
+    symbol: LR
+    name: Limiting reagent
+    domain: chemistry
+    test: "stoichiometry::limiting_reagent"
+    avg_time_ns: 2023463.00
+  - label: stoichiometry_percent_yield
+    symbol: PY
+    name: Percent yield
+    domain: chemistry
+    test: "stoichiometry::percent_yield"
+    avg_time_ns: 2098064.00
+  - label: stoichiometry_theoretical_yield
+    symbol: TY
+    name: Theoretical yield
+    domain: chemistry
+    test: "stoichiometry::theoretical_yield"
+    avg_time_ns: 2138694.00

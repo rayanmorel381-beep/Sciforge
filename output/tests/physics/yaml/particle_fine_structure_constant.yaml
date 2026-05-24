@@ -1,0 +1,15 @@
+category: particle
+symbol: FSC
+name: Fine structure constant
+domain: physics
+test: "particle::fine_structure_constant"
+experiment_name: "particle::fine_structure_constant"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2239534.00
+min_time_ns: 2239534.00
+max_time_ns: 2239534.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

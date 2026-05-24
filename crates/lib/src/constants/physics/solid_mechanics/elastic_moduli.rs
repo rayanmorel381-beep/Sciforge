@@ -1,0 +1,55 @@
+#[derive(Debug, Clone, Copy)]
+pub struct ElasticModuli {
+    pub formula: &'static str,
+    pub young_pa: f64,
+    pub shear_pa: f64,
+    pub bulk_pa: f64,
+    pub poisson: f64,
+    pub density_kg_m3: f64,
+}
+
+pub const TABLE: &[ElasticModuli] = &[
+    ElasticModuli { formula: "Fe",          young_pa: 2.11e11, shear_pa: 8.20e10, bulk_pa: 1.70e11, poisson: 0.29, density_kg_m3: 7874.0 },
+    ElasticModuli { formula: "AISI_1020",   young_pa: 2.05e11, shear_pa: 8.00e10, bulk_pa: 1.60e11, poisson: 0.29, density_kg_m3: 7870.0 },
+    ElasticModuli { formula: "AISI_1045",   young_pa: 2.06e11, shear_pa: 8.00e10, bulk_pa: 1.60e11, poisson: 0.29, density_kg_m3: 7850.0 },
+    ElasticModuli { formula: "AISI_4140",   young_pa: 2.05e11, shear_pa: 8.00e10, bulk_pa: 1.60e11, poisson: 0.29, density_kg_m3: 7850.0 },
+    ElasticModuli { formula: "AISI_304",    young_pa: 1.93e11, shear_pa: 7.70e10, bulk_pa: 1.66e11, poisson: 0.29, density_kg_m3: 8000.0 },
+    ElasticModuli { formula: "AISI_316",    young_pa: 1.93e11, shear_pa: 7.70e10, bulk_pa: 1.66e11, poisson: 0.29, density_kg_m3: 8000.0 },
+    ElasticModuli { formula: "Al",          young_pa: 6.90e10, shear_pa: 2.60e10, bulk_pa: 7.60e10, poisson: 0.33, density_kg_m3: 2700.0 },
+    ElasticModuli { formula: "Al_6061_T6",  young_pa: 6.89e10, shear_pa: 2.60e10, bulk_pa: 7.60e10, poisson: 0.33, density_kg_m3: 2700.0 },
+    ElasticModuli { formula: "Al_7075_T6",  young_pa: 7.17e10, shear_pa: 2.69e10, bulk_pa: 7.60e10, poisson: 0.33, density_kg_m3: 2810.0 },
+    ElasticModuli { formula: "Al_2024_T3",  young_pa: 7.31e10, shear_pa: 2.80e10, bulk_pa: 7.60e10, poisson: 0.33, density_kg_m3: 2780.0 },
+    ElasticModuli { formula: "Ti",          young_pa: 1.16e11, shear_pa: 4.40e10, bulk_pa: 1.10e11, poisson: 0.32, density_kg_m3: 4506.0 },
+    ElasticModuli { formula: "Ti_6Al_4V",   young_pa: 1.138e11,shear_pa: 4.40e10, bulk_pa: 1.10e11, poisson: 0.34, density_kg_m3: 4430.0 },
+    ElasticModuli { formula: "Cu",          young_pa: 1.20e11, shear_pa: 4.50e10, bulk_pa: 1.40e11, poisson: 0.34, density_kg_m3: 8960.0 },
+    ElasticModuli { formula: "Cu_brass",    young_pa: 1.00e11, shear_pa: 3.70e10, bulk_pa: 1.40e11, poisson: 0.34, density_kg_m3: 8530.0 },
+    ElasticModuli { formula: "Cu_bronze",   young_pa: 1.10e11, shear_pa: 4.10e10, bulk_pa: 1.40e11, poisson: 0.34, density_kg_m3: 8800.0 },
+    ElasticModuli { formula: "Mg",          young_pa: 4.50e10, shear_pa: 1.70e10, bulk_pa: 4.50e10, poisson: 0.29, density_kg_m3: 1738.0 },
+    ElasticModuli { formula: "Ni",          young_pa: 2.00e11, shear_pa: 7.60e10, bulk_pa: 1.80e11, poisson: 0.31, density_kg_m3: 8908.0 },
+    ElasticModuli { formula: "Inconel_718", young_pa: 2.00e11, shear_pa: 7.70e10, bulk_pa: 1.65e11, poisson: 0.29, density_kg_m3: 8190.0 },
+    ElasticModuli { formula: "W",           young_pa: 4.11e11, shear_pa: 1.61e11, bulk_pa: 3.10e11, poisson: 0.28, density_kg_m3: 19250.0 },
+    ElasticModuli { formula: "Pb",          young_pa: 1.60e10, shear_pa: 5.60e9,  bulk_pa: 4.60e10, poisson: 0.44, density_kg_m3: 11340.0 },
+    ElasticModuli { formula: "Zn",          young_pa: 1.08e11, shear_pa: 4.30e10, bulk_pa: 7.00e10, poisson: 0.25, density_kg_m3: 7140.0 },
+    ElasticModuli { formula: "Au",          young_pa: 7.80e10, shear_pa: 2.70e10, bulk_pa: 1.80e11, poisson: 0.44, density_kg_m3: 19320.0 },
+    ElasticModuli { formula: "Ag",          young_pa: 8.30e10, shear_pa: 3.00e10, bulk_pa: 1.00e11, poisson: 0.37, density_kg_m3: 10490.0 },
+    ElasticModuli { formula: "PE",          young_pa: 1.10e9,  shear_pa: 4.00e8,  bulk_pa: 2.00e9,  poisson: 0.46, density_kg_m3: 950.0 },
+    ElasticModuli { formula: "PP",          young_pa: 1.50e9,  shear_pa: 5.50e8,  bulk_pa: 2.10e9,  poisson: 0.42, density_kg_m3: 905.0 },
+    ElasticModuli { formula: "PS",          young_pa: 3.20e9,  shear_pa: 1.20e9,  bulk_pa: 4.50e9,  poisson: 0.34, density_kg_m3: 1050.0 },
+    ElasticModuli { formula: "PVC",         young_pa: 3.10e9,  shear_pa: 1.10e9,  bulk_pa: 4.20e9,  poisson: 0.40, density_kg_m3: 1380.0 },
+    ElasticModuli { formula: "PET",         young_pa: 3.10e9,  shear_pa: 1.10e9,  bulk_pa: 4.50e9,  poisson: 0.40, density_kg_m3: 1380.0 },
+    ElasticModuli { formula: "PMMA",        young_pa: 3.30e9,  shear_pa: 1.20e9,  bulk_pa: 4.50e9,  poisson: 0.37, density_kg_m3: 1180.0 },
+    ElasticModuli { formula: "PTFE",        young_pa: 5.00e8,  shear_pa: 1.80e8,  bulk_pa: 1.10e9,  poisson: 0.46, density_kg_m3: 2200.0 },
+    ElasticModuli { formula: "Al2O3",       young_pa: 3.70e11, shear_pa: 1.50e11, bulk_pa: 2.50e11, poisson: 0.22, density_kg_m3: 3950.0 },
+    ElasticModuli { formula: "SiC",         young_pa: 4.10e11, shear_pa: 1.70e11, bulk_pa: 2.20e11, poisson: 0.19, density_kg_m3: 3210.0 },
+    ElasticModuli { formula: "Si3N4",       young_pa: 3.10e11, shear_pa: 1.20e11, bulk_pa: 2.30e11, poisson: 0.27, density_kg_m3: 3170.0 },
+    ElasticModuli { formula: "ZrO2",        young_pa: 2.00e11, shear_pa: 8.00e10, bulk_pa: 1.50e11, poisson: 0.30, density_kg_m3: 5680.0 },
+    ElasticModuli { formula: "diamond",     young_pa: 1.05e12, shear_pa: 4.78e11, bulk_pa: 4.42e11, poisson: 0.20, density_kg_m3: 3515.0 },
+    ElasticModuli { formula: "concrete",    young_pa: 3.00e10, shear_pa: 1.25e10, bulk_pa: 1.67e10, poisson: 0.20, density_kg_m3: 2400.0 },
+    ElasticModuli { formula: "wood_pine",   young_pa: 9.00e9,  shear_pa: 6.00e8,  bulk_pa: 7.50e9,  poisson: 0.30, density_kg_m3: 510.0 },
+    ElasticModuli { formula: "wood_oak",    young_pa: 1.10e10, shear_pa: 8.00e8,  bulk_pa: 9.00e9,  poisson: 0.30, density_kg_m3: 750.0 },
+    ElasticModuli { formula: "glass_soda",  young_pa: 7.00e10, shear_pa: 2.85e10, bulk_pa: 4.20e10, poisson: 0.22, density_kg_m3: 2500.0 },
+];
+
+pub fn by_formula(formula: &str) -> Option<&'static ElasticModuli> {
+    TABLE.iter().find(|e| e.formula == formula)
+}

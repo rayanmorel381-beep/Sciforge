@@ -1,0 +1,141 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Bi",
+        name: "Bismuth",
+        atomic_number: 83,
+        atomic_mass: 208.9804_f64,
+        electronegativity: Some(2.02_f64),
+        group: Some(15),
+        period: 6,
+        category: "post-transition metal",
+        electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³",
+        isotopes: vec![
+        Isotope {
+            name: "Bismuth-207",
+            symbol: "²⁰⁷Bi",
+            mass_number: 207,
+            neutrons: 124,
+            atomic_mass: 206.978471_f64,
+            half_life: Some(31.55_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Lead-207"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Bismuth-208",
+            symbol: "²⁰⁸Bi",
+            mass_number: 208,
+            neutrons: 125,
+            atomic_mass: 207.979742_f64,
+            half_life: Some(368000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Lead-208"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Bismuth-209",
+            symbol: "²⁰⁹Bi",
+            mass_number: 209,
+            neutrons: 126,
+            atomic_mass: 208.980399_f64,
+            half_life: Some(2.01e+19_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Thallium-205"),
+            },
+            ],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("9/2-"),
+        },
+        Isotope {
+            name: "Bismuth-210",
+            symbol: "²¹⁰Bi",
+            mass_number: 210,
+            neutrons: 127,
+            atomic_mass: 209.98412_f64,
+            half_life: Some(5.013_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Polonium-210"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Bismuth-212",
+            symbol: "²¹²Bi",
+            mass_number: 212,
+            neutrons: 129,
+            atomic_mass: 211.991286_f64,
+            half_life: Some(60.55_f64),
+            half_life_unit: Some("minutes"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.6406_f64,
+                daughter: Some("Polonium-212"),
+            },
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 0.3594_f64,
+                daughter: Some("Thallium-208"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Bismuth-213",
+            symbol: "²¹³Bi",
+            mass_number: 213,
+            neutrons: 130,
+            atomic_mass: 212.994385_f64,
+            half_life: Some(45.59_f64),
+            half_life_unit: Some("minutes"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.978_f64,
+                daughter: Some("Polonium-213"),
+            },
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 0.022_f64,
+                daughter: Some("Thallium-209"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

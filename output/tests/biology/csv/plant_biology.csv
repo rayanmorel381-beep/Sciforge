@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+plant_biology::beer_lambert_canopy,f64,2,1,2175754,2175754,2175754,0,500,pass,plant_biology,BLC,Beer lambert canopy,biology,plant_biology::beer_lambert_canopy
+plant_biology::photosynthesis_light_response,f64,2,1,2206764,2206764,2206764,0,500,pass,plant_biology,PLR,Photosynthesis light response,biology,plant_biology::photosynthesis_light_response
+plant_biology::transpiration_rate,f64,2,1,2826845,2826845,2826845,0,500,pass,plant_biology,TR,Transpiration rate,biology,plant_biology::transpiration_rate
+plant_biology::water_potential,f64,2,1,2442465,2442465,2442465,0,500,pass,plant_biology,WP,Water potential,biology,plant_biology::water_potential

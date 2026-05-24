@@ -1,0 +1,11 @@
+group: gamma
+experiment_name: bench_gamma
+precision: f64
+elapsed_ms: 0
+iterations: 100
+avg_time_ns: 12.50
+min_time_ns: 12.50
+max_time_ns: 12.50
+time_stddev: 0.0000
+iterations_per_sec: 0.00
+result: gamma completed

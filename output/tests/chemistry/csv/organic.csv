@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+organic::degree_of_unsaturation,f64,3,1,3241926,3241926,3241926,0,333.3333333333333,pass,organic,DOU,Degree of unsaturation,chemistry,organic::degree_of_unsaturation
+organic::hammett_equation,f64,2,1,2462084,2462084,2462084,0,500,pass,organic,HE,Hammett equation,chemistry,organic::hammett_equation
+organic::partition_coefficient_log_p,f64,2,1,2010444,2010444,2010444,0,500,pass,organic,PCL,Partition coefficient log p,chemistry,organic::partition_coefficient_log_p

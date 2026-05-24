@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+biostatistics::f1_score,f64,2,1,2461174,2461174,2461174,0,500,pass,biostatistics,FS,F1 score,biology,biostatistics::f1_score
+biostatistics::number_needed_to_treat,f64,2,1,2356114,2356114,2356114,0,500,pass,biostatistics,NNT,Number needed to treat,biology,biostatistics::number_needed_to_treat
+biostatistics::odds_ratio,f64,2,1,2379695,2379695,2379695,0,500,pass,biostatistics,OR,Odds ratio,biology,biostatistics::odds_ratio
+biostatistics::sensitivity,f64,2,1,2352404,2352404,2352404,0,500,pass,biostatistics,Se,Sensitivity,biology,biostatistics::sensitivity
+biostatistics::specificity,f64,2,1,2078184,2078184,2078184,0,500,pass,biostatistics,Sp,Specificity,biology,biostatistics::specificity

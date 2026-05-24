@@ -1,0 +1,86 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Tl",
+        name: "Thallium",
+        atomic_number: 81,
+        atomic_mass: 204.38_f64,
+        electronegativity: Some(1.62_f64),
+        group: Some(13),
+        period: 6,
+        category: "post-transition metal",
+        electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹",
+        isotopes: vec![
+        Isotope {
+            name: "Thallium-201",
+            symbol: "²⁰¹Tl",
+            mass_number: 201,
+            neutrons: 120,
+            atomic_mass: 200.970819_f64,
+            half_life: Some(72.912_f64),
+            half_life_unit: Some("hours"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Mercury-201"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Thallium-203",
+            symbol: "²⁰³Tl",
+            mass_number: 203,
+            neutrons: 122,
+            atomic_mass: 202.972344_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 0.2952_f64,
+            nuclear_spin: Some("1/2+"),
+        },
+        Isotope {
+            name: "Thallium-204",
+            symbol: "²⁰⁴Tl",
+            mass_number: 204,
+            neutrons: 123,
+            atomic_mass: 203.973864_f64,
+            half_life: Some(3.783_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.971_f64,
+                daughter: Some("Lead-204"),
+            },
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.029_f64,
+                daughter: Some("Mercury-204"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Thallium-205",
+            symbol: "²⁰⁵Tl",
+            mass_number: 205,
+            neutrons: 124,
+            atomic_mass: 204.974428_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 0.7048_f64,
+            nuclear_spin: Some("1/2+"),
+        },
+        ],
+    }
+}

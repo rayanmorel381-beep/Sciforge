@@ -1,0 +1,39 @@
+category: dispatch
+count: 6
+entries:
+  - label: dispatch_dispatch_complex_sqrt
+    symbol: DCS
+    name: Dispatch complex sqrt
+    domain: maths
+    test: "dispatch::dispatch_complex_sqrt"
+    avg_time_ns: 1966204.00
+  - label: dispatch_dispatch_gaussian_kernel_smooth
+    symbol: DGK
+    name: Dispatch gaussian kernel smooth
+    domain: maths
+    test: "dispatch::dispatch_gaussian_kernel_smooth"
+    avg_time_ns: 2425794.00
+  - label: dispatch_dispatch_missing_parameter_returns_error
+    symbol: DMP
+    name: Dispatch missing parameter returns error
+    domain: maths
+    test: "dispatch::dispatch_missing_parameter_returns_error"
+    avg_time_ns: 2037054.00
+  - label: dispatch_dispatch_unknown_function_returns_error
+    symbol: DUF
+    name: Dispatch unknown function returns error
+    domain: maths
+    test: "dispatch::dispatch_unknown_function_returns_error"
+    avg_time_ns: 1882223.00
+  - label: dispatch_dispatch_vec_midpoint
+    symbol: DVM
+    name: Dispatch vec midpoint
+    domain: maths
+    test: "dispatch::dispatch_vec_midpoint"
+    avg_time_ns: 2012304.00
+  - label: dispatch_dispatch_wave_packet_gaussian
+    symbol: DWP
+    name: Dispatch wave packet gaussian
+    domain: maths
+    test: "dispatch::dispatch_wave_packet_gaussian"
+    avg_time_ns: 2438955.00

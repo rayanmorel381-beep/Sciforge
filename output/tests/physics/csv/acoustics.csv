@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+acoustics::doppler_approaching,f64,2,1,2238924,2238924,2238924,0,500,pass,acoustics,DA,Doppler approaching,physics,acoustics::doppler_approaching
+acoustics::intensity_level_db,f64,1,1,1823883,1823883,1823883,0,1000,pass,acoustics,ILD,Intensity level db,physics,acoustics::intensity_level_db
+acoustics::reverberation_time_sabine,f64,1,1,1762503,1762503,1762503,0,1000,pass,acoustics,RTS,Reverberation time sabine,physics,acoustics::reverberation_time_sabine
+acoustics::speed_of_sound_gas,f64,1,1,1791574,1791574,1791574,0,1000,pass,acoustics,SOS,Speed of sound gas,physics,acoustics::speed_of_sound_gas

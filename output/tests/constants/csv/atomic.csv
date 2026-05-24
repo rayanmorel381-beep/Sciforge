@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+atomic::amu_to_kg,f64,1,1,1113482,1113482,1113482,0,1000,pass,atomic,ATK,Amu to kg,constants,atomic::amu_to_kg
+atomic::bohr_radius,f64,1,1,1118752,1118752,1118752,0,1000,pass,atomic,BR,Bohr radius,constants,atomic::bohr_radius
+atomic::compton_wavelength,f64,1,1,1396462,1396462,1396462,0,1000,pass,atomic,CW,Compton wavelength,constants,atomic::compton_wavelength
+atomic::electron_mass,f64,1,1,1224282,1224282,1224282,0,1000,pass,atomic,EM,Electron mass,constants,atomic::electron_mass
+atomic::neutron_mass,f64,1,1,1473203,1473203,1473203,0,1000,pass,atomic,NM,Neutron mass,constants,atomic::neutron_mass
+atomic::proton_heavier_than_electron,f64,1,1,1424733,1424733,1424733,0,1000,pass,atomic,PHT,Proton heavier than electron,constants,atomic::proton_heavier_than_electron
+atomic::proton_mass,f64,1,1,1196832,1196832,1196832,0,1000,pass,atomic,PM,Proton mass,constants,atomic::proton_mass

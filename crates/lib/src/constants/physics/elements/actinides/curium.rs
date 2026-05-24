@@ -1,0 +1,141 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Cm",
+        name: "Curium",
+        atomic_number: 96,
+        atomic_mass: 247.070354_f64,
+        electronegativity: Some(1.28_f64),
+        group: None,
+        period: 7,
+        category: "actinide",
+        electron_configuration: "[Rn] 5f⁷ 6d¹ 7s²",
+        isotopes: vec![
+        Isotope {
+            name: "Curium-242",
+            symbol: "²⁴²Cm",
+            mass_number: 242,
+            neutrons: 146,
+            atomic_mass: 242.058836_f64,
+            half_life: Some(162.8_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Plutonium-238"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Curium-243",
+            symbol: "²⁴³Cm",
+            mass_number: 243,
+            neutrons: 147,
+            atomic_mass: 243.061389_f64,
+            half_life: Some(29.1_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 0.998_f64,
+                daughter: Some("Plutonium-239"),
+            },
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.002_f64,
+                daughter: Some("Americium-243"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Curium-244",
+            symbol: "²⁴⁴Cm",
+            mass_number: 244,
+            neutrons: 148,
+            atomic_mass: 244.062753_f64,
+            half_life: Some(18.1_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Plutonium-240"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Curium-245",
+            symbol: "²⁴⁵Cm",
+            mass_number: 245,
+            neutrons: 149,
+            atomic_mass: 245.065492_f64,
+            half_life: Some(8500.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Plutonium-241"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Curium-247",
+            symbol: "²⁴⁷Cm",
+            mass_number: 247,
+            neutrons: 151,
+            atomic_mass: 247.070354_f64,
+            half_life: Some(15600000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Plutonium-243"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Curium-248",
+            symbol: "²⁴⁸Cm",
+            mass_number: 248,
+            neutrons: 152,
+            atomic_mass: 248.072349_f64,
+            half_life: Some(348000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 0.917_f64,
+                daughter: Some("Plutonium-244"),
+            },
+            DecayMode {
+                mode: "spontaneous fission",
+                branching_ratio: 0.083_f64,
+                daughter: None,
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

@@ -1,0 +1,27 @@
+category: epigenetics
+count: 4
+entries:
+  - label: epigenetics_cpg_methylation_level
+    symbol: CML
+    name: Cpg methylation level
+    domain: biology
+    test: "epigenetics::cpg_methylation_level"
+    avg_time_ns: 2001744.00
+  - label: epigenetics_epigenetic_inheritance_probability
+    symbol: EIP
+    name: Epigenetic inheritance probability
+    domain: biology
+    test: "epigenetics::epigenetic_inheritance_probability"
+    avg_time_ns: 2177194.00
+  - label: epigenetics_nucleosome_occupancy
+    symbol: NO
+    name: Nucleosome occupancy
+    domain: biology
+    test: "epigenetics::nucleosome_occupancy"
+    avg_time_ns: 2099984.00
+  - label: epigenetics_rnai_knockdown_efficiency
+    symbol: RKE
+    name: Rnai knockdown efficiency
+    domain: biology
+    test: "epigenetics::rnai_knockdown_efficiency"
+    avg_time_ns: 1945363.00

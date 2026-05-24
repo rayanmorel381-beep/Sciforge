@@ -1,0 +1,33 @@
+category: biostatistics
+count: 5
+entries:
+  - label: biostatistics_f1_score
+    symbol: FS
+    name: F1 score
+    domain: biology
+    test: "biostatistics::f1_score"
+    avg_time_ns: 2461174.00
+  - label: biostatistics_number_needed_to_treat
+    symbol: NNT
+    name: Number needed to treat
+    domain: biology
+    test: "biostatistics::number_needed_to_treat"
+    avg_time_ns: 2356114.00
+  - label: biostatistics_odds_ratio
+    symbol: OR
+    name: Odds ratio
+    domain: biology
+    test: "biostatistics::odds_ratio"
+    avg_time_ns: 2379695.00
+  - label: biostatistics_sensitivity
+    symbol: Se
+    name: Sensitivity
+    domain: biology
+    test: "biostatistics::sensitivity"
+    avg_time_ns: 2352404.00
+  - label: biostatistics_specificity
+    symbol: Sp
+    name: Specificity
+    domain: biology
+    test: "biostatistics::specificity"
+    avg_time_ns: 2078184.00

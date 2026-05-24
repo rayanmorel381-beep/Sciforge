@@ -1,0 +1,83 @@
+use std::sync::LazyLock;
+use sciforge_hub::prelude::constants::elements::by_symbol;
+use super::super::{Material, MaterialFamily};
+
+pub static AL_2618: LazyLock<Material> = LazyLock::new(|| Material {
+    element: by_symbol("Al"),
+    name: "2618 forged aluminium",
+    formula: "Al",
+    family: MaterialFamily::Aluminum,
+    density_kg_m3: 2760.0,
+    young_modulus_pa: 74.0e9,
+    poisson_ratio: 0.33,
+    yield_strength_pa: 350.0e6,
+    ultimate_strength_pa: 440.0e6,
+    thermal_conductivity_w_mk: 147.0,
+    thermal_expansion_per_k: 22.3e-6,
+    specific_heat_j_kgk: 875.0,
+    max_service_temp_k: 573.0,
+    fatigue_strength_coeff_pa: 540.0e6,
+    fatigue_strength_exponent: -0.10,
+    hardness_hv: 130.0,
+    cost_eur_kg: 8.0,
+});
+
+pub static AL_4032: LazyLock<Material> = LazyLock::new(|| Material {
+    element: by_symbol("Al"),
+    name: "4032 forged aluminium",
+    formula: "Al",
+    family: MaterialFamily::Aluminum,
+    density_kg_m3: 2680.0,
+    young_modulus_pa: 79.0e9,
+    poisson_ratio: 0.33,
+    yield_strength_pa: 315.0e6,
+    ultimate_strength_pa: 380.0e6,
+    thermal_conductivity_w_mk: 154.0,
+    thermal_expansion_per_k: 19.4e-6,
+    specific_heat_j_kgk: 864.0,
+    max_service_temp_k: 533.0,
+    fatigue_strength_coeff_pa: 480.0e6,
+    fatigue_strength_exponent: -0.10,
+    hardness_hv: 125.0,
+    cost_eur_kg: 7.5,
+});
+
+pub static AL_6061_T6: LazyLock<Material> = LazyLock::new(|| Material {
+    element: by_symbol("Al"),
+    name: "6061-T6 aluminium",
+    formula: "Al",
+    family: MaterialFamily::Aluminum,
+    density_kg_m3: 2700.0,
+    young_modulus_pa: 68.9e9,
+    poisson_ratio: 0.33,
+    yield_strength_pa: 276.0e6,
+    ultimate_strength_pa: 310.0e6,
+    thermal_conductivity_w_mk: 167.0,
+    thermal_expansion_per_k: 23.6e-6,
+    specific_heat_j_kgk: 896.0,
+    max_service_temp_k: 423.0,
+    fatigue_strength_coeff_pa: 425.0e6,
+    fatigue_strength_exponent: -0.10,
+    hardness_hv: 107.0,
+    cost_eur_kg: 5.5,
+});
+
+pub static AL_2024_T6: LazyLock<Material> = LazyLock::new(|| Material {
+    element: by_symbol("Al"),
+    name: "2024-T6 aluminium",
+    formula: "Al",
+    family: MaterialFamily::Aluminum,
+    density_kg_m3: 2780.0,
+    young_modulus_pa: 73.1e9,
+    poisson_ratio: 0.33,
+    yield_strength_pa: 393.0e6,
+    ultimate_strength_pa: 476.0e6,
+    thermal_conductivity_w_mk: 121.0,
+    thermal_expansion_per_k: 22.9e-6,
+    specific_heat_j_kgk: 875.0,
+    max_service_temp_k: 473.0,
+    fatigue_strength_coeff_pa: 580.0e6,
+    fatigue_strength_exponent: -0.10,
+    hardness_hv: 137.0,
+    cost_eur_kg: 9.0,
+});

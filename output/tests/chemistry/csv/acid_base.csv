@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+acid_base::equivalence_point_volume,f64,3,1,3199816,3199816,3199816,0,333.3333333333333,pass,acid_base,EPV,Equivalence point volume,chemistry,acid_base::equivalence_point_volume
+acid_base::henderson_hasselbalch,f64,3,1,3228756,3228756,3228756,0,333.3333333333333,pass,acid_base,HH,Henderson hasselbalch,chemistry,acid_base::henderson_hasselbalch
+acid_base::henderson_hasselbalch_excess_base,f64,2,1,2940876,2940876,2940876,0,500,pass,acid_base,HHE,Henderson hasselbalch excess base,chemistry,acid_base::henderson_hasselbalch_excess_base
+acid_base::ph_strong_acid,f64,2,1,2706945,2706945,2706945,0,500,pass,acid_base,PSA,Ph strong acid,chemistry,acid_base::ph_strong_acid
+acid_base::ph_strong_base,f64,2,1,2761065,2761065,2761065,0,500,pass,acid_base,PSB,Ph strong base,chemistry,acid_base::ph_strong_base
+acid_base::pka_roundtrip,f64,2,1,2318704,2318704,2318704,0,500,pass,acid_base,PR,Pka roundtrip,chemistry,acid_base::pka_roundtrip

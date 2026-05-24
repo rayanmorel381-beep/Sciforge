@@ -1,0 +1,16 @@
+[benchmark]
+category = "petrology"
+symbol = "CQN"
+name = "Cipw quartz norm"
+domain = "geology"
+test = "petrology::cipw_quartz_norm"
+experiment_name = "petrology::cipw_quartz_norm"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1851594.00
+min_time_ns = 1851594.00
+max_time_ns = 1851594.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

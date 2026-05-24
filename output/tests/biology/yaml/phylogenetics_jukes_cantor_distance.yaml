@@ -1,0 +1,15 @@
+category: phylogenetics
+symbol: JCD
+name: Jukes cantor distance
+domain: biology
+test: "phylogenetics::jukes_cantor_distance"
+experiment_name: "phylogenetics::jukes_cantor_distance"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2057934.00
+min_time_ns: 2057934.00
+max_time_ns: 2057934.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

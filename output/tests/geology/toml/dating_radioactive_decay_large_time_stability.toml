@@ -1,0 +1,16 @@
+[benchmark]
+category = "dating"
+symbol = "RDL"
+name = "Radioactive decay large time stability"
+domain = "geology"
+test = "dating::radioactive_decay_large_time_stability"
+experiment_name = "dating::radioactive_decay_large_time_stability"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2119463.00
+min_time_ns = 2119463.00
+max_time_ns = 2119463.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

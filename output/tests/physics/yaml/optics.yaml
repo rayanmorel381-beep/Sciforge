@@ -1,0 +1,27 @@
+category: optics
+count: 4
+entries:
+  - label: optics_brewster_angle
+    symbol: BA
+    name: Brewster angle
+    domain: physics
+    test: "optics::brewster_angle"
+    avg_time_ns: 1860873.00
+  - label: optics_rayleigh_criterion
+    symbol: RC
+    name: Rayleigh criterion
+    domain: physics
+    test: "optics::rayleigh_criterion"
+    avg_time_ns: 2033634.00
+  - label: optics_snell
+    symbol: Sn
+    name: Snell
+    domain: physics
+    test: "optics::snell"
+    avg_time_ns: 2312144.00
+  - label: optics_thin_lens_equation
+    symbol: TLE
+    name: Thin lens equation
+    domain: physics
+    test: "optics::thin_lens_equation"
+    avg_time_ns: 1942894.00

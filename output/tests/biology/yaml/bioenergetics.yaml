@@ -1,0 +1,27 @@
+category: bioenergetics
+count: 4
+entries:
+  - label: bioenergetics_adenylate_energy_charge
+    symbol: AEC
+    name: Adenylate energy charge
+    domain: biology
+    test: "bioenergetics::adenylate_energy_charge"
+    avg_time_ns: 2104813.00
+  - label: bioenergetics_glycolysis_net_atp
+    symbol: GNA
+    name: Glycolysis net atp
+    domain: biology
+    test: "bioenergetics::glycolysis_net_atp"
+    avg_time_ns: 1865294.00
+  - label: bioenergetics_p_o_ratio
+    symbol: POR
+    name: P o ratio
+    domain: biology
+    test: "bioenergetics::p_o_ratio"
+    avg_time_ns: 1885743.00
+  - label: bioenergetics_respiratory_control_index
+    symbol: RCI
+    name: Respiratory control index
+    domain: biology
+    test: "bioenergetics::respiratory_control_index"
+    avg_time_ns: 2178254.00

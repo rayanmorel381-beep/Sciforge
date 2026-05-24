@@ -1,0 +1,62 @@
+use std::sync::LazyLock;
+use super::super::{Material, MaterialFamily};
+
+pub static PEEK: LazyLock<Material> = LazyLock::new(|| Material {
+    element: None,
+    name: "PEEK polyetheretherketone",
+    formula: "C19H12O3",
+    family: MaterialFamily::Plastic,
+    density_kg_m3: 1320.0,
+    young_modulus_pa: 3.6e9,
+    poisson_ratio: 0.40,
+    yield_strength_pa: 100.0e6,
+    ultimate_strength_pa: 110.0e6,
+    thermal_conductivity_w_mk: 0.25,
+    thermal_expansion_per_k: 47.0e-6,
+    specific_heat_j_kgk: 320.0,
+    max_service_temp_k: 533.0,
+    fatigue_strength_coeff_pa: 180.0e6,
+    fatigue_strength_exponent: -0.08,
+    hardness_hv: 25.0,
+    cost_eur_kg: 90.0,
+});
+
+pub static PEI: LazyLock<Material> = LazyLock::new(|| Material {
+    element: None,
+    name: "PEI Ultem polyetherimide",
+    formula: "C37H24O6N2",
+    family: MaterialFamily::Plastic,
+    density_kg_m3: 1280.0,
+    young_modulus_pa: 3.0e9,
+    poisson_ratio: 0.38,
+    yield_strength_pa: 85.0e6,
+    ultimate_strength_pa: 105.0e6,
+    thermal_conductivity_w_mk: 0.22,
+    thermal_expansion_per_k: 56.0e-6,
+    specific_heat_j_kgk: 330.0,
+    max_service_temp_k: 473.0,
+    fatigue_strength_coeff_pa: 150.0e6,
+    fatigue_strength_exponent: -0.09,
+    hardness_hv: 22.0,
+    cost_eur_kg: 35.0,
+});
+
+pub static PPS: LazyLock<Material> = LazyLock::new(|| Material {
+    element: None,
+    name: "PPS polyphenylene sulfide",
+    formula: "C6H4S",
+    family: MaterialFamily::Plastic,
+    density_kg_m3: 1350.0,
+    young_modulus_pa: 3.4e9,
+    poisson_ratio: 0.37,
+    yield_strength_pa: 80.0e6,
+    ultimate_strength_pa: 90.0e6,
+    thermal_conductivity_w_mk: 0.30,
+    thermal_expansion_per_k: 49.0e-6,
+    specific_heat_j_kgk: 1090.0,
+    max_service_temp_k: 493.0,
+    fatigue_strength_coeff_pa: 140.0e6,
+    fatigue_strength_exponent: -0.09,
+    hardness_hv: 23.0,
+    cost_eur_kg: 18.0,
+});

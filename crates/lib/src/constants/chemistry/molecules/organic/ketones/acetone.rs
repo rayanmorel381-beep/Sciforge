@@ -1,0 +1,15 @@
+use super::super::super::Molecule;
+
+pub fn molecule() -> Molecule {
+    Molecule {
+        formula: "CH3COCH3",
+        name: "acetone",
+        composition: &[(6, 3), (1, 6), (8, 1)],
+        molar_mass: 58.080,
+        category: "ketone",
+        state_at_stp: "liquid",
+        melting_point_k: Some(178.0),
+        boiling_point_k: Some(329.2),
+        density_g_cm3: Some(0.784),
+    }
+}

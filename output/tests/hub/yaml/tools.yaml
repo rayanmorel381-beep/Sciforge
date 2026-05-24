@@ -1,0 +1,111 @@
+category: tools
+count: 18
+entries:
+  - label: tools_approx_equal_works
+    symbol: AEW
+    name: Approx equal works
+    domain: hub
+    test: "tools::approx_equal_works"
+    avg_time_ns: 2784225.00
+  - label: tools_arena_alloc_and_read
+    symbol: AAA
+    name: Arena alloc and read
+    domain: hub
+    test: "tools::arena_alloc_and_read"
+    avg_time_ns: 3432797.00
+  - label: tools_arena_capacity_limit
+    symbol: ACL
+    name: Arena capacity limit
+    domain: hub
+    test: "tools::arena_capacity_limit"
+    avg_time_ns: 2898835.00
+  - label: tools_arena_matrix
+    symbol: AM
+    name: Arena matrix
+    domain: hub
+    test: "tools::arena_matrix"
+    avg_time_ns: 2957966.00
+  - label: tools_arena_reset
+    symbol: AR
+    name: Arena reset
+    domain: hub
+    test: "tools::arena_reset"
+    avg_time_ns: 4232458.00
+  - label: tools_fingerprint_changes_with_data
+    symbol: FCW
+    name: Fingerprint changes with data
+    domain: hub
+    test: "tools::fingerprint_changes_with_data"
+    avg_time_ns: 2941615.00
+  - label: tools_fingerprint_deterministic
+    symbol: FD
+    name: Fingerprint deterministic
+    domain: hub
+    test: "tools::fingerprint_deterministic"
+    avg_time_ns: 2808475.00
+  - label: tools_format_scientific_output
+    symbol: FSO
+    name: Format scientific output
+    domain: hub
+    test: "tools::format_scientific_output"
+    avg_time_ns: 3228966.00
+  - label: tools_kahan_dot_basic
+    symbol: KDB
+    name: Kahan dot basic
+    domain: hub
+    test: "tools::kahan_dot_basic"
+    avg_time_ns: 2482265.00
+  - label: tools_kahan_sum_precision
+    symbol: KSP
+    name: Kahan sum precision
+    domain: hub
+    test: "tools::kahan_sum_precision"
+    avg_time_ns: 4952179.00
+  - label: tools_linspace_basic
+    symbol: LB
+    name: Linspace basic
+    domain: hub
+    test: "tools::linspace_basic"
+    avg_time_ns: 1969284.00
+  - label: tools_logspace_basic
+    symbol: LB
+    name: Logspace basic
+    domain: hub
+    test: "tools::logspace_basic"
+    avg_time_ns: 1916273.00
+  - label: tools_reproducible_context_fork
+    symbol: RCF
+    name: Reproducible context fork
+    domain: hub
+    test: "tools::reproducible_context_fork"
+    avg_time_ns: 2663155.00
+  - label: tools_rng_deterministic
+    symbol: RD
+    name: Rng deterministic
+    domain: hub
+    test: "tools::rng_deterministic"
+    avg_time_ns: 2283154.00
+  - label: tools_rng_different_seeds_differ
+    symbol: RDS
+    name: Rng different seeds differ
+    domain: hub
+    test: "tools::rng_different_seeds_differ"
+    avg_time_ns: 1837204.00
+  - label: tools_rng_normal_distribution
+    symbol: RND
+    name: Rng normal distribution
+    domain: hub
+    test: "tools::rng_normal_distribution"
+    avg_time_ns: 2580564.00
+  - label: tools_rng_uniform_range
+    symbol: RUR
+    name: Rng uniform range
+    domain: hub
+    test: "tools::rng_uniform_range"
+    avg_time_ns: 1816684.00
+  - label: tools_scratch_pool_independent
+    symbol: SPI
+    name: Scratch pool independent
+    domain: hub
+    test: "tools::scratch_pool_independent"
+    avg_time_ns: 2156334.00

@@ -1,0 +1,91 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Cu",
+        name: "Copper",
+        atomic_number: 29,
+        atomic_mass: 63.546_f64,
+        electronegativity: Some(1.9_f64),
+        group: Some(11),
+        period: 4,
+        category: "transition metal",
+        electron_configuration: "[Ar] 3d¹⁰ 4s¹",
+        isotopes: vec![
+        Isotope {
+            name: "Copper-63",
+            symbol: "⁶³Cu",
+            mass_number: 63,
+            neutrons: 34,
+            atomic_mass: 62.929598_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 0.6915_f64,
+            nuclear_spin: Some("3/2-"),
+        },
+        Isotope {
+            name: "Copper-64",
+            symbol: "⁶⁴Cu",
+            mass_number: 64,
+            neutrons: 35,
+            atomic_mass: 63.929764_f64,
+            half_life: Some(12.701_f64),
+            half_life_unit: Some("hours"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta+",
+                branching_ratio: 0.175_f64,
+                daughter: Some("Nickel-64"),
+            },
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.385_f64,
+                daughter: Some("Zinc-64"),
+            },
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.44_f64,
+                daughter: Some("Nickel-64"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Copper-65",
+            symbol: "⁶⁵Cu",
+            mass_number: 65,
+            neutrons: 36,
+            atomic_mass: 64.92779_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 0.3085_f64,
+            nuclear_spin: Some("3/2-"),
+        },
+        Isotope {
+            name: "Copper-67",
+            symbol: "⁶⁷Cu",
+            mass_number: 67,
+            neutrons: 38,
+            atomic_mass: 66.92773_f64,
+            half_life: Some(61.83_f64),
+            half_life_unit: Some("hours"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Zinc-67"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

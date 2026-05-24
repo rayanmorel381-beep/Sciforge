@@ -1,0 +1,9 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+relativity::compton_wavelength_shift,f64,2,1,2293164,2293164,2293164,0,500,pass,relativity,CWS,Compton wavelength shift,physics,relativity::compton_wavelength_shift
+relativity::energy_momentum_relation,f64,2,1,2073874,2073874,2073874,0,500,pass,relativity,EMR,Energy momentum relation,physics,relativity::energy_momentum_relation
+relativity::gamma_factor_at_rest,f64,2,1,2035943,2035943,2035943,0,500,pass,relativity,GFA,Gamma factor at rest,physics,relativity::gamma_factor_at_rest
+relativity::gamma_factor_increases_with_velocity,f64,2,1,2117754,2117754,2117754,0,500,pass,relativity,GFI,Gamma factor increases with velocity,physics,relativity::gamma_factor_increases_with_velocity
+relativity::length_contraction,f64,2,1,2524345,2524345,2524345,0,500,pass,relativity,LC,Length contraction,physics,relativity::length_contraction
+relativity::planck_radiation_positive,f64,2,1,2137304,2137304,2137304,0,500,pass,relativity,PRP,Planck radiation positive,physics,relativity::planck_radiation_positive
+relativity::time_dilation,f64,2,1,2135114,2135114,2135114,0,500,pass,relativity,TD,Time dilation,physics,relativity::time_dilation
+relativity::time_dilation_high_v,f64,2,1,2090724,2090724,2090724,0,500,pass,relativity,TDH,Time dilation high v,physics,relativity::time_dilation_high_v

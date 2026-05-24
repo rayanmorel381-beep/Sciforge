@@ -1,0 +1,16 @@
+[benchmark]
+category = "cosmology"
+symbol = "CDI"
+name = "Comoving distance increases with redshift"
+domain = "astronomy"
+test = "cosmology::comoving_distance_increases_with_redshift"
+experiment_name = "cosmology::comoving_distance_increases_with_redshift"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2000023.00
+min_time_ns = 2000023.00
+max_time_ns = 2000023.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

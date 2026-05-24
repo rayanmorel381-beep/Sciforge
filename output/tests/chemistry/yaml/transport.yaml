@@ -1,0 +1,21 @@
+category: transport
+count: 3
+entries:
+  - label: transport_diffusion_coefficient_stokes_einstein
+    symbol: DCS
+    name: Diffusion coefficient stokes einstein
+    domain: chemistry
+    test: "transport::diffusion_coefficient_stokes_einstein"
+    avg_time_ns: 1859913.00
+  - label: transport_fick_first_law
+    symbol: FFL
+    name: Fick first law
+    domain: chemistry
+    test: "transport::fick_first_law"
+    avg_time_ns: 1975804.00
+  - label: transport_sherwood_number
+    symbol: SN
+    name: Sherwood number
+    domain: chemistry
+    test: "transport::sherwood_number"
+    avg_time_ns: 1843314.00

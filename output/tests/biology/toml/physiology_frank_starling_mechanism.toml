@@ -1,0 +1,16 @@
+[benchmark]
+category = "physiology"
+symbol = "FSM"
+name = "Frank starling mechanism"
+domain = "biology"
+test = "physiology::frank_starling_mechanism"
+experiment_name = "physiology::frank_starling_mechanism"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2308384.00
+min_time_ns = 2308384.00
+max_time_ns = 2308384.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

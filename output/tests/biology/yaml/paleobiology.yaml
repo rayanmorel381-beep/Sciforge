@@ -1,0 +1,27 @@
+category: paleobiology
+count: 4
+entries:
+  - label: paleobiology_evolutionary_rate_darwin
+    symbol: ERD
+    name: Evolutionary rate darwin
+    domain: biology
+    test: "paleobiology::evolutionary_rate_darwin"
+    avg_time_ns: 2481525.00
+  - label: paleobiology_extinction_rate
+    symbol: ER
+    name: Extinction rate
+    domain: biology
+    test: "paleobiology::extinction_rate"
+    avg_time_ns: 2358174.00
+  - label: paleobiology_net_diversification_rate
+    symbol: NDR
+    name: Net diversification rate
+    domain: biology
+    test: "paleobiology::net_diversification_rate"
+    avg_time_ns: 2126244.00
+  - label: paleobiology_radiometric_age
+    symbol: RA
+    name: Radiometric age
+    domain: biology
+    test: "paleobiology::radiometric_age"
+    avg_time_ns: 2195514.00

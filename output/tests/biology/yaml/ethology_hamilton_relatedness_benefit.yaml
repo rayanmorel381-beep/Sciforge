@@ -1,0 +1,15 @@
+category: ethology
+symbol: HRB
+name: Hamilton relatedness benefit
+domain: biology
+test: "ethology::hamilton_relatedness_benefit"
+experiment_name: "ethology::hamilton_relatedness_benefit"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1834684.00
+min_time_ns: 1834684.00
+max_time_ns: 1834684.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

@@ -1,0 +1,17 @@
+{
+  "category": "dispatch",
+  "symbol": "DMP",
+  "name": "Dispatch missing parameter returns error",
+  "domain": "chemistry",
+  "test": "dispatch::dispatch_missing_parameter_returns_error",
+  "experiment_name": "dispatch::dispatch_missing_parameter_returns_error",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2231924.00,
+  "min_time_ns": 2231924.00,
+  "max_time_ns": 2231924.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

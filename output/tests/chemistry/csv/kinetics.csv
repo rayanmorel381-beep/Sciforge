@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+kinetics::eyring_equation,f64,1,1,1946214,1946214,1946214,0,1000,pass,kinetics,EE,Eyring equation,chemistry,kinetics::eyring_equation
+kinetics::half_life_first_order,f64,1,1,1978513,1978513,1978513,0,1000,pass,kinetics,HLF,Half life first order,chemistry,kinetics::half_life_first_order
+kinetics::michaelis_menten,f64,2,1,2105744,2105744,2105744,0,500,pass,kinetics,MM,Michaelis menten,chemistry,kinetics::michaelis_menten
+kinetics::rate_constant_arrhenius,f64,2,1,2368655,2368655,2368655,0,500,pass,kinetics,RCA,Rate constant arrhenius,chemistry,kinetics::rate_constant_arrhenius

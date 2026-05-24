@@ -1,0 +1,16 @@
+[benchmark]
+category = "systems_biology"
+symbol = "UI"
+name = "Ultrasensitivity index"
+domain = "biology"
+test = "systems_biology::ultrasensitivity_index"
+experiment_name = "systems_biology::ultrasensitivity_index"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2192304.00
+min_time_ns = 2192304.00
+max_time_ns = 2192304.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

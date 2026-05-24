@@ -1,0 +1,107 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+acid_base::equivalence_point_volume,f64,3,1,3199816,3199816,3199816,0,333.3333333333333,pass,acid_base,EPV,Equivalence point volume,chemistry,acid_base::equivalence_point_volume
+acid_base::henderson_hasselbalch,f64,3,1,3228756,3228756,3228756,0,333.3333333333333,pass,acid_base,HH,Henderson hasselbalch,chemistry,acid_base::henderson_hasselbalch
+acid_base::henderson_hasselbalch_excess_base,f64,2,1,2940876,2940876,2940876,0,500,pass,acid_base,HHE,Henderson hasselbalch excess base,chemistry,acid_base::henderson_hasselbalch_excess_base
+acid_base::ph_strong_acid,f64,2,1,2706945,2706945,2706945,0,500,pass,acid_base,PSA,Ph strong acid,chemistry,acid_base::ph_strong_acid
+acid_base::ph_strong_base,f64,2,1,2761065,2761065,2761065,0,500,pass,acid_base,PSB,Ph strong base,chemistry,acid_base::ph_strong_base
+acid_base::pka_roundtrip,f64,2,1,2318704,2318704,2318704,0,500,pass,acid_base,PR,Pka roundtrip,chemistry,acid_base::pka_roundtrip
+analytical::absorbance_transmittance_roundtrip,f64,2,1,2188194,2188194,2188194,0,500,pass,analytical,ATR,Absorbance transmittance roundtrip,chemistry,analytical::absorbance_transmittance_roundtrip
+analytical::beer_lambert,f64,2,1,2875965,2875965,2875965,0,500,pass,analytical,BL,Beer lambert,chemistry,analytical::beer_lambert
+analytical::dilution,f64,3,1,3111296,3111296,3111296,0,333.3333333333333,pass,analytical,Di,Dilution,chemistry,analytical::dilution
+analytical::percent_recovery,f64,3,1,3173406,3173406,3173406,0,333.3333333333333,pass,analytical,PR,Percent recovery,chemistry,analytical::percent_recovery
+analytical::retention_factor,f64,3,1,3216306,3216306,3216306,0,333.3333333333333,pass,analytical,RF,Retention factor,chemistry,analytical::retention_factor
+analytical::signal_to_noise,f64,3,1,3161556,3161556,3161556,0,333.3333333333333,pass,analytical,STN,Signal to noise,chemistry,analytical::signal_to_noise
+colloids::brownian_diffusion_coefficient,f64,3,1,3199926,3199926,3199926,0,333.3333333333333,pass,colloids,BDC,Brownian diffusion coefficient,chemistry,colloids::brownian_diffusion_coefficient
+colloids::stokes_sedimentation,f64,4,1,4499708,4499708,4499708,0,250,pass,colloids,SS,Stokes sedimentation,chemistry,colloids::stokes_sedimentation
+colloids::zeta_potential_smoluchowski,f64,3,1,3260246,3260246,3260246,0,333.3333333333333,pass,colloids,ZPS,Zeta potential smoluchowski,chemistry,colloids::zeta_potential_smoluchowski
+computational::dft_hartree_energy,f64,3,1,3011836,3011836,3011836,0,333.3333333333333,pass,computational,DHE,Dft hartree energy,chemistry,computational::dft_hartree_energy
+computational::gaussian_primitive,f64,3,1,3057065,3057065,3057065,0,333.3333333333333,pass,computational,GP,Gaussian primitive,chemistry,computational::gaussian_primitive
+computational::thomas_fermi_kinetic_energy,f64,3,1,3150966,3150966,3150966,0,333.3333333333333,pass,computational,TFK,Thomas fermi kinetic energy,chemistry,computational::thomas_fermi_kinetic_energy
+crystallography::bragg_law,f64,2,1,2945936,2945936,2945936,0,500,pass,crystallography,BL,Bragg law,chemistry,crystallography::bragg_law
+crystallography::interplanar_spacing_cubic,f64,2,1,2473564,2473564,2473564,0,500,pass,crystallography,ISC,Interplanar spacing cubic,chemistry,crystallography::interplanar_spacing_cubic
+crystallography::scherrer_crystal_size,f64,2,1,2443085,2443085,2443085,0,500,pass,crystallography,SCS,Scherrer crystal size,chemistry,crystallography::scherrer_crystal_size
+dispatch::arrhenius_temperature_effect,f64,2,1,2338884,2338884,2338884,0,500,pass,dispatch,ATE,Arrhenius temperature effect,chemistry,dispatch::arrhenius_temperature_effect
+dispatch::cell_potential,f64,1,1,1996164,1996164,1996164,0,1000,pass,dispatch,CP,Cell potential,chemistry,dispatch::cell_potential
+dispatch::dispatch_missing_parameter_returns_error,f64,2,1,2231924,2231924,2231924,0,500,pass,dispatch,DMP,Dispatch missing parameter returns error,chemistry,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,2,1,2151014,2151014,2151014,0,500,pass,dispatch,DUF,Dispatch unknown function returns error,chemistry,dispatch::dispatch_unknown_function_returns_error
+dispatch::gibbs_keq_roundtrip,f64,2,1,2355104,2355104,2355104,0,500,pass,dispatch,GKR,Gibbs keq roundtrip,chemistry,dispatch::gibbs_keq_roundtrip
+dispatch::half_life_first_order,f64,2,1,2565515,2565515,2565515,0,500,pass,dispatch,HLF,Half life first order,chemistry,dispatch::half_life_first_order
+dispatch::nernst_potential,f64,2,1,2413804,2413804,2413804,0,500,pass,dispatch,NP,Nernst potential,chemistry,dispatch::nernst_potential
+dispatch::rate_constant_arrhenius,f64,2,1,2286715,2286715,2286715,0,500,pass,dispatch,RCA,Rate constant arrhenius,chemistry,dispatch::rate_constant_arrhenius
+electrochemistry::butler_volmer,f64,2,1,2048023,2048023,2048023,0,500,pass,electrochemistry,BV,Butler volmer,chemistry,electrochemistry::butler_volmer
+electrochemistry::cell_potential,f64,1,1,1912744,1912744,1912744,0,1000,pass,electrochemistry,CP,Cell potential,chemistry,electrochemistry::cell_potential
+electrochemistry::faraday_mass,f64,2,1,2073684,2073684,2073684,0,500,pass,electrochemistry,FM,Faraday mass,chemistry,electrochemistry::faraday_mass
+electrochemistry::nernst_potential,f64,2,1,2908495,2908495,2908495,0,500,pass,electrochemistry,NP,Nernst potential,chemistry,electrochemistry::nernst_potential
+environmental::biochemical_oxygen_demand,f64,3,1,3525997,3525997,3525997,0,333.3333333333333,pass,environmental,BOD,Biochemical oxygen demand,chemistry,environmental::biochemical_oxygen_demand
+environmental::dissolved_oxygen_saturation,f64,3,1,3071855,3071855,3071855,0,333.3333333333333,pass,environmental,DOS,Dissolved oxygen saturation,chemistry,environmental::dissolved_oxygen_saturation
+environmental::henry_law_solubility,f64,2,1,2462535,2462535,2462535,0,500,pass,environmental,HLS,Henry law solubility,chemistry,environmental::henry_law_solubility
+equilibrium::equilibrium_constant_from_gibbs,f64,1,1,1926654,1926654,1926654,0,1000,pass,equilibrium,ECF,Equilibrium constant from gibbs,chemistry,equilibrium::equilibrium_constant_from_gibbs
+equilibrium::reaction_quotient,f64,1,1,1958953,1958953,1958953,0,1000,pass,equilibrium,RQ,Reaction quotient,chemistry,equilibrium::reaction_quotient
+equilibrium::vant_hoff,f64,1,1,1763623,1763623,1763623,0,1000,pass,equilibrium,VH,Vant hoff,chemistry,equilibrium::vant_hoff
+gas_laws::boyles_law,f64,1,1,1882304,1882304,1882304,0,1000,pass,gas_laws,BL,Boyles law,chemistry,gas_laws::boyles_law
+gas_laws::boyles_law_pressure_halves_when_volume_doubles,f64,2,1,2047674,2047674,2047674,0,500,pass,gas_laws,BLP,Boyles law pressure halves when volume doubles,chemistry,gas_laws::boyles_law_pressure_halves_when_volume_doubles
+gas_laws::charles_law,f64,1,1,1967493,1967493,1967493,0,1000,pass,gas_laws,CL,Charles law,chemistry,gas_laws::charles_law
+gas_laws::dalton_partial_pressure,f64,1,1,1968674,1968674,1968674,0,1000,pass,gas_laws,DPP,Dalton partial pressure,chemistry,gas_laws::dalton_partial_pressure
+gas_laws::grahams_law_effusion,f64,1,1,1955754,1955754,1955754,0,1000,pass,gas_laws,GLE,Grahams law effusion,chemistry,gas_laws::grahams_law_effusion
+gas_laws::ideal_gas_inverse_temperature_roundtrip,f64,1,1,1925243,1925243,1925243,0,1000,pass,gas_laws,IGI,Ideal gas inverse temperature roundtrip,chemistry,gas_laws::ideal_gas_inverse_temperature_roundtrip
+gas_laws::ideal_gas_pressure_chem,f64,1,1,1896114,1896114,1896114,0,1000,pass,gas_laws,IGP,Ideal gas pressure chem,chemistry,gas_laws::ideal_gas_pressure_chem
+gas_laws::van_der_waals_pressure,f64,2,1,2377754,2377754,2377754,0,500,pass,gas_laws,VDW,Van der waals pressure,chemistry,gas_laws::van_der_waals_pressure
+green_chemistry::e_factor,f64,1,1,1989264,1989264,1989264,0,1000,pass,green_chemistry,EF,E factor,chemistry,green_chemistry::e_factor
+green_chemistry::gc_atom_economy,f64,2,1,2443184,2443184,2443184,0,500,pass,green_chemistry,GAE,Gc atom economy,chemistry,green_chemistry::gc_atom_economy
+green_chemistry::reaction_mass_efficiency,f64,2,1,2343375,2343375,2343375,0,500,pass,green_chemistry,RME,Reaction mass efficiency,chemistry,green_chemistry::reaction_mass_efficiency
+inorganic::lattice_energy_born_lande,f64,2,1,2021043,2021043,2021043,0,500,pass,inorganic,LEB,Lattice energy born lande,chemistry,inorganic::lattice_energy_born_lande
+inorganic::magnetic_moment_spin_only,f64,2,1,2247195,2247195,2247195,0,500,pass,inorganic,MMS,Magnetic moment spin only,chemistry,inorganic::magnetic_moment_spin_only
+inorganic::pauling_electronegativity_difference,f64,1,1,1965833,1965833,1965833,0,1000,pass,inorganic,PED,Pauling electronegativity difference,chemistry,inorganic::pauling_electronegativity_difference
+kinetics::eyring_equation,f64,1,1,1946214,1946214,1946214,0,1000,pass,kinetics,EE,Eyring equation,chemistry,kinetics::eyring_equation
+kinetics::half_life_first_order,f64,1,1,1978513,1978513,1978513,0,1000,pass,kinetics,HLF,Half life first order,chemistry,kinetics::half_life_first_order
+kinetics::michaelis_menten,f64,2,1,2105744,2105744,2105744,0,500,pass,kinetics,MM,Michaelis menten,chemistry,kinetics::michaelis_menten
+kinetics::rate_constant_arrhenius,f64,2,1,2368655,2368655,2368655,0,500,pass,kinetics,RCA,Rate constant arrhenius,chemistry,kinetics::rate_constant_arrhenius
+molecular::bond_order,f64,2,1,2512054,2512054,2512054,0,500,pass,molecular,BO,Bond order,chemistry,molecular::bond_order
+molecular::dipole_moment,f64,2,1,2658065,2658065,2658065,0,500,pass,molecular,DM,Dipole moment,chemistry,molecular::dipole_moment
+molecular::formal_charge,f64,2,1,2305235,2305235,2305235,0,500,pass,molecular,FC,Formal charge,chemistry,molecular::formal_charge
+molecular::molar_mass,f64,1,1,1948033,1948033,1948033,0,1000,pass,molecular,MM,Molar mass,chemistry,molecular::molar_mass
+nuclear::binding_energy_per_nucleon,f64,1,1,1823253,1823253,1823253,0,1000,pass,nuclear,BEP,Binding energy per nucleon,chemistry,nuclear::binding_energy_per_nucleon
+nuclear::half_life_to_decay_constant,f64,2,1,2440335,2440335,2440335,0,500,pass,nuclear,HLT,Half life to decay constant,chemistry,nuclear::half_life_to_decay_constant
+nuclear::q_value,f64,2,1,2542325,2542325,2542325,0,500,pass,nuclear,QV,Q value,chemistry,nuclear::q_value
+organic::degree_of_unsaturation,f64,3,1,3241926,3241926,3241926,0,333.3333333333333,pass,organic,DOU,Degree of unsaturation,chemistry,organic::degree_of_unsaturation
+organic::hammett_equation,f64,2,1,2462084,2462084,2462084,0,500,pass,organic,HE,Hammett equation,chemistry,organic::hammett_equation
+organic::partition_coefficient_log_p,f64,2,1,2010444,2010444,2010444,0,500,pass,organic,PCL,Partition coefficient log p,chemistry,organic::partition_coefficient_log_p
+photochemistry::fret_efficiency,f64,2,1,2310114,2310114,2310114,0,500,pass,photochemistry,FE,Fret efficiency,chemistry,photochemistry::fret_efficiency
+photochemistry::photon_energy,f64,2,1,2065284,2065284,2065284,0,500,pass,photochemistry,PE,Photon energy,chemistry,photochemistry::photon_energy
+photochemistry::quantum_yield,f64,2,1,2072074,2072074,2072074,0,500,pass,photochemistry,QY,Quantum yield,chemistry,photochemistry::quantum_yield
+photochemistry::stern_volmer,f64,2,1,2370204,2370204,2370204,0,500,pass,photochemistry,SV,Stern volmer,chemistry,photochemistry::stern_volmer
+polymers::carothers_equation,f64,2,1,2220684,2220684,2220684,0,500,pass,polymers,CE,Carothers equation,chemistry,polymers::carothers_equation
+polymers::flory_huggins_free_energy,f64,1,1,1911754,1911754,1911754,0,1000,pass,polymers,FHF,Flory huggins free energy,chemistry,polymers::flory_huggins_free_energy
+polymers::polydispersity_index,f64,2,1,2354944,2354944,2354944,0,500,pass,polymers,PI,Polydispersity index,chemistry,polymers::polydispersity_index
+quantum_chem::huckel_total_pi_energy,f64,2,1,2082864,2082864,2082864,0,500,pass,quantum_chem,HTP,Huckel total pi energy,chemistry,quantum_chem::huckel_total_pi_energy
+quantum_chem::lcao_bonding_energy,f64,2,1,2029264,2029264,2029264,0,500,pass,quantum_chem,LBE,Lcao bonding energy,chemistry,quantum_chem::lcao_bonding_energy
+quantum_chem::mulliken_population,f64,1,1,1969594,1969594,1969594,0,1000,pass,quantum_chem,MP,Mulliken population,chemistry,quantum_chem::mulliken_population
+reaction_engineering::cstr_volume,f64,2,1,2102004,2102004,2102004,0,500,pass,reaction_engineering,CV,Cstr volume,chemistry,reaction_engineering::cstr_volume
+reaction_engineering::damkohler_number,f64,2,1,2103853,2103853,2103853,0,500,pass,reaction_engineering,DN,Damkohler number,chemistry,reaction_engineering::damkohler_number
+reaction_engineering::pfr_conversion_first_order,f64,2,1,2672285,2672285,2672285,0,500,pass,reaction_engineering,PCF,Pfr conversion first order,chemistry,reaction_engineering::pfr_conversion_first_order
+solid_state::band_gap_from_absorption,f64,2,1,2371955,2371955,2371955,0,500,pass,solid_state,BGF,Band gap from absorption,chemistry,solid_state::band_gap_from_absorption
+solid_state::conductivity_semiconductor,f64,2,1,2197994,2197994,2197994,0,500,pass,solid_state,CS,Conductivity semiconductor,chemistry,solid_state::conductivity_semiconductor
+solid_state::fermi_dirac,f64,2,1,2109914,2109914,2109914,0,500,pass,solid_state,FD,Fermi dirac,chemistry,solid_state::fermi_dirac
+solutions::boiling_point_elevation,f64,1,1,1986943,1986943,1986943,0,1000,pass,solutions,BPE,Boiling point elevation,chemistry,solutions::boiling_point_elevation
+solutions::freezing_point_depression,f64,2,1,2054204,2054204,2054204,0,500,pass,solutions,FPD,Freezing point depression,chemistry,solutions::freezing_point_depression
+solutions::osmotic_pressure,f64,2,1,2000434,2000434,2000434,0,500,pass,solutions,OP,Osmotic pressure,chemistry,solutions::osmotic_pressure
+solutions::raoult_law,f64,2,1,2598335,2598335,2598335,0,500,pass,solutions,RL,Raoult law,chemistry,solutions::raoult_law
+spectroscopy::chemical_shift_ppm,f64,2,1,2165504,2165504,2165504,0,500,pass,spectroscopy,CSP,Chemical shift ppm,chemistry,spectroscopy::chemical_shift_ppm
+spectroscopy::larmor_frequency,f64,2,1,2271304,2271304,2271304,0,500,pass,spectroscopy,LF,Larmor frequency,chemistry,spectroscopy::larmor_frequency
+spectroscopy::reduced_mass,f64,1,1,1975244,1975244,1975244,0,1000,pass,spectroscopy,RM,Reduced mass,chemistry,spectroscopy::reduced_mass
+spectroscopy::wavenumber_to_wavelength,f64,2,1,2003593,2003593,2003593,0,500,pass,spectroscopy,WTW,Wavenumber to wavelength,chemistry,spectroscopy::wavenumber_to_wavelength
+stoichiometry::atom_economy,f64,1,1,1834744,1834744,1834744,0,1000,pass,stoichiometry,AE,Atom economy,chemistry,stoichiometry::atom_economy
+stoichiometry::limiting_reagent,f64,2,1,2023463,2023463,2023463,0,500,pass,stoichiometry,LR,Limiting reagent,chemistry,stoichiometry::limiting_reagent
+stoichiometry::percent_yield,f64,2,1,2098064,2098064,2098064,0,500,pass,stoichiometry,PY,Percent yield,chemistry,stoichiometry::percent_yield
+stoichiometry::theoretical_yield,f64,2,1,2138694,2138694,2138694,0,500,pass,stoichiometry,TY,Theoretical yield,chemistry,stoichiometry::theoretical_yield
+surface::contact_angle,f64,2,1,2284804,2284804,2284804,0,500,pass,surface,CA,Contact angle,chemistry,surface::contact_angle
+surface::freundlich_isotherm,f64,2,1,2360315,2360315,2360315,0,500,pass,surface,FI,Freundlich isotherm,chemistry,surface::freundlich_isotherm
+surface::langmuir_isotherm,f64,2,1,2021224,2021224,2021224,0,500,pass,surface,LI,Langmuir isotherm,chemistry,surface::langmuir_isotherm
+surface::laplace_pressure,f64,2,1,2015033,2015033,2015033,0,500,pass,surface,LP,Laplace pressure,chemistry,surface::laplace_pressure
+thermochemistry::clausius_clapeyron,f64,2,1,2464255,2464255,2464255,0,500,pass,thermochemistry,CC,Clausius clapeyron,chemistry,thermochemistry::clausius_clapeyron
+thermochemistry::entropy_change,f64,2,1,2301024,2301024,2301024,0,500,pass,thermochemistry,EC,Entropy change,chemistry,thermochemistry::entropy_change
+thermochemistry::gibbs_free_energy,f64,2,1,2151994,2151994,2151994,0,500,pass,thermochemistry,GFE,Gibbs free energy,chemistry,thermochemistry::gibbs_free_energy
+thermochemistry::hess_law,f64,2,1,2094874,2094874,2094874,0,500,pass,thermochemistry,HL,Hess law,chemistry,thermochemistry::hess_law
+transport::diffusion_coefficient_stokes_einstein,f64,1,1,1859913,1859913,1859913,0,1000,pass,transport,DCS,Diffusion coefficient stokes einstein,chemistry,transport::diffusion_coefficient_stokes_einstein
+transport::fick_first_law,f64,1,1,1975804,1975804,1975804,0,1000,pass,transport,FFL,Fick first law,chemistry,transport::fick_first_law
+transport::sherwood_number,f64,1,1,1843314,1843314,1843314,0,1000,pass,transport,SN,Sherwood number,chemistry,transport::sherwood_number

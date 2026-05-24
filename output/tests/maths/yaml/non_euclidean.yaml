@@ -1,0 +1,27 @@
+category: non_euclidean
+count: 4
+entries:
+  - label: non_euclidean_hawking_temperature
+    symbol: HT
+    name: Hawking temperature
+    domain: maths
+    test: "non_euclidean::hawking_temperature"
+    avg_time_ns: 1974734.00
+  - label: non_euclidean_poincare_disk_distance
+    symbol: PDD
+    name: Poincare disk distance
+    domain: maths
+    test: "non_euclidean::poincare_disk_distance"
+    avg_time_ns: 1948684.00
+  - label: non_euclidean_schwarzschild_radius
+    symbol: SR
+    name: Schwarzschild radius
+    domain: maths
+    test: "non_euclidean::schwarzschild_radius"
+    avg_time_ns: 1864973.00
+  - label: non_euclidean_spherical_distance
+    symbol: SD
+    name: Spherical distance
+    domain: maths
+    test: "non_euclidean::spherical_distance"
+    avg_time_ns: 2202784.00

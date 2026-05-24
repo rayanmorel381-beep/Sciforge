@@ -1,0 +1,2 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,k
+entry_test,f64,0,50,16.4,16.4,16.4,0,0,test_result,v

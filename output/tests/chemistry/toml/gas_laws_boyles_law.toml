@@ -1,0 +1,16 @@
+[benchmark]
+category = "gas_laws"
+symbol = "BL"
+name = "Boyles law"
+domain = "chemistry"
+test = "gas_laws::boyles_law"
+experiment_name = "gas_laws::boyles_law"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1882304.00
+min_time_ns = 1882304.00
+max_time_ns = 1882304.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

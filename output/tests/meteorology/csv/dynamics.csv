@@ -1,0 +1,9 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+dynamics::coriolis_changes_sign_between_hemispheres,f64,1,1,1818384,1818384,1818384,0,1000,pass,dynamics,CCS,Coriolis changes sign between hemispheres,meteorology,dynamics::coriolis_changes_sign_between_hemispheres
+dynamics::coriolis_parameter,f64,1,1,1922843,1922843,1922843,0,1000,pass,dynamics,CP,Coriolis parameter,meteorology,dynamics::coriolis_parameter
+dynamics::coriolis_zero_at_equator,f64,1,1,1901754,1901754,1901754,0,1000,pass,dynamics,CZA,Coriolis zero at equator,meteorology,dynamics::coriolis_zero_at_equator
+dynamics::ekman_depth,f64,2,1,2286924,2286924,2286924,0,500,pass,dynamics,ED,Ekman depth,meteorology,dynamics::ekman_depth
+dynamics::geostrophic_wind,f64,1,1,1934454,1934454,1934454,0,1000,pass,dynamics,GW,Geostrophic wind,meteorology,dynamics::geostrophic_wind
+dynamics::rossby_number,f64,1,1,1803073,1803073,1803073,0,1000,pass,dynamics,RN,Rossby number,meteorology,dynamics::rossby_number
+dynamics::rossby_number_decreases_with_scale,f64,2,1,2393274,2393274,2393274,0,500,pass,dynamics,RND,Rossby number decreases with scale,meteorology,dynamics::rossby_number_decreases_with_scale
+dynamics::rossby_wave_speed,f64,2,1,2111584,2111584,2111584,0,500,pass,dynamics,RWS,Rossby wave speed,meteorology,dynamics::rossby_wave_speed

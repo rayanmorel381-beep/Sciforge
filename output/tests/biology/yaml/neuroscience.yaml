@@ -1,0 +1,27 @@
+category: neuroscience
+count: 4
+entries:
+  - label: neuroscience_fano_factor
+    symbol: FF
+    name: Fano factor
+    domain: biology
+    test: "neuroscience::fano_factor"
+    avg_time_ns: 2592625.00
+  - label: neuroscience_firing_rate
+    symbol: FR
+    name: Firing rate
+    domain: biology
+    test: "neuroscience::firing_rate"
+    avg_time_ns: 2325524.00
+  - label: neuroscience_rescorla_wagner_update
+    symbol: RWU
+    name: Rescorla wagner update
+    domain: biology
+    test: "neuroscience::rescorla_wagner_update"
+    avg_time_ns: 2109474.00
+  - label: neuroscience_stdp_weight_change
+    symbol: SWC
+    name: Stdp weight change
+    domain: biology
+    test: "neuroscience::stdp_weight_change"
+    avg_time_ns: 2054794.00

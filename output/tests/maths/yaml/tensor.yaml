@@ -1,0 +1,21 @@
+category: tensor
+count: 3
+entries:
+  - label: tensor_tensor_contract
+    symbol: TC
+    name: Tensor contract
+    domain: maths
+    test: "tensor::tensor_contract"
+    avg_time_ns: 2111934.00
+  - label: tensor_tensor_determinant
+    symbol: TD
+    name: Tensor determinant
+    domain: maths
+    test: "tensor::tensor_determinant"
+    avg_time_ns: 2018274.00
+  - label: tensor_tensor_reshape
+    symbol: TR
+    name: Tensor reshape
+    domain: maths
+    test: "tensor::tensor_reshape"
+    avg_time_ns: 2056984.00

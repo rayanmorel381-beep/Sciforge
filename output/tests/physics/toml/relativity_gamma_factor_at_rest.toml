@@ -1,0 +1,16 @@
+[benchmark]
+category = "relativity"
+symbol = "GFA"
+name = "Gamma factor at rest"
+domain = "physics"
+test = "relativity::gamma_factor_at_rest"
+experiment_name = "relativity::gamma_factor_at_rest"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2035943.00
+min_time_ns = 2035943.00
+max_time_ns = 2035943.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

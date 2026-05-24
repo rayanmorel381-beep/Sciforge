@@ -1,0 +1,106 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Nb",
+        name: "Niobium",
+        atomic_number: 41,
+        atomic_mass: 92.90637_f64,
+        electronegativity: Some(1.6_f64),
+        group: Some(5),
+        period: 5,
+        category: "transition metal",
+        electron_configuration: "[Kr] 4d⁴ 5s¹",
+        isotopes: vec![
+        Isotope {
+            name: "Niobium-91",
+            symbol: "⁹¹Nb",
+            mass_number: 91,
+            neutrons: 50,
+            atomic_mass: 90.906996_f64,
+            half_life: Some(680.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Zirconium-91"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Niobium-92",
+            symbol: "⁹²Nb",
+            mass_number: 92,
+            neutrons: 51,
+            atomic_mass: 91.907194_f64,
+            half_life: Some(34700000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Zirconium-92"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Niobium-93",
+            symbol: "⁹³Nb",
+            mass_number: 93,
+            neutrons: 52,
+            atomic_mass: 92.906378_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("9/2+"),
+        },
+        Isotope {
+            name: "Niobium-94",
+            symbol: "⁹⁴Nb",
+            mass_number: 94,
+            neutrons: 53,
+            atomic_mass: 93.907284_f64,
+            half_life: Some(20300.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Molybdenum-94"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Niobium-95",
+            symbol: "⁹⁵Nb",
+            mass_number: 95,
+            neutrons: 54,
+            atomic_mass: 94.906836_f64,
+            half_life: Some(34.991_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Molybdenum-95"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

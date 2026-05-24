@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+nucleosynthesis::binding_energy_per_nucleon_semf,f64,2,1,2445165,2445165,2445165,0,500,pass,nucleosynthesis,BEP,Binding energy per nucleon semf,physics,nucleosynthesis::binding_energy_per_nucleon_semf
+nucleosynthesis::coulomb_barrier,f64,2,1,2023114,2023114,2023114,0,500,pass,nucleosynthesis,CB,Coulomb barrier,physics,nucleosynthesis::coulomb_barrier
+nucleosynthesis::half_life_from_constant,f64,2,1,2538144,2538144,2538144,0,500,pass,nucleosynthesis,HLF,Half life from constant,physics,nucleosynthesis::half_life_from_constant
+nucleosynthesis::nuclear_radius_fm,f64,2,1,2240855,2240855,2240855,0,500,pass,nucleosynthesis,NRF,Nuclear radius fm,physics,nucleosynthesis::nuclear_radius_fm

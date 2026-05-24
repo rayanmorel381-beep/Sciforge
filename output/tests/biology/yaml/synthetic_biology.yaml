@@ -1,0 +1,27 @@
+category: synthetic_biology
+count: 4
+entries:
+  - label: synthetic_biology_and_gate
+    symbol: AG
+    name: And gate
+    domain: biology
+    test: "synthetic_biology::and_gate"
+    avg_time_ns: 1919143.00
+  - label: synthetic_biology_crispr_on_target_score
+    symbol: COT
+    name: Crispr on target score
+    domain: biology
+    test: "synthetic_biology::crispr_on_target_score"
+    avg_time_ns: 2161864.00
+  - label: synthetic_biology_hill_activation
+    symbol: HA
+    name: Hill activation
+    domain: biology
+    test: "synthetic_biology::hill_activation"
+    avg_time_ns: 2031194.00
+  - label: synthetic_biology_hill_repression
+    symbol: HR
+    name: Hill repression
+    domain: biology
+    test: "synthetic_biology::hill_repression"
+    avg_time_ns: 2146524.00

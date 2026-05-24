@@ -1,0 +1,17 @@
+{
+  "category": "cross_domain",
+  "symbol": "IE",
+  "name": "Impact energy",
+  "domain": "hub",
+  "test": "cross_domain::planetary_geology::impact_energy",
+  "experiment_name": "cross_domain::planetary_geology::impact_energy",
+  "precision": "f64",
+  "elapsed_ms": 5,
+  "iterations": 1,
+  "avg_time_ns": 5805491.00,
+  "min_time_ns": 5805491.00,
+  "max_time_ns": 5805491.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 200.00,
+  "result": "pass"
+}

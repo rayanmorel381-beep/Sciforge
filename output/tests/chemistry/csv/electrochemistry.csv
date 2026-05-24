@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+electrochemistry::butler_volmer,f64,2,1,2048023,2048023,2048023,0,500,pass,electrochemistry,BV,Butler volmer,chemistry,electrochemistry::butler_volmer
+electrochemistry::cell_potential,f64,1,1,1912744,1912744,1912744,0,1000,pass,electrochemistry,CP,Cell potential,chemistry,electrochemistry::cell_potential
+electrochemistry::faraday_mass,f64,2,1,2073684,2073684,2073684,0,500,pass,electrochemistry,FM,Faraday mass,chemistry,electrochemistry::faraday_mass
+electrochemistry::nernst_potential,f64,2,1,2908495,2908495,2908495,0,500,pass,electrochemistry,NP,Nernst potential,chemistry,electrochemistry::nernst_potential

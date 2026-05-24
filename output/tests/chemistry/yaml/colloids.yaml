@@ -1,0 +1,21 @@
+category: colloids
+count: 3
+entries:
+  - label: colloids_brownian_diffusion_coefficient
+    symbol: BDC
+    name: Brownian diffusion coefficient
+    domain: chemistry
+    test: "colloids::brownian_diffusion_coefficient"
+    avg_time_ns: 3199926.00
+  - label: colloids_stokes_sedimentation
+    symbol: SS
+    name: Stokes sedimentation
+    domain: chemistry
+    test: "colloids::stokes_sedimentation"
+    avg_time_ns: 4499708.00
+  - label: colloids_zeta_potential_smoluchowski
+    symbol: ZPS
+    name: Zeta potential smoluchowski
+    domain: chemistry
+    test: "colloids::zeta_potential_smoluchowski"
+    avg_time_ns: 3260246.00

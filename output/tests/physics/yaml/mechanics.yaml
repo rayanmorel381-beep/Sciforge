@@ -1,0 +1,45 @@
+category: mechanics
+count: 7
+entries:
+  - label: mechanics_beat_frequency
+    symbol: BF
+    name: Beat frequency
+    domain: physics
+    test: "mechanics::beat_frequency"
+    avg_time_ns: 2258654.00
+  - label: mechanics_bernoulli_pressure
+    symbol: BP
+    name: Bernoulli pressure
+    domain: physics
+    test: "mechanics::bernoulli_pressure"
+    avg_time_ns: 1993723.00
+  - label: mechanics_doppler_shift_wavelength
+    symbol: DSW
+    name: Doppler shift wavelength
+    domain: physics
+    test: "mechanics::doppler_shift_wavelength"
+    avg_time_ns: 2208294.00
+  - label: mechanics_drag_force
+    symbol: DF
+    name: Drag force
+    domain: physics
+    test: "mechanics::drag_force"
+    avg_time_ns: 2011824.00
+  - label: mechanics_hooke_strain
+    symbol: HS
+    name: Hooke strain
+    domain: physics
+    test: "mechanics::hooke_strain"
+    avg_time_ns: 1852213.00
+  - label: mechanics_hooke_stress
+    symbol: HS
+    name: Hooke stress
+    domain: physics
+    test: "mechanics::hooke_stress"
+    avg_time_ns: 1842514.00
+  - label: mechanics_mach_number
+    symbol: MN
+    name: Mach number
+    domain: physics
+    test: "mechanics::mach_number"
+    avg_time_ns: 1975193.00

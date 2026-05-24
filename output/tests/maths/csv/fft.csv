@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+fft::fft_basic,f64,2,1,2333844,2333844,2333844,0,500,pass,fft,FB,Fft basic,maths,fft::fft_basic
+fft::hann_window,f64,2,1,2655205,2655205,2655205,0,500,pass,fft,HW,Hann window,maths,fft::hann_window
+fft::power_spectrum,f64,2,1,2190354,2190354,2190354,0,500,pass,fft,PS,Power spectrum,maths,fft::power_spectrum

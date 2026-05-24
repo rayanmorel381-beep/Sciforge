@@ -1,0 +1,21 @@
+category: vector
+count: 3
+entries:
+  - label: vector_vec_distance
+    symbol: VD
+    name: Vec distance
+    domain: maths
+    test: "vector::vec_distance"
+    avg_time_ns: 2087094.00
+  - label: vector_vec_lerp
+    symbol: VL
+    name: Vec lerp
+    domain: maths
+    test: "vector::vec_lerp"
+    avg_time_ns: 2642455.00
+  - label: vector_vec_project
+    symbol: VP
+    name: Vec project
+    domain: maths
+    test: "vector::vec_project"
+    avg_time_ns: 2081863.00

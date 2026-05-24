@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+planetary::habitable_zone_inner,f64,1,1,1922033,1922033,1922033,0,1000,pass,planetary,HZI,Habitable zone inner,astronomy,planetary::habitable_zone_inner
+planetary::habitable_zone_outer,f64,1,1,1940724,1940724,1940724,0,1000,pass,planetary,HZO,Habitable zone outer,astronomy,planetary::habitable_zone_outer
+planetary::surface_gravity,f64,1,1,1833463,1833463,1833463,0,1000,pass,planetary,SG,Surface gravity,astronomy,planetary::surface_gravity

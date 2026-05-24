@@ -1,0 +1,21 @@
+category: systems_biology
+count: 3
+entries:
+  - label: systems_biology_metabolic_control_coefficient
+    symbol: MCC
+    name: Metabolic control coefficient
+    domain: biology
+    test: "systems_biology::metabolic_control_coefficient"
+    avg_time_ns: 2042514.00
+  - label: systems_biology_oscillation_period
+    symbol: OP
+    name: Oscillation period
+    domain: biology
+    test: "systems_biology::oscillation_period"
+    avg_time_ns: 2227614.00
+  - label: systems_biology_ultrasensitivity_index
+    symbol: UI
+    name: Ultrasensitivity index
+    domain: biology
+    test: "systems_biology::ultrasensitivity_index"
+    avg_time_ns: 2192304.00

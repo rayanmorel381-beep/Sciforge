@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+enzyme::competitive_inhibition_increases_apparent_km,f64,2,1,2215215,2215215,2215215,0,500,pass,enzyme,CII,Competitive inhibition increases apparent km,biology,enzyme::competitive_inhibition_increases_apparent_km
+enzyme::hill_equation,f64,2,1,2126333,2126333,2126333,0,500,pass,enzyme,HE,Hill equation,biology,enzyme::hill_equation
+enzyme::hill_higher_cooperativity_reduces_rate_below_k,f64,1,1,1972943,1972943,1972943,0,1000,pass,enzyme,HHC,Hill higher cooperativity reduces rate below k,biology,enzyme::hill_higher_cooperativity_reduces_rate_below_k
+enzyme::lineweaver_burk,f64,1,1,1899824,1899824,1899824,0,1000,pass,enzyme,LB,Lineweaver burk,biology,enzyme::lineweaver_burk
+enzyme::michaelis_menten_half_vmax,f64,2,1,2306734,2306734,2306734,0,500,pass,enzyme,MMH,Michaelis menten half vmax,biology,enzyme::michaelis_menten_half_vmax
+enzyme::michaelis_menten_monotonic_with_substrate,f64,2,1,2542395,2542395,2542395,0,500,pass,enzyme,MMM,Michaelis menten monotonic with substrate,biology,enzyme::michaelis_menten_monotonic_with_substrate
+enzyme::michaelis_menten_saturation,f64,2,1,2436914,2436914,2436914,0,500,pass,enzyme,MMS,Michaelis menten saturation,biology,enzyme::michaelis_menten_saturation

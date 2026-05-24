@@ -1,0 +1,27 @@
+category: tissue_engineering
+count: 4
+entries:
+  - label: tissue_engineering_cell_proliferation_on_scaffold
+    symbol: CPO
+    name: Cell proliferation on scaffold
+    domain: biology
+    test: "tissue_engineering::cell_proliferation_on_scaffold"
+    avg_time_ns: 2175994.00
+  - label: tissue_engineering_degradation_rate_first_order
+    symbol: DRF
+    name: Degradation rate first order
+    domain: biology
+    test: "tissue_engineering::degradation_rate_first_order"
+    avg_time_ns: 2529315.00
+  - label: tissue_engineering_oxygen_transfer_rate
+    symbol: OTR
+    name: Oxygen transfer rate
+    domain: biology
+    test: "tissue_engineering::oxygen_transfer_rate"
+    avg_time_ns: 2168614.00
+  - label: tissue_engineering_scaffold_porosity
+    symbol: SP
+    name: Scaffold porosity
+    domain: biology
+    test: "tissue_engineering::scaffold_porosity"
+    avg_time_ns: 2512714.00

@@ -1,0 +1,15 @@
+category: units
+symbol: ER
+name: Ev roundtrip
+domain: constants
+test: "units::ev_roundtrip"
+experiment_name: "units::ev_roundtrip"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1256382.00
+min_time_ns: 1256382.00
+max_time_ns: 1256382.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

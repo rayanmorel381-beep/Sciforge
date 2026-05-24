@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+spectroscopy::chemical_shift_ppm,f64,2,1,2165504,2165504,2165504,0,500,pass,spectroscopy,CSP,Chemical shift ppm,chemistry,spectroscopy::chemical_shift_ppm
+spectroscopy::larmor_frequency,f64,2,1,2271304,2271304,2271304,0,500,pass,spectroscopy,LF,Larmor frequency,chemistry,spectroscopy::larmor_frequency
+spectroscopy::reduced_mass,f64,1,1,1975244,1975244,1975244,0,1000,pass,spectroscopy,RM,Reduced mass,chemistry,spectroscopy::reduced_mass
+spectroscopy::wavenumber_to_wavelength,f64,2,1,2003593,2003593,2003593,0,500,pass,spectroscopy,WTW,Wavenumber to wavelength,chemistry,spectroscopy::wavenumber_to_wavelength

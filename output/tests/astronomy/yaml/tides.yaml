@@ -1,0 +1,21 @@
+category: tides
+count: 3
+entries:
+  - label: tides_spring_tide_amplitude
+    symbol: STA
+    name: Spring tide amplitude
+    domain: astronomy
+    test: "tides::spring_tide_amplitude"
+    avg_time_ns: 1902564.00
+  - label: tides_tidal_locking_timescale
+    symbol: TLT
+    name: Tidal locking timescale
+    domain: astronomy
+    test: "tides::tidal_locking_timescale"
+    avg_time_ns: 1979104.00
+  - label: tides_tidal_potential
+    symbol: TP
+    name: Tidal potential
+    domain: astronomy
+    test: "tides::tidal_potential"
+    avg_time_ns: 1875253.00

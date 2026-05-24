@@ -1,0 +1,593 @@
+title = "SciForge Astronomy Benchmarks"
+count = 59
+
+[[entries]]
+label = "celestial_gravitational_force"
+category = "celestial"
+symbol = "GF"
+name = "Gravitational force"
+domain = "astronomy"
+test = "celestial::gravitational_force"
+avg_time_ns = 1975473.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "celestial_hill_sphere"
+category = "celestial"
+symbol = "HS"
+name = "Hill sphere"
+domain = "astronomy"
+test = "celestial::hill_sphere"
+avg_time_ns = 1976844.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "celestial_julian_date_to_j2000_century"
+category = "celestial"
+symbol = "JDT"
+name = "Julian date to j2000 century"
+domain = "astronomy"
+test = "celestial::julian_date_to_j2000_century"
+avg_time_ns = 1869063.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "celestial_synodic_period"
+category = "celestial"
+symbol = "SP"
+name = "Synodic period"
+domain = "astronomy"
+test = "celestial::synodic_period"
+avg_time_ns = 1882334.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cosmology_age_decreases_with_redshift"
+category = "cosmology"
+symbol = "ADW"
+name = "Age decreases with redshift"
+domain = "astronomy"
+test = "cosmology::age_decreases_with_redshift"
+avg_time_ns = 2442184.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_age_of_universe"
+category = "cosmology"
+symbol = "AOU"
+name = "Age of universe"
+domain = "astronomy"
+test = "cosmology::age_of_universe"
+avg_time_ns = 2200865.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_astronomy_missing_required_parameter_returns_error"
+category = "cosmology"
+symbol = "AMR"
+name = "Astronomy missing required parameter returns error"
+domain = "astronomy"
+test = "cosmology::astronomy_missing_required_parameter_returns_error"
+avg_time_ns = 2290824.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_astronomy_unknown_function_returns_error"
+category = "cosmology"
+symbol = "AUF"
+name = "Astronomy unknown function returns error"
+domain = "astronomy"
+test = "cosmology::astronomy_unknown_function_returns_error"
+avg_time_ns = 1933843.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cosmology_cmb_temperature_at_z"
+category = "cosmology"
+symbol = "CTA"
+name = "Cmb temperature at z"
+domain = "astronomy"
+test = "cosmology::cmb_temperature_at_z"
+avg_time_ns = 1967794.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cosmology_cmb_temperature_scales_with_z"
+category = "cosmology"
+symbol = "CTS"
+name = "Cmb temperature scales with z"
+domain = "astronomy"
+test = "cosmology::cmb_temperature_scales_with_z"
+avg_time_ns = 1892384.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cosmology_comoving_distance_increases_with_redshift"
+category = "cosmology"
+symbol = "CDI"
+name = "Comoving distance increases with redshift"
+domain = "astronomy"
+test = "cosmology::comoving_distance_increases_with_redshift"
+avg_time_ns = 2000023.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_comoving_distance_zero_at_zero_redshift"
+category = "cosmology"
+symbol = "CDZ"
+name = "Comoving distance zero at zero redshift"
+domain = "astronomy"
+test = "cosmology::comoving_distance_zero_at_zero_redshift"
+avg_time_ns = 2394745.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_critical_density"
+category = "cosmology"
+symbol = "CD"
+name = "Critical density"
+domain = "astronomy"
+test = "cosmology::critical_density"
+avg_time_ns = 2319264.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_distance_duality_table_driven"
+category = "cosmology"
+symbol = "DDT"
+name = "Distance duality table driven"
+domain = "astronomy"
+test = "cosmology::distance_duality_table_driven"
+avg_time_ns = 2634615.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_e_z_lcdm_sweep_monotonic_for_positive_z"
+category = "cosmology"
+symbol = "EZL"
+name = "E z lcdm sweep monotonic for positive z"
+domain = "astronomy"
+test = "cosmology::e_z_lcdm_sweep_monotonic_for_positive_z"
+avg_time_ns = 2009754.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_e_z_lcdm_today"
+category = "cosmology"
+symbol = "EZL"
+name = "E z lcdm today"
+domain = "astronomy"
+test = "cosmology::e_z_lcdm_today"
+avg_time_ns = 2005023.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_hubble_at_z_matches_h0_times_ez_lcdm"
+category = "cosmology"
+symbol = "HAZ"
+name = "Hubble at z matches h0 times ez lcdm"
+domain = "astronomy"
+test = "cosmology::hubble_at_z_matches_h0_times_ez_lcdm"
+avg_time_ns = 1917214.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cosmology_hubble_ez_identity_table_driven"
+category = "cosmology"
+symbol = "HEI"
+name = "Hubble ez identity table driven"
+domain = "astronomy"
+test = "cosmology::hubble_ez_identity_table_driven"
+avg_time_ns = 1829283.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cosmology_hubble_velocity"
+category = "cosmology"
+symbol = "HV"
+name = "Hubble velocity"
+domain = "astronomy"
+test = "cosmology::hubble_velocity"
+avg_time_ns = 1775993.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "cosmology_lookback_time_increases_with_redshift"
+category = "cosmology"
+symbol = "LTI"
+name = "Lookback time increases with redshift"
+domain = "astronomy"
+test = "cosmology::lookback_time_increases_with_redshift"
+avg_time_ns = 2011574.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_luminosity_angular_distance_duality_from_z"
+category = "cosmology"
+symbol = "LAD"
+name = "Luminosity angular distance duality from z"
+domain = "astronomy"
+test = "cosmology::luminosity_angular_distance_duality_from_z"
+avg_time_ns = 2785765.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_relativistic_redshift_velocity_roundtrip"
+category = "cosmology"
+symbol = "RRV"
+name = "Relativistic redshift velocity roundtrip"
+domain = "astronomy"
+test = "cosmology::relativistic_redshift_velocity_roundtrip"
+avg_time_ns = 2239234.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_scale_factor"
+category = "cosmology"
+symbol = "SF"
+name = "Scale factor"
+domain = "astronomy"
+test = "cosmology::scale_factor"
+avg_time_ns = 2066014.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "cosmology_scale_factor_high_z"
+category = "cosmology"
+symbol = "SFH"
+name = "Scale factor high z"
+domain = "astronomy"
+test = "cosmology::scale_factor_high_z"
+avg_time_ns = 1926474.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "galactic_galactic_escape_velocity"
+category = "galactic"
+symbol = "GEV"
+name = "Galactic escape velocity"
+domain = "astronomy"
+test = "galactic::galactic_escape_velocity"
+avg_time_ns = 1871543.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "galactic_galactic_rotation_velocity"
+category = "galactic"
+symbol = "GRV"
+name = "Galactic rotation velocity"
+domain = "astronomy"
+test = "galactic::galactic_rotation_velocity"
+avg_time_ns = 1964534.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "galactic_tidal_radius"
+category = "galactic"
+symbol = "TR"
+name = "Tidal radius"
+domain = "astronomy"
+test = "galactic::tidal_radius"
+avg_time_ns = 1862643.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "impacts_crater_diameter"
+category = "impacts"
+symbol = "CD"
+name = "Crater diameter"
+domain = "astronomy"
+test = "impacts::crater_diameter"
+avg_time_ns = 2238675.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "impacts_fireball_radius"
+category = "impacts"
+symbol = "FR"
+name = "Fireball radius"
+domain = "astronomy"
+test = "impacts::fireball_radius"
+avg_time_ns = 2216474.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "impacts_impact_velocity"
+category = "impacts"
+symbol = "IV"
+name = "Impact velocity"
+domain = "astronomy"
+test = "impacts::impact_velocity"
+avg_time_ns = 2103864.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "orbits_circular_velocity"
+category = "orbits"
+symbol = "CV"
+name = "Circular velocity"
+domain = "astronomy"
+test = "orbits::circular_velocity"
+avg_time_ns = 1988663.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "orbits_escape_velocity"
+category = "orbits"
+symbol = "EV"
+name = "Escape velocity"
+domain = "astronomy"
+test = "orbits::escape_velocity"
+avg_time_ns = 2245724.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "orbits_escape_vs_circular_velocity_ratio"
+category = "orbits"
+symbol = "EVC"
+name = "Escape vs circular velocity ratio"
+domain = "astronomy"
+test = "orbits::escape_vs_circular_velocity_ratio"
+avg_time_ns = 1942194.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "orbits_hohmann_delta_v_positive_and_zero_identity"
+category = "orbits"
+symbol = "HDV"
+name = "Hohmann delta v positive and zero identity"
+domain = "astronomy"
+test = "orbits::hohmann_delta_v_positive_and_zero_identity"
+avg_time_ns = 2328944.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "orbits_kepler_period_earth"
+category = "orbits"
+symbol = "KPE"
+name = "Kepler period earth"
+domain = "astronomy"
+test = "orbits::kepler_period_earth"
+avg_time_ns = 1960484.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "orbits_periapsis_apoapsis_consistency"
+category = "orbits"
+symbol = "PAC"
+name = "Periapsis apoapsis consistency"
+domain = "astronomy"
+test = "orbits::periapsis_apoapsis_consistency"
+avg_time_ns = 1864543.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "orbits_roche_limit"
+category = "orbits"
+symbol = "RL"
+name = "Roche limit"
+domain = "astronomy"
+test = "orbits::roche_limit"
+avg_time_ns = 2587495.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "orbits_sphere_of_influence_earth"
+category = "orbits"
+symbol = "SOI"
+name = "Sphere of influence earth"
+domain = "astronomy"
+test = "orbits::sphere_of_influence_earth"
+avg_time_ns = 2069874.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "orbits_true_anomaly_radius_matches_extrema"
+category = "orbits"
+symbol = "TAR"
+name = "True anomaly radius matches extrema"
+domain = "astronomy"
+test = "orbits::true_anomaly_radius_matches_extrema"
+avg_time_ns = 2215254.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "orbits_vis_viva_circular"
+category = "orbits"
+symbol = "VVC"
+name = "Vis viva circular"
+domain = "astronomy"
+test = "orbits::vis_viva_circular"
+avg_time_ns = 1899114.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "planetary_habitable_zone_inner"
+category = "planetary"
+symbol = "HZI"
+name = "Habitable zone inner"
+domain = "astronomy"
+test = "planetary::habitable_zone_inner"
+avg_time_ns = 1922033.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "planetary_habitable_zone_outer"
+category = "planetary"
+symbol = "HZO"
+name = "Habitable zone outer"
+domain = "astronomy"
+test = "planetary::habitable_zone_outer"
+avg_time_ns = 1940724.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "planetary_surface_gravity"
+category = "planetary"
+symbol = "SG"
+name = "Surface gravity"
+domain = "astronomy"
+test = "planetary::surface_gravity"
+avg_time_ns = 1833463.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "rotation_rotational_kinetic_energy"
+category = "rotation"
+symbol = "RKE"
+name = "Rotational kinetic energy"
+domain = "astronomy"
+test = "rotation::rotational_kinetic_energy"
+avg_time_ns = 1903334.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "rotation_surface_velocity_at_latitude"
+category = "rotation"
+symbol = "SVA"
+name = "Surface velocity at latitude"
+domain = "astronomy"
+test = "rotation::surface_velocity_at_latitude"
+avg_time_ns = 2111424.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "stellar_absolute_magnitude_and_distance_modulus_roundtrip"
+category = "stellar"
+symbol = "AMA"
+name = "Absolute magnitude and distance modulus roundtrip"
+domain = "astronomy"
+test = "stellar::absolute_magnitude_and_distance_modulus_roundtrip"
+avg_time_ns = 2410584.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "stellar_chandrasekhar_limit"
+category = "stellar"
+symbol = "CL"
+name = "Chandrasekhar limit"
+domain = "astronomy"
+test = "stellar::chandrasekhar_limit"
+avg_time_ns = 2120574.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "stellar_distance_modulus"
+category = "stellar"
+symbol = "DM"
+name = "Distance modulus"
+domain = "astronomy"
+test = "stellar::distance_modulus"
+avg_time_ns = 1998274.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "stellar_eddington_luminosity_scales_linearly_with_mass"
+category = "stellar"
+symbol = "ELS"
+name = "Eddington luminosity scales linearly with mass"
+domain = "astronomy"
+test = "stellar::eddington_luminosity_scales_linearly_with_mass"
+avg_time_ns = 1936243.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "stellar_luminosity_from_radius_temp"
+category = "stellar"
+symbol = "LFR"
+name = "Luminosity from radius temp"
+domain = "astronomy"
+test = "stellar::luminosity_from_radius_temp"
+avg_time_ns = 1959064.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "stellar_main_sequence_lifetime"
+category = "stellar"
+symbol = "MSL"
+name = "Main sequence lifetime"
+domain = "astronomy"
+test = "stellar::main_sequence_lifetime"
+avg_time_ns = 2012774.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "stellar_mass_luminosity_monotonic_in_solar_range"
+category = "stellar"
+symbol = "MLM"
+name = "Mass luminosity monotonic in solar range"
+domain = "astronomy"
+test = "stellar::mass_luminosity_monotonic_in_solar_range"
+avg_time_ns = 2183424.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "stellar_schwarzschild_radius"
+category = "stellar"
+symbol = "SR"
+name = "Schwarzschild radius"
+domain = "astronomy"
+test = "stellar::schwarzschild_radius"
+avg_time_ns = 2310874.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "stellar_stefan_boltzmann_blackbody"
+category = "stellar"
+symbol = "SBB"
+name = "Stefan boltzmann blackbody"
+domain = "astronomy"
+test = "stellar::stefan_boltzmann_blackbody"
+avg_time_ns = 2113424.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "stellar_stellar_flux_inverse_square_distance"
+category = "stellar"
+symbol = "SFI"
+name = "Stellar flux inverse square distance"
+domain = "astronomy"
+test = "stellar::stellar_flux_inverse_square_distance"
+avg_time_ns = 1899593.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "stellar_wien_peak_wavelength"
+category = "stellar"
+symbol = "WPW"
+name = "Wien peak wavelength"
+domain = "astronomy"
+test = "stellar::wien_peak_wavelength"
+avg_time_ns = 2243994.00
+iterations_per_sec = 500.00
+
+[[entries]]
+label = "tides_spring_tide_amplitude"
+category = "tides"
+symbol = "STA"
+name = "Spring tide amplitude"
+domain = "astronomy"
+test = "tides::spring_tide_amplitude"
+avg_time_ns = 1902564.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "tides_tidal_locking_timescale"
+category = "tides"
+symbol = "TLT"
+name = "Tidal locking timescale"
+domain = "astronomy"
+test = "tides::tidal_locking_timescale"
+avg_time_ns = 1979104.00
+iterations_per_sec = 1000.00
+
+[[entries]]
+label = "tides_tidal_potential"
+category = "tides"
+symbol = "TP"
+name = "Tidal potential"
+domain = "astronomy"
+test = "tides::tidal_potential"
+avg_time_ns = 1875253.00
+iterations_per_sec = 1000.00
+

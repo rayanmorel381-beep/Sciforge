@@ -1,0 +1,27 @@
+category: proteomics
+count: 4
+entries:
+  - label: proteomics_gravy_index
+    symbol: GI
+    name: Gravy index
+    domain: biology
+    test: "proteomics::gravy_index"
+    avg_time_ns: 2503774.00
+  - label: proteomics_mass_accuracy_ppm
+    symbol: MAP
+    name: Mass accuracy ppm
+    domain: biology
+    test: "proteomics::mass_accuracy_ppm"
+    avg_time_ns: 2584045.00
+  - label: proteomics_mz_ratio
+    symbol: MR
+    name: Mz ratio
+    domain: biology
+    test: "proteomics::mz_ratio"
+    avg_time_ns: 2595195.00
+  - label: proteomics_protein_coverage
+    symbol: PC
+    name: Protein coverage
+    domain: biology
+    test: "proteomics::protein_coverage"
+    avg_time_ns: 2348734.00

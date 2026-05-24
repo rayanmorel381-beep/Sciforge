@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+bioinformatics::alignment_gc_content,f64,2,1,2021124,2021124,2021124,0,500,pass,bioinformatics,AGC,Alignment gc content,biology,bioinformatics::alignment_gc_content
+bioinformatics::edit_distance_identical,f64,2,1,2145604,2145604,2145604,0,500,pass,bioinformatics,EDI,Edit distance identical,biology,bioinformatics::edit_distance_identical
+bioinformatics::sequence_identity,f64,1,1,1970653,1970653,1970653,0,1000,pass,bioinformatics,SI,Sequence identity,biology,bioinformatics::sequence_identity
+bioinformatics::smith_waterman_score,f64,2,1,2063064,2063064,2063064,0,500,pass,bioinformatics,SWS,Smith waterman score,biology,bioinformatics::smith_waterman_score

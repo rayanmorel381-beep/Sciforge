@@ -1,0 +1,27 @@
+category: cell
+count: 4
+entries:
+  - label: cell_cell_doubling_time
+    symbol: CDT
+    name: Cell doubling time
+    domain: biology
+    test: "cell::cell_doubling_time"
+    avg_time_ns: 2238264.00
+  - label: cell_fick_first_law
+    symbol: FFL
+    name: Fick first law
+    domain: biology
+    test: "cell::fick_first_law"
+    avg_time_ns: 2053604.00
+  - label: cell_ligand_receptor_binding
+    symbol: LRB
+    name: Ligand receptor binding
+    domain: biology
+    test: "cell::ligand_receptor_binding"
+    avg_time_ns: 2172314.00
+  - label: cell_osmotic_pressure
+    symbol: OP
+    name: Osmotic pressure
+    domain: biology
+    test: "cell::osmotic_pressure"
+    avg_time_ns: 1834973.00

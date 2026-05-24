@@ -1,0 +1,15 @@
+category: paleobiology
+symbol: NDR
+name: Net diversification rate
+domain: biology
+test: "paleobiology::net_diversification_rate"
+experiment_name: "paleobiology::net_diversification_rate"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2126244.00
+min_time_ns: 2126244.00
+max_time_ns: 2126244.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

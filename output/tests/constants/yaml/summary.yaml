@@ -1,0 +1,259 @@
+title: SciForge Constants Test
+count: 32
+entries:
+  - label: astro_astronomical_unit
+    category: astro
+    symbol: AU
+    name: Astronomical unit
+    domain: constants
+    test: "astro::astronomical_unit"
+    avg_time_ns: 1388132.00
+    iterations_per_sec: 1000.00
+  - label: astro_cmb_temperature
+    category: astro
+    symbol: CT
+    name: Cmb temperature
+    domain: constants
+    test: "astro::cmb_temperature"
+    avg_time_ns: 1554393.00
+    iterations_per_sec: 1000.00
+  - label: astro_earth_mass
+    category: astro
+    symbol: EM
+    name: Earth mass
+    domain: constants
+    test: "astro::earth_mass"
+    avg_time_ns: 1175502.00
+    iterations_per_sec: 1000.00
+  - label: astro_hubble_constant
+    category: astro
+    symbol: HC
+    name: Hubble constant
+    domain: constants
+    test: "astro::hubble_constant"
+    avg_time_ns: 1208092.00
+    iterations_per_sec: 1000.00
+  - label: astro_light_year
+    category: astro
+    symbol: LY
+    name: Light year
+    domain: constants
+    test: "astro::light_year"
+    avg_time_ns: 1239503.00
+    iterations_per_sec: 1000.00
+  - label: astro_parsec
+    category: astro
+    symbol: Pa
+    name: Parsec
+    domain: constants
+    test: "astro::parsec"
+    avg_time_ns: 1216782.00
+    iterations_per_sec: 1000.00
+  - label: astro_parsec_greater_than_ly
+    category: astro
+    symbol: PGT
+    name: Parsec greater than ly
+    domain: constants
+    test: "astro::parsec_greater_than_ly"
+    avg_time_ns: 1208722.00
+    iterations_per_sec: 1000.00
+  - label: astro_solar_mass
+    category: astro
+    symbol: SM
+    name: Solar mass
+    domain: constants
+    test: "astro::solar_mass"
+    avg_time_ns: 1211393.00
+    iterations_per_sec: 1000.00
+  - label: atomic_amu_to_kg
+    category: atomic
+    symbol: ATK
+    name: Amu to kg
+    domain: constants
+    test: "atomic::amu_to_kg"
+    avg_time_ns: 1113482.00
+    iterations_per_sec: 1000.00
+  - label: atomic_bohr_radius
+    category: atomic
+    symbol: BR
+    name: Bohr radius
+    domain: constants
+    test: "atomic::bohr_radius"
+    avg_time_ns: 1118752.00
+    iterations_per_sec: 1000.00
+  - label: atomic_compton_wavelength
+    category: atomic
+    symbol: CW
+    name: Compton wavelength
+    domain: constants
+    test: "atomic::compton_wavelength"
+    avg_time_ns: 1396462.00
+    iterations_per_sec: 1000.00
+  - label: atomic_electron_mass
+    category: atomic
+    symbol: EM
+    name: Electron mass
+    domain: constants
+    test: "atomic::electron_mass"
+    avg_time_ns: 1224282.00
+    iterations_per_sec: 1000.00
+  - label: atomic_neutron_mass
+    category: atomic
+    symbol: NM
+    name: Neutron mass
+    domain: constants
+    test: "atomic::neutron_mass"
+    avg_time_ns: 1473203.00
+    iterations_per_sec: 1000.00
+  - label: atomic_proton_heavier_than_electron
+    category: atomic
+    symbol: PHT
+    name: Proton heavier than electron
+    domain: constants
+    test: "atomic::proton_heavier_than_electron"
+    avg_time_ns: 1424733.00
+    iterations_per_sec: 1000.00
+  - label: atomic_proton_mass
+    category: atomic
+    symbol: PM
+    name: Proton mass
+    domain: constants
+    test: "atomic::proton_mass"
+    avg_time_ns: 1196832.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_avogadro_number
+    category: fundamental
+    symbol: AN
+    name: Avogadro number
+    domain: constants
+    test: "fundamental::avogadro_number"
+    avg_time_ns: 1094902.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_boltzmann_constant
+    category: fundamental
+    symbol: BC
+    name: Boltzmann constant
+    domain: constants
+    test: "fundamental::boltzmann_constant"
+    avg_time_ns: 1192362.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_coulomb_constant
+    category: fundamental
+    symbol: CC
+    name: Coulomb constant
+    domain: constants
+    test: "fundamental::coulomb_constant"
+    avg_time_ns: 1514273.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_elementary_charge
+    category: fundamental
+    symbol: EC
+    name: Elementary charge
+    domain: constants
+    test: "fundamental::elementary_charge"
+    avg_time_ns: 1190132.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_gas_constant
+    category: fundamental
+    symbol: GC
+    name: Gas constant
+    domain: constants
+    test: "fundamental::gas_constant"
+    avg_time_ns: 1230993.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_gravitational_constant
+    category: fundamental
+    symbol: GC
+    name: Gravitational constant
+    domain: constants
+    test: "fundamental::gravitational_constant"
+    avg_time_ns: 1229832.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_planck_constant
+    category: fundamental
+    symbol: PC
+    name: Planck constant
+    domain: constants
+    test: "fundamental::planck_constant"
+    avg_time_ns: 1332032.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_reduced_planck
+    category: fundamental
+    symbol: RP
+    name: Reduced planck
+    domain: constants
+    test: "fundamental::reduced_planck"
+    avg_time_ns: 1190632.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_speed_of_light
+    category: fundamental
+    symbol: SOL
+    name: Speed of light
+    domain: constants
+    test: "fundamental::speed_of_light"
+    avg_time_ns: 1144123.00
+    iterations_per_sec: 1000.00
+  - label: fundamental_stefan_boltzmann
+    category: fundamental
+    symbol: SB
+    name: Stefan boltzmann
+    domain: constants
+    test: "fundamental::stefan_boltzmann"
+    avg_time_ns: 1280612.00
+    iterations_per_sec: 1000.00
+  - label: units_angle_conversion_inverse_identity
+    category: units
+    symbol: ACI
+    name: Angle conversion inverse identity
+    domain: constants
+    test: "units::angle_conversion_inverse_identity"
+    avg_time_ns: 1356603.00
+    iterations_per_sec: 1000.00
+  - label: units_atm_to_pascal
+    category: units
+    symbol: ATP
+    name: Atm to pascal
+    domain: constants
+    test: "units::atm_to_pascal"
+    avg_time_ns: 1291612.00
+    iterations_per_sec: 1000.00
+  - label: units_calorie_to_joule
+    category: units
+    symbol: CTJ
+    name: Calorie to joule
+    domain: constants
+    test: "units::calorie_to_joule"
+    avg_time_ns: 1357812.00
+    iterations_per_sec: 1000.00
+  - label: units_degree_rad_roundtrip
+    category: units
+    symbol: DRR
+    name: Degree rad roundtrip
+    domain: constants
+    test: "units::degree_rad_roundtrip"
+    avg_time_ns: 1487873.00
+    iterations_per_sec: 1000.00
+  - label: units_ev_joule_roundtrip_multiple_values
+    category: units
+    symbol: EJR
+    name: Ev joule roundtrip multiple values
+    domain: constants
+    test: "units::ev_joule_roundtrip_multiple_values"
+    avg_time_ns: 1508983.00
+    iterations_per_sec: 1000.00
+  - label: units_ev_roundtrip
+    category: units
+    symbol: ER
+    name: Ev roundtrip
+    domain: constants
+    test: "units::ev_roundtrip"
+    avg_time_ns: 1256382.00
+    iterations_per_sec: 1000.00
+  - label: units_ev_to_joule
+    category: units
+    symbol: ETJ
+    name: Ev to joule
+    domain: constants
+    test: "units::ev_to_joule"
+    avg_time_ns: 1195943.00
+    iterations_per_sec: 1000.00

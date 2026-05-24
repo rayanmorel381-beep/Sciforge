@@ -1,0 +1,45 @@
+category: dispatch
+count: 7
+entries:
+  - label: dispatch_codon_frequency
+    symbol: CF
+    name: Codon frequency
+    domain: biology
+    test: "dispatch::codon_frequency"
+    avg_time_ns: 2263474.00
+  - label: dispatch_dispatch_missing_parameter_returns_error
+    symbol: DMP
+    name: Dispatch missing parameter returns error
+    domain: biology
+    test: "dispatch::dispatch_missing_parameter_returns_error"
+    avg_time_ns: 2214574.00
+  - label: dispatch_dispatch_unknown_function_returns_error
+    symbol: DUF
+    name: Dispatch unknown function returns error
+    domain: biology
+    test: "dispatch::dispatch_unknown_function_returns_error"
+    avg_time_ns: 2155194.00
+  - label: dispatch_gompertz_mortality_rate
+    symbol: GMR
+    name: Gompertz mortality rate
+    domain: biology
+    test: "dispatch::gompertz_mortality_rate"
+    avg_time_ns: 1821453.00
+  - label: dispatch_metabolic_rate_kleiber
+    symbol: MRK
+    name: Metabolic rate kleiber
+    domain: biology
+    test: "dispatch::metabolic_rate_kleiber"
+    avg_time_ns: 2094844.00
+  - label: dispatch_soil_respiration
+    symbol: SR
+    name: Soil respiration
+    domain: biology
+    test: "dispatch::soil_respiration"
+    avg_time_ns: 2695295.00
+  - label: dispatch_telomere_shortening
+    symbol: TS
+    name: Telomere shortening
+    domain: biology
+    test: "dispatch::telomere_shortening"
+    avg_time_ns: 2334984.00

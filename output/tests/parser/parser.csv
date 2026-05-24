@@ -1,0 +1,21 @@
+symbol,name,number,mass,group,period,category,density,melting_point,boiling_point
+H,Hydrogen,1,1.008,1,1,nonmetal,0.00008988,-259.16,-252.87
+He,Helium,2,4.0026,18,1,noble gas,0.0001785,-272.2,-268.93
+Li,Lithium,3,6.941,1,2,alkali metal,0.534,180.54,1342
+Be,Beryllium,4,9.0122,2,2,alkaline earth,1.85,1287,2470
+B,Boron,5,10.81,13,2,metalloid,2.34,2075,4000
+C,Carbon,6,12.011,14,2,nonmetal,2.267,3550,4027
+N,Nitrogen,7,14.007,15,2,nonmetal,0.0012506,-210.0,-195.79
+O,Oxygen,8,15.999,16,2,nonmetal,0.001429,-218.79,-182.96
+F,Fluorine,9,18.998,17,2,halogen,0.001696,-219.67,-188.11
+Ne,Neon,10,20.180,18,2,noble gas,0.0008999,-248.59,-246.08
+Na,Sodium,11,22.990,1,3,alkali metal,0.971,97.794,882.94
+Mg,Magnesium,12,24.305,2,3,alkaline earth,1.738,650,1091
+Al,Aluminium,13,26.982,13,3,post-transition,2.698,660.32,2519
+Si,Silicon,14,28.085,14,3,metalloid,2.3296,1414,3265
+P,Phosphorus,15,30.974,15,3,nonmetal,1.82,44.15,280.5
+S,Sulfur,16,32.06,16,3,nonmetal,2.067,115.21,444.67
+Cl,Chlorine,17,35.45,17,3,halogen,0.003214,-101.5,-34.04
+Ar,Argon,18,39.948,18,3,noble gas,0.0017837,-189.34,-185.85
+K,Potassium,19,39.098,1,4,alkali metal,0.862,63.5,759
+Ca,Calcium,20,40.078,2,4,alkaline earth,1.54,842,1484

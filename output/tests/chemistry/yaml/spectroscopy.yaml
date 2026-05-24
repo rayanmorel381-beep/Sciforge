@@ -1,0 +1,27 @@
+category: spectroscopy
+count: 4
+entries:
+  - label: spectroscopy_chemical_shift_ppm
+    symbol: CSP
+    name: Chemical shift ppm
+    domain: chemistry
+    test: "spectroscopy::chemical_shift_ppm"
+    avg_time_ns: 2165504.00
+  - label: spectroscopy_larmor_frequency
+    symbol: LF
+    name: Larmor frequency
+    domain: chemistry
+    test: "spectroscopy::larmor_frequency"
+    avg_time_ns: 2271304.00
+  - label: spectroscopy_reduced_mass
+    symbol: RM
+    name: Reduced mass
+    domain: chemistry
+    test: "spectroscopy::reduced_mass"
+    avg_time_ns: 1975244.00
+  - label: spectroscopy_wavenumber_to_wavelength
+    symbol: WTW
+    name: Wavenumber to wavelength
+    domain: chemistry
+    test: "spectroscopy::wavenumber_to_wavelength"
+    avg_time_ns: 2003593.00

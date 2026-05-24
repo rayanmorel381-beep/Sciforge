@@ -1,0 +1,15 @@
+category: cross_domain
+symbol: IFR
+name: Invalid function returns error
+domain: hub
+test: "cross_domain::invalid_function_returns_error"
+experiment_name: "cross_domain::invalid_function_returns_error"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2389395.00
+min_time_ns: 2389395.00
+max_time_ns: 2389395.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

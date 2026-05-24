@@ -1,0 +1,33 @@
+category: linalg
+count: 5
+entries:
+  - label: linalg_complex_exp_i_pi
+    symbol: CEI
+    name: Complex exp i pi
+    domain: maths
+    test: "linalg::complex_exp_i_pi"
+    avg_time_ns: 2180605.00
+  - label: linalg_complex_exp_zero
+    symbol: CEZ
+    name: Complex exp zero
+    domain: maths
+    test: "linalg::complex_exp_zero"
+    avg_time_ns: 1952873.00
+  - label: linalg_levi_civita_antisymmetry
+    symbol: LCA
+    name: Levi civita antisymmetry
+    domain: maths
+    test: "linalg::levi_civita_antisymmetry"
+    avg_time_ns: 2120644.00
+  - label: linalg_matrix_det_2x2
+    symbol: MD2
+    name: Matrix det 2x2
+    domain: maths
+    test: "linalg::matrix_det_2x2"
+    avg_time_ns: 2110474.00
+  - label: linalg_tensor_trace_identity
+    symbol: TTI
+    name: Tensor trace identity
+    domain: maths
+    test: "linalg::tensor_trace_identity"
+    avg_time_ns: 2182964.00

@@ -1,0 +1,21 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+cosmology::age_decreases_with_redshift,f64,2,1,2442184,2442184,2442184,0,500,pass,cosmology,ADW,Age decreases with redshift,astronomy,cosmology::age_decreases_with_redshift
+cosmology::age_of_universe,f64,2,1,2200865,2200865,2200865,0,500,pass,cosmology,AOU,Age of universe,astronomy,cosmology::age_of_universe
+cosmology::astronomy_missing_required_parameter_returns_error,f64,2,1,2290824,2290824,2290824,0,500,pass,cosmology,AMR,Astronomy missing required parameter returns error,astronomy,cosmology::astronomy_missing_required_parameter_returns_error
+cosmology::astronomy_unknown_function_returns_error,f64,1,1,1933843,1933843,1933843,0,1000,pass,cosmology,AUF,Astronomy unknown function returns error,astronomy,cosmology::astronomy_unknown_function_returns_error
+cosmology::cmb_temperature_at_z,f64,1,1,1967794,1967794,1967794,0,1000,pass,cosmology,CTA,Cmb temperature at z,astronomy,cosmology::cmb_temperature_at_z
+cosmology::cmb_temperature_scales_with_z,f64,1,1,1892384,1892384,1892384,0,1000,pass,cosmology,CTS,Cmb temperature scales with z,astronomy,cosmology::cmb_temperature_scales_with_z
+cosmology::comoving_distance_increases_with_redshift,f64,2,1,2000023,2000023,2000023,0,500,pass,cosmology,CDI,Comoving distance increases with redshift,astronomy,cosmology::comoving_distance_increases_with_redshift
+cosmology::comoving_distance_zero_at_zero_redshift,f64,2,1,2394745,2394745,2394745,0,500,pass,cosmology,CDZ,Comoving distance zero at zero redshift,astronomy,cosmology::comoving_distance_zero_at_zero_redshift
+cosmology::critical_density,f64,2,1,2319264,2319264,2319264,0,500,pass,cosmology,CD,Critical density,astronomy,cosmology::critical_density
+cosmology::distance_duality_table_driven,f64,2,1,2634615,2634615,2634615,0,500,pass,cosmology,DDT,Distance duality table driven,astronomy,cosmology::distance_duality_table_driven
+cosmology::e_z_lcdm_sweep_monotonic_for_positive_z,f64,2,1,2009754,2009754,2009754,0,500,pass,cosmology,EZL,E z lcdm sweep monotonic for positive z,astronomy,cosmology::e_z_lcdm_sweep_monotonic_for_positive_z
+cosmology::e_z_lcdm_today,f64,2,1,2005023,2005023,2005023,0,500,pass,cosmology,EZL,E z lcdm today,astronomy,cosmology::e_z_lcdm_today
+cosmology::hubble_at_z_matches_h0_times_ez_lcdm,f64,1,1,1917214,1917214,1917214,0,1000,pass,cosmology,HAZ,Hubble at z matches h0 times ez lcdm,astronomy,cosmology::hubble_at_z_matches_h0_times_ez_lcdm
+cosmology::hubble_ez_identity_table_driven,f64,1,1,1829283,1829283,1829283,0,1000,pass,cosmology,HEI,Hubble ez identity table driven,astronomy,cosmology::hubble_ez_identity_table_driven
+cosmology::hubble_velocity,f64,1,1,1775993,1775993,1775993,0,1000,pass,cosmology,HV,Hubble velocity,astronomy,cosmology::hubble_velocity
+cosmology::lookback_time_increases_with_redshift,f64,2,1,2011574,2011574,2011574,0,500,pass,cosmology,LTI,Lookback time increases with redshift,astronomy,cosmology::lookback_time_increases_with_redshift
+cosmology::luminosity_angular_distance_duality_from_z,f64,2,1,2785765,2785765,2785765,0,500,pass,cosmology,LAD,Luminosity angular distance duality from z,astronomy,cosmology::luminosity_angular_distance_duality_from_z
+cosmology::relativistic_redshift_velocity_roundtrip,f64,2,1,2239234,2239234,2239234,0,500,pass,cosmology,RRV,Relativistic redshift velocity roundtrip,astronomy,cosmology::relativistic_redshift_velocity_roundtrip
+cosmology::scale_factor,f64,2,1,2066014,2066014,2066014,0,500,pass,cosmology,SF,Scale factor,astronomy,cosmology::scale_factor
+cosmology::scale_factor_high_z,f64,1,1,1926474,1926474,1926474,0,1000,pass,cosmology,SFH,Scale factor high z,astronomy,cosmology::scale_factor_high_z

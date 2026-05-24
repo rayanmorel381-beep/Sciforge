@@ -1,0 +1,16 @@
+[package]
+name = "server-manager"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+axum.workspace = true
+chrono.workspace = true
+core-domain = { path = "../../crates/core-domain" }
+serde.workspace = true
+server-control = { path = "../../crates/server-control" }
+sqlx.workspace = true
+tokio.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true

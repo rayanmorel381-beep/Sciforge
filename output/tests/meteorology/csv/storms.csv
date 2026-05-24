@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+storms::cape_positive_buoyancy,f64,1,1,1932573,1932573,1932573,0,1000,pass,storms,CPB,Cape positive buoyancy,meteorology,storms::cape_positive_buoyancy
+storms::cape_zero_for_equal_temps,f64,2,1,2010034,2010034,2010034,0,500,pass,storms,CZF,Cape zero for equal temps,meteorology,storms::cape_zero_for_equal_temps
+storms::fujita_scale,f64,1,1,1990644,1990644,1990644,0,1000,pass,storms,FS,Fujita scale,meteorology,storms::fujita_scale
+storms::fujita_scale_increases_with_wind,f64,2,1,2630515,2630515,2630515,0,500,pass,storms,FSI,Fujita scale increases with wind,meteorology,storms::fujita_scale_increases_with_wind
+storms::potential_intensity,f64,2,1,2195864,2195864,2195864,0,500,pass,storms,PI,Potential intensity,meteorology,storms::potential_intensity

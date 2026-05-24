@@ -1,0 +1,33 @@
+category: glaciology
+count: 5
+entries:
+  - label: glaciology_glacial_bed_erosion
+    symbol: GBE
+    name: Glacial bed erosion
+    domain: geology
+    test: "glaciology::glacial_bed_erosion"
+    avg_time_ns: 2140534.00
+  - label: glaciology_glen_strain_increases_with_stress
+    symbol: GSI
+    name: Glen strain increases with stress
+    domain: geology
+    test: "glaciology::glen_strain_increases_with_stress"
+    avg_time_ns: 2047874.00
+  - label: glaciology_glen_strain_rate
+    symbol: GSR
+    name: Glen strain rate
+    domain: geology
+    test: "glaciology::glen_strain_rate"
+    avg_time_ns: 2249724.00
+  - label: glaciology_ice_viscosity
+    symbol: IV
+    name: Ice viscosity
+    domain: geology
+    test: "glaciology::ice_viscosity"
+    avg_time_ns: 2000324.00
+  - label: glaciology_shallow_ice_velocity
+    symbol: SIV
+    name: Shallow ice velocity
+    domain: geology
+    test: "glaciology::shallow_ice_velocity"
+    avg_time_ns: 1944933.00

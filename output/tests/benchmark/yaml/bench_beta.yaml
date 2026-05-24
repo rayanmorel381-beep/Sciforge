@@ -1,0 +1,11 @@
+group: beta
+experiment_name: bench_beta
+precision: f32
+elapsed_ms: 0
+iterations: 100
+avg_time_ns: 23.20
+min_time_ns: 23.20
+max_time_ns: 23.20
+time_stddev: 0.0000
+iterations_per_sec: 0.00
+result: beta completed

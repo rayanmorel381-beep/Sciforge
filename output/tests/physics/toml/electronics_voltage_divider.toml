@@ -1,0 +1,16 @@
+[benchmark]
+category = "electronics"
+symbol = "VD"
+name = "Voltage divider"
+domain = "physics"
+test = "electronics::voltage_divider"
+experiment_name = "electronics::voltage_divider"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2147694.00
+min_time_ns = 2147694.00
+max_time_ns = 2147694.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

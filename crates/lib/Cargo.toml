@@ -1,0 +1,20 @@
+[package]
+name = "sciforge-lib"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = ""
+
+[features]
+default = ["full"]
+full = ["astronomy", "biology", "chemistry", "geology", "maths", "meteorology", "physics"]
+
+astronomy = []
+biology = []
+chemistry = []
+geology = []
+maths = []
+meteorology = []
+physics = ["maths"]
+
+[dependencies]

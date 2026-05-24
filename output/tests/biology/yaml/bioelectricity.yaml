@@ -1,0 +1,27 @@
+category: bioelectricity
+count: 4
+entries:
+  - label: bioelectricity_cable_equation_steady
+    symbol: CES
+    name: Cable equation steady
+    domain: biology
+    test: "bioelectricity::cable_equation_steady"
+    avg_time_ns: 2169594.00
+  - label: bioelectricity_electrotonic_length
+    symbol: EL
+    name: Electrotonic length
+    domain: biology
+    test: "bioelectricity::electrotonic_length"
+    avg_time_ns: 2238714.00
+  - label: bioelectricity_impedance_tissue
+    symbol: IT
+    name: Impedance tissue
+    domain: biology
+    test: "bioelectricity::impedance_tissue"
+    avg_time_ns: 2366344.00
+  - label: bioelectricity_strength_duration_weiss
+    symbol: SDW
+    name: Strength duration weiss
+    domain: biology
+    test: "bioelectricity::strength_duration_weiss"
+    avg_time_ns: 2341875.00

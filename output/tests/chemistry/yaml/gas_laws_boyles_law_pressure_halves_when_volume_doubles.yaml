@@ -1,0 +1,15 @@
+category: gas_laws
+symbol: BLP
+name: Boyles law pressure halves when volume doubles
+domain: chemistry
+test: "gas_laws::boyles_law_pressure_halves_when_volume_doubles"
+experiment_name: "gas_laws::boyles_law_pressure_halves_when_volume_doubles"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2047674.00
+min_time_ns: 2047674.00
+max_time_ns: 2047674.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

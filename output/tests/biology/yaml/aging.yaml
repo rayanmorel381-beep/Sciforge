@@ -1,0 +1,33 @@
+category: aging
+count: 5
+entries:
+  - label: aging_caloric_restriction_lifespan
+    symbol: CRL
+    name: Caloric restriction lifespan
+    domain: biology
+    test: "aging::caloric_restriction_lifespan"
+    avg_time_ns: 2432814.00
+  - label: aging_gompertz_mortality_rate
+    symbol: GMR
+    name: Gompertz mortality rate
+    domain: biology
+    test: "aging::gompertz_mortality_rate"
+    avg_time_ns: 2353324.00
+  - label: aging_mitochondrial_damage
+    symbol: MD
+    name: Mitochondrial damage
+    domain: biology
+    test: "aging::mitochondrial_damage"
+    avg_time_ns: 2009694.00
+  - label: aging_ros_steady_state
+    symbol: RSS
+    name: Ros steady state
+    domain: biology
+    test: "aging::ros_steady_state"
+    avg_time_ns: 1852843.00
+  - label: aging_telomere_shortening
+    symbol: TS
+    name: Telomere shortening
+    domain: biology
+    test: "aging::telomere_shortening"
+    avg_time_ns: 2240055.00

@@ -1,0 +1,16 @@
+[benchmark]
+category = "thermodynamics"
+symbol = "BD"
+name = "Boltzmann distribution"
+domain = "physics"
+test = "thermodynamics::boltzmann_distribution"
+experiment_name = "thermodynamics::boltzmann_distribution"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2297755.00
+min_time_ns = 2297755.00
+max_time_ns = 2297755.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

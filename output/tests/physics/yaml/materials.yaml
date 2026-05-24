@@ -1,0 +1,21 @@
+category: materials
+count: 3
+entries:
+  - label: materials_diffusion_coefficient
+    symbol: DC
+    name: Diffusion coefficient
+    domain: physics
+    test: "materials::diffusion_coefficient"
+    avg_time_ns: 1933984.00
+  - label: materials_fick_first_law
+    symbol: FFL
+    name: Fick first law
+    domain: physics
+    test: "materials::fick_first_law"
+    avg_time_ns: 1746043.00
+  - label: materials_vacancy_concentration
+    symbol: VC
+    name: Vacancy concentration
+    domain: physics
+    test: "materials::vacancy_concentration"
+    avg_time_ns: 1872913.00

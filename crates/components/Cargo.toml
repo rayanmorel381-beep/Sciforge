@@ -1,0 +1,10 @@
+[package]
+name = "sciforge-components"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Vehicle component definitions: body, powertrain, brakes, suspension, sounds, etc."
+
+[dependencies]
+sciforge-hub.workspace = true
+sciforge-core.workspace = true

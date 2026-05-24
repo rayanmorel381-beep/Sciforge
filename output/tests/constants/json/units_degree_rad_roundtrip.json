@@ -1,0 +1,17 @@
+{
+  "category": "units",
+  "symbol": "DRR",
+  "name": "Degree rad roundtrip",
+  "domain": "constants",
+  "test": "units::degree_rad_roundtrip",
+  "experiment_name": "units::degree_rad_roundtrip",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1487873.00,
+  "min_time_ns": 1487873.00,
+  "max_time_ns": 1487873.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

@@ -1,0 +1,12 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+stellar::absolute_magnitude_and_distance_modulus_roundtrip,f64,2,1,2410584,2410584,2410584,0,500,pass,stellar,AMA,Absolute magnitude and distance modulus roundtrip,astronomy,stellar::absolute_magnitude_and_distance_modulus_roundtrip
+stellar::chandrasekhar_limit,f64,2,1,2120574,2120574,2120574,0,500,pass,stellar,CL,Chandrasekhar limit,astronomy,stellar::chandrasekhar_limit
+stellar::distance_modulus,f64,1,1,1998274,1998274,1998274,0,1000,pass,stellar,DM,Distance modulus,astronomy,stellar::distance_modulus
+stellar::eddington_luminosity_scales_linearly_with_mass,f64,1,1,1936243,1936243,1936243,0,1000,pass,stellar,ELS,Eddington luminosity scales linearly with mass,astronomy,stellar::eddington_luminosity_scales_linearly_with_mass
+stellar::luminosity_from_radius_temp,f64,1,1,1959064,1959064,1959064,0,1000,pass,stellar,LFR,Luminosity from radius temp,astronomy,stellar::luminosity_from_radius_temp
+stellar::main_sequence_lifetime,f64,2,1,2012774,2012774,2012774,0,500,pass,stellar,MSL,Main sequence lifetime,astronomy,stellar::main_sequence_lifetime
+stellar::mass_luminosity_monotonic_in_solar_range,f64,2,1,2183424,2183424,2183424,0,500,pass,stellar,MLM,Mass luminosity monotonic in solar range,astronomy,stellar::mass_luminosity_monotonic_in_solar_range
+stellar::schwarzschild_radius,f64,2,1,2310874,2310874,2310874,0,500,pass,stellar,SR,Schwarzschild radius,astronomy,stellar::schwarzschild_radius
+stellar::stefan_boltzmann_blackbody,f64,2,1,2113424,2113424,2113424,0,500,pass,stellar,SBB,Stefan boltzmann blackbody,astronomy,stellar::stefan_boltzmann_blackbody
+stellar::stellar_flux_inverse_square_distance,f64,1,1,1899593,1899593,1899593,0,1000,pass,stellar,SFI,Stellar flux inverse square distance,astronomy,stellar::stellar_flux_inverse_square_distance
+stellar::wien_peak_wavelength,f64,2,1,2243994,2243994,2243994,0,500,pass,stellar,WPW,Wien peak wavelength,astronomy,stellar::wien_peak_wavelength

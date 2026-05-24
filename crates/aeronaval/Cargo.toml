@@ -1,0 +1,11 @@
+[package]
+name = "sciforge-aeronaval"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Air, space and water vehicles: planes, drones, rockets, boats, submarines. Shared technologies (radial engines, turbines, etc.)."
+
+[dependencies]
+sciforge-hub.workspace = true
+sciforge-core.workspace = true
+sciforge-components.workspace = true

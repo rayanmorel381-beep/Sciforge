@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+tides::spring_tide_amplitude,f64,1,1,1902564,1902564,1902564,0,1000,pass,tides,STA,Spring tide amplitude,astronomy,tides::spring_tide_amplitude
+tides::tidal_locking_timescale,f64,1,1,1979104,1979104,1979104,0,1000,pass,tides,TLT,Tidal locking timescale,astronomy,tides::tidal_locking_timescale
+tides::tidal_potential,f64,1,1,1875253,1875253,1875253,0,1000,pass,tides,TP,Tidal potential,astronomy,tides::tidal_potential

@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+quantum_chem::huckel_total_pi_energy,f64,2,1,2082864,2082864,2082864,0,500,pass,quantum_chem,HTP,Huckel total pi energy,chemistry,quantum_chem::huckel_total_pi_energy
+quantum_chem::lcao_bonding_energy,f64,2,1,2029264,2029264,2029264,0,500,pass,quantum_chem,LBE,Lcao bonding energy,chemistry,quantum_chem::lcao_bonding_energy
+quantum_chem::mulliken_population,f64,1,1,1969594,1969594,1969594,0,1000,pass,quantum_chem,MP,Mulliken population,chemistry,quantum_chem::mulliken_population

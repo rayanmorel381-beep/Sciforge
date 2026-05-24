@@ -1,0 +1,16 @@
+[benchmark]
+category = "relativity"
+symbol = "LC"
+name = "Length contraction"
+domain = "physics"
+test = "relativity::length_contraction"
+experiment_name = "relativity::length_contraction"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2524345.00
+min_time_ns = 2524345.00
+max_time_ns = 2524345.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

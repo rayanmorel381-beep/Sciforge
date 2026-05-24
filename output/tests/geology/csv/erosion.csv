@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+erosion::chemical_weathering_rate,f64,1,1,1923054,1923054,1923054,0,1000,pass,erosion,CWR,Chemical weathering rate,geology,erosion::chemical_weathering_rate
+erosion::fluvial_erosion_rate,f64,1,1,1895824,1895824,1895824,0,1000,pass,erosion,FER,Fluvial erosion rate,geology,erosion::fluvial_erosion_rate
+erosion::frost_weathering_rate,f64,1,1,1844403,1844403,1844403,0,1000,pass,erosion,FWR,Frost weathering rate,geology,erosion::frost_weathering_rate
+erosion::volcanic_explosivity_index,f64,1,1,1776603,1776603,1776603,0,1000,pass,erosion,VEI,Volcanic explosivity index,geology,erosion::volcanic_explosivity_index
+erosion::wind_erosion_threshold,f64,2,1,2155604,2155604,2155604,0,500,pass,erosion,WET,Wind erosion threshold,geology,erosion::wind_erosion_threshold

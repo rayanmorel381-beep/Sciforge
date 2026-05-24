@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+solid_state::band_gap_from_absorption,f64,2,1,2371955,2371955,2371955,0,500,pass,solid_state,BGF,Band gap from absorption,chemistry,solid_state::band_gap_from_absorption
+solid_state::conductivity_semiconductor,f64,2,1,2197994,2197994,2197994,0,500,pass,solid_state,CS,Conductivity semiconductor,chemistry,solid_state::conductivity_semiconductor
+solid_state::fermi_dirac,f64,2,1,2109914,2109914,2109914,0,500,pass,solid_state,FD,Fermi dirac,chemistry,solid_state::fermi_dirac

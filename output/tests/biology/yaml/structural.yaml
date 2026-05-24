@@ -1,0 +1,27 @@
+category: structural
+count: 4
+entries:
+  - label: structural_alpha_helix_propensity
+    symbol: AHP
+    name: Alpha helix propensity
+    domain: biology
+    test: "structural::alpha_helix_propensity"
+    avg_time_ns: 1908504.00
+  - label: structural_binding_free_energy
+    symbol: BFE
+    name: Binding free energy
+    domain: biology
+    test: "structural::binding_free_energy"
+    avg_time_ns: 2122863.00
+  - label: structural_radius_of_gyration
+    symbol: ROG
+    name: Radius of gyration
+    domain: biology
+    test: "structural::radius_of_gyration"
+    avg_time_ns: 2398755.00
+  - label: structural_rmsd
+    symbol: Rm
+    name: Rmsd
+    domain: biology
+    test: "structural::rmsd"
+    avg_time_ns: 2039054.00

@@ -1,0 +1,86 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Ga",
+        name: "Gallium",
+        atomic_number: 31,
+        atomic_mass: 69.723_f64,
+        electronegativity: Some(1.81_f64),
+        group: Some(13),
+        period: 4,
+        category: "post-transition metal",
+        electron_configuration: "[Ar] 3d¹⁰ 4s² 4p¹",
+        isotopes: vec![
+        Isotope {
+            name: "Gallium-67",
+            symbol: "⁶⁷Ga",
+            mass_number: 67,
+            neutrons: 36,
+            atomic_mass: 66.928202_f64,
+            half_life: Some(3.2612_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Zinc-67"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Gallium-68",
+            symbol: "⁶⁸Ga",
+            mass_number: 68,
+            neutrons: 37,
+            atomic_mass: 67.927981_f64,
+            half_life: Some(67.71_f64),
+            half_life_unit: Some("minutes"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta+",
+                branching_ratio: 0.891_f64,
+                daughter: Some("Zinc-68"),
+            },
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.109_f64,
+                daughter: Some("Zinc-68"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Gallium-69",
+            symbol: "⁶⁹Ga",
+            mass_number: 69,
+            neutrons: 38,
+            atomic_mass: 68.925574_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 0.60108_f64,
+            nuclear_spin: Some("3/2-"),
+        },
+        Isotope {
+            name: "Gallium-71",
+            symbol: "⁷¹Ga",
+            mass_number: 71,
+            neutrons: 40,
+            atomic_mass: 70.924701_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 0.39892_f64,
+            nuclear_spin: Some("3/2-"),
+        },
+        ],
+    }
+}

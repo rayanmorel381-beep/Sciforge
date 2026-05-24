@@ -1,0 +1,15 @@
+pub const MW_MASS: f64 = 1.5e12;
+pub const MW_DISK_RADIUS: f64 = 2.63e20;
+pub const MW_DISK_SCALE_HEIGHT: f64 = 9.26e18;
+pub const MW_BULGE_RADIUS: f64 = 6.17e19;
+pub const SUN_GALACTIC_DISTANCE: f64 = 2.47e20;
+pub const SUN_GALACTIC_VELOCITY: f64 = 220_000.0;
+pub const SUN_GALACTIC_PERIOD: f64 = 7.25e15;
+pub const MW_STELLAR_MASS: f64 = 5.0e10;
+pub const MW_STAR_COUNT: f64 = 2.0e11;
+pub const SGR_A_STAR_MASS: f64 = 4.15e6;
+pub const SGR_A_STAR_DISTANCE: f64 = 2.47e20;
+pub const M31_MASS: f64 = 1.5e12;
+pub const M31_DISTANCE: f64 = 2.37e22;
+pub const MW_M31_RADIAL_VELOCITY: f64 = 110_000.0;
+pub const HUBBLE_FLOW_VELOCITY_PER_MPC: f64 = crate::constants::HUBBLE_CONSTANT * 1e3;

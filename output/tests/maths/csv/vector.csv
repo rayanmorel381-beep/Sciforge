@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+vector::vec_distance,f64,2,1,2087094,2087094,2087094,0,500,pass,vector,VD,Vec distance,maths,vector::vec_distance
+vector::vec_lerp,f64,2,1,2642455,2642455,2642455,0,500,pass,vector,VL,Vec lerp,maths,vector::vec_lerp
+vector::vec_project,f64,2,1,2081863,2081863,2081863,0,500,pass,vector,VP,Vec project,maths,vector::vec_project

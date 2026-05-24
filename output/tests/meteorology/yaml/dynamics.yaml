@@ -1,0 +1,51 @@
+category: dynamics
+count: 8
+entries:
+  - label: dynamics_coriolis_changes_sign_between_hemispheres
+    symbol: CCS
+    name: Coriolis changes sign between hemispheres
+    domain: meteorology
+    test: "dynamics::coriolis_changes_sign_between_hemispheres"
+    avg_time_ns: 1818384.00
+  - label: dynamics_coriolis_parameter
+    symbol: CP
+    name: Coriolis parameter
+    domain: meteorology
+    test: "dynamics::coriolis_parameter"
+    avg_time_ns: 1922843.00
+  - label: dynamics_coriolis_zero_at_equator
+    symbol: CZA
+    name: Coriolis zero at equator
+    domain: meteorology
+    test: "dynamics::coriolis_zero_at_equator"
+    avg_time_ns: 1901754.00
+  - label: dynamics_ekman_depth
+    symbol: ED
+    name: Ekman depth
+    domain: meteorology
+    test: "dynamics::ekman_depth"
+    avg_time_ns: 2286924.00
+  - label: dynamics_geostrophic_wind
+    symbol: GW
+    name: Geostrophic wind
+    domain: meteorology
+    test: "dynamics::geostrophic_wind"
+    avg_time_ns: 1934454.00
+  - label: dynamics_rossby_number
+    symbol: RN
+    name: Rossby number
+    domain: meteorology
+    test: "dynamics::rossby_number"
+    avg_time_ns: 1803073.00
+  - label: dynamics_rossby_number_decreases_with_scale
+    symbol: RND
+    name: Rossby number decreases with scale
+    domain: meteorology
+    test: "dynamics::rossby_number_decreases_with_scale"
+    avg_time_ns: 2393274.00
+  - label: dynamics_rossby_wave_speed
+    symbol: RWS
+    name: Rossby wave speed
+    domain: meteorology
+    test: "dynamics::rossby_wave_speed"
+    avg_time_ns: 2111584.00

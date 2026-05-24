@@ -1,0 +1,21 @@
+category: sparse
+count: 3
+entries:
+  - label: sparse_conjugate_gradient
+    symbol: CG
+    name: Conjugate gradient
+    domain: maths
+    test: "sparse::conjugate_gradient"
+    avg_time_ns: 2655215.00
+  - label: sparse_jacobi_iterate
+    symbol: JI
+    name: Jacobi iterate
+    domain: maths
+    test: "sparse::jacobi_iterate"
+    avg_time_ns: 2362844.00
+  - label: sparse_sparse_add
+    symbol: SA
+    name: Sparse add
+    domain: maths
+    test: "sparse::sparse_add"
+    avg_time_ns: 2037924.00

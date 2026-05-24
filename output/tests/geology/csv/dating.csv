@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+dating::age_from_ratio,f64,1,1,1957684,1957684,1957684,0,1000,pass,dating,AFR,Age from ratio,geology,dating::age_from_ratio
+dating::carbon14_age,f64,1,1,1862614,1862614,1862614,0,1000,pass,dating,CA,Carbon14 age,geology,dating::carbon14_age
+dating::decay_constant,f64,1,1,1760943,1760943,1760943,0,1000,pass,dating,DC,Decay constant,geology,dating::decay_constant
+dating::half_life_positive_for_positive_lambda,f64,2,1,2194624,2194624,2194624,0,500,pass,dating,HLP,Half life positive for positive lambda,geology,dating::half_life_positive_for_positive_lambda
+dating::radioactive_decay,f64,2,1,2253024,2253024,2253024,0,500,pass,dating,RD,Radioactive decay,geology,dating::radioactive_decay
+dating::radioactive_decay_halflife,f64,2,1,2446995,2446995,2446995,0,500,pass,dating,RDH,Radioactive decay halflife,geology,dating::radioactive_decay_halflife
+dating::radioactive_decay_large_time_stability,f64,2,1,2119463,2119463,2119463,0,500,pass,dating,RDL,Radioactive decay large time stability,geology,dating::radioactive_decay_large_time_stability

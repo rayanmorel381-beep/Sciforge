@@ -1,0 +1,21 @@
+category: electrodynamics
+count: 3
+entries:
+  - label: electrodynamics_capacitance_parallel_plate
+    symbol: CPP
+    name: Capacitance parallel plate
+    domain: physics
+    test: "electrodynamics::capacitance_parallel_plate"
+    avg_time_ns: 1757714.00
+  - label: electrodynamics_electric_field_point_charge
+    symbol: EFP
+    name: Electric field point charge
+    domain: physics
+    test: "electrodynamics::electric_field_point_charge"
+    avg_time_ns: 1873473.00
+  - label: electrodynamics_skin_depth
+    symbol: SD
+    name: Skin depth
+    domain: physics
+    test: "electrodynamics::skin_depth"
+    avg_time_ns: 2021624.00

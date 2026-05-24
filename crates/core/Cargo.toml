@@ -1,0 +1,9 @@
+[package]
+name = "sciforge-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Shared engineering primitives: materials, fasteners, fluids, propulsion taxonomies, std components."
+
+[dependencies]
+sciforge-hub = { workspace = true, features = ["full"] }

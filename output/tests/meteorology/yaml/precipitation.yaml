@@ -1,0 +1,51 @@
+category: precipitation
+count: 8
+entries:
+  - label: precipitation_antecedent_precipitation_index
+    symbol: API
+    name: Antecedent precipitation index
+    domain: meteorology
+    test: "precipitation::antecedent_precipitation_index"
+    avg_time_ns: 1949214.00
+  - label: precipitation_intensity_duration_frequency
+    symbol: IDF
+    name: Intensity duration frequency
+    domain: meteorology
+    test: "precipitation::intensity_duration_frequency"
+    avg_time_ns: 2425134.00
+  - label: precipitation_penman_evaporation
+    symbol: PE
+    name: Penman evaporation
+    domain: meteorology
+    test: "precipitation::penman_evaporation"
+    avg_time_ns: 1972724.00
+  - label: precipitation_radar_reflectivity
+    symbol: RR
+    name: Radar reflectivity
+    domain: meteorology
+    test: "precipitation::radar_reflectivity"
+    avg_time_ns: 1723033.00
+  - label: precipitation_rain_rate_marshall_palmer
+    symbol: RRM
+    name: Rain rate marshall palmer
+    domain: meteorology
+    test: "precipitation::rain_rate_marshall_palmer"
+    avg_time_ns: 1713723.00
+  - label: precipitation_scs_curve_number_runoff
+    symbol: SCN
+    name: Scs curve number runoff
+    domain: meteorology
+    test: "precipitation::scs_curve_number_runoff"
+    avg_time_ns: 1861764.00
+  - label: precipitation_terminal_velocity_raindrop
+    symbol: TVR
+    name: Terminal velocity raindrop
+    domain: meteorology
+    test: "precipitation::terminal_velocity_raindrop"
+    avg_time_ns: 2264804.00
+  - label: precipitation_thornthwaite_pet
+    symbol: TP
+    name: Thornthwaite pet
+    domain: meteorology
+    test: "precipitation::thornthwaite_pet"
+    avg_time_ns: 1898764.00

@@ -1,0 +1,21 @@
+category: polymers
+count: 3
+entries:
+  - label: polymers_carothers_equation
+    symbol: CE
+    name: Carothers equation
+    domain: chemistry
+    test: "polymers::carothers_equation"
+    avg_time_ns: 2220684.00
+  - label: polymers_flory_huggins_free_energy
+    symbol: FHF
+    name: Flory huggins free energy
+    domain: chemistry
+    test: "polymers::flory_huggins_free_energy"
+    avg_time_ns: 1911754.00
+  - label: polymers_polydispersity_index
+    symbol: PI
+    name: Polydispersity index
+    domain: chemistry
+    test: "polymers::polydispersity_index"
+    avg_time_ns: 2354944.00

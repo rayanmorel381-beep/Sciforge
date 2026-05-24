@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+pharmacology::bioavailability,f64,2,1,2511655,2511655,2511655,0,500,pass,pharmacology,Bi,Bioavailability,biology,pharmacology::bioavailability
+pharmacology::dose_response_hill,f64,2,1,2234414,2234414,2234414,0,500,pass,pharmacology,DRH,Dose response hill,biology,pharmacology::dose_response_hill
+pharmacology::half_life,f64,2,1,2173134,2173134,2173134,0,500,pass,pharmacology,HL,Half life,biology,pharmacology::half_life
+pharmacology::therapeutic_index,f64,2,1,2137424,2137424,2137424,0,500,pass,pharmacology,TI,Therapeutic index,biology,pharmacology::therapeutic_index

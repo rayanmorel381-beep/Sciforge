@@ -1,0 +1,27 @@
+category: molecular
+count: 4
+entries:
+  - label: molecular_bond_order
+    symbol: BO
+    name: Bond order
+    domain: chemistry
+    test: "molecular::bond_order"
+    avg_time_ns: 2512054.00
+  - label: molecular_dipole_moment
+    symbol: DM
+    name: Dipole moment
+    domain: chemistry
+    test: "molecular::dipole_moment"
+    avg_time_ns: 2658065.00
+  - label: molecular_formal_charge
+    symbol: FC
+    name: Formal charge
+    domain: chemistry
+    test: "molecular::formal_charge"
+    avg_time_ns: 2305235.00
+  - label: molecular_molar_mass
+    symbol: MM
+    name: Molar mass
+    domain: chemistry
+    test: "molecular::molar_mass"
+    avg_time_ns: 1948033.00

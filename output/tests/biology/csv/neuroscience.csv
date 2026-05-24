@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+neuroscience::fano_factor,f64,2,1,2592625,2592625,2592625,0,500,pass,neuroscience,FF,Fano factor,biology,neuroscience::fano_factor
+neuroscience::firing_rate,f64,2,1,2325524,2325524,2325524,0,500,pass,neuroscience,FR,Firing rate,biology,neuroscience::firing_rate
+neuroscience::rescorla_wagner_update,f64,2,1,2109474,2109474,2109474,0,500,pass,neuroscience,RWU,Rescorla wagner update,biology,neuroscience::rescorla_wagner_update
+neuroscience::stdp_weight_change,f64,2,1,2054794,2054794,2054794,0,500,pass,neuroscience,SWC,Stdp weight change,biology,neuroscience::stdp_weight_change

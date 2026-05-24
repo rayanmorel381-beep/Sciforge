@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+petrology::cipw_quartz_norm,f64,1,1,1851594,1851594,1851594,0,1000,pass,petrology,CQN,Cipw quartz norm,geology,petrology::cipw_quartz_norm
+petrology::crystal_settling_velocity,f64,2,1,2236964,2236964,2236964,0,500,pass,petrology,CSV,Crystal settling velocity,geology,petrology::crystal_settling_velocity
+petrology::differentiation_index,f64,1,1,1877293,1877293,1877293,0,1000,pass,petrology,DI,Differentiation index,geology,petrology::differentiation_index
+petrology::liquidus_temperature,f64,1,1,1888234,1888234,1888234,0,1000,pass,petrology,LT,Liquidus temperature,geology,petrology::liquidus_temperature
+petrology::mg_number,f64,1,1,1899423,1899423,1899423,0,1000,pass,petrology,MN,Mg number,geology,petrology::mg_number
+petrology::total_alkali_silica,f64,2,1,2040144,2040144,2040144,0,500,pass,petrology,TAS,Total alkali silica,geology,petrology::total_alkali_silica
+petrology::viscosity_arrhenius,f64,2,1,2239284,2239284,2239284,0,500,pass,petrology,VA,Viscosity arrhenius,geology,petrology::viscosity_arrhenius

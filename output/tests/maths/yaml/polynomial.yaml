@@ -1,0 +1,21 @@
+category: polynomial
+count: 3
+entries:
+  - label: polynomial_chebyshev_t
+    symbol: CT
+    name: Chebyshev t
+    domain: maths
+    test: "polynomial::chebyshev_t"
+    avg_time_ns: 1985664.00
+  - label: polynomial_legendre
+    symbol: Le
+    name: Legendre
+    domain: maths
+    test: "polynomial::legendre"
+    avg_time_ns: 2530374.00
+  - label: polynomial_polynomial_roots_real
+    symbol: PRR
+    name: Polynomial roots real
+    domain: maths
+    test: "polynomial::polynomial_roots_real"
+    avg_time_ns: 2606765.00

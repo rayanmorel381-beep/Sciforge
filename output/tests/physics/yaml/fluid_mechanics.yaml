@@ -1,0 +1,21 @@
+category: fluid_mechanics
+count: 3
+entries:
+  - label: fluid_mechanics_bernoulli_pressure
+    symbol: BP
+    name: Bernoulli pressure
+    domain: physics
+    test: "fluid_mechanics::bernoulli_pressure"
+    avg_time_ns: 2116874.00
+  - label: fluid_mechanics_drag_force
+    symbol: DF
+    name: Drag force
+    domain: physics
+    test: "fluid_mechanics::drag_force"
+    avg_time_ns: 2476255.00
+  - label: fluid_mechanics_reynolds_number
+    symbol: RN
+    name: Reynolds number
+    domain: physics
+    test: "fluid_mechanics::reynolds_number"
+    avg_time_ns: 2254974.00

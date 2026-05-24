@@ -1,0 +1,106 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Co",
+        name: "Cobalt",
+        atomic_number: 27,
+        atomic_mass: 58.933194_f64,
+        electronegativity: Some(1.88_f64),
+        group: Some(9),
+        period: 4,
+        category: "transition metal",
+        electron_configuration: "[Ar] 3d⁷ 4s²",
+        isotopes: vec![
+        Isotope {
+            name: "Cobalt-56",
+            symbol: "⁵⁶Co",
+            mass_number: 56,
+            neutrons: 29,
+            atomic_mass: 55.939839_f64,
+            half_life: Some(77.236_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta+ / electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Iron-56"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Cobalt-57",
+            symbol: "⁵⁷Co",
+            mass_number: 57,
+            neutrons: 30,
+            atomic_mass: 56.936291_f64,
+            half_life: Some(271.74_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Iron-57"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Cobalt-58",
+            symbol: "⁵⁸Co",
+            mass_number: 58,
+            neutrons: 31,
+            atomic_mass: 57.935753_f64,
+            half_life: Some(70.86_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta+ / electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Iron-58"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Cobalt-59",
+            symbol: "⁵⁹Co",
+            mass_number: 59,
+            neutrons: 32,
+            atomic_mass: 58.933195_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("7/2-"),
+        },
+        Isotope {
+            name: "Cobalt-60",
+            symbol: "⁶⁰Co",
+            mass_number: 60,
+            neutrons: 33,
+            atomic_mass: 59.933817_f64,
+            half_life: Some(5.2714_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Nickel-60"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

@@ -1,0 +1,27 @@
+[package]
+name = "sciforge-hub"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Central hub orchestrating Sciforge subsystems (api, engine, tools)."
+
+[lib]
+path = "src/lib.rs"
+
+[features]
+default = []
+full = ["astronomy", "biology", "chemistry", "geology", "maths", "meteorology", "physics", "cross_domain"]
+
+astronomy = ["sciforge-lib/astronomy"]
+biology = ["sciforge-lib/biology"]
+chemistry = ["sciforge-lib/chemistry"]
+geology = ["sciforge-lib/geology"]
+maths = ["sciforge-lib/maths"]
+meteorology = ["sciforge-lib/meteorology"]
+physics = ["sciforge-lib/physics", "maths"]
+cross_domain = []
+
+[dependencies]
+sciforge-lib = { workspace = true }
+sciforge-parser.workspace = true
+sciforge-benchmark.workspace = true

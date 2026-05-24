@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+dispatch::diffraction_grating_maxima,f64,2,1,2316134,2316134,2316134,0,500,pass,dispatch,DGM,Diffraction grating maxima,physics,dispatch::diffraction_grating_maxima
+dispatch::dispatch_missing_parameter_returns_error,f64,2,1,2695035,2695035,2695035,0,500,pass,dispatch,DMP,Dispatch missing parameter returns error,physics,dispatch::dispatch_missing_parameter_returns_error
+dispatch::dispatch_unknown_function_returns_error,f64,2,1,2094074,2094074,2094074,0,500,pass,dispatch,DUF,Dispatch unknown function returns error,physics,dispatch::dispatch_unknown_function_returns_error
+dispatch::drift_velocity,f64,1,1,1928504,1928504,1928504,0,1000,pass,dispatch,DV,Drift velocity,physics,dispatch::drift_velocity
+dispatch::hall_coefficient,f64,1,1,1840533,1840533,1840533,0,1000,pass,dispatch,HC,Hall coefficient,physics,dispatch::hall_coefficient
+dispatch::maxwell_speed_distribution_peak,f64,1,1,1859823,1859823,1859823,0,1000,pass,dispatch,MSD,Maxwell speed distribution peak,physics,dispatch::maxwell_speed_distribution_peak

@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+electromagnetism::capacitance_parallel_plate,f64,2,1,2172614,2172614,2172614,0,500,pass,electromagnetism,CPP,Capacitance parallel plate,physics,electromagnetism::capacitance_parallel_plate
+electromagnetism::electric_field_point_charge,f64,1,1,1898793,1898793,1898793,0,1000,pass,electromagnetism,EFP,Electric field point charge,physics,electromagnetism::electric_field_point_charge
+electromagnetism::inductance_solenoid,f64,1,1,1768804,1768804,1768804,0,1000,pass,electromagnetism,IS,Inductance solenoid,physics,electromagnetism::inductance_solenoid
+electromagnetism::magnetic_field_wire,f64,1,1,1791073,1791073,1791073,0,1000,pass,electromagnetism,MFW,Magnetic field wire,physics,electromagnetism::magnetic_field_wire
+electromagnetism::malus_law,f64,2,1,2191744,2191744,2191744,0,500,pass,electromagnetism,ML,Malus law,physics,electromagnetism::malus_law
+electromagnetism::malus_law_quarter_turn_extinction,f64,2,1,2958816,2958816,2958816,0,500,pass,electromagnetism,MLQ,Malus law quarter turn extinction,physics,electromagnetism::malus_law_quarter_turn_extinction
+electromagnetism::ohm_current,f64,2,1,2743115,2743115,2743115,0,500,pass,electromagnetism,OC,Ohm current,physics,electromagnetism::ohm_current
+electromagnetism::ohm_law_roundtrip_consistency,f64,2,1,2972305,2972305,2972305,0,500,pass,electromagnetism,OLR,Ohm law roundtrip consistency,physics,electromagnetism::ohm_law_roundtrip_consistency
+electromagnetism::ohm_resistance,f64,2,1,2644235,2644235,2644235,0,500,pass,electromagnetism,OR,Ohm resistance,physics,electromagnetism::ohm_resistance
+electromagnetism::ohm_voltage,f64,2,1,2411474,2411474,2411474,0,500,pass,electromagnetism,OV,Ohm voltage,physics,electromagnetism::ohm_voltage

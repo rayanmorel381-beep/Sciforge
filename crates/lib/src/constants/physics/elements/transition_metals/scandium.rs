@@ -1,0 +1,111 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Sc",
+        name: "Scandium",
+        atomic_number: 21,
+        atomic_mass: 44.955908_f64,
+        electronegativity: Some(1.36_f64),
+        group: Some(3),
+        period: 4,
+        category: "transition metal",
+        electron_configuration: "[Ar] 3d¹ 4s²",
+        isotopes: vec![
+        Isotope {
+            name: "Scandium-44",
+            symbol: "⁴⁴Sc",
+            mass_number: 44,
+            neutrons: 23,
+            atomic_mass: 43.959403_f64,
+            half_life: Some(3.97_f64),
+            half_life_unit: Some("hours"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta+ (positron emission)",
+                branching_ratio: 0.944_f64,
+                daughter: None,
+            },
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.056_f64,
+                daughter: None,
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Scandium-45",
+            symbol: "⁴⁵Sc",
+            mass_number: 45,
+            neutrons: 24,
+            atomic_mass: 44.955908_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("7/2-"),
+        },
+        Isotope {
+            name: "Scandium-46",
+            symbol: "⁴⁶Sc",
+            mass_number: 46,
+            neutrons: 25,
+            atomic_mass: 45.95517_f64,
+            half_life: Some(83.79_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Titanium-46"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Scandium-47",
+            symbol: "⁴⁷Sc",
+            mass_number: 47,
+            neutrons: 26,
+            atomic_mass: 46.952408_f64,
+            half_life: Some(3.3492_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Titanium-47"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Scandium-48",
+            symbol: "⁴⁸Sc",
+            mass_number: 48,
+            neutrons: 27,
+            atomic_mass: 47.952231_f64,
+            half_life: Some(43.67_f64),
+            half_life_unit: Some("hours"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: None,
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

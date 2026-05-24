@@ -1,0 +1,17 @@
+{
+  "category": "dispatch",
+  "symbol": "ATE",
+  "name": "Arrhenius temperature effect",
+  "domain": "chemistry",
+  "test": "dispatch::arrhenius_temperature_effect",
+  "experiment_name": "dispatch::arrhenius_temperature_effect",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2338884.00,
+  "min_time_ns": 2338884.00,
+  "max_time_ns": 2338884.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

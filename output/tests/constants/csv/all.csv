@@ -1,0 +1,33 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+astro::astronomical_unit,f64,1,1,1388132,1388132,1388132,0,1000,pass,astro,AU,Astronomical unit,constants,astro::astronomical_unit
+astro::cmb_temperature,f64,1,1,1554393,1554393,1554393,0,1000,pass,astro,CT,Cmb temperature,constants,astro::cmb_temperature
+astro::earth_mass,f64,1,1,1175502,1175502,1175502,0,1000,pass,astro,EM,Earth mass,constants,astro::earth_mass
+astro::hubble_constant,f64,1,1,1208092,1208092,1208092,0,1000,pass,astro,HC,Hubble constant,constants,astro::hubble_constant
+astro::light_year,f64,1,1,1239503,1239503,1239503,0,1000,pass,astro,LY,Light year,constants,astro::light_year
+astro::parsec,f64,1,1,1216782,1216782,1216782,0,1000,pass,astro,Pa,Parsec,constants,astro::parsec
+astro::parsec_greater_than_ly,f64,1,1,1208722,1208722,1208722,0,1000,pass,astro,PGT,Parsec greater than ly,constants,astro::parsec_greater_than_ly
+astro::solar_mass,f64,1,1,1211393,1211393,1211393,0,1000,pass,astro,SM,Solar mass,constants,astro::solar_mass
+atomic::amu_to_kg,f64,1,1,1113482,1113482,1113482,0,1000,pass,atomic,ATK,Amu to kg,constants,atomic::amu_to_kg
+atomic::bohr_radius,f64,1,1,1118752,1118752,1118752,0,1000,pass,atomic,BR,Bohr radius,constants,atomic::bohr_radius
+atomic::compton_wavelength,f64,1,1,1396462,1396462,1396462,0,1000,pass,atomic,CW,Compton wavelength,constants,atomic::compton_wavelength
+atomic::electron_mass,f64,1,1,1224282,1224282,1224282,0,1000,pass,atomic,EM,Electron mass,constants,atomic::electron_mass
+atomic::neutron_mass,f64,1,1,1473203,1473203,1473203,0,1000,pass,atomic,NM,Neutron mass,constants,atomic::neutron_mass
+atomic::proton_heavier_than_electron,f64,1,1,1424733,1424733,1424733,0,1000,pass,atomic,PHT,Proton heavier than electron,constants,atomic::proton_heavier_than_electron
+atomic::proton_mass,f64,1,1,1196832,1196832,1196832,0,1000,pass,atomic,PM,Proton mass,constants,atomic::proton_mass
+fundamental::avogadro_number,f64,1,1,1094902,1094902,1094902,0,1000,pass,fundamental,AN,Avogadro number,constants,fundamental::avogadro_number
+fundamental::boltzmann_constant,f64,1,1,1192362,1192362,1192362,0,1000,pass,fundamental,BC,Boltzmann constant,constants,fundamental::boltzmann_constant
+fundamental::coulomb_constant,f64,1,1,1514273,1514273,1514273,0,1000,pass,fundamental,CC,Coulomb constant,constants,fundamental::coulomb_constant
+fundamental::elementary_charge,f64,1,1,1190132,1190132,1190132,0,1000,pass,fundamental,EC,Elementary charge,constants,fundamental::elementary_charge
+fundamental::gas_constant,f64,1,1,1230993,1230993,1230993,0,1000,pass,fundamental,GC,Gas constant,constants,fundamental::gas_constant
+fundamental::gravitational_constant,f64,1,1,1229832,1229832,1229832,0,1000,pass,fundamental,GC,Gravitational constant,constants,fundamental::gravitational_constant
+fundamental::planck_constant,f64,1,1,1332032,1332032,1332032,0,1000,pass,fundamental,PC,Planck constant,constants,fundamental::planck_constant
+fundamental::reduced_planck,f64,1,1,1190632,1190632,1190632,0,1000,pass,fundamental,RP,Reduced planck,constants,fundamental::reduced_planck
+fundamental::speed_of_light,f64,1,1,1144123,1144123,1144123,0,1000,pass,fundamental,SOL,Speed of light,constants,fundamental::speed_of_light
+fundamental::stefan_boltzmann,f64,1,1,1280612,1280612,1280612,0,1000,pass,fundamental,SB,Stefan boltzmann,constants,fundamental::stefan_boltzmann
+units::angle_conversion_inverse_identity,f64,1,1,1356603,1356603,1356603,0,1000,pass,units,ACI,Angle conversion inverse identity,constants,units::angle_conversion_inverse_identity
+units::atm_to_pascal,f64,1,1,1291612,1291612,1291612,0,1000,pass,units,ATP,Atm to pascal,constants,units::atm_to_pascal
+units::calorie_to_joule,f64,1,1,1357812,1357812,1357812,0,1000,pass,units,CTJ,Calorie to joule,constants,units::calorie_to_joule
+units::degree_rad_roundtrip,f64,1,1,1487873,1487873,1487873,0,1000,pass,units,DRR,Degree rad roundtrip,constants,units::degree_rad_roundtrip
+units::ev_joule_roundtrip_multiple_values,f64,1,1,1508983,1508983,1508983,0,1000,pass,units,EJR,Ev joule roundtrip multiple values,constants,units::ev_joule_roundtrip_multiple_values
+units::ev_roundtrip,f64,1,1,1256382,1256382,1256382,0,1000,pass,units,ER,Ev roundtrip,constants,units::ev_roundtrip
+units::ev_to_joule,f64,1,1,1195943,1195943,1195943,0,1000,pass,units,ETJ,Ev to joule,constants,units::ev_to_joule

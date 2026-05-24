@@ -1,0 +1,16 @@
+[benchmark]
+category = "seismology"
+symbol = "GRD"
+name = "Gutenberg richter decreases with magnitude"
+domain = "geology"
+test = "seismology::gutenberg_richter_decreases_with_magnitude"
+experiment_name = "seismology::gutenberg_richter_decreases_with_magnitude"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2242484.00
+min_time_ns = 2242484.00
+max_time_ns = 2242484.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

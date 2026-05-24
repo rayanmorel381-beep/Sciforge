@@ -1,0 +1,106 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Cs",
+        name: "Cesium",
+        atomic_number: 55,
+        atomic_mass: 132.90545196_f64,
+        electronegativity: Some(0.79_f64),
+        group: Some(1),
+        period: 6,
+        category: "alkali metal",
+        electron_configuration: "[Xe] 6s¹",
+        isotopes: vec![
+        Isotope {
+            name: "Cesium-131",
+            symbol: "¹³¹Cs",
+            mass_number: 131,
+            neutrons: 76,
+            atomic_mass: 130.905464_f64,
+            half_life: Some(9.689_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Xenon-131"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Cesium-133",
+            symbol: "¹³³Cs",
+            mass_number: 133,
+            neutrons: 78,
+            atomic_mass: 132.905452_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("7/2+"),
+        },
+        Isotope {
+            name: "Cesium-134",
+            symbol: "¹³⁴Cs",
+            mass_number: 134,
+            neutrons: 79,
+            atomic_mass: 133.906714_f64,
+            half_life: Some(2.0652_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Barium-134"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Cesium-135",
+            symbol: "¹³⁵Cs",
+            mass_number: 135,
+            neutrons: 80,
+            atomic_mass: 134.905977_f64,
+            half_life: Some(2300000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Barium-135"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Cesium-137",
+            symbol: "¹³⁷Cs",
+            mass_number: 137,
+            neutrons: 82,
+            atomic_mass: 136.907089_f64,
+            half_life: Some(30.1671_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Barium-137m"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

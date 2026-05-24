@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+fluid_mechanics::bernoulli_pressure,f64,2,1,2116874,2116874,2116874,0,500,pass,fluid_mechanics,BP,Bernoulli pressure,physics,fluid_mechanics::bernoulli_pressure
+fluid_mechanics::drag_force,f64,2,1,2476255,2476255,2476255,0,500,pass,fluid_mechanics,DF,Drag force,physics,fluid_mechanics::drag_force
+fluid_mechanics::reynolds_number,f64,2,1,2254974,2254974,2254974,0,500,pass,fluid_mechanics,RN,Reynolds number,physics,fluid_mechanics::reynolds_number

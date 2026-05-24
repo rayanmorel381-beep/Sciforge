@@ -1,0 +1,27 @@
+category: electronics
+count: 4
+entries:
+  - label: electronics_diode_shockley
+    symbol: DS
+    name: Diode shockley
+    domain: physics
+    test: "electronics::diode_shockley"
+    avg_time_ns: 2472625.00
+  - label: electronics_ohm_current
+    symbol: OC
+    name: Ohm current
+    domain: physics
+    test: "electronics::ohm_current"
+    avg_time_ns: 2131514.00
+  - label: electronics_rlc_resonant_frequency
+    symbol: RRF
+    name: Rlc resonant frequency
+    domain: physics
+    test: "electronics::rlc_resonant_frequency"
+    avg_time_ns: 2358184.00
+  - label: electronics_voltage_divider
+    symbol: VD
+    name: Voltage divider
+    domain: physics
+    test: "electronics::voltage_divider"
+    avg_time_ns: 2147694.00

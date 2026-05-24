@@ -1,0 +1,5 @@
+group: gamma
+count: 1
+entries:
+  - label: bench_gamma
+    avg_time_ns: 12.50

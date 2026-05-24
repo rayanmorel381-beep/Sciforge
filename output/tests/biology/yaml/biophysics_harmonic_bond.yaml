@@ -1,0 +1,15 @@
+category: biophysics
+symbol: HB
+name: Harmonic bond
+domain: biology
+test: "biophysics::harmonic_bond"
+experiment_name: "biophysics::harmonic_bond"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2107874.00
+min_time_ns: 2107874.00
+max_time_ns: 2107874.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

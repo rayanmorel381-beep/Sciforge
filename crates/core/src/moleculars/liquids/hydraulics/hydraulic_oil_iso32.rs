@@ -1,0 +1,22 @@
+use std::sync::LazyLock;
+
+use crate::moleculars::{Liquid, LiquidFamily};
+
+pub static HYDRAULIC_OIL_ISO32: LazyLock<Liquid> = LazyLock::new(|| Liquid {
+    name: "Hydraulic Oil ISO VG 32",
+    formula: "Mineral base oil",
+    family: LiquidFamily::Hydraulic,
+    density_kg_m3_ref: 865.0,
+    dynamic_viscosity_pa_s_ref: 0.028,
+    bulk_modulus_pa: 1.62e9,
+    specific_heat_j_kgk: 1970.0,
+    thermal_conductivity_w_mk: 0.13,
+    surface_tension_n_m: 0.032,
+    vapor_pressure_pa_ref: 90.0,
+    temperature_ref_k: 313.15,
+    viscosity_index: 100.0,
+    pour_point_k: 228.15,
+    flash_point_k: 473.15,
+    shear_stability_index: 5.0,
+    friction_coefficient: 0.05,
+});

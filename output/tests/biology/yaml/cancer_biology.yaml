@@ -1,0 +1,27 @@
+category: cancer_biology
+count: 4
+entries:
+  - label: cancer_biology_cancer_linear_quadratic_survival
+    symbol: CLQ
+    name: Cancer linear quadratic survival
+    domain: biology
+    test: "cancer_biology::cancer_linear_quadratic_survival"
+    avg_time_ns: 1955834.00
+  - label: cancer_biology_cell_kill_log
+    symbol: CKL
+    name: Cell kill log
+    domain: biology
+    test: "cancer_biology::cell_kill_log"
+    avg_time_ns: 2530134.00
+  - label: cancer_biology_tumor_doubling_time
+    symbol: TDT
+    name: Tumor doubling time
+    domain: biology
+    test: "cancer_biology::tumor_doubling_time"
+    avg_time_ns: 2581205.00
+  - label: cancer_biology_tumor_growth_exponential
+    symbol: TGE
+    name: Tumor growth exponential
+    domain: biology
+    test: "cancer_biology::tumor_growth_exponential"
+    avg_time_ns: 2409305.00

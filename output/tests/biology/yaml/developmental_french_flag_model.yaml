@@ -1,0 +1,15 @@
+category: developmental
+symbol: FFM
+name: French flag model
+domain: biology
+test: "developmental::french_flag_model"
+experiment_name: "developmental::french_flag_model"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2421945.00
+min_time_ns: 2421945.00
+max_time_ns: 2421945.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

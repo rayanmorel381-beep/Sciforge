@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+hydrology::chezy_velocity,f64,1,1,1885934,1885934,1885934,0,1000,pass,hydrology,CV,Chezy velocity,geology,hydrology::chezy_velocity
+hydrology::froude_number,f64,1,1,1862303,1862303,1862303,0,1000,pass,hydrology,FN,Froude number,geology,hydrology::froude_number
+hydrology::hjulstrom_erosion_threshold,f64,1,1,1990684,1990684,1990684,0,1000,pass,hydrology,HET,Hjulstrom erosion threshold,geology,hydrology::hjulstrom_erosion_threshold
+hydrology::manning_velocity,f64,2,1,2103384,2103384,2103384,0,500,pass,hydrology,MV,Manning velocity,geology,hydrology::manning_velocity
+hydrology::reynolds_number,f64,1,1,1943003,1943003,1943003,0,1000,pass,hydrology,RN,Reynolds number,geology,hydrology::reynolds_number
+hydrology::stream_power,f64,1,1,1903824,1903824,1903824,0,1000,pass,hydrology,SP,Stream power,geology,hydrology::stream_power

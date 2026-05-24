@@ -1,0 +1,21 @@
+category: reaction_engineering
+count: 3
+entries:
+  - label: reaction_engineering_cstr_volume
+    symbol: CV
+    name: Cstr volume
+    domain: chemistry
+    test: "reaction_engineering::cstr_volume"
+    avg_time_ns: 2102004.00
+  - label: reaction_engineering_damkohler_number
+    symbol: DN
+    name: Damkohler number
+    domain: chemistry
+    test: "reaction_engineering::damkohler_number"
+    avg_time_ns: 2103853.00
+  - label: reaction_engineering_pfr_conversion_first_order
+    symbol: PCF
+    name: Pfr conversion first order
+    domain: chemistry
+    test: "reaction_engineering::pfr_conversion_first_order"
+    avg_time_ns: 2672285.00

@@ -1,0 +1,15 @@
+category: solid_mechanics
+symbol: HS
+name: Hooke stress
+domain: physics
+test: "solid_mechanics::hooke_stress"
+experiment_name: "solid_mechanics::hooke_stress"
+precision: f64
+elapsed_ms: 1
+iterations: 1
+avg_time_ns: 1870773.00
+min_time_ns: 1870773.00
+max_time_ns: 1870773.00
+time_stddev: 0.0000
+iterations_per_sec: 1000.00
+result: pass

@@ -1,0 +1,10 @@
+pub const LAMBDA_U238: f64 = 1.551_25e-10;
+pub const LAMBDA_U235: f64 = 9.8485e-10;
+pub const LAMBDA_TH232: f64 = 4.947_5e-11;
+pub const LAMBDA_K40_TOTAL: f64 = 5.543e-10;
+pub const LAMBDA_K40_AR: f64 = LAMBDA_K40_TOTAL * K40_BRANCH_RATIO_AR;
+pub const K40_BRANCH_RATIO_AR: f64 = 0.1048;
+pub const C14_MEAN_LIFE: f64 = 8_267.0;
+pub const HEAT_PRODUCTION_U238: f64 = 9.46e-5;
+pub const HEAT_PRODUCTION_TH232: f64 = 2.64e-5;
+pub const HEAT_PRODUCTION_K40: f64 = 2.92e-5;

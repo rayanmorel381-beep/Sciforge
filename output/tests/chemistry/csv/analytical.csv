@@ -1,0 +1,7 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+analytical::absorbance_transmittance_roundtrip,f64,2,1,2188194,2188194,2188194,0,500,pass,analytical,ATR,Absorbance transmittance roundtrip,chemistry,analytical::absorbance_transmittance_roundtrip
+analytical::beer_lambert,f64,2,1,2875965,2875965,2875965,0,500,pass,analytical,BL,Beer lambert,chemistry,analytical::beer_lambert
+analytical::dilution,f64,3,1,3111296,3111296,3111296,0,333.3333333333333,pass,analytical,Di,Dilution,chemistry,analytical::dilution
+analytical::percent_recovery,f64,3,1,3173406,3173406,3173406,0,333.3333333333333,pass,analytical,PR,Percent recovery,chemistry,analytical::percent_recovery
+analytical::retention_factor,f64,3,1,3216306,3216306,3216306,0,333.3333333333333,pass,analytical,RF,Retention factor,chemistry,analytical::retention_factor
+analytical::signal_to_noise,f64,3,1,3161556,3161556,3161556,0,333.3333333333333,pass,analytical,STN,Signal to noise,chemistry,analytical::signal_to_noise

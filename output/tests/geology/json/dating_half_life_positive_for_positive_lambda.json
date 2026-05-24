@@ -1,0 +1,17 @@
+{
+  "category": "dating",
+  "symbol": "HLP",
+  "name": "Half life positive for positive lambda",
+  "domain": "geology",
+  "test": "dating::half_life_positive_for_positive_lambda",
+  "experiment_name": "dating::half_life_positive_for_positive_lambda",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2194624.00,
+  "min_time_ns": 2194624.00,
+  "max_time_ns": 2194624.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

@@ -1,0 +1,16 @@
+[package]
+name = "link-service"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+axum.workspace = true
+chrono.workspace = true
+core-domain = { path = "../../crates/core-domain" }
+link-protocol = { path = "../../crates/link-protocol" }
+serde.workspace = true
+sqlx.workspace = true
+tokio.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true

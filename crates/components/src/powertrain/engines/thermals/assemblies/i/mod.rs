@@ -1,0 +1,19 @@
+
+#[path = "_1/mod.rs"]
+pub mod i1;
+#[path = "_2/mod.rs"]
+pub mod i2;
+#[path = "_3/mod.rs"]
+pub mod i3;
+#[path = "_4/mod.rs"]
+pub mod i4;
+#[path = "_5/mod.rs"]
+pub mod i5;
+#[path = "_6/mod.rs"]
+pub mod i6;
+#[path = "_8/mod.rs"]
+pub mod i8;
+#[path = "_10/mod.rs"]
+pub mod i10;
+#[path = "_12/mod.rs"]
+pub mod i12;

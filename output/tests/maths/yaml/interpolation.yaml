@@ -1,0 +1,21 @@
+category: interpolation
+count: 3
+entries:
+  - label: interpolation_hermite_interpolate
+    symbol: HI
+    name: Hermite interpolate
+    domain: maths
+    test: "interpolation::hermite_interpolate"
+    avg_time_ns: 2566635.00
+  - label: interpolation_lagrange_interpolate
+    symbol: LI
+    name: Lagrange interpolate
+    domain: maths
+    test: "interpolation::lagrange_interpolate"
+    avg_time_ns: 2301494.00
+  - label: interpolation_linear_interpolate
+    symbol: LI
+    name: Linear interpolate
+    domain: maths
+    test: "interpolation::linear_interpolate"
+    avg_time_ns: 2484164.00

@@ -1,0 +1,45 @@
+category: atmosphere
+count: 7
+entries:
+  - label: atmosphere_barometric_decreases_with_altitude
+    symbol: BDW
+    name: Barometric decreases with altitude
+    domain: meteorology
+    test: "atmosphere::barometric_decreases_with_altitude"
+    avg_time_ns: 1964004.00
+  - label: atmosphere_barometric_formula
+    symbol: BF
+    name: Barometric formula
+    domain: meteorology
+    test: "atmosphere::barometric_formula"
+    avg_time_ns: 1906183.00
+  - label: atmosphere_lapse_rate_dry
+    symbol: LRD
+    name: Lapse rate dry
+    domain: meteorology
+    test: "atmosphere::lapse_rate_dry"
+    avg_time_ns: 2223894.00
+  - label: atmosphere_potential_temperature
+    symbol: PT
+    name: Potential temperature
+    domain: meteorology
+    test: "atmosphere::potential_temperature"
+    avg_time_ns: 1976354.00
+  - label: atmosphere_saturation_vapor_increases_with_temp
+    symbol: SVI
+    name: Saturation vapor increases with temp
+    domain: meteorology
+    test: "atmosphere::saturation_vapor_increases_with_temp"
+    avg_time_ns: 1836393.00
+  - label: atmosphere_saturation_vapor_pressure
+    symbol: SVP
+    name: Saturation vapor pressure
+    domain: meteorology
+    test: "atmosphere::saturation_vapor_pressure"
+    avg_time_ns: 2263685.00
+  - label: atmosphere_scale_height
+    symbol: SH
+    name: Scale height
+    domain: meteorology
+    test: "atmosphere::scale_height"
+    avg_time_ns: 2007663.00

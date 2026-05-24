@@ -1,0 +1,45 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+dating::age_from_ratio,f64,1,1,1957684,1957684,1957684,0,1000,pass,dating,AFR,Age from ratio,geology,dating::age_from_ratio
+dating::carbon14_age,f64,1,1,1862614,1862614,1862614,0,1000,pass,dating,CA,Carbon14 age,geology,dating::carbon14_age
+dating::decay_constant,f64,1,1,1760943,1760943,1760943,0,1000,pass,dating,DC,Decay constant,geology,dating::decay_constant
+dating::half_life_positive_for_positive_lambda,f64,2,1,2194624,2194624,2194624,0,500,pass,dating,HLP,Half life positive for positive lambda,geology,dating::half_life_positive_for_positive_lambda
+dating::radioactive_decay,f64,2,1,2253024,2253024,2253024,0,500,pass,dating,RD,Radioactive decay,geology,dating::radioactive_decay
+dating::radioactive_decay_halflife,f64,2,1,2446995,2446995,2446995,0,500,pass,dating,RDH,Radioactive decay halflife,geology,dating::radioactive_decay_halflife
+dating::radioactive_decay_large_time_stability,f64,2,1,2119463,2119463,2119463,0,500,pass,dating,RDL,Radioactive decay large time stability,geology,dating::radioactive_decay_large_time_stability
+erosion::chemical_weathering_rate,f64,1,1,1923054,1923054,1923054,0,1000,pass,erosion,CWR,Chemical weathering rate,geology,erosion::chemical_weathering_rate
+erosion::fluvial_erosion_rate,f64,1,1,1895824,1895824,1895824,0,1000,pass,erosion,FER,Fluvial erosion rate,geology,erosion::fluvial_erosion_rate
+erosion::frost_weathering_rate,f64,1,1,1844403,1844403,1844403,0,1000,pass,erosion,FWR,Frost weathering rate,geology,erosion::frost_weathering_rate
+erosion::volcanic_explosivity_index,f64,1,1,1776603,1776603,1776603,0,1000,pass,erosion,VEI,Volcanic explosivity index,geology,erosion::volcanic_explosivity_index
+erosion::wind_erosion_threshold,f64,2,1,2155604,2155604,2155604,0,500,pass,erosion,WET,Wind erosion threshold,geology,erosion::wind_erosion_threshold
+glaciology::glacial_bed_erosion,f64,2,1,2140534,2140534,2140534,0,500,pass,glaciology,GBE,Glacial bed erosion,geology,glaciology::glacial_bed_erosion
+glaciology::glen_strain_increases_with_stress,f64,2,1,2047874,2047874,2047874,0,500,pass,glaciology,GSI,Glen strain increases with stress,geology,glaciology::glen_strain_increases_with_stress
+glaciology::glen_strain_rate,f64,2,1,2249724,2249724,2249724,0,500,pass,glaciology,GSR,Glen strain rate,geology,glaciology::glen_strain_rate
+glaciology::ice_viscosity,f64,2,1,2000324,2000324,2000324,0,500,pass,glaciology,IV,Ice viscosity,geology,glaciology::ice_viscosity
+glaciology::shallow_ice_velocity,f64,1,1,1944933,1944933,1944933,0,1000,pass,glaciology,SIV,Shallow ice velocity,geology,glaciology::shallow_ice_velocity
+hydrology::chezy_velocity,f64,1,1,1885934,1885934,1885934,0,1000,pass,hydrology,CV,Chezy velocity,geology,hydrology::chezy_velocity
+hydrology::froude_number,f64,1,1,1862303,1862303,1862303,0,1000,pass,hydrology,FN,Froude number,geology,hydrology::froude_number
+hydrology::hjulstrom_erosion_threshold,f64,1,1,1990684,1990684,1990684,0,1000,pass,hydrology,HET,Hjulstrom erosion threshold,geology,hydrology::hjulstrom_erosion_threshold
+hydrology::manning_velocity,f64,2,1,2103384,2103384,2103384,0,500,pass,hydrology,MV,Manning velocity,geology,hydrology::manning_velocity
+hydrology::reynolds_number,f64,1,1,1943003,1943003,1943003,0,1000,pass,hydrology,RN,Reynolds number,geology,hydrology::reynolds_number
+hydrology::stream_power,f64,1,1,1903824,1903824,1903824,0,1000,pass,hydrology,SP,Stream power,geology,hydrology::stream_power
+petrology::cipw_quartz_norm,f64,1,1,1851594,1851594,1851594,0,1000,pass,petrology,CQN,Cipw quartz norm,geology,petrology::cipw_quartz_norm
+petrology::crystal_settling_velocity,f64,2,1,2236964,2236964,2236964,0,500,pass,petrology,CSV,Crystal settling velocity,geology,petrology::crystal_settling_velocity
+petrology::differentiation_index,f64,1,1,1877293,1877293,1877293,0,1000,pass,petrology,DI,Differentiation index,geology,petrology::differentiation_index
+petrology::liquidus_temperature,f64,1,1,1888234,1888234,1888234,0,1000,pass,petrology,LT,Liquidus temperature,geology,petrology::liquidus_temperature
+petrology::mg_number,f64,1,1,1899423,1899423,1899423,0,1000,pass,petrology,MN,Mg number,geology,petrology::mg_number
+petrology::total_alkali_silica,f64,2,1,2040144,2040144,2040144,0,500,pass,petrology,TAS,Total alkali silica,geology,petrology::total_alkali_silica
+petrology::viscosity_arrhenius,f64,2,1,2239284,2239284,2239284,0,500,pass,petrology,VA,Viscosity arrhenius,geology,petrology::viscosity_arrhenius
+seismology::gutenberg_richter,f64,1,1,1978554,1978554,1978554,0,1000,pass,seismology,GR,Gutenberg richter,geology,seismology::gutenberg_richter
+seismology::gutenberg_richter_decreases_with_magnitude,f64,2,1,2242484,2242484,2242484,0,500,pass,seismology,GRD,Gutenberg richter decreases with magnitude,geology,seismology::gutenberg_richter_decreases_with_magnitude
+seismology::p_wave_faster_than_s_wave,f64,2,1,2005804,2005804,2005804,0,500,pass,seismology,PWF,P wave faster than s wave,geology,seismology::p_wave_faster_than_s_wave
+seismology::p_wave_velocity,f64,1,1,1948843,1948843,1948843,0,1000,pass,seismology,PWV,P wave velocity,geology,seismology::p_wave_velocity
+seismology::richter_amplitude_ratio_adds_one_magnitude,f64,1,1,1899544,1899544,1899544,0,1000,pass,seismology,RAR,Richter amplitude ratio adds one magnitude,geology,seismology::richter_amplitude_ratio_adds_one_magnitude
+seismology::richter_magnitude,f64,2,1,2141804,2141804,2141804,0,500,pass,seismology,RM,Richter magnitude,geology,seismology::richter_magnitude
+seismology::s_wave_velocity,f64,2,1,2165694,2165694,2165694,0,500,pass,seismology,SWV,S wave velocity,geology,seismology::s_wave_velocity
+seismology::seismic_energy,f64,2,1,2427544,2427544,2427544,0,500,pass,seismology,SE,Seismic energy,geology,seismology::seismic_energy
+tectonics::geothermal_gradient,f64,2,1,2344304,2344304,2344304,0,500,pass,tectonics,GG,Geothermal gradient,geology,tectonics::geothermal_gradient
+tectonics::heat_flow,f64,2,1,2084524,2084524,2084524,0,500,pass,tectonics,HF,Heat flow,geology,tectonics::heat_flow
+tectonics::isostatic_equilibrium,f64,1,1,1876944,1876944,1876944,0,1000,pass,tectonics,IE,Isostatic equilibrium,geology,tectonics::isostatic_equilibrium
+tectonics::mg_number,f64,1,1,1780093,1780093,1780093,0,1000,pass,tectonics,MN,Mg number,geology,tectonics::mg_number
+tectonics::plate_velocity,f64,1,1,1756523,1756523,1756523,0,1000,pass,tectonics,PV,Plate velocity,geology,tectonics::plate_velocity
+tectonics::viscosity_arrhenius,f64,1,1,1853304,1853304,1853304,0,1000,pass,tectonics,VA,Viscosity arrhenius,geology,tectonics::viscosity_arrhenius

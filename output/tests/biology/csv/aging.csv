@@ -1,0 +1,6 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+aging::caloric_restriction_lifespan,f64,2,1,2432814,2432814,2432814,0,500,pass,aging,CRL,Caloric restriction lifespan,biology,aging::caloric_restriction_lifespan
+aging::gompertz_mortality_rate,f64,2,1,2353324,2353324,2353324,0,500,pass,aging,GMR,Gompertz mortality rate,biology,aging::gompertz_mortality_rate
+aging::mitochondrial_damage,f64,2,1,2009694,2009694,2009694,0,500,pass,aging,MD,Mitochondrial damage,biology,aging::mitochondrial_damage
+aging::ros_steady_state,f64,1,1,1852843,1852843,1852843,0,1000,pass,aging,RSS,Ros steady state,biology,aging::ros_steady_state
+aging::telomere_shortening,f64,2,1,2240055,2240055,2240055,0,500,pass,aging,TS,Telomere shortening,biology,aging::telomere_shortening

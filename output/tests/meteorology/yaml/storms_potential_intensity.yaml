@@ -1,0 +1,15 @@
+category: storms
+symbol: PI
+name: Potential intensity
+domain: meteorology
+test: "storms::potential_intensity"
+experiment_name: "storms::potential_intensity"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2195864.00
+min_time_ns: 2195864.00
+max_time_ns: 2195864.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

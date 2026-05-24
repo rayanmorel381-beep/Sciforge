@@ -1,0 +1,16 @@
+[benchmark]
+category = "genetics"
+symbol = "HW"
+name = "Hardy weinberg"
+domain = "biology"
+test = "genetics::hardy_weinberg"
+experiment_name = "genetics::hardy_weinberg"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2576005.00
+min_time_ns = 2576005.00
+max_time_ns = 2576005.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

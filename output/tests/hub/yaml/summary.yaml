@@ -1,0 +1,659 @@
+title: SciForge Hub Test
+count: 82
+entries:
+  - label: cross_domain_astrobiology_drake_equation
+    category: cross_domain
+    symbol: DE
+    name: Drake equation
+    domain: hub
+    test: "cross_domain::astrobiology::drake_equation"
+    avg_time_ns: 2333624.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_astrobiology_habitable_zone_inner
+    category: cross_domain
+    symbol: HZI
+    name: Habitable zone inner
+    domain: hub
+    test: "cross_domain::astrobiology::habitable_zone_inner"
+    avg_time_ns: 1834474.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_astrobiology_habitable_zone_outer
+    category: cross_domain
+    symbol: HZO
+    name: Habitable zone outer
+    domain: hub
+    test: "cross_domain::astrobiology::habitable_zone_outer"
+    avg_time_ns: 1909333.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_astrobiology_surface_gravity
+    category: cross_domain
+    symbol: SG
+    name: Surface gravity
+    domain: hub
+    test: "cross_domain::astrobiology::surface_gravity"
+    avg_time_ns: 2265814.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_astrobiology_uv_surface_flux
+    category: cross_domain
+    symbol: USF
+    name: Uv surface flux
+    domain: hub
+    test: "cross_domain::astrobiology::uv_surface_flux"
+    avg_time_ns: 2200084.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_astrochemistry_dust_equilibrium_temperature
+    category: cross_domain
+    symbol: DET
+    name: Dust equilibrium temperature
+    domain: hub
+    test: "cross_domain::astrochemistry::dust_equilibrium_temperature"
+    avg_time_ns: 2057504.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_astrochemistry_freefall_time
+    category: cross_domain
+    symbol: FT
+    name: Freefall time
+    domain: hub
+    test: "cross_domain::astrochemistry::freefall_time"
+    avg_time_ns: 2366654.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_astrochemistry_jeans_mass
+    category: cross_domain
+    symbol: JM
+    name: Jeans mass
+    domain: hub
+    test: "cross_domain::astrochemistry::jeans_mass"
+    avg_time_ns: 2245815.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_astrochemistry_stroemgren_radius
+    category: cross_domain
+    symbol: SR
+    name: Stroemgren radius
+    domain: hub
+    test: "cross_domain::astrochemistry::stroemgren_radius"
+    avg_time_ns: 2031683.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_astrophysics_compton_wavelength
+    category: cross_domain
+    symbol: CW
+    name: Compton wavelength
+    domain: hub
+    test: "cross_domain::astrophysics::compton_wavelength"
+    avg_time_ns: 1916544.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_astrophysics_eddington_luminosity
+    category: cross_domain
+    symbol: EL
+    name: Eddington luminosity
+    domain: hub
+    test: "cross_domain::astrophysics::eddington_luminosity"
+    avg_time_ns: 1821073.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_astrophysics_hawking_temperature
+    category: cross_domain
+    symbol: HT
+    name: Hawking temperature
+    domain: hub
+    test: "cross_domain::astrophysics::hawking_temperature"
+    avg_time_ns: 1727613.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_astrophysics_schwarzschild_radius
+    category: cross_domain
+    symbol: SR
+    name: Schwarzschild radius
+    domain: hub
+    test: "cross_domain::astrophysics::schwarzschild_radius"
+    avg_time_ns: 2036084.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_atmospheric_chemistry_aerosol_optical_depth
+    category: cross_domain
+    symbol: AOD
+    name: Aerosol optical depth
+    domain: hub
+    test: "cross_domain::atmospheric_chemistry::aerosol_optical_depth"
+    avg_time_ns: 2205294.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_atmospheric_chemistry_column_density
+    category: cross_domain
+    symbol: CD
+    name: Column density
+    domain: hub
+    test: "cross_domain::atmospheric_chemistry::column_density"
+    avg_time_ns: 2650545.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_atmospheric_chemistry_henry_law_concentration
+    category: cross_domain
+    symbol: HLC
+    name: Henry law concentration
+    domain: hub
+    test: "cross_domain::atmospheric_chemistry::henry_law_concentration"
+    avg_time_ns: 2042054.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_atmospheric_chemistry_photolysis_rate
+    category: cross_domain
+    symbol: PR
+    name: Photolysis rate
+    domain: hub
+    test: "cross_domain::atmospheric_chemistry::photolysis_rate"
+    avg_time_ns: 2244704.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_atmospheric_physics_dry_adiabatic_lapse_rate
+    category: cross_domain
+    symbol: DAL
+    name: Dry adiabatic lapse rate
+    domain: hub
+    test: "cross_domain::atmospheric_physics::dry_adiabatic_lapse_rate"
+    avg_time_ns: 1736443.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_atmospheric_physics_pressure_at_altitude
+    category: cross_domain
+    symbol: PAA
+    name: Pressure at altitude
+    domain: hub
+    test: "cross_domain::atmospheric_physics::pressure_at_altitude"
+    avg_time_ns: 2231914.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_atmospheric_physics_stefan_boltzmann_flux
+    category: cross_domain
+    symbol: SBF
+    name: Stefan boltzmann flux
+    domain: hub
+    test: "cross_domain::atmospheric_physics::stefan_boltzmann_flux"
+    avg_time_ns: 1830364.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_atmospheric_physics_wien_peak_wavelength
+    category: cross_domain
+    symbol: WPW
+    name: Wien peak wavelength
+    domain: hub
+    test: "cross_domain::atmospheric_physics::wien_peak_wavelength"
+    avg_time_ns: 2056174.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biochemistry_enzyme_turnover_number
+    category: cross_domain
+    symbol: ETN
+    name: Enzyme turnover number
+    domain: hub
+    test: "cross_domain::biochemistry::enzyme_turnover_number"
+    avg_time_ns: 1962973.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_biochemistry_gibbs_free_energy
+    category: cross_domain
+    symbol: GFE
+    name: Gibbs free energy
+    domain: hub
+    test: "cross_domain::biochemistry::gibbs_free_energy"
+    avg_time_ns: 2466285.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biochemistry_henderson_hasselbalch
+    category: cross_domain
+    symbol: HH
+    name: Henderson hasselbalch
+    domain: hub
+    test: "cross_domain::biochemistry::henderson_hasselbalch"
+    avg_time_ns: 2129484.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biochemistry_michaelis_menten_rate
+    category: cross_domain
+    symbol: MMR
+    name: Michaelis menten rate
+    domain: hub
+    test: "cross_domain::biochemistry::michaelis_menten_rate"
+    avg_time_ns: 2032394.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biochemistry_ph_from_concentration
+    category: cross_domain
+    symbol: PFC
+    name: Ph from concentration
+    domain: hub
+    test: "cross_domain::biochemistry::ph_from_concentration"
+    avg_time_ns: 1834353.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_biomathematics_basic_reproduction_number
+    category: cross_domain
+    symbol: BRN
+    name: Basic reproduction number
+    domain: hub
+    test: "cross_domain::biomathematics::basic_reproduction_number"
+    avg_time_ns: 1978154.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_biomathematics_logistic_growth_rate
+    category: cross_domain
+    symbol: LGR
+    name: Logistic growth rate
+    domain: hub
+    test: "cross_domain::biomathematics::logistic_growth_rate"
+    avg_time_ns: 1829353.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_biomathematics_molecular_clock_distance
+    category: cross_domain
+    symbol: MCD
+    name: Molecular clock distance
+    domain: hub
+    test: "cross_domain::biomathematics::molecular_clock_distance"
+    avg_time_ns: 1683843.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_biomathematics_shannon_diversity_index
+    category: cross_domain
+    symbol: SDI
+    name: Shannon diversity index
+    domain: hub
+    test: "cross_domain::biomathematics::shannon_diversity_index"
+    avg_time_ns: 2150154.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biophysics_electrophoretic_mobility
+    category: cross_domain
+    symbol: EM
+    name: Electrophoretic mobility
+    domain: hub
+    test: "cross_domain::biophysics::electrophoretic_mobility"
+    avg_time_ns: 2342154.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biophysics_fick_diffusion_flux
+    category: cross_domain
+    symbol: FDF
+    name: Fick diffusion flux
+    domain: hub
+    test: "cross_domain::biophysics::fick_diffusion_flux"
+    avg_time_ns: 2307485.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biophysics_reynolds_number
+    category: cross_domain
+    symbol: RN
+    name: Reynolds number
+    domain: hub
+    test: "cross_domain::biophysics::reynolds_number"
+    avg_time_ns: 2161554.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_biophysics_stokes_drag_force
+    category: cross_domain
+    symbol: SDF
+    name: Stokes drag force
+    domain: hub
+    test: "cross_domain::biophysics::stokes_drag_force"
+    avg_time_ns: 2079954.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_campaign_astronomy_and_physics
+    category: cross_domain
+    symbol: CAA
+    name: Campaign astronomy and physics
+    domain: hub
+    test: "cross_domain::campaign_astronomy_and_physics"
+    avg_time_ns: 2543144.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_campaign_empty
+    category: cross_domain
+    symbol: CE
+    name: Campaign empty
+    domain: hub
+    test: "cross_domain::campaign_empty"
+    avg_time_ns: 2466395.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_campaign_physics_and_chemistry
+    category: cross_domain
+    symbol: CPA
+    name: Campaign physics and chemistry
+    domain: hub
+    test: "cross_domain::campaign_physics_and_chemistry"
+    avg_time_ns: 2517505.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_campaign_result_scalars
+    category: cross_domain
+    symbol: CRS
+    name: Campaign result scalars
+    domain: hub
+    test: "cross_domain::campaign_result_scalars"
+    avg_time_ns: 3242896.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_cross_domain_biology_and_chemistry
+    category: cross_domain
+    symbol: CDB
+    name: Cross domain biology and chemistry
+    domain: hub
+    test: "cross_domain::cross_domain_biology_and_chemistry"
+    avg_time_ns: 3230385.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_cross_domain_earth_escape_velocity
+    category: cross_domain
+    symbol: CDE
+    name: Cross domain earth escape velocity
+    domain: hub
+    test: "cross_domain::cross_domain_earth_escape_velocity"
+    avg_time_ns: 3378037.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_geochemistry_delta_notation
+    category: cross_domain
+    symbol: DN
+    name: Delta notation
+    domain: hub
+    test: "cross_domain::geochemistry::delta_notation"
+    avg_time_ns: 2294884.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_geochemistry_distribution_coefficient
+    category: cross_domain
+    symbol: DC
+    name: Distribution coefficient
+    domain: hub
+    test: "cross_domain::geochemistry::distribution_coefficient"
+    avg_time_ns: 1970124.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_geochemistry_mixing_two_component
+    category: cross_domain
+    symbol: MTC
+    name: Mixing two component
+    domain: hub
+    test: "cross_domain::geochemistry::mixing_two_component"
+    avg_time_ns: 2055333.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_geochemistry_partition_coefficient
+    category: cross_domain
+    symbol: PC
+    name: Partition coefficient
+    domain: hub
+    test: "cross_domain::geochemistry::partition_coefficient"
+    avg_time_ns: 2048584.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_geophysics_bouguer_anomaly
+    category: cross_domain
+    symbol: BA
+    name: Bouguer anomaly
+    domain: hub
+    test: "cross_domain::geophysics::bouguer_anomaly"
+    avg_time_ns: 2388975.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_geophysics_electromagnetic_skin_depth
+    category: cross_domain
+    symbol: ESD
+    name: Electromagnetic skin depth
+    domain: hub
+    test: "cross_domain::geophysics::electromagnetic_skin_depth"
+    avg_time_ns: 1933403.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_geophysics_seismic_impedance_reflection
+    category: cross_domain
+    symbol: SIR
+    name: Seismic impedance reflection
+    domain: hub
+    test: "cross_domain::geophysics::seismic_impedance_reflection"
+    avg_time_ns: 1967704.00
+    iterations_per_sec: 1000.00
+  - label: cross_domain_geophysics_seismic_wave_attenuation
+    category: cross_domain
+    symbol: SWA
+    name: Seismic wave attenuation
+    domain: hub
+    test: "cross_domain::geophysics::seismic_wave_attenuation"
+    avg_time_ns: 2967995.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_invalid_function_returns_error
+    category: cross_domain
+    symbol: IFR
+    name: Invalid function returns error
+    domain: hub
+    test: "cross_domain::invalid_function_returns_error"
+    avg_time_ns: 2389395.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_mathematical_physics_de_broglie_wavelength
+    category: cross_domain
+    symbol: DBW
+    name: De broglie wavelength
+    domain: hub
+    test: "cross_domain::mathematical_physics::de_broglie_wavelength"
+    avg_time_ns: 2354334.00
+    iterations_per_sec: 500.00
+  - label: cross_domain_mathematical_physics_fermi_dirac_distribution
+    category: cross_domain
+    symbol: FDD
+    name: Fermi dirac distribution
+    domain: hub
+    test: "cross_domain::mathematical_physics::fermi_dirac_distribution"
+    avg_time_ns: 3622117.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_mathematical_physics_heisenberg_uncertainty_position
+    category: cross_domain
+    symbol: HUP
+    name: Heisenberg uncertainty position
+    domain: hub
+    test: "cross_domain::mathematical_physics::heisenberg_uncertainty_position"
+    avg_time_ns: 3096396.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_mathematical_physics_relativistic_energy
+    category: cross_domain
+    symbol: RE
+    name: Relativistic energy
+    domain: hub
+    test: "cross_domain::mathematical_physics::relativistic_energy"
+    avg_time_ns: 3178336.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_planetary_geology_crater_counting_surface_age
+    category: cross_domain
+    symbol: CCS
+    name: Crater counting surface age
+    domain: hub
+    test: "cross_domain::planetary_geology::crater_counting_surface_age"
+    avg_time_ns: 3435196.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_planetary_geology_impact_energy
+    category: cross_domain
+    symbol: IE
+    name: Impact energy
+    domain: hub
+    test: "cross_domain::planetary_geology::impact_energy"
+    avg_time_ns: 5805491.00
+    iterations_per_sec: 200.00
+  - label: cross_domain_planetary_geology_surface_temperature_equilibrium
+    category: cross_domain
+    symbol: STE
+    name: Surface temperature equilibrium
+    domain: hub
+    test: "cross_domain::planetary_geology::surface_temperature_equilibrium"
+    avg_time_ns: 3597376.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_planetary_geology_volcanic_effusion_rate
+    category: cross_domain
+    symbol: VER
+    name: Volcanic effusion rate
+    domain: hub
+    test: "cross_domain::planetary_geology::volcanic_effusion_rate"
+    avg_time_ns: 4343318.00
+    iterations_per_sec: 250.00
+  - label: cross_domain_validation_detects_bad_expected_value
+    category: cross_domain
+    symbol: VDB
+    name: Validation detects bad expected value
+    domain: hub
+    test: "cross_domain::validation_detects_bad_expected_value"
+    avg_time_ns: 3341807.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_validation_markdown_output
+    category: cross_domain
+    symbol: VMO
+    name: Validation markdown output
+    domain: hub
+    test: "cross_domain::validation_markdown_output"
+    avg_time_ns: 3274486.00
+    iterations_per_sec: 333.33
+  - label: cross_domain_validation_single_case
+    category: cross_domain
+    symbol: VSC
+    name: Validation single case
+    domain: hub
+    test: "cross_domain::validation_single_case"
+    avg_time_ns: 3070955.00
+    iterations_per_sec: 333.33
+  - label: pipeline_pipeline_chained_stages
+    category: pipeline
+    symbol: PCS
+    name: Pipeline chained stages
+    domain: hub
+    test: "pipeline::pipeline_chained_stages"
+    avg_time_ns: 3044316.00
+    iterations_per_sec: 333.33
+  - label: pipeline_pipeline_empty_input
+    category: pipeline
+    symbol: PEI
+    name: Pipeline empty input
+    domain: hub
+    test: "pipeline::pipeline_empty_input"
+    avg_time_ns: 2459204.00
+    iterations_per_sec: 500.00
+  - label: pipeline_pipeline_normalize_and_filter
+    category: pipeline
+    symbol: PNA
+    name: Pipeline normalize and filter
+    domain: hub
+    test: "pipeline::pipeline_normalize_and_filter"
+    avg_time_ns: 3397997.00
+    iterations_per_sec: 333.33
+  - label: pipeline_pipeline_scale
+    category: pipeline
+    symbol: PS
+    name: Pipeline scale
+    domain: hub
+    test: "pipeline::pipeline_scale"
+    avg_time_ns: 2476194.00
+    iterations_per_sec: 500.00
+  - label: tools_approx_equal_works
+    category: tools
+    symbol: AEW
+    name: Approx equal works
+    domain: hub
+    test: "tools::approx_equal_works"
+    avg_time_ns: 2784225.00
+    iterations_per_sec: 500.00
+  - label: tools_arena_alloc_and_read
+    category: tools
+    symbol: AAA
+    name: Arena alloc and read
+    domain: hub
+    test: "tools::arena_alloc_and_read"
+    avg_time_ns: 3432797.00
+    iterations_per_sec: 333.33
+  - label: tools_arena_capacity_limit
+    category: tools
+    symbol: ACL
+    name: Arena capacity limit
+    domain: hub
+    test: "tools::arena_capacity_limit"
+    avg_time_ns: 2898835.00
+    iterations_per_sec: 500.00
+  - label: tools_arena_matrix
+    category: tools
+    symbol: AM
+    name: Arena matrix
+    domain: hub
+    test: "tools::arena_matrix"
+    avg_time_ns: 2957966.00
+    iterations_per_sec: 500.00
+  - label: tools_arena_reset
+    category: tools
+    symbol: AR
+    name: Arena reset
+    domain: hub
+    test: "tools::arena_reset"
+    avg_time_ns: 4232458.00
+    iterations_per_sec: 250.00
+  - label: tools_fingerprint_changes_with_data
+    category: tools
+    symbol: FCW
+    name: Fingerprint changes with data
+    domain: hub
+    test: "tools::fingerprint_changes_with_data"
+    avg_time_ns: 2941615.00
+    iterations_per_sec: 500.00
+  - label: tools_fingerprint_deterministic
+    category: tools
+    symbol: FD
+    name: Fingerprint deterministic
+    domain: hub
+    test: "tools::fingerprint_deterministic"
+    avg_time_ns: 2808475.00
+    iterations_per_sec: 500.00
+  - label: tools_format_scientific_output
+    category: tools
+    symbol: FSO
+    name: Format scientific output
+    domain: hub
+    test: "tools::format_scientific_output"
+    avg_time_ns: 3228966.00
+    iterations_per_sec: 333.33
+  - label: tools_kahan_dot_basic
+    category: tools
+    symbol: KDB
+    name: Kahan dot basic
+    domain: hub
+    test: "tools::kahan_dot_basic"
+    avg_time_ns: 2482265.00
+    iterations_per_sec: 500.00
+  - label: tools_kahan_sum_precision
+    category: tools
+    symbol: KSP
+    name: Kahan sum precision
+    domain: hub
+    test: "tools::kahan_sum_precision"
+    avg_time_ns: 4952179.00
+    iterations_per_sec: 250.00
+  - label: tools_linspace_basic
+    category: tools
+    symbol: LB
+    name: Linspace basic
+    domain: hub
+    test: "tools::linspace_basic"
+    avg_time_ns: 1969284.00
+    iterations_per_sec: 1000.00
+  - label: tools_logspace_basic
+    category: tools
+    symbol: LB
+    name: Logspace basic
+    domain: hub
+    test: "tools::logspace_basic"
+    avg_time_ns: 1916273.00
+    iterations_per_sec: 1000.00
+  - label: tools_reproducible_context_fork
+    category: tools
+    symbol: RCF
+    name: Reproducible context fork
+    domain: hub
+    test: "tools::reproducible_context_fork"
+    avg_time_ns: 2663155.00
+    iterations_per_sec: 500.00
+  - label: tools_rng_deterministic
+    category: tools
+    symbol: RD
+    name: Rng deterministic
+    domain: hub
+    test: "tools::rng_deterministic"
+    avg_time_ns: 2283154.00
+    iterations_per_sec: 500.00
+  - label: tools_rng_different_seeds_differ
+    category: tools
+    symbol: RDS
+    name: Rng different seeds differ
+    domain: hub
+    test: "tools::rng_different_seeds_differ"
+    avg_time_ns: 1837204.00
+    iterations_per_sec: 1000.00
+  - label: tools_rng_normal_distribution
+    category: tools
+    symbol: RND
+    name: Rng normal distribution
+    domain: hub
+    test: "tools::rng_normal_distribution"
+    avg_time_ns: 2580564.00
+    iterations_per_sec: 500.00
+  - label: tools_rng_uniform_range
+    category: tools
+    symbol: RUR
+    name: Rng uniform range
+    domain: hub
+    test: "tools::rng_uniform_range"
+    avg_time_ns: 1816684.00
+    iterations_per_sec: 1000.00
+  - label: tools_scratch_pool_independent
+    category: tools
+    symbol: SPI
+    name: Scratch pool independent
+    domain: hub
+    test: "tools::scratch_pool_independent"
+    avg_time_ns: 2156334.00
+    iterations_per_sec: 500.00

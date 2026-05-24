@@ -1,0 +1,8 @@
+title = "Roundtrip"
+count = 1
+
+[[entries]]
+label = "rt"
+avg_time_ns = 31.60
+iterations_per_sec = 0.00
+

@@ -1,0 +1,45 @@
+category: enzyme
+count: 7
+entries:
+  - label: enzyme_competitive_inhibition_increases_apparent_km
+    symbol: CII
+    name: Competitive inhibition increases apparent km
+    domain: biology
+    test: "enzyme::competitive_inhibition_increases_apparent_km"
+    avg_time_ns: 2215215.00
+  - label: enzyme_hill_equation
+    symbol: HE
+    name: Hill equation
+    domain: biology
+    test: "enzyme::hill_equation"
+    avg_time_ns: 2126333.00
+  - label: enzyme_hill_higher_cooperativity_reduces_rate_below_k
+    symbol: HHC
+    name: Hill higher cooperativity reduces rate below k
+    domain: biology
+    test: "enzyme::hill_higher_cooperativity_reduces_rate_below_k"
+    avg_time_ns: 1972943.00
+  - label: enzyme_lineweaver_burk
+    symbol: LB
+    name: Lineweaver burk
+    domain: biology
+    test: "enzyme::lineweaver_burk"
+    avg_time_ns: 1899824.00
+  - label: enzyme_michaelis_menten_half_vmax
+    symbol: MMH
+    name: Michaelis menten half vmax
+    domain: biology
+    test: "enzyme::michaelis_menten_half_vmax"
+    avg_time_ns: 2306734.00
+  - label: enzyme_michaelis_menten_monotonic_with_substrate
+    symbol: MMM
+    name: Michaelis menten monotonic with substrate
+    domain: biology
+    test: "enzyme::michaelis_menten_monotonic_with_substrate"
+    avg_time_ns: 2542395.00
+  - label: enzyme_michaelis_menten_saturation
+    symbol: MMS
+    name: Michaelis menten saturation
+    domain: biology
+    test: "enzyme::michaelis_menten_saturation"
+    avg_time_ns: 2436914.00

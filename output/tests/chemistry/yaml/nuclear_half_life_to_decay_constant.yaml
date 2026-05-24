@@ -1,0 +1,15 @@
+category: nuclear
+symbol: HLT
+name: Half life to decay constant
+domain: chemistry
+test: "nuclear::half_life_to_decay_constant"
+experiment_name: "nuclear::half_life_to_decay_constant"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2440335.00
+min_time_ns: 2440335.00
+max_time_ns: 2440335.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

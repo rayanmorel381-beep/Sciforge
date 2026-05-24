@@ -1,0 +1,17 @@
+{
+  "category": "bioelectricity",
+  "symbol": "SDW",
+  "name": "Strength duration weiss",
+  "domain": "biology",
+  "test": "bioelectricity::strength_duration_weiss",
+  "experiment_name": "bioelectricity::strength_duration_weiss",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2341875.00,
+  "min_time_ns": 2341875.00,
+  "max_time_ns": 2341875.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

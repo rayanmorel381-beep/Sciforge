@@ -1,0 +1,16 @@
+[benchmark]
+category = "cosmology"
+symbol = "HEI"
+name = "Hubble ez identity table driven"
+domain = "astronomy"
+test = "cosmology::hubble_ez_identity_table_driven"
+experiment_name = "cosmology::hubble_ez_identity_table_driven"
+precision = "f64"
+elapsed_ms = 1
+iterations = 1
+avg_time_ns = 1829283.00
+min_time_ns = 1829283.00
+max_time_ns = 1829283.00
+time_stddev = 0.0000
+iterations_per_sec = 1000.00
+result = "pass"

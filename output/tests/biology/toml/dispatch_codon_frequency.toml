@@ -1,0 +1,16 @@
+[benchmark]
+category = "dispatch"
+symbol = "CF"
+name = "Codon frequency"
+domain = "biology"
+test = "dispatch::codon_frequency"
+experiment_name = "dispatch::codon_frequency"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2263474.00
+min_time_ns = 2263474.00
+max_time_ns = 2263474.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

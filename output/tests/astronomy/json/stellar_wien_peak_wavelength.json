@@ -1,0 +1,17 @@
+{
+  "category": "stellar",
+  "symbol": "WPW",
+  "name": "Wien peak wavelength",
+  "domain": "astronomy",
+  "test": "stellar::wien_peak_wavelength",
+  "experiment_name": "stellar::wien_peak_wavelength",
+  "precision": "f64",
+  "elapsed_ms": 2,
+  "iterations": 1,
+  "avg_time_ns": 2243994.00,
+  "min_time_ns": 2243994.00,
+  "max_time_ns": 2243994.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 500.00,
+  "result": "pass"
+}

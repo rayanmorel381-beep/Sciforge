@@ -1,0 +1,45 @@
+category: petrology
+count: 7
+entries:
+  - label: petrology_cipw_quartz_norm
+    symbol: CQN
+    name: Cipw quartz norm
+    domain: geology
+    test: "petrology::cipw_quartz_norm"
+    avg_time_ns: 1851594.00
+  - label: petrology_crystal_settling_velocity
+    symbol: CSV
+    name: Crystal settling velocity
+    domain: geology
+    test: "petrology::crystal_settling_velocity"
+    avg_time_ns: 2236964.00
+  - label: petrology_differentiation_index
+    symbol: DI
+    name: Differentiation index
+    domain: geology
+    test: "petrology::differentiation_index"
+    avg_time_ns: 1877293.00
+  - label: petrology_liquidus_temperature
+    symbol: LT
+    name: Liquidus temperature
+    domain: geology
+    test: "petrology::liquidus_temperature"
+    avg_time_ns: 1888234.00
+  - label: petrology_mg_number
+    symbol: MN
+    name: Mg number
+    domain: geology
+    test: "petrology::mg_number"
+    avg_time_ns: 1899423.00
+  - label: petrology_total_alkali_silica
+    symbol: TAS
+    name: Total alkali silica
+    domain: geology
+    test: "petrology::total_alkali_silica"
+    avg_time_ns: 2040144.00
+  - label: petrology_viscosity_arrhenius
+    symbol: VA
+    name: Viscosity arrhenius
+    domain: geology
+    test: "petrology::viscosity_arrhenius"
+    avg_time_ns: 2239284.00

@@ -1,0 +1,141 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Po",
+        name: "Polonium",
+        atomic_number: 84,
+        atomic_mass: 208.98243_f64,
+        electronegativity: Some(2.0_f64),
+        group: Some(16),
+        period: 6,
+        category: "post-transition metal",
+        electron_configuration: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴",
+        isotopes: vec![
+        Isotope {
+            name: "Polonium-208",
+            symbol: "²⁰⁸Po",
+            mass_number: 208,
+            neutrons: 124,
+            atomic_mass: 207.981246_f64,
+            half_life: Some(2.898_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Lead-204"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Polonium-209",
+            symbol: "²⁰⁹Po",
+            mass_number: 209,
+            neutrons: 125,
+            atomic_mass: 208.98243_f64,
+            half_life: Some(125.2_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 0.9974_f64,
+                daughter: Some("Lead-205"),
+            },
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.0026_f64,
+                daughter: Some("Bismuth-209"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Polonium-210",
+            symbol: "²¹⁰Po",
+            mass_number: 210,
+            neutrons: 126,
+            atomic_mass: 209.982874_f64,
+            half_life: Some(138.376_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Lead-206"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Polonium-212",
+            symbol: "²¹²Po",
+            mass_number: 212,
+            neutrons: 128,
+            atomic_mass: 211.988868_f64,
+            half_life: Some(299.0_f64),
+            half_life_unit: Some("nanoseconds"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Lead-208"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Polonium-214",
+            symbol: "²¹⁴Po",
+            mass_number: 214,
+            neutrons: 130,
+            atomic_mass: 213.995201_f64,
+            half_life: Some(163.47_f64),
+            half_life_unit: Some("microseconds"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Lead-210"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Polonium-218",
+            symbol: "²¹⁸Po",
+            mass_number: 218,
+            neutrons: 134,
+            atomic_mass: 218.008973_f64,
+            half_life: Some(3.098_f64),
+            half_life_unit: Some("minutes"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 0.9998_f64,
+                daughter: Some("Lead-214"),
+            },
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.0002_f64,
+                daughter: Some("Astatine-218"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

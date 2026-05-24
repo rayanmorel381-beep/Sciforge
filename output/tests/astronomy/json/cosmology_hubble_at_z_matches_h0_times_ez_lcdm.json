@@ -1,0 +1,17 @@
+{
+  "category": "cosmology",
+  "symbol": "HAZ",
+  "name": "Hubble at z matches h0 times ez lcdm",
+  "domain": "astronomy",
+  "test": "cosmology::hubble_at_z_matches_h0_times_ez_lcdm",
+  "experiment_name": "cosmology::hubble_at_z_matches_h0_times_ez_lcdm",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1917214.00,
+  "min_time_ns": 1917214.00,
+  "max_time_ns": 1917214.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

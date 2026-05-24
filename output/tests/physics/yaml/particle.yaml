@@ -1,0 +1,27 @@
+category: particle
+count: 4
+entries:
+  - label: particle_compton_time
+    symbol: CT
+    name: Compton time
+    domain: physics
+    test: "particle::compton_time"
+    avg_time_ns: 1830173.00
+  - label: particle_fine_structure_constant
+    symbol: FSC
+    name: Fine structure constant
+    domain: physics
+    test: "particle::fine_structure_constant"
+    avg_time_ns: 2239534.00
+  - label: particle_photon_energy
+    symbol: PE
+    name: Photon energy
+    domain: physics
+    test: "particle::photon_energy"
+    avg_time_ns: 2331164.00
+  - label: particle_planck_energy
+    symbol: PE
+    name: Planck energy
+    domain: physics
+    test: "particle::planck_energy"
+    avg_time_ns: 2100374.00

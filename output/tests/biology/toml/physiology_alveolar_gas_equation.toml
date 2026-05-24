@@ -1,0 +1,16 @@
+[benchmark]
+category = "physiology"
+symbol = "AGE"
+name = "Alveolar gas equation"
+domain = "biology"
+test = "physiology::alveolar_gas_equation"
+experiment_name = "physiology::alveolar_gas_equation"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2493215.00
+min_time_ns = 2493215.00
+max_time_ns = 2493215.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

@@ -1,0 +1,123 @@
+category: cosmology
+count: 20
+entries:
+  - label: cosmology_age_decreases_with_redshift
+    symbol: ADW
+    name: Age decreases with redshift
+    domain: astronomy
+    test: "cosmology::age_decreases_with_redshift"
+    avg_time_ns: 2442184.00
+  - label: cosmology_age_of_universe
+    symbol: AOU
+    name: Age of universe
+    domain: astronomy
+    test: "cosmology::age_of_universe"
+    avg_time_ns: 2200865.00
+  - label: cosmology_astronomy_missing_required_parameter_returns_error
+    symbol: AMR
+    name: Astronomy missing required parameter returns error
+    domain: astronomy
+    test: "cosmology::astronomy_missing_required_parameter_returns_error"
+    avg_time_ns: 2290824.00
+  - label: cosmology_astronomy_unknown_function_returns_error
+    symbol: AUF
+    name: Astronomy unknown function returns error
+    domain: astronomy
+    test: "cosmology::astronomy_unknown_function_returns_error"
+    avg_time_ns: 1933843.00
+  - label: cosmology_cmb_temperature_at_z
+    symbol: CTA
+    name: Cmb temperature at z
+    domain: astronomy
+    test: "cosmology::cmb_temperature_at_z"
+    avg_time_ns: 1967794.00
+  - label: cosmology_cmb_temperature_scales_with_z
+    symbol: CTS
+    name: Cmb temperature scales with z
+    domain: astronomy
+    test: "cosmology::cmb_temperature_scales_with_z"
+    avg_time_ns: 1892384.00
+  - label: cosmology_comoving_distance_increases_with_redshift
+    symbol: CDI
+    name: Comoving distance increases with redshift
+    domain: astronomy
+    test: "cosmology::comoving_distance_increases_with_redshift"
+    avg_time_ns: 2000023.00
+  - label: cosmology_comoving_distance_zero_at_zero_redshift
+    symbol: CDZ
+    name: Comoving distance zero at zero redshift
+    domain: astronomy
+    test: "cosmology::comoving_distance_zero_at_zero_redshift"
+    avg_time_ns: 2394745.00
+  - label: cosmology_critical_density
+    symbol: CD
+    name: Critical density
+    domain: astronomy
+    test: "cosmology::critical_density"
+    avg_time_ns: 2319264.00
+  - label: cosmology_distance_duality_table_driven
+    symbol: DDT
+    name: Distance duality table driven
+    domain: astronomy
+    test: "cosmology::distance_duality_table_driven"
+    avg_time_ns: 2634615.00
+  - label: cosmology_e_z_lcdm_sweep_monotonic_for_positive_z
+    symbol: EZL
+    name: E z lcdm sweep monotonic for positive z
+    domain: astronomy
+    test: "cosmology::e_z_lcdm_sweep_monotonic_for_positive_z"
+    avg_time_ns: 2009754.00
+  - label: cosmology_e_z_lcdm_today
+    symbol: EZL
+    name: E z lcdm today
+    domain: astronomy
+    test: "cosmology::e_z_lcdm_today"
+    avg_time_ns: 2005023.00
+  - label: cosmology_hubble_at_z_matches_h0_times_ez_lcdm
+    symbol: HAZ
+    name: Hubble at z matches h0 times ez lcdm
+    domain: astronomy
+    test: "cosmology::hubble_at_z_matches_h0_times_ez_lcdm"
+    avg_time_ns: 1917214.00
+  - label: cosmology_hubble_ez_identity_table_driven
+    symbol: HEI
+    name: Hubble ez identity table driven
+    domain: astronomy
+    test: "cosmology::hubble_ez_identity_table_driven"
+    avg_time_ns: 1829283.00
+  - label: cosmology_hubble_velocity
+    symbol: HV
+    name: Hubble velocity
+    domain: astronomy
+    test: "cosmology::hubble_velocity"
+    avg_time_ns: 1775993.00
+  - label: cosmology_lookback_time_increases_with_redshift
+    symbol: LTI
+    name: Lookback time increases with redshift
+    domain: astronomy
+    test: "cosmology::lookback_time_increases_with_redshift"
+    avg_time_ns: 2011574.00
+  - label: cosmology_luminosity_angular_distance_duality_from_z
+    symbol: LAD
+    name: Luminosity angular distance duality from z
+    domain: astronomy
+    test: "cosmology::luminosity_angular_distance_duality_from_z"
+    avg_time_ns: 2785765.00
+  - label: cosmology_relativistic_redshift_velocity_roundtrip
+    symbol: RRV
+    name: Relativistic redshift velocity roundtrip
+    domain: astronomy
+    test: "cosmology::relativistic_redshift_velocity_roundtrip"
+    avg_time_ns: 2239234.00
+  - label: cosmology_scale_factor
+    symbol: SF
+    name: Scale factor
+    domain: astronomy
+    test: "cosmology::scale_factor"
+    avg_time_ns: 2066014.00
+  - label: cosmology_scale_factor_high_z
+    symbol: SFH
+    name: Scale factor high z
+    domain: astronomy
+    test: "cosmology::scale_factor_high_z"
+    avg_time_ns: 1926474.00

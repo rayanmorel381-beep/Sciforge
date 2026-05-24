@@ -1,0 +1,9 @@
+title = "Entry Test"
+count = 1
+
+[[entries]]
+label = "lbl"
+k = "v"
+avg_time_ns = 16.40
+iterations_per_sec = 0.00
+

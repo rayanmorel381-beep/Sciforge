@@ -1,0 +1,9 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+astro::astronomical_unit,f64,1,1,1388132,1388132,1388132,0,1000,pass,astro,AU,Astronomical unit,constants,astro::astronomical_unit
+astro::cmb_temperature,f64,1,1,1554393,1554393,1554393,0,1000,pass,astro,CT,Cmb temperature,constants,astro::cmb_temperature
+astro::earth_mass,f64,1,1,1175502,1175502,1175502,0,1000,pass,astro,EM,Earth mass,constants,astro::earth_mass
+astro::hubble_constant,f64,1,1,1208092,1208092,1208092,0,1000,pass,astro,HC,Hubble constant,constants,astro::hubble_constant
+astro::light_year,f64,1,1,1239503,1239503,1239503,0,1000,pass,astro,LY,Light year,constants,astro::light_year
+astro::parsec,f64,1,1,1216782,1216782,1216782,0,1000,pass,astro,Pa,Parsec,constants,astro::parsec
+astro::parsec_greater_than_ly,f64,1,1,1208722,1208722,1208722,0,1000,pass,astro,PGT,Parsec greater than ly,constants,astro::parsec_greater_than_ly
+astro::solar_mass,f64,1,1,1211393,1211393,1211393,0,1000,pass,astro,SM,Solar mass,constants,astro::solar_mass

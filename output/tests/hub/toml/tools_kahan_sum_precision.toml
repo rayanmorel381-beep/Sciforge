@@ -1,0 +1,16 @@
+[benchmark]
+category = "tools"
+symbol = "KSP"
+name = "Kahan sum precision"
+domain = "hub"
+test = "tools::kahan_sum_precision"
+experiment_name = "tools::kahan_sum_precision"
+precision = "f64"
+elapsed_ms = 4
+iterations = 1
+avg_time_ns = 4952179.00
+min_time_ns = 4952179.00
+max_time_ns = 4952179.00
+time_stddev = 0.0000
+iterations_per_sec = 250.00
+result = "pass"

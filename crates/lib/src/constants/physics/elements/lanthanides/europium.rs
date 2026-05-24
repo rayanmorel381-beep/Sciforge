@@ -1,0 +1,116 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Eu",
+        name: "Europium",
+        atomic_number: 63,
+        atomic_mass: 151.964_f64,
+        electronegativity: Some(1.2_f64),
+        group: None,
+        period: 6,
+        category: "lanthanide",
+        electron_configuration: "[Xe] 4f⁷ 6s²",
+        isotopes: vec![
+        Isotope {
+            name: "Europium-151",
+            symbol: "¹⁵¹Eu",
+            mass_number: 151,
+            neutrons: 88,
+            atomic_mass: 150.91985_f64,
+            half_life: Some(4.62e+18_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Promethium-147"),
+            },
+            ],
+            natural_abundance: 0.4781_f64,
+            nuclear_spin: Some("5/2+"),
+        },
+        Isotope {
+            name: "Europium-152",
+            symbol: "¹⁵²Eu",
+            mass_number: 152,
+            neutrons: 89,
+            atomic_mass: 151.921745_f64,
+            half_life: Some(13.517_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.722_f64,
+                daughter: Some("Samarium-152"),
+            },
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.278_f64,
+                daughter: Some("Gadolinium-152"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Europium-153",
+            symbol: "¹⁵³Eu",
+            mass_number: 153,
+            neutrons: 90,
+            atomic_mass: 152.92123_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 0.5219_f64,
+            nuclear_spin: Some("5/2+"),
+        },
+        Isotope {
+            name: "Europium-154",
+            symbol: "¹⁵⁴Eu",
+            mass_number: 154,
+            neutrons: 91,
+            atomic_mass: 153.922979_f64,
+            half_life: Some(8.593_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 0.998_f64,
+                daughter: Some("Gadolinium-154"),
+            },
+            DecayMode {
+                mode: "electron capture",
+                branching_ratio: 0.002_f64,
+                daughter: Some("Samarium-154"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Europium-155",
+            symbol: "¹⁵⁵Eu",
+            mass_number: 155,
+            neutrons: 92,
+            atomic_mass: 154.922893_f64,
+            half_life: Some(4.7611_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Gadolinium-155"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

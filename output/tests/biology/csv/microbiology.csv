@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+microbiology::biofilm_formation,f64,2,1,2351374,2351374,2351374,0,500,pass,microbiology,BF,Biofilm formation,biology,microbiology::biofilm_formation
+microbiology::chemostat_steady_state_biomass,f64,2,1,2493045,2493045,2493045,0,500,pass,microbiology,CSS,Chemostat steady state biomass,biology,microbiology::chemostat_steady_state_biomass
+microbiology::generation_time_bacteria,f64,2,1,2079733,2079733,2079733,0,500,pass,microbiology,GTB,Generation time bacteria,biology,microbiology::generation_time_bacteria
+microbiology::monod_growth,f64,2,1,2321345,2321345,2321345,0,500,pass,microbiology,MG,Monod growth,biology,microbiology::monod_growth

@@ -1,0 +1,62 @@
+use std::sync::LazyLock;
+use super::super::{Material, MaterialFamily};
+
+pub static SILICON_NITRIDE_SI3N4: LazyLock<Material> = LazyLock::new(|| Material {
+    element: None,
+    name: "Silicon nitride Si3N4",
+    formula: "Si3N4",
+    family: MaterialFamily::Ceramic,
+    density_kg_m3: 3290.0,
+    young_modulus_pa: 310.0e9,
+    poisson_ratio: 0.27,
+    yield_strength_pa: 850.0e6,
+    ultimate_strength_pa: 850.0e6,
+    thermal_conductivity_w_mk: 30.0,
+    thermal_expansion_per_k: 3.3e-6,
+    specific_heat_j_kgk: 700.0,
+    max_service_temp_k: 1773.0,
+    fatigue_strength_coeff_pa: 1100.0e6,
+    fatigue_strength_exponent: -0.05,
+    hardness_hv: 1700.0,
+    cost_eur_kg: 130.0,
+});
+
+pub static SILICON_CARBIDE_SIC: LazyLock<Material> = LazyLock::new(|| Material {
+    element: None,
+    name: "Silicon carbide SiC",
+    formula: "SiC",
+    family: MaterialFamily::Ceramic,
+    density_kg_m3: 3210.0,
+    young_modulus_pa: 410.0e9,
+    poisson_ratio: 0.14,
+    yield_strength_pa: 550.0e6,
+    ultimate_strength_pa: 550.0e6,
+    thermal_conductivity_w_mk: 120.0,
+    thermal_expansion_per_k: 4.0e-6,
+    specific_heat_j_kgk: 750.0,
+    max_service_temp_k: 1873.0,
+    fatigue_strength_coeff_pa: 700.0e6,
+    fatigue_strength_exponent: -0.05,
+    hardness_hv: 2800.0,
+    cost_eur_kg: 110.0,
+});
+
+pub static ZIRCONIA_ZRO2: LazyLock<Material> = LazyLock::new(|| Material {
+    element: None,
+    name: "Zirconia ZrO2 (PSZ)",
+    formula: "ZrO2",
+    family: MaterialFamily::Ceramic,
+    density_kg_m3: 6050.0,
+    young_modulus_pa: 200.0e9,
+    poisson_ratio: 0.30,
+    yield_strength_pa: 900.0e6,
+    ultimate_strength_pa: 900.0e6,
+    thermal_conductivity_w_mk: 2.2,
+    thermal_expansion_per_k: 10.5e-6,
+    specific_heat_j_kgk: 400.0,
+    max_service_temp_k: 1773.0,
+    fatigue_strength_coeff_pa: 1200.0e6,
+    fatigue_strength_exponent: -0.05,
+    hardness_hv: 1300.0,
+    cost_eur_kg: 95.0,
+});

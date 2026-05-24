@@ -1,0 +1,106 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "P",
+        name: "Phosphorus",
+        atomic_number: 15,
+        atomic_mass: 30.973762_f64,
+        electronegativity: Some(2.19_f64),
+        group: Some(15),
+        period: 3,
+        category: "nonmetal",
+        electron_configuration: "[Ne] 3s² 3p³",
+        isotopes: vec![
+        Isotope {
+            name: "Phosphorus-29",
+            symbol: "²⁹P",
+            mass_number: 29,
+            neutrons: 14,
+            atomic_mass: 28.9818_f64,
+            half_life: Some(4.142_f64),
+            half_life_unit: Some("seconds"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta+ (positron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Silicon-29"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Phosphorus-30",
+            symbol: "³⁰P",
+            mass_number: 30,
+            neutrons: 15,
+            atomic_mass: 29.97831_f64,
+            half_life: Some(2.498_f64),
+            half_life_unit: Some("minutes"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta+ (positron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Silicon-30"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Phosphorus-31",
+            symbol: "³¹P",
+            mass_number: 31,
+            neutrons: 16,
+            atomic_mass: 30.973762_f64,
+            half_life: None,
+            half_life_unit: None,
+            stable: true,
+            decay_modes: vec![],
+            natural_abundance: 1.0_f64,
+            nuclear_spin: Some("1/2+"),
+        },
+        Isotope {
+            name: "Phosphorus-32",
+            symbol: "³²P",
+            mass_number: 32,
+            neutrons: 17,
+            atomic_mass: 31.973907_f64,
+            half_life: Some(14.268_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Sulfur-32"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Phosphorus-33",
+            symbol: "³³P",
+            mass_number: 33,
+            neutrons: 18,
+            atomic_mass: 32.97173_f64,
+            half_life: Some(25.34_f64),
+            half_life_unit: Some("days"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta- (electron emission)",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Sulfur-33"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

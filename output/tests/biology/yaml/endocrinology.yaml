@@ -1,0 +1,27 @@
+category: endocrinology
+count: 4
+entries:
+  - label: endocrinology_homa_ir
+    symbol: HI
+    name: Homa ir
+    domain: biology
+    test: "endocrinology::homa_ir"
+    avg_time_ns: 1994093.00
+  - label: endocrinology_hormone_half_life_clearance
+    symbol: HHL
+    name: Hormone half life clearance
+    domain: biology
+    test: "endocrinology::hormone_half_life_clearance"
+    avg_time_ns: 2764545.00
+  - label: endocrinology_insulin_sensitivity_index
+    symbol: ISI
+    name: Insulin sensitivity index
+    domain: biology
+    test: "endocrinology::insulin_sensitivity_index"
+    avg_time_ns: 2457235.00
+  - label: endocrinology_receptor_saturation
+    symbol: RS
+    name: Receptor saturation
+    domain: biology
+    test: "endocrinology::receptor_saturation"
+    avg_time_ns: 2386224.00

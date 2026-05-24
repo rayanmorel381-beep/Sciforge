@@ -1,0 +1,21 @@
+category: solid_mechanics
+count: 3
+entries:
+  - label: solid_mechanics_hooke_stress
+    symbol: HS
+    name: Hooke stress
+    domain: physics
+    test: "solid_mechanics::hooke_stress"
+    avg_time_ns: 1870773.00
+  - label: solid_mechanics_thermal_stress
+    symbol: TS
+    name: Thermal stress
+    domain: physics
+    test: "solid_mechanics::thermal_stress"
+    avg_time_ns: 1903164.00
+  - label: solid_mechanics_von_mises
+    symbol: VM
+    name: Von mises
+    domain: physics
+    test: "solid_mechanics::von_mises"
+    avg_time_ns: 2029323.00

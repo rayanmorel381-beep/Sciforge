@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+evolution::adaptation_rate,f64,2,1,2358735,2358735,2358735,0,500,pass,evolution,AR,Adaptation rate,biology,evolution::adaptation_rate
+evolution::fixation_probability_neutral,f64,2,1,2149294,2149294,2149294,0,500,pass,evolution,FPN,Fixation probability neutral,biology,evolution::fixation_probability_neutral
+evolution::speciation_rate_bdi,f64,2,1,2101473,2101473,2101473,0,500,pass,evolution,SRB,Speciation rate bdi,biology,evolution::speciation_rate_bdi
+evolution::substitution_rate,f64,1,1,1871424,1871424,1871424,0,1000,pass,evolution,SR,Substitution rate,biology,evolution::substitution_rate

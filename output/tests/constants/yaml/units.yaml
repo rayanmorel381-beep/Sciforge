@@ -1,0 +1,45 @@
+category: units
+count: 7
+entries:
+  - label: units_angle_conversion_inverse_identity
+    symbol: ACI
+    name: Angle conversion inverse identity
+    domain: constants
+    test: "units::angle_conversion_inverse_identity"
+    avg_time_ns: 1356603.00
+  - label: units_atm_to_pascal
+    symbol: ATP
+    name: Atm to pascal
+    domain: constants
+    test: "units::atm_to_pascal"
+    avg_time_ns: 1291612.00
+  - label: units_calorie_to_joule
+    symbol: CTJ
+    name: Calorie to joule
+    domain: constants
+    test: "units::calorie_to_joule"
+    avg_time_ns: 1357812.00
+  - label: units_degree_rad_roundtrip
+    symbol: DRR
+    name: Degree rad roundtrip
+    domain: constants
+    test: "units::degree_rad_roundtrip"
+    avg_time_ns: 1487873.00
+  - label: units_ev_joule_roundtrip_multiple_values
+    symbol: EJR
+    name: Ev joule roundtrip multiple values
+    domain: constants
+    test: "units::ev_joule_roundtrip_multiple_values"
+    avg_time_ns: 1508983.00
+  - label: units_ev_roundtrip
+    symbol: ER
+    name: Ev roundtrip
+    domain: constants
+    test: "units::ev_roundtrip"
+    avg_time_ns: 1256382.00
+  - label: units_ev_to_joule
+    symbol: ETJ
+    name: Ev to joule
+    domain: constants
+    test: "units::ev_to_joule"
+    avg_time_ns: 1195943.00

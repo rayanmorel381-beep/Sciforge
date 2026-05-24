@@ -1,0 +1,17 @@
+{
+  "category": "dispatch",
+  "symbol": "HC",
+  "name": "Hall coefficient",
+  "domain": "physics",
+  "test": "dispatch::hall_coefficient",
+  "experiment_name": "dispatch::hall_coefficient",
+  "precision": "f64",
+  "elapsed_ms": 1,
+  "iterations": 1,
+  "avg_time_ns": 1840533.00,
+  "min_time_ns": 1840533.00,
+  "max_time_ns": 1840533.00,
+  "time_stddev": 0.0000,
+  "iterations_per_sec": 1000.00,
+  "result": "pass"
+}

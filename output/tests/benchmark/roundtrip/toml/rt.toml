@@ -1,0 +1,11 @@
+[benchmark]
+experiment_name = "rt_export"
+precision = "f32"
+elapsed_ms = 0
+iterations = 25
+avg_time_ns = 31.60
+min_time_ns = 31.60
+max_time_ns = 31.60
+time_stddev = 0.0000
+iterations_per_sec = 0.00
+result = "roundtrip"

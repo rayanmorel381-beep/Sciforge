@@ -1,0 +1,21 @@
+pub mod absorption;
+pub mod birefringence;
+pub mod dispersion;
+pub mod electro_optic;
+pub mod fiber;
+pub mod gas;
+pub mod interfaces;
+pub mod laser;
+pub mod lenses;
+pub mod liquid;
+pub mod material;
+pub mod polarization;
+pub mod thermo_optic;
+pub mod transmission;
+
+pub use sciforge_hub::prelude::physics::optics::devices as raw_devices;
+pub use sciforge_hub::prelude::physics::optics::diffraction as raw_diffraction;
+pub use sciforge_hub::prelude::physics::optics::interference as raw_interference;
+pub use sciforge_hub::prelude::physics::optics::polarization as raw_polarization;
+pub use sciforge_hub::prelude::physics::optics::refraction as raw_refraction;
+pub use sciforge_hub::prelude::physics::optics::scattering as raw_scattering;

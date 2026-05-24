@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+tensor::tensor_contract,f64,2,1,2111934,2111934,2111934,0,500,pass,tensor,TC,Tensor contract,maths,tensor::tensor_contract
+tensor::tensor_determinant,f64,2,1,2018274,2018274,2018274,0,500,pass,tensor,TD,Tensor determinant,maths,tensor::tensor_determinant
+tensor::tensor_reshape,f64,2,1,2056984,2056984,2056984,0,500,pass,tensor,TR,Tensor reshape,maths,tensor::tensor_reshape

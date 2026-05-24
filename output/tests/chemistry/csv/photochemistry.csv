@@ -1,0 +1,5 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+photochemistry::fret_efficiency,f64,2,1,2310114,2310114,2310114,0,500,pass,photochemistry,FE,Fret efficiency,chemistry,photochemistry::fret_efficiency
+photochemistry::photon_energy,f64,2,1,2065284,2065284,2065284,0,500,pass,photochemistry,PE,Photon energy,chemistry,photochemistry::photon_energy
+photochemistry::quantum_yield,f64,2,1,2072074,2072074,2072074,0,500,pass,photochemistry,QY,Quantum yield,chemistry,photochemistry::quantum_yield
+photochemistry::stern_volmer,f64,2,1,2370204,2370204,2370204,0,500,pass,photochemistry,SV,Stern volmer,chemistry,photochemistry::stern_volmer

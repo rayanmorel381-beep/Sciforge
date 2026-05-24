@@ -1,0 +1,8 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+radiation::albedo_reflected,f64,1,1,1981263,1981263,1981263,0,1000,pass,radiation,AR,Albedo reflected,meteorology,radiation::albedo_reflected
+radiation::effective_temperature,f64,1,1,1908454,1908454,1908454,0,1000,pass,radiation,ET,Effective temperature,meteorology,radiation::effective_temperature
+radiation::planck_function,f64,2,1,2727955,2727955,2727955,0,500,pass,radiation,PF,Planck function,meteorology,radiation::planck_function
+radiation::radiative_forcing_co2,f64,2,1,2339504,2339504,2339504,0,500,pass,radiation,RFC,Radiative forcing co2,meteorology,radiation::radiative_forcing_co2
+radiation::radiative_forcing_co2_zero_when_equal_concentrations,f64,1,1,1817313,1817313,1817313,0,1000,pass,radiation,RFC,Radiative forcing co2 zero when equal concentrations,meteorology,radiation::radiative_forcing_co2_zero_when_equal_concentrations
+radiation::stefan_boltzmann_flux,f64,2,1,2082284,2082284,2082284,0,500,pass,radiation,SBF,Stefan boltzmann flux,meteorology,radiation::stefan_boltzmann_flux
+radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep,f64,2,1,2349015,2349015,2349015,0,500,pass,radiation,SBF,Stefan boltzmann flux monotonic with temperature sweep,meteorology,radiation::stefan_boltzmann_flux_monotonic_with_temperature_sweep

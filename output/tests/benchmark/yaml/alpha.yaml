@@ -1,0 +1,5 @@
+group: alpha
+count: 1
+entries:
+  - label: bench_alpha
+    avg_time_ns: 15.10

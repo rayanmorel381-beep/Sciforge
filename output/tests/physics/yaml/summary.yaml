@@ -1,0 +1,587 @@
+title: SciForge Physics Test
+count: 73
+entries:
+  - label: acoustics_doppler_approaching
+    category: acoustics
+    symbol: DA
+    name: Doppler approaching
+    domain: physics
+    test: "acoustics::doppler_approaching"
+    avg_time_ns: 2238924.00
+    iterations_per_sec: 500.00
+  - label: acoustics_intensity_level_db
+    category: acoustics
+    symbol: ILD
+    name: Intensity level db
+    domain: physics
+    test: "acoustics::intensity_level_db"
+    avg_time_ns: 1823883.00
+    iterations_per_sec: 1000.00
+  - label: acoustics_reverberation_time_sabine
+    category: acoustics
+    symbol: RTS
+    name: Reverberation time sabine
+    domain: physics
+    test: "acoustics::reverberation_time_sabine"
+    avg_time_ns: 1762503.00
+    iterations_per_sec: 1000.00
+  - label: acoustics_speed_of_sound_gas
+    category: acoustics
+    symbol: SOS
+    name: Speed of sound gas
+    domain: physics
+    test: "acoustics::speed_of_sound_gas"
+    avg_time_ns: 1791574.00
+    iterations_per_sec: 1000.00
+  - label: dispatch_diffraction_grating_maxima
+    category: dispatch
+    symbol: DGM
+    name: Diffraction grating maxima
+    domain: physics
+    test: "dispatch::diffraction_grating_maxima"
+    avg_time_ns: 2316134.00
+    iterations_per_sec: 500.00
+  - label: dispatch_dispatch_missing_parameter_returns_error
+    category: dispatch
+    symbol: DMP
+    name: Dispatch missing parameter returns error
+    domain: physics
+    test: "dispatch::dispatch_missing_parameter_returns_error"
+    avg_time_ns: 2695035.00
+    iterations_per_sec: 500.00
+  - label: dispatch_dispatch_unknown_function_returns_error
+    category: dispatch
+    symbol: DUF
+    name: Dispatch unknown function returns error
+    domain: physics
+    test: "dispatch::dispatch_unknown_function_returns_error"
+    avg_time_ns: 2094074.00
+    iterations_per_sec: 500.00
+  - label: dispatch_drift_velocity
+    category: dispatch
+    symbol: DV
+    name: Drift velocity
+    domain: physics
+    test: "dispatch::drift_velocity"
+    avg_time_ns: 1928504.00
+    iterations_per_sec: 1000.00
+  - label: dispatch_hall_coefficient
+    category: dispatch
+    symbol: HC
+    name: Hall coefficient
+    domain: physics
+    test: "dispatch::hall_coefficient"
+    avg_time_ns: 1840533.00
+    iterations_per_sec: 1000.00
+  - label: dispatch_maxwell_speed_distribution_peak
+    category: dispatch
+    symbol: MSD
+    name: Maxwell speed distribution peak
+    domain: physics
+    test: "dispatch::maxwell_speed_distribution_peak"
+    avg_time_ns: 1859823.00
+    iterations_per_sec: 1000.00
+  - label: electrodynamics_capacitance_parallel_plate
+    category: electrodynamics
+    symbol: CPP
+    name: Capacitance parallel plate
+    domain: physics
+    test: "electrodynamics::capacitance_parallel_plate"
+    avg_time_ns: 1757714.00
+    iterations_per_sec: 1000.00
+  - label: electrodynamics_electric_field_point_charge
+    category: electrodynamics
+    symbol: EFP
+    name: Electric field point charge
+    domain: physics
+    test: "electrodynamics::electric_field_point_charge"
+    avg_time_ns: 1873473.00
+    iterations_per_sec: 1000.00
+  - label: electrodynamics_skin_depth
+    category: electrodynamics
+    symbol: SD
+    name: Skin depth
+    domain: physics
+    test: "electrodynamics::skin_depth"
+    avg_time_ns: 2021624.00
+    iterations_per_sec: 500.00
+  - label: electromagnetism_capacitance_parallel_plate
+    category: electromagnetism
+    symbol: CPP
+    name: Capacitance parallel plate
+    domain: physics
+    test: "electromagnetism::capacitance_parallel_plate"
+    avg_time_ns: 2172614.00
+    iterations_per_sec: 500.00
+  - label: electromagnetism_electric_field_point_charge
+    category: electromagnetism
+    symbol: EFP
+    name: Electric field point charge
+    domain: physics
+    test: "electromagnetism::electric_field_point_charge"
+    avg_time_ns: 1898793.00
+    iterations_per_sec: 1000.00
+  - label: electromagnetism_inductance_solenoid
+    category: electromagnetism
+    symbol: IS
+    name: Inductance solenoid
+    domain: physics
+    test: "electromagnetism::inductance_solenoid"
+    avg_time_ns: 1768804.00
+    iterations_per_sec: 1000.00
+  - label: electromagnetism_magnetic_field_wire
+    category: electromagnetism
+    symbol: MFW
+    name: Magnetic field wire
+    domain: physics
+    test: "electromagnetism::magnetic_field_wire"
+    avg_time_ns: 1791073.00
+    iterations_per_sec: 1000.00
+  - label: electromagnetism_malus_law
+    category: electromagnetism
+    symbol: ML
+    name: Malus law
+    domain: physics
+    test: "electromagnetism::malus_law"
+    avg_time_ns: 2191744.00
+    iterations_per_sec: 500.00
+  - label: electromagnetism_malus_law_quarter_turn_extinction
+    category: electromagnetism
+    symbol: MLQ
+    name: Malus law quarter turn extinction
+    domain: physics
+    test: "electromagnetism::malus_law_quarter_turn_extinction"
+    avg_time_ns: 2958816.00
+    iterations_per_sec: 500.00
+  - label: electromagnetism_ohm_current
+    category: electromagnetism
+    symbol: OC
+    name: Ohm current
+    domain: physics
+    test: "electromagnetism::ohm_current"
+    avg_time_ns: 2743115.00
+    iterations_per_sec: 500.00
+  - label: electromagnetism_ohm_law_roundtrip_consistency
+    category: electromagnetism
+    symbol: OLR
+    name: Ohm law roundtrip consistency
+    domain: physics
+    test: "electromagnetism::ohm_law_roundtrip_consistency"
+    avg_time_ns: 2972305.00
+    iterations_per_sec: 500.00
+  - label: electromagnetism_ohm_resistance
+    category: electromagnetism
+    symbol: OR
+    name: Ohm resistance
+    domain: physics
+    test: "electromagnetism::ohm_resistance"
+    avg_time_ns: 2644235.00
+    iterations_per_sec: 500.00
+  - label: electromagnetism_ohm_voltage
+    category: electromagnetism
+    symbol: OV
+    name: Ohm voltage
+    domain: physics
+    test: "electromagnetism::ohm_voltage"
+    avg_time_ns: 2411474.00
+    iterations_per_sec: 500.00
+  - label: electronics_diode_shockley
+    category: electronics
+    symbol: DS
+    name: Diode shockley
+    domain: physics
+    test: "electronics::diode_shockley"
+    avg_time_ns: 2472625.00
+    iterations_per_sec: 500.00
+  - label: electronics_ohm_current
+    category: electronics
+    symbol: OC
+    name: Ohm current
+    domain: physics
+    test: "electronics::ohm_current"
+    avg_time_ns: 2131514.00
+    iterations_per_sec: 500.00
+  - label: electronics_rlc_resonant_frequency
+    category: electronics
+    symbol: RRF
+    name: Rlc resonant frequency
+    domain: physics
+    test: "electronics::rlc_resonant_frequency"
+    avg_time_ns: 2358184.00
+    iterations_per_sec: 500.00
+  - label: electronics_voltage_divider
+    category: electronics
+    symbol: VD
+    name: Voltage divider
+    domain: physics
+    test: "electronics::voltage_divider"
+    avg_time_ns: 2147694.00
+    iterations_per_sec: 500.00
+  - label: fluid_mechanics_bernoulli_pressure
+    category: fluid_mechanics
+    symbol: BP
+    name: Bernoulli pressure
+    domain: physics
+    test: "fluid_mechanics::bernoulli_pressure"
+    avg_time_ns: 2116874.00
+    iterations_per_sec: 500.00
+  - label: fluid_mechanics_drag_force
+    category: fluid_mechanics
+    symbol: DF
+    name: Drag force
+    domain: physics
+    test: "fluid_mechanics::drag_force"
+    avg_time_ns: 2476255.00
+    iterations_per_sec: 500.00
+  - label: fluid_mechanics_reynolds_number
+    category: fluid_mechanics
+    symbol: RN
+    name: Reynolds number
+    domain: physics
+    test: "fluid_mechanics::reynolds_number"
+    avg_time_ns: 2254974.00
+    iterations_per_sec: 500.00
+  - label: materials_diffusion_coefficient
+    category: materials
+    symbol: DC
+    name: Diffusion coefficient
+    domain: physics
+    test: "materials::diffusion_coefficient"
+    avg_time_ns: 1933984.00
+    iterations_per_sec: 1000.00
+  - label: materials_fick_first_law
+    category: materials
+    symbol: FFL
+    name: Fick first law
+    domain: physics
+    test: "materials::fick_first_law"
+    avg_time_ns: 1746043.00
+    iterations_per_sec: 1000.00
+  - label: materials_vacancy_concentration
+    category: materials
+    symbol: VC
+    name: Vacancy concentration
+    domain: physics
+    test: "materials::vacancy_concentration"
+    avg_time_ns: 1872913.00
+    iterations_per_sec: 1000.00
+  - label: mechanics_beat_frequency
+    category: mechanics
+    symbol: BF
+    name: Beat frequency
+    domain: physics
+    test: "mechanics::beat_frequency"
+    avg_time_ns: 2258654.00
+    iterations_per_sec: 500.00
+  - label: mechanics_bernoulli_pressure
+    category: mechanics
+    symbol: BP
+    name: Bernoulli pressure
+    domain: physics
+    test: "mechanics::bernoulli_pressure"
+    avg_time_ns: 1993723.00
+    iterations_per_sec: 1000.00
+  - label: mechanics_doppler_shift_wavelength
+    category: mechanics
+    symbol: DSW
+    name: Doppler shift wavelength
+    domain: physics
+    test: "mechanics::doppler_shift_wavelength"
+    avg_time_ns: 2208294.00
+    iterations_per_sec: 500.00
+  - label: mechanics_drag_force
+    category: mechanics
+    symbol: DF
+    name: Drag force
+    domain: physics
+    test: "mechanics::drag_force"
+    avg_time_ns: 2011824.00
+    iterations_per_sec: 500.00
+  - label: mechanics_hooke_strain
+    category: mechanics
+    symbol: HS
+    name: Hooke strain
+    domain: physics
+    test: "mechanics::hooke_strain"
+    avg_time_ns: 1852213.00
+    iterations_per_sec: 1000.00
+  - label: mechanics_hooke_stress
+    category: mechanics
+    symbol: HS
+    name: Hooke stress
+    domain: physics
+    test: "mechanics::hooke_stress"
+    avg_time_ns: 1842514.00
+    iterations_per_sec: 1000.00
+  - label: mechanics_mach_number
+    category: mechanics
+    symbol: MN
+    name: Mach number
+    domain: physics
+    test: "mechanics::mach_number"
+    avg_time_ns: 1975193.00
+    iterations_per_sec: 1000.00
+  - label: nucleosynthesis_binding_energy_per_nucleon_semf
+    category: nucleosynthesis
+    symbol: BEP
+    name: Binding energy per nucleon semf
+    domain: physics
+    test: "nucleosynthesis::binding_energy_per_nucleon_semf"
+    avg_time_ns: 2445165.00
+    iterations_per_sec: 500.00
+  - label: nucleosynthesis_coulomb_barrier
+    category: nucleosynthesis
+    symbol: CB
+    name: Coulomb barrier
+    domain: physics
+    test: "nucleosynthesis::coulomb_barrier"
+    avg_time_ns: 2023114.00
+    iterations_per_sec: 500.00
+  - label: nucleosynthesis_half_life_from_constant
+    category: nucleosynthesis
+    symbol: HLF
+    name: Half life from constant
+    domain: physics
+    test: "nucleosynthesis::half_life_from_constant"
+    avg_time_ns: 2538144.00
+    iterations_per_sec: 500.00
+  - label: nucleosynthesis_nuclear_radius_fm
+    category: nucleosynthesis
+    symbol: NRF
+    name: Nuclear radius fm
+    domain: physics
+    test: "nucleosynthesis::nuclear_radius_fm"
+    avg_time_ns: 2240855.00
+    iterations_per_sec: 500.00
+  - label: optics_brewster_angle
+    category: optics
+    symbol: BA
+    name: Brewster angle
+    domain: physics
+    test: "optics::brewster_angle"
+    avg_time_ns: 1860873.00
+    iterations_per_sec: 1000.00
+  - label: optics_rayleigh_criterion
+    category: optics
+    symbol: RC
+    name: Rayleigh criterion
+    domain: physics
+    test: "optics::rayleigh_criterion"
+    avg_time_ns: 2033634.00
+    iterations_per_sec: 500.00
+  - label: optics_snell
+    category: optics
+    symbol: Sn
+    name: Snell
+    domain: physics
+    test: "optics::snell"
+    avg_time_ns: 2312144.00
+    iterations_per_sec: 500.00
+  - label: optics_thin_lens_equation
+    category: optics
+    symbol: TLE
+    name: Thin lens equation
+    domain: physics
+    test: "optics::thin_lens_equation"
+    avg_time_ns: 1942894.00
+    iterations_per_sec: 1000.00
+  - label: particle_compton_time
+    category: particle
+    symbol: CT
+    name: Compton time
+    domain: physics
+    test: "particle::compton_time"
+    avg_time_ns: 1830173.00
+    iterations_per_sec: 1000.00
+  - label: particle_fine_structure_constant
+    category: particle
+    symbol: FSC
+    name: Fine structure constant
+    domain: physics
+    test: "particle::fine_structure_constant"
+    avg_time_ns: 2239534.00
+    iterations_per_sec: 500.00
+  - label: particle_photon_energy
+    category: particle
+    symbol: PE
+    name: Photon energy
+    domain: physics
+    test: "particle::photon_energy"
+    avg_time_ns: 2331164.00
+    iterations_per_sec: 500.00
+  - label: particle_planck_energy
+    category: particle
+    symbol: PE
+    name: Planck energy
+    domain: physics
+    test: "particle::planck_energy"
+    avg_time_ns: 2100374.00
+    iterations_per_sec: 500.00
+  - label: quantum_harmonic_oscillator_energy
+    category: quantum
+    symbol: HOE
+    name: Harmonic oscillator energy
+    domain: physics
+    test: "quantum::harmonic_oscillator_energy"
+    avg_time_ns: 1980854.00
+    iterations_per_sec: 1000.00
+  - label: quantum_hydrogen_energy
+    category: quantum
+    symbol: HE
+    name: Hydrogen energy
+    domain: physics
+    test: "quantum::hydrogen_energy"
+    avg_time_ns: 1872043.00
+    iterations_per_sec: 1000.00
+  - label: quantum_infinite_well_energy
+    category: quantum
+    symbol: IWE
+    name: Infinite well energy
+    domain: physics
+    test: "quantum::infinite_well_energy"
+    avg_time_ns: 1836414.00
+    iterations_per_sec: 1000.00
+  - label: quantum_tunneling_coefficient
+    category: quantum
+    symbol: TC
+    name: Tunneling coefficient
+    domain: physics
+    test: "quantum::tunneling_coefficient"
+    avg_time_ns: 2500275.00
+    iterations_per_sec: 500.00
+  - label: relativity_compton_wavelength_shift
+    category: relativity
+    symbol: CWS
+    name: Compton wavelength shift
+    domain: physics
+    test: "relativity::compton_wavelength_shift"
+    avg_time_ns: 2293164.00
+    iterations_per_sec: 500.00
+  - label: relativity_energy_momentum_relation
+    category: relativity
+    symbol: EMR
+    name: Energy momentum relation
+    domain: physics
+    test: "relativity::energy_momentum_relation"
+    avg_time_ns: 2073874.00
+    iterations_per_sec: 500.00
+  - label: relativity_gamma_factor_at_rest
+    category: relativity
+    symbol: GFA
+    name: Gamma factor at rest
+    domain: physics
+    test: "relativity::gamma_factor_at_rest"
+    avg_time_ns: 2035943.00
+    iterations_per_sec: 500.00
+  - label: relativity_gamma_factor_increases_with_velocity
+    category: relativity
+    symbol: GFI
+    name: Gamma factor increases with velocity
+    domain: physics
+    test: "relativity::gamma_factor_increases_with_velocity"
+    avg_time_ns: 2117754.00
+    iterations_per_sec: 500.00
+  - label: relativity_length_contraction
+    category: relativity
+    symbol: LC
+    name: Length contraction
+    domain: physics
+    test: "relativity::length_contraction"
+    avg_time_ns: 2524345.00
+    iterations_per_sec: 500.00
+  - label: relativity_planck_radiation_positive
+    category: relativity
+    symbol: PRP
+    name: Planck radiation positive
+    domain: physics
+    test: "relativity::planck_radiation_positive"
+    avg_time_ns: 2137304.00
+    iterations_per_sec: 500.00
+  - label: relativity_time_dilation
+    category: relativity
+    symbol: TD
+    name: Time dilation
+    domain: physics
+    test: "relativity::time_dilation"
+    avg_time_ns: 2135114.00
+    iterations_per_sec: 500.00
+  - label: relativity_time_dilation_high_v
+    category: relativity
+    symbol: TDH
+    name: Time dilation high v
+    domain: physics
+    test: "relativity::time_dilation_high_v"
+    avg_time_ns: 2090724.00
+    iterations_per_sec: 500.00
+  - label: solid_mechanics_hooke_stress
+    category: solid_mechanics
+    symbol: HS
+    name: Hooke stress
+    domain: physics
+    test: "solid_mechanics::hooke_stress"
+    avg_time_ns: 1870773.00
+    iterations_per_sec: 1000.00
+  - label: solid_mechanics_thermal_stress
+    category: solid_mechanics
+    symbol: TS
+    name: Thermal stress
+    domain: physics
+    test: "solid_mechanics::thermal_stress"
+    avg_time_ns: 1903164.00
+    iterations_per_sec: 1000.00
+  - label: solid_mechanics_von_mises
+    category: solid_mechanics
+    symbol: VM
+    name: Von mises
+    domain: physics
+    test: "solid_mechanics::von_mises"
+    avg_time_ns: 2029323.00
+    iterations_per_sec: 500.00
+  - label: thermodynamics_boltzmann_distribution
+    category: thermodynamics
+    symbol: BD
+    name: Boltzmann distribution
+    domain: physics
+    test: "thermodynamics::boltzmann_distribution"
+    avg_time_ns: 2297755.00
+    iterations_per_sec: 500.00
+  - label: thermodynamics_carnot_efficiency
+    category: thermodynamics
+    symbol: CE
+    name: Carnot efficiency
+    domain: physics
+    test: "thermodynamics::carnot_efficiency"
+    avg_time_ns: 2522254.00
+    iterations_per_sec: 500.00
+  - label: thermodynamics_ideal_gas_pressure
+    category: thermodynamics
+    symbol: IGP
+    name: Ideal gas pressure
+    domain: physics
+    test: "thermodynamics::ideal_gas_pressure"
+    avg_time_ns: 2131304.00
+    iterations_per_sec: 500.00
+  - label: thermodynamics_ideal_gas_temperature
+    category: thermodynamics
+    symbol: IGT
+    name: Ideal gas temperature
+    domain: physics
+    test: "thermodynamics::ideal_gas_temperature"
+    avg_time_ns: 2096884.00
+    iterations_per_sec: 500.00
+  - label: thermodynamics_stefan_boltzmann_power
+    category: thermodynamics
+    symbol: SBP
+    name: Stefan boltzmann power
+    domain: physics
+    test: "thermodynamics::stefan_boltzmann_power"
+    avg_time_ns: 2123454.00
+    iterations_per_sec: 500.00
+  - label: thermodynamics_wien_displacement
+    category: thermodynamics
+    symbol: WD
+    name: Wien displacement
+    domain: physics
+    test: "thermodynamics::wien_displacement"
+    avg_time_ns: 1964834.00
+    iterations_per_sec: 1000.00

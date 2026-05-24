@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+complex::complex_exp,f64,1,1,1748573,1748573,1748573,0,1000,pass,complex,CE,Complex exp,maths,complex::complex_exp
+complex::complex_sqrt,f64,1,1,1848794,1848794,1848794,0,1000,pass,complex,CS,Complex sqrt,maths,complex::complex_sqrt
+complex::mandelbrot_iterate,f64,2,1,2418154,2418154,2418154,0,500,pass,complex,MI,Mandelbrot iterate,maths,complex::mandelbrot_iterate

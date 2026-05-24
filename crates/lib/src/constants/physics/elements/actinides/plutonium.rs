@@ -1,0 +1,136 @@
+use super::super::{DecayMode, Element, Isotope};
+
+pub fn element() -> Element {
+    Element {
+        symbol: "Pu",
+        name: "Plutonium",
+        atomic_number: 94,
+        atomic_mass: 244.064204_f64,
+        electronegativity: Some(1.28_f64),
+        group: None,
+        period: 7,
+        category: "actinide",
+        electron_configuration: "[Rn] 5f⁶ 7s²",
+        isotopes: vec![
+        Isotope {
+            name: "Plutonium-238",
+            symbol: "²³⁸Pu",
+            mass_number: 238,
+            neutrons: 144,
+            atomic_mass: 238.04956_f64,
+            half_life: Some(87.7_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Uranium-234"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Plutonium-239",
+            symbol: "²³⁹Pu",
+            mass_number: 239,
+            neutrons: 145,
+            atomic_mass: 239.052163_f64,
+            half_life: Some(24110.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Uranium-235"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Plutonium-240",
+            symbol: "²⁴⁰Pu",
+            mass_number: 240,
+            neutrons: 146,
+            atomic_mass: 240.053814_f64,
+            half_life: Some(6563.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Uranium-236"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Plutonium-241",
+            symbol: "²⁴¹Pu",
+            mass_number: 241,
+            neutrons: 147,
+            atomic_mass: 241.056852_f64,
+            half_life: Some(14.329_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "beta-",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Americium-241"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Plutonium-242",
+            symbol: "²⁴²Pu",
+            mass_number: 242,
+            neutrons: 148,
+            atomic_mass: 242.058743_f64,
+            half_life: Some(375000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 1.0_f64,
+                daughter: Some("Uranium-238"),
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        Isotope {
+            name: "Plutonium-244",
+            symbol: "²⁴⁴Pu",
+            mass_number: 244,
+            neutrons: 150,
+            atomic_mass: 244.064204_f64,
+            half_life: Some(80000000.0_f64),
+            half_life_unit: Some("years"),
+            stable: false,
+            decay_modes: vec![
+            DecayMode {
+                mode: "alpha",
+                branching_ratio: 0.9988_f64,
+                daughter: Some("Uranium-240"),
+            },
+            DecayMode {
+                mode: "spontaneous fission",
+                branching_ratio: 0.0012_f64,
+                daughter: None,
+            },
+            ],
+            natural_abundance: 0.0_f64,
+            nuclear_spin: None,
+        },
+        ],
+    }
+}

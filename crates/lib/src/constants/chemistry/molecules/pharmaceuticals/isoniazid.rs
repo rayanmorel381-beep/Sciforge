@@ -1,0 +1,15 @@
+use super::super::Molecule;
+
+pub fn molecule() -> Molecule {
+    Molecule {
+        formula: "C6H7N3O",
+        name: "isoniazid",
+        composition: &[(1, 7), (6, 6), (7, 3), (8, 1)],
+        molar_mass: 137.139,
+        category: "antibiotic",
+        state_at_stp: "solid",
+        melting_point_k: Some(444.0),
+        boiling_point_k: None,
+        density_g_cm3: Some(1.420),
+    }
+}

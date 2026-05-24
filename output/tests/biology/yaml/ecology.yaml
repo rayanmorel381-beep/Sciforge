@@ -1,0 +1,27 @@
+category: ecology
+count: 4
+entries:
+  - label: ecology_inverse_simpson
+    symbol: IS
+    name: Inverse simpson
+    domain: biology
+    test: "ecology::inverse_simpson"
+    avg_time_ns: 2253025.00
+  - label: ecology_shannon_diversity
+    symbol: SD
+    name: Shannon diversity
+    domain: biology
+    test: "ecology::shannon_diversity"
+    avg_time_ns: 2134873.00
+  - label: ecology_simpson_diversity
+    symbol: SD
+    name: Simpson diversity
+    domain: biology
+    test: "ecology::simpson_diversity"
+    avg_time_ns: 2146565.00
+  - label: ecology_species_richness
+    symbol: SR
+    name: Species richness
+    domain: biology
+    test: "ecology::species_richness"
+    avg_time_ns: 2211624.00

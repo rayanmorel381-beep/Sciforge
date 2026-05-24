@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+materials::diffusion_coefficient,f64,1,1,1933984,1933984,1933984,0,1000,pass,materials,DC,Diffusion coefficient,physics,materials::diffusion_coefficient
+materials::fick_first_law,f64,1,1,1746043,1746043,1746043,0,1000,pass,materials,FFL,Fick first law,physics,materials::fick_first_law
+materials::vacancy_concentration,f64,1,1,1872913,1872913,1872913,0,1000,pass,materials,VC,Vacancy concentration,physics,materials::vacancy_concentration

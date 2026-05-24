@@ -1,0 +1,15 @@
+category: electronics
+symbol: RRF
+name: Rlc resonant frequency
+domain: physics
+test: "electronics::rlc_resonant_frequency"
+experiment_name: "electronics::rlc_resonant_frequency"
+precision: f64
+elapsed_ms: 2
+iterations: 1
+avg_time_ns: 2358184.00
+min_time_ns: 2358184.00
+max_time_ns: 2358184.00
+time_stddev: 0.0000
+iterations_per_sec: 500.00
+result: pass

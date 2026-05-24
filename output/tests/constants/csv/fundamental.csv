@@ -1,0 +1,11 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+fundamental::avogadro_number,f64,1,1,1094902,1094902,1094902,0,1000,pass,fundamental,AN,Avogadro number,constants,fundamental::avogadro_number
+fundamental::boltzmann_constant,f64,1,1,1192362,1192362,1192362,0,1000,pass,fundamental,BC,Boltzmann constant,constants,fundamental::boltzmann_constant
+fundamental::coulomb_constant,f64,1,1,1514273,1514273,1514273,0,1000,pass,fundamental,CC,Coulomb constant,constants,fundamental::coulomb_constant
+fundamental::elementary_charge,f64,1,1,1190132,1190132,1190132,0,1000,pass,fundamental,EC,Elementary charge,constants,fundamental::elementary_charge
+fundamental::gas_constant,f64,1,1,1230993,1230993,1230993,0,1000,pass,fundamental,GC,Gas constant,constants,fundamental::gas_constant
+fundamental::gravitational_constant,f64,1,1,1229832,1229832,1229832,0,1000,pass,fundamental,GC,Gravitational constant,constants,fundamental::gravitational_constant
+fundamental::planck_constant,f64,1,1,1332032,1332032,1332032,0,1000,pass,fundamental,PC,Planck constant,constants,fundamental::planck_constant
+fundamental::reduced_planck,f64,1,1,1190632,1190632,1190632,0,1000,pass,fundamental,RP,Reduced planck,constants,fundamental::reduced_planck
+fundamental::speed_of_light,f64,1,1,1144123,1144123,1144123,0,1000,pass,fundamental,SOL,Speed of light,constants,fundamental::speed_of_light
+fundamental::stefan_boltzmann,f64,1,1,1280612,1280612,1280612,0,1000,pass,fundamental,SB,Stefan boltzmann,constants,fundamental::stefan_boltzmann

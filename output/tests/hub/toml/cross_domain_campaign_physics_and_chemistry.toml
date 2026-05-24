@@ -1,0 +1,16 @@
+[benchmark]
+category = "cross_domain"
+symbol = "CPA"
+name = "Campaign physics and chemistry"
+domain = "hub"
+test = "cross_domain::campaign_physics_and_chemistry"
+experiment_name = "cross_domain::campaign_physics_and_chemistry"
+precision = "f64"
+elapsed_ms = 2
+iterations = 1
+avg_time_ns = 2517505.00
+min_time_ns = 2517505.00
+max_time_ns = 2517505.00
+time_stddev = 0.0000
+iterations_per_sec = 500.00
+result = "pass"

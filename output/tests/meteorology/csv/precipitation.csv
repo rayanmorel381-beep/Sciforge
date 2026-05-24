@@ -1,0 +1,9 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+precipitation::antecedent_precipitation_index,f64,1,1,1949214,1949214,1949214,0,1000,pass,precipitation,API,Antecedent precipitation index,meteorology,precipitation::antecedent_precipitation_index
+precipitation::intensity_duration_frequency,f64,2,1,2425134,2425134,2425134,0,500,pass,precipitation,IDF,Intensity duration frequency,meteorology,precipitation::intensity_duration_frequency
+precipitation::penman_evaporation,f64,1,1,1972724,1972724,1972724,0,1000,pass,precipitation,PE,Penman evaporation,meteorology,precipitation::penman_evaporation
+precipitation::radar_reflectivity,f64,1,1,1723033,1723033,1723033,0,1000,pass,precipitation,RR,Radar reflectivity,meteorology,precipitation::radar_reflectivity
+precipitation::rain_rate_marshall_palmer,f64,1,1,1713723,1713723,1713723,0,1000,pass,precipitation,RRM,Rain rate marshall palmer,meteorology,precipitation::rain_rate_marshall_palmer
+precipitation::scs_curve_number_runoff,f64,1,1,1861764,1861764,1861764,0,1000,pass,precipitation,SCN,Scs curve number runoff,meteorology,precipitation::scs_curve_number_runoff
+precipitation::terminal_velocity_raindrop,f64,2,1,2264804,2264804,2264804,0,500,pass,precipitation,TVR,Terminal velocity raindrop,meteorology,precipitation::terminal_velocity_raindrop
+precipitation::thornthwaite_pet,f64,1,1,1898764,1898764,1898764,0,1000,pass,precipitation,TP,Thornthwaite pet,meteorology,precipitation::thornthwaite_pet

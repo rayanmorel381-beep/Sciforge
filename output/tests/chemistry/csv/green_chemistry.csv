@@ -1,0 +1,4 @@
+experiment_name,precision,elapsed_ms,iterations,avg_time_ns,min_time_ns,max_time_ns,time_stddev,iterations_per_sec,result,category,symbol,name,domain,test
+green_chemistry::e_factor,f64,1,1,1989264,1989264,1989264,0,1000,pass,green_chemistry,EF,E factor,chemistry,green_chemistry::e_factor
+green_chemistry::gc_atom_economy,f64,2,1,2443184,2443184,2443184,0,500,pass,green_chemistry,GAE,Gc atom economy,chemistry,green_chemistry::gc_atom_economy
+green_chemistry::reaction_mass_efficiency,f64,2,1,2343375,2343375,2343375,0,500,pass,green_chemistry,RME,Reaction mass efficiency,chemistry,green_chemistry::reaction_mass_efficiency
