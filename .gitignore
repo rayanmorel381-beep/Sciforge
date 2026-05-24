@@ -3,6 +3,7 @@
 /app/
 /RUXEL/
 /crates/server/
+crates/server/**
 **/target/
 Cargo.lock
 **/*.rs.bk
