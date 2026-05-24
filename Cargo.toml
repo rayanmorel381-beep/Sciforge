@@ -24,16 +24,16 @@ homepage = "https://rayanmorel381-beep.github.io/Sciforge/"
 repository = "https://github.com/rayanmorel381-beep/Sciforge"
 
 [workspace.dependencies]
-sciforge-lib = { path = "crates/lib", default-features = false }
-sciforge-core = { path = "crates/core" }
-sciforge-components = { path = "crates/components" }
-sciforge-automotive = { path = "crates/automotive" }
-sciforge-aeronaval = { path = "crates/aeronaval" }
-sciforge-rail = { path = "crates/rail" }
-sciforge-heavy = { path = "crates/heavy" }
-sciforge-hub = { path = "crates/hub" }
-sciforge-parser = { path = "crates/parser" }
-sciforge-benchmark = { path = "crates/benchmark" }
+sciforge-lib = { path = "crates/lib", version = "0.0.4", default-features = false }
+sciforge-core = { path = "crates/core", version = "0.0.4" }
+sciforge-components = { path = "crates/components", version = "0.0.4" }
+sciforge-automotive = { path = "crates/automotive", version = "0.0.4" }
+sciforge-aeronaval = { path = "crates/aeronaval", version = "0.0.4" }
+sciforge-rail = { path = "crates/rail", version = "0.0.4" }
+sciforge-heavy = { path = "crates/heavy", version = "0.0.4" }
+sciforge-hub = { path = "crates/hub", version = "0.0.4" }
+sciforge-parser = { path = "crates/parser", version = "0.0.4" }
+sciforge-benchmark = { path = "crates/benchmark", version = "0.0.4" }
 
 [package]
 name = "sciforge"
